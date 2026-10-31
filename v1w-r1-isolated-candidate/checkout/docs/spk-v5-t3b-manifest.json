@@ -1,0 +1,25 @@
+{
+  "actual_uci_evidence_included": false,
+  "blind_test": false,
+  "existing_T3a_modified": false,
+  "native_learning": false,
+  "new_files": [
+    "spk_v5_research/island_uci_index_v5t3b.py",
+    "search/spk_v5_t3b_authentic_uci.py",
+    "tests/test_spk_v5_t3b_authentic_uci.py",
+    "search/spk_v5_t3b_authentic_uci_gate.sh",
+    "docs/spk-v5-t3b-authentic-uci-ingress.md",
+    "docs/spk-v5-t3b-manifest.json"
+  ],
+  "pins_sha256": {
+    "docs/spk-v5-t3a-manifest.json": "afbadda183670e0ffd98a130aad2d116cfe096ceaa279778d1aa901e266bb3aa",
+    "docs/spk-v5-t3b-authentic-uci-ingress.md": "45907b8f1825b8e79c873a76371896f0369ced4851aead72127ca1370e4b5e60",
+    "search/spk_v5_t3b_authentic_uci.py": "13b7a761a0264e0228fb4c6cef7cc12b19669a2fa392bb59d7f777bbe038a715",
+    "search/spk_v5_t3b_authentic_uci_gate.sh": "361213cc38bba7e1b8eaec841a2e15886ac01e36286f1c55048027bd533d570b",
+    "spk_v5_research/island_uci_index_v5t3b.py": "989b4aee77a1ab6ad0e4e965b31bbb1642553ff888a2a7fa0410d42df7e6d3f1",
+    "tests/test_spk_v5_t3b_authentic_uci.py": "f10f6a73b8070f230943df5ec47ce8e14ddd25ac9ed3a3a00449e0903934a3f8"
+  },
+  "schema": "spk-v5-t3b-uci-index-hotfix-manifest/v0",
+  "source_original_data_modified": false,
+  "source_sha_bytes_of_original_csv": true
+}

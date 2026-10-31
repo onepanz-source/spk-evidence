@@ -1,0 +1,1318 @@
+{
+  "case_count": 144,
+  "cases": [
+    {
+      "A_credit": 1,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "current",
+      "pattern": "00",
+      "route": "normal",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "current",
+      "pattern": "00",
+      "route": "reverse_loss",
+      "status": "reverse_delivery_lost"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": false,
+      "C_verdict": null,
+      "arm": "current",
+      "pattern": "00",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": 1,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "current",
+      "pattern": "00",
+      "route": "forward_loss",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": 1,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "persist",
+      "pattern": "00",
+      "route": "normal",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "persist",
+      "pattern": "00",
+      "route": "reverse_loss",
+      "status": "reverse_delivery_lost"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": false,
+      "C_verdict": null,
+      "arm": "persist",
+      "pattern": "00",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": 1,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "persist",
+      "pattern": "00",
+      "route": "forward_loss",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": 1,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "silent",
+      "pattern": "00",
+      "route": "normal",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "silent",
+      "pattern": "00",
+      "route": "reverse_loss",
+      "status": "reverse_delivery_lost"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": false,
+      "C_verdict": null,
+      "arm": "silent",
+      "pattern": "00",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": 1,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "silent",
+      "pattern": "00",
+      "route": "forward_loss",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": -1,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "current",
+      "pattern": "00",
+      "route": "normal",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "current",
+      "pattern": "00",
+      "route": "reverse_loss",
+      "status": "reverse_delivery_lost"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": true,
+      "C_verdict": null,
+      "arm": "current",
+      "pattern": "00",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": -1,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "current",
+      "pattern": "00",
+      "route": "forward_loss",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": -1,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "persist",
+      "pattern": "00",
+      "route": "normal",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "persist",
+      "pattern": "00",
+      "route": "reverse_loss",
+      "status": "reverse_delivery_lost"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": true,
+      "C_verdict": null,
+      "arm": "persist",
+      "pattern": "00",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": -1,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "persist",
+      "pattern": "00",
+      "route": "forward_loss",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": -1,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "silent",
+      "pattern": "00",
+      "route": "normal",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "silent",
+      "pattern": "00",
+      "route": "reverse_loss",
+      "status": "reverse_delivery_lost"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": true,
+      "C_verdict": null,
+      "arm": "silent",
+      "pattern": "00",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": -1,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "silent",
+      "pattern": "00",
+      "route": "forward_loss",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "current",
+      "pattern": "00",
+      "route": "normal",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "current",
+      "pattern": "00",
+      "route": "reverse_loss",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "current",
+      "pattern": "00",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "current",
+      "pattern": "00",
+      "route": "forward_loss",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "persist",
+      "pattern": "00",
+      "route": "normal",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "persist",
+      "pattern": "00",
+      "route": "reverse_loss",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "persist",
+      "pattern": "00",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "persist",
+      "pattern": "00",
+      "route": "forward_loss",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "silent",
+      "pattern": "00",
+      "route": "normal",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "silent",
+      "pattern": "00",
+      "route": "reverse_loss",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "silent",
+      "pattern": "00",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "silent",
+      "pattern": "00",
+      "route": "forward_loss",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": -1,
+      "C_sensor": false,
+      "C_verdict": -1,
+      "arm": "current",
+      "pattern": "01",
+      "route": "normal",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": false,
+      "C_verdict": -1,
+      "arm": "current",
+      "pattern": "01",
+      "route": "reverse_loss",
+      "status": "reverse_delivery_lost"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": false,
+      "C_verdict": null,
+      "arm": "current",
+      "pattern": "01",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "current",
+      "pattern": "01",
+      "route": "forward_loss",
+      "status": "forward_custody_failed"
+    },
+    {
+      "A_credit": 1,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "persist",
+      "pattern": "01",
+      "route": "normal",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "persist",
+      "pattern": "01",
+      "route": "reverse_loss",
+      "status": "reverse_delivery_lost"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": false,
+      "C_verdict": null,
+      "arm": "persist",
+      "pattern": "01",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": 1,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "persist",
+      "pattern": "01",
+      "route": "forward_loss",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": 1,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "silent",
+      "pattern": "01",
+      "route": "normal",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "silent",
+      "pattern": "01",
+      "route": "reverse_loss",
+      "status": "reverse_delivery_lost"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": false,
+      "C_verdict": null,
+      "arm": "silent",
+      "pattern": "01",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": 1,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "silent",
+      "pattern": "01",
+      "route": "forward_loss",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": 1,
+      "C_sensor": true,
+      "C_verdict": 1,
+      "arm": "current",
+      "pattern": "01",
+      "route": "normal",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": true,
+      "C_verdict": 1,
+      "arm": "current",
+      "pattern": "01",
+      "route": "reverse_loss",
+      "status": "reverse_delivery_lost"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": true,
+      "C_verdict": null,
+      "arm": "current",
+      "pattern": "01",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "current",
+      "pattern": "01",
+      "route": "forward_loss",
+      "status": "forward_custody_failed"
+    },
+    {
+      "A_credit": -1,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "persist",
+      "pattern": "01",
+      "route": "normal",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "persist",
+      "pattern": "01",
+      "route": "reverse_loss",
+      "status": "reverse_delivery_lost"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": true,
+      "C_verdict": null,
+      "arm": "persist",
+      "pattern": "01",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": -1,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "persist",
+      "pattern": "01",
+      "route": "forward_loss",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": -1,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "silent",
+      "pattern": "01",
+      "route": "normal",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "silent",
+      "pattern": "01",
+      "route": "reverse_loss",
+      "status": "reverse_delivery_lost"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": true,
+      "C_verdict": null,
+      "arm": "silent",
+      "pattern": "01",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": -1,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "silent",
+      "pattern": "01",
+      "route": "forward_loss",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "current",
+      "pattern": "01",
+      "route": "normal",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "current",
+      "pattern": "01",
+      "route": "reverse_loss",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "current",
+      "pattern": "01",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "current",
+      "pattern": "01",
+      "route": "forward_loss",
+      "status": "forward_custody_failed"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "persist",
+      "pattern": "01",
+      "route": "normal",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "persist",
+      "pattern": "01",
+      "route": "reverse_loss",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "persist",
+      "pattern": "01",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "persist",
+      "pattern": "01",
+      "route": "forward_loss",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "silent",
+      "pattern": "01",
+      "route": "normal",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "silent",
+      "pattern": "01",
+      "route": "reverse_loss",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "silent",
+      "pattern": "01",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "silent",
+      "pattern": "01",
+      "route": "forward_loss",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": 1,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "current",
+      "pattern": "10",
+      "route": "normal",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "current",
+      "pattern": "10",
+      "route": "reverse_loss",
+      "status": "reverse_delivery_lost"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": false,
+      "C_verdict": null,
+      "arm": "current",
+      "pattern": "10",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": 1,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "current",
+      "pattern": "10",
+      "route": "forward_loss",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": 1,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "persist",
+      "pattern": "10",
+      "route": "normal",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "persist",
+      "pattern": "10",
+      "route": "reverse_loss",
+      "status": "reverse_delivery_lost"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": false,
+      "C_verdict": null,
+      "arm": "persist",
+      "pattern": "10",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": 1,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "persist",
+      "pattern": "10",
+      "route": "forward_loss",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": 1,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "silent",
+      "pattern": "10",
+      "route": "normal",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "silent",
+      "pattern": "10",
+      "route": "reverse_loss",
+      "status": "reverse_delivery_lost"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": false,
+      "C_verdict": null,
+      "arm": "silent",
+      "pattern": "10",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": 1,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "silent",
+      "pattern": "10",
+      "route": "forward_loss",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": -1,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "current",
+      "pattern": "10",
+      "route": "normal",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "current",
+      "pattern": "10",
+      "route": "reverse_loss",
+      "status": "reverse_delivery_lost"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": true,
+      "C_verdict": null,
+      "arm": "current",
+      "pattern": "10",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": -1,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "current",
+      "pattern": "10",
+      "route": "forward_loss",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": -1,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "persist",
+      "pattern": "10",
+      "route": "normal",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "persist",
+      "pattern": "10",
+      "route": "reverse_loss",
+      "status": "reverse_delivery_lost"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": true,
+      "C_verdict": null,
+      "arm": "persist",
+      "pattern": "10",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": -1,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "persist",
+      "pattern": "10",
+      "route": "forward_loss",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": -1,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "silent",
+      "pattern": "10",
+      "route": "normal",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "silent",
+      "pattern": "10",
+      "route": "reverse_loss",
+      "status": "reverse_delivery_lost"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": true,
+      "C_verdict": null,
+      "arm": "silent",
+      "pattern": "10",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": -1,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "silent",
+      "pattern": "10",
+      "route": "forward_loss",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "current",
+      "pattern": "10",
+      "route": "normal",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "current",
+      "pattern": "10",
+      "route": "reverse_loss",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "current",
+      "pattern": "10",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "current",
+      "pattern": "10",
+      "route": "forward_loss",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "persist",
+      "pattern": "10",
+      "route": "normal",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "persist",
+      "pattern": "10",
+      "route": "reverse_loss",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "persist",
+      "pattern": "10",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "persist",
+      "pattern": "10",
+      "route": "forward_loss",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "silent",
+      "pattern": "10",
+      "route": "normal",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "silent",
+      "pattern": "10",
+      "route": "reverse_loss",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "silent",
+      "pattern": "10",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "silent",
+      "pattern": "10",
+      "route": "forward_loss",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": -1,
+      "C_sensor": false,
+      "C_verdict": -1,
+      "arm": "current",
+      "pattern": "11",
+      "route": "normal",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": false,
+      "C_verdict": -1,
+      "arm": "current",
+      "pattern": "11",
+      "route": "reverse_loss",
+      "status": "reverse_delivery_lost"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": false,
+      "C_verdict": null,
+      "arm": "current",
+      "pattern": "11",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "current",
+      "pattern": "11",
+      "route": "forward_loss",
+      "status": "forward_custody_failed"
+    },
+    {
+      "A_credit": -1,
+      "C_sensor": false,
+      "C_verdict": -1,
+      "arm": "persist",
+      "pattern": "11",
+      "route": "normal",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": false,
+      "C_verdict": -1,
+      "arm": "persist",
+      "pattern": "11",
+      "route": "reverse_loss",
+      "status": "reverse_delivery_lost"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": false,
+      "C_verdict": null,
+      "arm": "persist",
+      "pattern": "11",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "persist",
+      "pattern": "11",
+      "route": "forward_loss",
+      "status": "forward_custody_failed"
+    },
+    {
+      "A_credit": 1,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "silent",
+      "pattern": "11",
+      "route": "normal",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "silent",
+      "pattern": "11",
+      "route": "reverse_loss",
+      "status": "reverse_delivery_lost"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": false,
+      "C_verdict": null,
+      "arm": "silent",
+      "pattern": "11",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": 1,
+      "C_sensor": false,
+      "C_verdict": 1,
+      "arm": "silent",
+      "pattern": "11",
+      "route": "forward_loss",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": 1,
+      "C_sensor": true,
+      "C_verdict": 1,
+      "arm": "current",
+      "pattern": "11",
+      "route": "normal",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": true,
+      "C_verdict": 1,
+      "arm": "current",
+      "pattern": "11",
+      "route": "reverse_loss",
+      "status": "reverse_delivery_lost"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": true,
+      "C_verdict": null,
+      "arm": "current",
+      "pattern": "11",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "current",
+      "pattern": "11",
+      "route": "forward_loss",
+      "status": "forward_custody_failed"
+    },
+    {
+      "A_credit": 1,
+      "C_sensor": true,
+      "C_verdict": 1,
+      "arm": "persist",
+      "pattern": "11",
+      "route": "normal",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": true,
+      "C_verdict": 1,
+      "arm": "persist",
+      "pattern": "11",
+      "route": "reverse_loss",
+      "status": "reverse_delivery_lost"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": true,
+      "C_verdict": null,
+      "arm": "persist",
+      "pattern": "11",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "persist",
+      "pattern": "11",
+      "route": "forward_loss",
+      "status": "forward_custody_failed"
+    },
+    {
+      "A_credit": -1,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "silent",
+      "pattern": "11",
+      "route": "normal",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "silent",
+      "pattern": "11",
+      "route": "reverse_loss",
+      "status": "reverse_delivery_lost"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": true,
+      "C_verdict": null,
+      "arm": "silent",
+      "pattern": "11",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": -1,
+      "C_sensor": true,
+      "C_verdict": -1,
+      "arm": "silent",
+      "pattern": "11",
+      "route": "forward_loss",
+      "status": "C_authored_credit_delivered"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "current",
+      "pattern": "11",
+      "route": "normal",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "current",
+      "pattern": "11",
+      "route": "reverse_loss",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "current",
+      "pattern": "11",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "current",
+      "pattern": "11",
+      "route": "forward_loss",
+      "status": "forward_custody_failed"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "persist",
+      "pattern": "11",
+      "route": "normal",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "persist",
+      "pattern": "11",
+      "route": "reverse_loss",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "persist",
+      "pattern": "11",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "persist",
+      "pattern": "11",
+      "route": "forward_loss",
+      "status": "forward_custody_failed"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "silent",
+      "pattern": "11",
+      "route": "normal",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "silent",
+      "pattern": "11",
+      "route": "reverse_loss",
+      "status": "C_evidence_missing"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "silent",
+      "pattern": "11",
+      "route": "missing_marker",
+      "status": "decision_custody_failed"
+    },
+    {
+      "A_credit": null,
+      "C_sensor": null,
+      "C_verdict": null,
+      "arm": "silent",
+      "pattern": "11",
+      "route": "forward_loss",
+      "status": "C_evidence_missing"
+    }
+  ],
+  "claims_excluded": [
+    "no independent physical C sensor custody",
+    "threshold adapter computes CO2 bin at host boundary",
+    "no opaque signed native C identity, no native BV credit",
+    "no native policy update or reinforcement learning",
+    "synthetic truth-table, not new unseen external evaluation",
+    "sender/reverse route omission in research A1b case is not real packet loss"
+  ],
+  "schema": "spk-v5-t3h-c-authored-reverse-credit/research-v0",
+  "status": "C_OWNED_A1B_REVERSE_CREDIT_RESEARCH_PASS",
+  "statuses": {
+    "C_authored_credit_delivered": 42,
+    "C_evidence_missing": 33,
+    "decision_custody_failed": 36,
+    "forward_custody_failed": 9,
+    "reverse_delivery_lost": 24
+  }
+}

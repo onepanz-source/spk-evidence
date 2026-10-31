@@ -1,0 +1,33 @@
+{
+  "frozen_contracts_untouched": true,
+  "native_rl": false,
+  "new_files": [
+    "spk_v5_research/island_calendar_stratification_v5t3f.py",
+    "search/spk_v5_t3f_day_stratification.py",
+    "tests/test_spk_v5_t3f_day_stratification.py",
+    "search/spk_v5_t3f_day_stratification_gate.sh",
+    "docs/spk-v5-t3f-calendar-stratified-falsification.md",
+    "docs/spk-v5-t3f-original-uci-reference.json",
+    "docs/spk-v5-t3f-manifest.json"
+  ],
+  "new_reference_sha256": "37ff92e8e236ed9921888d9940cd9c377016dfffcfe03b7f2d70f2c5e60fab98",
+  "no_independent_statistical_unit_claim": true,
+  "original_source_file_sha256": {
+    "datatest.txt": "1b92c7c1b2838963464fa891a610cf3c5db4becb7189189b29b330107a584c7f",
+    "datatest2.txt": "d026d1bd5aeccd4aff4f3b3710d48e40613bd5fc370db7e61bbdcaa50d985095",
+    "datatraining.txt": "b2c4d0ce2b9e4e453c476f7125ef31aeec2d1f5c7f5572d0e80de3df6521ab56"
+  },
+  "physical_two_measurement_A1b_truth_table": true,
+  "pins_sha256": {
+    "docs/spk-v5-t3e-manifest.json": "e42dbf487744e6f30a6f489ceaba05c858f1c9be1d0e6ee572868d02d39b4ffd",
+    "docs/spk-v5-t3f-calendar-stratified-falsification.md": "75677f1c30bf4611a0acaaca1ba72b582921ffc403b75bc84bb10c854d9f38e0",
+    "docs/spk-v5-t3f-original-uci-reference.json": "37ff92e8e236ed9921888d9940cd9c377016dfffcfe03b7f2d70f2c5e60fab98",
+    "search/spk_v5_t3f_day_stratification.py": "2897d771679892a44aebd20ee4be4c31cab90f2bcba93b1c59b13d593a138d22",
+    "search/spk_v5_t3f_day_stratification_gate.sh": "9f5669a4fa29d5f22869f54ec5ac7ad4061f4a03ca9d30ff85a4ab2b0fbb7e88",
+    "spk_v5_research/island_calendar_stratification_v5t3f.py": "fe54762bb1a6fcfdb3dc1b841226fb1a5f74cee3d16a6e50fa267dbc2bfdf990",
+    "tests/test_spk_v5_t3f_day_stratification.py": "2ce89fd2b301423e15348be5897c3393e9f2b70f0e86860338598295f8afe7de"
+  },
+  "predecessor_reference_sha256": "b6e4ca2752fdd9df6be7e0247b4c8474dbe5a6f4e7dca1c169ecac10430a4833",
+  "public_not_blind": true,
+  "schema": "spk-v5-t3f-posthoc-calendar-stratification-manifest/v0"
+}

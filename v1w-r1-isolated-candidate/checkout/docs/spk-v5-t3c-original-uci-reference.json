@@ -1,0 +1,2169 @@
+{
+  "datasets": {
+    "earlier_than_training_NOT_FORWARD_HOLDOUT": {
+      "cohorts_nonindependent_time_series": true,
+      "disjoint_8x60_stratification": [
+        {
+          "id": 0,
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.86192714,
+              "error_rate": 0.15,
+              "errors": 9,
+              "fn": 2,
+              "fp": 7,
+              "negative": 37,
+              "observations": 60,
+              "positive": 23,
+              "tn": 30,
+              "tp": 21
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.38333333,
+              "errors": 23,
+              "fn": 23,
+              "fp": 0,
+              "negative": 37,
+              "observations": 60,
+              "positive": 23,
+              "tn": 37,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.95652174,
+              "error_rate": 0.03333333,
+              "errors": 2,
+              "fn": 2,
+              "fp": 0,
+              "negative": 37,
+              "observations": 60,
+              "positive": 23,
+              "tn": 37,
+              "tp": 21
+            }
+          },
+          "n": 60
+        },
+        {
+          "id": 1,
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.8625,
+              "error_rate": 0.16666667,
+              "errors": 10,
+              "fn": 1,
+              "fp": 9,
+              "negative": 40,
+              "observations": 60,
+              "positive": 20,
+              "tn": 31,
+              "tp": 19
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.33333333,
+              "errors": 20,
+              "fn": 20,
+              "fp": 0,
+              "negative": 40,
+              "observations": 60,
+              "positive": 20,
+              "tn": 40,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.9625,
+              "error_rate": 0.03333333,
+              "errors": 2,
+              "fn": 1,
+              "fp": 1,
+              "negative": 40,
+              "observations": 60,
+              "positive": 20,
+              "tn": 39,
+              "tp": 19
+            }
+          },
+          "n": 60
+        },
+        {
+          "id": 2,
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.87200957,
+              "error_rate": 0.15,
+              "errors": 9,
+              "fn": 1,
+              "fp": 8,
+              "negative": 38,
+              "observations": 60,
+              "positive": 22,
+              "tn": 30,
+              "tp": 21
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.36666667,
+              "errors": 22,
+              "fn": 22,
+              "fp": 0,
+              "negative": 38,
+              "observations": 60,
+              "positive": 22,
+              "tn": 38,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.97727273,
+              "error_rate": 0.01666667,
+              "errors": 1,
+              "fn": 1,
+              "fp": 0,
+              "negative": 38,
+              "observations": 60,
+              "positive": 22,
+              "tn": 38,
+              "tp": 21
+            }
+          },
+          "n": 60
+        },
+        {
+          "id": 3,
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.84841363,
+              "error_rate": 0.16666667,
+              "errors": 10,
+              "fn": 2,
+              "fp": 8,
+              "negative": 37,
+              "observations": 60,
+              "positive": 23,
+              "tn": 29,
+              "tp": 21
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.38333333,
+              "errors": 23,
+              "fn": 23,
+              "fp": 0,
+              "negative": 37,
+              "observations": 60,
+              "positive": 23,
+              "tn": 37,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.94300823,
+              "error_rate": 0.05,
+              "errors": 3,
+              "fn": 2,
+              "fp": 1,
+              "negative": 37,
+              "observations": 60,
+              "positive": 23,
+              "tn": 36,
+              "tp": 21
+            }
+          },
+          "n": 60
+        },
+        {
+          "id": 4,
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.875,
+              "error_rate": 0.16666667,
+              "errors": 10,
+              "fn": 0,
+              "fp": 10,
+              "negative": 40,
+              "observations": 60,
+              "positive": 20,
+              "tn": 30,
+              "tp": 20
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.33333333,
+              "errors": 20,
+              "fn": 20,
+              "fp": 0,
+              "negative": 40,
+              "observations": 60,
+              "positive": 20,
+              "tn": 40,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.9625,
+              "error_rate": 0.05,
+              "errors": 3,
+              "fn": 0,
+              "fp": 3,
+              "negative": 40,
+              "observations": 60,
+              "positive": 20,
+              "tn": 37,
+              "tp": 20
+            }
+          },
+          "n": 60
+        },
+        {
+          "id": 5,
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.85885167,
+              "error_rate": 0.16666667,
+              "errors": 10,
+              "fn": 1,
+              "fp": 9,
+              "negative": 38,
+              "observations": 60,
+              "positive": 22,
+              "tn": 29,
+              "tp": 21
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.36666667,
+              "errors": 22,
+              "fn": 22,
+              "fp": 0,
+              "negative": 38,
+              "observations": 60,
+              "positive": 22,
+              "tn": 38,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.95095694,
+              "error_rate": 0.05,
+              "errors": 3,
+              "fn": 1,
+              "fp": 2,
+              "negative": 38,
+              "observations": 60,
+              "positive": 22,
+              "tn": 36,
+              "tp": 21
+            }
+          },
+          "n": 60
+        },
+        {
+          "id": 6,
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.84798535,
+              "error_rate": 0.18333333,
+              "errors": 11,
+              "fn": 1,
+              "fp": 10,
+              "negative": 39,
+              "observations": 60,
+              "positive": 21,
+              "tn": 29,
+              "tp": 20
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.35,
+              "errors": 21,
+              "fn": 21,
+              "fp": 0,
+              "negative": 39,
+              "observations": 60,
+              "positive": 21,
+              "tn": 39,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.95054945,
+              "error_rate": 0.05,
+              "errors": 3,
+              "fn": 1,
+              "fp": 2,
+              "negative": 39,
+              "observations": 60,
+              "positive": 21,
+              "tn": 37,
+              "tp": 20
+            }
+          },
+          "n": 60
+        },
+        {
+          "id": 7,
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.8492823,
+              "error_rate": 0.16666667,
+              "errors": 10,
+              "fn": 2,
+              "fp": 8,
+              "negative": 38,
+              "observations": 60,
+              "positive": 22,
+              "tn": 30,
+              "tp": 20
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.36666667,
+              "errors": 22,
+              "fn": 22,
+              "fp": 0,
+              "negative": 38,
+              "observations": 60,
+              "positive": 22,
+              "tn": 38,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.92822967,
+              "error_rate": 0.06666667,
+              "errors": 4,
+              "fn": 2,
+              "fp": 2,
+              "negative": 38,
+              "observations": 60,
+              "positive": 22,
+              "tn": 36,
+              "tp": 20
+            }
+          },
+          "n": 60
+        }
+      ],
+      "exact_static_equivalence_all_rows": true,
+      "first_stamp": "2015-02-02 14:19:00",
+      "full_native_A1b_candidate_audit": {
+        "overemit": {
+          "balanced_accuracy": 0.86037673,
+          "error_rate": 0.16097561,
+          "errors": 429,
+          "fn": 59,
+          "fp": 370,
+          "negative": 1693,
+          "observations": 2665,
+          "positive": 972,
+          "tn": 1323,
+          "tp": 913
+        },
+        "silent": {
+          "balanced_accuracy": 0.5,
+          "error_rate": 0.36472795,
+          "errors": 972,
+          "fn": 972,
+          "fp": 0,
+          "negative": 1693,
+          "observations": 2665,
+          "positive": 972,
+          "tn": 1693,
+          "tp": 0
+        },
+        "temporal": {
+          "balanced_accuracy": 0.95576952,
+          "error_rate": 0.03977486,
+          "errors": 106,
+          "fn": 59,
+          "fp": 47,
+          "negative": 1693,
+          "observations": 2665,
+          "positive": 972,
+          "tn": 1646,
+          "tp": 913
+        }
+      },
+      "last_stamp": "2015-02-04 10:43:00",
+      "paired_error_disagreement": {
+        "overemit": {
+          "temporal_correct_challenger_wrong": 323,
+          "temporal_wrong_challenger_correct": 0
+        },
+        "silent": {
+          "temporal_correct_challenger_wrong": 913,
+          "temporal_wrong_challenger_correct": 47
+        }
+      },
+      "per_calendar_day": [
+        {
+          "day": "2015-02-02",
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.86904762,
+              "error_rate": 0.17039587,
+              "errors": 99,
+              "fn": 0,
+              "fp": 99,
+              "negative": 378,
+              "observations": 581,
+              "positive": 203,
+              "tn": 279,
+              "tp": 203
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.34939759,
+              "errors": 203,
+              "fn": 203,
+              "fp": 0,
+              "negative": 378,
+              "observations": 581,
+              "positive": 203,
+              "tn": 378,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.96957672,
+              "error_rate": 0.03958692,
+              "errors": 23,
+              "fn": 0,
+              "fp": 23,
+              "negative": 378,
+              "observations": 581,
+              "positive": 203,
+              "tn": 355,
+              "tp": 203
+            }
+          },
+          "sample_count": 581
+        },
+        {
+          "day": "2015-02-03",
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.81704148,
+              "error_rate": 0.20416667,
+              "errors": 294,
+              "fn": 34,
+              "fp": 260,
+              "negative": 841,
+              "observations": 1440,
+              "positive": 599,
+              "tn": 581,
+              "tp": 565
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.41597222,
+              "errors": 599,
+              "fn": 599,
+              "fp": 0,
+              "negative": 841,
+              "observations": 1440,
+              "positive": 599,
+              "tn": 841,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.96389047,
+              "error_rate": 0.03263889,
+              "errors": 47,
+              "fn": 34,
+              "fp": 13,
+              "negative": 841,
+              "observations": 1440,
+              "positive": 599,
+              "tn": 828,
+              "tp": 565
+            }
+          },
+          "sample_count": 1440
+        },
+        {
+          "day": "2015-02-04",
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.91486721,
+              "error_rate": 0.05590062,
+              "errors": 36,
+              "fn": 25,
+              "fp": 11,
+              "negative": 474,
+              "observations": 644,
+              "positive": 170,
+              "tn": 463,
+              "tp": 145
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.26397516,
+              "errors": 170,
+              "fn": 170,
+              "fp": 0,
+              "negative": 474,
+              "observations": 644,
+              "positive": 170,
+              "tn": 474,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.91486721,
+              "error_rate": 0.05590062,
+              "errors": 36,
+              "fn": 25,
+              "fp": 11,
+              "negative": 474,
+              "observations": 644,
+              "positive": 170,
+              "tn": 463,
+              "tp": 145
+            }
+          },
+          "sample_count": 644
+        }
+      ],
+      "replicated_original_T3b_60_sampling": {
+        "overemit": {
+          "balanced_accuracy": 0.86192714,
+          "error_rate": 0.15,
+          "errors": 9,
+          "fn": 2,
+          "fp": 7,
+          "negative": 37,
+          "observations": 60,
+          "positive": 23,
+          "tn": 30,
+          "tp": 21
+        },
+        "silent": {
+          "balanced_accuracy": 0.5,
+          "error_rate": 0.38333333,
+          "errors": 23,
+          "fn": 23,
+          "fp": 0,
+          "negative": 37,
+          "observations": 60,
+          "positive": 23,
+          "tn": 37,
+          "tp": 0
+        },
+        "temporal": {
+          "balanced_accuracy": 0.95652174,
+          "error_rate": 0.03333333,
+          "errors": 2,
+          "fn": 2,
+          "fp": 0,
+          "negative": 37,
+          "observations": 60,
+          "positive": 23,
+          "tn": 37,
+          "tp": 21
+        }
+      },
+      "source_filename": "datatest.txt",
+      "source_rows": 2665,
+      "static_sensors_auditor_only": {
+        "light_and_co2": {
+          "balanced_accuracy": 0.95576952,
+          "error_rate": 0.03977486,
+          "errors": 106,
+          "fn": 59,
+          "fp": 47,
+          "negative": 1693,
+          "observations": 2665,
+          "positive": 972,
+          "tn": 1646,
+          "tp": 913
+        },
+        "light_only": {
+          "balanced_accuracy": 0.98346131,
+          "error_rate": 0.02101313,
+          "errors": 56,
+          "fn": 0,
+          "fp": 56,
+          "negative": 1693,
+          "observations": 2665,
+          "positive": 972,
+          "tn": 1637,
+          "tp": 972
+        }
+      }
+    },
+    "later_than_training_PUBLIC_HOLDOUT": {
+      "cohorts_nonindependent_time_series": true,
+      "disjoint_8x60_stratification": [
+        {
+          "id": 0,
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.63993453,
+              "error_rate": 0.43333333,
+              "errors": 26,
+              "fn": 3,
+              "fp": 23,
+              "negative": 47,
+              "observations": 60,
+              "positive": 13,
+              "tn": 24,
+              "tp": 10
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.21666667,
+              "errors": 13,
+              "fn": 13,
+              "fp": 0,
+              "negative": 47,
+              "observations": 60,
+              "positive": 13,
+              "tn": 47,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.87397709,
+              "error_rate": 0.06666667,
+              "errors": 4,
+              "fn": 3,
+              "fp": 1,
+              "negative": 47,
+              "observations": 60,
+              "positive": 13,
+              "tn": 46,
+              "tp": 10
+            }
+          },
+          "n": 60
+        },
+        {
+          "id": 1,
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.73602484,
+              "error_rate": 0.36666667,
+              "errors": 22,
+              "fn": 1,
+              "fp": 21,
+              "negative": 46,
+              "observations": 60,
+              "positive": 14,
+              "tn": 25,
+              "tp": 13
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.23333333,
+              "errors": 14,
+              "fn": 14,
+              "fp": 0,
+              "negative": 46,
+              "observations": 60,
+              "positive": 14,
+              "tn": 46,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.95341615,
+              "error_rate": 0.03333333,
+              "errors": 2,
+              "fn": 1,
+              "fp": 1,
+              "negative": 46,
+              "observations": 60,
+              "positive": 14,
+              "tn": 45,
+              "tp": 13
+            }
+          },
+          "n": 60
+        },
+        {
+          "id": 2,
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.72916667,
+              "error_rate": 0.38333333,
+              "errors": 23,
+              "fn": 1,
+              "fp": 22,
+              "negative": 48,
+              "observations": 60,
+              "positive": 12,
+              "tn": 26,
+              "tp": 11
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.2,
+              "errors": 12,
+              "fn": 12,
+              "fp": 0,
+              "negative": 48,
+              "observations": 60,
+              "positive": 12,
+              "tn": 48,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.92708333,
+              "error_rate": 0.06666667,
+              "errors": 4,
+              "fn": 1,
+              "fp": 3,
+              "negative": 48,
+              "observations": 60,
+              "positive": 12,
+              "tn": 45,
+              "tp": 11
+            }
+          },
+          "n": 60
+        },
+        {
+          "id": 3,
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.70031056,
+              "error_rate": 0.38333333,
+              "errors": 23,
+              "fn": 2,
+              "fp": 21,
+              "negative": 46,
+              "observations": 60,
+              "positive": 14,
+              "tn": 25,
+              "tp": 12
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.23333333,
+              "errors": 14,
+              "fn": 14,
+              "fp": 0,
+              "negative": 46,
+              "observations": 60,
+              "positive": 14,
+              "tn": 46,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.9068323,
+              "error_rate": 0.06666667,
+              "errors": 4,
+              "fn": 2,
+              "fp": 2,
+              "negative": 46,
+              "observations": 60,
+              "positive": 14,
+              "tn": 44,
+              "tp": 12
+            }
+          },
+          "n": 60
+        },
+        {
+          "id": 4,
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.66666667,
+              "error_rate": 0.43333333,
+              "errors": 26,
+              "fn": 2,
+              "fp": 24,
+              "negative": 48,
+              "observations": 60,
+              "positive": 12,
+              "tn": 24,
+              "tp": 10
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.2,
+              "errors": 12,
+              "fn": 12,
+              "fp": 0,
+              "negative": 48,
+              "observations": 60,
+              "positive": 12,
+              "tn": 48,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.84375,
+              "error_rate": 0.1,
+              "errors": 6,
+              "fn": 3,
+              "fp": 3,
+              "negative": 48,
+              "observations": 60,
+              "positive": 12,
+              "tn": 45,
+              "tp": 9
+            }
+          },
+          "n": 60
+        },
+        {
+          "id": 5,
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.625,
+              "error_rate": 0.45,
+              "errors": 27,
+              "fn": 3,
+              "fp": 24,
+              "negative": 48,
+              "observations": 60,
+              "positive": 12,
+              "tn": 24,
+              "tp": 9
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.2,
+              "errors": 12,
+              "fn": 12,
+              "fp": 0,
+              "negative": 48,
+              "observations": 60,
+              "positive": 12,
+              "tn": 48,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.84375,
+              "error_rate": 0.1,
+              "errors": 6,
+              "fn": 3,
+              "fp": 3,
+              "negative": 48,
+              "observations": 60,
+              "positive": 12,
+              "tn": 45,
+              "tp": 9
+            }
+          },
+          "n": 60
+        },
+        {
+          "id": 6,
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.60416667,
+              "error_rate": 0.48333333,
+              "errors": 29,
+              "fn": 3,
+              "fp": 26,
+              "negative": 48,
+              "observations": 60,
+              "positive": 12,
+              "tn": 22,
+              "tp": 9
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.2,
+              "errors": 12,
+              "fn": 12,
+              "fp": 0,
+              "negative": 48,
+              "observations": 60,
+              "positive": 12,
+              "tn": 48,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.85416667,
+              "error_rate": 0.08333333,
+              "errors": 5,
+              "fn": 3,
+              "fp": 2,
+              "negative": 48,
+              "observations": 60,
+              "positive": 12,
+              "tn": 46,
+              "tp": 9
+            }
+          },
+          "n": 60
+        },
+        {
+          "id": 7,
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.62929624,
+              "error_rate": 0.45,
+              "errors": 27,
+              "fn": 3,
+              "fp": 24,
+              "negative": 47,
+              "observations": 60,
+              "positive": 13,
+              "tn": 23,
+              "tp": 10
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.21666667,
+              "errors": 13,
+              "fn": 13,
+              "fp": 0,
+              "negative": 47,
+              "observations": 60,
+              "positive": 13,
+              "tn": 47,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.87397709,
+              "error_rate": 0.06666667,
+              "errors": 4,
+              "fn": 3,
+              "fp": 1,
+              "negative": 47,
+              "observations": 60,
+              "positive": 13,
+              "tn": 46,
+              "tp": 10
+            }
+          },
+          "n": 60
+        }
+      ],
+      "exact_static_equivalence_all_rows": true,
+      "first_stamp": "2015-02-11 14:48:00",
+      "full_native_A1b_candidate_audit": {
+        "overemit": {
+          "balanced_accuracy": 0.67843656,
+          "error_rate": 0.41745283,
+          "errors": 4071,
+          "fn": 320,
+          "fp": 3751,
+          "negative": 7703,
+          "observations": 9752,
+          "positive": 2049,
+          "tn": 3952,
+          "tp": 1729
+        },
+        "silent": {
+          "balanced_accuracy": 0.5,
+          "error_rate": 0.21011075,
+          "errors": 2049,
+          "fn": 2049,
+          "fp": 0,
+          "negative": 7703,
+          "observations": 9752,
+          "positive": 2049,
+          "tn": 7703,
+          "tp": 0
+        },
+        "temporal": {
+          "balanced_accuracy": 0.89927523,
+          "error_rate": 0.06829368,
+          "errors": 666,
+          "fn": 321,
+          "fp": 345,
+          "negative": 7703,
+          "observations": 9752,
+          "positive": 2049,
+          "tn": 7358,
+          "tp": 1728
+        }
+      },
+      "last_stamp": "2015-02-18 09:19:00",
+      "paired_error_disagreement": {
+        "overemit": {
+          "temporal_correct_challenger_wrong": 3406,
+          "temporal_wrong_challenger_correct": 1
+        },
+        "silent": {
+          "temporal_correct_challenger_wrong": 1728,
+          "temporal_wrong_challenger_correct": 345
+        }
+      },
+      "per_calendar_day": [
+        {
+          "day": "2015-02-11",
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.93755184,
+              "error_rate": 0.06702899,
+              "errors": 37,
+              "fn": 9,
+              "fp": 28,
+              "negative": 338,
+              "observations": 552,
+              "positive": 214,
+              "tn": 310,
+              "tp": 205
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.38768116,
+              "errors": 214,
+              "fn": 214,
+              "fp": 0,
+              "negative": 338,
+              "observations": 552,
+              "positive": 214,
+              "tn": 338,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.97453409,
+              "error_rate": 0.02173913,
+              "errors": 12,
+              "fn": 9,
+              "fp": 3,
+              "negative": 338,
+              "observations": 552,
+              "positive": 214,
+              "tn": 335,
+              "tp": 205
+            }
+          },
+          "sample_count": 552
+        },
+        {
+          "day": "2015-02-12",
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.74466117,
+              "error_rate": 0.30763889,
+              "errors": 443,
+              "fn": 43,
+              "fp": 400,
+              "negative": 1196,
+              "observations": 1440,
+              "positive": 244,
+              "tn": 796,
+              "tp": 201
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.16944444,
+              "errors": 244,
+              "fn": 244,
+              "fp": 0,
+              "negative": 1196,
+              "observations": 1440,
+              "positive": 244,
+              "tn": 1196,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.84750397,
+              "error_rate": 0.13680556,
+              "errors": 197,
+              "fn": 43,
+              "fp": 154,
+              "negative": 1196,
+              "observations": 1440,
+              "positive": 244,
+              "tn": 1042,
+              "tp": 201
+            }
+          },
+          "sample_count": 1440
+        },
+        {
+          "day": "2015-02-13",
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.72398807,
+              "error_rate": 0.19236111,
+              "errors": 277,
+              "fn": 268,
+              "fp": 9,
+              "negative": 946,
+              "observations": 1440,
+              "positive": 494,
+              "tn": 937,
+              "tp": 226
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.34305556,
+              "errors": 494,
+              "fn": 494,
+              "fp": 0,
+              "negative": 946,
+              "observations": 1440,
+              "positive": 494,
+              "tn": 946,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.72398807,
+              "error_rate": 0.19236111,
+              "errors": 277,
+              "fn": 268,
+              "fp": 9,
+              "negative": 946,
+              "observations": 1440,
+              "positive": 494,
+              "tn": 937,
+              "tp": 226
+            }
+          },
+          "sample_count": 1440
+        },
+        {
+          "day": "2015-02-14",
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": null,
+              "error_rate": 0.0,
+              "errors": 0,
+              "fn": 0,
+              "fp": 0,
+              "negative": 1440,
+              "observations": 1440,
+              "positive": 0,
+              "tn": 1440,
+              "tp": 0
+            },
+            "silent": {
+              "balanced_accuracy": null,
+              "error_rate": 0.0,
+              "errors": 0,
+              "fn": 0,
+              "fp": 0,
+              "negative": 1440,
+              "observations": 1440,
+              "positive": 0,
+              "tn": 1440,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": null,
+              "error_rate": 0.0,
+              "errors": 0,
+              "fn": 0,
+              "fp": 0,
+              "negative": 1440,
+              "observations": 1440,
+              "positive": 0,
+              "tn": 1440,
+              "tp": 0
+            }
+          },
+          "sample_count": 1440
+        },
+        {
+          "day": "2015-02-15",
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": null,
+              "error_rate": 0.67430556,
+              "errors": 971,
+              "fn": 0,
+              "fp": 971,
+              "negative": 1440,
+              "observations": 1440,
+              "positive": 0,
+              "tn": 469,
+              "tp": 0
+            },
+            "silent": {
+              "balanced_accuracy": null,
+              "error_rate": 0.0,
+              "errors": 0,
+              "fn": 0,
+              "fp": 0,
+              "negative": 1440,
+              "observations": 1440,
+              "positive": 0,
+              "tn": 1440,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": null,
+              "error_rate": 0.11180556,
+              "errors": 161,
+              "fn": 0,
+              "fp": 161,
+              "negative": 1440,
+              "observations": 1440,
+              "positive": 0,
+              "tn": 1279,
+              "tp": 0
+            }
+          },
+          "sample_count": 1440
+        },
+        {
+          "day": "2015-02-16",
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.61736111,
+              "errors": 889,
+              "fn": 0,
+              "fp": 889,
+              "negative": 889,
+              "observations": 1440,
+              "positive": 551,
+              "tn": 0,
+              "tp": 551
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.38263889,
+              "errors": 551,
+              "fn": 551,
+              "fp": 0,
+              "negative": 889,
+              "observations": 1440,
+              "positive": 551,
+              "tn": 889,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.99325084,
+              "error_rate": 0.00833333,
+              "errors": 12,
+              "fn": 0,
+              "fp": 12,
+              "negative": 889,
+              "observations": 1440,
+              "positive": 551,
+              "tn": 877,
+              "tp": 551
+            }
+          },
+          "sample_count": 1440
+        },
+        {
+          "day": "2015-02-17",
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.62708333,
+              "errors": 903,
+              "fn": 0,
+              "fp": 903,
+              "negative": 903,
+              "observations": 1440,
+              "positive": 537,
+              "tn": 0,
+              "tp": 537
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.37291667,
+              "errors": 537,
+              "fn": 537,
+              "fp": 0,
+              "negative": 903,
+              "observations": 1440,
+              "positive": 537,
+              "tn": 903,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.99574664,
+              "error_rate": 0.00486111,
+              "errors": 7,
+              "fn": 1,
+              "fp": 6,
+              "negative": 903,
+              "observations": 1440,
+              "positive": 537,
+              "tn": 897,
+              "tp": 536
+            }
+          },
+          "sample_count": 1440
+        },
+        {
+          "day": "2015-02-18",
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.98392857,
+              "errors": 551,
+              "fn": 0,
+              "fp": 551,
+              "negative": 551,
+              "observations": 560,
+              "positive": 9,
+              "tn": 0,
+              "tp": 9
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.01607143,
+              "errors": 9,
+              "fn": 9,
+              "fp": 0,
+              "negative": 551,
+              "observations": 560,
+              "positive": 9,
+              "tn": 551,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 1.0,
+              "error_rate": 0.0,
+              "errors": 0,
+              "fn": 0,
+              "fp": 0,
+              "negative": 551,
+              "observations": 560,
+              "positive": 9,
+              "tn": 551,
+              "tp": 9
+            }
+          },
+          "sample_count": 560
+        }
+      ],
+      "replicated_original_T3b_60_sampling": {
+        "overemit": {
+          "balanced_accuracy": 0.63993453,
+          "error_rate": 0.43333333,
+          "errors": 26,
+          "fn": 3,
+          "fp": 23,
+          "negative": 47,
+          "observations": 60,
+          "positive": 13,
+          "tn": 24,
+          "tp": 10
+        },
+        "silent": {
+          "balanced_accuracy": 0.5,
+          "error_rate": 0.21666667,
+          "errors": 13,
+          "fn": 13,
+          "fp": 0,
+          "negative": 47,
+          "observations": 60,
+          "positive": 13,
+          "tn": 47,
+          "tp": 0
+        },
+        "temporal": {
+          "balanced_accuracy": 0.87397709,
+          "error_rate": 0.06666667,
+          "errors": 4,
+          "fn": 3,
+          "fp": 1,
+          "negative": 47,
+          "observations": 60,
+          "positive": 13,
+          "tn": 46,
+          "tp": 10
+        }
+      },
+      "source_filename": "datatest2.txt",
+      "source_rows": 9752,
+      "static_sensors_auditor_only": {
+        "light_and_co2": {
+          "balanced_accuracy": 0.89927523,
+          "error_rate": 0.06829368,
+          "errors": 666,
+          "fn": 321,
+          "fp": 345,
+          "negative": 7703,
+          "observations": 9752,
+          "positive": 2049,
+          "tn": 7358,
+          "tp": 1728
+        },
+        "light_only": {
+          "balanced_accuracy": 0.97241091,
+          "error_rate": 0.04245283,
+          "errors": 414,
+          "fn": 4,
+          "fp": 410,
+          "negative": 7703,
+          "observations": 9752,
+          "positive": 2049,
+          "tn": 7293,
+          "tp": 2045
+        }
+      }
+    },
+    "training_full_posthoc_DIAGNOSTIC_ONLY": {
+      "cohorts_nonindependent_time_series": true,
+      "disjoint_8x60_stratification": [
+        {
+          "id": 0,
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.91898527,
+              "error_rate": 0.08333333,
+              "errors": 5,
+              "fn": 1,
+              "fp": 4,
+              "negative": 47,
+              "observations": 60,
+              "positive": 13,
+              "tn": 43,
+              "tp": 12
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.21666667,
+              "errors": 13,
+              "fn": 13,
+              "fp": 0,
+              "negative": 47,
+              "observations": 60,
+              "positive": 13,
+              "tn": 47,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.96153846,
+              "error_rate": 0.01666667,
+              "errors": 1,
+              "fn": 1,
+              "fp": 0,
+              "negative": 47,
+              "observations": 60,
+              "positive": 13,
+              "tn": 47,
+              "tp": 12
+            }
+          },
+          "n": 60
+        },
+        {
+          "id": 1,
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.8314239,
+              "error_rate": 0.13333333,
+              "errors": 8,
+              "fn": 3,
+              "fp": 5,
+              "negative": 47,
+              "observations": 60,
+              "positive": 13,
+              "tn": 42,
+              "tp": 10
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.21666667,
+              "errors": 13,
+              "fn": 13,
+              "fp": 0,
+              "negative": 47,
+              "observations": 60,
+              "positive": 13,
+              "tn": 47,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.88461538,
+              "error_rate": 0.05,
+              "errors": 3,
+              "fn": 3,
+              "fp": 0,
+              "negative": 47,
+              "observations": 60,
+              "positive": 13,
+              "tn": 47,
+              "tp": 10
+            }
+          },
+          "n": 60
+        },
+        {
+          "id": 2,
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.93167702,
+              "error_rate": 0.06666667,
+              "errors": 4,
+              "fn": 1,
+              "fp": 3,
+              "negative": 46,
+              "observations": 60,
+              "positive": 14,
+              "tn": 43,
+              "tp": 13
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.23333333,
+              "errors": 14,
+              "fn": 14,
+              "fp": 0,
+              "negative": 46,
+              "observations": 60,
+              "positive": 14,
+              "tn": 46,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.96428571,
+              "error_rate": 0.01666667,
+              "errors": 1,
+              "fn": 1,
+              "fp": 0,
+              "negative": 46,
+              "observations": 60,
+              "positive": 14,
+              "tn": 46,
+              "tp": 13
+            }
+          },
+          "n": 60
+        },
+        {
+          "id": 3,
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.95744681,
+              "error_rate": 0.06666667,
+              "errors": 4,
+              "fn": 0,
+              "fp": 4,
+              "negative": 47,
+              "observations": 60,
+              "positive": 13,
+              "tn": 43,
+              "tp": 13
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.21666667,
+              "errors": 13,
+              "fn": 13,
+              "fp": 0,
+              "negative": 47,
+              "observations": 60,
+              "positive": 13,
+              "tn": 47,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 1.0,
+              "error_rate": 0.0,
+              "errors": 0,
+              "fn": 0,
+              "fp": 0,
+              "negative": 47,
+              "observations": 60,
+              "positive": 13,
+              "tn": 47,
+              "tp": 13
+            }
+          },
+          "n": 60
+        },
+        {
+          "id": 4,
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.94791667,
+              "error_rate": 0.08333333,
+              "errors": 5,
+              "fn": 0,
+              "fp": 5,
+              "negative": 48,
+              "observations": 60,
+              "positive": 12,
+              "tn": 43,
+              "tp": 12
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.2,
+              "errors": 12,
+              "fn": 12,
+              "fp": 0,
+              "negative": 48,
+              "observations": 60,
+              "positive": 12,
+              "tn": 48,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.98958333,
+              "error_rate": 0.01666667,
+              "errors": 1,
+              "fn": 0,
+              "fp": 1,
+              "negative": 48,
+              "observations": 60,
+              "positive": 12,
+              "tn": 47,
+              "tp": 12
+            }
+          },
+          "n": 60
+        },
+        {
+          "id": 5,
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.91898527,
+              "error_rate": 0.08333333,
+              "errors": 5,
+              "fn": 1,
+              "fp": 4,
+              "negative": 47,
+              "observations": 60,
+              "positive": 13,
+              "tn": 43,
+              "tp": 12
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.21666667,
+              "errors": 13,
+              "fn": 13,
+              "fp": 0,
+              "negative": 47,
+              "observations": 60,
+              "positive": 13,
+              "tn": 47,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.96153846,
+              "error_rate": 0.01666667,
+              "errors": 1,
+              "fn": 1,
+              "fp": 0,
+              "negative": 47,
+              "observations": 60,
+              "positive": 13,
+              "tn": 47,
+              "tp": 12
+            }
+          },
+          "n": 60
+        },
+        {
+          "id": 6,
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.91666667,
+              "error_rate": 0.08333333,
+              "errors": 5,
+              "fn": 1,
+              "fp": 4,
+              "negative": 48,
+              "observations": 60,
+              "positive": 12,
+              "tn": 44,
+              "tp": 11
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.2,
+              "errors": 12,
+              "fn": 12,
+              "fp": 0,
+              "negative": 48,
+              "observations": 60,
+              "positive": 12,
+              "tn": 48,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.94791667,
+              "error_rate": 0.03333333,
+              "errors": 2,
+              "fn": 1,
+              "fp": 1,
+              "negative": 48,
+              "observations": 60,
+              "positive": 12,
+              "tn": 47,
+              "tp": 11
+            }
+          },
+          "n": 60
+        },
+        {
+          "id": 7,
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.91898527,
+              "error_rate": 0.08333333,
+              "errors": 5,
+              "fn": 1,
+              "fp": 4,
+              "negative": 47,
+              "observations": 60,
+              "positive": 13,
+              "tn": 43,
+              "tp": 12
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.21666667,
+              "errors": 13,
+              "fn": 13,
+              "fp": 0,
+              "negative": 47,
+              "observations": 60,
+              "positive": 13,
+              "tn": 47,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.95090016,
+              "error_rate": 0.03333333,
+              "errors": 2,
+              "fn": 1,
+              "fp": 1,
+              "negative": 47,
+              "observations": 60,
+              "positive": 13,
+              "tn": 46,
+              "tp": 12
+            }
+          },
+          "n": 60
+        }
+      ],
+      "exact_static_equivalence_all_rows": true,
+      "first_stamp": "2015-02-04 17:51:00",
+      "full_native_A1b_candidate_audit": {
+        "overemit": {
+          "balanced_accuracy": 0.92008679,
+          "error_rate": 0.08363011,
+          "errors": 681,
+          "fn": 127,
+          "fp": 554,
+          "negative": 6414,
+          "observations": 8143,
+          "positive": 1729,
+          "tn": 5860,
+          "tp": 1602
+        },
+        "silent": {
+          "balanced_accuracy": 0.5,
+          "error_rate": 0.21232961,
+          "errors": 1729,
+          "fn": 1729,
+          "fp": 0,
+          "negative": 6414,
+          "observations": 8143,
+          "positive": 1729,
+          "tn": 6414,
+          "tp": 0
+        },
+        "temporal": {
+          "balanced_accuracy": 0.95744962,
+          "error_rate": 0.02443817,
+          "errors": 199,
+          "fn": 128,
+          "fp": 71,
+          "negative": 6414,
+          "observations": 8143,
+          "positive": 1729,
+          "tn": 6343,
+          "tp": 1601
+        }
+      },
+      "last_stamp": "2015-02-10 09:33:00",
+      "paired_error_disagreement": {
+        "overemit": {
+          "temporal_correct_challenger_wrong": 483,
+          "temporal_wrong_challenger_correct": 1
+        },
+        "silent": {
+          "temporal_correct_challenger_wrong": 1601,
+          "temporal_wrong_challenger_correct": 71
+        }
+      },
+      "per_calendar_day": [
+        {
+          "day": "2015-02-04",
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.91643059,
+              "error_rate": 0.1598916,
+              "errors": 59,
+              "fn": 0,
+              "fp": 59,
+              "negative": 353,
+              "observations": 369,
+              "positive": 16,
+              "tn": 294,
+              "tp": 16
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.04336043,
+              "errors": 16,
+              "fn": 16,
+              "fp": 0,
+              "negative": 353,
+              "observations": 369,
+              "positive": 16,
+              "tn": 353,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 1.0,
+              "error_rate": 0.0,
+              "errors": 0,
+              "fn": 0,
+              "fp": 0,
+              "negative": 353,
+              "observations": 369,
+              "positive": 16,
+              "tn": 353,
+              "tp": 16
+            }
+          },
+          "sample_count": 369
+        },
+        {
+          "day": "2015-02-05",
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.89336935,
+              "error_rate": 0.11944444,
+              "errors": 172,
+              "fn": 30,
+              "fp": 142,
+              "negative": 901,
+              "observations": 1440,
+              "positive": 539,
+              "tn": 759,
+              "tp": 509
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.37430556,
+              "errors": 539,
+              "fn": 539,
+              "fp": 0,
+              "negative": 901,
+              "observations": 1440,
+              "positive": 539,
+              "tn": 901,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.93831941,
+              "error_rate": 0.06319444,
+              "errors": 91,
+              "fn": 30,
+              "fp": 61,
+              "negative": 901,
+              "observations": 1440,
+              "positive": 539,
+              "tn": 840,
+              "tp": 509
+            }
+          },
+          "sample_count": 1440
+        },
+        {
+          "day": "2015-02-06",
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.91454788,
+              "error_rate": 0.08611111,
+              "errors": 124,
+              "fn": 48,
+              "fp": 76,
+              "negative": 854,
+              "observations": 1440,
+              "positive": 586,
+              "tn": 778,
+              "tp": 538
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.40694444,
+              "errors": 586,
+              "fn": 586,
+              "fp": 0,
+              "negative": 854,
+              "observations": 1440,
+              "positive": 586,
+              "tn": 854,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.95318957,
+              "error_rate": 0.04027778,
+              "errors": 58,
+              "fn": 48,
+              "fp": 10,
+              "negative": 854,
+              "observations": 1440,
+              "positive": 586,
+              "tn": 844,
+              "tp": 538
+            }
+          },
+          "sample_count": 1440
+        },
+        {
+          "day": "2015-02-07",
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": null,
+              "error_rate": 0.0,
+              "errors": 0,
+              "fn": 0,
+              "fp": 0,
+              "negative": 1440,
+              "observations": 1440,
+              "positive": 0,
+              "tn": 1440,
+              "tp": 0
+            },
+            "silent": {
+              "balanced_accuracy": null,
+              "error_rate": 0.0,
+              "errors": 0,
+              "fn": 0,
+              "fp": 0,
+              "negative": 1440,
+              "observations": 1440,
+              "positive": 0,
+              "tn": 1440,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": null,
+              "error_rate": 0.0,
+              "errors": 0,
+              "fn": 0,
+              "fp": 0,
+              "negative": 1440,
+              "observations": 1440,
+              "positive": 0,
+              "tn": 1440,
+              "tp": 0
+            }
+          },
+          "sample_count": 1440
+        },
+        {
+          "day": "2015-02-08",
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": null,
+              "error_rate": 0.0,
+              "errors": 0,
+              "fn": 0,
+              "fp": 0,
+              "negative": 1440,
+              "observations": 1440,
+              "positive": 0,
+              "tn": 1440,
+              "tp": 0
+            },
+            "silent": {
+              "balanced_accuracy": null,
+              "error_rate": 0.0,
+              "errors": 0,
+              "fn": 0,
+              "fp": 0,
+              "negative": 1440,
+              "observations": 1440,
+              "positive": 0,
+              "tn": 1440,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": null,
+              "error_rate": 0.0,
+              "errors": 0,
+              "fn": 0,
+              "fp": 0,
+              "negative": 1440,
+              "observations": 1440,
+              "positive": 0,
+              "tn": 1440,
+              "tp": 0
+            }
+          },
+          "sample_count": 1440
+        },
+        {
+          "day": "2015-02-09",
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.82840365,
+              "error_rate": 0.20625,
+              "errors": 297,
+              "fn": 20,
+              "fp": 277,
+              "negative": 906,
+              "observations": 1440,
+              "positive": 534,
+              "tn": 629,
+              "tp": 514
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.37083333,
+              "errors": 534,
+              "fn": 534,
+              "fp": 0,
+              "negative": 906,
+              "observations": 1440,
+              "positive": 534,
+              "tn": 906,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.98033708,
+              "error_rate": 0.01458333,
+              "errors": 21,
+              "fn": 21,
+              "fp": 0,
+              "negative": 906,
+              "observations": 1440,
+              "positive": 534,
+              "tn": 906,
+              "tp": 513
+            }
+          },
+          "sample_count": 1440
+        },
+        {
+          "day": "2015-02-10",
+          "metrics": {
+            "overemit": {
+              "balanced_accuracy": 0.73148148,
+              "error_rate": 0.05052265,
+              "errors": 29,
+              "fn": 29,
+              "fp": 0,
+              "negative": 520,
+              "observations": 574,
+              "positive": 54,
+              "tn": 520,
+              "tp": 25
+            },
+            "silent": {
+              "balanced_accuracy": 0.5,
+              "error_rate": 0.09407666,
+              "errors": 54,
+              "fn": 54,
+              "fp": 0,
+              "negative": 520,
+              "observations": 574,
+              "positive": 54,
+              "tn": 520,
+              "tp": 0
+            },
+            "temporal": {
+              "balanced_accuracy": 0.73148148,
+              "error_rate": 0.05052265,
+              "errors": 29,
+              "fn": 29,
+              "fp": 0,
+              "negative": 520,
+              "observations": 574,
+              "positive": 54,
+              "tn": 520,
+              "tp": 25
+            }
+          },
+          "sample_count": 574
+        }
+      ],
+      "replicated_original_T3b_60_sampling": {
+        "overemit": {
+          "balanced_accuracy": 0.91898527,
+          "error_rate": 0.08333333,
+          "errors": 5,
+          "fn": 1,
+          "fp": 4,
+          "negative": 47,
+          "observations": 60,
+          "positive": 13,
+          "tn": 43,
+          "tp": 12
+        },
+        "silent": {
+          "balanced_accuracy": 0.5,
+          "error_rate": 0.21666667,
+          "errors": 13,
+          "fn": 13,
+          "fp": 0,
+          "negative": 47,
+          "observations": 60,
+          "positive": 13,
+          "tn": 47,
+          "tp": 0
+        },
+        "temporal": {
+          "balanced_accuracy": 0.96153846,
+          "error_rate": 0.01666667,
+          "errors": 1,
+          "fn": 1,
+          "fp": 0,
+          "negative": 47,
+          "observations": 60,
+          "positive": 13,
+          "tn": 47,
+          "tp": 12
+        }
+      },
+      "source_filename": "datatraining.txt",
+      "source_rows": 8143,
+      "static_sensors_auditor_only": {
+        "light_and_co2": {
+          "balanced_accuracy": 0.95744962,
+          "error_rate": 0.02443817,
+          "errors": 199,
+          "fn": 128,
+          "fp": 71,
+          "negative": 6414,
+          "observations": 8143,
+          "positive": 1729,
+          "tn": 6343,
+          "tp": 1601
+        },
+        "light_only": {
+          "balanced_accuracy": 0.97117948,
+          "error_rate": 0.04506938,
+          "errors": 367,
+          "fn": 1,
+          "fp": 366,
+          "negative": 6414,
+          "observations": 8143,
+          "positive": 1729,
+          "tn": 6048,
+          "tp": 1728
+        }
+      }
+    }
+  },
+  "key_interpretation": {
+    "external_photo_labels_used_as_supervised_reward": true,
+    "full_coverage_native_program_error_early": 106,
+    "full_coverage_native_program_error_late": 666,
+    "later_public_data_used_post_selection_only": true,
+    "native_BV_semantic_reward_and_native_learning": false,
+    "physical_temporal_pattern_learning_demonstrated": false,
+    "selection_is_existing_arm_choice_not_weight_learning": true,
+    "temporal_is_exactly_static_light_ge_200_AND_co2_ge_600": true
+  },
+  "phase": "POST_SELECTION_PUBLIC_AUDIT",
+  "pilot_sha256": "33ee387ed74e71a0df001970dc3142bae9b01676da8be2b23b2e54335b9c28b2",
+  "published_T3b_evaluation_sha256": "39d862d06c6b3995a6d15289bf38d887049888c50c8a42c5470dc4ebb089ba38",
+  "schema": "spk-v5-t3c-full-public-coverage-audit/research-v0",
+  "scope_exclusions": [
+    "public, previously accessible labels: not independent blind holdout",
+    "post-hoc expanded audit: no preregistered full-coverage statistical claim",
+    "one correlated chronological time series, no independent row-level trials",
+    "static two-sensor conjunction encoded by a synthetic one-tick offset",
+    "no native neuron program updates, real temporal learning, or endogenous reinforcement",
+    "per-day and interleaved 60-point cohorts are diagnostics, not valid confidence samples"
+  ],
+  "selected_policy_frozen_from_pilot": "temporal",
+  "source_sha256_original_bytes": {
+    "datatest.txt": "1b92c7c1b2838963464fa891a610cf3c5db4becb7189189b29b330107a584c7f",
+    "datatest2.txt": "d026d1bd5aeccd4aff4f3b3710d48e40613bd5fc370db7e61bbdcaa50d985095",
+    "datatraining.txt": "b2c4d0ce2b9e4e453c476f7125ef31aeec2d1f5c7f5572d0e80de3df6521ab56"
+  },
+  "status": "PUBLIC_A1B_FULL_COVERAGE_STATIC_EQUIVALENCE_NO_BLIND_NO_RL"
+}

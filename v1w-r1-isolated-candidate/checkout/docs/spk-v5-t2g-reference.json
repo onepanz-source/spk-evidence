@@ -1,0 +1,102 @@
+{
+  "blind_validation": false,
+  "cells": 35,
+  "evidence_sha256": "1ee51d6598ea430ac6d7e42767a4804e46cd1d257e069b89b28681f6b85b643a",
+  "frozen_native_modified": false,
+  "limits": [
+    "v0e is executed before the separate shadow arbitration; this is NOT interleaved native scheduler execution",
+    "resource occupancy uses source v0e counters and conservative post-source memory peak, not production reservations",
+    "shadow control packets are host-origin, not source-native authenticated messages",
+    "absence of delivery, deadline exhaustion and signal loss are not negative reward",
+    "the task and sensor remain synthetic; no independent truth, no native learning or operator adoption"
+  ],
+  "native_learner_updates": 0,
+  "native_shadow_control_admission": false,
+  "profiles": {
+    "deadline": {
+      "counts": {
+        "abstain_delivered": 2,
+        "pending_deadline": 2,
+        "reward_delivered": 3,
+        "silent_cells": 5,
+        "silent_negative_deliveries": 2
+      },
+      "deferrals": {
+        "link_busy": 5
+      },
+      "shadow_cost": {
+        "PE": 46,
+        "link": 27,
+        "memory": 80
+      }
+    },
+    "link_unavailable": {
+      "counts": {
+        "pending_deadline": 5,
+        "silent_cells": 5,
+        "silent_negative_deliveries": 0,
+        "source_profile_refused": 2
+      },
+      "deferrals": {
+        "link_busy": 90
+      },
+      "shadow_cost": {
+        "PE": 5,
+        "link": 0,
+        "memory": 5
+      }
+    },
+    "lost_reverse": {
+      "counts": {
+        "silent_cells": 5,
+        "silent_negative_deliveries": 0,
+        "transport_loss": 7
+      },
+      "deferrals": {
+        "link_busy": 5
+      },
+      "shadow_cost": {
+        "PE": 42,
+        "link": 28,
+        "memory": 77
+      }
+    },
+    "normal": {
+      "counts": {
+        "abstain_delivered": 2,
+        "reward_delivered": 5,
+        "silent_cells": 5,
+        "silent_negative_deliveries": 2
+      },
+      "deferrals": {
+        "link_busy": 5
+      },
+      "shadow_cost": {
+        "PE": 49,
+        "link": 28,
+        "memory": 84
+      }
+    },
+    "tight_PE": {
+      "counts": {
+        "abstain_delivered": 2,
+        "reward_delivered": 5,
+        "silent_cells": 5,
+        "silent_negative_deliveries": 2
+      },
+      "deferrals": {
+        "PE_busy": 3,
+        "link_busy": 5
+      },
+      "shadow_cost": {
+        "PE": 49,
+        "link": 28,
+        "memory": 84
+      }
+    }
+  },
+  "schema": "spk-v5-t2g-source-grounded-residual-island-service/research-v0",
+  "shadow_grants_native": false,
+  "source_timeline_native": true,
+  "status": "SOURCE_GROUNDED_SHADOW_RESIDUAL_ADMISSION_ONLY_NO_NATIVE_ACTOR_ROUTE"
+}

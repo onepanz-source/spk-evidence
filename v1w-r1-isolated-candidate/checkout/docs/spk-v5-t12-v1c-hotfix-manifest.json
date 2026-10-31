@@ -1,0 +1,15 @@
+{
+  "additive_only": true,
+  "files": {
+    "docs/spk-v5-t12-v1c-hotfix.md": "d6c79f09ed2dbf1062c3e3c7b9c49252c1fa6d699dbc3d5ceb09b1265f590ae7",
+    "research/spk_v5_t12_macro_native_memory_seam/macro_gate_v1c.py": "9e84f4c1a9616e62b20dc7cfbb621c2dbd2e97d7f1708fd430c6d91351c09dbe",
+    "research/spk_v5_t12_macro_native_memory_seam/native_bridge_v1c.py": "b964aa07da845df34ad84c70df1cfc0e87c7dc0c2669a617479b98d5337494cf",
+    "research/spk_v5_t12_macro_native_memory_seam/tests/test_native_memory_seam_v1c.py": "fc029093673b9ba8255ac1750b58d5a2b36a162b2fe0207f0ba3baf09f2781bf",
+    "search/spk_v5_t12_macro_native_memory_seam_gate_v1c.sh": "a5ab1d2bc81a4bf95af1bd450264d72e6373c24aa158d38feae6a7d48b6bb8fe"
+  },
+  "frozen_components_modified": false,
+  "native_learning": false,
+  "native_memory_requires_fwork": true,
+  "promotion_allowed": false,
+  "schema": "spk-v5-t12-native-memory-service-hotfix-v1c/manifest-v0"
+}

@@ -1,0 +1,158 @@
+{
+  "candidate_objective_evaluation": {
+    "overemit": {
+      "balanced_error": 0.4166666666666667,
+      "false_negative": 0,
+      "false_positive": 30,
+      "island_output_count": 42,
+      "loss": 30
+    },
+    "silent": {
+      "balanced_error": 0.5,
+      "false_negative": 6,
+      "false_positive": 0,
+      "island_output_count": 0,
+      "loss": 6
+    },
+    "temporal": {
+      "balanced_error": 0.0,
+      "false_negative": 0,
+      "false_positive": 0,
+      "island_output_count": 6,
+      "loss": 0
+    }
+  },
+  "causal_scope": "C output-channel 8 witness is from same A1b execution; B judgment is SHADOW via explicit C batch",
+  "engineered_witness_not_independent_task_oracle": true,
+  "evaluation_episodes": 42,
+  "evaluation_input_sha256": "2b64d6fba6830ccb7d110a510324ddd9fb5c2b4527328caaf4ad5adb7f3bcb0e",
+  "evaluation_negatives": 36,
+  "evaluation_positives": 6,
+  "frozen_baseline_loss": 30,
+  "frozen_sources_modified": false,
+  "limitations": [
+    "Engineered C witness is selected to align with this same known synthetic task",
+    "No blind independent task labels, no statistical inference, temporal shifts are not independent subjects",
+    "B receives C batch result only via offline shadow observer, not native reverse BV scheduling",
+    "Negative judgments require explicit processed C batches and available C witness, never absence of an ACK",
+    "Offline full-information candidate scoring is not contextual bandit or real RL",
+    "Placebo shuffles signs globally preserving emission-level volume, not full PE/memory paid costs",
+    "C corroboration channel 8 is local modeled consequence, not independently verified truth",
+    "No native candidate adoption, P/S/E changes, or proof of general source-weight learning"
+  ],
+  "native_BV_credit_delivered": false,
+  "native_learning": false,
+  "regimes": {
+    "absent": {
+      "placebo_choices": {
+        "overemit": 32
+      },
+      "placebo_evaluation_losses": {
+        "30": 32
+      },
+      "shadow_choice": "overemit",
+      "shadow_evaluation_loss": 30,
+      "train_abstain_by_candidate": {
+        "overemit": 56,
+        "silent": 0,
+        "temporal": 8
+      },
+      "train_negative_by_candidate": {
+        "overemit": 0,
+        "silent": 0,
+        "temporal": 0
+      },
+      "train_positive_by_candidate": {
+        "overemit": 0,
+        "silent": 0,
+        "temporal": 0
+      },
+      "train_receipts_by_candidate": {
+        "overemit": 56,
+        "silent": 0,
+        "temporal": 8
+      },
+      "train_score_by_candidate": {
+        "overemit": 0,
+        "silent": 0,
+        "temporal": 0
+      }
+    },
+    "aligned": {
+      "placebo_choices": {
+        "silent": 32
+      },
+      "placebo_evaluation_losses": {
+        "6": 32
+      },
+      "shadow_choice": "temporal",
+      "shadow_evaluation_loss": 0,
+      "train_abstain_by_candidate": {
+        "overemit": 0,
+        "silent": 0,
+        "temporal": 0
+      },
+      "train_negative_by_candidate": {
+        "overemit": 48,
+        "silent": 0,
+        "temporal": 0
+      },
+      "train_positive_by_candidate": {
+        "overemit": 8,
+        "silent": 0,
+        "temporal": 8
+      },
+      "train_receipts_by_candidate": {
+        "overemit": 56,
+        "silent": 0,
+        "temporal": 8
+      },
+      "train_score_by_candidate": {
+        "overemit": -40,
+        "silent": 0,
+        "temporal": 8
+      }
+    },
+    "inverted": {
+      "placebo_choices": {
+        "silent": 31,
+        "temporal": 1
+      },
+      "placebo_evaluation_losses": {
+        "0": 1,
+        "6": 31
+      },
+      "shadow_choice": "silent",
+      "shadow_evaluation_loss": 6,
+      "train_abstain_by_candidate": {
+        "overemit": 0,
+        "silent": 0,
+        "temporal": 0
+      },
+      "train_negative_by_candidate": {
+        "overemit": 48,
+        "silent": 0,
+        "temporal": 8
+      },
+      "train_positive_by_candidate": {
+        "overemit": 8,
+        "silent": 0,
+        "temporal": 0
+      },
+      "train_receipts_by_candidate": {
+        "overemit": 56,
+        "silent": 0,
+        "temporal": 8
+      },
+      "train_score_by_candidate": {
+        "overemit": -40,
+        "silent": 0,
+        "temporal": -8
+      }
+    }
+  },
+  "schema": "spk-v5-island-local-consequence-t2b/research-v0",
+  "status": "T2_ENGINEERED_CONSEQUENCE_INFORMATION_POSITIVE_CONTROL_ONLY_T3_BLIND_BLOCKED",
+  "train_episodes": 56,
+  "train_input_sha256": "0d4c9ccccdde8097d6c361da4e3b160b44e80046205bb0433c2a1b0c68429c03"
+}

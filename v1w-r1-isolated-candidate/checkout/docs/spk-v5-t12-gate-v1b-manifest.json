@@ -1,0 +1,13 @@
+{
+  "files": {
+    "docs/spk-v5-t12-gate-v1b-hotfix.md": "ed850f60cec81b8687125e425f9931350d84d03a4ef5512d7d5663dd5bac749e",
+    "search/spk_v5_t12_macro_native_memory_seam_gate_v1b.sh": "48e6d77fa934ee351b7debc4fd7ba0b20dc162a99eb33de2da3466e0642ee395"
+  },
+  "historical_manifests_unchanged": true,
+  "native_learning_claimed": false,
+  "original_sources_unchanged": true,
+  "original_t12_gate_unchanged": true,
+  "schema": "spk-t12-historical-gate-source-compatibility-hotfix/v1b",
+  "supersedes": "v1a launcher only",
+  "timestamp_normalized": true
+}

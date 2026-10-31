@@ -1,0 +1,78 @@
+{
+  "costs_are_shadow_modeled_and_explicit": true,
+  "costs_are_source_v0e_grants": false,
+  "evidence_sha256": "55c8becd76ebe7045a93af49bcf4920632c2f670a34f3e7b335856b59255df52",
+  "forward_decision_control_is_native": false,
+  "limitations": [
+    "A silent decision exists ONLY as a host-minted source-replayed shadow witness, NOT as a native spike or operator",
+    "Shadow PE/memory/link costs are explicit modeled additional units, NOT v0e-arbitrated source scheduler grants",
+    "No automatic access to task oracle: C reads only the sensor from the synthetic environment; all_true/false independent truth unproven",
+    "A receipt missing due to transport loss, closure failure or unknown C demand cannot count as negative credit",
+    "All candidate registration and route tokens have research-host provenance, no independent cryptographic issuer",
+    "No native state mutation, topology revision, hardware evidence, energy measurement or RL blind promotion"
+  ],
+  "native_learner_updates": 0,
+  "per_scenario": {
+    "lost_forward": {
+      "cost": {
+        "PE": 63,
+        "link": 42,
+        "memory": 105
+      },
+      "episodes": 21,
+      "negative_rewards": 0,
+      "reward_sum": {},
+      "rewards_received": {},
+      "silent_rewards": 0,
+      "status_counts": {
+        "transport_loss": 21
+      }
+    },
+    "lost_reverse": {
+      "cost": {
+        "PE": 126,
+        "link": 84,
+        "memory": 231
+      },
+      "episodes": 21,
+      "negative_rewards": 0,
+      "reward_sum": {},
+      "rewards_received": {},
+      "silent_rewards": 0,
+      "status_counts": {
+        "transport_loss": 21
+      }
+    },
+    "paid": {
+      "cost": {
+        "PE": 147,
+        "link": 84,
+        "memory": 252
+      },
+      "episodes": 21,
+      "negative_rewards": 7,
+      "reward_sum": {
+        "overemit": 1,
+        "silent": -1,
+        "temporal": 0
+      },
+      "rewards_received": {
+        "overemit": 5,
+        "silent": 5,
+        "temporal": 4
+      },
+      "silent_rewards": 5,
+      "status_counts": {
+        "abstain_delivered": 7,
+        "reward_delivered": 14
+      }
+    }
+  },
+  "reverse_semantic_feedback_is_native": false,
+  "schema": "spk-v5-t2f-explicit-island-decision-reward-custody/research-v0",
+  "scope": "3 A/B/C nodes, 7 templates x 3 synthetic demand states x one assigned action, each of 3 route scenarios",
+  "source": "A1b executed unchanged; explicit shadow decision token sourced from actual selected candidate",
+  "source_event_count": 63,
+  "status": "T2F_SHADOW_DECISION_REWARD_ROUTE_MODELED_NOT_NATIVE_OR_BLIND",
+  "task_truth_is_independent": false
+}

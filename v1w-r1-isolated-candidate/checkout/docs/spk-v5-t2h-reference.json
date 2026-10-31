@@ -1,0 +1,102 @@
+{
+  "blind_T3": false,
+  "control_host_origin": true,
+  "episodes": 7,
+  "independent_task_truth": false,
+  "limits": [
+    "This is an isolated copy/fork of BV v0e, NOT a native or frozen engine edit",
+    "Control commits are issued by the shadow host, not A native decision intake",
+    "Full native no-control replay is exact; on-control may alter timing and semantics",
+    "Reward requires after-the-fact A1b/v0e temporal parity, else abstention",
+    "Sensor and objective are synthetically defined, no blind independent task truth",
+    "No update or promotion to native neuron programs"
+  ],
+  "matrix_digest": "0b60b944c9d88a40dd7edba951fa48f7249c3730a85240977c31027dbfddba04",
+  "native_engine_modified": false,
+  "native_integration": false,
+  "native_learning_updates": 0,
+  "profiles": {
+    "control_first": {
+      "control_cost": {
+        "PE": 49,
+        "link": 28,
+        "memory": 84
+      },
+      "deferrals": {},
+      "source_forward_batch_changes_vs_off": 1,
+      "source_sha256": "e4a20ef77b48a56ca825df2b5d128784e15495dd6e3e407ed976cec204cdc832",
+      "source_terminal_changes_vs_off": 1,
+      "statuses": {
+        "abstain_delivered": 3,
+        "reward_delivered": 4
+      }
+    },
+    "deadline_short": {
+      "control_cost": {
+        "PE": 46,
+        "link": 27,
+        "memory": 80
+      },
+      "deferrals": {
+        "link_busy": 5
+      },
+      "source_forward_batch_changes_vs_off": 0,
+      "source_sha256": "9313070f75d22fe097e6876bf7bff43c02c9dafba5c610d79ac569b51888f343",
+      "source_terminal_changes_vs_off": 0,
+      "statuses": {
+        "abstain_delivered": 2,
+        "pending_deadline_expired": 2,
+        "reward_delivered": 3
+      }
+    },
+    "off": {
+      "control_cost": {
+        "PE": 0,
+        "link": 0,
+        "memory": 0
+      },
+      "deferrals": {},
+      "source_forward_batch_changes_vs_off": 0,
+      "source_sha256": "2a1c9648645e33e9201e271d2e967a5ca50c450182165f9e22a8e3528ad0b694",
+      "source_terminal_changes_vs_off": 0,
+      "statuses": {
+        "disabled": 7
+      }
+    },
+    "return_loss": {
+      "control_cost": {
+        "PE": 42,
+        "link": 28,
+        "memory": 77
+      },
+      "deferrals": {
+        "link_busy": 5
+      },
+      "source_forward_batch_changes_vs_off": 0,
+      "source_sha256": "3813f2b29fc9d1ce7c2f57bf4efe2710ac3934fb233d20173564b92c55c418db",
+      "source_terminal_changes_vs_off": 0,
+      "statuses": {
+        "transport_loss": 7
+      }
+    },
+    "source_first": {
+      "control_cost": {
+        "PE": 49,
+        "link": 28,
+        "memory": 84
+      },
+      "deferrals": {
+        "link_busy": 5
+      },
+      "source_forward_batch_changes_vs_off": 0,
+      "source_sha256": "5fa718f35cbaca0e361ae03fcdf1ff3626a5652327d756820dd1fd86f8766949",
+      "source_terminal_changes_vs_off": 0,
+      "statuses": {
+        "abstain_delivered": 2,
+        "reward_delivered": 5
+      }
+    }
+  },
+  "schema": "spk-v5-t2h-interleaved-research-scheduler/v0",
+  "status": "INTERLEAVED_DERIVED_TICK_ARBITER_RESEARCH_ONLY"
+}

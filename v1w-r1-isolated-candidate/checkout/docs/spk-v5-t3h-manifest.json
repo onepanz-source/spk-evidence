@@ -1,0 +1,35 @@
+{
+  "T3g_prospective_protocol_predecessor_source_sha": "5f9650a5bc2d49da9a9e9dddbf6923c22398e25d16f17298de5ccad04acabce6",
+  "external_photo_labels_never_used_as_C_reward": true,
+  "finite_engineered_cases": 144,
+  "frozen_contracts_untouched": true,
+  "independent_sensor_custody_none": true,
+  "native_BV_credit_none": true,
+  "native_learning_none": true,
+  "new_files": [
+    "spk_v5_research/island_c_owned_credit_v5t3h.py",
+    "search/spk_v5_t3h_c_owned_credit.py",
+    "tests/test_spk_v5_t3h_c_owned_credit.py",
+    "search/spk_v5_t3h_c_owned_credit_gate.sh",
+    "docs/spk-v5-t3h-c-owned-credit.md",
+    "docs/spk-v5-t3h-reference.json",
+    "docs/spk-v5-t3h-manifest.json"
+  ],
+  "new_schema": "spk-v5-t3h-c-authored-reverse-credit/research-v0",
+  "pins_sha256": {
+    "docs/spk-v5-t3g-prospective-protocol.md": "9580722012f4c4513c1624feb7aedad49f904122389b3780c57bd50f87fed6b6",
+    "docs/spk-v5-t3g-protocol.json": "5f9650a5bc2d49da9a9e9dddbf6923c22398e25d16f17298de5ccad04acabce6",
+    "docs/spk-v5-t3h-c-owned-credit.md": "3e53345f0cb429e376fbbde9057b4dc1450fb6ce436eb9a3ac45d5c1c4e027b6",
+    "docs/spk-v5-t3h-reference.json": "2828bf692dae78b451bb41a72423c2fbf723212382ca040046c2de1319860bcd",
+    "search/spk_v5_t3g_prospective.py": "6c3cb466ee2d393b533a6d66757b28b5e3f69eb0383c97a7cfa155b3e92a99cf",
+    "search/spk_v5_t3g_prospective_gate.sh": "231ea035799c40faa959b35c28e426b4a817fade77e3f02764df0ea641c32cd9",
+    "search/spk_v5_t3h_c_owned_credit.py": "22a82e9f93b0a92c86949cab5016ed5c2c62c8f9688d6a30656665366205f0c0",
+    "search/spk_v5_t3h_c_owned_credit_gate.sh": "4be115b5ebd4d420ae6eb411834db07e536e120c437448ca34ecd5184a6c803e",
+    "spk_v5_research/island_c_owned_credit_v5t3h.py": "9aced88cb5581732bd2c658bf23fb5149bf9d6aa7d40b5f499afe825b72c22a6",
+    "spk_v5_research/island_prospective_validation_v5t3g.py": "52b5b5b478fe3e069d8ee8aae455ad9590ca1d12f65f65370157117a3a798981",
+    "tests/test_spk_v5_t3g_prospective.py": "aa03d8794357e461b4b879558c0cb4236a784c0ce4fd51e4ac6a97de9c9fc8ce",
+    "tests/test_spk_v5_t3h_c_owned_credit.py": "5731e4ca41be3b6d53872e156ab0681c841d59d64cc41bae823f24f078fc58f5"
+  },
+  "research_only_C_verdict_A1b_actual_emission": true,
+  "schema": "spk-v5-t3h-source-bound-research-milestone/v0"
+}

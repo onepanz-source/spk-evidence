@@ -1,0 +1,20 @@
+{
+  "frozen_contracts_modified": false,
+  "inherits": "spk-v5-t1-island-t1t2-release-manifest/research-v0",
+  "pins_sha256": {
+    "docs/spk-v5-t1-island-manifest.json": "03594feea4c6e620adf0b9e8ad45f9a8ae2c1317edd56bdc189eb9a1180a117a",
+    "docs/spk-v5-t2b-local-consequence.md": "fd3c6dd0f526c9a38efcaa9b6bfba27df164a5b1821826bf00b0aab9326069e5",
+    "docs/spk-v5-t2b-reference.json": "59ff929c356e42165eb92047e01f83a23cd6812b5db0216056be9be8b2469647",
+    "search/spk_24n_independent_oracle_v0.py": "90047de8cb3f146f32363406a4a49fce4dc30a10430d121656befb42a2ff7dcd",
+    "search/spk_v5_t2b_local_consequence.py": "3c12f9aacc9726cd1563a1be4e123cc9294d8ec46f35faf3f43ad6a67165fe11",
+    "search/spk_v5_t2b_local_consequence_gate.sh": "f617efd0746de0ce0d05aac5c1a88cc2dc8d4f120e14edfa801d98af78d056e2",
+    "spk_architecture_v1/pe_execution_v1b.py": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+    "spk_architecture_v1/pe_fabric_v1a.py": "d7c928357224a9ffc77633cd5c32e1f55c7a506f28ff75c4db1d26c5a7c9153c",
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+    "spk_v5_research/island_local_consequence_v5t2.py": "2a178ba629ef6fabb338746e6e44c7afa03de27fde7998368f5d93a613dd4214",
+    "spk_v5_research/island_objective_v5t1.py": "ea92ed4c42e7aefc9f11f686e188bec54a70eb57ee6dd370feb1e083a5e7241f",
+    "tests/test_spk_v5_t2b_local_consequence.py": "cd9d28ac635029d3ac0ee320a48008c8d56e94b8a4a5c014254fedf5fe813c81"
+  },
+  "research_boundary": "engineered positive control only; independent T2 blocked; T3 RL not implemented",
+  "schema": "spk-v5-t2b-engineered-local-consequence-manifest/research-v0"
+}

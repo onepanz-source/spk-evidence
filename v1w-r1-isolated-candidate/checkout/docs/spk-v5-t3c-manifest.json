@@ -1,0 +1,26 @@
+{
+  "external_public_uci_report_sha256": "388147a99e6407157b3ca3f4650d11b2cb169d25d292bbc25bcd1296ff7b0d01",
+  "independent_blind_claim": false,
+  "learned_temporal_relations_claim": false,
+  "native_and_frozen_source_unchanged": true,
+  "new_files": [
+    "spk_v5_research/island_public_audit_v5t3c.py",
+    "search/spk_v5_t3c_public_full_coverage.py",
+    "tests/test_spk_v5_t3c_public_audit.py",
+    "search/spk_v5_t3c_public_audit_gate.sh",
+    "docs/spk-v5-t3c-public-full-coverage-audit.md",
+    "docs/spk-v5-t3c-manifest.json",
+    "docs/spk-v5-t3c-original-uci-reference.json"
+  ],
+  "pins_sha256": {
+    "docs/spk-v5-t3b-manifest.json": "5c988b56236e6d8e23756305f73aa8b339237be004a37b01efb4c172fefcbf67",
+    "docs/spk-v5-t3c-original-uci-reference.json": "388147a99e6407157b3ca3f4650d11b2cb169d25d292bbc25bcd1296ff7b0d01",
+    "docs/spk-v5-t3c-public-full-coverage-audit.md": "758e017877cf845886ba0fc7a77a3b7f010ff1a1ee5ecb6269b6cf4ec5d20487",
+    "search/spk_v5_t3c_public_audit_gate.sh": "3d3adc59938136c4ffc713aac9dd730adc2b689a277dabd7e5a5954f8a544058",
+    "search/spk_v5_t3c_public_full_coverage.py": "2bf3a224a3415c223e5dab3bdac6a8f22835f58a2c7b0ec1ce11ffed847755f5",
+    "spk_v5_research/island_public_audit_v5t3c.py": "deca7ddb619f710301e2054b16b7ec83abd71ef70a8345e531f84187f17719ac",
+    "tests/test_spk_v5_t3c_public_audit.py": "e5868b736d24a0635a1965a4691ae46371d9242ab8fda4bccc07ff9cf273eb9b"
+  },
+  "public_data_evidence_in_archive": false,
+  "schema": "spk-v5-t3c-public-coverage-research-manifest/v0"
+}

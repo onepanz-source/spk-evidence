@@ -1,0 +1,467 @@
+{
+  "action_schedule_sha256": "1fbca3cbf3175761edeb447e37b2fd41386647a6d18fecf1041000bea7c1a3ae",
+  "engine": "frozen SPK A1b real PE executor, through V5-T2c observed C batch and closure",
+  "evaluation_episode_count": 70,
+  "limits": [
+    "Synthetic world bits are sealed from learner by API separation, not external cryptographic custody or independent task ground truth",
+    "The sensor is simulated using pre-action RNG; no physical sensors or authenticated issuer",
+    "Closure and observation use real frozen A1b; no native reverse BV actor credit, PE/S/link charging or online frozen learning",
+    "Observed reward may be incorrect even when the C receipt is causally valid; missingness may be not at random",
+    "Inverted evaluation is deliberate out-of-distribution stress, not a blind real-world dataset",
+    "No assertion of statistical significance, real RL multistage, source weights, topology or hardware"
+  ],
+  "native_learning": false,
+  "native_reverse_bv_delivery": false,
+  "research_candidate_program_adoptions": 0,
+  "scenarios": {
+    "all_missing": {
+      "aligned_truth_error": 44,
+      "fault": {
+        "drop_if_false": 1.0,
+        "drop_if_true": 1.0,
+        "flip_probability": 0.0,
+        "name": "all_missing"
+      },
+      "inverted_shift_truth_error": 25,
+      "learner": {
+        "abstentions": {
+          "overemit": 168,
+          "silent": 168,
+          "temporal": 168
+        },
+        "choice": "overemit",
+        "chosen_actions": {
+          "overemit": 168,
+          "silent": 168,
+          "temporal": 168
+        },
+        "forward_spike_counts": {
+          "overemit": 168,
+          "silent": 0,
+          "temporal": 24
+        },
+        "observed_rewards": {
+          "overemit": 0,
+          "silent": 0,
+          "temporal": 0
+        },
+        "policy_changes_native": 0,
+        "reward_sums": {
+          "overemit": 0,
+          "silent": 0,
+          "temporal": 0
+        }
+      },
+      "placebo_choices": {
+        "overemit": 16
+      },
+      "sensor_census": {
+        "observed": 0,
+        "observed_false": 0,
+        "observed_true": 0,
+        "unknown": 504,
+        "unknown_world_false": 384,
+        "unknown_world_true": 120,
+        "world_false": 384,
+        "world_true": 120,
+        "wrong_sensor_bit": 0
+      },
+      "sensor_observation_sha256": "b35799fac4d735b9b1c02030ef1b177dc0b2fe4e009bef37c81d428ab6633dc5",
+      "synthetic_audit_world_sha256": "771024362fadcc37bbba52beac63d8757b9c69752af7dc5b89dbc572eaf349c9",
+      "truth_audit_only": true
+    },
+    "clean": {
+      "aligned_truth_error": 10,
+      "fault": {
+        "drop_if_false": 0.0,
+        "drop_if_true": 0.0,
+        "flip_probability": 0.0,
+        "name": "clean"
+      },
+      "inverted_shift_truth_error": 61,
+      "learner": {
+        "abstentions": {
+          "overemit": 0,
+          "silent": 0,
+          "temporal": 0
+        },
+        "choice": "temporal",
+        "chosen_actions": {
+          "overemit": 168,
+          "silent": 168,
+          "temporal": 168
+        },
+        "forward_spike_counts": {
+          "overemit": 168,
+          "silent": 0,
+          "temporal": 24
+        },
+        "observed_rewards": {
+          "overemit": 168,
+          "silent": 168,
+          "temporal": 168
+        },
+        "policy_changes_native": 0,
+        "reward_sums": {
+          "overemit": -54,
+          "silent": 76,
+          "temporal": 134
+        }
+      },
+      "placebo_choices": {
+        "silent": 16
+      },
+      "sensor_census": {
+        "observed": 504,
+        "observed_false": 384,
+        "observed_true": 120,
+        "unknown": 0,
+        "unknown_world_false": 0,
+        "unknown_world_true": 0,
+        "world_false": 384,
+        "world_true": 120,
+        "wrong_sensor_bit": 0
+      },
+      "sensor_observation_sha256": "771024362fadcc37bbba52beac63d8757b9c69752af7dc5b89dbc572eaf349c9",
+      "synthetic_audit_world_sha256": "771024362fadcc37bbba52beac63d8757b9c69752af7dc5b89dbc572eaf349c9",
+      "truth_audit_only": true
+    },
+    "flip_10pct": {
+      "aligned_truth_error": 10,
+      "fault": {
+        "drop_if_false": 0.0,
+        "drop_if_true": 0.0,
+        "flip_probability": 0.1,
+        "name": "flip_10pct"
+      },
+      "inverted_shift_truth_error": 61,
+      "learner": {
+        "abstentions": {
+          "overemit": 0,
+          "silent": 0,
+          "temporal": 0
+        },
+        "choice": "temporal",
+        "chosen_actions": {
+          "overemit": 168,
+          "silent": 168,
+          "temporal": 168
+        },
+        "forward_spike_counts": {
+          "overemit": 168,
+          "silent": 0,
+          "temporal": 24
+        },
+        "observed_rewards": {
+          "overemit": 168,
+          "silent": 168,
+          "temporal": 168
+        },
+        "policy_changes_native": 0,
+        "reward_sums": {
+          "overemit": -34,
+          "silent": 62,
+          "temporal": 108
+        }
+      },
+      "placebo_choices": {
+        "silent": 16
+      },
+      "sensor_census": {
+        "observed": 504,
+        "observed_false": 356,
+        "observed_true": 148,
+        "unknown": 0,
+        "unknown_world_false": 0,
+        "unknown_world_true": 0,
+        "world_false": 384,
+        "world_true": 120,
+        "wrong_sensor_bit": 56
+      },
+      "sensor_observation_sha256": "9d9833c5bf69eb1ed6dfa6ccffd0b4bb31f1d2510889ac99fa43b8726e9e214e",
+      "synthetic_audit_world_sha256": "771024362fadcc37bbba52beac63d8757b9c69752af7dc5b89dbc572eaf349c9",
+      "truth_audit_only": true
+    },
+    "flip_35pct": {
+      "aligned_truth_error": 10,
+      "fault": {
+        "drop_if_false": 0.0,
+        "drop_if_true": 0.0,
+        "flip_probability": 0.35,
+        "name": "flip_35pct"
+      },
+      "inverted_shift_truth_error": 61,
+      "learner": {
+        "abstentions": {
+          "overemit": 0,
+          "silent": 0,
+          "temporal": 0
+        },
+        "choice": "temporal",
+        "chosen_actions": {
+          "overemit": 168,
+          "silent": 168,
+          "temporal": 168
+        },
+        "forward_spike_counts": {
+          "overemit": 168,
+          "silent": 0,
+          "temporal": 24
+        },
+        "observed_rewards": {
+          "overemit": 168,
+          "silent": 168,
+          "temporal": 168
+        },
+        "policy_changes_native": 0,
+        "reward_sums": {
+          "overemit": 8,
+          "silent": 28,
+          "temporal": 48
+        }
+      },
+      "placebo_choices": {
+        "silent": 10,
+        "temporal": 6
+      },
+      "sensor_census": {
+        "observed": 504,
+        "observed_false": 288,
+        "observed_true": 216,
+        "unknown": 0,
+        "unknown_world_false": 0,
+        "unknown_world_true": 0,
+        "world_false": 384,
+        "world_true": 120,
+        "wrong_sensor_bit": 186
+      },
+      "sensor_observation_sha256": "0bc92094715f5914131d9478f2c2271bfd76263d97e8f62bbf178b0dfe394c7c",
+      "synthetic_audit_world_sha256": "771024362fadcc37bbba52beac63d8757b9c69752af7dc5b89dbc572eaf349c9",
+      "truth_audit_only": true
+    },
+    "fully_inverted": {
+      "aligned_truth_error": 44,
+      "fault": {
+        "drop_if_false": 0.0,
+        "drop_if_true": 0.0,
+        "flip_probability": 1.0,
+        "name": "fully_inverted"
+      },
+      "inverted_shift_truth_error": 25,
+      "learner": {
+        "abstentions": {
+          "overemit": 0,
+          "silent": 0,
+          "temporal": 0
+        },
+        "choice": "overemit",
+        "chosen_actions": {
+          "overemit": 168,
+          "silent": 168,
+          "temporal": 168
+        },
+        "forward_spike_counts": {
+          "overemit": 168,
+          "silent": 0,
+          "temporal": 24
+        },
+        "observed_rewards": {
+          "overemit": 168,
+          "silent": 168,
+          "temporal": 168
+        },
+        "policy_changes_native": 0,
+        "reward_sums": {
+          "overemit": 54,
+          "silent": -76,
+          "temporal": -134
+        }
+      },
+      "placebo_choices": {
+        "overemit": 16
+      },
+      "sensor_census": {
+        "observed": 504,
+        "observed_false": 120,
+        "observed_true": 384,
+        "unknown": 0,
+        "unknown_world_false": 0,
+        "unknown_world_true": 0,
+        "world_false": 384,
+        "world_true": 120,
+        "wrong_sensor_bit": 504
+      },
+      "sensor_observation_sha256": "13882042b9afb078b36dcfc6a3edfc6e6b3620469bd48fa5fb817685e981fdf0",
+      "synthetic_audit_world_sha256": "771024362fadcc37bbba52beac63d8757b9c69752af7dc5b89dbc572eaf349c9",
+      "truth_audit_only": true
+    },
+    "missing_at_random_30pct": {
+      "aligned_truth_error": 10,
+      "fault": {
+        "drop_if_false": 0.3,
+        "drop_if_true": 0.3,
+        "flip_probability": 0.0,
+        "name": "missing_at_random_30pct"
+      },
+      "inverted_shift_truth_error": 61,
+      "learner": {
+        "abstentions": {
+          "overemit": 54,
+          "silent": 47,
+          "temporal": 57
+        },
+        "choice": "temporal",
+        "chosen_actions": {
+          "overemit": 168,
+          "silent": 168,
+          "temporal": 168
+        },
+        "forward_spike_counts": {
+          "overemit": 168,
+          "silent": 0,
+          "temporal": 24
+        },
+        "observed_rewards": {
+          "overemit": 114,
+          "silent": 121,
+          "temporal": 111
+        },
+        "policy_changes_native": 0,
+        "reward_sums": {
+          "overemit": -40,
+          "silent": 57,
+          "temporal": 91
+        }
+      },
+      "placebo_choices": {
+        "silent": 16
+      },
+      "sensor_census": {
+        "observed": 346,
+        "observed_false": 269,
+        "observed_true": 77,
+        "unknown": 158,
+        "unknown_world_false": 115,
+        "unknown_world_true": 43,
+        "world_false": 384,
+        "world_true": 120,
+        "wrong_sensor_bit": 0
+      },
+      "sensor_observation_sha256": "7ea601ef5645f70b649936ac77f97c632f5a88916126215bd8ca40a2c3eca23b",
+      "synthetic_audit_world_sha256": "771024362fadcc37bbba52beac63d8757b9c69752af7dc5b89dbc572eaf349c9",
+      "truth_audit_only": true
+    },
+    "selective_missing_true_90pct": {
+      "aligned_truth_error": 18,
+      "fault": {
+        "drop_if_false": 0.05,
+        "drop_if_true": 0.9,
+        "flip_probability": 0.0,
+        "name": "selective_missing_true_90pct"
+      },
+      "inverted_shift_truth_error": 55,
+      "learner": {
+        "abstentions": {
+          "overemit": 34,
+          "silent": 52,
+          "temporal": 43
+        },
+        "choice": "silent",
+        "chosen_actions": {
+          "overemit": 168,
+          "silent": 168,
+          "temporal": 168
+        },
+        "forward_spike_counts": {
+          "overemit": 168,
+          "silent": 0,
+          "temporal": 24
+        },
+        "observed_rewards": {
+          "overemit": 134,
+          "silent": 116,
+          "temporal": 125
+        },
+        "policy_changes_native": 0,
+        "reward_sums": {
+          "overemit": -72,
+          "silent": 114,
+          "temporal": 119
+        }
+      },
+      "placebo_choices": {
+        "silent": 16
+      },
+      "sensor_census": {
+        "observed": 375,
+        "observed_false": 364,
+        "observed_true": 11,
+        "unknown": 129,
+        "unknown_world_false": 20,
+        "unknown_world_true": 109,
+        "world_false": 384,
+        "world_true": 120,
+        "wrong_sensor_bit": 0
+      },
+      "sensor_observation_sha256": "c2ed8ebb64e0a13ca07a886134433be00438ae2df709529e58378015fd5ac426",
+      "synthetic_audit_world_sha256": "771024362fadcc37bbba52beac63d8757b9c69752af7dc5b89dbc572eaf349c9",
+      "truth_audit_only": true
+    }
+  },
+  "schema": "spk-v5-t2d-island-sensor-observation-robustness/research-v0",
+  "status": "T2D_SENSOR_FAULT_DIAGNOSTIC_RESEARCH_ONLY_NO_INDEPENDENT_TRUTH_OR_T3_BLIND",
+  "train_episode_count": 504,
+  "truth_audit_aligned": {
+    "overemit": {
+      "correct": 26,
+      "error": 44,
+      "false_negative": 1,
+      "false_positive": 43,
+      "forward_spikes": 70,
+      "missing_sensor": 0
+    },
+    "silent": {
+      "correct": 52,
+      "error": 18,
+      "false_negative": 18,
+      "false_positive": 0,
+      "forward_spikes": 0,
+      "missing_sensor": 0
+    },
+    "temporal": {
+      "correct": 60,
+      "error": 10,
+      "false_negative": 9,
+      "false_positive": 1,
+      "forward_spikes": 10,
+      "missing_sensor": 0
+    }
+  },
+  "truth_audit_inverted_shift": {
+    "overemit": {
+      "correct": 45,
+      "error": 25,
+      "false_negative": 10,
+      "false_positive": 15,
+      "forward_spikes": 70,
+      "missing_sensor": 0
+    },
+    "silent": {
+      "correct": 15,
+      "error": 55,
+      "false_negative": 55,
+      "false_positive": 0,
+      "forward_spikes": 0,
+      "missing_sensor": 0
+    },
+    "temporal": {
+      "correct": 9,
+      "error": 61,
+      "false_negative": 53,
+      "false_positive": 8,
+      "forward_spikes": 10,
+      "missing_sensor": 0
+    }
+  },
+  "world": "T2c synthetically correlated demand (aligned), independently seeded observation corruption, action-independent"
+}

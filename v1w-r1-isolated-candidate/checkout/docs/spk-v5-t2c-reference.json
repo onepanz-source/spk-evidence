@@ -1,0 +1,342 @@
+{
+  "island_objective": "Match actual independently scheduled C demand at episode closure; one binary response per episode",
+  "limitations": [
+    "Synthetic world demand correlation is engineered, not demonstrated or independently sourced physical task truth",
+    "C demand pulse and closure arrive through A1b input fixtures; no production sensor identities or authenticated custody",
+    "Reverse C outcome is collected by shadow observer, not routed over frozen BV v0e",
+    "Explore-then-commit single-arm bandit is research policy selection, not online native program self-modification",
+    "Evaluation fixture seeds are public; not blind or preregistered statistical validation",
+    "PE transport in A1b is ideal, and bandit feedback processing does not charge BV PE/S memory/link costs",
+    "No source identity weights, firmware/hardware claims, island deployment or native learner"
+  ],
+  "missing_response_semantics": "C closure + valid demand sensor necessary to penalize silence; missing sensor always abstains",
+  "native_engine": "A1b real three-neuron PE execution, no source changes",
+  "native_learning": false,
+  "regimes": {
+    "absent": {
+      "actions_sha256": "1fbca3cbf3175761edeb447e37b2fd41386647a6d18fecf1041000bea7c1a3ae",
+      "evaluation": {
+        "overemit": {
+          "correct": 0,
+          "error": 0,
+          "false_negative": 0,
+          "false_positive": 0,
+          "forward_spikes": 0,
+          "missing_sensor": 70
+        },
+        "silent": {
+          "correct": 0,
+          "error": 0,
+          "false_negative": 0,
+          "false_positive": 0,
+          "forward_spikes": 0,
+          "missing_sensor": 70
+        },
+        "temporal": {
+          "correct": 0,
+          "error": 0,
+          "false_negative": 0,
+          "false_positive": 0,
+          "forward_spikes": 0,
+          "missing_sensor": 70
+        }
+      },
+      "evaluation_environment_sha256": "132537baf13903b71928476a433d571bc3113f7da6e4722ad7bca4eb6b0af8d2",
+      "evaluation_episodes": 70,
+      "learner": {
+        "abstentions": {
+          "overemit": 168,
+          "silent": 168,
+          "temporal": 168
+        },
+        "choice": "overemit",
+        "chosen_actions": {
+          "overemit": 168,
+          "silent": 168,
+          "temporal": 168
+        },
+        "forward_spike_counts": {
+          "overemit": 168,
+          "silent": 0,
+          "temporal": 24
+        },
+        "observed_rewards": {
+          "overemit": 0,
+          "silent": 0,
+          "temporal": 0
+        },
+        "policy_changes_native": 0,
+        "reward_sums": {
+          "overemit": 0,
+          "silent": 0,
+          "temporal": 0
+        }
+      },
+      "matched_demand_shuffle_placebo_choices": {
+        "overemit": 32
+      },
+      "matched_demand_shuffle_placebo_losses": {
+        "0": 32
+      },
+      "selected_evaluation": {
+        "correct": 0,
+        "error": 0,
+        "false_negative": 0,
+        "false_positive": 0,
+        "forward_spikes": 0,
+        "missing_sensor": 70
+      },
+      "train_episodes": 504,
+      "train_exogenous_demand_absent": 0,
+      "train_exogenous_demand_present": 0,
+      "train_inputs_sha256": "62095e9c50a793e092940db77c1a2a97aeca7fbb98e78a474086d517bd2f64ca",
+      "train_unknown_demand": 504
+    },
+    "aligned": {
+      "actions_sha256": "1fbca3cbf3175761edeb447e37b2fd41386647a6d18fecf1041000bea7c1a3ae",
+      "evaluation": {
+        "overemit": {
+          "correct": 26,
+          "error": 44,
+          "false_negative": 1,
+          "false_positive": 43,
+          "forward_spikes": 70,
+          "missing_sensor": 0
+        },
+        "silent": {
+          "correct": 52,
+          "error": 18,
+          "false_negative": 18,
+          "false_positive": 0,
+          "forward_spikes": 0,
+          "missing_sensor": 0
+        },
+        "temporal": {
+          "correct": 60,
+          "error": 10,
+          "false_negative": 9,
+          "false_positive": 1,
+          "forward_spikes": 10,
+          "missing_sensor": 0
+        }
+      },
+      "evaluation_environment_sha256": "996951da8e5595239a6c7928cd32522543d99052e36e5eaf61fd7abfbc2507ab",
+      "evaluation_episodes": 70,
+      "learner": {
+        "abstentions": {
+          "overemit": 0,
+          "silent": 0,
+          "temporal": 0
+        },
+        "choice": "temporal",
+        "chosen_actions": {
+          "overemit": 168,
+          "silent": 168,
+          "temporal": 168
+        },
+        "forward_spike_counts": {
+          "overemit": 168,
+          "silent": 0,
+          "temporal": 24
+        },
+        "observed_rewards": {
+          "overemit": 168,
+          "silent": 168,
+          "temporal": 168
+        },
+        "policy_changes_native": 0,
+        "reward_sums": {
+          "overemit": -54,
+          "silent": 76,
+          "temporal": 134
+        }
+      },
+      "matched_demand_shuffle_placebo_choices": {
+        "silent": 30,
+        "temporal": 2
+      },
+      "matched_demand_shuffle_placebo_losses": {
+        "10": 2,
+        "18": 30
+      },
+      "selected_evaluation": {
+        "correct": 60,
+        "error": 10,
+        "false_negative": 9,
+        "false_positive": 1,
+        "forward_spikes": 10,
+        "missing_sensor": 0
+      },
+      "train_episodes": 504,
+      "train_exogenous_demand_absent": 384,
+      "train_exogenous_demand_present": 120,
+      "train_inputs_sha256": "62095e9c50a793e092940db77c1a2a97aeca7fbb98e78a474086d517bd2f64ca",
+      "train_unknown_demand": 0
+    },
+    "decoupled": {
+      "actions_sha256": "1fbca3cbf3175761edeb447e37b2fd41386647a6d18fecf1041000bea7c1a3ae",
+      "evaluation": {
+        "overemit": {
+          "correct": 39,
+          "error": 31,
+          "false_negative": 4,
+          "false_positive": 27,
+          "forward_spikes": 70,
+          "missing_sensor": 0
+        },
+        "silent": {
+          "correct": 33,
+          "error": 37,
+          "false_negative": 37,
+          "false_positive": 0,
+          "forward_spikes": 0,
+          "missing_sensor": 0
+        },
+        "temporal": {
+          "correct": 33,
+          "error": 37,
+          "false_negative": 32,
+          "false_positive": 5,
+          "forward_spikes": 10,
+          "missing_sensor": 0
+        }
+      },
+      "evaluation_environment_sha256": "fbd6d7cb80d4b422904623d1ea1668088cfdca0a40c9d3727dc030beb18eed05",
+      "evaluation_episodes": 70,
+      "learner": {
+        "abstentions": {
+          "overemit": 0,
+          "silent": 0,
+          "temporal": 0
+        },
+        "choice": "overemit",
+        "chosen_actions": {
+          "overemit": 168,
+          "silent": 168,
+          "temporal": 168
+        },
+        "forward_spike_counts": {
+          "overemit": 168,
+          "silent": 0,
+          "temporal": 24
+        },
+        "observed_rewards": {
+          "overemit": 168,
+          "silent": 168,
+          "temporal": 168
+        },
+        "policy_changes_native": 0,
+        "reward_sums": {
+          "overemit": 2,
+          "silent": -16,
+          "temporal": -8
+        }
+      },
+      "matched_demand_shuffle_placebo_choices": {
+        "overemit": 24,
+        "silent": 2,
+        "temporal": 6
+      },
+      "matched_demand_shuffle_placebo_losses": {
+        "31": 24,
+        "37": 8
+      },
+      "selected_evaluation": {
+        "correct": 39,
+        "error": 31,
+        "false_negative": 4,
+        "false_positive": 27,
+        "forward_spikes": 70,
+        "missing_sensor": 0
+      },
+      "train_episodes": 504,
+      "train_exogenous_demand_absent": 237,
+      "train_exogenous_demand_present": 267,
+      "train_inputs_sha256": "62095e9c50a793e092940db77c1a2a97aeca7fbb98e78a474086d517bd2f64ca",
+      "train_unknown_demand": 0
+    },
+    "inverted": {
+      "actions_sha256": "1fbca3cbf3175761edeb447e37b2fd41386647a6d18fecf1041000bea7c1a3ae",
+      "evaluation": {
+        "overemit": {
+          "correct": 45,
+          "error": 25,
+          "false_negative": 10,
+          "false_positive": 15,
+          "forward_spikes": 70,
+          "missing_sensor": 0
+        },
+        "silent": {
+          "correct": 15,
+          "error": 55,
+          "false_negative": 55,
+          "false_positive": 0,
+          "forward_spikes": 0,
+          "missing_sensor": 0
+        },
+        "temporal": {
+          "correct": 9,
+          "error": 61,
+          "false_negative": 53,
+          "false_positive": 8,
+          "forward_spikes": 10,
+          "missing_sensor": 0
+        }
+      },
+      "evaluation_environment_sha256": "dbbc02db8f2b5f6ef667dc6c5754e1651cf1a0f16175277a13724c29917d218c",
+      "evaluation_episodes": 70,
+      "learner": {
+        "abstentions": {
+          "overemit": 0,
+          "silent": 0,
+          "temporal": 0
+        },
+        "choice": "overemit",
+        "chosen_actions": {
+          "overemit": 168,
+          "silent": 168,
+          "temporal": 168
+        },
+        "forward_spike_counts": {
+          "overemit": 168,
+          "silent": 0,
+          "temporal": 24
+        },
+        "observed_rewards": {
+          "overemit": 168,
+          "silent": 168,
+          "temporal": 168
+        },
+        "policy_changes_native": 0,
+        "reward_sums": {
+          "overemit": 62,
+          "silent": -88,
+          "temporal": -138
+        }
+      },
+      "matched_demand_shuffle_placebo_choices": {
+        "overemit": 32
+      },
+      "matched_demand_shuffle_placebo_losses": {
+        "25": 32
+      },
+      "selected_evaluation": {
+        "correct": 45,
+        "error": 25,
+        "false_negative": 10,
+        "false_positive": 15,
+        "forward_spikes": 70,
+        "missing_sensor": 0
+      },
+      "train_episodes": 504,
+      "train_exogenous_demand_absent": 112,
+      "train_exogenous_demand_present": 392,
+      "train_inputs_sha256": "62095e9c50a793e092940db77c1a2a97aeca7fbb98e78a474086d517bd2f64ca",
+      "train_unknown_demand": 0
+    }
+  },
+  "runtime_reverse_BV_delivery": false,
+  "schema": "spk-v5-t2c-exogenous-demand-closed-bandit/research-v0",
+  "status": "T2C_SIMULATED_EXOGENOUS_DEMAND_SHADOW_BANDIT_CONTROL_ONLY_T3_BLIND_BLOCKED",
+  "world_construction": "Exogenous C demand drawn BEFORE candidate selection; correlation with A inputs specified synthetically by experimenter"
+}

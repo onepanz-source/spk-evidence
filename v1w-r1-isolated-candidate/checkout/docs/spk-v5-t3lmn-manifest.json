@@ -1,0 +1,50 @@
+{
+  "blind_claim_none": true,
+  "claims": [
+    "paired_goal_observational_nonidentifiability",
+    "public_CO2_photo_proxy_disagreement_diagnostic",
+    "no_native_blind_or_production_promotion"
+  ],
+  "frozen_contracts_untouched": true,
+  "goal_label_never_in_policy": true,
+  "inherited_suite_count": 348,
+  "native_BV_credit_none": true,
+  "native_learning_none": true,
+  "new_files": [
+    "spk_v5_research/island_goal_identifiability_v5t3l.py",
+    "spk_v5_research/island_goal_audit_v5t3m.py",
+    "spk_v5_research/island_goal_nonpromotion_v5t3n.py",
+    "tests/test_spk_v5_t3l_goal_identifiability.py",
+    "tests/test_spk_v5_t3m_goal_audit.py",
+    "tests/test_spk_v5_t3n_nonpromotion.py",
+    "search/spk_v5_t3lmn_goal_alignment.py",
+    "search/spk_v5_t3lmn_goal_alignment_gate.sh",
+    "docs/spk-v5-t3lmn-goal-nonidentifiability.md",
+    "docs/spk-v5-t3lmn-reference.json",
+    "docs/spk-v5-t3lmn-manifest.json"
+  ],
+  "new_suite_count": 59,
+  "pins_sha256": {
+    "docs/spk-v5-t3ijk-manifest.json": "322a9d49ae69fb8bcce8dc2863c52c89a4d356fb049d05d58050965fbe68411e",
+    "docs/spk-v5-t3ijk-reference.json": "09d8a6c8961ebf0dad3c78387d4160993599a39fb9883a76165a3d6fccb0338b",
+    "docs/spk-v5-t3lmn-goal-nonidentifiability.md": "96c22f0902e448621bc644f24e6c0aa476cc348ab576e7988a7a1a02747a718d",
+    "docs/spk-v5-t3lmn-reference.json": "334e106048124681bf19dcdd03dd8fb5b743711c4e298dccd2314a17eb9bf3c9",
+    "search/spk_v5_t3lmn_goal_alignment.py": "11acac740f16bc895cddc052c1484e8f3972a9d8c35a1bbe26d7d5840e315f89",
+    "search/spk_v5_t3lmn_goal_alignment_gate.sh": "043d56e8b21dd21373e09b3ebc7dfc809f2d7bf971b414195f7b7da5b8f03c22",
+    "spk_v5_research/island_c_owned_credit_v5t3h.py": "9aced88cb5581732bd2c658bf23fb5149bf9d6aa7d40b5f499afe825b72c22a6",
+    "spk_v5_research/island_goal_audit_v5t3m.py": "53dffc3fd292420dc5ca782779cc40bc8161710867ffa19022f5a0ea8d704872",
+    "spk_v5_research/island_goal_identifiability_v5t3l.py": "70981354f425072c63f1162887af1f61a7e3e434b1377b3febe4142a6a301c49",
+    "spk_v5_research/island_goal_nonpromotion_v5t3n.py": "27d1e6173780476d931cee12d8338aa7133ab2c0fb3c23aa9fc4dd926fccf0c3",
+    "spk_v5_research/island_online_credit_v5t3i.py": "804a5c1ccbddff116b6c6bc58a15d3ec09465dddb669b4ab4075b21363284c56",
+    "tests/test_spk_v5_t3l_goal_identifiability.py": "707dcc9a0ca54b9eefbe5891cb7ac93f7675aca7af830fad4aeea37aa9d3c132",
+    "tests/test_spk_v5_t3m_goal_audit.py": "a8af07a75e55e41c0137b93d400304c7980e74aa97eded13ea19d610aace5bd7",
+    "tests/test_spk_v5_t3n_nonpromotion.py": "32c30f513a2ea894351c13f71ba6ded8701ea3b1206f6dc4f80c16a67fb9bb23"
+  },
+  "public_UCI_rows": 3600,
+  "report_sha256": "334e106048124681bf19dcdd03dd8fb5b743711c4e298dccd2314a17eb9bf3c9",
+  "research_worlds": 8,
+  "schema": "spk-v5-t3lmn-paired-world-goal-proxy-research/v0",
+  "sensor_authentication_none": true,
+  "total_suite_count": 407,
+  "world_episodes": 360
+}

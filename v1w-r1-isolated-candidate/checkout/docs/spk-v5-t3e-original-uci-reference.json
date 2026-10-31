@@ -1,0 +1,811 @@
+{
+  "candidate_selection": {
+    "candidate_program_frozen_before_public_comparison": true,
+    "candidates": [
+      "current",
+      "persist"
+    ],
+    "chosen": "persist",
+    "method": "maximize training balanced accuracy; tie -> current-only",
+    "public_tests_already_examined_previously_NOT_BLIND": true,
+    "training_only_labels_for_host_feedback": true
+  },
+  "cohorts": {
+    "early_public_prior_to_training": {
+      "admitted_successor_pairs": 2664,
+      "calendar_day_NOT_INDEPENDENT": [
+        {
+          "current": {
+            "balanced_accuracy": 0.96957672,
+            "error_rate": 0.03965517,
+            "errors": 23,
+            "fn": 0,
+            "fp": 23,
+            "n": 580,
+            "negative": 378,
+            "positive": 202,
+            "tn": 355,
+            "tp": 202
+          },
+          "date": "2015-02-02",
+          "n": 580,
+          "persist": {
+            "balanced_accuracy": 0.96957672,
+            "error_rate": 0.03965517,
+            "errors": 23,
+            "fn": 0,
+            "fp": 23,
+            "n": 580,
+            "negative": 378,
+            "positive": 202,
+            "tn": 355,
+            "tp": 202
+          },
+          "positive": 202
+        },
+        {
+          "current": {
+            "balanced_accuracy": 0.98989298,
+            "error_rate": 0.01180556,
+            "errors": 17,
+            "fn": 0,
+            "fp": 17,
+            "n": 1440,
+            "negative": 841,
+            "positive": 599,
+            "tn": 824,
+            "tp": 599
+          },
+          "date": "2015-02-03",
+          "n": 1440,
+          "persist": {
+            "balanced_accuracy": 0.98965279,
+            "error_rate": 0.01180556,
+            "errors": 17,
+            "fn": 1,
+            "fp": 16,
+            "n": 1440,
+            "negative": 841,
+            "positive": 599,
+            "tn": 825,
+            "tp": 598
+          },
+          "positive": 599
+        },
+        {
+          "current": {
+            "balanced_accuracy": 0.98312236,
+            "error_rate": 0.02484472,
+            "errors": 16,
+            "fn": 0,
+            "fp": 16,
+            "n": 644,
+            "negative": 474,
+            "positive": 170,
+            "tn": 458,
+            "tp": 170
+          },
+          "date": "2015-02-04",
+          "n": 644,
+          "persist": {
+            "balanced_accuracy": 0.98018119,
+            "error_rate": 0.02639752,
+            "errors": 17,
+            "fn": 1,
+            "fp": 16,
+            "n": 644,
+            "negative": 474,
+            "positive": 170,
+            "tn": 458,
+            "tp": 169
+          },
+          "positive": 170
+        }
+      ],
+      "candidate_metrics": {
+        "current": {
+          "balanced_accuracy": 0.98346131,
+          "error_rate": 0.02102102,
+          "errors": 56,
+          "fn": 0,
+          "fp": 56,
+          "n": 2664,
+          "negative": 1693,
+          "positive": 971,
+          "tn": 1637,
+          "tp": 971
+        },
+        "persist": {
+          "balanced_accuracy": 0.98272678,
+          "error_rate": 0.0213964,
+          "errors": 57,
+          "fn": 2,
+          "fp": 55,
+          "n": 2664,
+          "negative": 1693,
+          "positive": 971,
+          "tn": 1638,
+          "tp": 969
+        },
+        "rise": {
+          "balanced_accuracy": 0.50073453,
+          "error_rate": 0.36411411,
+          "errors": 970,
+          "fn": 969,
+          "fp": 1,
+          "n": 2664,
+          "negative": 1693,
+          "positive": 971,
+          "tn": 1692,
+          "tp": 2
+        },
+        "silent": {
+          "balanced_accuracy": 0.5,
+          "error_rate": 0.36448949,
+          "errors": 971,
+          "fn": 971,
+          "fp": 0,
+          "n": 2664,
+          "negative": 1693,
+          "positive": 971,
+          "tn": 1693,
+          "tp": 0
+        }
+      },
+      "dataset": "datatest.txt",
+      "observed_gap_seconds": {
+        "59": 534,
+        "60": 1596,
+        "61": 534
+      },
+      "paired_current_correct_persistence_wrong": 2,
+      "paired_persistence_correct_current_wrong": 1,
+      "physical_state_pattern_counts": {
+        "00": 1634,
+        "01": 3,
+        "10": 3,
+        "11": 1024
+      },
+      "rejected_irregular_seconds": 0,
+      "rows": 2665,
+      "target": "photo-derived OCCUPANCY STATE at current reading; NOT onset"
+    },
+    "later_public_after_training": {
+      "admitted_successor_pairs": 9751,
+      "calendar_day_NOT_INDEPENDENT": [
+        {
+          "current": {
+            "balanced_accuracy": 0.99556213,
+            "error_rate": 0.00544465,
+            "errors": 3,
+            "fn": 0,
+            "fp": 3,
+            "n": 551,
+            "negative": 338,
+            "positive": 213,
+            "tn": 335,
+            "tp": 213
+          },
+          "date": "2015-02-11",
+          "n": 551,
+          "persist": {
+            "balanced_accuracy": 0.99556213,
+            "error_rate": 0.00544465,
+            "errors": 3,
+            "fn": 0,
+            "fp": 3,
+            "n": 551,
+            "negative": 338,
+            "positive": 213,
+            "tn": 335,
+            "tp": 213
+          },
+          "positive": 213
+        },
+        {
+          "current": {
+            "balanced_accuracy": 0.93152037,
+            "error_rate": 0.10833333,
+            "errors": 156,
+            "fn": 2,
+            "fp": 154,
+            "n": 1440,
+            "negative": 1196,
+            "positive": 244,
+            "tn": 1042,
+            "tp": 242
+          },
+          "date": "2015-02-12",
+          "n": 1440,
+          "persist": {
+            "balanced_accuracy": 0.92784007,
+            "error_rate": 0.10902778,
+            "errors": 157,
+            "fn": 4,
+            "fp": 153,
+            "n": 1440,
+            "negative": 1196,
+            "positive": 244,
+            "tn": 1043,
+            "tp": 240
+          },
+          "positive": 244
+        },
+        {
+          "current": {
+            "balanced_accuracy": 0.96991809,
+            "error_rate": 0.03888889,
+            "errors": 56,
+            "fn": 1,
+            "fp": 55,
+            "n": 1440,
+            "negative": 946,
+            "positive": 494,
+            "tn": 891,
+            "tp": 493
+          },
+          "date": "2015-02-13",
+          "n": 1440,
+          "persist": {
+            "balanced_accuracy": 0.96890594,
+            "error_rate": 0.03958333,
+            "errors": 57,
+            "fn": 2,
+            "fp": 55,
+            "n": 1440,
+            "negative": 946,
+            "positive": 494,
+            "tn": 891,
+            "tp": 492
+          },
+          "positive": 494
+        },
+        {
+          "current": {
+            "balanced_accuracy": null,
+            "error_rate": 0.01319444,
+            "errors": 19,
+            "fn": 0,
+            "fp": 19,
+            "n": 1440,
+            "negative": 1440,
+            "positive": 0,
+            "tn": 1421,
+            "tp": 0
+          },
+          "date": "2015-02-14",
+          "n": 1440,
+          "persist": {
+            "balanced_accuracy": null,
+            "error_rate": 0.00694444,
+            "errors": 10,
+            "fn": 0,
+            "fp": 10,
+            "n": 1440,
+            "negative": 1440,
+            "positive": 0,
+            "tn": 1430,
+            "tp": 0
+          },
+          "positive": 0
+        },
+        {
+          "current": {
+            "balanced_accuracy": null,
+            "error_rate": 0.11180556,
+            "errors": 161,
+            "fn": 0,
+            "fp": 161,
+            "n": 1440,
+            "negative": 1440,
+            "positive": 0,
+            "tn": 1279,
+            "tp": 0
+          },
+          "date": "2015-02-15",
+          "n": 1440,
+          "persist": {
+            "balanced_accuracy": null,
+            "error_rate": 0.10625,
+            "errors": 153,
+            "fn": 0,
+            "fp": 153,
+            "n": 1440,
+            "negative": 1440,
+            "positive": 0,
+            "tn": 1287,
+            "tp": 0
+          },
+          "positive": 0
+        },
+        {
+          "current": {
+            "balanced_accuracy": 0.99325084,
+            "error_rate": 0.00833333,
+            "errors": 12,
+            "fn": 0,
+            "fp": 12,
+            "n": 1440,
+            "negative": 889,
+            "positive": 551,
+            "tn": 877,
+            "tp": 551
+          },
+          "date": "2015-02-16",
+          "n": 1440,
+          "persist": {
+            "balanced_accuracy": 0.99381327,
+            "error_rate": 0.00763889,
+            "errors": 11,
+            "fn": 0,
+            "fp": 11,
+            "n": 1440,
+            "negative": 889,
+            "positive": 551,
+            "tn": 878,
+            "tp": 551
+          },
+          "positive": 551
+        },
+        {
+          "current": {
+            "balanced_accuracy": 0.99574664,
+            "error_rate": 0.00486111,
+            "errors": 7,
+            "fn": 1,
+            "fp": 6,
+            "n": 1440,
+            "negative": 903,
+            "positive": 537,
+            "tn": 897,
+            "tp": 536
+          },
+          "date": "2015-02-17",
+          "n": 1440,
+          "persist": {
+            "balanced_accuracy": 0.99536925,
+            "error_rate": 0.00486111,
+            "errors": 7,
+            "fn": 2,
+            "fp": 5,
+            "n": 1440,
+            "negative": 903,
+            "positive": 537,
+            "tn": 898,
+            "tp": 535
+          },
+          "positive": 537
+        },
+        {
+          "current": {
+            "balanced_accuracy": 1.0,
+            "error_rate": 0.0,
+            "errors": 0,
+            "fn": 0,
+            "fp": 0,
+            "n": 560,
+            "negative": 551,
+            "positive": 9,
+            "tn": 551,
+            "tp": 9
+          },
+          "date": "2015-02-18",
+          "n": 560,
+          "persist": {
+            "balanced_accuracy": 0.94444444,
+            "error_rate": 0.00178571,
+            "errors": 1,
+            "fn": 1,
+            "fp": 0,
+            "n": 560,
+            "negative": 551,
+            "positive": 9,
+            "tn": 551,
+            "tp": 8
+          },
+          "positive": 9
+        }
+      ],
+      "candidate_metrics": {
+        "current": {
+          "balanced_accuracy": 0.97241043,
+          "error_rate": 0.04245718,
+          "errors": 414,
+          "fn": 4,
+          "fp": 410,
+          "n": 9751,
+          "negative": 7703,
+          "positive": 2048,
+          "tn": 7293,
+          "tp": 2044
+        },
+        "persist": {
+          "balanced_accuracy": 0.97248792,
+          "error_rate": 0.04091888,
+          "errors": 399,
+          "fn": 9,
+          "fp": 390,
+          "n": 9751,
+          "negative": 7703,
+          "positive": 2048,
+          "tn": 7313,
+          "tp": 2039
+        },
+        "rise": {
+          "balanced_accuracy": 0.49992251,
+          "error_rate": 0.21156804,
+          "errors": 2063,
+          "fn": 2043,
+          "fp": 20,
+          "n": 9751,
+          "negative": 7703,
+          "positive": 2048,
+          "tn": 7683,
+          "tp": 5
+        },
+        "silent": {
+          "balanced_accuracy": 0.5,
+          "error_rate": 0.21002974,
+          "errors": 2048,
+          "fn": 2048,
+          "fp": 0,
+          "n": 9751,
+          "negative": 7703,
+          "positive": 2048,
+          "tn": 7703,
+          "tp": 0
+        }
+      },
+      "dataset": "datatest2.txt",
+      "observed_gap_seconds": {
+        "59": 1951,
+        "60": 5849,
+        "61": 1951
+      },
+      "paired_current_correct_persistence_wrong": 5,
+      "paired_persistence_correct_current_wrong": 20,
+      "physical_state_pattern_counts": {
+        "00": 7272,
+        "01": 25,
+        "10": 25,
+        "11": 2429
+      },
+      "rejected_irregular_seconds": 0,
+      "rows": 9752,
+      "target": "photo-derived OCCUPANCY STATE at current reading; NOT onset"
+    },
+    "train": {
+      "admitted_successor_pairs": 8142,
+      "calendar_day_NOT_INDEPENDENT": [
+        {
+          "current": {
+            "balanced_accuracy": 1.0,
+            "error_rate": 0.0,
+            "errors": 0,
+            "fn": 0,
+            "fp": 0,
+            "n": 368,
+            "negative": 353,
+            "positive": 15,
+            "tn": 353,
+            "tp": 15
+          },
+          "date": "2015-02-04",
+          "n": 368,
+          "persist": {
+            "balanced_accuracy": 1.0,
+            "error_rate": 0.0,
+            "errors": 0,
+            "fn": 0,
+            "fp": 0,
+            "n": 368,
+            "negative": 353,
+            "positive": 15,
+            "tn": 353,
+            "tp": 15
+          },
+          "positive": 15
+        },
+        {
+          "current": {
+            "balanced_accuracy": 0.96448391,
+            "error_rate": 0.04444444,
+            "errors": 64,
+            "fn": 0,
+            "fp": 64,
+            "n": 1440,
+            "negative": 901,
+            "positive": 539,
+            "tn": 837,
+            "tp": 539
+          },
+          "date": "2015-02-05",
+          "n": 1440,
+          "persist": {
+            "balanced_accuracy": 0.96262862,
+            "error_rate": 0.04583333,
+            "errors": 66,
+            "fn": 2,
+            "fp": 64,
+            "n": 1440,
+            "negative": 901,
+            "positive": 539,
+            "tn": 837,
+            "tp": 537
+          },
+          "positive": 539
+        },
+        {
+          "current": {
+            "balanced_accuracy": 0.98946136,
+            "error_rate": 0.0125,
+            "errors": 18,
+            "fn": 0,
+            "fp": 18,
+            "n": 1440,
+            "negative": 854,
+            "positive": 586,
+            "tn": 836,
+            "tp": 586
+          },
+          "date": "2015-02-06",
+          "n": 1440,
+          "persist": {
+            "balanced_accuracy": 0.9891936,
+            "error_rate": 0.0125,
+            "errors": 18,
+            "fn": 1,
+            "fp": 17,
+            "n": 1440,
+            "negative": 854,
+            "positive": 586,
+            "tn": 837,
+            "tp": 585
+          },
+          "positive": 586
+        },
+        {
+          "current": {
+            "balanced_accuracy": null,
+            "error_rate": 0.16041667,
+            "errors": 231,
+            "fn": 0,
+            "fp": 231,
+            "n": 1440,
+            "negative": 1440,
+            "positive": 0,
+            "tn": 1209,
+            "tp": 0
+          },
+          "date": "2015-02-07",
+          "n": 1440,
+          "persist": {
+            "balanced_accuracy": null,
+            "error_rate": 0.15694444,
+            "errors": 226,
+            "fn": 0,
+            "fp": 226,
+            "n": 1440,
+            "negative": 1440,
+            "positive": 0,
+            "tn": 1214,
+            "tp": 0
+          },
+          "positive": 0
+        },
+        {
+          "current": {
+            "balanced_accuracy": null,
+            "error_rate": 0.03263889,
+            "errors": 47,
+            "fn": 0,
+            "fp": 47,
+            "n": 1440,
+            "negative": 1440,
+            "positive": 0,
+            "tn": 1393,
+            "tp": 0
+          },
+          "date": "2015-02-08",
+          "n": 1440,
+          "persist": {
+            "balanced_accuracy": null,
+            "error_rate": 0.02361111,
+            "errors": 34,
+            "fn": 0,
+            "fp": 34,
+            "n": 1440,
+            "negative": 1440,
+            "positive": 0,
+            "tn": 1406,
+            "tp": 0
+          },
+          "positive": 0
+        },
+        {
+          "current": {
+            "balanced_accuracy": 0.99740804,
+            "error_rate": 0.00277778,
+            "errors": 4,
+            "fn": 1,
+            "fp": 3,
+            "n": 1440,
+            "negative": 906,
+            "positive": 534,
+            "tn": 903,
+            "tp": 533
+          },
+          "date": "2015-02-09",
+          "n": 1440,
+          "persist": {
+            "balanced_accuracy": 0.99553538,
+            "error_rate": 0.00416667,
+            "errors": 6,
+            "fn": 3,
+            "fp": 3,
+            "n": 1440,
+            "negative": 906,
+            "positive": 534,
+            "tn": 903,
+            "tp": 531
+          },
+          "positive": 534
+        },
+        {
+          "current": {
+            "balanced_accuracy": 0.99711538,
+            "error_rate": 0.00522648,
+            "errors": 3,
+            "fn": 0,
+            "fp": 3,
+            "n": 574,
+            "negative": 520,
+            "positive": 54,
+            "tn": 517,
+            "tp": 54
+          },
+          "date": "2015-02-10",
+          "n": 574,
+          "persist": {
+            "balanced_accuracy": 0.99807692,
+            "error_rate": 0.00348432,
+            "errors": 2,
+            "fn": 0,
+            "fp": 2,
+            "n": 574,
+            "negative": 520,
+            "positive": 54,
+            "tn": 518,
+            "tp": 54
+          },
+          "positive": 54
+        }
+      ],
+      "candidate_metrics": {
+        "current": {
+          "balanced_accuracy": 0.97117931,
+          "error_rate": 0.04507492,
+          "errors": 367,
+          "fn": 1,
+          "fp": 366,
+          "n": 8142,
+          "negative": 6414,
+          "positive": 1728,
+          "tn": 6048,
+          "tp": 1727
+        },
+        "persist": {
+          "balanced_accuracy": 0.97129164,
+          "error_rate": 0.04323262,
+          "errors": 352,
+          "fn": 6,
+          "fp": 346,
+          "n": 8142,
+          "negative": 6414,
+          "positive": 1728,
+          "tn": 6068,
+          "tp": 1722
+        },
+        "rise": {
+          "balanced_accuracy": 0.49988767,
+          "error_rate": 0.21407517,
+          "errors": 1743,
+          "fn": 1723,
+          "fp": 20,
+          "n": 8142,
+          "negative": 6414,
+          "positive": 1728,
+          "tn": 6394,
+          "tp": 5
+        },
+        "silent": {
+          "balanced_accuracy": 0.5,
+          "error_rate": 0.21223287,
+          "errors": 1728,
+          "fn": 1728,
+          "fp": 0,
+          "n": 8142,
+          "negative": 6414,
+          "positive": 1728,
+          "tn": 6414,
+          "tp": 0
+        }
+      },
+      "dataset": "datatraining.txt",
+      "observed_gap_seconds": {
+        "59": 1629,
+        "60": 4884,
+        "61": 1629
+      },
+      "paired_current_correct_persistence_wrong": 5,
+      "paired_persistence_correct_current_wrong": 20,
+      "physical_state_pattern_counts": {
+        "00": 6024,
+        "01": 25,
+        "10": 25,
+        "11": 2068
+      },
+      "rejected_irregular_seconds": 0,
+      "rows": 8143,
+      "target": "photo-derived OCCUPANCY STATE at current reading; NOT onset"
+    }
+  },
+  "limits": [
+    "The threshold 200 lux and task were previously explored on PUBLIC UCI data",
+    "This is supervised host arm-choice, NOT local endogenous neuronal learning",
+    "Strong static comparator current_light is a source A1b program, not a strawman",
+    "No independent holdout, causal learning claim, significance, or native update",
+    "Any persistence advantage can be matched by a two-reading Python Boolean rule",
+    "Physical sampling ~60s does not establish native real-time tick latency"
+  ],
+  "native_A1b_four_pattern_truth_table": {
+    "00": {
+      "current": false,
+      "persist": false,
+      "rise": false,
+      "silent": false
+    },
+    "01": {
+      "current": true,
+      "persist": false,
+      "rise": true,
+      "silent": false
+    },
+    "10": {
+      "current": false,
+      "persist": false,
+      "rise": false,
+      "silent": false
+    },
+    "11": {
+      "current": true,
+      "persist": true,
+      "rise": false,
+      "silent": false
+    }
+  },
+  "new_research_program_PERSIST_in_A1b": true,
+  "phase": "TRAIN_SELECTED_POSTHOC_PUBLIC_COMPARISON",
+  "raw_original_file_sha256": {
+    "datatest.txt": "1b92c7c1b2838963464fa891a610cf3c5db4becb7189189b29b330107a584c7f",
+    "datatest2.txt": "d026d1bd5aeccd4aff4f3b3710d48e40613bd5fc370db7e61bbdcaa50d985095",
+    "datatraining.txt": "b2c4d0ce2b9e4e453c476f7125ef31aeec2d1f5c7f5572d0e80de3df6521ab56"
+  },
+  "schema": "spk-v5-t3e-real-successor-competitor/research-v0",
+  "scientific_boundary": {
+    "comparisons_exploratory_after_previous_public_test_inspection": true,
+    "endogenous_local_BV_reward": false,
+    "equivalent_simple_two_reading_boolean_rule": true,
+    "exhaustive_four_input_A1b_truth_table": true,
+    "independent_blind_holdout": false,
+    "label_never_sent_to_neuron": true,
+    "native_learning": false,
+    "no_frozen_core_compiler_architecture_BV_changes": true,
+    "observations_autocorrelated_and_per_day_not_independent": true,
+    "physical_temporal_inputs": true,
+    "real_temporal_order_dependence": true,
+    "source_rows_scored_via_verified_A1b_truth_table_NOT_per_row_reexecution": true
+  },
+  "status": "REAL_SUCCESSOR_A1B_PERSISTENCE_COMPARISON_PUBLIC_NOT_BLIND_NO_RL",
+  "t3d_report_sha256": "687dbc58cb3e389fd9176943ef8114951844ec936028a0b5ca0ad1e85ad86188"
+}

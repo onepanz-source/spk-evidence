@@ -1,0 +1,515 @@
+{
+  "cohorts": {
+    "early": {
+      "actual_dark_to_bright_opportunities": 3,
+      "bright_onsets_with_current_photo_occupied": 2,
+      "day_count": 3,
+      "days": [
+        {
+          "all_labels_zero": false,
+          "current_correct_persist_wrong": 0,
+          "current_wrong": 23,
+          "day": "2015-02-02",
+          "n": 580,
+          "net_errors_avoided_by_persist": 0,
+          "persist_correct_current_wrong": 0,
+          "persist_wrong": 23,
+          "positive": 202,
+          "rise_occupied": 0,
+          "rise_total": 0,
+          "weekend": false
+        },
+        {
+          "all_labels_zero": false,
+          "current_correct_persist_wrong": 1,
+          "current_wrong": 17,
+          "day": "2015-02-03",
+          "n": 1440,
+          "net_errors_avoided_by_persist": 0,
+          "persist_correct_current_wrong": 1,
+          "persist_wrong": 17,
+          "positive": 599,
+          "rise_occupied": 1,
+          "rise_total": 2,
+          "weekend": false
+        },
+        {
+          "all_labels_zero": false,
+          "current_correct_persist_wrong": 1,
+          "current_wrong": 16,
+          "day": "2015-02-04",
+          "n": 644,
+          "net_errors_avoided_by_persist": -1,
+          "persist_correct_current_wrong": 0,
+          "persist_wrong": 17,
+          "positive": 170,
+          "rise_occupied": 1,
+          "rise_total": 1,
+          "weekend": false
+        }
+      ],
+      "days_current_better": 1,
+      "days_persist_better": 0,
+      "days_tied": 2,
+      "leave_one_day_out_DIAGNOSTIC_ONLY": [
+        {
+          "held_out_day": "2015-02-02",
+          "other_days_net_errors_avoided": -1,
+          "other_days_row_count": 2084
+        },
+        {
+          "held_out_day": "2015-02-03",
+          "other_days_net_errors_avoided": -1,
+          "other_days_row_count": 1224
+        },
+        {
+          "held_out_day": "2015-02-04",
+          "other_days_net_errors_avoided": 0,
+          "other_days_row_count": 2020
+        }
+      ],
+      "rejected_irregular_intervals": 0,
+      "source": "datatest.txt",
+      "stratified_by_posthoc_photo_label_presence": {
+        "positive_photo_occupancy_day": {
+          "current_errors": 56,
+          "days": 3,
+          "n": 2664,
+          "net_errors_avoided_by_persist": -1,
+          "occupied_current": 971,
+          "persist_errors": 57,
+          "persist_fixes": 1,
+          "persist_regressions": 2
+        },
+        "zero_photo_occupancy_day": {
+          "current_errors": 0,
+          "days": 0,
+          "n": 0,
+          "net_errors_avoided_by_persist": 0,
+          "occupied_current": 0,
+          "persist_errors": 0,
+          "persist_fixes": 0,
+          "persist_regressions": 0
+        }
+      },
+      "total": {
+        "current_errors": 56,
+        "n": 2664,
+        "net_errors_avoided_by_persist": -1,
+        "occupied_current": 971,
+        "persist_errors": 57,
+        "persist_fixes": 1,
+        "persist_regressions": 2
+      },
+      "warning": "same-building public time series; days and bright-onset opportunities NOT iid"
+    },
+    "late": {
+      "actual_dark_to_bright_opportunities": 25,
+      "bright_onsets_with_current_photo_occupied": 5,
+      "day_count": 8,
+      "days": [
+        {
+          "all_labels_zero": false,
+          "current_correct_persist_wrong": 0,
+          "current_wrong": 3,
+          "day": "2015-02-11",
+          "n": 551,
+          "net_errors_avoided_by_persist": 0,
+          "persist_correct_current_wrong": 0,
+          "persist_wrong": 3,
+          "positive": 213,
+          "rise_occupied": 0,
+          "rise_total": 0,
+          "weekend": false
+        },
+        {
+          "all_labels_zero": false,
+          "current_correct_persist_wrong": 2,
+          "current_wrong": 156,
+          "day": "2015-02-12",
+          "n": 1440,
+          "net_errors_avoided_by_persist": -1,
+          "persist_correct_current_wrong": 1,
+          "persist_wrong": 157,
+          "positive": 244,
+          "rise_occupied": 2,
+          "rise_total": 3,
+          "weekend": false
+        },
+        {
+          "all_labels_zero": false,
+          "current_correct_persist_wrong": 1,
+          "current_wrong": 56,
+          "day": "2015-02-13",
+          "n": 1440,
+          "net_errors_avoided_by_persist": -1,
+          "persist_correct_current_wrong": 0,
+          "persist_wrong": 57,
+          "positive": 494,
+          "rise_occupied": 1,
+          "rise_total": 1,
+          "weekend": false
+        },
+        {
+          "all_labels_zero": true,
+          "current_correct_persist_wrong": 0,
+          "current_wrong": 19,
+          "day": "2015-02-14",
+          "n": 1440,
+          "net_errors_avoided_by_persist": 9,
+          "persist_correct_current_wrong": 9,
+          "persist_wrong": 10,
+          "positive": 0,
+          "rise_occupied": 0,
+          "rise_total": 9,
+          "weekend": true
+        },
+        {
+          "all_labels_zero": true,
+          "current_correct_persist_wrong": 0,
+          "current_wrong": 161,
+          "day": "2015-02-15",
+          "n": 1440,
+          "net_errors_avoided_by_persist": 8,
+          "persist_correct_current_wrong": 8,
+          "persist_wrong": 153,
+          "positive": 0,
+          "rise_occupied": 0,
+          "rise_total": 8,
+          "weekend": true
+        },
+        {
+          "all_labels_zero": false,
+          "current_correct_persist_wrong": 0,
+          "current_wrong": 12,
+          "day": "2015-02-16",
+          "n": 1440,
+          "net_errors_avoided_by_persist": 1,
+          "persist_correct_current_wrong": 1,
+          "persist_wrong": 11,
+          "positive": 551,
+          "rise_occupied": 0,
+          "rise_total": 1,
+          "weekend": false
+        },
+        {
+          "all_labels_zero": false,
+          "current_correct_persist_wrong": 1,
+          "current_wrong": 7,
+          "day": "2015-02-17",
+          "n": 1440,
+          "net_errors_avoided_by_persist": 0,
+          "persist_correct_current_wrong": 1,
+          "persist_wrong": 7,
+          "positive": 537,
+          "rise_occupied": 1,
+          "rise_total": 2,
+          "weekend": false
+        },
+        {
+          "all_labels_zero": false,
+          "current_correct_persist_wrong": 1,
+          "current_wrong": 0,
+          "day": "2015-02-18",
+          "n": 560,
+          "net_errors_avoided_by_persist": -1,
+          "persist_correct_current_wrong": 0,
+          "persist_wrong": 1,
+          "positive": 9,
+          "rise_occupied": 1,
+          "rise_total": 1,
+          "weekend": false
+        }
+      ],
+      "days_current_better": 3,
+      "days_persist_better": 3,
+      "days_tied": 2,
+      "leave_one_day_out_DIAGNOSTIC_ONLY": [
+        {
+          "held_out_day": "2015-02-11",
+          "other_days_net_errors_avoided": 15,
+          "other_days_row_count": 9200
+        },
+        {
+          "held_out_day": "2015-02-12",
+          "other_days_net_errors_avoided": 16,
+          "other_days_row_count": 8311
+        },
+        {
+          "held_out_day": "2015-02-13",
+          "other_days_net_errors_avoided": 16,
+          "other_days_row_count": 8311
+        },
+        {
+          "held_out_day": "2015-02-14",
+          "other_days_net_errors_avoided": 6,
+          "other_days_row_count": 8311
+        },
+        {
+          "held_out_day": "2015-02-15",
+          "other_days_net_errors_avoided": 7,
+          "other_days_row_count": 8311
+        },
+        {
+          "held_out_day": "2015-02-16",
+          "other_days_net_errors_avoided": 14,
+          "other_days_row_count": 8311
+        },
+        {
+          "held_out_day": "2015-02-17",
+          "other_days_net_errors_avoided": 15,
+          "other_days_row_count": 8311
+        },
+        {
+          "held_out_day": "2015-02-18",
+          "other_days_net_errors_avoided": 16,
+          "other_days_row_count": 9191
+        }
+      ],
+      "rejected_irregular_intervals": 0,
+      "source": "datatest2.txt",
+      "stratified_by_posthoc_photo_label_presence": {
+        "positive_photo_occupancy_day": {
+          "current_errors": 234,
+          "days": 6,
+          "n": 6871,
+          "net_errors_avoided_by_persist": -2,
+          "occupied_current": 2048,
+          "persist_errors": 236,
+          "persist_fixes": 3,
+          "persist_regressions": 5
+        },
+        "zero_photo_occupancy_day": {
+          "current_errors": 180,
+          "days": 2,
+          "n": 2880,
+          "net_errors_avoided_by_persist": 17,
+          "occupied_current": 0,
+          "persist_errors": 163,
+          "persist_fixes": 17,
+          "persist_regressions": 0
+        }
+      },
+      "total": {
+        "current_errors": 414,
+        "n": 9751,
+        "net_errors_avoided_by_persist": 15,
+        "occupied_current": 2048,
+        "persist_errors": 399,
+        "persist_fixes": 20,
+        "persist_regressions": 5
+      },
+      "warning": "same-building public time series; days and bright-onset opportunities NOT iid"
+    },
+    "train": {
+      "actual_dark_to_bright_opportunities": 25,
+      "bright_onsets_with_current_photo_occupied": 5,
+      "day_count": 7,
+      "days": [
+        {
+          "all_labels_zero": false,
+          "current_correct_persist_wrong": 0,
+          "current_wrong": 0,
+          "day": "2015-02-04",
+          "n": 368,
+          "net_errors_avoided_by_persist": 0,
+          "persist_correct_current_wrong": 0,
+          "persist_wrong": 0,
+          "positive": 15,
+          "rise_occupied": 0,
+          "rise_total": 0,
+          "weekend": false
+        },
+        {
+          "all_labels_zero": false,
+          "current_correct_persist_wrong": 2,
+          "current_wrong": 64,
+          "day": "2015-02-05",
+          "n": 1440,
+          "net_errors_avoided_by_persist": -2,
+          "persist_correct_current_wrong": 0,
+          "persist_wrong": 66,
+          "positive": 539,
+          "rise_occupied": 2,
+          "rise_total": 2,
+          "weekend": false
+        },
+        {
+          "all_labels_zero": false,
+          "current_correct_persist_wrong": 1,
+          "current_wrong": 18,
+          "day": "2015-02-06",
+          "n": 1440,
+          "net_errors_avoided_by_persist": 0,
+          "persist_correct_current_wrong": 1,
+          "persist_wrong": 18,
+          "positive": 586,
+          "rise_occupied": 1,
+          "rise_total": 2,
+          "weekend": false
+        },
+        {
+          "all_labels_zero": true,
+          "current_correct_persist_wrong": 0,
+          "current_wrong": 231,
+          "day": "2015-02-07",
+          "n": 1440,
+          "net_errors_avoided_by_persist": 5,
+          "persist_correct_current_wrong": 5,
+          "persist_wrong": 226,
+          "positive": 0,
+          "rise_occupied": 0,
+          "rise_total": 5,
+          "weekend": true
+        },
+        {
+          "all_labels_zero": true,
+          "current_correct_persist_wrong": 0,
+          "current_wrong": 47,
+          "day": "2015-02-08",
+          "n": 1440,
+          "net_errors_avoided_by_persist": 13,
+          "persist_correct_current_wrong": 13,
+          "persist_wrong": 34,
+          "positive": 0,
+          "rise_occupied": 0,
+          "rise_total": 13,
+          "weekend": true
+        },
+        {
+          "all_labels_zero": false,
+          "current_correct_persist_wrong": 2,
+          "current_wrong": 4,
+          "day": "2015-02-09",
+          "n": 1440,
+          "net_errors_avoided_by_persist": -2,
+          "persist_correct_current_wrong": 0,
+          "persist_wrong": 6,
+          "positive": 534,
+          "rise_occupied": 2,
+          "rise_total": 2,
+          "weekend": false
+        },
+        {
+          "all_labels_zero": false,
+          "current_correct_persist_wrong": 0,
+          "current_wrong": 3,
+          "day": "2015-02-10",
+          "n": 574,
+          "net_errors_avoided_by_persist": 1,
+          "persist_correct_current_wrong": 1,
+          "persist_wrong": 2,
+          "positive": 54,
+          "rise_occupied": 0,
+          "rise_total": 1,
+          "weekend": false
+        }
+      ],
+      "days_current_better": 2,
+      "days_persist_better": 3,
+      "days_tied": 2,
+      "leave_one_day_out_DIAGNOSTIC_ONLY": [
+        {
+          "held_out_day": "2015-02-04",
+          "other_days_net_errors_avoided": 15,
+          "other_days_row_count": 7774
+        },
+        {
+          "held_out_day": "2015-02-05",
+          "other_days_net_errors_avoided": 17,
+          "other_days_row_count": 6702
+        },
+        {
+          "held_out_day": "2015-02-06",
+          "other_days_net_errors_avoided": 15,
+          "other_days_row_count": 6702
+        },
+        {
+          "held_out_day": "2015-02-07",
+          "other_days_net_errors_avoided": 10,
+          "other_days_row_count": 6702
+        },
+        {
+          "held_out_day": "2015-02-08",
+          "other_days_net_errors_avoided": 2,
+          "other_days_row_count": 6702
+        },
+        {
+          "held_out_day": "2015-02-09",
+          "other_days_net_errors_avoided": 17,
+          "other_days_row_count": 6702
+        },
+        {
+          "held_out_day": "2015-02-10",
+          "other_days_net_errors_avoided": 14,
+          "other_days_row_count": 7568
+        }
+      ],
+      "rejected_irregular_intervals": 0,
+      "source": "datatraining.txt",
+      "stratified_by_posthoc_photo_label_presence": {
+        "positive_photo_occupancy_day": {
+          "current_errors": 89,
+          "days": 5,
+          "n": 5262,
+          "net_errors_avoided_by_persist": -3,
+          "occupied_current": 1728,
+          "persist_errors": 92,
+          "persist_fixes": 2,
+          "persist_regressions": 5
+        },
+        "zero_photo_occupancy_day": {
+          "current_errors": 278,
+          "days": 2,
+          "n": 2880,
+          "net_errors_avoided_by_persist": 18,
+          "occupied_current": 0,
+          "persist_errors": 260,
+          "persist_fixes": 18,
+          "persist_regressions": 0
+        }
+      },
+      "total": {
+        "current_errors": 367,
+        "n": 8142,
+        "net_errors_avoided_by_persist": 15,
+        "occupied_current": 1728,
+        "persist_errors": 352,
+        "persist_fixes": 20,
+        "persist_regressions": 5
+      },
+      "warning": "same-building public time series; days and bright-onset opportunities NOT iid"
+    }
+  },
+  "interpretation": {
+    "calendar_and_episode_groups_not_independent_trials": true,
+    "classification_of_day_uses_ground_truth_ONLY_FOR_AUDIT": true,
+    "late_gain_days_with_any_occupancy": -2,
+    "late_gain_zero_occupancy_days": 17,
+    "late_public_verdict": "PUBLIC_GAIN_CONCENTRATED_ON_ZERO_OCCUPANCY_DAYS",
+    "no_endogenous_island_reward": true,
+    "no_frozen_contract_edits": true,
+    "no_native_learning": true,
+    "no_valid_p_value_or_generalization_confidence_interval": true,
+    "photo_labels_not_sent_to_A": true,
+    "posthoc_photo_label_day_stratification": true,
+    "public_data_already_explored": true
+  },
+  "limits": [
+    "Day group membership is derived from photo labels and is unavailable at inference",
+    "No runtime weekend gating or new candidate selected",
+    "Light onset opportunities are not independent physical experiments",
+    "No p-value from correlated row counts or post hoc inspection",
+    "A1b successor programming is a two-reading Boolean filter, not demonstrated RL"
+  ],
+  "original_source_A1b_truth_table_replayed": true,
+  "predecessor_T3e_report_sha256": "b6e4ca2752fdd9df6be7e0247b4c8474dbe5a6f4e7dca1c169ecac10430a4833",
+  "schema": "spk-v5-t3f-day-stratified-discordance/research-v0",
+  "selection_from_train_frozen": "persist",
+  "source_original_bytes_sha256": {
+    "datatest.txt": "1b92c7c1b2838963464fa891a610cf3c5db4becb7189189b29b330107a584c7f",
+    "datatest2.txt": "d026d1bd5aeccd4aff4f3b3710d48e40613bd5fc370db7e61bbdcaa50d985095",
+    "datatraining.txt": "b2c4d0ce2b9e4e453c476f7125ef31aeec2d1f5c7f5572d0e80de3df6521ab56"
+  },
+  "status": "POSTHOC_CALENDAR_STRATIFICATION_NO_BLIND_NO_RL"
+}

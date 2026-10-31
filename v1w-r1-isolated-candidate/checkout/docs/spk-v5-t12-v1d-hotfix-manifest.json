@@ -1,0 +1,17 @@
+{
+  "additive_only": true,
+  "completed_original_memory_chain_required": true,
+  "files": {
+    "docs/spk-v5-t12-v1d-hotfix.md": "34c2b66770b8b4c05b91dec95642b949150e939fb8361e5401107c6552b7f826",
+    "research/spk_v5_t12_macro_native_memory_seam/macro_gate_v1d.py": "a3b2d8c0ccf94b042b6741de11566dd44599b271e64e1b389ef899af0fae90f0",
+    "research/spk_v5_t12_macro_native_memory_seam/native_bridge_v1d.py": "3ce9a9ab728b9e9405c61a64aef88c68cff0666e48b42f9d381f7b01484a4620",
+    "research/spk_v5_t12_macro_native_memory_seam/tests/test_native_memory_seam_v1d.py": "946c618b676d699f73f008b2327868518a0c3de8b6c0d7f73168f5510be2815b",
+    "search/spk_v5_t12_macro_native_memory_seam_gate_v1d.sh": "d48c9e332bfc8a360f91598e52a5e21dcbdf2715669b38381b93e925d22a78d3"
+  },
+  "frozen_components_modified": false,
+  "native_learning": false,
+  "original_A1d_execution_required": true,
+  "original_memory_only_on_full_fwork": true,
+  "promotion_allowed": false,
+  "schema": "spk-v5-t12-original-A1d-memory-hotfix-v1d/manifest-v0"
+}

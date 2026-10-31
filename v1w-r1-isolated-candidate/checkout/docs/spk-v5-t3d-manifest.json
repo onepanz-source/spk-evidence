@@ -1,0 +1,33 @@
+{
+  "blind_holdout_claim": false,
+  "native_learning": false,
+  "new_files": [
+    "spk_v5_research/island_real_transition_v5t3d.py",
+    "search/spk_v5_t3d_real_transition.py",
+    "tests/test_spk_v5_t3d_real_transition.py",
+    "search/spk_v5_t3d_real_transition_gate.sh",
+    "docs/spk-v5-t3d-physical-successor-audit.md",
+    "docs/spk-v5-t3d-original-uci-reference.json",
+    "docs/spk-v5-t3d-manifest.json"
+  ],
+  "no_frozen_files_modified": true,
+  "onset_target_posthoc": true,
+  "original_source_files_bundled": false,
+  "original_uci_report_sha256": "687dbc58cb3e389fd9176943ef8114951844ec936028a0b5ca0ad1e85ad86188",
+  "physical_successor_source_events": true,
+  "pins_sha256": {
+    "docs/spk-v5-t3c-manifest.json": "d5817b406266001d4cef4b223c18dee327a1df72270a95004b2454555c98e434",
+    "docs/spk-v5-t3d-original-uci-reference.json": "687dbc58cb3e389fd9176943ef8114951844ec936028a0b5ca0ad1e85ad86188",
+    "docs/spk-v5-t3d-physical-successor-audit.md": "05c5e2e174c3054aeb98772a6a7cc89401a03a5ff34ab0675c6e429618239246",
+    "search/spk_v5_t3d_real_transition.py": "5217efb6e96d253e0e0163b7088e33a1011f29349ae7d760f510ec553f20ea20",
+    "search/spk_v5_t3d_real_transition_gate.sh": "da2a13ec8854a84af213c1c647d8ca033172e0f900d56246dde48fdf69cbcc51",
+    "spk_v5_research/island_real_transition_v5t3d.py": "5ee8d58647428119b93a7c347ff34b083dc3fd63719ea13a5a27650e1180184e",
+    "tests/test_spk_v5_t3d_real_transition.py": "589906b7fd953af6b8d75983827faf63edc6803eba9bb484ca1a1d5faafd07f3"
+  },
+  "public_original_uci_SHA256": {
+    "datatest.txt": "1b92c7c1b2838963464fa891a610cf3c5db4becb7189189b29b330107a584c7f",
+    "datatest2.txt": "d026d1bd5aeccd4aff4f3b3710d48e40613bd5fc370db7e61bbdcaa50d985095",
+    "datatraining.txt": "b2c4d0ce2b9e4e453c476f7125ef31aeec2d1f5c7f5572d0e80de3df6521ab56"
+  },
+  "schema": "spk-v5-t3d-real-successor-onset-research-manifest/v0"
+}

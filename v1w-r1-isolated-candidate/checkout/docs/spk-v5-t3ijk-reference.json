@@ -1,0 +1,617 @@
+{
+  "falsification_cases": [
+    {
+      "C_delivered_updates": 887,
+      "accuracies": {
+        "current": 0.963333,
+        "learned": 0.931667,
+        "persist": 0.801667,
+        "placebo": 0.804167,
+        "random": 0.746667,
+        "silent": 0.498333
+      },
+      "pattern": "stationary_current",
+      "seed": 29,
+      "transcript_sha256": "7d77ea115c0f2117f1bc970d7204ee1d88703a5afc4a2f8ae2c2929c601803ab"
+    },
+    {
+      "C_delivered_updates": 867,
+      "accuracies": {
+        "current": 0.960833,
+        "learned": 0.94,
+        "persist": 0.810833,
+        "placebo": 0.783333,
+        "random": 0.748333,
+        "silent": 0.500833
+      },
+      "pattern": "stationary_current",
+      "seed": 47,
+      "transcript_sha256": "c94fd87da02afc206050b9bad3a019cfc3bc69d15101f4507e0306ff28425e44"
+    },
+    {
+      "C_delivered_updates": 892,
+      "accuracies": {
+        "current": 0.510833,
+        "learned": 0.489167,
+        "persist": 0.500833,
+        "placebo": 0.508333,
+        "random": 0.505833,
+        "silent": 0.484167
+      },
+      "pattern": "uninformative_coin",
+      "seed": 29,
+      "transcript_sha256": "f580ccf2c8f332ef1d731582239657ab0b975ef3c461b823155528a751d1ca6c"
+    },
+    {
+      "C_delivered_updates": 875,
+      "accuracies": {
+        "current": 0.5275,
+        "learned": 0.5,
+        "persist": 0.514167,
+        "placebo": 0.516667,
+        "random": 0.516667,
+        "silent": 0.4975
+      },
+      "pattern": "uninformative_coin",
+      "seed": 47,
+      "transcript_sha256": "c6a8aa5060eb567d081a0e4a79f27d4123c00a8980f542651b66068937c4edd6"
+    },
+    {
+      "C_delivered_updates": 892,
+      "accuracies": {
+        "current": 0.759167,
+        "learned": 0.790833,
+        "persist": 0.805833,
+        "placebo": 0.78,
+        "random": 0.745833,
+        "silent": 0.7025
+      },
+      "pattern": "rapid_switch",
+      "seed": 29,
+      "transcript_sha256": "67c467ccda348e941741dcf3553f1cc59fdf5ba155f27f3f8477c0fb9fd5b075"
+    },
+    {
+      "C_delivered_updates": 874,
+      "accuracies": {
+        "current": 0.75,
+        "learned": 0.79,
+        "persist": 0.803333,
+        "placebo": 0.770833,
+        "random": 0.759167,
+        "silent": 0.711667
+      },
+      "pattern": "rapid_switch",
+      "seed": 47,
+      "transcript_sha256": "44e6fdfac75c8711478edc3f7d839c92f4cbc372fe650a4bab27ea3b407fe5dd"
+    }
+  ],
+  "independent_seeds_listed_but_not_physical_independence": [
+    11,
+    29,
+    47,
+    83
+  ],
+  "public_UCI_photo_label_POSTHOC_ONLY": {
+    "datatest.txt": {
+      "C_proxy_match_count": 1085,
+      "C_proxy_positives": 427,
+      "C_sensor_precomputed_by_host": true,
+      "PHOTO_occ_match_POSTHOC": 1134,
+      "admitted": 1200,
+      "consecutive_public_prefix_budget": 1200,
+      "excluded_nonadjacent_gaps": 0,
+      "fixed_current_C_proxy_match": 1086,
+      "fixed_current_photo_match": 1171,
+      "fixed_persist_C_proxy_match": 1087,
+      "fixed_persist_photo_match": 1170,
+      "independent_blind": false,
+      "learned_state_sha256": "0aa54a81e42dc34764390aafffb3725239b00056331e41789af3bf1df6f4af98",
+      "photo_occupied": 360,
+      "raw_original_sha256": "1b92c7c1b2838963464fa891a610cf3c5db4becb7189189b29b330107a584c7f",
+      "research_registry_credit_updates": 1200,
+      "selected_arm_counts": {
+        "current": 373,
+        "persist": 735,
+        "silent": 92
+      },
+      "source_rows": 2665
+    },
+    "datatest2.txt": {
+      "C_proxy_match_count": 1003,
+      "C_proxy_positives": 519,
+      "C_sensor_precomputed_by_host": true,
+      "PHOTO_occ_match_POSTHOC": 1171,
+      "admitted": 1200,
+      "consecutive_public_prefix_budget": 1200,
+      "excluded_nonadjacent_gaps": 0,
+      "fixed_current_C_proxy_match": 1017,
+      "fixed_current_photo_match": 1183,
+      "fixed_persist_C_proxy_match": 1016,
+      "fixed_persist_photo_match": 1182,
+      "independent_blind": false,
+      "learned_state_sha256": "d532d8c2594dba12ed48ccc319dd6d4a59087c2a72231a0e786854fd36dcc472",
+      "photo_occupied": 337,
+      "raw_original_sha256": "d026d1bd5aeccd4aff4f3b3710d48e40613bd5fc370db7e61bbdcaa50d985095",
+      "research_registry_credit_updates": 1200,
+      "selected_arm_counts": {
+        "current": 867,
+        "persist": 237,
+        "silent": 96
+      },
+      "source_rows": 9752
+    },
+    "datatraining.txt": {
+      "C_proxy_match_count": 1091,
+      "C_proxy_positives": 415,
+      "C_sensor_precomputed_by_host": true,
+      "PHOTO_occ_match_POSTHOC": 1113,
+      "admitted": 1200,
+      "consecutive_public_prefix_budget": 1200,
+      "excluded_nonadjacent_gaps": 0,
+      "fixed_current_C_proxy_match": 1084,
+      "fixed_current_photo_match": 1154,
+      "fixed_persist_C_proxy_match": 1084,
+      "fixed_persist_photo_match": 1152,
+      "independent_blind": false,
+      "learned_state_sha256": "4d2dcc9fd715ccb15a8c5395f2d2c73cb482c85869bf16fb9ad04a3979ef1c12",
+      "photo_occupied": 319,
+      "raw_original_sha256": "b2c4d0ce2b9e4e453c476f7125ef31aeec2d1f5c7f5572d0e80de3df6521ab56",
+      "research_registry_credit_updates": 1200,
+      "selected_arm_counts": {
+        "current": 86,
+        "persist": 1019,
+        "silent": 95
+      },
+      "source_rows": 8143
+    }
+  },
+  "schema": "spk-v5-t3ijk-bundled-closed-loop/research-v0",
+  "scope_exclusions": [
+    "research host registry selects next A1b program; no native neural program update",
+    "C computes +1/-1 using A1b instructions, but C CO2 bit is host-thresholded and unsignatured",
+    "phase shifts and C target built by test harness; no independent environment",
+    "modeled inter-episode delay is NOT native transport latency; no PE congestion integration",
+    "fixed arms and placebo are engineered comparators, not preregistered unseen trials",
+    "public UCI previously inspected; historical photo labels used posthoc for audit only",
+    "policy fitness to C CO2 threshold may differ from photo occupancy labels",
+    "no native learning, no blind validation, no guaranteed cross-context gain"
+  ],
+  "shift": {
+    "cases": 9600,
+    "delta_learned_vs_best_fixed": 0.116354,
+    "delta_learned_vs_placebo": 0.134271,
+    "pooled_accuracy_unweighted_seed_mean": {
+      "current": 0.759167,
+      "learned": 0.923854,
+      "persist": 0.8075,
+      "placebo": 0.789583,
+      "random": 0.756458,
+      "silent": 0.70125
+    },
+    "scenarios": [
+      {
+        "C_research_source_runs": 4800,
+        "C_statuses": {
+          "C_authored_credit_delivered": 1200
+        },
+        "accuracy": {
+          "current": 0.744167,
+          "learned": 0.924167,
+          "persist": 0.795833,
+          "placebo": 0.815,
+          "random": 0.739167,
+          "silent": 0.711667
+        },
+        "by_regime": {
+          "C_follows_current": {
+            "fixed_current_correct": 388,
+            "fixed_persist_correct": 327,
+            "fixed_silent_correct": 210,
+            "learned_correct": 374,
+            "placebo_correct": 324,
+            "total": 400
+          },
+          "C_follows_persistence": {
+            "fixed_current_correct": 312,
+            "fixed_persist_correct": 386,
+            "fixed_silent_correct": 263,
+            "learned_correct": 373,
+            "placebo_correct": 356,
+            "total": 400
+          },
+          "C_mostly_quiet": {
+            "fixed_current_correct": 193,
+            "fixed_persist_correct": 242,
+            "fixed_silent_correct": 381,
+            "learned_correct": 362,
+            "placebo_correct": 298,
+            "total": 400
+          }
+        },
+        "registry_audit": {
+          "decisions": 1200,
+          "discarded": 0,
+          "head_sha256": "6e5a273968133a2293dc36365f1836b8ea5d6694b534de919d5b807a00835540",
+          "pending": 0,
+          "updates": 1200
+        },
+        "run_transcript_sha256": "984f7c1560abce506cf8ffed86bf6230305cefcc5d9abbd0d5af1316885638df",
+        "seed": 11,
+        "stress": false
+      },
+      {
+        "C_research_source_runs": 4800,
+        "C_statuses": {
+          "C_authored_credit_delivered": 1200
+        },
+        "accuracy": {
+          "current": 0.769167,
+          "learned": 0.921667,
+          "persist": 0.819167,
+          "placebo": 0.825,
+          "random": 0.7725,
+          "silent": 0.6925
+        },
+        "by_regime": {
+          "C_follows_current": {
+            "fixed_current_correct": 385,
+            "fixed_persist_correct": 318,
+            "fixed_silent_correct": 191,
+            "learned_correct": 373,
+            "placebo_correct": 349,
+            "total": 400
+          },
+          "C_follows_persistence": {
+            "fixed_current_correct": 324,
+            "fixed_persist_correct": 388,
+            "fixed_silent_correct": 257,
+            "learned_correct": 377,
+            "placebo_correct": 351,
+            "total": 400
+          },
+          "C_mostly_quiet": {
+            "fixed_current_correct": 214,
+            "fixed_persist_correct": 277,
+            "fixed_silent_correct": 383,
+            "learned_correct": 356,
+            "placebo_correct": 290,
+            "total": 400
+          }
+        },
+        "registry_audit": {
+          "decisions": 1200,
+          "discarded": 0,
+          "head_sha256": "49ffb7839dbdeb6249523708e1730739488b34a9e3d42fa6698cc11b70f1b7d3",
+          "pending": 0,
+          "updates": 1200
+        },
+        "run_transcript_sha256": "807c191aa7fb5e830397cde0860385bd392aae8069ae75b6f6a7b5a709fc1837",
+        "seed": 29,
+        "stress": false
+      },
+      {
+        "C_research_source_runs": 4800,
+        "C_statuses": {
+          "C_authored_credit_delivered": 1200
+        },
+        "accuracy": {
+          "current": 0.754167,
+          "learned": 0.918333,
+          "persist": 0.800833,
+          "placebo": 0.738333,
+          "random": 0.746667,
+          "silent": 0.7075
+        },
+        "by_regime": {
+          "C_follows_current": {
+            "fixed_current_correct": 381,
+            "fixed_persist_correct": 319,
+            "fixed_silent_correct": 205,
+            "learned_correct": 373,
+            "placebo_correct": 299,
+            "total": 400
+          },
+          "C_follows_persistence": {
+            "fixed_current_correct": 322,
+            "fixed_persist_correct": 387,
+            "fixed_silent_correct": 259,
+            "learned_correct": 379,
+            "placebo_correct": 322,
+            "total": 400
+          },
+          "C_mostly_quiet": {
+            "fixed_current_correct": 202,
+            "fixed_persist_correct": 255,
+            "fixed_silent_correct": 385,
+            "learned_correct": 350,
+            "placebo_correct": 265,
+            "total": 400
+          }
+        },
+        "registry_audit": {
+          "decisions": 1200,
+          "discarded": 0,
+          "head_sha256": "05bba97b775f4dfdd2f16881dad1e2551851383df8cad51237aafbe3c07b9c88",
+          "pending": 0,
+          "updates": 1200
+        },
+        "run_transcript_sha256": "2e9d1f2a18e5eabe9d819c0e325953e042cc8660e96a06f70cda63c2523d3066",
+        "seed": 47,
+        "stress": false
+      },
+      {
+        "C_research_source_runs": 4800,
+        "C_statuses": {
+          "C_authored_credit_delivered": 1200
+        },
+        "accuracy": {
+          "current": 0.769167,
+          "learned": 0.936667,
+          "persist": 0.814167,
+          "placebo": 0.78,
+          "random": 0.7675,
+          "silent": 0.693333
+        },
+        "by_regime": {
+          "C_follows_current": {
+            "fixed_current_correct": 392,
+            "fixed_persist_correct": 333,
+            "fixed_silent_correct": 198,
+            "learned_correct": 383,
+            "placebo_correct": 338,
+            "total": 400
+          },
+          "C_follows_persistence": {
+            "fixed_current_correct": 331,
+            "fixed_persist_correct": 387,
+            "fixed_silent_correct": 249,
+            "learned_correct": 376,
+            "placebo_correct": 349,
+            "total": 400
+          },
+          "C_mostly_quiet": {
+            "fixed_current_correct": 200,
+            "fixed_persist_correct": 257,
+            "fixed_silent_correct": 385,
+            "learned_correct": 365,
+            "placebo_correct": 249,
+            "total": 400
+          }
+        },
+        "registry_audit": {
+          "decisions": 1200,
+          "discarded": 0,
+          "head_sha256": "38cbd51090401ed4bf4b833c83a74151c8ae74575c6d792bb68cb6e976d84380",
+          "pending": 0,
+          "updates": 1200
+        },
+        "run_transcript_sha256": "d2925c56b6da9b61e15ad01ee9b62a2b1541a604b112eb4998c2829aa1f01937",
+        "seed": 83,
+        "stress": false
+      },
+      {
+        "C_research_source_runs": 4800,
+        "C_statuses": {
+          "C_authored_credit_delivered": 914,
+          "C_evidence_missing": 86,
+          "decision_custody_failed": 37,
+          "forward_custody_failed": 10,
+          "modeled_relay_loss": 41,
+          "reverse_delivery_lost": 153
+        },
+        "accuracy": {
+          "current": 0.744167,
+          "learned": 0.920833,
+          "persist": 0.795833,
+          "placebo": 0.815,
+          "random": 0.739167,
+          "silent": 0.711667
+        },
+        "by_regime": {
+          "C_follows_current": {
+            "fixed_current_correct": 388,
+            "fixed_persist_correct": 327,
+            "fixed_silent_correct": 210,
+            "learned_correct": 374,
+            "placebo_correct": 324,
+            "total": 400
+          },
+          "C_follows_persistence": {
+            "fixed_current_correct": 312,
+            "fixed_persist_correct": 386,
+            "fixed_silent_correct": 263,
+            "learned_correct": 372,
+            "placebo_correct": 356,
+            "total": 400
+          },
+          "C_mostly_quiet": {
+            "fixed_current_correct": 193,
+            "fixed_persist_correct": 242,
+            "fixed_silent_correct": 381,
+            "learned_correct": 359,
+            "placebo_correct": 298,
+            "total": 400
+          }
+        },
+        "registry_audit": {
+          "decisions": 1200,
+          "discarded": 41,
+          "head_sha256": "344d887531d6679bc712830cc336a8dcd900a92a7861580ee811fcacdf3fdc58",
+          "pending": 0,
+          "updates": 873
+        },
+        "run_transcript_sha256": "abb5de4f2056811adfe6f108137f71d7641c09af74c41ccfe7907c9a5686f848",
+        "seed": 11,
+        "stress": true
+      },
+      {
+        "C_research_source_runs": 4800,
+        "C_statuses": {
+          "C_authored_credit_delivered": 947,
+          "C_evidence_missing": 80,
+          "decision_custody_failed": 20,
+          "forward_custody_failed": 9,
+          "modeled_relay_loss": 53,
+          "reverse_delivery_lost": 144
+        },
+        "accuracy": {
+          "current": 0.769167,
+          "learned": 0.920833,
+          "persist": 0.819167,
+          "placebo": 0.825,
+          "random": 0.7725,
+          "silent": 0.6925
+        },
+        "by_regime": {
+          "C_follows_current": {
+            "fixed_current_correct": 385,
+            "fixed_persist_correct": 318,
+            "fixed_silent_correct": 191,
+            "learned_correct": 373,
+            "placebo_correct": 349,
+            "total": 400
+          },
+          "C_follows_persistence": {
+            "fixed_current_correct": 324,
+            "fixed_persist_correct": 388,
+            "fixed_silent_correct": 257,
+            "learned_correct": 376,
+            "placebo_correct": 351,
+            "total": 400
+          },
+          "C_mostly_quiet": {
+            "fixed_current_correct": 214,
+            "fixed_persist_correct": 277,
+            "fixed_silent_correct": 383,
+            "learned_correct": 356,
+            "placebo_correct": 290,
+            "total": 400
+          }
+        },
+        "registry_audit": {
+          "decisions": 1200,
+          "discarded": 53,
+          "head_sha256": "35c8ed6a1ca8681aaf4884221a0cc317ac0244d616e04b89f0ed62f00a0a59d0",
+          "pending": 0,
+          "updates": 894
+        },
+        "run_transcript_sha256": "50b21a9139916dbfe13ff57ae44bd87fa63d101aa96d5057f40cd502f6331d39",
+        "seed": 29,
+        "stress": true
+      },
+      {
+        "C_research_source_runs": 4800,
+        "C_statuses": {
+          "C_authored_credit_delivered": 914,
+          "C_evidence_missing": 94,
+          "decision_custody_failed": 30,
+          "forward_custody_failed": 21,
+          "modeled_relay_loss": 37,
+          "reverse_delivery_lost": 141
+        },
+        "accuracy": {
+          "current": 0.754167,
+          "learned": 0.915833,
+          "persist": 0.800833,
+          "placebo": 0.738333,
+          "random": 0.746667,
+          "silent": 0.7075
+        },
+        "by_regime": {
+          "C_follows_current": {
+            "fixed_current_correct": 381,
+            "fixed_persist_correct": 319,
+            "fixed_silent_correct": 205,
+            "learned_correct": 373,
+            "placebo_correct": 299,
+            "total": 400
+          },
+          "C_follows_persistence": {
+            "fixed_current_correct": 322,
+            "fixed_persist_correct": 387,
+            "fixed_silent_correct": 259,
+            "learned_correct": 378,
+            "placebo_correct": 322,
+            "total": 400
+          },
+          "C_mostly_quiet": {
+            "fixed_current_correct": 202,
+            "fixed_persist_correct": 255,
+            "fixed_silent_correct": 385,
+            "learned_correct": 348,
+            "placebo_correct": 265,
+            "total": 400
+          }
+        },
+        "registry_audit": {
+          "decisions": 1200,
+          "discarded": 37,
+          "head_sha256": "c9e08c2cbc1890b0587ef57e75fe7f3d4e618accb10b63238cb42382e2e32ace",
+          "pending": 0,
+          "updates": 877
+        },
+        "run_transcript_sha256": "b70607adbad9f0445dd8ca0f79c892ecc39c2959b1c58f2a12dd82b94cccd474",
+        "seed": 47,
+        "stress": true
+      },
+      {
+        "C_research_source_runs": 4800,
+        "C_statuses": {
+          "C_authored_credit_delivered": 949,
+          "C_evidence_missing": 72,
+          "decision_custody_failed": 31,
+          "forward_custody_failed": 13,
+          "modeled_relay_loss": 65,
+          "reverse_delivery_lost": 135
+        },
+        "accuracy": {
+          "current": 0.769167,
+          "learned": 0.9325,
+          "persist": 0.814167,
+          "placebo": 0.78,
+          "random": 0.7675,
+          "silent": 0.693333
+        },
+        "by_regime": {
+          "C_follows_current": {
+            "fixed_current_correct": 392,
+            "fixed_persist_correct": 333,
+            "fixed_silent_correct": 198,
+            "learned_correct": 383,
+            "placebo_correct": 338,
+            "total": 400
+          },
+          "C_follows_persistence": {
+            "fixed_current_correct": 331,
+            "fixed_persist_correct": 387,
+            "fixed_silent_correct": 249,
+            "learned_correct": 375,
+            "placebo_correct": 349,
+            "total": 400
+          },
+          "C_mostly_quiet": {
+            "fixed_current_correct": 200,
+            "fixed_persist_correct": 257,
+            "fixed_silent_correct": 385,
+            "learned_correct": 361,
+            "placebo_correct": 249,
+            "total": 400
+          }
+        },
+        "registry_audit": {
+          "decisions": 1200,
+          "discarded": 65,
+          "head_sha256": "e5a107a5677bb2507c3eb778ad10a2a3b308e2ba9bab43443241e07afe89f627",
+          "pending": 0,
+          "updates": 884
+        },
+        "run_transcript_sha256": "da31094ae5112d5fb7c6ed8007572f42c53ebb2ce9e92501251418cfa6194f84",
+        "seed": 83,
+        "stress": true
+      }
+    ]
+  },
+  "status": "ENGINEERED_SHIFT_RESEARCH_FEEDBACK_BENEFIT_NOT_NATIVE",
+  "synthetic_cases": 16800,
+  "verification": "each credited update replayed through T3h execute() + independent hash chain"
+}

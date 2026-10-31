@@ -1,0 +1,33 @@
+{
+  "independent_blind_holdout": false,
+  "inherited_T3d_source_custody": true,
+  "native_A1b_PERSIST_research_only": true,
+  "native_learning": false,
+  "new_files": [
+    "spk_v5_research/island_successor_competition_v5t3e.py",
+    "search/spk_v5_t3e_successor_competition.py",
+    "tests/test_spk_v5_t3e_successor_competition.py",
+    "search/spk_v5_t3e_successor_competition_gate.sh",
+    "docs/spk-v5-t3e-physical-successor-competitor.md",
+    "docs/spk-v5-t3e-original-uci-reference.json",
+    "docs/spk-v5-t3e-manifest.json"
+  ],
+  "new_reference_sha256": "b6e4ca2752fdd9df6be7e0247b4c8474dbe5a6f4e7dca1c169ecac10430a4833",
+  "no_frozen_files_modified": true,
+  "original_UCI_SHA256": {
+    "datatest.txt": "1b92c7c1b2838963464fa891a610cf3c5db4becb7189189b29b330107a584c7f",
+    "datatest2.txt": "d026d1bd5aeccd4aff4f3b3710d48e40613bd5fc370db7e61bbdcaa50d985095",
+    "datatraining.txt": "b2c4d0ce2b9e4e453c476f7125ef31aeec2d1f5c7f5572d0e80de3df6521ab56"
+  },
+  "pins_sha256": {
+    "docs/spk-v5-t3d-manifest.json": "b95d4cefa0b3be4356734297936de47a1e5f3fc208f09bb3467369f696ee1718",
+    "docs/spk-v5-t3e-original-uci-reference.json": "b6e4ca2752fdd9df6be7e0247b4c8474dbe5a6f4e7dca1c169ecac10430a4833",
+    "docs/spk-v5-t3e-physical-successor-competitor.md": "09c243833b33c97afac7fd538cb1ba2fe5d56f5d057d679d52c7a853262f9fb3",
+    "search/spk_v5_t3e_successor_competition.py": "8bbbf3b3a5348519876e68c79fe8e0d625de6fb71d277a44dcfc37ed09fe24a8",
+    "search/spk_v5_t3e_successor_competition_gate.sh": "57ec1154c995195b9cce2f3dcd9f44964a0935145a4c863fc5b651b76c4382ce",
+    "spk_v5_research/island_successor_competition_v5t3e.py": "2d14fffb949ae02c905b638603e2c3a39ee54901b645fc633ad7caee9fbc5d8e",
+    "tests/test_spk_v5_t3e_successor_competition.py": "751b79c0dddff53165ed86a1ffb0461fcae98a39362af908653abc6ce3f0887f"
+  },
+  "schema": "spk-v5-t3e-real-successor-competitor-manifest/v0",
+  "source_truth_table_rather_than_all_row_native_reexecution": true
+}

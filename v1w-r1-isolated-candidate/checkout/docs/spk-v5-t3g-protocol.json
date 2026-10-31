@@ -1,0 +1,33 @@
+{
+  "schema": "spk-v5-t3g-prospective-screen-protocol/v0",
+  "registered_date": "2026-10-21",
+  "freeze_scope": "research-only no Core/Compiler/Architecture/BV native changes",
+  "objective": "External occupancy state at t from UTC sensor light at t and t-1",
+  "candidate": "persist: light[t]>=200 and light[t-1]>=200",
+  "primary_comparator": "current: light[t]>=200",
+  "secondary_controls": ["rise", "silent", "empty day stratification"],
+  "A1b_programs": "V5-T3e frozen A1b truth table, no new candidate fitted",
+  "timestamp_format": "UTC YYYY-MM-DDTHH:MM:SSZ",
+  "allowed_physical_successor_gaps_seconds": [59, 60, 61],
+  "source_cutoff_utc_inclusive": "2026-10-22T00:00:00Z",
+  "precommit_features_header": ["timestamp_utc", "light_lux"],
+  "postcommit_labels_header": ["timestamp_utc", "occupied"],
+  "precommit_minimum_qualified_calendar_days": 10,
+  "qualified_calendar_day_minimum_pairs": 60,
+  "primary": "Unweighted mean by occupied UTC day of (current_errors-persist_errors)/daily_pairs",
+  "qualification": {
+    "minimum_occupied_days": 10,
+    "minimum_occupied_days_with_unequal_program_errors": 8
+  },
+  "predeclared_directional_screen": {
+    "minimum_mean_day_improvement": 0.005,
+    "one_sided_day_win_sign_test_p_maximum_descriptive": 0.05,
+    "maximum_increase_false_negative_rate_on_occupied_days": 0.01
+  },
+  "conditional_day_stratification": "day type determined using external labels only after source commitment; not input to A1b",
+  "statistics_boundary": "correlated days and site confounding not eliminated; sign-test p is descriptive, not formal proof",
+  "source_independence_boundary": "operator supplies source-id and makes independence claim; no third-party escrow, no blinded assurance",
+  "not_eligible_sources": "all three previously inspected UCI files, even under a new basename",
+  "prohibited_claims": ["independent blind holdout", "native endogenous reward", "native RL", "new learned weights", "causal evidence of neuromorphic advantage"],
+  "failure_policy": "ineligible days -> INSUFFICIENT, failed screen -> NO_SUPPORT; never convert unavailable reward to negative"
+}

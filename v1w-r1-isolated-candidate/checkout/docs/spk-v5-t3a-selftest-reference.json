@@ -1,0 +1,57 @@
+{
+  "baseline_error": 15,
+  "blind_holdout_claim": false,
+  "claims_excluded": [
+    "public test labels are accessible, not blinded",
+    "oracle-assisted outcome at C is not autonomous local island reward",
+    "pilot source provenance supplied by caller; no external secure custody",
+    "frozen architecture and native BV unchanged",
+    "no statistical learning guarantee or production promotion"
+  ],
+  "endogenous_BV_reward_established": false,
+  "evaluation_occupied": 15,
+  "independent_public_task_origin": true,
+  "native_program_updates": 0,
+  "phase": "evaluation",
+  "pilot_certificate_sha256": "a25834530c7209697e4dc72406b1c89fe8ef242202f040384c6df7871468149e",
+  "pilot_source_sha256": "f8359b2e2081b5b153e15ce642e46c1e0c48cdb0dd1be6f1469a1685be9a12ec",
+  "post_selection_counterfactual_audit_ONLY": {
+    "overemit": {
+      "correct": 45,
+      "error": 15,
+      "false_negative": 0,
+      "false_positive": 15,
+      "forward_spikes": 30,
+      "missing_sensor": 0
+    },
+    "silent": {
+      "correct": 45,
+      "error": 15,
+      "false_negative": 15,
+      "false_positive": 0,
+      "forward_spikes": 0,
+      "missing_sensor": 0
+    },
+    "temporal": {
+      "correct": 60,
+      "error": 0,
+      "false_negative": 0,
+      "false_positive": 0,
+      "forward_spikes": 15,
+      "missing_sensor": 0
+    }
+  },
+  "provenance": "UCI Occupancy Detection, doi:10.24432/C5X01N, CC BY 4.0",
+  "schema": "spk-v5-t3a-public-uci-external-task/research-v0",
+  "selected_error": 0,
+  "selected_policy_frozen": "temporal",
+  "selected_rows": 60,
+  "selftest_labels_engineered": true,
+  "selftest_no_external_data_executed": true,
+  "selftest_pilot_choice": "temporal",
+  "source_filename": "datatest2.txt",
+  "source_sha256": "334f742458fd33efccbf895561a1db9a4336df75e578604fcb049881201c443d",
+  "source_total_rows": 60,
+  "source_url": "https://archive.ics.uci.edu/dataset/357/occupancy-detection",
+  "status": "ENGINEERED_SELFTEST_ONLY_NOT_PUBLIC_DATA"
+}

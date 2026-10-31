@@ -1,0 +1,27 @@
+{
+  "frozen_contracts_untouched": true,
+  "known_UCI_sha_custody": true,
+  "native_learning_none": true,
+  "new_files": [
+    "spk_v5_research/island_prospective_validation_v5t3g.py",
+    "search/spk_v5_t3g_prospective.py",
+    "tests/test_spk_v5_t3g_prospective.py",
+    "search/spk_v5_t3g_prospective_gate.sh",
+    "docs/spk-v5-t3g-prospective-protocol.md",
+    "docs/spk-v5-t3g-protocol.json",
+    "docs/spk-v5-t3g-manifest.json"
+  ],
+  "new_schema": "spk-v5-t3g-prospective-public-audit/research-v0",
+  "no_unseen_external_data_claim": true,
+  "pins_sha256": {
+    "docs/spk-v5-t3g-prospective-protocol.md": "9580722012f4c4513c1624feb7aedad49f904122389b3780c57bd50f87fed6b6",
+    "docs/spk-v5-t3g-protocol.json": "5f9650a5bc2d49da9a9e9dddbf6923c22398e25d16f17298de5ccad04acabce6",
+    "search/spk_v5_t3g_prospective.py": "6c3cb466ee2d393b533a6d66757b28b5e3f69eb0383c97a7cfa155b3e92a99cf",
+    "search/spk_v5_t3g_prospective_gate.sh": "231ea035799c40faa959b35c28e426b4a817fade77e3f02764df0ea641c32cd9",
+    "spk_v5_research/island_prospective_validation_v5t3g.py": "52b5b5b478fe3e069d8ee8aae455ad9590ca1d12f65f65370157117a3a798981",
+    "tests/test_spk_v5_t3g_prospective.py": "aa03d8794357e461b4b879558c0cb4236a784c0ce4fd51e4ac6a97de9c9fc8ce"
+  },
+  "predecessor_T3f_reference_sha256": "37ff92e8e236ed9921888d9940cd9c377016dfffcfe03b7f2d70f2c5e60fab98",
+  "protocol_sha256": "5f9650a5bc2d49da9a9e9dddbf6923c22398e25d16f17298de5ccad04acabce6",
+  "schema": "spk-v5-t3g-prospective-precommit-manifest/v0"
+}
