@@ -1,0 +1,11 @@
+{
+  "clarification": "S0-K witness field negative_controls_rejected=0 counted NATIVE child negative probes (0 executed natively). The 11/11 hostile cases reported in issue #17 were PURE suite tests (tests/test_spk_isa_s0k_staged.py), not native probes. No native negative probe was run; none is claimed. Original witness preserved byte-for-byte.",
+  "correction_type": "add-only addendum; original witness NOT rewritten",
+  "native_negative_cases_observed": 0,
+  "parent_run_id": "20261031T211452Z-66c401c97121e3b4",
+  "parent_witness_sha256": "329ed3c66df2b5c9632d3d885e27df3e6bb10b0f169fc14d485ec3ba027a796e",
+  "pure_negative_cases_observed": 11,
+  "pure_test_count": 11,
+  "schema": "spk-isa-s0k-negative-controls-addendum/v0k",
+  "unexecuted_controls_NOT_RUN": "native child negative probes"
+}
