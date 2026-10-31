@@ -1,0 +1,506 @@
+{
+  "child_digests": {
+    "1": [
+      "f3fa768576b16e68beafff36d17a3ecba3f5823bd7608aa494eae51d1f822e56",
+      "1e4165e491d7f15fabe914154d666737302e663e312c3b4deabc602e3f27f754"
+    ],
+    "7": [
+      "93b9e124515947f36cf8f4755720543ae4cd79a5e25cd04c28f685616139c037",
+      "22abb2825fe648806b2e5acf3b32b1dfd9c6e0c85393139475c1be61d2f0fd37"
+    ]
+  },
+  "claims": {
+    "BV_to_P_authorized": false,
+    "G2_owner_authorized": false,
+    "P_writes": 0,
+    "compiler_to_machine_ISA_equivalence_proven": false,
+    "external_dispatch": false,
+    "hardware_executed": false,
+    "native_multinode_event_delivery_proven": false,
+    "native_output_published": false,
+    "native_precommit_staged_intents_bound": true,
+    "native_route_service_confirmed": false,
+    "postcommit_owner_executed": false
+  },
+  "decision": "HOLD",
+  "exit_code": 4,
+  "hypothesis": "shadow staging of k24d quiet=False candidate (3,7): 1 EMISSION_RECORD + 2 ROUTE_ENQUEUE, C->B, event_time=3 on routes, deliveries 5/6 in topology only",
+  "issue": 17,
+  "limitations": [
+    "staged intents only; not admitted to Service Quantum or OUTPUT controller",
+    "no route service confirmation, no output publication, no native multi-node delivery",
+    "no Compiler-to-machine-ISA equivalence",
+    "C0-C5 needs independent human review"
+  ],
+  "negative_controls_rejected": 0,
+  "observations": {
+    "1": {
+      "hash_seed": "17",
+      "k1": {
+        "consumed_external_input_indices": [
+          0
+        ],
+        "events": [
+          {
+            "channel": 0,
+            "node_id": "C",
+            "timestamp": 3
+          }
+        ],
+        "image_epoch": "E0",
+        "neuron_c_version": 0,
+        "prepared": {
+          "candidate_outputs": [
+            [
+              3,
+              7
+            ]
+          ],
+          "channels": [
+            0
+          ],
+          "event_time": 3,
+          "node_id": "C"
+        }
+      },
+      "k2": {
+        "base_request_count": 4,
+        "base_request_kinds": [
+          "BATCH_CONSUME",
+          "PROGRAM_REFERENCE",
+          "STATE_COMMIT",
+          "STATE_LOAD"
+        ],
+        "cost_policy": {
+          "emission_units": 2,
+          "route_units": 3,
+          "service_profile_id": "dynamic-cost-v0"
+        },
+        "cost_policy_label": "ORIGINAL_REGISTRY",
+        "dynamic_cursor": 1000000,
+        "static_max_request_id": 3
+      },
+      "k3": {
+        "base_unchanged": true,
+        "new_graph_deps": [
+          {
+            "predecessors": [
+              0,
+              1,
+              2
+            ],
+            "request_id": 1000000
+          },
+          {
+            "predecessors": [
+              1000000
+            ],
+            "request_id": 1000001
+          },
+          {
+            "predecessors": [
+              1000000
+            ],
+            "request_id": 1000002
+          }
+        ],
+        "new_request_count": 3,
+        "new_requests": [
+          {
+            "activity": "ActivityV0.EXECUTE",
+            "domain": "MemoryDomainV0.EVENT",
+            "epoch_id": "E0",
+            "event_time": 3,
+            "kind": "AccessIntentKindV0.EMISSION_RECORD",
+            "principal_id": "computed-emission-1000000",
+            "profile_id": "dynamic-cost-v0",
+            "quantity": 1,
+            "request_id": 1000000,
+            "requester_pe_id": "PE0",
+            "service_units": 2,
+            "target_id": "outputs:C",
+            "target_pe_id": "PE0"
+          },
+          {
+            "activity": "ActivityV0.ROUTER",
+            "domain": "MemoryDomainV0.EVENT",
+            "epoch_id": "E0",
+            "event_time": 3,
+            "kind": "AccessIntentKindV0.ROUTE_ENQUEUE",
+            "principal_id": "computed-route-1000001",
+            "profile_id": "dynamic-cost-v0",
+            "quantity": 1,
+            "request_id": 1000001,
+            "requester_pe_id": "PE0",
+            "service_units": 3,
+            "target_id": "events:B",
+            "target_pe_id": "PE1"
+          },
+          {
+            "activity": "ActivityV0.ROUTER",
+            "domain": "MemoryDomainV0.EVENT",
+            "epoch_id": "E0",
+            "event_time": 3,
+            "kind": "AccessIntentKindV0.ROUTE_ENQUEUE",
+            "principal_id": "computed-route-1000002",
+            "profile_id": "dynamic-cost-v0",
+            "quantity": 1,
+            "request_id": 1000002,
+            "requester_pe_id": "PE0",
+            "service_units": 3,
+            "target_id": "events:B",
+            "target_pe_id": "PE1"
+          }
+        ],
+        "registration": {
+          "allocation": {
+            "emission_request_id": 1000000,
+            "topology": {
+              "base_version": 0,
+              "candidate_outputs": [
+                [
+                  3,
+                  7
+                ]
+              ],
+              "epoch_id": "E0",
+              "event_time": 3,
+              "next_event_id": 1000003,
+              "profile_id": "arbiter-lab",
+              "required_output_slots": 2,
+              "routes": [
+                {
+                  "edge_index": 1,
+                  "occurrence": {
+                    "delivery_event_time": 5,
+                    "emission_event_time": 3,
+                    "epoch_id": "E0",
+                    "event_id": 1000001,
+                    "source_channel": 7,
+                    "source_node_id": "C",
+                    "source_pe_id": "PE0",
+                    "target_channel": 0,
+                    "target_node_id": "B",
+                    "target_pe_id": "PE1"
+                  },
+                  "output_index": 0
+                },
+                {
+                  "edge_index": 2,
+                  "occurrence": {
+                    "delivery_event_time": 6,
+                    "emission_event_time": 3,
+                    "epoch_id": "E0",
+                    "event_id": 1000002,
+                    "source_channel": 7,
+                    "source_node_id": "C",
+                    "source_pe_id": "PE0",
+                    "target_channel": 0,
+                    "target_node_id": "B",
+                    "target_pe_id": "PE1"
+                  },
+                  "output_index": 0
+                }
+              ],
+              "source_node_id": "C",
+              "source_pe_id": "PE0",
+              "terminal_outputs": []
+            }
+          },
+          "generated_request_ids": [
+            1000000,
+            1000001,
+            1000002
+          ],
+          "source_commit_request_id": 3,
+          "unbound_route_request_ids": [
+            1000001,
+            1000002
+          ]
+        },
+        "storage_unchanged": true
+      },
+      "k5": {
+        "core_match": true,
+        "core_recompute_pairs": [
+          [
+            3,
+            7
+          ]
+        ],
+        "direct_eq_compiled": true,
+        "network_emissions": [
+          [
+            "C",
+            3,
+            7
+          ],
+          [
+            "B",
+            5,
+            7
+          ],
+          [
+            "B",
+            6,
+            7
+          ]
+        ],
+        "network_ir_sha256": "60c503ad260bd7a0806dbe8220aa15e53161fe50985102e5dc6cbae2efb09d59",
+        "network_terminal": [
+          [
+            "B",
+            5,
+            7
+          ],
+          [
+            "B",
+            6,
+            7
+          ]
+        ]
+      },
+      "schema": "spk-isa-s0k-staged-custody-child/v0k",
+      "units": 1
+    },
+    "7": {
+      "hash_seed": "17",
+      "k1": {
+        "consumed_external_input_indices": [
+          0
+        ],
+        "events": [
+          {
+            "channel": 0,
+            "node_id": "C",
+            "timestamp": 3
+          }
+        ],
+        "image_epoch": "E0",
+        "neuron_c_version": 0,
+        "prepared": {
+          "candidate_outputs": [
+            [
+              3,
+              7
+            ]
+          ],
+          "channels": [
+            0
+          ],
+          "event_time": 3,
+          "node_id": "C"
+        }
+      },
+      "k2": {
+        "base_request_count": 4,
+        "base_request_kinds": [
+          "BATCH_CONSUME",
+          "PROGRAM_REFERENCE",
+          "STATE_COMMIT",
+          "STATE_LOAD"
+        ],
+        "cost_policy": {
+          "emission_units": 2,
+          "route_units": 3,
+          "service_profile_id": "dynamic-cost-v0"
+        },
+        "cost_policy_label": "ORIGINAL_REGISTRY",
+        "dynamic_cursor": 1000000,
+        "static_max_request_id": 3
+      },
+      "k3": {
+        "base_unchanged": true,
+        "new_graph_deps": [
+          {
+            "predecessors": [
+              0,
+              1,
+              2
+            ],
+            "request_id": 1000000
+          },
+          {
+            "predecessors": [
+              1000000
+            ],
+            "request_id": 1000001
+          },
+          {
+            "predecessors": [
+              1000000
+            ],
+            "request_id": 1000002
+          }
+        ],
+        "new_request_count": 3,
+        "new_requests": [
+          {
+            "activity": "ActivityV0.EXECUTE",
+            "domain": "MemoryDomainV0.EVENT",
+            "epoch_id": "E0",
+            "event_time": 3,
+            "kind": "AccessIntentKindV0.EMISSION_RECORD",
+            "principal_id": "computed-emission-1000000",
+            "profile_id": "dynamic-cost-v0",
+            "quantity": 1,
+            "request_id": 1000000,
+            "requester_pe_id": "PE0",
+            "service_units": 2,
+            "target_id": "outputs:C",
+            "target_pe_id": "PE0"
+          },
+          {
+            "activity": "ActivityV0.ROUTER",
+            "domain": "MemoryDomainV0.EVENT",
+            "epoch_id": "E0",
+            "event_time": 3,
+            "kind": "AccessIntentKindV0.ROUTE_ENQUEUE",
+            "principal_id": "computed-route-1000001",
+            "profile_id": "dynamic-cost-v0",
+            "quantity": 1,
+            "request_id": 1000001,
+            "requester_pe_id": "PE0",
+            "service_units": 3,
+            "target_id": "events:B",
+            "target_pe_id": "PE1"
+          },
+          {
+            "activity": "ActivityV0.ROUTER",
+            "domain": "MemoryDomainV0.EVENT",
+            "epoch_id": "E0",
+            "event_time": 3,
+            "kind": "AccessIntentKindV0.ROUTE_ENQUEUE",
+            "principal_id": "computed-route-1000002",
+            "profile_id": "dynamic-cost-v0",
+            "quantity": 1,
+            "request_id": 1000002,
+            "requester_pe_id": "PE0",
+            "service_units": 3,
+            "target_id": "events:B",
+            "target_pe_id": "PE1"
+          }
+        ],
+        "registration": {
+          "allocation": {
+            "emission_request_id": 1000000,
+            "topology": {
+              "base_version": 0,
+              "candidate_outputs": [
+                [
+                  3,
+                  7
+                ]
+              ],
+              "epoch_id": "E0",
+              "event_time": 3,
+              "next_event_id": 1000003,
+              "profile_id": "arbiter-lab",
+              "required_output_slots": 2,
+              "routes": [
+                {
+                  "edge_index": 1,
+                  "occurrence": {
+                    "delivery_event_time": 5,
+                    "emission_event_time": 3,
+                    "epoch_id": "E0",
+                    "event_id": 1000001,
+                    "source_channel": 7,
+                    "source_node_id": "C",
+                    "source_pe_id": "PE0",
+                    "target_channel": 0,
+                    "target_node_id": "B",
+                    "target_pe_id": "PE1"
+                  },
+                  "output_index": 0
+                },
+                {
+                  "edge_index": 2,
+                  "occurrence": {
+                    "delivery_event_time": 6,
+                    "emission_event_time": 3,
+                    "epoch_id": "E0",
+                    "event_id": 1000002,
+                    "source_channel": 7,
+                    "source_node_id": "C",
+                    "source_pe_id": "PE0",
+                    "target_channel": 0,
+                    "target_node_id": "B",
+                    "target_pe_id": "PE1"
+                  },
+                  "output_index": 0
+                }
+              ],
+              "source_node_id": "C",
+              "source_pe_id": "PE0",
+              "terminal_outputs": []
+            }
+          },
+          "generated_request_ids": [
+            1000000,
+            1000001,
+            1000002
+          ],
+          "source_commit_request_id": 3,
+          "unbound_route_request_ids": [
+            1000001,
+            1000002
+          ]
+        },
+        "storage_unchanged": true
+      },
+      "k5": {
+        "core_match": true,
+        "core_recompute_pairs": [
+          [
+            3,
+            7
+          ]
+        ],
+        "direct_eq_compiled": true,
+        "network_emissions": [
+          [
+            "C",
+            3,
+            7
+          ],
+          [
+            "B",
+            5,
+            7
+          ],
+          [
+            "B",
+            6,
+            7
+          ]
+        ],
+        "network_ir_sha256": "60c503ad260bd7a0806dbe8220aa15e53161fe50985102e5dc6cbae2efb09d59",
+        "network_terminal": [
+          [
+            "B",
+            5,
+            7
+          ],
+          [
+            "B",
+            6,
+            7
+          ]
+        ]
+      },
+      "schema": "spk-isa-s0k-staged-custody-child/v0k",
+      "units": 7
+    }
+  },
+  "parents": {
+    "compiler_commit": "24b15156aa31967bd0079debcc97ccb6e3ac4325",
+    "hr2": "20b79ccf7238f55b4834cca6bc02b098db92a6a46b14fe1e43009558df64a6a2",
+    "s0i": "d0271e7b04ecfd3fc0f9a9eb88d5efad95a8e8883b17ac0b15dd7a7350adffdb",
+    "s0j": "524e8b31ea89d656eabedc1a8ffc50725fcbbf2d98dd8f4858db0bfba6329000",
+    "spec_sha256": "8daca7f816e95cb16d5962d3783019ee67f7aa2ad53cb15c90bdf155d3eddf0a"
+  },
+  "research_only": true,
+  "schema": "spk-isa-s0k-staged-custody-witness/v0k",
+  "status": "NATIVE_PRECOMMIT_STAGED_INTENTS_BOUND_NO_ROUTE_SERVICE_NO_OUTPUT_PUBLICATION_HOLD"
+}
