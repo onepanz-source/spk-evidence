@@ -1,0 +1,844 @@
+{
+  "host_can_forge_and_reseal": true,
+  "macro_workstreams": {
+    "M1_versioned_memory_authority": {
+      "implemented_and_invoked_in_C_receipt_tick": true,
+      "strict_scope_C_P_execute": true
+    },
+    "M2_atomic_grant_and_P_store": {
+      "grant_source_event_bound": true,
+      "new_runtime_P_commits": 8,
+      "new_runtime_P_grants": 8
+    },
+    "M3_resource_and_mode_admission": {
+      "denial_is_atomic": true,
+      "global_ceiling": 8,
+      "per_context_ceiling": 4
+    },
+    "M4_concurrent_feedback_credit": {
+      "no_double_credit": true,
+      "stale_vetoes_affinity": 0,
+      "stale_vetoes_naive": 4
+    },
+    "M5_recovery_and_adversarial": {
+      "atomic_zero_budget_denial": true,
+      "direct_write_denied": true,
+      "global_and_context_resource_independent": true,
+      "grant_trigger_tamper_detected": true,
+      "host_native_claim_rejected": true,
+      "host_still_controls_runtime_and_can_reseal": true,
+      "pending_feedback_survives_restart": true,
+      "same_version_one_grant_only": true,
+      "typed_non_P_and_wrong_owner_rejected": true,
+      "verify_mode_denial": true,
+      "versioned_profile_expansion_then_single_commit": true
+    },
+    "M6_legacy_compatibility_and_native_boundary": {
+      "T10_readiness_fwork_sha256": "8e06cd938024ccfaf63ad43f3c9b5e02d1b1d4f34fa4fccc5b201135a824f36c",
+      "T10_readiness_verified_in_full_gate": true,
+      "T10_resource_reference_replayed_byte_exact": true,
+      "native_original_memory_binding_performed": false,
+      "native_surface": {
+        "candidate_count": 12,
+        "candidate_digest": "f13796747fed986429dab5d91390c24447db90ff7b328f5d0f60ffa5f37a8f81",
+        "candidates": [
+          {
+            "bytes": 18896,
+            "path": "spk_architecture_v1/causal_memory_v1c.py",
+            "sha256": "175362406d3598331ec72c42084030248910e0033ea17d87d0810e221c8d7617",
+            "surface": [
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "CausalMemoryAdmissionV1c"
+              },
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "CausalMemoryHorizonV1c"
+              },
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "CausalMemoryPlanV1c"
+              },
+              {
+                "args": [
+                  "fabric"
+                ],
+                "kind": "function",
+                "name": "uniform_causal_memory_plan_v1c"
+              },
+              {
+                "args": [
+                  "fabric",
+                  "plan"
+                ],
+                "kind": "function",
+                "name": "_valid_memory"
+              },
+              {
+                "args": [
+                  "node",
+                  "channels",
+                  "pid",
+                  "outgoing"
+                ],
+                "kind": "function",
+                "name": "_reservation"
+              },
+              {
+                "args": [
+                  "case",
+                  "fabric",
+                  "transport_plan",
+                  "pe_plan",
+                  "memory_plan"
+                ],
+                "kind": "function",
+                "name": "execute_causal_memory_v1c"
+              }
+            ]
+          },
+          {
+            "bytes": 8257,
+            "path": "spk_architecture_v1/memory_access_v1b.py",
+            "sha256": "365a97fdca40cfa45098c5d253cc03b378667bd6d1578798be7df1e2c9d6be36",
+            "surface": [
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "MemoryAccessDeniedV1b"
+              },
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "AccessGrantV1b"
+              },
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "AccessRequestV1b"
+              },
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "AccessAuthorityV1b"
+              },
+              {
+                "args": [
+                  "message"
+                ],
+                "kind": "function",
+                "name": "_fail"
+              },
+              {
+                "args": [
+                  "activity",
+                  "pe_id"
+                ],
+                "kind": "function",
+                "name": "_principal"
+              },
+              {
+                "args": [
+                  "admission"
+                ],
+                "kind": "function",
+                "name": "_admission"
+              },
+              {
+                "args": [
+                  "admission"
+                ],
+                "kind": "function",
+                "name": "issue_authority_v1b"
+              },
+              {
+                "args": [
+                  "admission",
+                  "authority"
+                ],
+                "kind": "function",
+                "name": "_check_authority"
+              },
+              {
+                "args": [
+                  "admission",
+                  "projection"
+                ],
+                "kind": "function",
+                "name": "derive_requests_v1b"
+              },
+              {
+                "args": [
+                  "admission",
+                  "projection",
+                  "authority",
+                  "requests"
+                ],
+                "kind": "function",
+                "name": "authorize_requests_v1b"
+              },
+              {
+                "args": [
+                  "admission",
+                  "projection"
+                ],
+                "kind": "function",
+                "name": "authorize_projection_v1b"
+              }
+            ]
+          },
+          {
+            "bytes": 7818,
+            "path": "spk_architecture_v1/memory_exhaustion_v1d.py",
+            "sha256": "efacd81645dbc5dcbefa500d2208d44919ab54b8b2987b13648c7a4d1ab7f53a",
+            "surface": [
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "MemoryProjectionMismatchV1d"
+              },
+              {
+                "args": [
+                  "projection"
+                ],
+                "kind": "function",
+                "name": "projection_digest_v1d"
+              },
+              {
+                "args": [
+                  "case",
+                  "fabric",
+                  "pe_service_plan",
+                  "memory_plan"
+                ],
+                "kind": "function",
+                "name": "preflight_memory_v1d"
+              },
+              {
+                "args": [
+                  "case",
+                  "fabric",
+                  "pe_service_plan",
+                  "memory_plan",
+                  "execute"
+                ],
+                "kind": "function",
+                "name": "execute_after_admission_v1d"
+              },
+              {
+                "args": [
+                  "admission",
+                  "memory_plan",
+                  "domain"
+                ],
+                "kind": "function",
+                "name": "shortfall_plan_v1d"
+              },
+              {
+                "args": [
+                  "admission",
+                  "projection",
+                  "plan"
+                ],
+                "kind": "function",
+                "name": "service_verdict_v1d"
+              },
+              {
+                "args": [
+                  "admission",
+                  "projection",
+                  "plan"
+                ],
+                "kind": "function",
+                "name": "exact_and_short_v1d"
+              }
+            ]
+          },
+          {
+            "bytes": 10482,
+            "path": "spk_architecture_v1/memory_projection_v1a.py",
+            "sha256": "3c9d74cb712bd9b40384634f830fbc0c65144573db6c3e3ebb095b1afed94b4f",
+            "surface": [
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "MemoryAdmissionV1a"
+              },
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "MemoryInvariantV1a"
+              },
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "MemoryCapV1a"
+              },
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "MemoryPlanV1a"
+              },
+              {
+                "args": [
+                  "x"
+                ],
+                "kind": "function",
+                "name": "_nat"
+              },
+              {
+                "args": [
+                  "fabric"
+                ],
+                "kind": "function",
+                "name": "uniform_memory_plan_v1a"
+              },
+              {
+                "args": [
+                  "case",
+                  "fabric",
+                  "service_plan",
+                  "memory_plan"
+                ],
+                "kind": "function",
+                "name": "admit_memory_v1a"
+              },
+              {
+                "args": [
+                  "case",
+                  "fabric",
+                  "admission",
+                  "execution"
+                ],
+                "kind": "function",
+                "name": "project_execution_memory_v1a"
+              }
+            ]
+          },
+          {
+            "bytes": 8079,
+            "path": "spk_architecture_v1/memory_service_v1c.py",
+            "sha256": "8f2edf529d480d32eb6434164662f15b4cafa9bedd0fe72df58c48e10ffe24c2",
+            "surface": [
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "MemoryServiceAdmissionV1c"
+              },
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "MemoryServiceExhaustedV1c"
+              },
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "MemoryServicePlanV1c"
+              },
+              {
+                "args": [
+                  "v"
+                ],
+                "kind": "function",
+                "name": "_positive"
+              },
+              {
+                "args": [
+                  "admission"
+                ],
+                "kind": "function",
+                "name": "memory_service_plan_v1c"
+              },
+              {
+                "args": [
+                  "admission",
+                  "plan"
+                ],
+                "kind": "function",
+                "name": "_validate_plan"
+              },
+              {
+                "args": [
+                  "admission",
+                  "projection",
+                  "authority",
+                  "requests",
+                  "plan"
+                ],
+                "kind": "function",
+                "name": "serve_authorized_v1c"
+              },
+              {
+                "args": [
+                  "admission",
+                  "projection",
+                  "plan"
+                ],
+                "kind": "function",
+                "name": "serve_projection_v1c"
+              }
+            ]
+          },
+          {
+            "bytes": 5697,
+            "path": "spk_architecture_v1/mode_memory_v1b.py",
+            "sha256": "b02bca9f45035330cf178cae01c4887edfd0f9e21c34f8766430554af6159281",
+            "surface": [
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "ModeMemoryDeniedV1b"
+              },
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "ModeMemoryPermitV1b"
+              },
+              {
+                "args": [
+                  "x"
+                ],
+                "kind": "function",
+                "name": "_hash"
+              },
+              {
+                "args": [
+                  "controller",
+                  "admission",
+                  "projection"
+                ],
+                "kind": "function",
+                "name": "_issue"
+              },
+              {
+                "args": [
+                  "controller",
+                  "admission",
+                  "projection"
+                ],
+                "kind": "function",
+                "name": "issue_mode_memory_permit_v1b"
+              },
+              {
+                "args": [
+                  "controller",
+                  "permit",
+                  "admission",
+                  "projection"
+                ],
+                "kind": "function",
+                "name": "serve_mode_memory_v1b"
+              }
+            ]
+          },
+          {
+            "bytes": 5107,
+            "path": "spk_compiler/pe_admission_v0.py",
+            "sha256": "ccc76a35f908bd9fbdc8d3dfc23966b4e4109db838e05143b4383a23e437933c",
+            "surface": [
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "PEAdmissionRejectedV0"
+              },
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "NodePlacementV0"
+              },
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "PEUsageV0"
+              },
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "PEAdmissionManifestV0"
+              },
+              {
+                "args": [
+                  "pe_id",
+                  "metric",
+                  "required",
+                  "capacity"
+                ],
+                "kind": "function",
+                "name": "_capacity_check"
+              },
+              {
+                "args": [
+                  "network",
+                  "architecture",
+                  "placements"
+                ],
+                "kind": "function",
+                "name": "admit_pe_mapping_v0"
+              }
+            ]
+          },
+          {
+            "bytes": 5670,
+            "path": "spk_compiler/resource_admission_v0.py",
+            "sha256": "864673d321b3da0b36d49cb669322808e617fb85657034b5df544aad48281420",
+            "surface": [
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "AdmissionRejectedV0"
+              },
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "ResourceProfileV0"
+              },
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "AdmissionManifestV0"
+              },
+              {
+                "args": [
+                  "metric",
+                  "actual",
+                  "limit"
+                ],
+                "kind": "function",
+                "name": "_check"
+              },
+              {
+                "args": [
+                  "network",
+                  "events",
+                  "profile"
+                ],
+                "kind": "function",
+                "name": "admit_network_v0"
+              }
+            ]
+          },
+          {
+            "bytes": 7475,
+            "path": "spk_simulator/access_dependencies_v0.py",
+            "sha256": "d8e55e6630fc7c861a95497cab19c053b8ca69d1ef65fee6dd6bdea440ea37d8",
+            "surface": [
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "AccessDependencyV0"
+              },
+              {
+                "args": [
+                  "dependencies"
+                ],
+                "kind": "function",
+                "name": "_topological_ids"
+              },
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "AccessDependencyGraphV0"
+              },
+              {
+                "args": [
+                  "graph"
+                ],
+                "kind": "function",
+                "name": "topological_request_ids_v0"
+              },
+              {
+                "args": [
+                  "network",
+                  "observed",
+                  "placement",
+                  "plan",
+                  "provenance",
+                  "initial_events"
+                ],
+                "kind": "function",
+                "name": "build_access_dependencies_v0"
+              }
+            ]
+          },
+          {
+            "bytes": 6620,
+            "path": "spk_simulator/atomic_emission_admission_v0.py",
+            "sha256": "1fb9611e6d40d16f9e9ec91b83d177c4d825d3d1402c329123b72fbbe1e2439e",
+            "surface": [
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "AtomicEmissionCapacityV0"
+              },
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "AtomicEmissionGroupV0"
+              },
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "AtomicEmissionAdmissionV0"
+              },
+              {
+                "args": [
+                  "architecture",
+                  "manifest",
+                  "plan",
+                  "requests"
+                ],
+                "kind": "function",
+                "name": "admit_atomic_emissions_v0"
+              }
+            ]
+          },
+          {
+            "bytes": 6454,
+            "path": "spk_simulator/logical_access_v0.py",
+            "sha256": "0ab31bd4ba0d653fa0766ff740db1ed1987851d9e6cffdcd091824f73db9daa2",
+            "surface": [
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "LogicalAccessPlanV0"
+              },
+              {
+                "args": [
+                  "network",
+                  "observed",
+                  "placement"
+                ],
+                "kind": "function",
+                "name": "generate_logical_accesses_v0"
+              }
+            ]
+          },
+          {
+            "bytes": 8642,
+            "path": "spk_simulator/ownership_consistency_v0.py",
+            "sha256": "456baa21b7044fa13bc9937b39080c7c33a3540968468c69014c71cacbbfd645",
+            "surface": [
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "UnifiedPEOccupancyV0"
+              },
+              {
+                "kind": "class",
+                "methods": [],
+                "name": "OwnershipConsistencyAuditV0"
+              },
+              {
+                "args": [
+                  "network",
+                  "observed",
+                  "placement",
+                  "architecture",
+                  "plan",
+                  "provenance",
+                  "initial_events",
+                  "requests",
+                  "schedule"
+                ],
+                "kind": "function",
+                "name": "audit_ownership_consistency_v0"
+              }
+            ]
+          }
+        ],
+        "native_memory_grant_executed": false,
+        "reason": "READ_ONLY_SURVEY_HAS_NO_AUTHORIZED_NATIVE_ENTRYPOINT",
+        "source_contract_api_authorized": false
+      },
+      "new_runtime_originals_untouched": true
+    }
+  },
+  "new_versioned_runtime_v1_P_grants": 8,
+  "new_versioned_runtime_v1_P_writes": 8,
+  "next_version_requirements": [
+    "Independently anchored provider/attestation for genuine A outcomes",
+    "Bind to an explicitly authorized original Memory Contract API or versioned replacement owned by SPK runtime",
+    "Adopt semantic events and P authority across concurrent clocked runtime and S/E/O resource accounting",
+    "Evaluate held-out goals and nontrivial source/node identity without assuming causality from host receipts"
+  ],
+  "original_BV_sha256": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+  "original_PE_sha256": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+  "original_native_SPK_BV_semantic_deliveries": 0,
+  "original_native_SPK_P_grants": 0,
+  "original_native_SPK_P_writes": 0,
+  "original_native_SPK_learning": false,
+  "promotion_to_frozen_SPK_allowed": false,
+  "scenarios": {
+    "context_affinity": {
+      "dispatch_slots": 480,
+      "episodes": 96,
+      "max_active": 2,
+      "native_frozen_SPK_grants": 0,
+      "owned_memory": {
+        "A_sender_authenticated": false,
+        "native_frozen_SPK_P_writes": 0,
+        "native_frozen_SPK_grants": 0,
+        "native_promotion_denied": true,
+        "new_v1_memory_P_commits": 8,
+        "new_v1_memory_grant_rows_sha256": "b0d7222822ec64ac6aef5970f7759f5b2eba3e880a6be377386303520855861b",
+        "new_v1_memory_grants": 8,
+        "new_v1_memory_policy": {
+          "context0_ceiling": 4,
+          "context1_ceiling": 4,
+          "domain": "P",
+          "global_ceiling": 8,
+          "mode": "execute",
+          "owner": "C",
+          "pe_id": "PE-C-RESEARCH",
+          "revision": 0
+        },
+        "original_memory_contract_called": false,
+        "reference_provider_receipts_sha256": "f27aa3d20cca0e9957bf588a70d05eabbf4245b5e625285a6a609c7ce333242a"
+      },
+      "reference_P_grants": 8,
+      "reopen_each_wave": false,
+      "rows_sha256": "46317e020c129c63db1a1a937f0bde7a3ef6c0b20fd8dbea9642b2da664fb062",
+      "stale_vetoes": 0,
+      "successes": 88,
+      "waves": 48
+    },
+    "control": {
+      "dispatch_slots": 480,
+      "episodes": 96,
+      "max_active": 3,
+      "native_frozen_SPK_grants": 0,
+      "owned_memory": {
+        "A_sender_authenticated": false,
+        "native_frozen_SPK_P_writes": 0,
+        "native_frozen_SPK_grants": 0,
+        "native_promotion_denied": true,
+        "new_v1_memory_P_commits": 0,
+        "new_v1_memory_grant_rows_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "new_v1_memory_grants": 0,
+        "new_v1_memory_policy": {
+          "context0_ceiling": 4,
+          "context1_ceiling": 4,
+          "domain": "P",
+          "global_ceiling": 8,
+          "mode": "execute",
+          "owner": "C",
+          "pe_id": "PE-C-RESEARCH",
+          "revision": 0
+        },
+        "original_memory_contract_called": false,
+        "reference_provider_receipts_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "reference_P_grants": 0,
+      "reopen_each_wave": false,
+      "rows_sha256": "379ef5f29131cd19418aaa1be7bc198d294f14702fd2fa176ca2b0d5d6bf71c3",
+      "stale_vetoes": 0,
+      "successes": 48,
+      "waves": 32
+    },
+    "naive_three": {
+      "dispatch_slots": 480,
+      "episodes": 96,
+      "max_active": 3,
+      "native_frozen_SPK_grants": 0,
+      "owned_memory": {
+        "A_sender_authenticated": false,
+        "native_frozen_SPK_P_writes": 0,
+        "native_frozen_SPK_grants": 0,
+        "native_promotion_denied": true,
+        "new_v1_memory_P_commits": 8,
+        "new_v1_memory_grant_rows_sha256": "165d09970cf498e6f0eff674a7a8cbd9bb7538405ef486f79b86911bfd8b6159",
+        "new_v1_memory_grants": 8,
+        "new_v1_memory_policy": {
+          "context0_ceiling": 4,
+          "context1_ceiling": 4,
+          "domain": "P",
+          "global_ceiling": 8,
+          "mode": "execute",
+          "owner": "C",
+          "pe_id": "PE-C-RESEARCH",
+          "revision": 0
+        },
+        "original_memory_contract_called": false,
+        "reference_provider_receipts_sha256": "a964e2774569ad0efdcb818bf857e3758475faa77dcfa6987b7d26e2032176e1"
+      },
+      "reference_P_grants": 8,
+      "reopen_each_wave": false,
+      "rows_sha256": "1ac5be032f677a88fb6addf30aaf219681889e3d56bc40c3f84df6dd520cf5ab",
+      "stale_vetoes": 4,
+      "successes": 84,
+      "waves": 32
+    },
+    "restarted_affinity": {
+      "dispatch_slots": 480,
+      "episodes": 96,
+      "max_active": 2,
+      "native_frozen_SPK_grants": 0,
+      "owned_memory": {
+        "A_sender_authenticated": false,
+        "native_frozen_SPK_P_writes": 0,
+        "native_frozen_SPK_grants": 0,
+        "native_promotion_denied": true,
+        "new_v1_memory_P_commits": 8,
+        "new_v1_memory_grant_rows_sha256": "b0d7222822ec64ac6aef5970f7759f5b2eba3e880a6be377386303520855861b",
+        "new_v1_memory_grants": 8,
+        "new_v1_memory_policy": {
+          "context0_ceiling": 4,
+          "context1_ceiling": 4,
+          "domain": "P",
+          "global_ceiling": 8,
+          "mode": "execute",
+          "owner": "C",
+          "pe_id": "PE-C-RESEARCH",
+          "revision": 0
+        },
+        "original_memory_contract_called": false,
+        "reference_provider_receipts_sha256": "f27aa3d20cca0e9957bf588a70d05eabbf4245b5e625285a6a609c7ce333242a"
+      },
+      "reference_P_grants": 8,
+      "reopen_each_wave": true,
+      "rows_sha256": "46317e020c129c63db1a1a937f0bde7a3ef6c0b20fd8dbea9642b2da664fb062",
+      "stale_vetoes": 0,
+      "successes": 88,
+      "waves": 48
+    },
+    "serial": {
+      "dispatch_slots": 480,
+      "episodes": 96,
+      "max_active": 1,
+      "native_frozen_SPK_grants": 0,
+      "owned_memory": {
+        "A_sender_authenticated": false,
+        "native_frozen_SPK_P_writes": 0,
+        "native_frozen_SPK_grants": 0,
+        "native_promotion_denied": true,
+        "new_v1_memory_P_commits": 8,
+        "new_v1_memory_grant_rows_sha256": "4426f96cecd7130b7082b1a3bce186238c522baacc65e2e5c6d6e44609e4c160",
+        "new_v1_memory_grants": 8,
+        "new_v1_memory_policy": {
+          "context0_ceiling": 4,
+          "context1_ceiling": 4,
+          "domain": "P",
+          "global_ceiling": 8,
+          "mode": "execute",
+          "owner": "C",
+          "pe_id": "PE-C-RESEARCH",
+          "revision": 0
+        },
+        "original_memory_contract_called": false,
+        "reference_provider_receipts_sha256": "60257f0d9073e797d94256bd95dae7759e95bdd6849ccc311d21c9a79be5225c"
+      },
+      "reference_P_grants": 8,
+      "reopen_each_wave": false,
+      "rows_sha256": "46317e020c129c63db1a1a937f0bde7a3ef6c0b20fd8dbea9642b2da664fb062",
+      "stale_vetoes": 0,
+      "successes": 88,
+      "waves": 96
+    }
+  },
+  "schema": "spk-v5-t11-macro-owned-memory-v1/research-v0",
+  "source_T10JKL_SHA256": "789f8a13885caf0f2ae2ade81565916411b398c4686e21cb5e382db229cc20d1",
+  "status": "VERSIONED_NEW_RUNTIME_V1_OWNED_MEMORY_CONTRACT_EXECUTABLE_NOT_FROZEN_SPK_NATIVE"
+}

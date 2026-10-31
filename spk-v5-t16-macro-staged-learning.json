@@ -1,0 +1,180 @@
+{
+  "T13_A1d_original_memory_permission_per_thermal_credit": false,
+  "T14_signed_sensor_attestation": false,
+  "actor_ownership": {
+    "A": "sensor feature preprocessing + frozen PE comparator",
+    "B": "PE local relay; cannot authorize learning",
+    "C": "frozen PE decision + owned research P threshold",
+    "WORLD": "deterministic host-authored thermal dynamics"
+  },
+  "heldout_P_frozen": true,
+  "hypothesis_supported_under_restricted_dynamics": true,
+  "independent_T15_parity": {
+    "T15_cell_rows_sha256": "89832b871280f8f835b5d825e4e39e961366a1b566151c0efc46056a31df800f",
+    "all_five_modes": true,
+    "paired_case_count": 60,
+    "paired_choices_sha256": "41465a65d369d29ccb92c9ef9dc02f50b2d516364b06cb7660c52349c7c3f124",
+    "reversed_actuator": true,
+    "t15_experiment_reexecuted": true
+  },
+  "known_limits": [
+    "Versioned T16 reference scheduler, NOT original SPK BV scheduler",
+    "Host still defines thermal setpoint, world dynamics and sensor readings",
+    "A computes a comparison with frozen SPK PE; Python prepares absolute distances",
+    "The signed T14 source and T13 A1d memory access are NOT integrated with thermal policy updates",
+    "T13 original goals 11/12 and T15 setpoints 3..12 are distinct contracts; never equate them by renaming",
+    "Five distinct event transactions model staging, not independent processes or physical clock",
+    "This experiment tests within-dynamics odd/even split, not broad generalization or source provenance"
+  ],
+  "native_SPK_learning": false,
+  "native_frozen_BV_semantic_credit": false,
+  "original_PE_compute_used": true,
+  "original_SPK_native_P_grants": 0,
+  "promotion_allowed": false,
+  "research_P_grants": 31,
+  "restricted_gain_absolute": 0.21333333333333335,
+  "reversed_actuator_counterfactual": {
+    "adaptive": {
+      "cases": 75,
+      "commits": 45,
+      "hits": 30
+    },
+    "frozen": {
+      "cases": 75,
+      "commits": 0,
+      "hits": 20
+    }
+  },
+  "schema": "spk-v5-t16-owned-staged-causal-learning/research-v0",
+  "source_T15_SHA256": "83da0277ebf6ec36e0ab8fb8aab4cbd55d7eb926e64b94aef81f94e6cd353a77",
+  "staged_dispatch_slots": 11250,
+  "staged_event_rows": 11281,
+  "staged_rows_sha256": "fb2e773443fd66add66e0bcc64e387a378be30045fba6cca9d7e18215d0d1e14",
+  "stages": [
+    "C_PE",
+    "WORLD",
+    "A_PE",
+    "B_RELAY",
+    "C_CREDIT"
+  ],
+  "status": "STAGED_CAUSAL_LEARNING_LIMITED_SUPPORTED",
+  "totals": {
+    "adaptive": {
+      "heldout_cases": 225,
+      "heldout_improved": 213,
+      "heldout_physical_loss": 879,
+      "per_seed": {
+        "17": {
+          "cases": 75,
+          "commits": 8,
+          "hits": 71
+        },
+        "29": {
+          "cases": 75,
+          "commits": 10,
+          "hits": 71
+        },
+        "43": {
+          "cases": 75,
+          "commits": 13,
+          "hits": 71
+        }
+      },
+      "training_P_commits": 31
+    },
+    "altered": {
+      "heldout_cases": 225,
+      "heldout_improved": 165,
+      "heldout_physical_loss": 975,
+      "per_seed": {
+        "17": {
+          "cases": 75,
+          "commits": 0,
+          "hits": 55
+        },
+        "29": {
+          "cases": 75,
+          "commits": 0,
+          "hits": 55
+        },
+        "43": {
+          "cases": 75,
+          "commits": 0,
+          "hits": 55
+        }
+      },
+      "training_P_commits": 0
+    },
+    "frozen": {
+      "heldout_cases": 225,
+      "heldout_improved": 165,
+      "heldout_physical_loss": 975,
+      "per_seed": {
+        "17": {
+          "cases": 75,
+          "commits": 0,
+          "hits": 55
+        },
+        "29": {
+          "cases": 75,
+          "commits": 0,
+          "hits": 55
+        },
+        "43": {
+          "cases": 75,
+          "commits": 0,
+          "hits": 55
+        }
+      },
+      "training_P_commits": 0
+    },
+    "no_feedback": {
+      "heldout_cases": 225,
+      "heldout_improved": 165,
+      "heldout_physical_loss": 975,
+      "per_seed": {
+        "17": {
+          "cases": 75,
+          "commits": 0,
+          "hits": 55
+        },
+        "29": {
+          "cases": 75,
+          "commits": 0,
+          "hits": 55
+        },
+        "43": {
+          "cases": 75,
+          "commits": 0,
+          "hits": 55
+        }
+      },
+      "training_P_commits": 0
+    },
+    "wrong_lineage": {
+      "heldout_cases": 225,
+      "heldout_improved": 165,
+      "heldout_physical_loss": 975,
+      "per_seed": {
+        "17": {
+          "cases": 75,
+          "commits": 0,
+          "hits": 55
+        },
+        "29": {
+          "cases": 75,
+          "commits": 0,
+          "hits": 55
+        },
+        "43": {
+          "cases": 75,
+          "commits": 0,
+          "hits": 55
+        }
+      },
+      "training_P_commits": 0
+    }
+  },
+  "transaction_scope": "ONE_DURABLE_TRANSACTION_PER_STAGE",
+  "world": "T15 deterministic bounded thermal cell"
+}

@@ -1,0 +1,680 @@
+{
+  "P_state_mutated": false,
+  "architecture_promotion_allowed": false,
+  "bv_verdict_proven": false,
+  "cases": [
+    {
+      "initial_events": 1,
+      "native_execution": true,
+      "native_result": {
+        "edge_count": 7,
+        "initial_state_sha256": "af3ff649feb8f50f367315f9489c5e67eeca55cd485143dc7c0fcdca66a13f47",
+        "input_sha256": "82284562a12a43459e5d060fced6204bfdb5ae688277e0b02bcbdea08359f5dd",
+        "network_ir_sha256": "f9add1eb69d3de745c0e05acca1179d321ea7a4837aa32d776e2631538f06d85",
+        "node_count": 8,
+        "outcome_sha256": "9ea4b1f8f638853b3ade6a9b1e18373d4bdfe48fdc30f893fd7f66e1e8b52adc",
+        "pe_admission": {
+          "cross_pe_edges": 7,
+          "node_count": 8,
+          "pe_count": 8,
+          "profile_id": "S1B_ABSTRACT_ONE_PE_PER_NODE",
+          "total_program_slots": 32,
+          "total_state_slots": 8
+        },
+        "processed_batches": 8,
+        "processed_events": 8,
+        "program_map_sha256": "287cb36149166d4bdd14b3b9b3612165e98a9b26e4372b821e37df684299662b",
+        "resource_admission": {
+          "conservative_emission_bound": 5000,
+          "edge_count": 7,
+          "initial_event_count": 1,
+          "instruction_count": 32,
+          "max_channel_fanout": 1,
+          "max_node_emits": 1,
+          "max_node_instructions": 4,
+          "node_count": 8,
+          "profile_id": "spk-logical-lab-v0",
+          "runtime_max_batches": 5000,
+          "runtime_max_events": 25000
+        },
+        "route_count": 7,
+        "runtime_limits": {
+          "max_batches": 100000,
+          "max_events": 1000000
+        },
+        "terminal_count": 1
+      },
+      "nodes": 8,
+      "observed_route_count": 7,
+      "received_batches": 8,
+      "replay_identity_sha256": "0aa8cfb23deb771efde4e194289e8e48cb9ff59ee67d5d879d354d5cfc470127",
+      "scenario": "chain8",
+      "scenario_sha256": "16e66fe794d4927c310528c4c3b854f5e3d8617df3dfbdc0b223b744b79d7f6b"
+    },
+    {
+      "initial_events": 1,
+      "native_execution": true,
+      "native_result": {
+        "edge_count": 15,
+        "initial_state_sha256": "1d6de82aa942f7c47132a3255cdb0a795992f382364af16792dd1d4cc2b64e3a",
+        "input_sha256": "82284562a12a43459e5d060fced6204bfdb5ae688277e0b02bcbdea08359f5dd",
+        "network_ir_sha256": "0db641e8f417af31974a1fa87df739e6724eb9932e84d2a59d678a2f5a5757f0",
+        "node_count": 16,
+        "outcome_sha256": "df593e35d2e641bdefe402890854b0ee73cfc6a0502c4b7467afed6b2860cb12",
+        "pe_admission": {
+          "cross_pe_edges": 15,
+          "node_count": 16,
+          "pe_count": 16,
+          "profile_id": "S1B_ABSTRACT_ONE_PE_PER_NODE",
+          "total_program_slots": 64,
+          "total_state_slots": 16
+        },
+        "processed_batches": 16,
+        "processed_events": 16,
+        "program_map_sha256": "4905f2d0ff5281acd3d40bea6fa592f8843ee30b6ddfa20871612abc235cf4a6",
+        "resource_admission": {
+          "conservative_emission_bound": 5000,
+          "edge_count": 15,
+          "initial_event_count": 1,
+          "instruction_count": 64,
+          "max_channel_fanout": 1,
+          "max_node_emits": 1,
+          "max_node_instructions": 4,
+          "node_count": 16,
+          "profile_id": "spk-logical-lab-v0",
+          "runtime_max_batches": 5000,
+          "runtime_max_events": 25000
+        },
+        "route_count": 15,
+        "runtime_limits": {
+          "max_batches": 100000,
+          "max_events": 1000000
+        },
+        "terminal_count": 1
+      },
+      "nodes": 16,
+      "observed_route_count": 15,
+      "received_batches": 16,
+      "replay_identity_sha256": "ff6a9033bd2fcfc8f4c110daec05c4c0963674cd8ec207b4f0259b480e110717",
+      "scenario": "chain16",
+      "scenario_sha256": "d11413eb902ecdfaf3f2b09b20fccdce1ca51dd8b43a4dd394895b8839357b8e"
+    },
+    {
+      "initial_events": 1,
+      "native_execution": true,
+      "native_result": {
+        "edge_count": 31,
+        "initial_state_sha256": "3a1d4581a2339d661a95dc3a99bb61a1a8f50453291696364672ffacc33439ae",
+        "input_sha256": "82284562a12a43459e5d060fced6204bfdb5ae688277e0b02bcbdea08359f5dd",
+        "network_ir_sha256": "426e2c4cfa4b7c514d7fb6a6f0378adc1fe626e6165b0a97c7e7ec4c359e7298",
+        "node_count": 32,
+        "outcome_sha256": "eaf505ed28f0eea6a497a92ca9adae7fb1e600e98222cd316f03fd827b59f83f",
+        "pe_admission": {
+          "cross_pe_edges": 31,
+          "node_count": 32,
+          "pe_count": 32,
+          "profile_id": "S1B_ABSTRACT_ONE_PE_PER_NODE",
+          "total_program_slots": 128,
+          "total_state_slots": 32
+        },
+        "processed_batches": 32,
+        "processed_events": 32,
+        "program_map_sha256": "ccc0910a39b073c7c9caf11d24256322304d741a205e2de8b62bb63e15b40ce3",
+        "resource_admission": {
+          "conservative_emission_bound": 5000,
+          "edge_count": 31,
+          "initial_event_count": 1,
+          "instruction_count": 128,
+          "max_channel_fanout": 1,
+          "max_node_emits": 1,
+          "max_node_instructions": 4,
+          "node_count": 32,
+          "profile_id": "spk-logical-lab-v0",
+          "runtime_max_batches": 5000,
+          "runtime_max_events": 25000
+        },
+        "route_count": 31,
+        "runtime_limits": {
+          "max_batches": 100000,
+          "max_events": 1000000
+        },
+        "terminal_count": 1
+      },
+      "nodes": 32,
+      "observed_route_count": 31,
+      "received_batches": 32,
+      "replay_identity_sha256": "436b4e476d44153b28dcb87d842887d0592699bdf63bf67f6f3589f3efc96712",
+      "scenario": "chain32",
+      "scenario_sha256": "b16c21fc798d0ee5b4cdcfd0b1f7f70c28a78a4622b3337d20500cd7141e9571"
+    },
+    {
+      "initial_events": 1,
+      "native_execution": true,
+      "native_result": {
+        "edge_count": 63,
+        "initial_state_sha256": "b3f9c6c701593924781a498665ddd7a3b60854f692c8335c784983d7ee33ae8b",
+        "input_sha256": "82284562a12a43459e5d060fced6204bfdb5ae688277e0b02bcbdea08359f5dd",
+        "network_ir_sha256": "2503c213032f0d936d8d2af1e443879d06ab4f12f7128d72fcbd76086bf2db5a",
+        "node_count": 64,
+        "outcome_sha256": "a1516337e256caf961aa6a6848fa93ee38d072a36ce9c04b764543819edbd01e",
+        "pe_admission": {
+          "cross_pe_edges": 63,
+          "node_count": 64,
+          "pe_count": 64,
+          "profile_id": "S1B_ABSTRACT_ONE_PE_PER_NODE",
+          "total_program_slots": 256,
+          "total_state_slots": 64
+        },
+        "processed_batches": 64,
+        "processed_events": 64,
+        "program_map_sha256": "677195a1b7fc63c71c6259007631a3ef6b61146767eaf6953ca3cabec489f637",
+        "resource_admission": {
+          "conservative_emission_bound": 5000,
+          "edge_count": 63,
+          "initial_event_count": 1,
+          "instruction_count": 256,
+          "max_channel_fanout": 1,
+          "max_node_emits": 1,
+          "max_node_instructions": 4,
+          "node_count": 64,
+          "profile_id": "spk-logical-lab-v0",
+          "runtime_max_batches": 5000,
+          "runtime_max_events": 25000
+        },
+        "route_count": 63,
+        "runtime_limits": {
+          "max_batches": 100000,
+          "max_events": 1000000
+        },
+        "terminal_count": 1
+      },
+      "nodes": 64,
+      "observed_route_count": 63,
+      "received_batches": 64,
+      "replay_identity_sha256": "0c78f464cbd324efaee8ddbe902ba17a9f3b1b68131720a3a088eb09932a0b9d",
+      "scenario": "chain64",
+      "scenario_sha256": "4514d286813efad638b31756ceabf4bb2971f9c4755366340d3878cb01969a3e"
+    },
+    {
+      "initial_events": 1,
+      "native_execution": true,
+      "native_result": {
+        "edge_count": 7,
+        "initial_state_sha256": "af3ff649feb8f50f367315f9489c5e67eeca55cd485143dc7c0fcdca66a13f47",
+        "input_sha256": "82284562a12a43459e5d060fced6204bfdb5ae688277e0b02bcbdea08359f5dd",
+        "network_ir_sha256": "d31b2e6dd85fa398602fdcdbb51ec0f90f8ddfdba94a8b25824957c3462ae7d5",
+        "node_count": 8,
+        "outcome_sha256": "c2ca162acc04260452c996cee8e950459ae45fbc5ccc5d8f676c3892589efc32",
+        "pe_admission": {
+          "cross_pe_edges": 7,
+          "node_count": 8,
+          "pe_count": 8,
+          "profile_id": "S1B_ABSTRACT_ONE_PE_PER_NODE",
+          "total_program_slots": 32,
+          "total_state_slots": 8
+        },
+        "processed_batches": 8,
+        "processed_events": 8,
+        "program_map_sha256": "287cb36149166d4bdd14b3b9b3612165e98a9b26e4372b821e37df684299662b",
+        "resource_admission": {
+          "conservative_emission_bound": 5000,
+          "edge_count": 7,
+          "initial_event_count": 1,
+          "instruction_count": 32,
+          "max_channel_fanout": 7,
+          "max_node_emits": 1,
+          "max_node_instructions": 4,
+          "node_count": 8,
+          "profile_id": "spk-logical-lab-v0",
+          "runtime_max_batches": 5000,
+          "runtime_max_events": 25000
+        },
+        "route_count": 7,
+        "runtime_limits": {
+          "max_batches": 100000,
+          "max_events": 1000000
+        },
+        "terminal_count": 7
+      },
+      "nodes": 8,
+      "observed_route_count": 7,
+      "received_batches": 8,
+      "replay_identity_sha256": "6769e01e119293aced79ef0abdf5300cfaa99f1a58a173a6f55b7512dcadc013",
+      "scenario": "fanout8",
+      "scenario_sha256": "84864a37c76a5d478068fe403010854d266673114db205800a9e94e3a3a690e9"
+    },
+    {
+      "initial_events": 1,
+      "native_execution": true,
+      "native_result": {
+        "edge_count": 15,
+        "initial_state_sha256": "1d6de82aa942f7c47132a3255cdb0a795992f382364af16792dd1d4cc2b64e3a",
+        "input_sha256": "82284562a12a43459e5d060fced6204bfdb5ae688277e0b02bcbdea08359f5dd",
+        "network_ir_sha256": "38d773d42e3f6d8b35bcf6b257b18a08017ddee31d59a31ca9031c6fc9123564",
+        "node_count": 16,
+        "outcome_sha256": "4bd774564191bc34d66bbc032403ebfc8a81e557c0caf511d81b01181cab1c34",
+        "pe_admission": {
+          "cross_pe_edges": 15,
+          "node_count": 16,
+          "pe_count": 16,
+          "profile_id": "S1B_ABSTRACT_ONE_PE_PER_NODE",
+          "total_program_slots": 64,
+          "total_state_slots": 16
+        },
+        "processed_batches": 16,
+        "processed_events": 16,
+        "program_map_sha256": "4905f2d0ff5281acd3d40bea6fa592f8843ee30b6ddfa20871612abc235cf4a6",
+        "resource_admission": {
+          "conservative_emission_bound": 5000,
+          "edge_count": 15,
+          "initial_event_count": 1,
+          "instruction_count": 64,
+          "max_channel_fanout": 15,
+          "max_node_emits": 1,
+          "max_node_instructions": 4,
+          "node_count": 16,
+          "profile_id": "spk-logical-lab-v0",
+          "runtime_max_batches": 5000,
+          "runtime_max_events": 25000
+        },
+        "route_count": 15,
+        "runtime_limits": {
+          "max_batches": 100000,
+          "max_events": 1000000
+        },
+        "terminal_count": 15
+      },
+      "nodes": 16,
+      "observed_route_count": 15,
+      "received_batches": 16,
+      "replay_identity_sha256": "c93c1f0d87cdd203c0a64e876a63ee46e14555ad7ab9ffc4f9a8c322715502a9",
+      "scenario": "fanout16",
+      "scenario_sha256": "7300834a25917fee4bb4ceb3c6577223142d0aaf048a653930722d1ae15da544"
+    },
+    {
+      "initial_events": 1,
+      "native_execution": true,
+      "native_result": {
+        "edge_count": 31,
+        "initial_state_sha256": "3a1d4581a2339d661a95dc3a99bb61a1a8f50453291696364672ffacc33439ae",
+        "input_sha256": "82284562a12a43459e5d060fced6204bfdb5ae688277e0b02bcbdea08359f5dd",
+        "network_ir_sha256": "fe411d8fa945771a1a2b74567669a3013e5f8e5c0e44dbd921df1db5a4e9fcf5",
+        "node_count": 32,
+        "outcome_sha256": "6f467038d7f6064e52e69990fed8e0fbaea6a809f738977b30edb6db4d3415fc",
+        "pe_admission": {
+          "cross_pe_edges": 31,
+          "node_count": 32,
+          "pe_count": 32,
+          "profile_id": "S1B_ABSTRACT_ONE_PE_PER_NODE",
+          "total_program_slots": 128,
+          "total_state_slots": 32
+        },
+        "processed_batches": 32,
+        "processed_events": 32,
+        "program_map_sha256": "ccc0910a39b073c7c9caf11d24256322304d741a205e2de8b62bb63e15b40ce3",
+        "resource_admission": {
+          "conservative_emission_bound": 5000,
+          "edge_count": 31,
+          "initial_event_count": 1,
+          "instruction_count": 128,
+          "max_channel_fanout": 31,
+          "max_node_emits": 1,
+          "max_node_instructions": 4,
+          "node_count": 32,
+          "profile_id": "spk-logical-lab-v0",
+          "runtime_max_batches": 5000,
+          "runtime_max_events": 25000
+        },
+        "route_count": 31,
+        "runtime_limits": {
+          "max_batches": 100000,
+          "max_events": 1000000
+        },
+        "terminal_count": 31
+      },
+      "nodes": 32,
+      "observed_route_count": 31,
+      "received_batches": 32,
+      "replay_identity_sha256": "0eb96c20646e21ea93c4ecb97b4b690f645d3b95ae18d00acdc7588d4761a08c",
+      "scenario": "fanout32",
+      "scenario_sha256": "3f4a79281fec3c8b7dd03a71cf1b77f71e6b959ca8fc597bbe3aff63ac3404c7"
+    },
+    {
+      "initial_events": 7,
+      "native_execution": true,
+      "native_result": {
+        "edge_count": 7,
+        "initial_state_sha256": "af3ff649feb8f50f367315f9489c5e67eeca55cd485143dc7c0fcdca66a13f47",
+        "input_sha256": "5c31254c27766d5adb50f249b4b9576529826c5f859156499fed480084c2dcfa",
+        "network_ir_sha256": "fc08a3bac59fb21643fb840f8a205766d167cfc8c61b68ed1c01d0adb82b0e91",
+        "node_count": 8,
+        "outcome_sha256": "2124a7154ade3e3af291c2222ceecf1378ff1e22e471146af23bdc527d252904",
+        "pe_admission": {
+          "cross_pe_edges": 7,
+          "node_count": 8,
+          "pe_count": 8,
+          "profile_id": "S1B_ABSTRACT_ONE_PE_PER_NODE",
+          "total_program_slots": 32,
+          "total_state_slots": 8
+        },
+        "processed_batches": 8,
+        "processed_events": 14,
+        "program_map_sha256": "287cb36149166d4bdd14b3b9b3612165e98a9b26e4372b821e37df684299662b",
+        "resource_admission": {
+          "conservative_emission_bound": 5000,
+          "edge_count": 7,
+          "initial_event_count": 7,
+          "instruction_count": 32,
+          "max_channel_fanout": 1,
+          "max_node_emits": 1,
+          "max_node_instructions": 4,
+          "node_count": 8,
+          "profile_id": "spk-logical-lab-v0",
+          "runtime_max_batches": 5000,
+          "runtime_max_events": 25000
+        },
+        "route_count": 7,
+        "runtime_limits": {
+          "max_batches": 100000,
+          "max_events": 1000000
+        },
+        "terminal_count": 1
+      },
+      "nodes": 8,
+      "observed_route_count": 7,
+      "received_batches": 8,
+      "replay_identity_sha256": "f893130230c4b4a396c9ceca59a4a1e8ed4dc568982777de7440d3dc004ab2b9",
+      "scenario": "fanin8",
+      "scenario_sha256": "181e306c03256701bbbf125cf94b84f44ac7eedfbddb45b4a85654ad7e375a98"
+    },
+    {
+      "initial_events": 15,
+      "native_execution": true,
+      "native_result": {
+        "edge_count": 15,
+        "initial_state_sha256": "1d6de82aa942f7c47132a3255cdb0a795992f382364af16792dd1d4cc2b64e3a",
+        "input_sha256": "6351f976ac5a38d36df5b684de5f9172fe56d6ff6c8d3ca74063aee8fcda0f56",
+        "network_ir_sha256": "b5613eaf8e0dfb6a39993abfc09459e839e233daab624cbdcb6e63b024dbec88",
+        "node_count": 16,
+        "outcome_sha256": "15a06a4755b38ee111b77eb3cf6081a7d6362875e04d2a79d731fbcb2b18f7dc",
+        "pe_admission": {
+          "cross_pe_edges": 15,
+          "node_count": 16,
+          "pe_count": 16,
+          "profile_id": "S1B_ABSTRACT_ONE_PE_PER_NODE",
+          "total_program_slots": 64,
+          "total_state_slots": 16
+        },
+        "processed_batches": 16,
+        "processed_events": 30,
+        "program_map_sha256": "4905f2d0ff5281acd3d40bea6fa592f8843ee30b6ddfa20871612abc235cf4a6",
+        "resource_admission": {
+          "conservative_emission_bound": 5000,
+          "edge_count": 15,
+          "initial_event_count": 15,
+          "instruction_count": 64,
+          "max_channel_fanout": 1,
+          "max_node_emits": 1,
+          "max_node_instructions": 4,
+          "node_count": 16,
+          "profile_id": "spk-logical-lab-v0",
+          "runtime_max_batches": 5000,
+          "runtime_max_events": 25000
+        },
+        "route_count": 15,
+        "runtime_limits": {
+          "max_batches": 100000,
+          "max_events": 1000000
+        },
+        "terminal_count": 1
+      },
+      "nodes": 16,
+      "observed_route_count": 15,
+      "received_batches": 16,
+      "replay_identity_sha256": "ef0a8ca78e196c71f29c9a880a2efa7d99ffe6f9cbe83b9d26cfe02e7571cf23",
+      "scenario": "fanin16",
+      "scenario_sha256": "948daa0aba7bd32d7ee7fe0f8eec6e14047bc18f8b97795e0454941b1785b3cb"
+    },
+    {
+      "initial_events": 0,
+      "native_execution": true,
+      "native_result": {
+        "edge_count": 0,
+        "initial_state_sha256": "b3f9c6c701593924781a498665ddd7a3b60854f692c8335c784983d7ee33ae8b",
+        "input_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "network_ir_sha256": "e6ae316f5d771848cafcfabe3498bfc88c1d076217f79f6bb05e335b4b58ee39",
+        "node_count": 64,
+        "outcome_sha256": "73f92f63d1c2e893d996c0fa6c47a2212a55119ba02c2a27d29df6698274f92e",
+        "pe_admission": {
+          "cross_pe_edges": 0,
+          "node_count": 64,
+          "pe_count": 64,
+          "profile_id": "S1B_ABSTRACT_ONE_PE_PER_NODE",
+          "total_program_slots": 256,
+          "total_state_slots": 64
+        },
+        "processed_batches": 0,
+        "processed_events": 0,
+        "program_map_sha256": "677195a1b7fc63c71c6259007631a3ef6b61146767eaf6953ca3cabec489f637",
+        "resource_admission": {
+          "conservative_emission_bound": 5000,
+          "edge_count": 0,
+          "initial_event_count": 0,
+          "instruction_count": 256,
+          "max_channel_fanout": 0,
+          "max_node_emits": 1,
+          "max_node_instructions": 4,
+          "node_count": 64,
+          "profile_id": "spk-logical-lab-v0",
+          "runtime_max_batches": 5000,
+          "runtime_max_events": 25000
+        },
+        "route_count": 0,
+        "runtime_limits": {
+          "max_batches": 100000,
+          "max_events": 1000000
+        },
+        "terminal_count": 0
+      },
+      "nodes": 64,
+      "observed_route_count": 0,
+      "received_batches": 0,
+      "replay_identity_sha256": "96ab4ce05366948bd4f1e0a796b5e322efae3194d393389db1aa7557c7ab9075",
+      "scenario": "zero64",
+      "scenario_sha256": "d3a369285d62da73edc7aa8631c47ee409df9c5d2e3b165f826d11cc9ecb2b8d"
+    },
+    {
+      "initial_events": 1,
+      "native_execution": true,
+      "native_result": {
+        "edge_count": 0,
+        "initial_state_sha256": "b3f9c6c701593924781a498665ddd7a3b60854f692c8335c784983d7ee33ae8b",
+        "input_sha256": "82284562a12a43459e5d060fced6204bfdb5ae688277e0b02bcbdea08359f5dd",
+        "network_ir_sha256": "e6ae316f5d771848cafcfabe3498bfc88c1d076217f79f6bb05e335b4b58ee39",
+        "node_count": 64,
+        "outcome_sha256": "6eb957bcdee884583164e95314d60e7e4e88fa716c9c85e290c19ba8223c95aa",
+        "pe_admission": {
+          "cross_pe_edges": 0,
+          "node_count": 64,
+          "pe_count": 64,
+          "profile_id": "S1B_ABSTRACT_ONE_PE_PER_NODE",
+          "total_program_slots": 256,
+          "total_state_slots": 64
+        },
+        "processed_batches": 1,
+        "processed_events": 1,
+        "program_map_sha256": "677195a1b7fc63c71c6259007631a3ef6b61146767eaf6953ca3cabec489f637",
+        "resource_admission": {
+          "conservative_emission_bound": 5000,
+          "edge_count": 0,
+          "initial_event_count": 1,
+          "instruction_count": 256,
+          "max_channel_fanout": 0,
+          "max_node_emits": 1,
+          "max_node_instructions": 4,
+          "node_count": 64,
+          "profile_id": "spk-logical-lab-v0",
+          "runtime_max_batches": 5000,
+          "runtime_max_events": 25000
+        },
+        "route_count": 0,
+        "runtime_limits": {
+          "max_batches": 100000,
+          "max_events": 1000000
+        },
+        "terminal_count": 1
+      },
+      "nodes": 64,
+      "observed_route_count": 0,
+      "received_batches": 1,
+      "replay_identity_sha256": "a73f2554220958dae5fadd82df22dfbaec8cd17bc89efb43be315d286f147581",
+      "scenario": "isolated64",
+      "scenario_sha256": "fda71a42c12f164692b0fa7cefe375a3e2f1535353099af22ffb8de05fcf005b"
+    },
+    {
+      "initial_events": 4,
+      "native_execution": true,
+      "native_result": {
+        "edge_count": 7,
+        "initial_state_sha256": "af3ff649feb8f50f367315f9489c5e67eeca55cd485143dc7c0fcdca66a13f47",
+        "input_sha256": "063e35e86ed9234bc266cf2fd0af19997bee0c18fd5593dfe70c6a4d54ecd3d4",
+        "network_ir_sha256": "f9add1eb69d3de745c0e05acca1179d321ea7a4837aa32d776e2631538f06d85",
+        "node_count": 8,
+        "outcome_sha256": "72a3071ddf0dd15db5f45dd28d862e81885c514ff9ea9f22cbf6fa0f1cba3d4d",
+        "pe_admission": {
+          "cross_pe_edges": 7,
+          "node_count": 8,
+          "pe_count": 8,
+          "profile_id": "S1B_ABSTRACT_ONE_PE_PER_NODE",
+          "total_program_slots": 32,
+          "total_state_slots": 8
+        },
+        "processed_batches": 8,
+        "processed_events": 11,
+        "program_map_sha256": "287cb36149166d4bdd14b3b9b3612165e98a9b26e4372b821e37df684299662b",
+        "resource_admission": {
+          "conservative_emission_bound": 5000,
+          "edge_count": 7,
+          "initial_event_count": 4,
+          "instruction_count": 32,
+          "max_channel_fanout": 1,
+          "max_node_emits": 1,
+          "max_node_instructions": 4,
+          "node_count": 8,
+          "profile_id": "spk-logical-lab-v0",
+          "runtime_max_batches": 5000,
+          "runtime_max_events": 25000
+        },
+        "route_count": 7,
+        "runtime_limits": {
+          "max_batches": 100000,
+          "max_events": 1000000
+        },
+        "terminal_count": 1
+      },
+      "nodes": 8,
+      "observed_route_count": 7,
+      "received_batches": 8,
+      "replay_identity_sha256": "7ac7fb94364831dfe50457d47a76504146e41e914777612343f4a309f8f8b9d8",
+      "scenario": "m4_chain8",
+      "scenario_sha256": "87b8c4a1c0a3c711c66fffacb6f072e4f6eb7a180ed23e27b796305dbb194ee1"
+    },
+    {
+      "initial_events": 1,
+      "native_execution": true,
+      "native_result": {
+        "edge_count": 8,
+        "initial_state_sha256": "af3ff649feb8f50f367315f9489c5e67eeca55cd485143dc7c0fcdca66a13f47",
+        "input_sha256": "82284562a12a43459e5d060fced6204bfdb5ae688277e0b02bcbdea08359f5dd",
+        "network_ir_sha256": "5880fdf22cf12fb62ed476d232f14661e56cd3933ea002c4bcb9f0cd6cc90eb4",
+        "node_count": 8,
+        "outcome_sha256": "a00495dbd09469d8618f79d363b535e5eb5f9a4d07f3681c1d079da69a98f734",
+        "pe_admission": {
+          "cross_pe_edges": 8,
+          "node_count": 8,
+          "pe_count": 8,
+          "profile_id": "S1B_ABSTRACT_ONE_PE_PER_NODE",
+          "total_program_slots": 32,
+          "total_state_slots": 8
+        },
+        "processed_batches": 8,
+        "processed_events": 9,
+        "program_map_sha256": "287cb36149166d4bdd14b3b9b3612165e98a9b26e4372b821e37df684299662b",
+        "resource_admission": {
+          "conservative_emission_bound": 5000,
+          "edge_count": 8,
+          "initial_event_count": 1,
+          "instruction_count": 32,
+          "max_channel_fanout": 2,
+          "max_node_emits": 1,
+          "max_node_instructions": 4,
+          "node_count": 8,
+          "profile_id": "spk-logical-lab-v0",
+          "runtime_max_batches": 5000,
+          "runtime_max_events": 25000
+        },
+        "route_count": 8,
+        "runtime_limits": {
+          "max_batches": 100000,
+          "max_events": 1000000
+        },
+        "terminal_count": 1
+      },
+      "nodes": 8,
+      "observed_route_count": 8,
+      "received_batches": 8,
+      "replay_identity_sha256": "cda8d8ee9b581840d9d4c7829b43cee361192d3755a710ab0bd3eb83acecfa76",
+      "scenario": "parallel8",
+      "scenario_sha256": "f3b3ea4f177d953c1ed004194070785a99a93226c036c947664b7359e5946e49"
+    }
+  ],
+  "engineering_gate": "PASS_S1B_ONLY",
+  "frozen_component_sha256": {
+    "spk_compiler/compile_pipeline_v0.py": "81aebc3b08776b7a5e4d1cd42257298048533d08eaf898cc436c9dc974479366",
+    "spk_compiler/network_ir_v0.py": "0425a191cc3ecc3df76fe13dac99009cdceccdbc389789bf1967f567b5309460",
+    "spk_compiler/pe_admission_v0.py": "ccc76a35f908bd9fbdc8d3dfc23966b4e4109db838e05143b4383a23e437933c",
+    "spk_compiler/resource_admission_v0.py": "864673d321b3da0b36d49cb669322808e617fb85657034b5df544aad48281420",
+    "spk_core/ir_v0.py": "ca6b601e9d38d738edac29323b537fabc246ed800ec06da0e3d8dff39ad1d8e9",
+    "spk_core/isa.py": "7c64e0eb8f98080d97bfa3f0de1d2c5ea044c04dcfcfedc1c0f6491891ce9cb6",
+    "spk_core/runtime.py": "25b78b476c052c73b9e67687d8b9da24e043613bd8c732520a1a338799f403c8",
+    "spk_network/events_v0.py": "f632ad1f49e8c88a11aa42537f9085dc12232751395ca79586992b4c2cd71eee",
+    "spk_network/model_v0.py": "44462bddf14ac2c9d3e483474b25842abfa875f55c235610e91b15529db40615",
+    "spk_network/runtime_v0.py": "4e393a2fdb17e833f3b424f6a5938946d8f6f83ff1cf1ad0da61b3520bb820ce",
+    "spk_simulator/functional_trace_v0.py": "6e934af2e634bc8605416b70b46fd41cec97d352c21dfe8309c41fb16c022140"
+  },
+  "grant_authorized": false,
+  "independent_BV_trials": 0,
+  "limitations": [
+    "S1b scale 8..64 nodes is not the complete S1 release gate.",
+    "Static resource and PE admission are abstract, not hardware memory or power measurements.",
+    "Two equal reruns do not establish independent trial pairs.",
+    "Cyclic recurrent propagation tested only for deterministic resource-bound rejection, not convergence.",
+    "No timing/performance, GUI or S2 observability claims.",
+    "m=4 tests network input count only, not a Banknote encoder implementation.",
+    "Every success must be replayed on the original pinned Fedora Compiler checkout."
+  ],
+  "native_scale_cases": 13,
+  "parent_s1a_c1c_regression_count": 24,
+  "parent_s1a_sha256": "9902a116c78dc2826d5746142f24a73fd3f26a40443979f5ea5b1be29a7eea3b",
+  "rejected_resource_and_cycle_cases": 8,
+  "rejections": [
+    "node_budget",
+    "edge_budget",
+    "fanout_budget",
+    "initial_event_budget",
+    "program_slots",
+    "missing_placement",
+    "default_node_ceiling_129",
+    "cycle_runtime_limit_10"
+  ],
+  "research_only": true,
+  "s1_phase_complete": false,
+  "schema": "spk-sim-s1-nscale-resources/v0b",
+  "scientific_authority": "HOLD",
+  "seed_vector": {
+    "network_runtime": "DETERMINISTIC_NO_RANDOMNESS",
+    "stimuli": "FIXED_FIXTURES"
+  },
+  "source_only_frozen_compiler_network_runtime": true,
+  "status": "S1B_NATIVE_NSCALE_RESOURCE_AND_C1C_PARENT_PASS_S1_STILL_OPEN"
+}

@@ -1,0 +1,551 @@
+{
+  "BV_verdict_proven": false,
+  "P_state_mutated": false,
+  "architecture_promotion_allowed": false,
+  "classification_metrics_computed": false,
+  "distinct_readout_vectors": 15,
+  "engineering_gate": "PASS_S3H_SPARSE_INGRESS_ONLY",
+  "full_dataset_native_execution": false,
+  "grant_authorized": false,
+  "independent_BV_trials": 0,
+  "input_policy": "FEATURE_INDEX_TO_MATCHING_A_NODE_NO_BROADCAST",
+  "input_routing_assigned_outside_native_network": true,
+  "limitations": [
+    "The source-side router already knows the feature index; this is not a neuron learning to demultiplex.",
+    "Sparse targeted ingress changes the initial event placement and is not a same-workload energy/speed benchmark.",
+    "Counts are logical Network/Observer events and batches, not wall-clock speed, power or hardware energy.",
+    "Only 15 source-observed Banknote masks are exercised, not the full dataset or continuous feature values.",
+    "Fixed eight-node four-lane network; not one neuron with simultaneous four-bit output.",
+    "The pinned S3g baseline is reexecuted separately by the release gate, not in this frozen process.",
+    "No classification, training, latency measurement, BV, grant, P write or architecture promotion."
+  ],
+  "mask_runs": [
+    {
+      "activated_feature_indices": [],
+      "legacy_input_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "multiplicity": 0,
+      "source_first_row_zero_based": 810,
+      "source_mask_row_count": 45,
+      "sparse_native": {
+        "input_events": 0,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "62daea92f222016a802cdc815c60db97eb87311061859f4e3084faff5c9582af",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 0,
+        "processed_events": 0,
+        "readout_vector": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "routes": 0,
+        "terminal_node_ids": [],
+        "terminal_outputs": 0
+      }
+    },
+    {
+      "activated_feature_indices": [
+        1
+      ],
+      "legacy_input_sha256": "767d0137c138843208d8f04af31c1b7707aa5bd54028f9e7b799ef60d9f59219",
+      "multiplicity": 1,
+      "source_first_row_zero_based": 41,
+      "source_mask_row_count": 175,
+      "sparse_native": {
+        "input_events": 1,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "af65ea1fa6c19b26286c507d9894aa7442a8870797c61043445c98bbe493ee7d",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "3ef302731e342b4105d76ba15c1c5171d96366a1ff078e5cfbef18849bb1151f",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 2,
+        "processed_events": 2,
+        "readout_vector": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "routes": 1,
+        "terminal_node_ids": [
+          "B1"
+        ],
+        "terminal_outputs": 1
+      }
+    },
+    {
+      "activated_feature_indices": [
+        2
+      ],
+      "legacy_input_sha256": "767d0137c138843208d8f04af31c1b7707aa5bd54028f9e7b799ef60d9f59219",
+      "multiplicity": 1,
+      "source_first_row_zero_based": 4,
+      "source_mask_row_count": 77,
+      "sparse_native": {
+        "input_events": 1,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "d3ab77ad4e3bd7a87465c9e9fef992c96d3968c5a481a725d3cfdf63afcd1aff",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "8947010f2433366220dcdcf88098c1c987982dad392c8329406966569f5068f8",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 2,
+        "processed_events": 2,
+        "readout_vector": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "routes": 1,
+        "terminal_node_ids": [
+          "B2"
+        ],
+        "terminal_outputs": 1
+      }
+    },
+    {
+      "activated_feature_indices": [
+        3
+      ],
+      "legacy_input_sha256": "767d0137c138843208d8f04af31c1b7707aa5bd54028f9e7b799ef60d9f59219",
+      "multiplicity": 1,
+      "source_first_row_zero_based": 763,
+      "source_mask_row_count": 61,
+      "sparse_native": {
+        "input_events": 1,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "af476bc1ae578d5fb2fa6710ed1146d988bd4357d09f18190e5d6c086013f185",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "810b5e190fb4d448de156fdccb2ca0beebc3adc60859a9eb4fb50e647d52ce95",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 2,
+        "processed_events": 2,
+        "readout_vector": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "routes": 1,
+        "terminal_node_ids": [
+          "B3"
+        ],
+        "terminal_outputs": 1
+      }
+    },
+    {
+      "activated_feature_indices": [
+        0,
+        1
+      ],
+      "legacy_input_sha256": "e48a883d35c7977c446426ccabdaa6052cd878d601a32b2650e60d84237d072a",
+      "multiplicity": 2,
+      "source_first_row_zero_based": 1,
+      "source_mask_row_count": 247,
+      "sparse_native": {
+        "input_events": 2,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "9c7816c2d3dbcb7ddf24a1fc829740b1a667d45c897068485ec120652f06e09a",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "1c323b37b4db1590de1a54e59789a8630d9e99d7adff1ec544f015d69c784899",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 4,
+        "processed_events": 4,
+        "readout_vector": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "routes": 2,
+        "terminal_node_ids": [
+          "B0",
+          "B1"
+        ],
+        "terminal_outputs": 2
+      }
+    },
+    {
+      "activated_feature_indices": [
+        0,
+        2
+      ],
+      "legacy_input_sha256": "e48a883d35c7977c446426ccabdaa6052cd878d601a32b2650e60d84237d072a",
+      "multiplicity": 2,
+      "source_first_row_zero_based": 18,
+      "source_mask_row_count": 33,
+      "sparse_native": {
+        "input_events": 2,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "1dc067c8da86be9f9895e546d0ac434decbb106ef95ed7cf100db1f327f17bbf",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "efaf54cb44e57519ed631f7cd7f0417b33e4658c07b20b25c55218fa7397b3f2",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 4,
+        "processed_events": 4,
+        "readout_vector": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "routes": 2,
+        "terminal_node_ids": [
+          "B0",
+          "B2"
+        ],
+        "terminal_outputs": 2
+      }
+    },
+    {
+      "activated_feature_indices": [
+        0,
+        3
+      ],
+      "legacy_input_sha256": "e48a883d35c7977c446426ccabdaa6052cd878d601a32b2650e60d84237d072a",
+      "multiplicity": 2,
+      "source_first_row_zero_based": 128,
+      "source_mask_row_count": 49,
+      "sparse_native": {
+        "input_events": 2,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "de040dab6714961253a8d862599155bbfe082d2199d51ae54c76c58267f2bbe7",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "efeb6b951632f08818e2d0410af1ebc80fb04cac417590306d9abba977ecce60",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 4,
+        "processed_events": 4,
+        "readout_vector": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "routes": 2,
+        "terminal_node_ids": [
+          "B0",
+          "B3"
+        ],
+        "terminal_outputs": 2
+      }
+    },
+    {
+      "activated_feature_indices": [
+        1,
+        2
+      ],
+      "legacy_input_sha256": "e48a883d35c7977c446426ccabdaa6052cd878d601a32b2650e60d84237d072a",
+      "multiplicity": 2,
+      "source_first_row_zero_based": 13,
+      "source_mask_row_count": 78,
+      "sparse_native": {
+        "input_events": 2,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "d9dadecc4b8bc266be720b32cd39a3459cbdda03ce69e0bd6a14c47d3e2b0a79",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "9f105d154aac5ebd75042ea706d283b97f239767e1cf117dbaf066cabc31402d",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 4,
+        "processed_events": 4,
+        "readout_vector": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "routes": 2,
+        "terminal_node_ids": [
+          "B1",
+          "B2"
+        ],
+        "terminal_outputs": 2
+      }
+    },
+    {
+      "activated_feature_indices": [
+        1,
+        3
+      ],
+      "legacy_input_sha256": "e48a883d35c7977c446426ccabdaa6052cd878d601a32b2650e60d84237d072a",
+      "multiplicity": 2,
+      "source_first_row_zero_based": 752,
+      "source_mask_row_count": 2,
+      "sparse_native": {
+        "input_events": 2,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "156797ffb2a6a9ce300a0600c8e9890d528ee6dda7eb462480eca61ddd877756",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "f3e6af2b94ea58d935cf9d45433639ac1c308451fd502773772e0f22db5aca6d",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 4,
+        "processed_events": 4,
+        "readout_vector": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "routes": 2,
+        "terminal_node_ids": [
+          "B1",
+          "B3"
+        ],
+        "terminal_outputs": 2
+      }
+    },
+    {
+      "activated_feature_indices": [
+        2,
+        3
+      ],
+      "legacy_input_sha256": "e48a883d35c7977c446426ccabdaa6052cd878d601a32b2650e60d84237d072a",
+      "multiplicity": 2,
+      "source_first_row_zero_based": 30,
+      "source_mask_row_count": 240,
+      "sparse_native": {
+        "input_events": 2,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "c7ebd6999ef958dfd102d6b67523203896568fddf6728ee08308b47031553726",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "cc479aed54aa37a65e403d8aca44de26bdc285e1673bc38ac8d75b08928f360e",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 4,
+        "processed_events": 4,
+        "readout_vector": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "routes": 2,
+        "terminal_node_ids": [
+          "B2",
+          "B3"
+        ],
+        "terminal_outputs": 2
+      }
+    },
+    {
+      "activated_feature_indices": [
+        0,
+        1,
+        2
+      ],
+      "legacy_input_sha256": "3a9b1d6b6e0af46243fb42ae0beb331585ee9f31df630e5e94285b0eadab9941",
+      "multiplicity": 3,
+      "source_first_row_zero_based": 204,
+      "source_mask_row_count": 7,
+      "sparse_native": {
+        "input_events": 3,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "b8568e84039ff5097e830d3585f2427af74177c72359d6e62e45a7c3d58cf3fd",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "0f7881a6088bbd258a4a0dbdf643fcf978ddfad41eaa3ef6257c8e496138f122",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 6,
+        "processed_events": 6,
+        "readout_vector": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "routes": 3,
+        "terminal_node_ids": [
+          "B0",
+          "B1",
+          "B2"
+        ],
+        "terminal_outputs": 3
+      }
+    },
+    {
+      "activated_feature_indices": [
+        0,
+        1,
+        3
+      ],
+      "legacy_input_sha256": "3a9b1d6b6e0af46243fb42ae0beb331585ee9f31df630e5e94285b0eadab9941",
+      "multiplicity": 3,
+      "source_first_row_zero_based": 0,
+      "source_mask_row_count": 85,
+      "sparse_native": {
+        "input_events": 3,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "931d41cc4824e4df0703ed296018f31d1278933dd826bea8c16bfc163480ee5e",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "e97288ec2b4aa9cebec485e12895a6e475996a09456e657f191a0de9960cbbbc",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 6,
+        "processed_events": 6,
+        "readout_vector": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "routes": 3,
+        "terminal_node_ids": [
+          "B0",
+          "B1",
+          "B3"
+        ],
+        "terminal_outputs": 3
+      }
+    },
+    {
+      "activated_feature_indices": [
+        0,
+        2,
+        3
+      ],
+      "legacy_input_sha256": "3a9b1d6b6e0af46243fb42ae0beb331585ee9f31df630e5e94285b0eadab9941",
+      "multiplicity": 3,
+      "source_first_row_zero_based": 2,
+      "source_mask_row_count": 200,
+      "sparse_native": {
+        "input_events": 3,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "9c615d8a2e68ccf2c6a696fefb04c562e15f1f54b2910d5f5e128d51c6a4c2c4",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "8b1ab4f9cfb7205ac326a36b5039a5526764f80c2617463d4329e9bd617d6ac3",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 6,
+        "processed_events": 6,
+        "readout_vector": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "routes": 3,
+        "terminal_node_ids": [
+          "B0",
+          "B2",
+          "B3"
+        ],
+        "terminal_outputs": 3
+      }
+    },
+    {
+      "activated_feature_indices": [
+        1,
+        2,
+        3
+      ],
+      "legacy_input_sha256": "3a9b1d6b6e0af46243fb42ae0beb331585ee9f31df630e5e94285b0eadab9941",
+      "multiplicity": 3,
+      "source_first_row_zero_based": 133,
+      "source_mask_row_count": 8,
+      "sparse_native": {
+        "input_events": 3,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "0334da7a731c6791748b810dbae99c853e3396d065f1cb0f6bcf8f46b5337167",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "dd4ac1b8832f4d6c875e4bdf1dff7b4d9daa67223a2b56aa0a3772be04b2f988",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 6,
+        "processed_events": 6,
+        "readout_vector": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "routes": 3,
+        "terminal_node_ids": [
+          "B1",
+          "B2",
+          "B3"
+        ],
+        "terminal_outputs": 3
+      }
+    },
+    {
+      "activated_feature_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "legacy_input_sha256": "f2c9afa3d0efa223ddab99b5e107322f59e6890418b050480cb8b6c2bcd6d95a",
+      "multiplicity": 4,
+      "source_first_row_zero_based": 6,
+      "source_mask_row_count": 65,
+      "sparse_native": {
+        "input_events": 4,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "35b44dbf1072cbca8e3212d59c87d81821e4760a594c31c2da93cd0e7ffbda2f",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "ee78fab8fc6e3f53c15c6440cd16a723244e22d28415949681872f0b5257d5d6",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 8,
+        "processed_events": 8,
+        "readout_vector": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "routes": 4,
+        "terminal_node_ids": [
+          "B0",
+          "B1",
+          "B2",
+          "B3"
+        ],
+        "terminal_outputs": 4
+      }
+    }
+  ],
+  "observed_masks": 15,
+  "one_network_native_calls_per_process": 15,
+  "original_frozen_component_sha256": {
+    "spk_compiler/compile_pipeline_v0.py": "81aebc3b08776b7a5e4d1cd42257298048533d08eaf898cc436c9dc974479366",
+    "spk_compiler/network_ir_v0.py": "0425a191cc3ecc3df76fe13dac99009cdceccdbc389789bf1967f567b5309460",
+    "spk_compiler/pe_admission_v0.py": "ccc76a35f908bd9fbdc8d3dfc23966b4e4109db838e05143b4383a23e437933c",
+    "spk_compiler/resource_admission_v0.py": "864673d321b3da0b36d49cb669322808e617fb85657034b5df544aad48281420",
+    "spk_core/ir_v0.py": "ca6b601e9d38d738edac29323b537fabc246ed800ec06da0e3d8dff39ad1d8e9",
+    "spk_core/isa.py": "7c64e0eb8f98080d97bfa3f0de1d2c5ea044c04dcfcfedc1c0f6491891ce9cb6",
+    "spk_core/runtime.py": "25b78b476c052c73b9e67687d8b9da24e043613bd8c732520a1a338799f403c8",
+    "spk_network/events_v0.py": "f632ad1f49e8c88a11aa42537f9085dc12232751395ca79586992b4c2cd71eee",
+    "spk_network/model_v0.py": "44462bddf14ac2c9d3e483474b25842abfa875f55c235610e91b15529db40615",
+    "spk_network/runtime_v0.py": "4e393a2fdb17e833f3b424f6a5938946d8f6f83ff1cf1ad0da61b3520bb820ce",
+    "spk_simulator/functional_trace_v0.py": "6e934af2e634bc8605416b70b46fd41cec97d352c21dfe8309c41fb16c022140"
+  },
+  "performance_metrics_computed": false,
+  "research_only": true,
+  "s3_phase_complete": false,
+  "s3g_parent_sha256": "8a974d91e01520f53e80861e8b38dc948f01fc3859f5bd733d3cac6384ab092b",
+  "same_eight_nodes_and_four_edges": true,
+  "same_network_ir_digest_per_mask": true,
+  "schema": "spk-sim-s3h-feature-directed-native-ingress/v0a",
+  "scientific_authority": "HOLD",
+  "seed_vector": {
+    "input_policy": "DIRECT_FEATURE_TARGETED_NODE",
+    "randomness": "NONE",
+    "runtime": "ORIGINAL_FROZEN_NETWORK",
+    "source": "PINNED_S3G_15_OBSERVED_BANKNOTE_MASKS"
+  },
+  "source": "PINNED_S3G_ATTESTED_15_MASKS",
+  "status": "S3H_FROZEN_NATIVE_SPARSE_INGRESS_FOUR_LANE_PASS_S3_OPEN_AUTHORITY_HOLD",
+  "structural_totals_attested_s3g_broadcast": {
+    "input_events_broadcast": 124,
+    "processed_batches": 87,
+    "processed_events": 155,
+    "routes": 31,
+    "terminal_outputs": 31
+  },
+  "structural_totals_sparse": {
+    "input_events": 31,
+    "processed_batches": 62,
+    "processed_events": 62,
+    "routes": 31,
+    "terminal_outputs": 31
+  },
+  "training_performed": false,
+  "wall_clock_or_hardware_metrics": false
+}

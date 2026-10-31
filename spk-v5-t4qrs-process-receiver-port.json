@@ -1,0 +1,103 @@
+{
+  "BV_native_receiver_semantic_receipt": false,
+  "C_neuron_origin_authenticated": false,
+  "host_commissioned_trust_boundary": true,
+  "limits": [
+    "A separate Python research process executes original scheduler and reads C sign from returned source data; it is not neuron C authoring a packet",
+    "Commitments are bootstrapped by a host-controlled enrollment path; SHA-256 precommit binds bytes but does not prove native C identity",
+    "B relays research packets, not scheduler-native C-to-B-to-A semantic payloads",
+    "A-owned Python ledger is a process-local research port, not neuronal state or an SPK-native credit transaction",
+    "No independently authenticated C sensor, external goal/reward truth or native learning"
+  ],
+  "native_learning_proven": false,
+  "processes_separated": [
+    "C-output-adapter",
+    "B-relay",
+    "A-receiver"
+  ],
+  "producer": {
+    "adapter_is_not_native_C": true,
+    "classification_counts": {
+      "APPLICATION_FORWARD_GUARD_BLOCK": 24,
+      "NO_CAUSAL_EMISSION_TRIPLE": 24,
+      "NO_SOURCE_SIGN": 108,
+      "RESEARCH_GUARD_ELIGIBLE_NOT_NATIVE_CREDIT": 24
+    },
+    "guard_selected": 24,
+    "original_BV_calls": 180,
+    "semantic_signs": {
+      "-1": 12,
+      "1": 12
+    },
+    "source_pin_count": 12
+  },
+  "promotion_allowed": false,
+  "receiver": {
+    "cases": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      135,
+      140,
+      145,
+      150,
+      155,
+      160
+    ],
+    "committed_count": 24,
+    "ledger_sha256": "f5d762cf9607ceb1ca6ba286472d0597535949a67e651b8047503c2940fd30a2",
+    "rejected_adversarial_count": 13,
+    "rejection_reasons": {
+      "B_channel_swap": "PACKET_SEMANTIC_CHANNEL_MISMATCH",
+      "accepted_replay": "REPLAY_CASE_REJECTED",
+      "bypass_B": "RELAY_HOP_INVALID",
+      "causal_order": "PACKET_ORDER_INVALID",
+      "native_authority_forgery": "PACKET_SOURCE_KIND_INVALID",
+      "new_field_forgery": "PACKET_KEYS_INVALID",
+      "no_C_forced": "CASE_NOT_COMMISSIONED",
+      "no_forward_forced": "CASE_NOT_COMMISSIONED",
+      "no_reverse_forced": "CASE_NOT_COMMISSIONED",
+      "proof_forgery": "COMMITMENT_PROOF_MISMATCH",
+      "route": "PACKET_ROUTE_INVALID",
+      "sign_flip": "PACKET_SIGN_NOT_SOURCE_BOUND",
+      "source_swap": "PACKET_SOURCE_SHA_MISMATCH"
+    },
+    "signs": {
+      "negative": 12,
+      "positive": 12
+    }
+  },
+  "reference_sha256": "32fe39cdd994c02b653e88f99887d989539ba32a9910b805884c7ab439d9b974",
+  "schema": "spk-v5-t4qrs-actor-receiver-port/research-v0",
+  "source_pins": {
+    "research/spk_v5_t4def/t4def.py": "b5262709d40714811fe91bfa28389afb8f3a8edc847eb21e5564b677d3516945",
+    "research/spk_v5_t4ghi/reference/t4def-single-source.json": "02169ef1000ef9a0864e331ff9d6ae8ca05c4523c4c2d48cf589c86a14be13d3",
+    "research/spk_v5_t4ghi/t4ghi.py": "9f58dc3e0db338b1c42bb1117f6ccbc2e08fc72ac0311fef6618b25e6cdc967d",
+    "research/spk_v5_t4jkl_fix/t4jkl_fix.py": "e425b447ed73a6355d4faec6209526e58334c865e3d897537d0bd01bdcd03b73",
+    "search/spk_bv_v0e_live_evidence.py": "1e93f1a71c1099a3ce3c5e14d2cb9cfa47b8bfa9027832785d9f09af0c2bbc70",
+    "spk_architecture_v1/pe_execution_v1b.py": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+    "spk_v5_research/island_c_owned_credit_v5t3h.py": "9aced88cb5581732bd2c658bf23fb5149bf9d6aa7d40b5f499afe825b72c22a6",
+    "spk_v5_research/island_online_credit_v5t3i.py": "804a5c1ccbddff116b6c6bc58a15d3ec09465dddb669b4ab4075b21363284c56",
+    "spk_v5_research/island_source_admission_v5t3p.py": "811e0f8327c931736464d883a99cb53c75a14e58c6202d8a9c2ec1e0bd8d04e7",
+    "spk_v5_research/island_source_bridge_audit_v5t3q.py": "fca2fe28df6723eaba0a289e7b45c62499af989d52acdcde0026847bcb45d84d",
+    "spk_v5_research/island_source_bv_bridge_v5t3o.py": "cbad4b447d294ad58c307f2bdc79c2dbc4933a23a21228d84bb5456ce58d1fef"
+  },
+  "status": "PROCESS_SEPARATED_RECEIVER_RESEARCH_COMMIT_NOT_NATIVE_C",
+  "verified_result_parity_180": true
+}

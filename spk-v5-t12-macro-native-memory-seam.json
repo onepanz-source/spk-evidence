@@ -1,0 +1,384 @@
+{
+  "M1_original_source_pin_catalog": {
+    "apis": [
+      {
+        "api": {
+          "admit_memory_v1a": [
+            "case",
+            "fabric",
+            "service_plan",
+            "memory_plan"
+          ],
+          "project_execution_memory_v1a": [
+            "case",
+            "fabric",
+            "admission",
+            "execution"
+          ],
+          "uniform_memory_plan_v1a": [
+            "fabric"
+          ]
+        },
+        "path": "spk_architecture_v1/memory_projection_v1a.py",
+        "sha256": "3c9d74cb712bd9b40384634f830fbc0c65144573db6c3e3ebb095b1afed94b4f"
+      },
+      {
+        "api": {
+          "authorize_projection_v1b": [
+            "admission",
+            "projection"
+          ],
+          "authorize_requests_v1b": [
+            "admission",
+            "projection",
+            "authority",
+            "requests"
+          ],
+          "derive_requests_v1b": [
+            "admission",
+            "projection"
+          ],
+          "issue_authority_v1b": [
+            "admission"
+          ]
+        },
+        "path": "spk_architecture_v1/memory_access_v1b.py",
+        "sha256": "365a97fdca40cfa45098c5d253cc03b378667bd6d1578798be7df1e2c9d6be36"
+      },
+      {
+        "api": {
+          "memory_service_plan_v1c": [
+            "admission"
+          ],
+          "serve_authorized_v1c": [
+            "admission",
+            "projection",
+            "authority",
+            "requests",
+            "plan"
+          ],
+          "serve_projection_v1c": [
+            "admission",
+            "projection",
+            "plan"
+          ]
+        },
+        "path": "spk_architecture_v1/memory_service_v1c.py",
+        "sha256": "8f2edf529d480d32eb6434164662f15b4cafa9bedd0fe72df58c48e10ffe24c2"
+      },
+      {
+        "api": {
+          "issue_mode_memory_permit_v1b": [
+            "controller",
+            "admission",
+            "projection"
+          ],
+          "serve_mode_memory_v1b": [
+            "controller",
+            "permit",
+            "admission",
+            "projection"
+          ]
+        },
+        "path": "spk_architecture_v1/mode_memory_v1b.py",
+        "sha256": "b02bca9f45035330cf178cae01c4887edfd0f9e21c34f8766430554af6159281"
+      },
+      {
+        "api": {
+          "preflight_memory_v1d": [
+            "case",
+            "fabric",
+            "pe_service_plan",
+            "memory_plan"
+          ],
+          "service_verdict_v1d": [
+            "admission",
+            "projection",
+            "plan"
+          ]
+        },
+        "path": "spk_architecture_v1/memory_exhaustion_v1d.py",
+        "sha256": "efacd81645dbc5dcbefa500d2208d44919ab54b8b2987b13648c7a4d1ab7f53a"
+      }
+    ],
+    "catalog_sha256": "5ba6aa4fd4b89d18c2ad332958e8163d6b16bf5e4f26f4121b3e58a9520852f5",
+    "learning_P_grants": 0,
+    "missing": [],
+    "original_count": 5,
+    "source_loaded_by_execution": false
+  },
+  "M2_original_memory_execution_probe": {
+    "catalog": {
+      "apis": [
+        {
+          "api": {
+            "admit_memory_v1a": [
+              "case",
+              "fabric",
+              "service_plan",
+              "memory_plan"
+            ],
+            "project_execution_memory_v1a": [
+              "case",
+              "fabric",
+              "admission",
+              "execution"
+            ],
+            "uniform_memory_plan_v1a": [
+              "fabric"
+            ]
+          },
+          "path": "spk_architecture_v1/memory_projection_v1a.py",
+          "sha256": "3c9d74cb712bd9b40384634f830fbc0c65144573db6c3e3ebb095b1afed94b4f"
+        },
+        {
+          "api": {
+            "authorize_projection_v1b": [
+              "admission",
+              "projection"
+            ],
+            "authorize_requests_v1b": [
+              "admission",
+              "projection",
+              "authority",
+              "requests"
+            ],
+            "derive_requests_v1b": [
+              "admission",
+              "projection"
+            ],
+            "issue_authority_v1b": [
+              "admission"
+            ]
+          },
+          "path": "spk_architecture_v1/memory_access_v1b.py",
+          "sha256": "365a97fdca40cfa45098c5d253cc03b378667bd6d1578798be7df1e2c9d6be36"
+        },
+        {
+          "api": {
+            "memory_service_plan_v1c": [
+              "admission"
+            ],
+            "serve_authorized_v1c": [
+              "admission",
+              "projection",
+              "authority",
+              "requests",
+              "plan"
+            ],
+            "serve_projection_v1c": [
+              "admission",
+              "projection",
+              "plan"
+            ]
+          },
+          "path": "spk_architecture_v1/memory_service_v1c.py",
+          "sha256": "8f2edf529d480d32eb6434164662f15b4cafa9bedd0fe72df58c48e10ffe24c2"
+        },
+        {
+          "api": {
+            "issue_mode_memory_permit_v1b": [
+              "controller",
+              "admission",
+              "projection"
+            ],
+            "serve_mode_memory_v1b": [
+              "controller",
+              "permit",
+              "admission",
+              "projection"
+            ]
+          },
+          "path": "spk_architecture_v1/mode_memory_v1b.py",
+          "sha256": "b02bca9f45035330cf178cae01c4887edfd0f9e21c34f8766430554af6159281"
+        },
+        {
+          "api": {
+            "preflight_memory_v1d": [
+              "case",
+              "fabric",
+              "pe_service_plan",
+              "memory_plan"
+            ],
+            "service_verdict_v1d": [
+              "admission",
+              "projection",
+              "plan"
+            ]
+          },
+          "path": "spk_architecture_v1/memory_exhaustion_v1d.py",
+          "sha256": "efacd81645dbc5dcbefa500d2208d44919ab54b8b2987b13648c7a4d1ab7f53a"
+        }
+      ],
+      "catalog_sha256": "5ba6aa4fd4b89d18c2ad332958e8163d6b16bf5e4f26f4121b3e58a9520852f5",
+      "learning_P_grants": 0,
+      "missing": [],
+      "original_count": 5,
+      "source_loaded_by_execution": false
+    },
+    "counts": {
+      "completed_original_memory_chains": 4,
+      "native_A1d_executions": 4,
+      "native_execution_access_authorizations": 4,
+      "native_execution_memory_admissions": 4,
+      "native_execution_memory_projections": 4,
+      "native_execution_memory_services": 4,
+      "native_learning_P_grants": 0
+    },
+    "diagnostics": [],
+    "frozen_components_modified": false,
+    "native_A1d_producer_required": true,
+    "native_execution_memory_is_not_learning_P_authority": true,
+    "native_learning": false,
+    "original_api_attempts": 4,
+    "outcomes": [
+      {
+        "A1d_provenance": {
+          "processed_batches": 3,
+          "processed_events": 3,
+          "producer": "spk_architecture_v1.pe_fault_v1d.execute_failstop_v1d",
+          "source_sha256": "efe461bdaf1c6dfe902407fef6f4dfe6ec31cf1e771fd66c2a075eedf2eeb8c8",
+          "status": "CLOSED"
+        },
+        "admission_type": "dict",
+        "authority_result_type": "dict",
+        "choice": 11,
+        "goal": 11,
+        "memory_service_result_type": "dict",
+        "native_learning_P_grant": false,
+        "original_memory_access_executed": true,
+        "original_service_constructor": "spk_architecture_v1.pe_service_v1c.uniform_service_plan_v1c[3/4]",
+        "original_service_object_type": "spk_architecture_v1.pe_service_v1c.ServicePlanV1c",
+        "projection_schema": "spk-architecture-memory-projection/v1a",
+        "projection_status": "CLOSED"
+      },
+      {
+        "A1d_provenance": {
+          "processed_batches": 3,
+          "processed_events": 3,
+          "producer": "spk_architecture_v1.pe_fault_v1d.execute_failstop_v1d",
+          "source_sha256": "efe461bdaf1c6dfe902407fef6f4dfe6ec31cf1e771fd66c2a075eedf2eeb8c8",
+          "status": "CLOSED"
+        },
+        "admission_type": "dict",
+        "authority_result_type": "dict",
+        "choice": 11,
+        "goal": 12,
+        "memory_service_result_type": "dict",
+        "native_learning_P_grant": false,
+        "original_memory_access_executed": true,
+        "original_service_constructor": "spk_architecture_v1.pe_service_v1c.uniform_service_plan_v1c[3/4]",
+        "original_service_object_type": "spk_architecture_v1.pe_service_v1c.ServicePlanV1c",
+        "projection_schema": "spk-architecture-memory-projection/v1a",
+        "projection_status": "CLOSED"
+      },
+      {
+        "A1d_provenance": {
+          "processed_batches": 3,
+          "processed_events": 3,
+          "producer": "spk_architecture_v1.pe_fault_v1d.execute_failstop_v1d",
+          "source_sha256": "efe461bdaf1c6dfe902407fef6f4dfe6ec31cf1e771fd66c2a075eedf2eeb8c8",
+          "status": "CLOSED"
+        },
+        "admission_type": "dict",
+        "authority_result_type": "dict",
+        "choice": 12,
+        "goal": 11,
+        "memory_service_result_type": "dict",
+        "native_learning_P_grant": false,
+        "original_memory_access_executed": true,
+        "original_service_constructor": "spk_architecture_v1.pe_service_v1c.uniform_service_plan_v1c[3/4]",
+        "original_service_object_type": "spk_architecture_v1.pe_service_v1c.ServicePlanV1c",
+        "projection_schema": "spk-architecture-memory-projection/v1a",
+        "projection_status": "CLOSED"
+      },
+      {
+        "A1d_provenance": {
+          "processed_batches": 3,
+          "processed_events": 3,
+          "producer": "spk_architecture_v1.pe_fault_v1d.execute_failstop_v1d",
+          "source_sha256": "efe461bdaf1c6dfe902407fef6f4dfe6ec31cf1e771fd66c2a075eedf2eeb8c8",
+          "status": "CLOSED"
+        },
+        "admission_type": "dict",
+        "authority_result_type": "dict",
+        "choice": 12,
+        "goal": 12,
+        "memory_service_result_type": "dict",
+        "native_learning_P_grant": false,
+        "original_memory_access_executed": true,
+        "original_service_constructor": "spk_architecture_v1.pe_service_v1c.uniform_service_plan_v1c[3/4]",
+        "original_service_object_type": "spk_architecture_v1.pe_service_v1c.ServicePlanV1c",
+        "projection_schema": "spk-architecture-memory-projection/v1a",
+        "projection_status": "CLOSED"
+      }
+    ],
+    "promotion_allowed": false
+  },
+  "M3_original_execution_vs_learning_P_boundary": {
+    "new_v1_learning_P_grants": 8,
+    "original_execution_access_authorizations": 4,
+    "original_learning_P_grants": 0,
+    "original_learning_P_writes": 0,
+    "promotion_allowed": false,
+    "reason": "ORIGINAL_EXECUTION_ACCESS_HAS_NO_LEARNING_P_CUSTODY_TRANSFER"
+  },
+  "M4_versioned_new_runtime_P_parity": {
+    "context_affinity": {
+      "rows_sha256": "46317e020c129c63db1a1a937f0bde7a3ef6c0b20fd8dbea9642b2da664fb062",
+      "stale_vetoes": 0,
+      "successes": 88,
+      "waves": 48
+    },
+    "naive_three": {
+      "rows_sha256": "1ac5be032f677a88fb6addf30aaf219681889e3d56bc40c3f84df6dd520cf5ab",
+      "stale_vetoes": 4,
+      "successes": 84,
+      "waves": 32
+    },
+    "new_v1_memory_P_commits": 8,
+    "new_v1_memory_grants": 8,
+    "reopened_context_affinity": {
+      "rows_sha256": "46317e020c129c63db1a1a937f0bde7a3ef6c0b20fd8dbea9642b2da664fb062",
+      "stale_vetoes": 0,
+      "successes": 88,
+      "waves": 48
+    }
+  },
+  "M5_adversarial_recovery": {
+    "atomic_zero_budget_denial": true,
+    "direct_write_denied": true,
+    "global_and_context_resource_independent": true,
+    "grant_trigger_tamper_detected": true,
+    "host_native_claim_rejected": true,
+    "host_still_controls_runtime_and_can_reseal": true,
+    "pending_feedback_survives_restart": true,
+    "same_version_one_grant_only": true,
+    "typed_non_P_and_wrong_owner_rejected": true,
+    "verify_mode_denial": true,
+    "versioned_profile_expansion_then_single_commit": true
+  },
+  "M6_promotion_and_native_learning_boundary": {
+    "completed_original_memory_chains": 4,
+    "frozen_original_BV_semantic_deliveries": 0,
+    "frozen_original_P_learning_grants": 0,
+    "frozen_original_P_learning_writes": 0,
+    "frozen_original_learning": false,
+    "original_A1d_executions": 4,
+    "original_execution_access_authorizations": 4,
+    "original_execution_memory_admissions": 4,
+    "original_execution_memory_api_invoked": true,
+    "original_memory_executions_are_not_P_learning_grants": true,
+    "original_memory_service_calls": 4,
+    "privileged_host_can_forge": true,
+    "promote_to_frozen_original": false
+  },
+  "frozen_BV_sha256": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+  "frozen_PE_sha256": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+  "native_learning": false,
+  "original_code_unchanged": true,
+  "previous_T11_SHA256": "666bb70dfcf7db5a0ddcce78918b428b6936bdb926c65f799d3f55f3d94c0e15",
+  "promotion_allowed": false,
+  "schema": "spk-v5-t12-macro-original-memory-execution-seam/hotfix-v1d",
+  "status": "ORIGINAL_MEMORY_EXECUTION_API_ATTEMPTED_NOT_NATIVE_BV_LEARNING"
+}

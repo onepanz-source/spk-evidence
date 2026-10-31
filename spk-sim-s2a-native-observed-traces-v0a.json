@@ -1,0 +1,6017 @@
+{
+  "BV_verdict_proven": false,
+  "P_state_mutated": false,
+  "S1_parent_sha256": "fd474c55350a6a1b81209443c21655b45bdcdc5ea751a491d4629c348639e84f",
+  "architecture_promotion_allowed": false,
+  "cases": [
+    {
+      "original_native_observer": true,
+      "parent_outcome_sha256": "9ea4b1f8f638853b3ade6a9b1e18373d4bdfe48fdc30f893fd7f66e1e8b52adc",
+      "run_identity_sha256": "3397ac76c2081b38d86512abfe0631e120753c9e4dcd7a3d4db9319042e667fb",
+      "scenario": "chain8",
+      "trace": {
+        "P_state_mutated": false,
+        "budget_max_records": 2048,
+        "budget_used_records": 24,
+        "field_origin": {
+          "batches": "observed",
+          "cross_stream_total_order": "not_available",
+          "emissions": "observed",
+          "pending_queue_occupancy": "not_available",
+          "per_tick_node_states": "not_available",
+          "routes_by_emission": "observed",
+          "terminal_outputs": "observed",
+          "tick": "derived"
+        },
+        "final_states_only": [
+          {
+            "last_timestamp": 2,
+            "node_id": "N000",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 4,
+            "node_id": "N001",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 6,
+            "node_id": "N002",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 8,
+            "node_id": "N003",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 10,
+            "node_id": "N004",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 12,
+            "node_id": "N005",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 14,
+            "node_id": "N006",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 16,
+            "node_id": "N007",
+            "raw": 0
+          }
+        ],
+        "final_states_origin": "observed",
+        "schema": "spk-sim-s2a-observed-tick-trace/v0a",
+        "scientific_authority": "HOLD",
+        "source_order": "PER_STREAM_SOURCE_POSITION_ONLY_NOT_GLOBAL_CROSS_STREAM_ORDER",
+        "source_receipt_sha256": "9ea4b1f8f638853b3ade6a9b1e18373d4bdfe48fdc30f893fd7f66e1e8b52adc",
+        "source_stream_counts": {
+          "batches": 8,
+          "emissions": 8,
+          "routes": 7,
+          "terminal_outputs": 1
+        },
+        "tick_grouping_origin": "derived",
+        "timeline": [
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N000",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 2
+                },
+                "source_position": 0
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N000",
+                  "timestamp": 2
+                },
+                "source_position": 0
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 4,
+                  "emission_timestamp": 2,
+                  "source_channel": 7,
+                  "source_node": "N000",
+                  "target_channel": 0,
+                  "target_node": "N001"
+                },
+                "source_position": 0
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 2
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N001",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 4
+                },
+                "source_position": 1
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N001",
+                  "timestamp": 4
+                },
+                "source_position": 1
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 6,
+                  "emission_timestamp": 4,
+                  "source_channel": 7,
+                  "source_node": "N001",
+                  "target_channel": 0,
+                  "target_node": "N002"
+                },
+                "source_position": 1
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 4
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N002",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 6
+                },
+                "source_position": 2
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N002",
+                  "timestamp": 6
+                },
+                "source_position": 2
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 8,
+                  "emission_timestamp": 6,
+                  "source_channel": 7,
+                  "source_node": "N002",
+                  "target_channel": 0,
+                  "target_node": "N003"
+                },
+                "source_position": 2
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 6
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N003",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 8
+                },
+                "source_position": 3
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N003",
+                  "timestamp": 8
+                },
+                "source_position": 3
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 10,
+                  "emission_timestamp": 8,
+                  "source_channel": 7,
+                  "source_node": "N003",
+                  "target_channel": 0,
+                  "target_node": "N004"
+                },
+                "source_position": 3
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 8
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N004",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 10
+                },
+                "source_position": 4
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N004",
+                  "timestamp": 10
+                },
+                "source_position": 4
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 12,
+                  "emission_timestamp": 10,
+                  "source_channel": 7,
+                  "source_node": "N004",
+                  "target_channel": 0,
+                  "target_node": "N005"
+                },
+                "source_position": 4
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 10
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N005",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 12
+                },
+                "source_position": 5
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N005",
+                  "timestamp": 12
+                },
+                "source_position": 5
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 14,
+                  "emission_timestamp": 12,
+                  "source_channel": 7,
+                  "source_node": "N005",
+                  "target_channel": 0,
+                  "target_node": "N006"
+                },
+                "source_position": 5
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 12
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N006",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 14
+                },
+                "source_position": 6
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N006",
+                  "timestamp": 14
+                },
+                "source_position": 6
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 16,
+                  "emission_timestamp": 14,
+                  "source_channel": 7,
+                  "source_node": "N006",
+                  "target_channel": 0,
+                  "target_node": "N007"
+                },
+                "source_position": 6
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 14
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N007",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 16
+                },
+                "source_position": 7
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N007",
+                  "timestamp": 16
+                },
+                "source_position": 7
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [],
+            "terminal_outputs": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N007",
+                  "timestamp": 16
+                },
+                "source_position": 0
+              }
+            ],
+            "tick": 16
+          }
+        ],
+        "trace_complete_within_declared_observer_fields": true,
+        "truncated": false
+      },
+      "trace_sha256": "ba675758dc68cd14117f62e5b738967aab219630fe14b0e26e8686667c128152"
+    },
+    {
+      "original_native_observer": true,
+      "parent_outcome_sha256": "2124a7154ade3e3af291c2222ceecf1378ff1e22e471146af23bdc527d252904",
+      "run_identity_sha256": "93be6900ea0287d7187da0f6ead0eff05638eebdd5de1dd314cfe1252cbb44fb",
+      "scenario": "fanin8",
+      "trace": {
+        "P_state_mutated": false,
+        "budget_max_records": 2048,
+        "budget_used_records": 24,
+        "field_origin": {
+          "batches": "observed",
+          "cross_stream_total_order": "not_available",
+          "emissions": "observed",
+          "pending_queue_occupancy": "not_available",
+          "per_tick_node_states": "not_available",
+          "routes_by_emission": "observed",
+          "terminal_outputs": "observed",
+          "tick": "derived"
+        },
+        "final_states_only": [
+          {
+            "last_timestamp": 2,
+            "node_id": "N000",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 2,
+            "node_id": "N001",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 2,
+            "node_id": "N002",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 2,
+            "node_id": "N003",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 2,
+            "node_id": "N004",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 2,
+            "node_id": "N005",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 2,
+            "node_id": "N006",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 4,
+            "node_id": "N007",
+            "raw": 0
+          }
+        ],
+        "final_states_origin": "observed",
+        "schema": "spk-sim-s2a-observed-tick-trace/v0a",
+        "scientific_authority": "HOLD",
+        "source_order": "PER_STREAM_SOURCE_POSITION_ONLY_NOT_GLOBAL_CROSS_STREAM_ORDER",
+        "source_receipt_sha256": "2124a7154ade3e3af291c2222ceecf1378ff1e22e471146af23bdc527d252904",
+        "source_stream_counts": {
+          "batches": 8,
+          "emissions": 8,
+          "routes": 7,
+          "terminal_outputs": 1
+        },
+        "tick_grouping_origin": "derived",
+        "timeline": [
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N000",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 2
+                },
+                "source_position": 0
+              },
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N001",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 2
+                },
+                "source_position": 1
+              },
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N002",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 2
+                },
+                "source_position": 2
+              },
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N003",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 2
+                },
+                "source_position": 3
+              },
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N004",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 2
+                },
+                "source_position": 4
+              },
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N005",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 2
+                },
+                "source_position": 5
+              },
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N006",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 2
+                },
+                "source_position": 6
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N000",
+                  "timestamp": 2
+                },
+                "source_position": 0
+              },
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N001",
+                  "timestamp": 2
+                },
+                "source_position": 1
+              },
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N002",
+                  "timestamp": 2
+                },
+                "source_position": 2
+              },
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N003",
+                  "timestamp": 2
+                },
+                "source_position": 3
+              },
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N004",
+                  "timestamp": 2
+                },
+                "source_position": 4
+              },
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N005",
+                  "timestamp": 2
+                },
+                "source_position": 5
+              },
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N006",
+                  "timestamp": 2
+                },
+                "source_position": 6
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 4,
+                  "emission_timestamp": 2,
+                  "source_channel": 7,
+                  "source_node": "N000",
+                  "target_channel": 0,
+                  "target_node": "N007"
+                },
+                "source_position": 0
+              },
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 4,
+                  "emission_timestamp": 2,
+                  "source_channel": 7,
+                  "source_node": "N001",
+                  "target_channel": 0,
+                  "target_node": "N007"
+                },
+                "source_position": 1
+              },
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 4,
+                  "emission_timestamp": 2,
+                  "source_channel": 7,
+                  "source_node": "N002",
+                  "target_channel": 0,
+                  "target_node": "N007"
+                },
+                "source_position": 2
+              },
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 4,
+                  "emission_timestamp": 2,
+                  "source_channel": 7,
+                  "source_node": "N003",
+                  "target_channel": 0,
+                  "target_node": "N007"
+                },
+                "source_position": 3
+              },
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 4,
+                  "emission_timestamp": 2,
+                  "source_channel": 7,
+                  "source_node": "N004",
+                  "target_channel": 0,
+                  "target_node": "N007"
+                },
+                "source_position": 4
+              },
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 4,
+                  "emission_timestamp": 2,
+                  "source_channel": 7,
+                  "source_node": "N005",
+                  "target_channel": 0,
+                  "target_node": "N007"
+                },
+                "source_position": 5
+              },
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 4,
+                  "emission_timestamp": 2,
+                  "source_channel": 7,
+                  "source_node": "N006",
+                  "target_channel": 0,
+                  "target_node": "N007"
+                },
+                "source_position": 6
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 2
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N007",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 4
+                },
+                "source_position": 7
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N007",
+                  "timestamp": 4
+                },
+                "source_position": 7
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [],
+            "terminal_outputs": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N007",
+                  "timestamp": 4
+                },
+                "source_position": 0
+              }
+            ],
+            "tick": 4
+          }
+        ],
+        "trace_complete_within_declared_observer_fields": true,
+        "truncated": false
+      },
+      "trace_sha256": "334ba28a6f097ffae6fadd8bd6a992a3568baae5ef47519d60dc8d0ce4e3fd7f"
+    },
+    {
+      "original_native_observer": true,
+      "parent_outcome_sha256": "a00495dbd09469d8618f79d363b535e5eb5f9a4d07f3681c1d079da69a98f734",
+      "run_identity_sha256": "c25fe4de858b5c886aad0b2792c83af82de6ac58237b9b7392ef4a87dc2af324",
+      "scenario": "parallel8",
+      "trace": {
+        "P_state_mutated": false,
+        "budget_max_records": 2048,
+        "budget_used_records": 25,
+        "field_origin": {
+          "batches": "observed",
+          "cross_stream_total_order": "not_available",
+          "emissions": "observed",
+          "pending_queue_occupancy": "not_available",
+          "per_tick_node_states": "not_available",
+          "routes_by_emission": "observed",
+          "terminal_outputs": "observed",
+          "tick": "derived"
+        },
+        "final_states_only": [
+          {
+            "last_timestamp": 2,
+            "node_id": "N000",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 4,
+            "node_id": "N001",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 6,
+            "node_id": "N002",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 8,
+            "node_id": "N003",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 10,
+            "node_id": "N004",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 12,
+            "node_id": "N005",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 14,
+            "node_id": "N006",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 16,
+            "node_id": "N007",
+            "raw": 0
+          }
+        ],
+        "final_states_origin": "observed",
+        "schema": "spk-sim-s2a-observed-tick-trace/v0a",
+        "scientific_authority": "HOLD",
+        "source_order": "PER_STREAM_SOURCE_POSITION_ONLY_NOT_GLOBAL_CROSS_STREAM_ORDER",
+        "source_receipt_sha256": "a00495dbd09469d8618f79d363b535e5eb5f9a4d07f3681c1d079da69a98f734",
+        "source_stream_counts": {
+          "batches": 8,
+          "emissions": 8,
+          "routes": 8,
+          "terminal_outputs": 1
+        },
+        "tick_grouping_origin": "derived",
+        "timeline": [
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N000",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 2
+                },
+                "source_position": 0
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N000",
+                  "timestamp": 2
+                },
+                "source_position": 0
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 4,
+                  "emission_timestamp": 2,
+                  "source_channel": 7,
+                  "source_node": "N000",
+                  "target_channel": 0,
+                  "target_node": "N001"
+                },
+                "source_position": 0
+              },
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 4,
+                  "emission_timestamp": 2,
+                  "source_channel": 7,
+                  "source_node": "N000",
+                  "target_channel": 0,
+                  "target_node": "N001"
+                },
+                "source_position": 1
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 2
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0,
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N001",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 4
+                },
+                "source_position": 1
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N001",
+                  "timestamp": 4
+                },
+                "source_position": 1
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 6,
+                  "emission_timestamp": 4,
+                  "source_channel": 7,
+                  "source_node": "N001",
+                  "target_channel": 0,
+                  "target_node": "N002"
+                },
+                "source_position": 2
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 4
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N002",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 6
+                },
+                "source_position": 2
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N002",
+                  "timestamp": 6
+                },
+                "source_position": 2
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 8,
+                  "emission_timestamp": 6,
+                  "source_channel": 7,
+                  "source_node": "N002",
+                  "target_channel": 0,
+                  "target_node": "N003"
+                },
+                "source_position": 3
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 6
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N003",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 8
+                },
+                "source_position": 3
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N003",
+                  "timestamp": 8
+                },
+                "source_position": 3
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 10,
+                  "emission_timestamp": 8,
+                  "source_channel": 7,
+                  "source_node": "N003",
+                  "target_channel": 0,
+                  "target_node": "N004"
+                },
+                "source_position": 4
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 8
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N004",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 10
+                },
+                "source_position": 4
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N004",
+                  "timestamp": 10
+                },
+                "source_position": 4
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 12,
+                  "emission_timestamp": 10,
+                  "source_channel": 7,
+                  "source_node": "N004",
+                  "target_channel": 0,
+                  "target_node": "N005"
+                },
+                "source_position": 5
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 10
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N005",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 12
+                },
+                "source_position": 5
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N005",
+                  "timestamp": 12
+                },
+                "source_position": 5
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 14,
+                  "emission_timestamp": 12,
+                  "source_channel": 7,
+                  "source_node": "N005",
+                  "target_channel": 0,
+                  "target_node": "N006"
+                },
+                "source_position": 6
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 12
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N006",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 14
+                },
+                "source_position": 6
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N006",
+                  "timestamp": 14
+                },
+                "source_position": 6
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 16,
+                  "emission_timestamp": 14,
+                  "source_channel": 7,
+                  "source_node": "N006",
+                  "target_channel": 0,
+                  "target_node": "N007"
+                },
+                "source_position": 7
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 14
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N007",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 16
+                },
+                "source_position": 7
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N007",
+                  "timestamp": 16
+                },
+                "source_position": 7
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [],
+            "terminal_outputs": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N007",
+                  "timestamp": 16
+                },
+                "source_position": 0
+              }
+            ],
+            "tick": 16
+          }
+        ],
+        "trace_complete_within_declared_observer_fields": true,
+        "truncated": false
+      },
+      "trace_sha256": "1442ec79df740f7b9b0a18231fdcdbc32e9eebd1abd8da43065eda2cbd7d8d55"
+    },
+    {
+      "original_native_observer": true,
+      "parent_outcome_sha256": "72a3071ddf0dd15db5f45dd28d862e81885c514ff9ea9f22cbf6fa0f1cba3d4d",
+      "run_identity_sha256": "a4ac4e8573babc5c9f3e8767f762904b3ffc1cd0f10323b053a5eac36f81e8d5",
+      "scenario": "m4_chain8",
+      "trace": {
+        "P_state_mutated": false,
+        "budget_max_records": 2048,
+        "budget_used_records": 24,
+        "field_origin": {
+          "batches": "observed",
+          "cross_stream_total_order": "not_available",
+          "emissions": "observed",
+          "pending_queue_occupancy": "not_available",
+          "per_tick_node_states": "not_available",
+          "routes_by_emission": "observed",
+          "terminal_outputs": "observed",
+          "tick": "derived"
+        },
+        "final_states_only": [
+          {
+            "last_timestamp": 2,
+            "node_id": "N000",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 4,
+            "node_id": "N001",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 6,
+            "node_id": "N002",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 8,
+            "node_id": "N003",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 10,
+            "node_id": "N004",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 12,
+            "node_id": "N005",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 14,
+            "node_id": "N006",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 16,
+            "node_id": "N007",
+            "raw": 0
+          }
+        ],
+        "final_states_origin": "observed",
+        "schema": "spk-sim-s2a-observed-tick-trace/v0a",
+        "scientific_authority": "HOLD",
+        "source_order": "PER_STREAM_SOURCE_POSITION_ONLY_NOT_GLOBAL_CROSS_STREAM_ORDER",
+        "source_receipt_sha256": "72a3071ddf0dd15db5f45dd28d862e81885c514ff9ea9f22cbf6fa0f1cba3d4d",
+        "source_stream_counts": {
+          "batches": 8,
+          "emissions": 8,
+          "routes": 7,
+          "terminal_outputs": 1
+        },
+        "tick_grouping_origin": "derived",
+        "timeline": [
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N000",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 2
+                },
+                "source_position": 0
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N000",
+                  "timestamp": 2
+                },
+                "source_position": 0
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 4,
+                  "emission_timestamp": 2,
+                  "source_channel": 7,
+                  "source_node": "N000",
+                  "target_channel": 0,
+                  "target_node": "N001"
+                },
+                "source_position": 0
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 2
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N001",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 4
+                },
+                "source_position": 1
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N001",
+                  "timestamp": 4
+                },
+                "source_position": 1
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 6,
+                  "emission_timestamp": 4,
+                  "source_channel": 7,
+                  "source_node": "N001",
+                  "target_channel": 0,
+                  "target_node": "N002"
+                },
+                "source_position": 1
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 4
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N002",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 6
+                },
+                "source_position": 2
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N002",
+                  "timestamp": 6
+                },
+                "source_position": 2
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 8,
+                  "emission_timestamp": 6,
+                  "source_channel": 7,
+                  "source_node": "N002",
+                  "target_channel": 0,
+                  "target_node": "N003"
+                },
+                "source_position": 2
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 6
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N003",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 8
+                },
+                "source_position": 3
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N003",
+                  "timestamp": 8
+                },
+                "source_position": 3
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 10,
+                  "emission_timestamp": 8,
+                  "source_channel": 7,
+                  "source_node": "N003",
+                  "target_channel": 0,
+                  "target_node": "N004"
+                },
+                "source_position": 3
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 8
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N004",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 10
+                },
+                "source_position": 4
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N004",
+                  "timestamp": 10
+                },
+                "source_position": 4
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 12,
+                  "emission_timestamp": 10,
+                  "source_channel": 7,
+                  "source_node": "N004",
+                  "target_channel": 0,
+                  "target_node": "N005"
+                },
+                "source_position": 4
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 10
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N005",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 12
+                },
+                "source_position": 5
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N005",
+                  "timestamp": 12
+                },
+                "source_position": 5
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 14,
+                  "emission_timestamp": 12,
+                  "source_channel": 7,
+                  "source_node": "N005",
+                  "target_channel": 0,
+                  "target_node": "N006"
+                },
+                "source_position": 5
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 12
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N006",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 14
+                },
+                "source_position": 6
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N006",
+                  "timestamp": 14
+                },
+                "source_position": 6
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 16,
+                  "emission_timestamp": 14,
+                  "source_channel": 7,
+                  "source_node": "N006",
+                  "target_channel": 0,
+                  "target_node": "N007"
+                },
+                "source_position": 6
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 14
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N007",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 16
+                },
+                "source_position": 7
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N007",
+                  "timestamp": 16
+                },
+                "source_position": 7
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [],
+            "terminal_outputs": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N007",
+                  "timestamp": 16
+                },
+                "source_position": 0
+              }
+            ],
+            "tick": 16
+          }
+        ],
+        "trace_complete_within_declared_observer_fields": true,
+        "truncated": false
+      },
+      "trace_sha256": "bca76053e474ec9f1682ba6e19242db3f59e6a8d3b40621028d4beaea5be045a"
+    },
+    {
+      "original_native_observer": true,
+      "parent_outcome_sha256": "73f92f63d1c2e893d996c0fa6c47a2212a55119ba02c2a27d29df6698274f92e",
+      "run_identity_sha256": "c8fb65693978f73271b8599116b068905acb140669e690dfc9e258f60ca3f27a",
+      "scenario": "zero64",
+      "trace": {
+        "P_state_mutated": false,
+        "budget_max_records": 2048,
+        "budget_used_records": 0,
+        "field_origin": {
+          "batches": "observed",
+          "cross_stream_total_order": "not_available",
+          "emissions": "observed",
+          "pending_queue_occupancy": "not_available",
+          "per_tick_node_states": "not_available",
+          "routes_by_emission": "observed",
+          "terminal_outputs": "observed",
+          "tick": "derived"
+        },
+        "final_states_only": [
+          {
+            "last_timestamp": 0,
+            "node_id": "N000",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N001",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N002",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N003",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N004",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N005",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N006",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N007",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N008",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N009",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N010",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N011",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N012",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N013",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N014",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N015",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N016",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N017",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N018",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N019",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N020",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N021",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N022",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N023",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N024",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N025",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N026",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N027",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N028",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N029",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N030",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N031",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N032",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N033",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N034",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N035",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N036",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N037",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N038",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N039",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N040",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N041",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N042",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N043",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N044",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N045",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N046",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N047",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N048",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N049",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N050",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N051",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N052",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N053",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N054",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N055",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N056",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N057",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N058",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N059",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N060",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N061",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N062",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N063",
+            "raw": 0
+          }
+        ],
+        "final_states_origin": "observed",
+        "schema": "spk-sim-s2a-observed-tick-trace/v0a",
+        "scientific_authority": "HOLD",
+        "source_order": "PER_STREAM_SOURCE_POSITION_ONLY_NOT_GLOBAL_CROSS_STREAM_ORDER",
+        "source_receipt_sha256": "73f92f63d1c2e893d996c0fa6c47a2212a55119ba02c2a27d29df6698274f92e",
+        "source_stream_counts": {
+          "batches": 0,
+          "emissions": 0,
+          "routes": 0,
+          "terminal_outputs": 0
+        },
+        "tick_grouping_origin": "derived",
+        "timeline": [],
+        "trace_complete_within_declared_observer_fields": true,
+        "truncated": false
+      },
+      "trace_sha256": "3f299ab60d3115074d48c6de47837dff29f0d98d7e4a3ec5616b347f1de5ce8f"
+    },
+    {
+      "original_native_observer": true,
+      "parent_outcome_sha256": "6eb957bcdee884583164e95314d60e7e4e88fa716c9c85e290c19ba8223c95aa",
+      "run_identity_sha256": "300aa52fd40fb06bc684e9a6609c2432a46a785f00dde4ec74c12ab42e99f193",
+      "scenario": "isolated64",
+      "trace": {
+        "P_state_mutated": false,
+        "budget_max_records": 2048,
+        "budget_used_records": 3,
+        "field_origin": {
+          "batches": "observed",
+          "cross_stream_total_order": "not_available",
+          "emissions": "observed",
+          "pending_queue_occupancy": "not_available",
+          "per_tick_node_states": "not_available",
+          "routes_by_emission": "observed",
+          "terminal_outputs": "observed",
+          "tick": "derived"
+        },
+        "final_states_only": [
+          {
+            "last_timestamp": 2,
+            "node_id": "N000",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N001",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N002",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N003",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N004",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N005",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N006",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N007",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N008",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N009",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N010",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N011",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N012",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N013",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N014",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N015",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N016",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N017",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N018",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N019",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N020",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N021",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N022",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N023",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N024",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N025",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N026",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N027",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N028",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N029",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N030",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N031",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N032",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N033",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N034",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N035",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N036",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N037",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N038",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N039",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N040",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N041",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N042",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N043",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N044",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N045",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N046",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N047",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N048",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N049",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N050",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N051",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N052",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N053",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N054",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N055",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N056",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N057",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N058",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N059",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N060",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N061",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N062",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 0,
+            "node_id": "N063",
+            "raw": 0
+          }
+        ],
+        "final_states_origin": "observed",
+        "schema": "spk-sim-s2a-observed-tick-trace/v0a",
+        "scientific_authority": "HOLD",
+        "source_order": "PER_STREAM_SOURCE_POSITION_ONLY_NOT_GLOBAL_CROSS_STREAM_ORDER",
+        "source_receipt_sha256": "6eb957bcdee884583164e95314d60e7e4e88fa716c9c85e290c19ba8223c95aa",
+        "source_stream_counts": {
+          "batches": 1,
+          "emissions": 1,
+          "routes": 0,
+          "terminal_outputs": 1
+        },
+        "tick_grouping_origin": "derived",
+        "timeline": [
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N000",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 2
+                },
+                "source_position": 0
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N000",
+                  "timestamp": 2
+                },
+                "source_position": 0
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [],
+            "terminal_outputs": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N000",
+                  "timestamp": 2
+                },
+                "source_position": 0
+              }
+            ],
+            "tick": 2
+          }
+        ],
+        "trace_complete_within_declared_observer_fields": true,
+        "truncated": false
+      },
+      "trace_sha256": "f884187e2b10798dd52501e0e8375d9f71acd2162fcf91ea1f7c0cb79cd1f30c"
+    },
+    {
+      "original_native_observer": true,
+      "parent_outcome_sha256": "a1516337e256caf961aa6a6848fa93ee38d072a36ce9c04b764543819edbd01e",
+      "run_identity_sha256": "fc5162b80bb0e814f2a730ff13ac47873b4e96c116843f79a356f89de98dcd07",
+      "scenario": "chain64",
+      "trace": {
+        "P_state_mutated": false,
+        "budget_max_records": 2048,
+        "budget_used_records": 192,
+        "field_origin": {
+          "batches": "observed",
+          "cross_stream_total_order": "not_available",
+          "emissions": "observed",
+          "pending_queue_occupancy": "not_available",
+          "per_tick_node_states": "not_available",
+          "routes_by_emission": "observed",
+          "terminal_outputs": "observed",
+          "tick": "derived"
+        },
+        "final_states_only": [
+          {
+            "last_timestamp": 2,
+            "node_id": "N000",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 4,
+            "node_id": "N001",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 6,
+            "node_id": "N002",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 8,
+            "node_id": "N003",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 10,
+            "node_id": "N004",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 12,
+            "node_id": "N005",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 14,
+            "node_id": "N006",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 16,
+            "node_id": "N007",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 18,
+            "node_id": "N008",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 20,
+            "node_id": "N009",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 22,
+            "node_id": "N010",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 24,
+            "node_id": "N011",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 26,
+            "node_id": "N012",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 28,
+            "node_id": "N013",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 30,
+            "node_id": "N014",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 32,
+            "node_id": "N015",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 34,
+            "node_id": "N016",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 36,
+            "node_id": "N017",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 38,
+            "node_id": "N018",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 40,
+            "node_id": "N019",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 42,
+            "node_id": "N020",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 44,
+            "node_id": "N021",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 46,
+            "node_id": "N022",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 48,
+            "node_id": "N023",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 50,
+            "node_id": "N024",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 52,
+            "node_id": "N025",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 54,
+            "node_id": "N026",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 56,
+            "node_id": "N027",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 58,
+            "node_id": "N028",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 60,
+            "node_id": "N029",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 62,
+            "node_id": "N030",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 64,
+            "node_id": "N031",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 66,
+            "node_id": "N032",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 68,
+            "node_id": "N033",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 70,
+            "node_id": "N034",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 72,
+            "node_id": "N035",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 74,
+            "node_id": "N036",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 76,
+            "node_id": "N037",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 78,
+            "node_id": "N038",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 80,
+            "node_id": "N039",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 82,
+            "node_id": "N040",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 84,
+            "node_id": "N041",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 86,
+            "node_id": "N042",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 88,
+            "node_id": "N043",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 90,
+            "node_id": "N044",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 92,
+            "node_id": "N045",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 94,
+            "node_id": "N046",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 96,
+            "node_id": "N047",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 98,
+            "node_id": "N048",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 100,
+            "node_id": "N049",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 102,
+            "node_id": "N050",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 104,
+            "node_id": "N051",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 106,
+            "node_id": "N052",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 108,
+            "node_id": "N053",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 110,
+            "node_id": "N054",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 112,
+            "node_id": "N055",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 114,
+            "node_id": "N056",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 116,
+            "node_id": "N057",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 118,
+            "node_id": "N058",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 120,
+            "node_id": "N059",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 122,
+            "node_id": "N060",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 124,
+            "node_id": "N061",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 126,
+            "node_id": "N062",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 128,
+            "node_id": "N063",
+            "raw": 0
+          }
+        ],
+        "final_states_origin": "observed",
+        "schema": "spk-sim-s2a-observed-tick-trace/v0a",
+        "scientific_authority": "HOLD",
+        "source_order": "PER_STREAM_SOURCE_POSITION_ONLY_NOT_GLOBAL_CROSS_STREAM_ORDER",
+        "source_receipt_sha256": "a1516337e256caf961aa6a6848fa93ee38d072a36ce9c04b764543819edbd01e",
+        "source_stream_counts": {
+          "batches": 64,
+          "emissions": 64,
+          "routes": 63,
+          "terminal_outputs": 1
+        },
+        "tick_grouping_origin": "derived",
+        "timeline": [
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N000",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 2
+                },
+                "source_position": 0
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N000",
+                  "timestamp": 2
+                },
+                "source_position": 0
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 4,
+                  "emission_timestamp": 2,
+                  "source_channel": 7,
+                  "source_node": "N000",
+                  "target_channel": 0,
+                  "target_node": "N001"
+                },
+                "source_position": 0
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 2
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N001",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 4
+                },
+                "source_position": 1
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N001",
+                  "timestamp": 4
+                },
+                "source_position": 1
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 6,
+                  "emission_timestamp": 4,
+                  "source_channel": 7,
+                  "source_node": "N001",
+                  "target_channel": 0,
+                  "target_node": "N002"
+                },
+                "source_position": 1
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 4
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N002",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 6
+                },
+                "source_position": 2
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N002",
+                  "timestamp": 6
+                },
+                "source_position": 2
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 8,
+                  "emission_timestamp": 6,
+                  "source_channel": 7,
+                  "source_node": "N002",
+                  "target_channel": 0,
+                  "target_node": "N003"
+                },
+                "source_position": 2
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 6
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N003",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 8
+                },
+                "source_position": 3
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N003",
+                  "timestamp": 8
+                },
+                "source_position": 3
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 10,
+                  "emission_timestamp": 8,
+                  "source_channel": 7,
+                  "source_node": "N003",
+                  "target_channel": 0,
+                  "target_node": "N004"
+                },
+                "source_position": 3
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 8
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N004",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 10
+                },
+                "source_position": 4
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N004",
+                  "timestamp": 10
+                },
+                "source_position": 4
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 12,
+                  "emission_timestamp": 10,
+                  "source_channel": 7,
+                  "source_node": "N004",
+                  "target_channel": 0,
+                  "target_node": "N005"
+                },
+                "source_position": 4
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 10
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N005",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 12
+                },
+                "source_position": 5
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N005",
+                  "timestamp": 12
+                },
+                "source_position": 5
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 14,
+                  "emission_timestamp": 12,
+                  "source_channel": 7,
+                  "source_node": "N005",
+                  "target_channel": 0,
+                  "target_node": "N006"
+                },
+                "source_position": 5
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 12
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N006",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 14
+                },
+                "source_position": 6
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N006",
+                  "timestamp": 14
+                },
+                "source_position": 6
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 16,
+                  "emission_timestamp": 14,
+                  "source_channel": 7,
+                  "source_node": "N006",
+                  "target_channel": 0,
+                  "target_node": "N007"
+                },
+                "source_position": 6
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 14
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N007",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 16
+                },
+                "source_position": 7
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N007",
+                  "timestamp": 16
+                },
+                "source_position": 7
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 18,
+                  "emission_timestamp": 16,
+                  "source_channel": 7,
+                  "source_node": "N007",
+                  "target_channel": 0,
+                  "target_node": "N008"
+                },
+                "source_position": 7
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 16
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N008",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 18
+                },
+                "source_position": 8
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N008",
+                  "timestamp": 18
+                },
+                "source_position": 8
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 20,
+                  "emission_timestamp": 18,
+                  "source_channel": 7,
+                  "source_node": "N008",
+                  "target_channel": 0,
+                  "target_node": "N009"
+                },
+                "source_position": 8
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 18
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N009",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 20
+                },
+                "source_position": 9
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N009",
+                  "timestamp": 20
+                },
+                "source_position": 9
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 22,
+                  "emission_timestamp": 20,
+                  "source_channel": 7,
+                  "source_node": "N009",
+                  "target_channel": 0,
+                  "target_node": "N010"
+                },
+                "source_position": 9
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 20
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N010",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 22
+                },
+                "source_position": 10
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N010",
+                  "timestamp": 22
+                },
+                "source_position": 10
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 24,
+                  "emission_timestamp": 22,
+                  "source_channel": 7,
+                  "source_node": "N010",
+                  "target_channel": 0,
+                  "target_node": "N011"
+                },
+                "source_position": 10
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 22
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N011",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 24
+                },
+                "source_position": 11
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N011",
+                  "timestamp": 24
+                },
+                "source_position": 11
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 26,
+                  "emission_timestamp": 24,
+                  "source_channel": 7,
+                  "source_node": "N011",
+                  "target_channel": 0,
+                  "target_node": "N012"
+                },
+                "source_position": 11
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 24
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N012",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 26
+                },
+                "source_position": 12
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N012",
+                  "timestamp": 26
+                },
+                "source_position": 12
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 28,
+                  "emission_timestamp": 26,
+                  "source_channel": 7,
+                  "source_node": "N012",
+                  "target_channel": 0,
+                  "target_node": "N013"
+                },
+                "source_position": 12
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 26
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N013",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 28
+                },
+                "source_position": 13
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N013",
+                  "timestamp": 28
+                },
+                "source_position": 13
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 30,
+                  "emission_timestamp": 28,
+                  "source_channel": 7,
+                  "source_node": "N013",
+                  "target_channel": 0,
+                  "target_node": "N014"
+                },
+                "source_position": 13
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 28
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N014",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 30
+                },
+                "source_position": 14
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N014",
+                  "timestamp": 30
+                },
+                "source_position": 14
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 32,
+                  "emission_timestamp": 30,
+                  "source_channel": 7,
+                  "source_node": "N014",
+                  "target_channel": 0,
+                  "target_node": "N015"
+                },
+                "source_position": 14
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 30
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N015",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 32
+                },
+                "source_position": 15
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N015",
+                  "timestamp": 32
+                },
+                "source_position": 15
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 34,
+                  "emission_timestamp": 32,
+                  "source_channel": 7,
+                  "source_node": "N015",
+                  "target_channel": 0,
+                  "target_node": "N016"
+                },
+                "source_position": 15
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 32
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N016",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 34
+                },
+                "source_position": 16
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N016",
+                  "timestamp": 34
+                },
+                "source_position": 16
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 36,
+                  "emission_timestamp": 34,
+                  "source_channel": 7,
+                  "source_node": "N016",
+                  "target_channel": 0,
+                  "target_node": "N017"
+                },
+                "source_position": 16
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 34
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N017",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 36
+                },
+                "source_position": 17
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N017",
+                  "timestamp": 36
+                },
+                "source_position": 17
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 38,
+                  "emission_timestamp": 36,
+                  "source_channel": 7,
+                  "source_node": "N017",
+                  "target_channel": 0,
+                  "target_node": "N018"
+                },
+                "source_position": 17
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 36
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N018",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 38
+                },
+                "source_position": 18
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N018",
+                  "timestamp": 38
+                },
+                "source_position": 18
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 40,
+                  "emission_timestamp": 38,
+                  "source_channel": 7,
+                  "source_node": "N018",
+                  "target_channel": 0,
+                  "target_node": "N019"
+                },
+                "source_position": 18
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 38
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N019",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 40
+                },
+                "source_position": 19
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N019",
+                  "timestamp": 40
+                },
+                "source_position": 19
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 42,
+                  "emission_timestamp": 40,
+                  "source_channel": 7,
+                  "source_node": "N019",
+                  "target_channel": 0,
+                  "target_node": "N020"
+                },
+                "source_position": 19
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 40
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N020",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 42
+                },
+                "source_position": 20
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N020",
+                  "timestamp": 42
+                },
+                "source_position": 20
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 44,
+                  "emission_timestamp": 42,
+                  "source_channel": 7,
+                  "source_node": "N020",
+                  "target_channel": 0,
+                  "target_node": "N021"
+                },
+                "source_position": 20
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 42
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N021",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 44
+                },
+                "source_position": 21
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N021",
+                  "timestamp": 44
+                },
+                "source_position": 21
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 46,
+                  "emission_timestamp": 44,
+                  "source_channel": 7,
+                  "source_node": "N021",
+                  "target_channel": 0,
+                  "target_node": "N022"
+                },
+                "source_position": 21
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 44
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N022",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 46
+                },
+                "source_position": 22
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N022",
+                  "timestamp": 46
+                },
+                "source_position": 22
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 48,
+                  "emission_timestamp": 46,
+                  "source_channel": 7,
+                  "source_node": "N022",
+                  "target_channel": 0,
+                  "target_node": "N023"
+                },
+                "source_position": 22
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 46
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N023",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 48
+                },
+                "source_position": 23
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N023",
+                  "timestamp": 48
+                },
+                "source_position": 23
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 50,
+                  "emission_timestamp": 48,
+                  "source_channel": 7,
+                  "source_node": "N023",
+                  "target_channel": 0,
+                  "target_node": "N024"
+                },
+                "source_position": 23
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 48
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N024",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 50
+                },
+                "source_position": 24
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N024",
+                  "timestamp": 50
+                },
+                "source_position": 24
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 52,
+                  "emission_timestamp": 50,
+                  "source_channel": 7,
+                  "source_node": "N024",
+                  "target_channel": 0,
+                  "target_node": "N025"
+                },
+                "source_position": 24
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 50
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N025",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 52
+                },
+                "source_position": 25
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N025",
+                  "timestamp": 52
+                },
+                "source_position": 25
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 54,
+                  "emission_timestamp": 52,
+                  "source_channel": 7,
+                  "source_node": "N025",
+                  "target_channel": 0,
+                  "target_node": "N026"
+                },
+                "source_position": 25
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 52
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N026",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 54
+                },
+                "source_position": 26
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N026",
+                  "timestamp": 54
+                },
+                "source_position": 26
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 56,
+                  "emission_timestamp": 54,
+                  "source_channel": 7,
+                  "source_node": "N026",
+                  "target_channel": 0,
+                  "target_node": "N027"
+                },
+                "source_position": 26
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 54
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N027",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 56
+                },
+                "source_position": 27
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N027",
+                  "timestamp": 56
+                },
+                "source_position": 27
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 58,
+                  "emission_timestamp": 56,
+                  "source_channel": 7,
+                  "source_node": "N027",
+                  "target_channel": 0,
+                  "target_node": "N028"
+                },
+                "source_position": 27
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 56
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N028",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 58
+                },
+                "source_position": 28
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N028",
+                  "timestamp": 58
+                },
+                "source_position": 28
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 60,
+                  "emission_timestamp": 58,
+                  "source_channel": 7,
+                  "source_node": "N028",
+                  "target_channel": 0,
+                  "target_node": "N029"
+                },
+                "source_position": 28
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 58
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N029",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 60
+                },
+                "source_position": 29
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N029",
+                  "timestamp": 60
+                },
+                "source_position": 29
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 62,
+                  "emission_timestamp": 60,
+                  "source_channel": 7,
+                  "source_node": "N029",
+                  "target_channel": 0,
+                  "target_node": "N030"
+                },
+                "source_position": 29
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 60
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N030",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 62
+                },
+                "source_position": 30
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N030",
+                  "timestamp": 62
+                },
+                "source_position": 30
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 64,
+                  "emission_timestamp": 62,
+                  "source_channel": 7,
+                  "source_node": "N030",
+                  "target_channel": 0,
+                  "target_node": "N031"
+                },
+                "source_position": 30
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 62
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N031",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 64
+                },
+                "source_position": 31
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N031",
+                  "timestamp": 64
+                },
+                "source_position": 31
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 66,
+                  "emission_timestamp": 64,
+                  "source_channel": 7,
+                  "source_node": "N031",
+                  "target_channel": 0,
+                  "target_node": "N032"
+                },
+                "source_position": 31
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 64
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N032",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 66
+                },
+                "source_position": 32
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N032",
+                  "timestamp": 66
+                },
+                "source_position": 32
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 68,
+                  "emission_timestamp": 66,
+                  "source_channel": 7,
+                  "source_node": "N032",
+                  "target_channel": 0,
+                  "target_node": "N033"
+                },
+                "source_position": 32
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 66
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N033",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 68
+                },
+                "source_position": 33
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N033",
+                  "timestamp": 68
+                },
+                "source_position": 33
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 70,
+                  "emission_timestamp": 68,
+                  "source_channel": 7,
+                  "source_node": "N033",
+                  "target_channel": 0,
+                  "target_node": "N034"
+                },
+                "source_position": 33
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 68
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N034",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 70
+                },
+                "source_position": 34
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N034",
+                  "timestamp": 70
+                },
+                "source_position": 34
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 72,
+                  "emission_timestamp": 70,
+                  "source_channel": 7,
+                  "source_node": "N034",
+                  "target_channel": 0,
+                  "target_node": "N035"
+                },
+                "source_position": 34
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 70
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N035",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 72
+                },
+                "source_position": 35
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N035",
+                  "timestamp": 72
+                },
+                "source_position": 35
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 74,
+                  "emission_timestamp": 72,
+                  "source_channel": 7,
+                  "source_node": "N035",
+                  "target_channel": 0,
+                  "target_node": "N036"
+                },
+                "source_position": 35
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 72
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N036",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 74
+                },
+                "source_position": 36
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N036",
+                  "timestamp": 74
+                },
+                "source_position": 36
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 76,
+                  "emission_timestamp": 74,
+                  "source_channel": 7,
+                  "source_node": "N036",
+                  "target_channel": 0,
+                  "target_node": "N037"
+                },
+                "source_position": 36
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 74
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N037",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 76
+                },
+                "source_position": 37
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N037",
+                  "timestamp": 76
+                },
+                "source_position": 37
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 78,
+                  "emission_timestamp": 76,
+                  "source_channel": 7,
+                  "source_node": "N037",
+                  "target_channel": 0,
+                  "target_node": "N038"
+                },
+                "source_position": 37
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 76
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N038",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 78
+                },
+                "source_position": 38
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N038",
+                  "timestamp": 78
+                },
+                "source_position": 38
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 80,
+                  "emission_timestamp": 78,
+                  "source_channel": 7,
+                  "source_node": "N038",
+                  "target_channel": 0,
+                  "target_node": "N039"
+                },
+                "source_position": 38
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 78
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N039",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 80
+                },
+                "source_position": 39
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N039",
+                  "timestamp": 80
+                },
+                "source_position": 39
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 82,
+                  "emission_timestamp": 80,
+                  "source_channel": 7,
+                  "source_node": "N039",
+                  "target_channel": 0,
+                  "target_node": "N040"
+                },
+                "source_position": 39
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 80
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N040",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 82
+                },
+                "source_position": 40
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N040",
+                  "timestamp": 82
+                },
+                "source_position": 40
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 84,
+                  "emission_timestamp": 82,
+                  "source_channel": 7,
+                  "source_node": "N040",
+                  "target_channel": 0,
+                  "target_node": "N041"
+                },
+                "source_position": 40
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 82
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N041",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 84
+                },
+                "source_position": 41
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N041",
+                  "timestamp": 84
+                },
+                "source_position": 41
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 86,
+                  "emission_timestamp": 84,
+                  "source_channel": 7,
+                  "source_node": "N041",
+                  "target_channel": 0,
+                  "target_node": "N042"
+                },
+                "source_position": 41
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 84
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N042",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 86
+                },
+                "source_position": 42
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N042",
+                  "timestamp": 86
+                },
+                "source_position": 42
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 88,
+                  "emission_timestamp": 86,
+                  "source_channel": 7,
+                  "source_node": "N042",
+                  "target_channel": 0,
+                  "target_node": "N043"
+                },
+                "source_position": 42
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 86
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N043",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 88
+                },
+                "source_position": 43
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N043",
+                  "timestamp": 88
+                },
+                "source_position": 43
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 90,
+                  "emission_timestamp": 88,
+                  "source_channel": 7,
+                  "source_node": "N043",
+                  "target_channel": 0,
+                  "target_node": "N044"
+                },
+                "source_position": 43
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 88
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N044",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 90
+                },
+                "source_position": 44
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N044",
+                  "timestamp": 90
+                },
+                "source_position": 44
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 92,
+                  "emission_timestamp": 90,
+                  "source_channel": 7,
+                  "source_node": "N044",
+                  "target_channel": 0,
+                  "target_node": "N045"
+                },
+                "source_position": 44
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 90
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N045",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 92
+                },
+                "source_position": 45
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N045",
+                  "timestamp": 92
+                },
+                "source_position": 45
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 94,
+                  "emission_timestamp": 92,
+                  "source_channel": 7,
+                  "source_node": "N045",
+                  "target_channel": 0,
+                  "target_node": "N046"
+                },
+                "source_position": 45
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 92
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N046",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 94
+                },
+                "source_position": 46
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N046",
+                  "timestamp": 94
+                },
+                "source_position": 46
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 96,
+                  "emission_timestamp": 94,
+                  "source_channel": 7,
+                  "source_node": "N046",
+                  "target_channel": 0,
+                  "target_node": "N047"
+                },
+                "source_position": 46
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 94
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N047",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 96
+                },
+                "source_position": 47
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N047",
+                  "timestamp": 96
+                },
+                "source_position": 47
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 98,
+                  "emission_timestamp": 96,
+                  "source_channel": 7,
+                  "source_node": "N047",
+                  "target_channel": 0,
+                  "target_node": "N048"
+                },
+                "source_position": 47
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 96
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N048",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 98
+                },
+                "source_position": 48
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N048",
+                  "timestamp": 98
+                },
+                "source_position": 48
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 100,
+                  "emission_timestamp": 98,
+                  "source_channel": 7,
+                  "source_node": "N048",
+                  "target_channel": 0,
+                  "target_node": "N049"
+                },
+                "source_position": 48
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 98
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N049",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 100
+                },
+                "source_position": 49
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N049",
+                  "timestamp": 100
+                },
+                "source_position": 49
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 102,
+                  "emission_timestamp": 100,
+                  "source_channel": 7,
+                  "source_node": "N049",
+                  "target_channel": 0,
+                  "target_node": "N050"
+                },
+                "source_position": 49
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 100
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N050",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 102
+                },
+                "source_position": 50
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N050",
+                  "timestamp": 102
+                },
+                "source_position": 50
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 104,
+                  "emission_timestamp": 102,
+                  "source_channel": 7,
+                  "source_node": "N050",
+                  "target_channel": 0,
+                  "target_node": "N051"
+                },
+                "source_position": 50
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 102
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N051",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 104
+                },
+                "source_position": 51
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N051",
+                  "timestamp": 104
+                },
+                "source_position": 51
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 106,
+                  "emission_timestamp": 104,
+                  "source_channel": 7,
+                  "source_node": "N051",
+                  "target_channel": 0,
+                  "target_node": "N052"
+                },
+                "source_position": 51
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 104
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N052",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 106
+                },
+                "source_position": 52
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N052",
+                  "timestamp": 106
+                },
+                "source_position": 52
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 108,
+                  "emission_timestamp": 106,
+                  "source_channel": 7,
+                  "source_node": "N052",
+                  "target_channel": 0,
+                  "target_node": "N053"
+                },
+                "source_position": 52
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 106
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N053",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 108
+                },
+                "source_position": 53
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N053",
+                  "timestamp": 108
+                },
+                "source_position": 53
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 110,
+                  "emission_timestamp": 108,
+                  "source_channel": 7,
+                  "source_node": "N053",
+                  "target_channel": 0,
+                  "target_node": "N054"
+                },
+                "source_position": 53
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 108
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N054",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 110
+                },
+                "source_position": 54
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N054",
+                  "timestamp": 110
+                },
+                "source_position": 54
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 112,
+                  "emission_timestamp": 110,
+                  "source_channel": 7,
+                  "source_node": "N054",
+                  "target_channel": 0,
+                  "target_node": "N055"
+                },
+                "source_position": 54
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 110
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N055",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 112
+                },
+                "source_position": 55
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N055",
+                  "timestamp": 112
+                },
+                "source_position": 55
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 114,
+                  "emission_timestamp": 112,
+                  "source_channel": 7,
+                  "source_node": "N055",
+                  "target_channel": 0,
+                  "target_node": "N056"
+                },
+                "source_position": 55
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 112
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N056",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 114
+                },
+                "source_position": 56
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N056",
+                  "timestamp": 114
+                },
+                "source_position": 56
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 116,
+                  "emission_timestamp": 114,
+                  "source_channel": 7,
+                  "source_node": "N056",
+                  "target_channel": 0,
+                  "target_node": "N057"
+                },
+                "source_position": 56
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 114
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N057",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 116
+                },
+                "source_position": 57
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N057",
+                  "timestamp": 116
+                },
+                "source_position": 57
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 118,
+                  "emission_timestamp": 116,
+                  "source_channel": 7,
+                  "source_node": "N057",
+                  "target_channel": 0,
+                  "target_node": "N058"
+                },
+                "source_position": 57
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 116
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N058",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 118
+                },
+                "source_position": 58
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N058",
+                  "timestamp": 118
+                },
+                "source_position": 58
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 120,
+                  "emission_timestamp": 118,
+                  "source_channel": 7,
+                  "source_node": "N058",
+                  "target_channel": 0,
+                  "target_node": "N059"
+                },
+                "source_position": 58
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 118
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N059",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 120
+                },
+                "source_position": 59
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N059",
+                  "timestamp": 120
+                },
+                "source_position": 59
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 122,
+                  "emission_timestamp": 120,
+                  "source_channel": 7,
+                  "source_node": "N059",
+                  "target_channel": 0,
+                  "target_node": "N060"
+                },
+                "source_position": 59
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 120
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N060",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 122
+                },
+                "source_position": 60
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N060",
+                  "timestamp": 122
+                },
+                "source_position": 60
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 124,
+                  "emission_timestamp": 122,
+                  "source_channel": 7,
+                  "source_node": "N060",
+                  "target_channel": 0,
+                  "target_node": "N061"
+                },
+                "source_position": 60
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 122
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N061",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 124
+                },
+                "source_position": 61
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N061",
+                  "timestamp": 124
+                },
+                "source_position": 61
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 126,
+                  "emission_timestamp": 124,
+                  "source_channel": 7,
+                  "source_node": "N061",
+                  "target_channel": 0,
+                  "target_node": "N062"
+                },
+                "source_position": 61
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 124
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N062",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 126
+                },
+                "source_position": 62
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N062",
+                  "timestamp": 126
+                },
+                "source_position": 62
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [
+              {
+                "payload": {
+                  "delay_ticks": 2,
+                  "delivery_timestamp": 128,
+                  "emission_timestamp": 126,
+                  "source_channel": 7,
+                  "source_node": "N062",
+                  "target_channel": 0,
+                  "target_node": "N063"
+                },
+                "source_position": 62
+              }
+            ],
+            "terminal_outputs": [],
+            "tick": 126
+          },
+          {
+            "batches": [
+              {
+                "payload": {
+                  "channels": [
+                    0
+                  ],
+                  "final_guard": true,
+                  "final_raw": 0,
+                  "node_id": "N063",
+                  "output_channels": [
+                    7
+                  ],
+                  "timestamp": 128
+                },
+                "source_position": 63
+              }
+            ],
+            "cross_stream_total_order": null,
+            "emissions": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N063",
+                  "timestamp": 128
+                },
+                "source_position": 63
+              }
+            ],
+            "pending_queue_occupancy": null,
+            "per_tick_node_states": null,
+            "routes_by_emission": [],
+            "terminal_outputs": [
+              {
+                "payload": {
+                  "channel": 7,
+                  "node_id": "N063",
+                  "timestamp": 128
+                },
+                "source_position": 0
+              }
+            ],
+            "tick": 128
+          }
+        ],
+        "trace_complete_within_declared_observer_fields": true,
+        "truncated": false
+      },
+      "trace_sha256": "f3d8bb6c45faac066b91ea108ea401f0ea02a0041a2edc7fb6c530c3d733d956"
+    }
+  ],
+  "engineering_gate": "PASS_S2A_ONLY",
+  "grant_authorized": false,
+  "independent_BV_trials": 0,
+  "limitations": [
+    "Observer batches and routes are source observations; grouping by tick is derived presentation.",
+    "No native per-tick queue occupancy or per-tick full-node states exposed.",
+    "Routes are recorded at emission tick; delivery timestamp is not a witnessed target batch.",
+    "Global cross-stream ordering is not reconstructed or claimed.",
+    "S2 GUI and complete replay viewer not included in S2a.",
+    "No performance, energy, dataset or BV claim; cycles only bounded-rejection parent evidence."
+  ],
+  "no_cross_stream_order_invented": true,
+  "no_gui_writes": true,
+  "no_pending_queue_state_claimed": true,
+  "no_per_tick_network_state_claimed": true,
+  "no_performance_or_dataset_metrics": true,
+  "research_only": true,
+  "run_count": 7,
+  "s2_phase_complete": false,
+  "schema": "spk-sim-s2a-native-observation-provenance/v0a",
+  "scientific_authority": "HOLD",
+  "source_only_frozen_original_observer": true,
+  "status": "S2A_ORIGINAL_NATIVE_TICK_OBSERVATION_PROVENANCE_PASS_S2_OPEN_AUTHORITY_HOLD",
+  "trace_field_origin": {
+    "batches": "observed",
+    "cross_stream_total_order": "not_available",
+    "emissions": "observed",
+    "pending_queue_occupancy": "not_available",
+    "per_tick_node_states": "not_available",
+    "routes_by_emission": "observed",
+    "terminal_outputs": "observed",
+    "tick": "derived"
+  },
+  "trace_record_budget": 2048
+}

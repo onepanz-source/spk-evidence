@@ -1,0 +1,543 @@
+{
+  "BV_verdict_proven": false,
+  "P_state_mutated": false,
+  "all_four_lane_outputs_from_same_native_run": true,
+  "architecture_promotion_allowed": false,
+  "banknote_observed_masks": 15,
+  "classification_metrics_computed": false,
+  "engineering_gate": "PASS_S3G_ONE_NETWORK_FOUR_LANES_ONLY",
+  "full_dataset_native_execution": false,
+  "grant_authorized": false,
+  "independent_BV_trials": 0,
+  "input_broadcast_to_four_lanes": true,
+  "limitations": [
+    "One native Network run per mask with eight nodes and four independent lanes; not one neuron computing a four-bit vector.",
+    "Input events are broadcast to four detector nodes (4*m events) and not comparable to a nonbroadcast single-neuron cost.",
+    "The four-bit vector is assembled from original native terminal B-node identities, not four output channels from one neuron.",
+    "Only 15 observed Banknote binary masks tested; source continuous values are not recovered.",
+    "S3f parent selectors are reexecuted for parity, not independent BV trials.",
+    "No labels, classification, training, predictive accuracy, performance/hardware metrics, BV, grant, P write or promotion."
+  ],
+  "mask_runs": [
+    {
+      "activated_feature_indices": [],
+      "integrated_native": {
+        "input_events_broadcast": 0,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "62daea92f222016a802cdc815c60db97eb87311061859f4e3084faff5c9582af",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 0,
+        "processed_events": 0,
+        "readout_vector": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "routes": 0,
+        "terminal_node_ids": [],
+        "terminal_outputs": 0
+      },
+      "legacy_input_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "multiplicity": 0,
+      "source_first_row_zero_based": 810,
+      "source_mask_row_count": 45
+    },
+    {
+      "activated_feature_indices": [
+        1
+      ],
+      "integrated_native": {
+        "input_events_broadcast": 4,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "c4a9d3a30cac02ede335a067335d80253c7a3e1896f04d9811a634eabb350b98",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "ac49cb752845698e86dfb6b220f75664422d280207c03f5fe2830ef261699ffe",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 5,
+        "processed_events": 5,
+        "readout_vector": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "routes": 1,
+        "terminal_node_ids": [
+          "B1"
+        ],
+        "terminal_outputs": 1
+      },
+      "legacy_input_sha256": "767d0137c138843208d8f04af31c1b7707aa5bd54028f9e7b799ef60d9f59219",
+      "multiplicity": 1,
+      "source_first_row_zero_based": 41,
+      "source_mask_row_count": 175
+    },
+    {
+      "activated_feature_indices": [
+        2
+      ],
+      "integrated_native": {
+        "input_events_broadcast": 4,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "decf525ab8dc38d01daa565e92ad48890987d5f8bb4f748baa66007899f76e3a",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "e4e61bf9cecc538953b8823922a583882627761b3c0673e17f55e9066f25cc51",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 5,
+        "processed_events": 5,
+        "readout_vector": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "routes": 1,
+        "terminal_node_ids": [
+          "B2"
+        ],
+        "terminal_outputs": 1
+      },
+      "legacy_input_sha256": "767d0137c138843208d8f04af31c1b7707aa5bd54028f9e7b799ef60d9f59219",
+      "multiplicity": 1,
+      "source_first_row_zero_based": 4,
+      "source_mask_row_count": 77
+    },
+    {
+      "activated_feature_indices": [
+        3
+      ],
+      "integrated_native": {
+        "input_events_broadcast": 4,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "abdb1dcea7648ac8d6ee2bca1e49434f748586dd21d020acbd8ea193fa56b4eb",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "4fc445ceb8aca6b56ca201df1da7144bc1badb7cfbf13d615052d85ef6977e54",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 5,
+        "processed_events": 5,
+        "readout_vector": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "routes": 1,
+        "terminal_node_ids": [
+          "B3"
+        ],
+        "terminal_outputs": 1
+      },
+      "legacy_input_sha256": "767d0137c138843208d8f04af31c1b7707aa5bd54028f9e7b799ef60d9f59219",
+      "multiplicity": 1,
+      "source_first_row_zero_based": 763,
+      "source_mask_row_count": 61
+    },
+    {
+      "activated_feature_indices": [
+        0,
+        1
+      ],
+      "integrated_native": {
+        "input_events_broadcast": 8,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "962c817f89c477506e00db83d724782be592cd499ea744169d8f662f6b1c149a",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "7b531a77a2c9cdbee08d70da4144b2b84b386c13f26ffb6ad2dd4a649196941c",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 6,
+        "processed_events": 10,
+        "readout_vector": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "routes": 2,
+        "terminal_node_ids": [
+          "B0",
+          "B1"
+        ],
+        "terminal_outputs": 2
+      },
+      "legacy_input_sha256": "e48a883d35c7977c446426ccabdaa6052cd878d601a32b2650e60d84237d072a",
+      "multiplicity": 2,
+      "source_first_row_zero_based": 1,
+      "source_mask_row_count": 247
+    },
+    {
+      "activated_feature_indices": [
+        0,
+        2
+      ],
+      "integrated_native": {
+        "input_events_broadcast": 8,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "33769be4b69c773c6c300b0aaf7f10d2fe898ff2b0a987cb67b37b1b3a463a0b",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "7486e9c5c5914f10d09b2695a07dd066f764ac9793ceed43f282cdc613c84da2",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 6,
+        "processed_events": 10,
+        "readout_vector": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "routes": 2,
+        "terminal_node_ids": [
+          "B0",
+          "B2"
+        ],
+        "terminal_outputs": 2
+      },
+      "legacy_input_sha256": "e48a883d35c7977c446426ccabdaa6052cd878d601a32b2650e60d84237d072a",
+      "multiplicity": 2,
+      "source_first_row_zero_based": 18,
+      "source_mask_row_count": 33
+    },
+    {
+      "activated_feature_indices": [
+        0,
+        3
+      ],
+      "integrated_native": {
+        "input_events_broadcast": 8,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "158bab830bfee72a9a7d97d6bf1b674a5f9c0ccc43fa12f1df76c5490385a905",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "d59b7793cb441826beb90b7f6a3973eedc474f9187194e457d9d18cc7b128852",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 6,
+        "processed_events": 10,
+        "readout_vector": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "routes": 2,
+        "terminal_node_ids": [
+          "B0",
+          "B3"
+        ],
+        "terminal_outputs": 2
+      },
+      "legacy_input_sha256": "e48a883d35c7977c446426ccabdaa6052cd878d601a32b2650e60d84237d072a",
+      "multiplicity": 2,
+      "source_first_row_zero_based": 128,
+      "source_mask_row_count": 49
+    },
+    {
+      "activated_feature_indices": [
+        1,
+        2
+      ],
+      "integrated_native": {
+        "input_events_broadcast": 8,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "7605f9be21070292f41d769d27b503d995fb1b9ee6ce7c3672d783f5c09ea444",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "c3ae450c4c26ac832086f6e16ea2ea20027689d91df84baddc18a0e83a29e4cb",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 6,
+        "processed_events": 10,
+        "readout_vector": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "routes": 2,
+        "terminal_node_ids": [
+          "B1",
+          "B2"
+        ],
+        "terminal_outputs": 2
+      },
+      "legacy_input_sha256": "e48a883d35c7977c446426ccabdaa6052cd878d601a32b2650e60d84237d072a",
+      "multiplicity": 2,
+      "source_first_row_zero_based": 13,
+      "source_mask_row_count": 78
+    },
+    {
+      "activated_feature_indices": [
+        1,
+        3
+      ],
+      "integrated_native": {
+        "input_events_broadcast": 8,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "ad086f126d52b4a5a7bf30496de7014aff7acc6398fc9b60b8e49d4c7bb3afbb",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "b1c2c58b8309fb825486f32853daf9694c55cca6fee5cbe89e7c774b9087411d",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 6,
+        "processed_events": 10,
+        "readout_vector": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "routes": 2,
+        "terminal_node_ids": [
+          "B1",
+          "B3"
+        ],
+        "terminal_outputs": 2
+      },
+      "legacy_input_sha256": "e48a883d35c7977c446426ccabdaa6052cd878d601a32b2650e60d84237d072a",
+      "multiplicity": 2,
+      "source_first_row_zero_based": 752,
+      "source_mask_row_count": 2
+    },
+    {
+      "activated_feature_indices": [
+        2,
+        3
+      ],
+      "integrated_native": {
+        "input_events_broadcast": 8,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "d19127578a3043d8081aa54fef953e44a13012273ebe0e93d87b2ba758f2a9f1",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "16c5727ab23b72556d297f4f470d94a6a3560b8a99359014d4cdbe2e533bb4b8",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 6,
+        "processed_events": 10,
+        "readout_vector": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "routes": 2,
+        "terminal_node_ids": [
+          "B2",
+          "B3"
+        ],
+        "terminal_outputs": 2
+      },
+      "legacy_input_sha256": "e48a883d35c7977c446426ccabdaa6052cd878d601a32b2650e60d84237d072a",
+      "multiplicity": 2,
+      "source_first_row_zero_based": 30,
+      "source_mask_row_count": 240
+    },
+    {
+      "activated_feature_indices": [
+        0,
+        1,
+        2
+      ],
+      "integrated_native": {
+        "input_events_broadcast": 12,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "2ed368994d536078da4b4f94f1f4978f5df9b8c8b036ddabd10426fac8063b04",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "d849aab26bf18b32ab9bec6eb9089336d3af9d0e6805b56fe0e610a06bc719e3",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 7,
+        "processed_events": 15,
+        "readout_vector": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "routes": 3,
+        "terminal_node_ids": [
+          "B0",
+          "B1",
+          "B2"
+        ],
+        "terminal_outputs": 3
+      },
+      "legacy_input_sha256": "3a9b1d6b6e0af46243fb42ae0beb331585ee9f31df630e5e94285b0eadab9941",
+      "multiplicity": 3,
+      "source_first_row_zero_based": 204,
+      "source_mask_row_count": 7
+    },
+    {
+      "activated_feature_indices": [
+        0,
+        1,
+        3
+      ],
+      "integrated_native": {
+        "input_events_broadcast": 12,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "94aa9168494899c80c7b9d21dc92c624ee86541f909854bfae6e70fd43bc3183",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "b4dda38e4177c97e340e53057358f0e7f43e17ee200e0113d4896723148621c4",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 7,
+        "processed_events": 15,
+        "readout_vector": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "routes": 3,
+        "terminal_node_ids": [
+          "B0",
+          "B1",
+          "B3"
+        ],
+        "terminal_outputs": 3
+      },
+      "legacy_input_sha256": "3a9b1d6b6e0af46243fb42ae0beb331585ee9f31df630e5e94285b0eadab9941",
+      "multiplicity": 3,
+      "source_first_row_zero_based": 0,
+      "source_mask_row_count": 85
+    },
+    {
+      "activated_feature_indices": [
+        0,
+        2,
+        3
+      ],
+      "integrated_native": {
+        "input_events_broadcast": 12,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "d01473969397c8cb37e521d6ac48aca154dbb3957fb9b3837d5177527136a809",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "0fb70604ee53d90e66e78fb3f26f485407061352e1e996744f0c6e0f049e4be1",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 7,
+        "processed_events": 15,
+        "readout_vector": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "routes": 3,
+        "terminal_node_ids": [
+          "B0",
+          "B2",
+          "B3"
+        ],
+        "terminal_outputs": 3
+      },
+      "legacy_input_sha256": "3a9b1d6b6e0af46243fb42ae0beb331585ee9f31df630e5e94285b0eadab9941",
+      "multiplicity": 3,
+      "source_first_row_zero_based": 2,
+      "source_mask_row_count": 200
+    },
+    {
+      "activated_feature_indices": [
+        1,
+        2,
+        3
+      ],
+      "integrated_native": {
+        "input_events_broadcast": 12,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "0330bf04d1661f3489eb392fffb16858cde6d011344dc4362a31a0344ab5f46c",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "0de9078ba15bec6e575107cc36cf75fa53c92f6e5712d808bd4e708b839cde00",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 7,
+        "processed_events": 15,
+        "readout_vector": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "routes": 3,
+        "terminal_node_ids": [
+          "B1",
+          "B2",
+          "B3"
+        ],
+        "terminal_outputs": 3
+      },
+      "legacy_input_sha256": "3a9b1d6b6e0af46243fb42ae0beb331585ee9f31df630e5e94285b0eadab9941",
+      "multiplicity": 3,
+      "source_first_row_zero_based": 133,
+      "source_mask_row_count": 8
+    },
+    {
+      "activated_feature_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "integrated_native": {
+        "input_events_broadcast": 16,
+        "native_compiler_admitted": true,
+        "native_input_sha256": "eac52e5451249c89e7464d4cdffe09f28615f6fc0fbc294f2b47d66422d87d66",
+        "native_observer_verified": true,
+        "native_outcome_sha256": "8cafa4e3ac99a81fce098158aaf7876882dd4d775cea7eb1eba99f3373df7258",
+        "network_ir_sha256": "edceeee56df32fc9e6133d49dc679e7e93b5ee9cc43b97ac6c8bb8765b17f3ae",
+        "processed_batches": 8,
+        "processed_events": 20,
+        "readout_vector": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "routes": 4,
+        "terminal_node_ids": [
+          "B0",
+          "B1",
+          "B2",
+          "B3"
+        ],
+        "terminal_outputs": 4
+      },
+      "legacy_input_sha256": "f2c9afa3d0efa223ddab99b5e107322f59e6890418b050480cb8b6c2bcd6d95a",
+      "multiplicity": 4,
+      "source_first_row_zero_based": 6,
+      "source_mask_row_count": 65
+    }
+  ],
+  "native_single_neuron_four_output_program": false,
+  "one_network_detector_nodes": 4,
+  "one_network_edges": 4,
+  "one_network_four_lane_vectors": 15,
+  "one_network_native_calls_per_process": 15,
+  "one_network_nodes": 8,
+  "one_network_relay_nodes": 4,
+  "original_frozen_component_sha256": {
+    "spk_compiler/compile_pipeline_v0.py": "81aebc3b08776b7a5e4d1cd42257298048533d08eaf898cc436c9dc974479366",
+    "spk_compiler/network_ir_v0.py": "0425a191cc3ecc3df76fe13dac99009cdceccdbc389789bf1967f567b5309460",
+    "spk_compiler/pe_admission_v0.py": "ccc76a35f908bd9fbdc8d3dfc23966b4e4109db838e05143b4383a23e437933c",
+    "spk_compiler/resource_admission_v0.py": "864673d321b3da0b36d49cb669322808e617fb85657034b5df544aad48281420",
+    "spk_core/ir_v0.py": "ca6b601e9d38d738edac29323b537fabc246ed800ec06da0e3d8dff39ad1d8e9",
+    "spk_core/isa.py": "7c64e0eb8f98080d97bfa3f0de1d2c5ea044c04dcfcfedc1c0f6491891ce9cb6",
+    "spk_core/runtime.py": "25b78b476c052c73b9e67687d8b9da24e043613bd8c732520a1a338799f403c8",
+    "spk_network/events_v0.py": "f632ad1f49e8c88a11aa42537f9085dc12232751395ca79586992b4c2cd71eee",
+    "spk_network/model_v0.py": "44462bddf14ac2c9d3e483474b25842abfa875f55c235610e91b15529db40615",
+    "spk_network/runtime_v0.py": "4e393a2fdb17e833f3b424f6a5938946d8f6f83ff1cf1ad0da61b3520bb820ce",
+    "spk_simulator/functional_trace_v0.py": "6e934af2e634bc8605416b70b46fd41cec97d352c21dfe8309c41fb16c022140"
+  },
+  "original_observer_terminal_node_identity_checked": true,
+  "performance_metrics_computed": false,
+  "replayed_s3f_four_selector_calls_per_process": 60,
+  "research_only": true,
+  "s3_phase_complete": false,
+  "s3f_fresh_native_reexecution_byte_exact": true,
+  "s3f_parent_sha256": "126d31965ad44bca19be11345f15f91adadf3159d49935fe98972ae190a403f1",
+  "s3g_replay_isolation_hotfix": "S3G_V0B_PARENT_IN_CHILD_ORIGINAL_IN_FRESH_PROCESS",
+  "schema": "spk-sim-s3g-one-network-four-lane-native/v0a",
+  "scientific_authority": "HOLD",
+  "seed_vector": {
+    "mask_selection": "S3D_FIRST_ROW_OF_EACH_OBSERVED_MASK",
+    "network": "FIXED_4_PARALLEL_CHANNEL_SELECTORS_AND_4_TERMINAL_RELAYS",
+    "randomness": "NONE",
+    "runtime": "ORIGINAL_FROZEN_DETERMINISTIC",
+    "source": "PINNED_UCI_ORIGINAL_ZIPS"
+  },
+  "source_event_replication_factor": 4,
+  "status": "S3G_ONE_FROZEN_NATIVE_NETWORK_FOUR_LANE_READOUT_PASS_S3_OPEN_AUTHORITY_HOLD",
+  "training_performed": false
+}

@@ -1,0 +1,375 @@
+{
+  "all_heldout_P_frozen": true,
+  "audited_cell_count": 360,
+  "correct_sign_by_world": {
+    "normal": 30,
+    "reversed": 30
+  },
+  "gains_absolute": {
+    "normal": 0.2,
+    "reversed": 0.6666666666666666
+  },
+  "independent_T16_baseline_reproduced": true,
+  "limitations": [
+    "T17 is an additive research scheduler, not frozen original BV",
+    "A computes action-effect direction via original PE but Python preprocesses signed sensor difference",
+    "Host defines world setpoint, actions, deterministic dynamics and input temperatures",
+    "Only binary actuator polarity is learned, not arbitrary or stochastic transition laws",
+    "One-dimensional thermal dynamics and odd/even heldout split; 3 seeds reuse the same 10 worlds",
+    "No T13 A1d original memory authorization for these thermal goals; T14 detached signature not integrated",
+    "No independent physically authenticated A sensor or host-resistant root of trust",
+    "No original SPK BV native semantic P learning"
+  ],
+  "original_SPK_BV_native_P_grants": 0,
+  "original_SPK_native_learning": false,
+  "original_T13_A1d_thermal_P_access": false,
+  "original_T14_signed_thermal_source": false,
+  "paired_cell_digest": "29d1b9a82d6ce9016f931c67b41dcad52573b6fc5838d6e971d45d5ef10ffd2b",
+  "parent_T16_sha256": "e768acd122f39c38dfb3c3dee8df2c1d3e74479beb53be1a5e746a957dd6d2ca",
+  "promotion_allowed": false,
+  "restricted_hypothesis_supported": true,
+  "schema": "spk-v5-t17-dual-P-unknown-actuator-causal-learning/research-v0",
+  "scientific_precommit": {
+    "actuator_law": "UNKNOWN_TO_C",
+    "credit": "single versioned P CAS for polarity or threshold, B relay required",
+    "equilibria": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "heldout_odd": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15
+    ],
+    "initial_sign": 0,
+    "initial_theta": 12,
+    "normal_margin_pp": 15,
+    "reversed_margin_pp": 25,
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "sign_discovery": "A computed post-minus-pre via frozen SPK PE; neutral clipping never identifies sign",
+    "training_even": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14
+    ]
+  },
+  "staged_events": 27124,
+  "status": "BOUNDED_UNKNOWN_ACTUATOR_LEARNING_SUPPORTED",
+  "totals": {
+    "normal": {
+      "adaptive": {
+        "P_grants": 62,
+        "cases": 225,
+        "correct_sign": 30,
+        "hits": 210,
+        "per_seed": {
+          "17": {
+            "P_grants": 18,
+            "cases": 75,
+            "hits": 70
+          },
+          "29": {
+            "P_grants": 21,
+            "cases": 75,
+            "hits": 69
+          },
+          "43": {
+            "P_grants": 23,
+            "cases": 75,
+            "hits": 71
+          }
+        },
+        "physical_loss": 885
+      },
+      "altered": {
+        "P_grants": 0,
+        "cases": 225,
+        "correct_sign": 0,
+        "hits": 165,
+        "per_seed": {
+          "17": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 55
+          },
+          "29": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 55
+          },
+          "43": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 55
+          }
+        },
+        "physical_loss": 975
+      },
+      "effect_tamper": {
+        "P_grants": 0,
+        "cases": 225,
+        "correct_sign": 0,
+        "hits": 165,
+        "per_seed": {
+          "17": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 55
+          },
+          "29": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 55
+          },
+          "43": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 55
+          }
+        },
+        "physical_loss": 975
+      },
+      "frozen": {
+        "P_grants": 0,
+        "cases": 225,
+        "correct_sign": 0,
+        "hits": 165,
+        "per_seed": {
+          "17": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 55
+          },
+          "29": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 55
+          },
+          "43": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 55
+          }
+        },
+        "physical_loss": 975
+      },
+      "no_feedback": {
+        "P_grants": 0,
+        "cases": 225,
+        "correct_sign": 0,
+        "hits": 165,
+        "per_seed": {
+          "17": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 55
+          },
+          "29": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 55
+          },
+          "43": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 55
+          }
+        },
+        "physical_loss": 975
+      },
+      "wrong_lineage": {
+        "P_grants": 0,
+        "cases": 225,
+        "correct_sign": 0,
+        "hits": 165,
+        "per_seed": {
+          "17": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 55
+          },
+          "29": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 55
+          },
+          "43": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 55
+          }
+        },
+        "physical_loss": 975
+      }
+    },
+    "reversed": {
+      "adaptive": {
+        "P_grants": 62,
+        "cases": 225,
+        "correct_sign": 30,
+        "hits": 210,
+        "per_seed": {
+          "17": {
+            "P_grants": 18,
+            "cases": 75,
+            "hits": 70
+          },
+          "29": {
+            "P_grants": 21,
+            "cases": 75,
+            "hits": 69
+          },
+          "43": {
+            "P_grants": 23,
+            "cases": 75,
+            "hits": 71
+          }
+        },
+        "physical_loss": 885
+      },
+      "altered": {
+        "P_grants": 0,
+        "cases": 225,
+        "correct_sign": 0,
+        "hits": 60,
+        "per_seed": {
+          "17": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 20
+          },
+          "29": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 20
+          },
+          "43": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 20
+          }
+        },
+        "physical_loss": 1155
+      },
+      "effect_tamper": {
+        "P_grants": 0,
+        "cases": 225,
+        "correct_sign": 0,
+        "hits": 60,
+        "per_seed": {
+          "17": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 20
+          },
+          "29": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 20
+          },
+          "43": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 20
+          }
+        },
+        "physical_loss": 1155
+      },
+      "frozen": {
+        "P_grants": 0,
+        "cases": 225,
+        "correct_sign": 0,
+        "hits": 60,
+        "per_seed": {
+          "17": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 20
+          },
+          "29": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 20
+          },
+          "43": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 20
+          }
+        },
+        "physical_loss": 1155
+      },
+      "no_feedback": {
+        "P_grants": 0,
+        "cases": 225,
+        "correct_sign": 0,
+        "hits": 60,
+        "per_seed": {
+          "17": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 20
+          },
+          "29": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 20
+          },
+          "43": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 20
+          }
+        },
+        "physical_loss": 1155
+      },
+      "wrong_lineage": {
+        "P_grants": 0,
+        "cases": 225,
+        "correct_sign": 0,
+        "hits": 60,
+        "per_seed": {
+          "17": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 20
+          },
+          "29": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 20
+          },
+          "43": {
+            "P_grants": 0,
+            "cases": 75,
+            "hits": 20
+          }
+        },
+        "physical_loss": 1155
+      }
+    }
+  },
+  "unmodified_frozen_PE_sha256": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c"
+}

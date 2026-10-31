@@ -1,0 +1,84 @@
+{
+  "A_sensor_authenticated": false,
+  "C_native_authority_authenticated": false,
+  "T5MNO_reexecuted_byte_exact": true,
+  "T5PQR": {
+    "cases": 180,
+    "negative_world_potential_sha256": "b5e6b9ac30e8db9c660d8b624742b0fa39e63ef4add6476b008e212fd53ed91d",
+    "observed_outcome_vector_sha256": "897745142c3285879ec937a6c9bd988ae2b69a417a0ae00e1e4b484a82696115",
+    "positive_world_potential_sha256": "626a2499e1a7d00c86fa9dc4f3efe2f41914bf18a0454ed0ddd4a4258abc7ba7",
+    "real_C_effect_identifiable_from_T5MNO": false,
+    "two_opposed_causal_worlds_fit_all_observed_data": true,
+    "world_illustrative_effects": [
+      1,
+      -1
+    ]
+  },
+  "T5STU": {
+    "authenticated_sensor_observations": 0,
+    "model_effect_counts": {
+      "-1": 8,
+      "0": 8,
+      "2": 8
+    },
+    "model_only_twin_trials": 24,
+    "native_C_interventions": 0,
+    "real_C_effect_identified": false,
+    "simulated_arms": 48,
+    "simulated_paired_effect_denominator": 24,
+    "simulated_paired_effect_numerator": 8,
+    "trial_record_sha256": "dad32bfbbb17b8575144aaf0ba28b0ce4f15f331d24ba9b6ba9a7f9cb26c9a78"
+  },
+  "T5VWX": {
+    "A_end_sha256": "757ecce9dd1e5944d6d1cbce0f994118b383c0e4482bd32d6abf11c3ba14b469",
+    "B_end_sha256": "a575f51ecc5d503957c08e78e4eb1617907a19c73db5d79fb2f8fb6fe23c0035",
+    "B_relay_messages": 24,
+    "C_feedback_sha256": "0b6d40f742c248152cd483fc63ee002ea780dc51b489fc07427bacf3cf062016",
+    "C_native_credit_applied": 0,
+    "C_native_learning_steps": 0,
+    "C_receiver_messages": 24,
+    "C_receiver_outcomes": {
+      "IMPROVED": 8,
+      "UNCHANGED": 8,
+      "WORSENED": 8
+    },
+    "host_reconstructed_C_feedback_sha256": "e12ac59acd1036446609e5d23c025b824ab9f8feb9a3991df73b00dd3d1645fd",
+    "host_reconstructed_fresh_ledger_accepted": true,
+    "negative_attacks": {
+      "faked_causality": "REJECTED",
+      "faked_native_credit": "REJECTED",
+      "faked_sensor": "REJECTED",
+      "payload_tamper": "REJECTED",
+      "relay_digest_tamper": "REJECTED",
+      "replay_duplicate": "REJECTED"
+    },
+    "research_A_feedback_messages": 24,
+    "three_process_separation": true
+  },
+  "limits": [
+    "Opposite causal effects generate the same 180 observed T5MNO rows: observational non-identifiability",
+    "The paired interventions use a host-authored synthetic causal plant, not real C actions or A sensor readings",
+    "The host selects candidate cases using archived cross-plane metadata and may replace A observations",
+    "A, B and C are separate host-controlled Python processes, not independent authenticated neuronal authorities",
+    "Host-forged fresh A ledgers remain acceptable to C; research-only messages MUST NOT update native state"
+  ],
+  "native_BV_credit": 0,
+  "native_learning": false,
+  "new_original_BV_scheduler_calls": 0,
+  "new_original_PE_compute_calls": 0,
+  "original_source_pin_count": 12,
+  "promotion_allowed": false,
+  "real_C_causal_attribution_proven": false,
+  "schema": "spk-v5-t5pqr-stu-vwx-cumulative-causal-shadow/research-v0",
+  "source_T5MNO_sha256": "1eb6a4b43297cc8c111fb1811d00954ac119e2a9c604407785ec54059ee78706",
+  "source_pins": {
+    "T4GHI_reference_sha256": "dc98a1a5e45270d665e5119540ae960e405f4d02b703bd0c52d04202873abef3",
+    "T4ZABC_reference_sha256": "7de3ccc8c374212748ccedcbd1a4b3d4e99f116b9a6f39e0190695a746cf9d4c",
+    "T5GHI_reference_sha256": "f4296cdc55313967fcaab3f34810867128b2550ad85978e4a3f9196eb8028a86",
+    "challenge_fork_sha256": "08d8ab6996e219c3cfea0208e2113d8332b53a39c22d6c2a9bd0cd3f729f48e4",
+    "frozen_BV_sha256": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+    "frozen_PE_sha256": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+    "original_source_pins": 12
+  },
+  "status": "THREE_RESEARCH_GATES_CAUSAL_IDENTIFIABILITY_SIMULATED_INTERVENTION_SHADOW_FEEDBACK"
+}

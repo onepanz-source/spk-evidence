@@ -1,0 +1,145 @@
+{
+  "A_sensor_authenticated": false,
+  "C_source_authenticated": false,
+  "T8JKL": {
+    "new_v1_semantic_bus": true,
+    "reference_v1_semantic_payloads_carried": 96,
+    "three_node_source_bound": true,
+    "v0e_frozen_remains_structural": true,
+    "verdict_from_original_A_PE_emission": true
+  },
+  "T8MNO": {
+    "P_domain": "P",
+    "P_mode": "execute",
+    "P_owner": "C",
+    "atomic_versioned_commit": true,
+    "native_SPK_Memory_Contract_grants": 0,
+    "reference_v1_P_commits": 8,
+    "reference_v1_P_grants": 8,
+    "reopen_and_replay": {
+      "grant_consumed_once": true,
+      "native_SPK_grants": 0,
+      "pending_durable": true,
+      "reference_v1_grants": 1,
+      "replay_rejected": true
+    }
+  },
+  "T8PQR": {
+    "adaptive_96": {
+      "audit": {
+        "episodes": 96,
+        "ledger_events": 201,
+        "ledger_tip": "7028e8175c540977021990d8b869ec239289eda01f4bcb4b041b0445f374431a",
+        "pending": 0,
+        "policy": {
+          "0": 12,
+          "1": 11
+        },
+        "reference_P_writes": 8,
+        "reference_grants": 8,
+        "settled": 96,
+        "versions": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "episodes": 96,
+      "failed": 8,
+      "native_SPK_BV_semantic": 0,
+      "native_SPK_P_grants": 0,
+      "reference_v1_P_grants": 8,
+      "reference_v1_P_writes": 8,
+      "reference_v1_semantic_receipts": 96,
+      "row_digest": "e297410f746a846ee0240d1fc855cc003ae5c4f8d3f0d7c90a59495092054664",
+      "source_rows_sha256": "f9bfb2aa1ecb84cc7fb4d1cb06a1a493475a9b5757f35e93d76caaa71b3e1fc1",
+      "successes": 88
+    },
+    "baseline_96": {
+      "audit": {
+        "episodes": 96,
+        "ledger_events": 193,
+        "ledger_tip": "85520b43b01498d61d41befbc2e7dcfea45fcd5d64903f8789406ccc14c0797b",
+        "pending": 0,
+        "policy": {
+          "0": 12,
+          "1": 11
+        },
+        "reference_P_writes": 0,
+        "reference_grants": 0,
+        "settled": 96,
+        "versions": {
+          "0": 0,
+          "1": 0
+        }
+      },
+      "episodes": 96,
+      "failed": 48,
+      "native_SPK_BV_semantic": 0,
+      "native_SPK_P_grants": 0,
+      "reference_v1_P_grants": 0,
+      "reference_v1_P_writes": 0,
+      "reference_v1_semantic_receipts": 96,
+      "row_digest": "c6d27ac021d80865a4b3795d07cd4cf1250e19004c3f35860d33d8e455c76dca",
+      "source_rows_sha256": "ad11980aacbf34649712518b9fa089fcdfb23e6d62c8d4632ecbe9821cbc2138",
+      "successes": 48
+    },
+    "host_forgery_counterexample": {
+      "host_fake_source_accepted": true,
+      "host_full_database_reseal_possible": true,
+      "native_SPK_grant_forged": false,
+      "reference_v1_grant_forged": true,
+      "scheduler_calls": 0
+    },
+    "lost_forward_24": {
+      "audit": {
+        "episodes": 24,
+        "ledger_events": 49,
+        "ledger_tip": "c8cebae4fdecb4ac7d9a00b0a30bf209372cb400394720b68988d8c406d3ed51",
+        "pending": 0,
+        "policy": {
+          "0": 12,
+          "1": 11
+        },
+        "reference_P_writes": 0,
+        "reference_grants": 0,
+        "settled": 24,
+        "versions": {
+          "0": 0,
+          "1": 0
+        }
+      },
+      "episodes": 24,
+      "failed": 0,
+      "native_SPK_BV_semantic": 0,
+      "native_SPK_P_grants": 0,
+      "reference_v1_P_grants": 0,
+      "reference_v1_P_writes": 0,
+      "reference_v1_semantic_receipts": 0,
+      "row_digest": "fc137e1ebf955a718ecf88bba8647920aa4624cc67bcdfe83a28d2ce87b9ea2c",
+      "source_rows_sha256": "f98ee78d49b63fdd1b29e68dc028ffc30628e4041f58c320c604bf6ebda86123",
+      "successes": 0
+    },
+    "source_scheduler_calls": 216,
+    "success_delta": 40
+  },
+  "frozen_BV_sha256": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+  "frozen_PE_sha256": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+  "host_can_forge": true,
+  "limits": [
+    "New semantic feedback is carried by a NEW reference-v1 event bus interpreting frozen BV outputs, not by BV-v0e native packets",
+    "Reference-v1 P grants and writes exist in research runtime code; they are NOT native SPK Memory Contract admission",
+    "Original frozen scheduler executes separate host-composed three-node epochs; no v1 integration into frozen tick loop",
+    "A observations and goals are synthetic, host-authored and non-attested; source provenance cannot survive a privileged hostile host",
+    "Positive performance evidence establishes only closed-loop causality in the controlled simulator, not native or real-world learning",
+    "Host-synthesized source can obtain an internal reference grant without calling the original scheduler; native grant remains zero"
+  ],
+  "native_BV_semantic_deliveries": 0,
+  "native_SPK_P_grants": 0,
+  "native_SPK_P_writes": 0,
+  "native_learning": false,
+  "original_source_pins": 12,
+  "prior_T8_report_sha256": "ee90e32993a4a4a1de83376e155812f32d660c1fd51a8645af09d953c2a47b48",
+  "promotion_allowed": false,
+  "schema": "spk-v5-t8jkl-mno-pqr-reference-v1-semantic-p-execution/research-v0",
+  "status": "V1_REFERENCE_OWNED_SEMANTIC_BUS_AND_P_GRANTS_NOT_NATIVE_SPK"
+}

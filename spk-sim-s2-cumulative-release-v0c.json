@@ -1,0 +1,143 @@
+{
+  "BV_verdict_proven": false,
+  "P_state_mutated": false,
+  "architecture_promotion_allowed": false,
+  "case_count": 7,
+  "cases": [
+    {
+      "all_frame_sha256_verified": true,
+      "frame_count": 8,
+      "native_original_observer": true,
+      "native_receipt_sha256": "9ea4b1f8f638853b3ade6a9b1e18373d4bdfe48fdc30f893fd7f66e1e8b52adc",
+      "observed_record_count": 24,
+      "observed_trace_sha256": "ba675758dc68cd14117f62e5b738967aab219630fe14b0e26e8686667c128152",
+      "presentation_only": true,
+      "run_identity_sha256": "3397ac76c2081b38d86512abfe0631e120753c9e4dcd7a3d4db9319042e667fb",
+      "scenario": "chain8"
+    },
+    {
+      "all_frame_sha256_verified": true,
+      "frame_count": 2,
+      "native_original_observer": true,
+      "native_receipt_sha256": "2124a7154ade3e3af291c2222ceecf1378ff1e22e471146af23bdc527d252904",
+      "observed_record_count": 24,
+      "observed_trace_sha256": "334ba28a6f097ffae6fadd8bd6a992a3568baae5ef47519d60dc8d0ce4e3fd7f",
+      "presentation_only": true,
+      "run_identity_sha256": "93be6900ea0287d7187da0f6ead0eff05638eebdd5de1dd314cfe1252cbb44fb",
+      "scenario": "fanin8"
+    },
+    {
+      "all_frame_sha256_verified": true,
+      "frame_count": 8,
+      "native_original_observer": true,
+      "native_receipt_sha256": "a00495dbd09469d8618f79d363b535e5eb5f9a4d07f3681c1d079da69a98f734",
+      "observed_record_count": 25,
+      "observed_trace_sha256": "1442ec79df740f7b9b0a18231fdcdbc32e9eebd1abd8da43065eda2cbd7d8d55",
+      "presentation_only": true,
+      "run_identity_sha256": "c25fe4de858b5c886aad0b2792c83af82de6ac58237b9b7392ef4a87dc2af324",
+      "scenario": "parallel8"
+    },
+    {
+      "all_frame_sha256_verified": true,
+      "frame_count": 8,
+      "native_original_observer": true,
+      "native_receipt_sha256": "72a3071ddf0dd15db5f45dd28d862e81885c514ff9ea9f22cbf6fa0f1cba3d4d",
+      "observed_record_count": 24,
+      "observed_trace_sha256": "bca76053e474ec9f1682ba6e19242db3f59e6a8d3b40621028d4beaea5be045a",
+      "presentation_only": true,
+      "run_identity_sha256": "a4ac4e8573babc5c9f3e8767f762904b3ffc1cd0f10323b053a5eac36f81e8d5",
+      "scenario": "m4_chain8"
+    },
+    {
+      "all_frame_sha256_verified": true,
+      "frame_count": 0,
+      "native_original_observer": true,
+      "native_receipt_sha256": "73f92f63d1c2e893d996c0fa6c47a2212a55119ba02c2a27d29df6698274f92e",
+      "observed_record_count": 0,
+      "observed_trace_sha256": "3f299ab60d3115074d48c6de47837dff29f0d98d7e4a3ec5616b347f1de5ce8f",
+      "presentation_only": true,
+      "run_identity_sha256": "c8fb65693978f73271b8599116b068905acb140669e690dfc9e258f60ca3f27a",
+      "scenario": "zero64"
+    },
+    {
+      "all_frame_sha256_verified": true,
+      "frame_count": 1,
+      "native_original_observer": true,
+      "native_receipt_sha256": "6eb957bcdee884583164e95314d60e7e4e88fa716c9c85e290c19ba8223c95aa",
+      "observed_record_count": 3,
+      "observed_trace_sha256": "f884187e2b10798dd52501e0e8375d9f71acd2162fcf91ea1f7c0cb79cd1f30c",
+      "presentation_only": true,
+      "run_identity_sha256": "300aa52fd40fb06bc684e9a6609c2432a46a785f00dde4ec74c12ab42e99f193",
+      "scenario": "isolated64"
+    },
+    {
+      "all_frame_sha256_verified": true,
+      "frame_count": 64,
+      "native_original_observer": true,
+      "native_receipt_sha256": "a1516337e256caf961aa6a6848fa93ee38d072a36ce9c04b764543819edbd01e",
+      "observed_record_count": 192,
+      "observed_trace_sha256": "f3d8bb6c45faac066b91ea108ea401f0ea02a0041a2edc7fb6c530c3d733d956",
+      "presentation_only": true,
+      "run_identity_sha256": "fc5162b80bb0e814f2a730ff13ac47873b4e96c116843f79a356f89de98dcd07",
+      "scenario": "chain64"
+    }
+  ],
+  "engineering_gate": "PASS_S2_COMPLETE",
+  "f1_automatically_authorized": false,
+  "f1_entry_s2_engineering_prerequisite_met": true,
+  "fresh_original_native_report_sha256": "be28a6b2c6bd3001a0c587ae986fddf8d138ffb80df6cc11050acc9a07f436da",
+  "fresh_presentation_index_sha256": "ccf41e541c88d2906df0c9f7784ca2c0e224447e33f618436526f7bca63ab0ae",
+  "frozen_s1_original_compiler_reused": true,
+  "grant_authorized": false,
+  "gui_may_publish_evidence": false,
+  "gui_may_supply_runtime_input": false,
+  "gui_read_only_verified_by_pinned_parent_guard": true,
+  "independent_BV_trials": 0,
+  "limitations": [
+    "S2 release demonstrates faithful native reexecution plus observed trace and read-only presentation index; GUI does not reexecute the runtime.",
+    "Only observed native receipt streams are attested. Ticks group records; no global cross-stream order is attested.",
+    "Per-tick complete neuron states, pending queue occupancy and unobserved topology edges remain unavailable.",
+    "Viewer graph depicts observed routes only; route delivery timestamps are not proof of target batch consumption.",
+    "Run equality is deterministic replay, not independent BV trials.",
+    "No wall-clock performance, power, hardware Thread, external datasets, C1d authority, P writes, or BV learning claims.",
+    "F1 eligibility follows S2 only at the roadmap engineering dependency level; it is not installation/deployment authorization."
+  ],
+  "native_reexecution_equals_attested_s2a_byte_exact": true,
+  "no_performance_or_dataset_metrics": true,
+  "original_native_reexecuted_for_release": true,
+  "parent_sha256": {
+    "S1C": "fd474c55350a6a1b81209443c21655b45bdcdc5ea751a491d4629c348639e84f",
+    "S2A": "be28a6b2c6bd3001a0c587ae986fddf8d138ffb80df6cc11050acc9a07f436da",
+    "S2B": "ccf41e541c88d2906df0c9f7784ca2c0e224447e33f618436526f7bca63ab0ae"
+  },
+  "presentation_index_regenerated_from_attested_s2a_byte_exact": true,
+  "research_only": true,
+  "s2_phase_complete": true,
+  "schema": "spk-sim-s2-cumulative-engineering-release/v0c",
+  "scientific_authority": "HOLD",
+  "source_order": "PER_STREAM_SOURCE_POSITION_ONLY_NOT_GLOBAL_CROSS_STREAM_ORDER",
+  "status": "SPK_SIM_S2_ENGINEERING_RELEASE_PASS_SCIENTIFIC_AUTHORITY_HOLD",
+  "trace_budget_records_per_scenario": 2048,
+  "trace_field_origin": {
+    "batches": "observed",
+    "cross_stream_total_order": "not_available",
+    "emissions": "observed",
+    "pending_queue_occupancy": "not_available",
+    "per_tick_node_states": "not_available",
+    "routes_by_emission": "observed",
+    "terminal_outputs": "observed",
+    "tick": "derived"
+  },
+  "trace_truncation_permitted": false,
+  "unavailable_fields": [
+    "cross_stream_total_order",
+    "pending_queue_occupancy",
+    "per_tick_node_states"
+  ],
+  "viewer_source_sha256": {
+    "viewer/spk-sim-s2b-viewer-v0b.css": "9a3de6b30b44c5d7e7c7d2c36d582da2d9190d1e7843689e833f7354fd4de805",
+    "viewer/spk-sim-s2b-viewer-v0b.html": "0c1012d203a248aaf33675867e3ec6af97b8c05a0f9187e9bb1a66014570656e",
+    "viewer/spk-sim-s2b-viewer-v0b.js": "97aeeeea07f3e9826cb39668aca04e15d59f3a37dde845bc938d1642e17133e9"
+  },
+  "visual_replay_only": true
+}

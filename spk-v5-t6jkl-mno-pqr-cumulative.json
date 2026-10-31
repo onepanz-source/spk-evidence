@@ -1,0 +1,97 @@
+{
+  "A_sensor_authenticated": false,
+  "C_source_authenticated": false,
+  "D_sensor_authenticated": false,
+  "T6JKL": {
+    "PE_compute_used_at": [
+      "C",
+      "B",
+      "A",
+      "D",
+      "A-return",
+      "D-return",
+      "B-return",
+      "C-return"
+    ],
+    "control_joint_successes": 48,
+    "control_rows_sha256": "70c95624f17cece89771f558313c9f2f2ce98bad7ff327c44e65880e3d8fc0e5",
+    "full_frozen_BV_scheduler_used": false,
+    "matched_task_cues_and_goals": true,
+    "per_phase_trained_successes": [
+      20,
+      20,
+      20,
+      20
+    ],
+    "phases": 4,
+    "policy_updates": 8,
+    "receiver_nodes": 2,
+    "trained_joint_successes": 80,
+    "trained_rows_sha256": "3c6aa50abaa37fadf25dbe57ec92d122834a8224eed1b6c3c92bb9f2a06933ff",
+    "trained_success_delta": 32,
+    "trained_transcripts_sha256": "bff99bfc43b8aac5857dde246e1bb4f9ba79fe1e7bf9a6f4ae256d6de2040036",
+    "trials": 96
+  },
+  "T6MNO": {
+    "bounded_loss_control_successes": 48,
+    "bounded_loss_dropped_votes": 27,
+    "bounded_loss_successes": 80,
+    "bounded_loss_updates": 8,
+    "jitter_control_successes": 48,
+    "jitter_seeds_0_through_9_joint_successes": [
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80
+    ],
+    "jitter_successes": 80,
+    "judgments_accepted": 88,
+    "nonfinalized_pending_decisions_closed": 8,
+    "reverse_order_successes": 80,
+    "stale_policy_messages_rejected": 8
+  },
+  "T6PQR": {
+    "conflict_scenario_joint_successes": 40,
+    "conflict_scenario_updates": 4,
+    "conflicting_goal_contexts": [
+      0
+    ],
+    "conflicting_receiver_judgments": 48,
+    "native_source_authentication": false,
+    "no_feedback_joint_successes": 48,
+    "no_feedback_updates": 0,
+    "overconstrained_budget_joint_successes": 44,
+    "overconstrained_budget_policy_updates": 2,
+    "privileged_host_false_negative_pair_destabilized_C": true,
+    "privileged_host_false_positive_pair_accepted": true,
+    "privileged_host_impersonated_D_accepted": true
+  },
+  "ancestry_replayed_byte_exact": true,
+  "frozen_BV_sha256": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+  "frozen_PE_sha256": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+  "full_native_BV_scheduler_used": false,
+  "host_can_forge": true,
+  "limits": [
+    "Model-only two-receiver synthetic goals, not independently sensed physical outcomes",
+    "Frozen _compute_local used for PE steps; network topology, delay and goal changes are host-authored research code",
+    "Four predefined phase regimes with three switches are model-only, not unseen tasks or real-world generalization",
+    "Two logical receiver names do not authenticate either receiver against privileged host impersonation",
+    "Equal-vote quorum can abstain on conflict but privileged host can impersonate both A and D",
+    "Dropout and feedback budget can prevent adaptation or make it worse than fixed control",
+    "No native BV scheduler, source-authenticated measurement, native policy update or native learning"
+  ],
+  "native_BV_credit": 0,
+  "native_C_policy_modified": false,
+  "native_learning": false,
+  "original_source_pins": 12,
+  "promotion_allowed": false,
+  "schema": "spk-v5-t6jkl-mno-pqr-async-multireceiver-plasticity/research-v0",
+  "source_T6ABC_DEF_GHI_sha256": "21ee3b772801d2b3618022ffd9a1ff715231765e181ce8025dbc2518ce1e0e14",
+  "status": "MULTI_RECEIVER_ASYNC_MODEL_PLASTICITY_ONLY"
+}

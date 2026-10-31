@@ -1,0 +1,203 @@
+{
+  "T9JKL": {
+    "historical_evidence_ledger": {
+      "P_grants": 0,
+      "historical_records": 4,
+      "rows_digest": "0456d73c7817ba8d2b26ceb4d82a9f37a84bcfbe15b5056effd090b9ac858ccf",
+      "tip": "391dcaa092f53160a3250ed0fda7bbcfc9052ab2d27e2c88e4d2e3d08a0c0364"
+    },
+    "historical_feedback_P_grants": 0,
+    "historical_veto_receipts": 4,
+    "old_policy_evidence_remains_observable": true,
+    "source_event_chain_audited": true
+  },
+  "T9MNO": {
+    "affinity_avoided_stale_vetoes": 4,
+    "affinity_success_delta": 4,
+    "context_affinity": {
+      "P_grants": 8,
+      "P_writes": 8,
+      "capacity_limit": 3,
+      "core_rows_digest": "5d1c4ac4203d65fe6488e68c59bafb76a8109f1ac3163dbddb84201681d6c618",
+      "dispatcher_slots": 480,
+      "episodes": 96,
+      "historical_evidence": {
+        "P_grants": 0,
+        "historical_records": 0,
+        "rows_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "tip": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "max_inflight_admitted": 2,
+      "native_SPK_P_grants": 0,
+      "native_learning": false,
+      "reopen_each_wave": false,
+      "rows_digest": "ad943251ad2e198a04382aa46638982b55832cd9eff559d4743a9465bcb4f6c9",
+      "stale_vetoes": 0,
+      "strategy": "context_affinity",
+      "successes": 88,
+      "wave_sizes_digest": "458379e2c20d2a3bf26aa9b93a669e0f77dc9faecd3b30227a825e7e8fd178fd",
+      "waves": 48
+    },
+    "effective_max_inflight_affinity": 2,
+    "extra_admission_waves_for_affinity": 16,
+    "fixed_control": {
+      "P_grants": 0,
+      "P_writes": 0,
+      "capacity_limit": 3,
+      "core_rows_digest": "e75ca28a3e70e34604e5d06dd5f7dcfc0fb39481e4befa6bafe0aedbf25f6a1e",
+      "dispatcher_slots": 480,
+      "episodes": 96,
+      "historical_evidence": {
+        "P_grants": 0,
+        "historical_records": 0,
+        "rows_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "tip": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "max_inflight_admitted": 3,
+      "native_SPK_P_grants": 0,
+      "native_learning": false,
+      "reopen_each_wave": false,
+      "rows_digest": "2a1899283bfb21d2b9a03eace7b3203b5fb32b5387746805276143ac52947290",
+      "stale_vetoes": 0,
+      "strategy": "batch3",
+      "successes": 48,
+      "wave_sizes_digest": "dff6854aaee8e2750115bfbefa663887c709422f1e280555fa058d1d802aaf0c",
+      "waves": 32
+    },
+    "naive_three_inflight": {
+      "P_grants": 8,
+      "P_writes": 8,
+      "capacity_limit": 3,
+      "core_rows_digest": "1b79538cf3e73f2aac32e34001a1bf5cb7504fd9c4c29f147c023d86561516d6",
+      "dispatcher_slots": 480,
+      "episodes": 96,
+      "historical_evidence": {
+        "P_grants": 0,
+        "historical_records": 4,
+        "rows_digest": "0456d73c7817ba8d2b26ceb4d82a9f37a84bcfbe15b5056effd090b9ac858ccf",
+        "tip": "391dcaa092f53160a3250ed0fda7bbcfc9052ab2d27e2c88e4d2e3d08a0c0364"
+      },
+      "max_inflight_admitted": 3,
+      "native_SPK_P_grants": 0,
+      "native_learning": false,
+      "reopen_each_wave": false,
+      "rows_digest": "805eb2e92085a1822316ff0367f562c25db53e0b24e11ae4f7b2a8e1514dad0f",
+      "stale_vetoes": 4,
+      "strategy": "batch3",
+      "successes": 84,
+      "wave_sizes_digest": "dff6854aaee8e2750115bfbefa663887c709422f1e280555fa058d1d802aaf0c",
+      "waves": 32
+    },
+    "physical_latency_or_energy_measured": false,
+    "same_task_sequence": true,
+    "serial": {
+      "P_grants": 8,
+      "P_writes": 8,
+      "capacity_limit": 3,
+      "core_rows_digest": "5d1c4ac4203d65fe6488e68c59bafb76a8109f1ac3163dbddb84201681d6c618",
+      "dispatcher_slots": 480,
+      "episodes": 96,
+      "historical_evidence": {
+        "P_grants": 0,
+        "historical_records": 0,
+        "rows_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "tip": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "max_inflight_admitted": 1,
+      "native_SPK_P_grants": 0,
+      "native_learning": false,
+      "reopen_each_wave": false,
+      "rows_digest": "ad943251ad2e198a04382aa46638982b55832cd9eff559d4743a9465bcb4f6c9",
+      "stale_vetoes": 0,
+      "strategy": "serial",
+      "successes": 88,
+      "wave_sizes_digest": "ea279df0d8241b59588c917623324a2390cfd698835f42954029d97af6118d07",
+      "waves": 96
+    }
+  },
+  "T9PQR": {
+    "causal_attribution_of_stale_verdict_to_current_P": false,
+    "credit_reinterpretation_permitted": false,
+    "restarted_affinity": {
+      "P_grants": 8,
+      "P_writes": 8,
+      "capacity_limit": 3,
+      "core_rows_digest": "5d1c4ac4203d65fe6488e68c59bafb76a8109f1ac3163dbddb84201681d6c618",
+      "dispatcher_slots": 480,
+      "episodes": 96,
+      "historical_evidence": {
+        "P_grants": 0,
+        "historical_records": 0,
+        "rows_digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "tip": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "max_inflight_admitted": 2,
+      "native_SPK_P_grants": 0,
+      "native_learning": false,
+      "reopen_each_wave": true,
+      "rows_digest": "ad943251ad2e198a04382aa46638982b55832cd9eff559d4743a9465bcb4f6c9",
+      "stale_vetoes": 0,
+      "strategy": "context_affinity",
+      "successes": 88,
+      "wave_sizes_digest": "458379e2c20d2a3bf26aa9b93a669e0f77dc9faecd3b30227a825e7e8fd178fd",
+      "waves": 48
+    },
+    "restarted_naive": {
+      "P_grants": 8,
+      "P_writes": 8,
+      "capacity_limit": 3,
+      "core_rows_digest": "1b79538cf3e73f2aac32e34001a1bf5cb7504fd9c4c29f147c023d86561516d6",
+      "dispatcher_slots": 480,
+      "episodes": 96,
+      "historical_evidence": {
+        "P_grants": 0,
+        "historical_records": 4,
+        "rows_digest": "0456d73c7817ba8d2b26ceb4d82a9f37a84bcfbe15b5056effd090b9ac858ccf",
+        "tip": "391dcaa092f53160a3250ed0fda7bbcfc9052ab2d27e2c88e4d2e3d08a0c0364"
+      },
+      "max_inflight_admitted": 3,
+      "native_SPK_P_grants": 0,
+      "native_learning": false,
+      "reopen_each_wave": true,
+      "rows_digest": "805eb2e92085a1822316ff0367f562c25db53e0b24e11ae4f7b2a8e1514dad0f",
+      "stale_vetoes": 4,
+      "strategy": "batch3",
+      "successes": 84,
+      "wave_sizes_digest": "dff6854aaee8e2750115bfbefa663887c709422f1e280555fa058d1d802aaf0c",
+      "waves": 32
+    },
+    "source_host_can_reseal": true,
+    "stale_credit_harm_counterexample": {
+      "correct_A_PE_verdict": "IMPROVED",
+      "correct_C_action": 11,
+      "historical_reopen_and_replay_denial": true,
+      "native_SPK_P_writes": 0,
+      "one_reference_grant": 1,
+      "one_stale_observed_without_credit": true,
+      "two_concurrent_same_version_receipts": 2,
+      "unsafe_A_PE_verdict": "WORSENED",
+      "unsafe_hypothetical_recredit_action": 12
+    }
+  },
+  "frozen_BV_sha256": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+  "frozen_PE_sha256": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+  "host_can_forge": true,
+  "limits": [
+    "Stale feedback stays observational: never authorized for a different P version",
+    "Context-affinity reduces overlap by admitting at most one in-flight decision per cue, max two in this two-cue workload",
+    "Admission waves are scheduling batches, not wall time, physical cycles or throughput on a deployed PE",
+    "The original PE _compute_local is used by the reference runtime; original frozen BV-v0e remains untouched",
+    "The fixed goals and episode sequence are host authored; there is no generalization to new tasks or sensors",
+    "Observer hashes, P ledgers, and synthetic source can be forged/resealed by a privileged host",
+    "No original SPK Memory Contract grant, native semantic BV, or native learning"
+  ],
+  "native_BV_semantic_deliveries": 0,
+  "native_SPK_P_grants": 0,
+  "native_learning": false,
+  "new_frozen_scheduler_calls": 0,
+  "original_source_pins": 12,
+  "promotion_allowed": false,
+  "schema": "spk-v5-t9jkl-mno-pqr-historical-credit-frontier/research-v0",
+  "source_T9_SHA256": "3e664630227170e105aa945f550518a442ac8ee08086ee13ff721163527b8b92",
+  "status": "HISTORICAL_STALE_CREDIT_QUARANTINE_AND_CONTEXT_AWARE_ADMISSION_RESEARCH_ONLY"
+}

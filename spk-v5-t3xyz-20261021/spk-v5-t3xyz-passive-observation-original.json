@@ -1,0 +1,145 @@
+{
+  "C_verdict_table": {
+    "cases": 180,
+    "counts": {
+      "REJECT_NO_UPDATE": 138,
+      "SHADOW_SOURCE_REPLAY_ELIGIBLE": 42
+    },
+    "negative_verdicts": 36,
+    "positive_verdicts": 36,
+    "rows_sha256": "6478d63c4fd983e5a3089f01590ee9d1c9e9fcd749c57b33bd06a8f07bd73071",
+    "total_charged_native_source_grants": 144
+  },
+  "claims_excluded": [
+    "dual BV-v0e source invocations per episode, not single native BV semantic channel",
+    "source v0e ancestry follows C terminal mirror; original T3h routed verdict is a separate A1b channel",
+    "terminal mirror/close-tick alignment are research program changes, not frozen Architecture changes",
+    "host selects terminal observer after reading both passes: no native dynamic sign routing",
+    "A1b source PE link timing is not the T3i host inter-episode delay",
+    "C CO2 sensor threshold is host-prepared, not authenticated",
+    "hash chain is not a signature, no hardware attestation",
+    "registry is mutable Python and not a secure native learning primitive",
+    "no blind independent goal-label evidence or independent policy usefulness claim"
+  ],
+  "online_replay_runs": [
+    {
+      "episode_digest": "c8a246100ddd46ede10a5ee9d2f5b09418654c757e95dfb6b79f109cd175fc01",
+      "observations": {
+        "C_proxy_correct": 104,
+        "decisions": 120,
+        "source_admitted": 120
+      },
+      "registry": {
+        "discards": 0,
+        "head": "c1f78fd2e51002633e7c07d6ac4c0509383b3fbd3ce5fd8f3dfb6bff53f85940",
+        "pending": 0,
+        "source_rejected": 0,
+        "updates": 120,
+        "weights_sha256": "2f5d660d13457653676ccbf6f2d3a0e5c51277148d29af4670ad83e76b3c0c50"
+      },
+      "seed": 11,
+      "steps": 120,
+      "stress": false
+    },
+    {
+      "episode_digest": "0e1e45bb675cb8a469151caab54fe2cfeb16d844358277eafcd8cfc5bafd3ca9",
+      "observations": {
+        "C_proxy_correct": 98,
+        "decisions": 120,
+        "source_admitted": 86
+      },
+      "registry": {
+        "discards": 5,
+        "head": "843c404e278942abd5acf6aca9abaaa6acd5ad84b82b66f03a240bc9983f5c41",
+        "pending": 0,
+        "source_rejected": 29,
+        "updates": 86,
+        "weights_sha256": "59959e308d9f7e7e1ee0368094137a21d67cf194fd8226d00fb7efead639477d"
+      },
+      "seed": 11,
+      "steps": 120,
+      "stress": true
+    },
+    {
+      "episode_digest": "48e2d2548a739a9ea24dd3148324f8ec19c8bd314899db2c9c5363522e7e0866",
+      "observations": {
+        "C_proxy_correct": 102,
+        "decisions": 120,
+        "source_admitted": 120
+      },
+      "registry": {
+        "discards": 0,
+        "head": "9d21d14d7afe6d2fb6e44db7bbc812875f0e26d616e3d88967bae972381c96d9",
+        "pending": 0,
+        "source_rejected": 0,
+        "updates": 120,
+        "weights_sha256": "c8a0287e3285cef1116f674b33e4dca298d73d53b1d5fc56949cb9a9d0a76f7e"
+      },
+      "seed": 29,
+      "steps": 120,
+      "stress": false
+    },
+    {
+      "episode_digest": "dfbf03c54b832d96ac114e1149522a2e402a17a2c24edc572d615cbcd29e0a54",
+      "observations": {
+        "C_proxy_correct": 100,
+        "decisions": 120,
+        "source_admitted": 85
+      },
+      "registry": {
+        "discards": 4,
+        "head": "0b1b52b85c20faabe17dcb0de935b332a6fa009a384b046fa56400b6d9b644c7",
+        "pending": 0,
+        "source_rejected": 31,
+        "updates": 85,
+        "weights_sha256": "0903b2abd098ecd72b9f4784404566ceb792e9d20ef7458dbbde43e42992f0e4"
+      },
+      "seed": 29,
+      "steps": 120,
+      "stress": true
+    },
+    {
+      "episode_digest": "3ba837906ff84c9b82cb350a5f108f319eba49fd88a238ac5d59bdbfafc554b7",
+      "observations": {
+        "C_proxy_correct": 104,
+        "decisions": 120,
+        "source_admitted": 120
+      },
+      "registry": {
+        "discards": 0,
+        "head": "d833a91c55dc0547459611dde4777104a8d96cae82b8f6cb90a7134343f769c2",
+        "pending": 0,
+        "source_rejected": 0,
+        "updates": 120,
+        "weights_sha256": "8892b57e2c5de4563e8efc2eea1e80aae17c3c112f320132f7463b444174c834"
+      },
+      "seed": 47,
+      "steps": 120,
+      "stress": false
+    },
+    {
+      "episode_digest": "e57023f6c9cbe3b56c8a1d4f718e43e7e0ea0b3651e61d1ee32c906f3896e852",
+      "observations": {
+        "C_proxy_correct": 106,
+        "decisions": 120,
+        "source_admitted": 86
+      },
+      "registry": {
+        "discards": 3,
+        "head": "b6d8761c6b82a92cfb1a481536ed4fc59ab094e64c0193482b71fa4719cf88de",
+        "pending": 0,
+        "source_rejected": 31,
+        "updates": 86,
+        "weights_sha256": "ca0b15392ebb519f233bcfa778245659113c0703004eb3bd31611ca3283c4193"
+      },
+      "seed": 47,
+      "steps": 120,
+      "stress": true
+    }
+  ],
+  "schema": "spk-v5-t3opq-source-custody-and-shared-resource-dual-replay/research-v0",
+  "status": "SOURCE_BV_V0E_DUAL_VERDICT_LINEAGE_WITH_SHADOW_LEARNING",
+  "total_credited_updates": 617,
+  "total_online_episodes": 720,
+  "total_source_admitted": 617
+}

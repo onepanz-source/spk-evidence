@@ -1,0 +1,237 @@
+{
+  "T10JKL": {
+    "frozen_originals_unchanged": true,
+    "manifest_mode_execute_and_exact_C_P_scope": true,
+    "original_memory_contract_source_loaded": false,
+    "typed_reference_manifest": {
+      "cue0_ceiling": 4,
+      "cue1_ceiling": 4,
+      "domain": "P",
+      "grant_ceiling": 8,
+      "mode": "execute",
+      "owner": "C",
+      "pe_id": "PE-C-RESEARCH",
+      "revision": 0
+    }
+  },
+  "T10MNO": {
+    "actual_C_receipt_tick_P_write_resource_gated": true,
+    "native_SPK_grants": 0,
+    "reference_success_delta_affinity_vs_naive": 4,
+    "resource_counted_from_same_transaction_p_grant": true,
+    "scenarios": {
+      "context_affinity": {
+        "dispatch_slots": 480,
+        "episodes": 96,
+        "max_active": 2,
+        "native_SPK_grants": 0,
+        "native_learning": false,
+        "reference_P_writes": 8,
+        "reference_grants": 8,
+        "reopened_each_wave": false,
+        "resource": {
+          "manifest": {
+            "cue0_ceiling": 4,
+            "cue1_ceiling": 4,
+            "domain": "P",
+            "grant_ceiling": 8,
+            "mode": "execute",
+            "owner": "C",
+            "pe_id": "PE-C-RESEARCH",
+            "revision": 0
+          },
+          "native_SPK_admission": "DENIED_NO_NATIVE_MEMORY_CONTRACT_PORT",
+          "native_SPK_memory_grants": 0,
+          "per_context_consumed": {
+            "0": 4,
+            "1": 4
+          },
+          "provider_receipts_sha256": "f27aa3d20cca0e9957bf588a70d05eabbf4245b5e625285a6a609c7ce333242a",
+          "reference_resource_digest": "1a70bdcdb828d4cdf012439334f3a445bbd77064e9d4c6e1cdce5a309101809e",
+          "total_consumed": 8
+        },
+        "source_rows_sha256": "46317e020c129c63db1a1a937f0bde7a3ef6c0b20fd8dbea9642b2da664fb062",
+        "stale_vetoes": 0,
+        "successes": 88,
+        "waves": 48
+      },
+      "fixed_control": {
+        "dispatch_slots": 480,
+        "episodes": 96,
+        "max_active": 3,
+        "native_SPK_grants": 0,
+        "native_learning": false,
+        "reference_P_writes": 0,
+        "reference_grants": 0,
+        "reopened_each_wave": false,
+        "resource": {
+          "manifest": {
+            "cue0_ceiling": 4,
+            "cue1_ceiling": 4,
+            "domain": "P",
+            "grant_ceiling": 8,
+            "mode": "execute",
+            "owner": "C",
+            "pe_id": "PE-C-RESEARCH",
+            "revision": 0
+          },
+          "native_SPK_admission": "DENIED_NO_NATIVE_MEMORY_CONTRACT_PORT",
+          "native_SPK_memory_grants": 0,
+          "per_context_consumed": {
+            "0": 0,
+            "1": 0
+          },
+          "provider_receipts_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "reference_resource_digest": "21d68b7d49d97a0cac15b0648bcab02874ef7a4811d262b6109990c2bd5a8174",
+          "total_consumed": 0
+        },
+        "source_rows_sha256": "379ef5f29131cd19418aaa1be7bc198d294f14702fd2fa176ca2b0d5d6bf71c3",
+        "stale_vetoes": 0,
+        "successes": 48,
+        "waves": 32
+      },
+      "naive_three": {
+        "dispatch_slots": 480,
+        "episodes": 96,
+        "max_active": 3,
+        "native_SPK_grants": 0,
+        "native_learning": false,
+        "reference_P_writes": 8,
+        "reference_grants": 8,
+        "reopened_each_wave": false,
+        "resource": {
+          "manifest": {
+            "cue0_ceiling": 4,
+            "cue1_ceiling": 4,
+            "domain": "P",
+            "grant_ceiling": 8,
+            "mode": "execute",
+            "owner": "C",
+            "pe_id": "PE-C-RESEARCH",
+            "revision": 0
+          },
+          "native_SPK_admission": "DENIED_NO_NATIVE_MEMORY_CONTRACT_PORT",
+          "native_SPK_memory_grants": 0,
+          "per_context_consumed": {
+            "0": 4,
+            "1": 4
+          },
+          "provider_receipts_sha256": "a964e2774569ad0efdcb818bf857e3758475faa77dcfa6987b7d26e2032176e1",
+          "reference_resource_digest": "1a70bdcdb828d4cdf012439334f3a445bbd77064e9d4c6e1cdce5a309101809e",
+          "total_consumed": 8
+        },
+        "source_rows_sha256": "1ac5be032f677a88fb6addf30aaf219681889e3d56bc40c3f84df6dd520cf5ab",
+        "stale_vetoes": 4,
+        "successes": 84,
+        "waves": 32
+      },
+      "restarted_affinity": {
+        "dispatch_slots": 480,
+        "episodes": 96,
+        "max_active": 2,
+        "native_SPK_grants": 0,
+        "native_learning": false,
+        "reference_P_writes": 8,
+        "reference_grants": 8,
+        "reopened_each_wave": true,
+        "resource": {
+          "manifest": {
+            "cue0_ceiling": 4,
+            "cue1_ceiling": 4,
+            "domain": "P",
+            "grant_ceiling": 8,
+            "mode": "execute",
+            "owner": "C",
+            "pe_id": "PE-C-RESEARCH",
+            "revision": 0
+          },
+          "native_SPK_admission": "DENIED_NO_NATIVE_MEMORY_CONTRACT_PORT",
+          "native_SPK_memory_grants": 0,
+          "per_context_consumed": {
+            "0": 4,
+            "1": 4
+          },
+          "provider_receipts_sha256": "f27aa3d20cca0e9957bf588a70d05eabbf4245b5e625285a6a609c7ce333242a",
+          "reference_resource_digest": "1a70bdcdb828d4cdf012439334f3a445bbd77064e9d4c6e1cdce5a309101809e",
+          "total_consumed": 8
+        },
+        "source_rows_sha256": "46317e020c129c63db1a1a937f0bde7a3ef6c0b20fd8dbea9642b2da664fb062",
+        "stale_vetoes": 0,
+        "successes": 88,
+        "waves": 48
+      },
+      "serial": {
+        "dispatch_slots": 480,
+        "episodes": 96,
+        "max_active": 1,
+        "native_SPK_grants": 0,
+        "native_learning": false,
+        "reference_P_writes": 8,
+        "reference_grants": 8,
+        "reopened_each_wave": false,
+        "resource": {
+          "manifest": {
+            "cue0_ceiling": 4,
+            "cue1_ceiling": 4,
+            "domain": "P",
+            "grant_ceiling": 8,
+            "mode": "execute",
+            "owner": "C",
+            "pe_id": "PE-C-RESEARCH",
+            "revision": 0
+          },
+          "native_SPK_admission": "DENIED_NO_NATIVE_MEMORY_CONTRACT_PORT",
+          "native_SPK_memory_grants": 0,
+          "per_context_consumed": {
+            "0": 4,
+            "1": 4
+          },
+          "provider_receipts_sha256": "60257f0d9073e797d94256bd95dae7759e95bdd6849ccc311d21c9a79be5225c",
+          "reference_resource_digest": "1a70bdcdb828d4cdf012439334f3a445bbd77064e9d4c6e1cdce5a309101809e",
+          "total_consumed": 8
+        },
+        "source_rows_sha256": "46317e020c129c63db1a1a937f0bde7a3ef6c0b20fd8dbea9642b2da664fb062",
+        "stale_vetoes": 0,
+        "successes": 88,
+        "waves": 96
+      }
+    }
+  },
+  "T10PQR": {
+    "native_seam_status": "DENIED_NO_NATIVE_MEMORY_CONTRACT_PORT",
+    "negative_witness": {
+      "execute_mode_restored_once": true,
+      "global_vs_context_quota_independent": true,
+      "host_can_rewrite_reference_manifest": true,
+      "native_Memory_Contract_unavailable_denied": true,
+      "pending_feedback_survived_restart": true,
+      "quota_expand_CAS_recovered_once": true,
+      "resource_guard_tamper_detected": true,
+      "retrospective_budget_rollback_denied": true,
+      "stale_profile_revision_rejected": true,
+      "verify_mode_denied_P": true,
+      "zero_quota_rollback_grant_and_P": true
+    },
+    "reference_host_remains_privileged": true,
+    "resource_does_not_authenticate_A": true
+  },
+  "frozen_BV_sha256": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+  "frozen_PE_sha256": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+  "host_can_forge": true,
+  "limits": [
+    "Resource profile and quota are implemented in host-owned research SQLite only",
+    "Only C/P execute-mode tick updates are modeled; S/E/O domain budgeting and original Memory Contract provider are not implemented",
+    "A privileged host can rewrite resource, provider, or source observations",
+    "Global/individual quotas are reference limits, not genuine PE memory capacity or physical timing",
+    "The eight reference commits reproduce a synthetic two-context task, without native learning or authenticated input"
+  ],
+  "native_BV_semantic_deliveries": 0,
+  "native_SPK_P_grants": 0,
+  "native_SPK_P_writes": 0,
+  "native_learning": false,
+  "original_source_pins": 12,
+  "promotion_allowed": false,
+  "schema": "spk-v5-t10jkl-mno-pqr-bounded-P-resource-admission/research-v0",
+  "source_T10ABC_DEF_GHI_SHA256": "68285626ba06cc63f108176eb2176d26e6954f349de3ffde0f3d45c4325f1eac",
+  "status": "REFERENCE_V1_RESOURCE_MANIFEST_TICK_ADMISSION_NOT_NATIVE_SPK"
+}

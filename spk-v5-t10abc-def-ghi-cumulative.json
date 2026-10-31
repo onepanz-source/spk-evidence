@@ -1,0 +1,190 @@
+{
+  "T10ABC": {
+    "admission_native_SPK": false,
+    "original_PE_compute_used": true,
+    "provider_called_in_actual_C_semantic_tick_store_write": true,
+    "provider_retains_independent_C_P_version_ledger": true,
+    "provider_veto_enforced_by_sqlite_UDF_trigger": true,
+    "runtime_scheduler_source": "research.spk_v5_t9abc_def_ghi.concurrent_engine_v1"
+  },
+  "T10DEF": {
+    "grant_scope": "C/P/execute/exact-version/single-use",
+    "native_SPK_Memory_Contract_port": "DENIED_NO_NATIVE_MEMORY_CONTRACT_PORT",
+    "outcome_parity_to_T9": true,
+    "provider_v1_authorizations_in_affinity": 8,
+    "reference_provider_scenarios": {
+      "context_affinity": {
+        "core_rows_sha256": "46317e020c129c63db1a1a937f0bde7a3ef6c0b20fd8dbea9642b2da664fb062",
+        "dispatch_slots": 480,
+        "episodes": 96,
+        "max_active": 2,
+        "native_P_grants": 0,
+        "native_P_writes": 0,
+        "provider": {
+          "independent_reference_custody": {
+            "authenticated_A_source": false,
+            "grant_custody_sha256": "8aefbf097719753f65d39a663435f306a3df1804850cf3181b540a48503f693c",
+            "native_SPK_memory_grants": 0,
+            "verified_reference_grants": 8
+          },
+          "native_SPK_Memory_Contract_grants": 0,
+          "provider_origin_authenticated": false,
+          "provider_receipts_sha256": "f27aa3d20cca0e9957bf588a70d05eabbf4245b5e625285a6a609c7ce333242a",
+          "provider_v1_authorizations": 8,
+          "provider_v1_commits": 8
+        },
+        "reference_P_writes": 8,
+        "reference_grants": 8,
+        "reopened_each_wave": false,
+        "stale_vetoes": 0,
+        "successes": 88,
+        "waves": 48
+      },
+      "fixed_control": {
+        "core_rows_sha256": "379ef5f29131cd19418aaa1be7bc198d294f14702fd2fa176ca2b0d5d6bf71c3",
+        "dispatch_slots": 480,
+        "episodes": 96,
+        "max_active": 3,
+        "native_P_grants": 0,
+        "native_P_writes": 0,
+        "provider": {
+          "independent_reference_custody": {
+            "authenticated_A_source": false,
+            "grant_custody_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+            "native_SPK_memory_grants": 0,
+            "verified_reference_grants": 0
+          },
+          "native_SPK_Memory_Contract_grants": 0,
+          "provider_origin_authenticated": false,
+          "provider_receipts_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "provider_v1_authorizations": 0,
+          "provider_v1_commits": 0
+        },
+        "reference_P_writes": 0,
+        "reference_grants": 0,
+        "reopened_each_wave": false,
+        "stale_vetoes": 0,
+        "successes": 48,
+        "waves": 32
+      },
+      "naive_three": {
+        "core_rows_sha256": "1ac5be032f677a88fb6addf30aaf219681889e3d56bc40c3f84df6dd520cf5ab",
+        "dispatch_slots": 480,
+        "episodes": 96,
+        "max_active": 3,
+        "native_P_grants": 0,
+        "native_P_writes": 0,
+        "provider": {
+          "independent_reference_custody": {
+            "authenticated_A_source": false,
+            "grant_custody_sha256": "910992086373e78236bbcac7e0cefb17e0eb60b64bef2dfad632e65c1ba3b62f",
+            "native_SPK_memory_grants": 0,
+            "verified_reference_grants": 8
+          },
+          "native_SPK_Memory_Contract_grants": 0,
+          "provider_origin_authenticated": false,
+          "provider_receipts_sha256": "a964e2774569ad0efdcb818bf857e3758475faa77dcfa6987b7d26e2032176e1",
+          "provider_v1_authorizations": 8,
+          "provider_v1_commits": 8
+        },
+        "reference_P_writes": 8,
+        "reference_grants": 8,
+        "reopened_each_wave": false,
+        "stale_vetoes": 4,
+        "successes": 84,
+        "waves": 32
+      },
+      "restarted_affinity": {
+        "core_rows_sha256": "46317e020c129c63db1a1a937f0bde7a3ef6c0b20fd8dbea9642b2da664fb062",
+        "dispatch_slots": 480,
+        "episodes": 96,
+        "max_active": 2,
+        "native_P_grants": 0,
+        "native_P_writes": 0,
+        "provider": {
+          "independent_reference_custody": {
+            "authenticated_A_source": false,
+            "grant_custody_sha256": "8aefbf097719753f65d39a663435f306a3df1804850cf3181b540a48503f693c",
+            "native_SPK_memory_grants": 0,
+            "verified_reference_grants": 8
+          },
+          "native_SPK_Memory_Contract_grants": 0,
+          "provider_origin_authenticated": false,
+          "provider_receipts_sha256": "f27aa3d20cca0e9957bf588a70d05eabbf4245b5e625285a6a609c7ce333242a",
+          "provider_v1_authorizations": 8,
+          "provider_v1_commits": 8
+        },
+        "reference_P_writes": 8,
+        "reference_grants": 8,
+        "reopened_each_wave": true,
+        "stale_vetoes": 0,
+        "successes": 88,
+        "waves": 48
+      },
+      "serial": {
+        "core_rows_sha256": "46317e020c129c63db1a1a937f0bde7a3ef6c0b20fd8dbea9642b2da664fb062",
+        "dispatch_slots": 480,
+        "episodes": 96,
+        "max_active": 1,
+        "native_P_grants": 0,
+        "native_P_writes": 0,
+        "provider": {
+          "independent_reference_custody": {
+            "authenticated_A_source": false,
+            "grant_custody_sha256": "354f9791ed78c11dca7d5a2bf66d9ecf3f5b67966a6151fe8eb5d3380b42a818",
+            "native_SPK_memory_grants": 0,
+            "verified_reference_grants": 8
+          },
+          "native_SPK_Memory_Contract_grants": 0,
+          "provider_origin_authenticated": false,
+          "provider_receipts_sha256": "60257f0d9073e797d94256bd95dae7759e95bdd6849ccc311d21c9a79be5225c",
+          "provider_v1_authorizations": 8,
+          "provider_v1_commits": 8
+        },
+        "reference_P_writes": 8,
+        "reference_grants": 8,
+        "reopened_each_wave": false,
+        "stale_vetoes": 0,
+        "successes": 88,
+        "waves": 96
+      }
+    }
+  },
+  "T10GHI": {
+    "independent_sender_authentication": false,
+    "negative_witness": {
+      "C_semantic_event_queued_after_denial": true,
+      "direct_P_mutation_rejected": true,
+      "grant_and_P_absent_when_denied": true,
+      "late_C_receipt_observed_without_grant": true,
+      "native_port_denied": true,
+      "privileged_host_can_rewrite_provider_and_database": true,
+      "provider_denial_rollback_atomic": true,
+      "reopen_restored_provider_and_single_commit": true,
+      "replay_and_restart_safe": true,
+      "two_same_version_negative_votes_one_grant": true
+    },
+    "privileged_host_can_forge": true,
+    "reference_only_trust_boundary": true
+  },
+  "frozen_BV_sha256": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+  "frozen_PE_sha256": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+  "host_can_forge": true,
+  "limits": [
+    "Provider is implemented and exercised only in new host-controlled research v1, not frozen SPK Memory Contract",
+    "Actual C receipt tick invokes separate provider via P-store trigger; it cannot grant outside this host context",
+    "Original PE _compute_local executes model semantics; episodes and A goals remain synthetic",
+    "Separate callback and SQLite constraints prevent ordinary unapproved writes, not malicious privileged host modification",
+    "Original SPK memory grant/writes, native semantic BV and native learning remain zero"
+  ],
+  "native_BV_semantic_deliveries": 0,
+  "native_SPK_P_grants": 0,
+  "native_SPK_P_writes": 0,
+  "native_learning": false,
+  "new_frozen_scheduler_calls": 0,
+  "original_source_pins": 12,
+  "promotion_allowed": false,
+  "schema": "spk-v5-t10abc-def-ghi-reference-provider-C-tick-contract/research-v0",
+  "source_T9STU_SHA256": "d4660c5e744a7e43346e72f39018483cbd9bd12474ad0f27196c40d90ffc382d",
+  "status": "REFERENCE_TICK_P_PROVIDER_ADMISSION_NO_NATIVE_MEMORY_ADOPTION"
+}

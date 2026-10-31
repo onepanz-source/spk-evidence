@@ -1,0 +1,22 @@
+[1/8] Frozen source pins from T3a through T3lmn
+All inherited frozen V5 source SHA pins PASS
+[2/8] T3opq own SHA source pins
+Pinned SHA count: 16
+[3/8] Aggregated 421 research unittest cases (60 new + 361 inherited)
+----------------------------------------------------------------------
+Ran 421 tests in 25.496s
+
+OK (skipped=5)
+[4/8] Program/source identity and causal custody covered by aggregated tests
+[5/8] Native-source frozen BV regression retained separately
+[6/8] 46 frozen A1b / BV v0e regressions
+..............................................                           [100%]
+46 passed in 0.47s
+[7/8] Engineered source BV replay byte-exact reference
+V5-T3o/p/q source BV receipt report created: /tmp/spk-v5-t3xyz-passive-observation-original.json
+report_sha256 813753afd706eabff52653cf0a7674e1a44755981df61c6760fcbd4652c790d2
+T3OPQ BV-v0e C TERMINAL MIRROR DUAL SOURCE PASS; NO NATIVE SEMANTIC BV OR RL
+T3OPQ DUAL BV v0e SOURCE REPLAY BYTE-EXACT PASS
+reference_report_sha256 813753afd706eabff52653cf0a7674e1a44755981df61c6760fcbd4652c790d2
+[8/8] Research-only nonpromotion boundary
+T3OPQ BV-v0e SOURCE CAUSAL VERDICT BRIDGE PASS; DUAL REPLAY SHADOW ONLY, NO AUTHENTICATED SENSOR, NATIVE SEMANTIC BV OR RL
