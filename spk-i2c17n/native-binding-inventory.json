@@ -1,0 +1,298 @@
+{
+  "P_writes": 0,
+  "bv_to_p_authorized": false,
+  "limitations": [
+    "AST inspection alone cannot establish callable compatibility or native safety.",
+    "A native commit return does not become atomic with a separate SQLite transaction.",
+    "This tool never imports or executes source archive members."
+  ],
+  "native_owner_integrated": false,
+  "native_successor_installed": false,
+  "records": [
+    {
+      "archive": "/home/ste/Scaricati/SPK_Lab_I2c16_Cold_One_Step_One_Command_20261028.tar.gz",
+      "archive_sha256": "a140fc7688a649155fcde8ad4b7a52bee83ceccce6f7e3e6b15cbbda23439547",
+      "member": "spk_native_learning_v1/lab_i2c16_cold_continuation.py",
+      "member_sha256": "9b08f196c9a8b0f0e95b5c7390033868a531438865ffae75d7d933bf43666e98",
+      "name": "i2c16_frozen_native",
+      "source_bytes": 10349,
+      "static_ast": {
+        "classes": [
+          {
+            "line": 21,
+            "methods": [],
+            "name": "ColdContinuationRejected"
+          }
+        ],
+        "functions": [
+          {
+            "args": [
+              "state"
+            ],
+            "async": false,
+            "line": 24,
+            "name": "_identities"
+          },
+          {
+            "args": [
+              "recovered",
+              "evidence"
+            ],
+            "async": false,
+            "line": 34,
+            "name": "_validate_predecessor"
+          },
+          {
+            "args": [
+              "recovered",
+              "evidence",
+              "namespace"
+            ],
+            "async": false,
+            "line": 49,
+            "name": "one_step_preview"
+          },
+          {
+            "args": [
+              "path",
+              "namespace"
+            ],
+            "async": false,
+            "line": 83,
+            "name": "cold_child"
+          },
+          {
+            "args": [
+              "path",
+              "namespace"
+            ],
+            "async": false,
+            "line": 88,
+            "name": "_child"
+          },
+          {
+            "args": [
+              "path",
+              "namespace",
+              "fanout"
+            ],
+            "async": false,
+            "line": 99,
+            "name": "run_case"
+          },
+          {
+            "args": [
+              "path",
+              "namespace"
+            ],
+            "async": false,
+            "line": 128,
+            "name": "run_uncertain"
+          },
+          {
+            "args": [
+              "parent"
+            ],
+            "async": false,
+            "line": 145,
+            "name": "run_native"
+          },
+          {
+            "args": [],
+            "async": false,
+            "line": 167,
+            "name": "main"
+          }
+        ],
+        "imports": [
+          "__future__:annotations",
+          "argparse",
+          "json",
+          "os",
+          "pathlib:Path",
+          "spk_native_learning_v1.lab_i2c12_emitting_host_v1:EmittingReceiptV1,SCOPE,canonical",
+          "spk_native_learning_v1.lab_i2c13_durable_epoch_registry:OWNER,EpochFenceRejected,_sha",
+          "spk_native_learning_v1.lab_i2c14_audited_checkpoint:witness_from_original,CheckpointRejected",
+          "spk_native_learning_v1.lab_i2c15_native_capsule:DurableNativeCapsuleV1,NativeCapsuleRejected,serialize_capsule,cold_audit,deserialize_capsule",
+          "subprocess",
+          "sys",
+          "tempfile"
+        ],
+        "uppercase_constants": [
+          "PARENT_SHA",
+          "ROOT",
+          "SCHEMA",
+          "STATUS"
+        ]
+      }
+    },
+    {
+      "archive": "/home/ste/Scaricati/SPK_I2c17_Atomic_Successor_v2.tar.gz",
+      "archive_sha256": "f7790e439eaa1d809223dd987ef3ab6e2ed4a680bc04a7d63b3bae64769c433e",
+      "member": "SPK_Lab_I2c17_Atomic_Successor_Research_20261028/spk_i2c17/authority.py",
+      "member_sha256": "42689e7c8669b5c9eb738822725ffc37d34eaa105c4116850ab92152f8e59dfc",
+      "name": "i2c17_sqlite_reference",
+      "source_bytes": 16887,
+      "static_ast": {
+        "classes": [
+          {
+            "line": 20,
+            "methods": [],
+            "name": "AuthorityError"
+          },
+          {
+            "line": 23,
+            "methods": [],
+            "name": "Veto"
+          },
+          {
+            "line": 26,
+            "methods": [],
+            "name": "Conflict"
+          },
+          {
+            "line": 29,
+            "methods": [],
+            "name": "SimulatedCrash"
+          },
+          {
+            "line": 48,
+            "methods": [],
+            "name": "NativeStepProof"
+          },
+          {
+            "line": 68,
+            "methods": [],
+            "name": "InstallIntent"
+          },
+          {
+            "line": 85,
+            "methods": [],
+            "name": "InstallReceipt"
+          },
+          {
+            "line": 98,
+            "methods": [
+              {
+                "args": [
+                  "self",
+                  "db_path"
+                ],
+                "line": 106,
+                "name": "__init__"
+              },
+              {
+                "args": [
+                  "self"
+                ],
+                "line": 140,
+                "name": "_connect"
+              },
+              {
+                "args": [
+                  "blob"
+                ],
+                "line": 149,
+                "name": "_check_blob"
+              },
+              {
+                "args": [
+                  "self",
+                  "namespace",
+                  "capsule",
+                  "tick",
+                  "phase"
+                ],
+                "line": 155,
+                "name": "bootstrap_lab_only"
+              },
+              {
+                "args": [
+                  "self",
+                  "namespace"
+                ],
+                "line": 180,
+                "name": "snapshot"
+              },
+              {
+                "args": [
+                  "self",
+                  "intent",
+                  "trusted_verifier",
+                  "fault"
+                ],
+                "line": 195,
+                "name": "install"
+              },
+              {
+                "args": [
+                  "self",
+                  "namespace",
+                  "operation_id",
+                  "parent_sha256",
+                  "successor_sha256"
+                ],
+                "line": 320,
+                "name": "observe_committed"
+              },
+              {
+                "args": [
+                  "self",
+                  "namespace"
+                ],
+                "line": 354,
+                "name": "count_decisions"
+              }
+            ],
+            "name": "Authority"
+          }
+        ],
+        "functions": [
+          {
+            "args": [
+              "data"
+            ],
+            "async": false,
+            "line": 33,
+            "name": "sha256"
+          },
+          {
+            "args": [
+              "value"
+            ],
+            "async": false,
+            "line": 37,
+            "name": "_check_sha"
+          },
+          {
+            "args": [
+              "value",
+              "name",
+              "maximum"
+            ],
+            "async": false,
+            "line": 42,
+            "name": "_required_text"
+          }
+        ],
+        "imports": [
+          "__future__:annotations",
+          "dataclasses:dataclass",
+          "hashlib",
+          "json",
+          "pathlib:Path",
+          "re",
+          "sqlite3",
+          "typing:Callable,Optional"
+        ],
+        "uppercase_constants": [
+          "HEX64",
+          "_ALLOWED_PHASE"
+        ]
+      }
+    }
+  ],
+  "schema": "spk-lab-i2c17n-static-native-binding-inventory/v1",
+  "source_executed": false,
+  "status": "PINNED_STATIC_NATIVE_BINDING_SURFACES_ONLY_NOT_NATIVE_PASS"
+}

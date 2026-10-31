@@ -1,0 +1,846 @@
+{
+  "A_sensor_authenticated": false,
+  "C_source_authenticated": false,
+  "T6ABC": {
+    "A_B_C_feedback_round_trips_per_trial": 48,
+    "C_B_A_hops_per_trial": 48,
+    "cases": 48,
+    "context_goal_count": 2,
+    "frozen_opcodes_used": [
+      "ACC",
+      "CMP",
+      "EMIT",
+      "RESET"
+    ],
+    "full_frozen_BV_scheduler_used": false,
+    "real_frozen_PE_compute_function_reused": true,
+    "same_task_sequence": true,
+    "source_execution_path": "_compute_local called for C,B,A,A-return,B-return,C-return"
+  },
+  "T6DEF": {
+    "baseline_policy_updates": 0,
+    "baseline_successes": 0,
+    "final_policy": {
+      "0": 11,
+      "1": 12
+    },
+    "first_change_after_feedback": true,
+    "learning_policy_updates": 2,
+    "learning_successes": 46,
+    "learning_trace": [
+      {
+        "A_goal": 5,
+        "A_outcome": "WORSENED",
+        "A_raw": 11,
+        "C_action": 12,
+        "C_feedback_emission": [
+          72
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 11
+        },
+        "C_updated": true,
+        "case": 0,
+        "cue": 0
+      },
+      {
+        "A_goal": 11,
+        "A_outcome": "WORSENED",
+        "A_raw": 5,
+        "C_action": 11,
+        "C_feedback_emission": [
+          72
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": true,
+        "case": 1,
+        "cue": 1
+      },
+      {
+        "A_goal": 5,
+        "A_outcome": "IMPROVED",
+        "A_raw": 5,
+        "C_action": 11,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 2,
+        "cue": 0
+      },
+      {
+        "A_goal": 11,
+        "A_outcome": "IMPROVED",
+        "A_raw": 11,
+        "C_action": 12,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 3,
+        "cue": 1
+      },
+      {
+        "A_goal": 5,
+        "A_outcome": "IMPROVED",
+        "A_raw": 5,
+        "C_action": 11,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 4,
+        "cue": 0
+      },
+      {
+        "A_goal": 11,
+        "A_outcome": "IMPROVED",
+        "A_raw": 11,
+        "C_action": 12,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 5,
+        "cue": 1
+      },
+      {
+        "A_goal": 5,
+        "A_outcome": "IMPROVED",
+        "A_raw": 5,
+        "C_action": 11,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 6,
+        "cue": 0
+      },
+      {
+        "A_goal": 11,
+        "A_outcome": "IMPROVED",
+        "A_raw": 11,
+        "C_action": 12,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 7,
+        "cue": 1
+      },
+      {
+        "A_goal": 5,
+        "A_outcome": "IMPROVED",
+        "A_raw": 5,
+        "C_action": 11,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 8,
+        "cue": 0
+      },
+      {
+        "A_goal": 11,
+        "A_outcome": "IMPROVED",
+        "A_raw": 11,
+        "C_action": 12,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 9,
+        "cue": 1
+      },
+      {
+        "A_goal": 5,
+        "A_outcome": "IMPROVED",
+        "A_raw": 5,
+        "C_action": 11,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 10,
+        "cue": 0
+      },
+      {
+        "A_goal": 11,
+        "A_outcome": "IMPROVED",
+        "A_raw": 11,
+        "C_action": 12,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 11,
+        "cue": 1
+      },
+      {
+        "A_goal": 5,
+        "A_outcome": "IMPROVED",
+        "A_raw": 5,
+        "C_action": 11,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 12,
+        "cue": 0
+      },
+      {
+        "A_goal": 11,
+        "A_outcome": "IMPROVED",
+        "A_raw": 11,
+        "C_action": 12,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 13,
+        "cue": 1
+      },
+      {
+        "A_goal": 5,
+        "A_outcome": "IMPROVED",
+        "A_raw": 5,
+        "C_action": 11,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 14,
+        "cue": 0
+      },
+      {
+        "A_goal": 11,
+        "A_outcome": "IMPROVED",
+        "A_raw": 11,
+        "C_action": 12,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 15,
+        "cue": 1
+      },
+      {
+        "A_goal": 5,
+        "A_outcome": "IMPROVED",
+        "A_raw": 5,
+        "C_action": 11,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 16,
+        "cue": 0
+      },
+      {
+        "A_goal": 11,
+        "A_outcome": "IMPROVED",
+        "A_raw": 11,
+        "C_action": 12,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 17,
+        "cue": 1
+      },
+      {
+        "A_goal": 5,
+        "A_outcome": "IMPROVED",
+        "A_raw": 5,
+        "C_action": 11,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 18,
+        "cue": 0
+      },
+      {
+        "A_goal": 11,
+        "A_outcome": "IMPROVED",
+        "A_raw": 11,
+        "C_action": 12,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 19,
+        "cue": 1
+      },
+      {
+        "A_goal": 5,
+        "A_outcome": "IMPROVED",
+        "A_raw": 5,
+        "C_action": 11,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 20,
+        "cue": 0
+      },
+      {
+        "A_goal": 11,
+        "A_outcome": "IMPROVED",
+        "A_raw": 11,
+        "C_action": 12,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 21,
+        "cue": 1
+      },
+      {
+        "A_goal": 5,
+        "A_outcome": "IMPROVED",
+        "A_raw": 5,
+        "C_action": 11,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 22,
+        "cue": 0
+      },
+      {
+        "A_goal": 11,
+        "A_outcome": "IMPROVED",
+        "A_raw": 11,
+        "C_action": 12,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 23,
+        "cue": 1
+      },
+      {
+        "A_goal": 5,
+        "A_outcome": "IMPROVED",
+        "A_raw": 5,
+        "C_action": 11,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 24,
+        "cue": 0
+      },
+      {
+        "A_goal": 11,
+        "A_outcome": "IMPROVED",
+        "A_raw": 11,
+        "C_action": 12,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 25,
+        "cue": 1
+      },
+      {
+        "A_goal": 5,
+        "A_outcome": "IMPROVED",
+        "A_raw": 5,
+        "C_action": 11,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 26,
+        "cue": 0
+      },
+      {
+        "A_goal": 11,
+        "A_outcome": "IMPROVED",
+        "A_raw": 11,
+        "C_action": 12,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 27,
+        "cue": 1
+      },
+      {
+        "A_goal": 5,
+        "A_outcome": "IMPROVED",
+        "A_raw": 5,
+        "C_action": 11,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 28,
+        "cue": 0
+      },
+      {
+        "A_goal": 11,
+        "A_outcome": "IMPROVED",
+        "A_raw": 11,
+        "C_action": 12,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 29,
+        "cue": 1
+      },
+      {
+        "A_goal": 5,
+        "A_outcome": "IMPROVED",
+        "A_raw": 5,
+        "C_action": 11,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 30,
+        "cue": 0
+      },
+      {
+        "A_goal": 11,
+        "A_outcome": "IMPROVED",
+        "A_raw": 11,
+        "C_action": 12,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 31,
+        "cue": 1
+      },
+      {
+        "A_goal": 5,
+        "A_outcome": "IMPROVED",
+        "A_raw": 5,
+        "C_action": 11,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 32,
+        "cue": 0
+      },
+      {
+        "A_goal": 11,
+        "A_outcome": "IMPROVED",
+        "A_raw": 11,
+        "C_action": 12,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 33,
+        "cue": 1
+      },
+      {
+        "A_goal": 5,
+        "A_outcome": "IMPROVED",
+        "A_raw": 5,
+        "C_action": 11,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 34,
+        "cue": 0
+      },
+      {
+        "A_goal": 11,
+        "A_outcome": "IMPROVED",
+        "A_raw": 11,
+        "C_action": 12,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 35,
+        "cue": 1
+      },
+      {
+        "A_goal": 5,
+        "A_outcome": "IMPROVED",
+        "A_raw": 5,
+        "C_action": 11,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 36,
+        "cue": 0
+      },
+      {
+        "A_goal": 11,
+        "A_outcome": "IMPROVED",
+        "A_raw": 11,
+        "C_action": 12,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 37,
+        "cue": 1
+      },
+      {
+        "A_goal": 5,
+        "A_outcome": "IMPROVED",
+        "A_raw": 5,
+        "C_action": 11,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 38,
+        "cue": 0
+      },
+      {
+        "A_goal": 11,
+        "A_outcome": "IMPROVED",
+        "A_raw": 11,
+        "C_action": 12,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 39,
+        "cue": 1
+      },
+      {
+        "A_goal": 5,
+        "A_outcome": "IMPROVED",
+        "A_raw": 5,
+        "C_action": 11,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 40,
+        "cue": 0
+      },
+      {
+        "A_goal": 11,
+        "A_outcome": "IMPROVED",
+        "A_raw": 11,
+        "C_action": 12,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 41,
+        "cue": 1
+      },
+      {
+        "A_goal": 5,
+        "A_outcome": "IMPROVED",
+        "A_raw": 5,
+        "C_action": 11,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 42,
+        "cue": 0
+      },
+      {
+        "A_goal": 11,
+        "A_outcome": "IMPROVED",
+        "A_raw": 11,
+        "C_action": 12,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 43,
+        "cue": 1
+      },
+      {
+        "A_goal": 5,
+        "A_outcome": "IMPROVED",
+        "A_raw": 5,
+        "C_action": 11,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 44,
+        "cue": 0
+      },
+      {
+        "A_goal": 11,
+        "A_outcome": "IMPROVED",
+        "A_raw": 11,
+        "C_action": 12,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 45,
+        "cue": 1
+      },
+      {
+        "A_goal": 5,
+        "A_outcome": "IMPROVED",
+        "A_raw": 5,
+        "C_action": 11,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 46,
+        "cue": 0
+      },
+      {
+        "A_goal": 11,
+        "A_outcome": "IMPROVED",
+        "A_raw": 11,
+        "C_action": 12,
+        "C_feedback_emission": [
+          71
+        ],
+        "C_policy_after": {
+          "0": 11,
+          "1": 12
+        },
+        "C_updated": false,
+        "case": 47,
+        "cue": 1
+      }
+    ],
+    "matched_control_trace_sha256": "041bfa67fc6e848742a568e88fe0557df667d1a08a63ffe0d8cfe526d088911b",
+    "matched_learning_trace_sha256": "b844f7ebb6f09e6a7b1ac4965e66bb06e093b17557e0046bf81c807acdc4c863",
+    "success_improvement": 46
+  },
+  "T6GHI": {
+    "baseline_counterfactual_total_difference": -48,
+    "feedback_absence_maintains_policy": true,
+    "feedback_delay_at_deadline_accepted": true,
+    "host_can_destabilize_learning_by_fake_negative": true,
+    "host_forged_fresh_A_ledger_accepted": true,
+    "invalid_feedback_rejected": {
+      "A_tamper": "REJECTED",
+      "B_tamper": "REJECTED",
+      "conflicting_second_feedback": "REJECTED",
+      "replay": "REJECTED",
+      "stale": "REJECTED",
+      "stale_policy_version": "REJECTED",
+      "wrong_context": "REJECTED",
+      "wrong_decision": "REJECTED"
+    },
+    "learning_counterfactual_total_difference": 44,
+    "model_only_forced_alternative_trials": 48,
+    "no_C_signal_in_control_world": true
+  },
+  "ancestry_replay_byte_exact": true,
+  "experimental_shadow_C_policy_updated": true,
+  "frozen_BV_sha256": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+  "frozen_PE_sha256": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+  "host_can_forge": true,
+  "limits": [
+    "Functional adaptation is shown only in a small two-context host-controlled experimental PE fragment, not the frozen scheduler",
+    "PE compute function is original, but selected instruction programs and experiment graph are host-authored",
+    "The experiment has no source-authenticated A measurement and does not generalize to unseen task distributions",
+    "Matched counterfactual outcomes establish model-internal effects only; no physical or native C causal conclusion",
+    "Native SPK frozen Core, Network, PE, scheduler and learning contracts remain untouched",
+    "A privileged host can rebind a fresh A receipt and reverse the correct local policy"
+  ],
+  "native_BV_credit": 0,
+  "native_C_policy_modified": false,
+  "native_learning": false,
+  "original_source_pins": 12,
+  "promotion_allowed": false,
+  "real_world_causal_identifiability": false,
+  "schema": "spk-v5-t6abc-def-ghi-functional-closed-loop/research-v0",
+  "source_T5PQR_STU_VWX_sha256": "7928c3726eff1f9aef7a4cc2424bc230b7751673adedb081e8f893880996059d",
+  "status": "EXECUTABLE_SHADOW_PE_FRAGMENT_CAUSAL_ADAPTATION_ONLY"
+}

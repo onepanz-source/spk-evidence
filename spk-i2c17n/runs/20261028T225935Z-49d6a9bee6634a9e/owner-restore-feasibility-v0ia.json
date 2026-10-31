@@ -1,0 +1,2654 @@
+{
+  "BV_to_P_authorized": false,
+  "P_writes": 0,
+  "architecture_promotion_allowed": false,
+  "assessment": "Source bodies examined by AST only. Call sites and attribute writes are evidence for source review, NOT a reviewed provider-restore mapping.",
+  "body_map": [
+    {
+      "original_sha256": "c0f03eea3d34774ddd3c378190bfe6240400c287dbe761b07c56e91bab74a09a",
+      "path": "spk_native_learning_v1/lab_i2c12_emitting_host_v1.py",
+      "source_executed": false,
+      "targets": [
+        {
+          "AST_ONLY_NOT_BEHAVIORAL_PROOF": true,
+          "calls": [
+            {
+              "line": 80,
+              "target": "callable"
+            },
+            {
+              "line": 80,
+              "target": "owner_id.strip"
+            },
+            {
+              "line": 80,
+              "target": "type"
+            },
+            {
+              "line": 81,
+              "target": "EmittingHostRejected"
+            },
+            {
+              "line": 82,
+              "target": "RLock"
+            }
+          ],
+          "end_line": 84,
+          "raise_lines": [
+            81
+          ],
+          "return_lines": [],
+          "self_attribute_reads": [],
+          "self_attribute_writes": [
+            "_diagnostic",
+            "_epoch",
+            "_generation",
+            "_lock",
+            "_native",
+            "_owner_id",
+            "_phase",
+            "_provider",
+            "_receipt"
+          ],
+          "semantic_interest_identifiers": [
+            "epoch_id",
+            "provider"
+          ],
+          "start_line": 79,
+          "symbol": "BoundedEmittingHostV1.__init__"
+        },
+        {
+          "AST_ONLY_NOT_BEHAVIORAL_PROOF": true,
+          "calls": [
+            {
+              "line": 120,
+              "target": "EmittingHostRejected"
+            },
+            {
+              "line": 121,
+              "target": "self._provider"
+            },
+            {
+              "line": 121,
+              "target": "self._verify_native_input"
+            },
+            {
+              "line": 124,
+              "target": "type"
+            },
+            {
+              "line": 125,
+              "target": "EmittingHostRejected"
+            },
+            {
+              "line": 127,
+              "target": "self.view"
+            }
+          ],
+          "end_line": 127,
+          "raise_lines": [
+            120,
+            125
+          ],
+          "return_lines": [
+            127
+          ],
+          "self_attribute_reads": [
+            "_epoch",
+            "_lock",
+            "_phase",
+            "_provider",
+            "_verify_native_input",
+            "view"
+          ],
+          "self_attribute_writes": [
+            "_diagnostic",
+            "_native",
+            "_phase"
+          ],
+          "semantic_interest_identifiers": [
+            "epoch_id"
+          ],
+          "start_line": 117,
+          "symbol": "BoundedEmittingHostV1.admit"
+        },
+        {
+          "AST_ONLY_NOT_BEHAVIORAL_PROOF": true,
+          "calls": [
+            {
+              "line": 130,
+              "target": "_exact_int"
+            },
+            {
+              "line": 131,
+              "target": "EmittingHostRejected"
+            },
+            {
+              "line": 133,
+              "target": "EmittingHostRejected"
+            },
+            {
+              "line": 138,
+              "target": "commit_atomic_neuronal_output_v0"
+            },
+            {
+              "line": 139,
+              "target": "type"
+            },
+            {
+              "line": 140,
+              "target": "EmittingHostRejected"
+            },
+            {
+              "line": 142,
+              "target": "EmittingHostRejected"
+            },
+            {
+              "line": 144,
+              "target": "EmittingHostRejected"
+            },
+            {
+              "line": 145,
+              "target": "next"
+            },
+            {
+              "line": 146,
+              "target": "next"
+            },
+            {
+              "line": 149,
+              "target": "EmittingHostRejected"
+            },
+            {
+              "line": 153,
+              "target": "tuple"
+            },
+            {
+              "line": 154,
+              "target": "len"
+            },
+            {
+              "line": 154,
+              "target": "len"
+            },
+            {
+              "line": 154,
+              "target": "set"
+            },
+            {
+              "line": 155,
+              "target": "any"
+            },
+            {
+              "line": 156,
+              "target": "EmittingHostRejected"
+            },
+            {
+              "line": 158,
+              "target": "EmittingHostRejected"
+            },
+            {
+              "line": 159,
+              "target": "audit_committed_internal_history_v0"
+            },
+            {
+              "line": 160,
+              "target": "EmittingHostRejected"
+            },
+            {
+              "line": 161,
+              "target": "EmittingReceiptV1"
+            },
+            {
+              "line": 161,
+              "target": "tuple"
+            },
+            {
+              "line": 163,
+              "target": "type"
+            },
+            {
+              "line": 164,
+              "target": "EmittingHostRejected"
+            },
+            {
+              "line": 167,
+              "target": "self.view"
+            }
+          ],
+          "end_line": 167,
+          "raise_lines": [
+            131,
+            133,
+            140,
+            142,
+            144,
+            149,
+            156,
+            158,
+            160,
+            164
+          ],
+          "return_lines": [
+            167
+          ],
+          "self_attribute_reads": [
+            "_epoch",
+            "_generation",
+            "_lock",
+            "_native",
+            "_owner_id",
+            "_phase",
+            "view"
+          ],
+          "self_attribute_writes": [
+            "_diagnostic",
+            "_generation",
+            "_native",
+            "_phase",
+            "_receipt"
+          ],
+          "semantic_interest_identifiers": [
+            "epoch_id",
+            "expected_generation",
+            "receipt"
+          ],
+          "start_line": 128,
+          "symbol": "BoundedEmittingHostV1.commit"
+        }
+      ]
+    },
+    {
+      "original_sha256": "87eb03e4a5502d49e0d672d04851cedfad9fb1348f58e2cc5b11d8c22bde1bec",
+      "path": "spk_native_learning_v1/lab_i2c13_durable_epoch_registry.py",
+      "source_executed": false,
+      "targets": [
+        {
+          "AST_ONLY_NOT_BEHAVIORAL_PROOF": true,
+          "calls": [
+            {
+              "line": 181,
+              "target": "_ident"
+            },
+            {
+              "line": 181,
+              "target": "_ident"
+            },
+            {
+              "line": 182,
+              "target": "_exact_int"
+            },
+            {
+              "line": 183,
+              "target": "EpochFenceRejected"
+            },
+            {
+              "line": 184,
+              "target": "secrets.token_hex"
+            },
+            {
+              "line": 185,
+              "target": "self._tx"
+            },
+            {
+              "line": 186,
+              "target": "<dynamic>.fetchone"
+            },
+            {
+              "line": 186,
+              "target": "db.execute"
+            },
+            {
+              "line": 187,
+              "target": "EpochFenceRejected"
+            },
+            {
+              "line": 188,
+              "target": "db.execute"
+            },
+            {
+              "line": 190,
+              "target": "_sha"
+            },
+            {
+              "line": 190,
+              "target": "bytes.fromhex"
+            },
+            {
+              "line": 191,
+              "target": "ClaimV1"
+            }
+          ],
+          "end_line": 191,
+          "raise_lines": [
+            183,
+            187
+          ],
+          "return_lines": [
+            191
+          ],
+          "self_attribute_reads": [
+            "_tx"
+          ],
+          "self_attribute_writes": [],
+          "semantic_interest_identifiers": [
+            "epoch",
+            "expected_generation",
+            "namespace",
+            "owner"
+          ],
+          "start_line": 180,
+          "symbol": "DurableEpochRegistryV1.claim"
+        },
+        {
+          "AST_ONLY_NOT_BEHAVIORAL_PROOF": true,
+          "calls": [
+            {
+              "line": 204,
+              "target": "_exact_int"
+            },
+            {
+              "line": 204,
+              "target": "type"
+            },
+            {
+              "line": 205,
+              "target": "EpochFenceRejected"
+            },
+            {
+              "line": 206,
+              "target": "self._tx"
+            },
+            {
+              "line": 207,
+              "target": "self._holder"
+            },
+            {
+              "line": 209,
+              "target": "EpochFenceRejected"
+            },
+            {
+              "line": 210,
+              "target": "_intent"
+            },
+            {
+              "line": 211,
+              "target": "db.execute"
+            }
+          ],
+          "end_line": 213,
+          "raise_lines": [
+            205,
+            209
+          ],
+          "return_lines": [
+            213
+          ],
+          "self_attribute_reads": [
+            "_holder",
+            "_tx"
+          ],
+          "self_attribute_writes": [],
+          "semantic_interest_identifiers": [
+            "claim",
+            "expected_generation"
+          ],
+          "start_line": 203,
+          "symbol": "DurableEpochRegistryV1.begin_intent"
+        },
+        {
+          "AST_ONLY_NOT_BEHAVIORAL_PROOF": true,
+          "calls": [
+            {
+              "line": 216,
+              "target": "type"
+            },
+            {
+              "line": 217,
+              "target": "EpochFenceRejected"
+            },
+            {
+              "line": 218,
+              "target": "self._tx"
+            },
+            {
+              "line": 219,
+              "target": "self._holder"
+            },
+            {
+              "line": 221,
+              "target": "EpochFenceRejected"
+            },
+            {
+              "line": 223,
+              "target": "len"
+            },
+            {
+              "line": 224,
+              "target": "EpochFenceRejected"
+            },
+            {
+              "line": 225,
+              "target": "asdict"
+            },
+            {
+              "line": 225,
+              "target": "canonical"
+            },
+            {
+              "line": 226,
+              "target": "_sha"
+            },
+            {
+              "line": 227,
+              "target": "db.execute"
+            },
+            {
+              "line": 228,
+              "target": "data.decode"
+            }
+          ],
+          "end_line": 229,
+          "raise_lines": [
+            217,
+            221,
+            224
+          ],
+          "return_lines": [
+            229
+          ],
+          "self_attribute_reads": [
+            "_holder",
+            "_tx"
+          ],
+          "self_attribute_writes": [],
+          "semantic_interest_identifiers": [
+            "claim",
+            "receipt"
+          ],
+          "start_line": 215,
+          "symbol": "DurableEpochRegistryV1.record_native_result"
+        }
+      ]
+    },
+    {
+      "original_sha256": "13b231bd2ad2530428959d23df9df1edb8c70297e3bf02e5283255afee7f3976",
+      "path": "spk_native_learning_v1/lab_i2c14_audited_checkpoint.py",
+      "source_executed": false,
+      "targets": [
+        {
+          "AST_ONLY_NOT_BEHAVIORAL_PROOF": true,
+          "calls": [
+            {
+              "line": 139,
+              "target": "self.registry._connect"
+            },
+            {
+              "line": 141,
+              "target": "db.execute"
+            },
+            {
+              "line": 142,
+              "target": "<dynamic>.fetchone"
+            },
+            {
+              "line": 142,
+              "target": "db.execute"
+            },
+            {
+              "line": 142,
+              "target": "self.registry._check_row"
+            },
+            {
+              "line": 145,
+              "target": "CheckpointRejected"
+            },
+            {
+              "line": 146,
+              "target": "<dynamic>.fetchone"
+            },
+            {
+              "line": 146,
+              "target": "db.execute"
+            },
+            {
+              "line": 147,
+              "target": "is_sha"
+            },
+            {
+              "line": 148,
+              "target": "CheckpointRejected"
+            },
+            {
+              "line": 150,
+              "target": "_sha"
+            },
+            {
+              "line": 150,
+              "target": "type"
+            },
+            {
+              "line": 151,
+              "target": "CheckpointRejected"
+            },
+            {
+              "line": 152,
+              "target": "from_untrusted_raw"
+            },
+            {
+              "line": 153,
+              "target": "json.loads"
+            },
+            {
+              "line": 155,
+              "target": "list"
+            },
+            {
+              "line": 156,
+              "target": "len"
+            },
+            {
+              "line": 157,
+              "target": "_sha"
+            },
+            {
+              "line": 157,
+              "target": "canonical"
+            },
+            {
+              "line": 158,
+              "target": "CheckpointRejected"
+            },
+            {
+              "line": 159,
+              "target": "db.execute"
+            },
+            {
+              "line": 161,
+              "target": "db.execute"
+            },
+            {
+              "line": 162,
+              "target": "db.close"
+            }
+          ],
+          "end_line": 163,
+          "raise_lines": [
+            145,
+            148,
+            151,
+            158,
+            161
+          ],
+          "return_lines": [
+            163
+          ],
+          "self_attribute_reads": [
+            "registry"
+          ],
+          "self_attribute_writes": [],
+          "semantic_interest_identifiers": [
+            "namespace",
+            "raw"
+          ],
+          "start_line": 138,
+          "symbol": "DurableNativeEvidenceV1.recover_evidence_read_only"
+        }
+      ]
+    },
+    {
+      "original_sha256": "a7521c393a9c4cdab0149c8c9f1ce18794201a33e2caf1e9d387ef9272f65665",
+      "path": "spk_native_learning_v1/lab_i2c15_native_capsule.py",
+      "source_executed": false,
+      "targets": [
+        {
+          "AST_ONLY_NOT_BEHAVIORAL_PROOF": true,
+          "calls": [
+            {
+              "line": 153,
+              "target": "set"
+            },
+            {
+              "line": 153,
+              "target": "type"
+            },
+            {
+              "line": 154,
+              "target": "NativeCapsuleRejected"
+            },
+            {
+              "line": 155,
+              "target": "re.fullmatch"
+            },
+            {
+              "line": 156,
+              "target": "NativeCapsuleRejected"
+            },
+            {
+              "line": 157,
+              "target": "TypedCodec"
+            },
+            {
+              "line": 157,
+              "target": "codec.encode"
+            },
+            {
+              "line": 159,
+              "target": "codec.catalog.items"
+            },
+            {
+              "line": 159,
+              "target": "dict"
+            },
+            {
+              "line": 159,
+              "target": "sorted"
+            },
+            {
+              "line": 160,
+              "target": "canonical"
+            },
+            {
+              "line": 161,
+              "target": "NativeCapsuleRejected"
+            },
+            {
+              "line": 161,
+              "target": "len"
+            }
+          ],
+          "end_line": 162,
+          "raise_lines": [
+            154,
+            156,
+            161
+          ],
+          "return_lines": [
+            162
+          ],
+          "self_attribute_reads": [],
+          "self_attribute_writes": [],
+          "semantic_interest_identifiers": [
+            "namespace",
+            "raw",
+            "root"
+          ],
+          "start_line": 152,
+          "symbol": "serialize_capsule"
+        },
+        {
+          "AST_ONLY_NOT_BEHAVIORAL_PROOF": true,
+          "calls": [
+            {
+              "line": 166,
+              "target": "len"
+            },
+            {
+              "line": 166,
+              "target": "type"
+            },
+            {
+              "line": 167,
+              "target": "NativeCapsuleRejected"
+            },
+            {
+              "line": 168,
+              "target": "json.loads"
+            },
+            {
+              "line": 169,
+              "target": "NativeCapsuleRejected"
+            },
+            {
+              "line": 170,
+              "target": "set"
+            },
+            {
+              "line": 170,
+              "target": "type"
+            },
+            {
+              "line": 170,
+              "target": "type"
+            },
+            {
+              "line": 171,
+              "target": "NativeCapsuleRejected"
+            },
+            {
+              "line": 172,
+              "target": "_is_sha"
+            },
+            {
+              "line": 172,
+              "target": "any"
+            },
+            {
+              "line": 172,
+              "target": "len"
+            },
+            {
+              "line": 172,
+              "target": "obj[...].items"
+            },
+            {
+              "line": 172,
+              "target": "type"
+            },
+            {
+              "line": 172,
+              "target": "type"
+            },
+            {
+              "line": 173,
+              "target": "NativeCapsuleRejected"
+            },
+            {
+              "line": 174,
+              "target": "TypedCodec"
+            },
+            {
+              "line": 175,
+              "target": "codec.decode"
+            },
+            {
+              "line": 176,
+              "target": "len"
+            },
+            {
+              "line": 176,
+              "target": "set"
+            },
+            {
+              "line": 176,
+              "target": "type"
+            },
+            {
+              "line": 176,
+              "target": "type"
+            },
+            {
+              "line": 177,
+              "target": "NativeCapsuleRejected"
+            },
+            {
+              "line": 178,
+              "target": "canonical"
+            },
+            {
+              "line": 178,
+              "target": "codec.encode"
+            },
+            {
+              "line": 179,
+              "target": "NativeCapsuleRejected"
+            }
+          ],
+          "end_line": 180,
+          "raise_lines": [
+            167,
+            169,
+            171,
+            173,
+            177,
+            179
+          ],
+          "return_lines": [
+            180
+          ],
+          "self_attribute_reads": [],
+          "self_attribute_writes": [],
+          "semantic_interest_identifiers": [
+            "namespace",
+            "raw",
+            "result",
+            "root"
+          ],
+          "start_line": 165,
+          "symbol": "deserialize_capsule"
+        },
+        {
+          "AST_ONLY_NOT_BEHAVIORAL_PROOF": true,
+          "calls": [
+            {
+              "line": 242,
+              "target": "<dynamic>.reopen_capsule_read_only"
+            },
+            {
+              "line": 242,
+              "target": "DurableNativeCapsuleV1"
+            },
+            {
+              "line": 246,
+              "target": "audit_committed_internal_history_v0"
+            },
+            {
+              "line": 249,
+              "target": "NativeCapsuleRejected"
+            },
+            {
+              "line": 251,
+              "target": "<dynamic>.issubset"
+            },
+            {
+              "line": 251,
+              "target": "set"
+            },
+            {
+              "line": 252,
+              "target": "NativeCapsuleRejected"
+            },
+            {
+              "line": 253,
+              "target": "len"
+            }
+          ],
+          "end_line": 256,
+          "raise_lines": [
+            249,
+            252
+          ],
+          "return_lines": [
+            253
+          ],
+          "self_attribute_reads": [],
+          "self_attribute_writes": [],
+          "semantic_interest_identifiers": [
+            "evidence",
+            "namespace"
+          ],
+          "start_line": 241,
+          "symbol": "cold_audit"
+        },
+        {
+          "AST_ONLY_NOT_BEHAVIORAL_PROOF": true,
+          "calls": [
+            {
+              "line": 223,
+              "target": "self.recover_evidence_read_only"
+            },
+            {
+              "line": 224,
+              "target": "self.registry._connect"
+            },
+            {
+              "line": 226,
+              "target": "db.execute"
+            },
+            {
+              "line": 227,
+              "target": "<dynamic>.fetchone"
+            },
+            {
+              "line": 227,
+              "target": "db.execute"
+            },
+            {
+              "line": 228,
+              "target": "_is_sha"
+            },
+            {
+              "line": 228,
+              "target": "evidence.digest"
+            },
+            {
+              "line": 229,
+              "target": "NativeCapsuleRejected"
+            },
+            {
+              "line": 231,
+              "target": "_sha"
+            },
+            {
+              "line": 231,
+              "target": "type"
+            },
+            {
+              "line": 232,
+              "target": "NativeCapsuleRejected"
+            },
+            {
+              "line": 233,
+              "target": "<dynamic>.resolve"
+            },
+            {
+              "line": 233,
+              "target": "Path"
+            },
+            {
+              "line": 233,
+              "target": "deserialize_capsule"
+            },
+            {
+              "line": 234,
+              "target": "db.execute"
+            },
+            {
+              "line": 236,
+              "target": "db.execute"
+            },
+            {
+              "line": 237,
+              "target": "db.close"
+            }
+          ],
+          "end_line": 238,
+          "raise_lines": [
+            229,
+            232,
+            236
+          ],
+          "return_lines": [
+            238
+          ],
+          "self_attribute_reads": [
+            "recover_evidence_read_only",
+            "registry"
+          ],
+          "self_attribute_writes": [],
+          "semantic_interest_identifiers": [
+            "evidence",
+            "namespace",
+            "raw",
+            "result"
+          ],
+          "start_line": 222,
+          "symbol": "DurableNativeCapsuleV1.reopen_capsule_read_only"
+        }
+      ]
+    },
+    {
+      "original_sha256": "9b08f196c9a8b0f0e95b5c7390033868a531438865ffae75d7d933bf43666e98",
+      "path": "spk_native_learning_v1/lab_i2c16_cold_continuation.py",
+      "source_executed": false,
+      "targets": [
+        {
+          "AST_ONLY_NOT_BEHAVIORAL_PROOF": true,
+          "calls": [
+            {
+              "line": 53,
+              "target": "_validate_predecessor"
+            },
+            {
+              "line": 55,
+              "target": "audit_committed_internal_history_v0"
+            },
+            {
+              "line": 57,
+              "target": "ColdContinuationRejected"
+            },
+            {
+              "line": 59,
+              "target": "advance_owned_internal_reads_v0"
+            },
+            {
+              "line": 61,
+              "target": "_identities"
+            },
+            {
+              "line": 62,
+              "target": "len"
+            },
+            {
+              "line": 62,
+              "target": "len"
+            },
+            {
+              "line": 63,
+              "target": "ColdContinuationRejected"
+            },
+            {
+              "line": 64,
+              "target": "<dynamic>.union"
+            },
+            {
+              "line": 64,
+              "target": "map"
+            },
+            {
+              "line": 64,
+              "target": "set"
+            },
+            {
+              "line": 64,
+              "target": "set"
+            },
+            {
+              "line": 65,
+              "target": "ColdContinuationRejected"
+            },
+            {
+              "line": 67,
+              "target": "ColdContinuationRejected"
+            },
+            {
+              "line": 68,
+              "target": "audit_committed_internal_history_v0"
+            },
+            {
+              "line": 71,
+              "target": "serialize_capsule"
+            },
+            {
+              "line": 75,
+              "target": "list"
+            },
+            {
+              "line": 75,
+              "target": "list"
+            },
+            {
+              "line": 76,
+              "target": "_sha"
+            },
+            {
+              "line": 76,
+              "target": "len"
+            }
+          ],
+          "end_line": 80,
+          "raise_lines": [
+            57,
+            63,
+            65,
+            67
+          ],
+          "return_lines": [
+            72
+          ],
+          "self_attribute_reads": [],
+          "self_attribute_writes": [],
+          "semantic_interest_identifiers": [
+            "evidence",
+            "namespace",
+            "raw",
+            "state"
+          ],
+          "start_line": 49,
+          "symbol": "one_step_preview"
+        }
+      ]
+    },
+    {
+      "original_sha256": "9499365c4d1314f58509c790bae9cc507598906751060c929881409bd0416e98",
+      "path": "spk_simulator/application_runtime_host_v0.py",
+      "source_executed": false,
+      "targets": [
+        {
+          "AST_ONLY_NOT_BEHAVIORAL_PROOF": true,
+          "calls": [
+            {
+              "line": 77,
+              "target": "callable"
+            },
+            {
+              "line": 78,
+              "target": "TypeError"
+            },
+            {
+              "line": 79,
+              "target": "provider_id.strip"
+            },
+            {
+              "line": 79,
+              "target": "type"
+            },
+            {
+              "line": 80,
+              "target": "TypeError"
+            },
+            {
+              "line": 81,
+              "target": "RLock"
+            }
+          ],
+          "end_line": 88,
+          "raise_lines": [
+            78,
+            80
+          ],
+          "return_lines": [],
+          "self_attribute_reads": [],
+          "self_attribute_writes": [
+            "_diagnostic",
+            "_dispatcher",
+            "_epoch_id",
+            "_last_view",
+            "_lock",
+            "_phase",
+            "_provider",
+            "_provider_id"
+          ],
+          "semantic_interest_identifiers": [
+            "provider"
+          ],
+          "start_line": 76,
+          "symbol": "ApplicationRuntimeHostV0.__init__"
+        },
+        {
+          "AST_ONLY_NOT_BEHAVIORAL_PROOF": true,
+          "calls": [
+            {
+              "line": 146,
+              "target": "HostLifecycleErrorV0"
+            },
+            {
+              "line": 147,
+              "target": "type"
+            },
+            {
+              "line": 148,
+              "target": "TypeError"
+            },
+            {
+              "line": 150,
+              "target": "self._provider"
+            },
+            {
+              "line": 152,
+              "target": "HostAdmissionErrorV0"
+            },
+            {
+              "line": 153,
+              "target": "type"
+            },
+            {
+              "line": 154,
+              "target": "TypeError"
+            },
+            {
+              "line": 157,
+              "target": "DispatchEpochMismatchV0"
+            },
+            {
+              "line": 158,
+              "target": "OwnedRootExecutionDispatcherV0"
+            },
+            {
+              "line": 159,
+              "target": "candidate.install"
+            },
+            {
+              "line": 161,
+              "target": "type"
+            },
+            {
+              "line": 163,
+              "target": "type"
+            },
+            {
+              "line": 165,
+              "target": "HostAdmissionErrorV0"
+            },
+            {
+              "line": 170,
+              "target": "HostStatusV0"
+            }
+          ],
+          "end_line": 171,
+          "raise_lines": [
+            146,
+            148,
+            152,
+            154,
+            157,
+            165
+          ],
+          "return_lines": [
+            170
+          ],
+          "self_attribute_reads": [
+            "_epoch_id",
+            "_lock",
+            "_phase",
+            "_provider",
+            "_provider_id"
+          ],
+          "self_attribute_writes": [
+            "_dispatcher",
+            "_epoch_id",
+            "_last_view",
+            "_phase"
+          ],
+          "semantic_interest_identifiers": [
+            "epoch_id",
+            "view"
+          ],
+          "start_line": 138,
+          "symbol": "ApplicationRuntimeHostV0.admit"
+        },
+        {
+          "AST_ONLY_NOT_BEHAVIORAL_PROOF": true,
+          "calls": [
+            {
+              "line": 182,
+              "target": "HostLifecycleErrorV0"
+            },
+            {
+              "line": 183,
+              "target": "type"
+            },
+            {
+              "line": 184,
+              "target": "TypeError"
+            },
+            {
+              "line": 185,
+              "target": "request.__post_init__"
+            },
+            {
+              "line": 187,
+              "target": "DispatchEpochMismatchV0"
+            },
+            {
+              "line": 192,
+              "target": "HostLifecycleErrorV0"
+            },
+            {
+              "line": 194,
+              "target": "HostLifecycleErrorV0"
+            },
+            {
+              "line": 196,
+              "target": "self._dispatcher.dispatch"
+            },
+            {
+              "line": 202,
+              "target": "type"
+            },
+            {
+              "line": 203,
+              "target": "HostExecutionErrorV0"
+            },
+            {
+              "line": 205,
+              "target": "type"
+            },
+            {
+              "line": 206,
+              "target": "HostExecutionErrorV0"
+            },
+            {
+              "line": 208,
+              "target": "HostExecutionErrorV0"
+            },
+            {
+              "line": 210,
+              "target": "self._promote_locked"
+            },
+            {
+              "line": 211,
+              "target": "self._committed"
+            },
+            {
+              "line": 212,
+              "target": "HostExecutionErrorV0"
+            },
+            {
+              "line": 217,
+              "target": "type"
+            },
+            {
+              "line": 218,
+              "target": "HostExecutionErrorV0"
+            }
+          ],
+          "end_line": 218,
+          "raise_lines": [
+            182,
+            184,
+            187,
+            192,
+            194,
+            199,
+            203,
+            206,
+            208,
+            212,
+            218
+          ],
+          "return_lines": [
+            214
+          ],
+          "self_attribute_reads": [
+            "_committed",
+            "_dispatcher",
+            "_epoch_id",
+            "_lock",
+            "_phase",
+            "_promote_locked"
+          ],
+          "self_attribute_writes": [
+            "_diagnostic",
+            "_phase"
+          ],
+          "semantic_interest_identifiers": [
+            "request"
+          ],
+          "start_line": 173,
+          "symbol": "ApplicationRuntimeHostV0.dispatch"
+        },
+        {
+          "AST_ONLY_NOT_BEHAVIORAL_PROOF": true,
+          "calls": [
+            {
+              "line": 136,
+              "target": "self._status_locked"
+            }
+          ],
+          "end_line": 136,
+          "raise_lines": [],
+          "return_lines": [
+            136
+          ],
+          "self_attribute_reads": [
+            "_lock",
+            "_status_locked"
+          ],
+          "self_attribute_writes": [],
+          "semantic_interest_identifiers": [],
+          "start_line": 133,
+          "symbol": "ApplicationRuntimeHostV0.status"
+        },
+        {
+          "AST_ONLY_NOT_BEHAVIORAL_PROOF": true,
+          "calls": [
+            {
+              "line": 224,
+              "target": "self._status_locked"
+            },
+            {
+              "line": 228,
+              "target": "self._status_locked"
+            }
+          ],
+          "end_line": 228,
+          "raise_lines": [],
+          "return_lines": [
+            224,
+            228
+          ],
+          "self_attribute_reads": [
+            "_lock",
+            "_phase",
+            "_status_locked"
+          ],
+          "self_attribute_writes": [
+            "_diagnostic",
+            "_phase"
+          ],
+          "semantic_interest_identifiers": [],
+          "start_line": 220,
+          "symbol": "ApplicationRuntimeHostV0.shutdown"
+        }
+      ]
+    },
+    {
+      "original_sha256": "929e9527e1f780bf429881ca15e22412ddc9517afbc6e243f9ff542214f2bdcc",
+      "path": "spk_simulator/atomic_neuronal_commit_v0.py",
+      "source_executed": false,
+      "targets": [
+        {
+          "AST_ONLY_NOT_BEHAVIORAL_PROOF": true,
+          "calls": [
+            {
+              "line": 64,
+              "target": "type"
+            },
+            {
+              "line": 64,
+              "target": "type"
+            },
+            {
+              "line": 65,
+              "target": "type"
+            },
+            {
+              "line": 66,
+              "target": "type"
+            },
+            {
+              "line": 67,
+              "target": "type"
+            },
+            {
+              "line": 68,
+              "target": "type"
+            },
+            {
+              "line": 69,
+              "target": "TypeError"
+            },
+            {
+              "line": 70,
+              "target": "any"
+            },
+            {
+              "line": 70,
+              "target": "type"
+            },
+            {
+              "line": 70,
+              "target": "type"
+            },
+            {
+              "line": 71,
+              "target": "TypeError"
+            },
+            {
+              "line": 72,
+              "target": "type"
+            },
+            {
+              "line": 73,
+              "target": "type"
+            },
+            {
+              "line": 74,
+              "target": "ValueError"
+            },
+            {
+              "line": 78,
+              "target": "ValueError"
+            },
+            {
+              "line": 80,
+              "target": "len"
+            },
+            {
+              "line": 80,
+              "target": "len"
+            },
+            {
+              "line": 81,
+              "target": "ValueError"
+            },
+            {
+              "line": 82,
+              "target": "serialize_internal_access_graph_v0"
+            },
+            {
+              "line": 84,
+              "target": "ValueError"
+            },
+            {
+              "line": 85,
+              "target": "<dynamic>.get"
+            },
+            {
+              "line": 86,
+              "target": "by_id.get"
+            },
+            {
+              "line": 87,
+              "target": "by_id.get"
+            },
+            {
+              "line": 89,
+              "target": "ValueError"
+            },
+            {
+              "line": 100,
+              "target": "ValueError"
+            },
+            {
+              "line": 107,
+              "target": "ValueError"
+            },
+            {
+              "line": 109,
+              "target": "ValueError"
+            },
+            {
+              "line": 110,
+              "target": "next"
+            },
+            {
+              "line": 111,
+              "target": "hasattr"
+            },
+            {
+              "line": 112,
+              "target": "set"
+            },
+            {
+              "line": 113,
+              "target": "ValueError"
+            },
+            {
+              "line": 115,
+              "target": "ValueError"
+            },
+            {
+              "line": 117,
+              "target": "audit_committed_internal_history_v0"
+            },
+            {
+              "line": 122,
+              "target": "len"
+            },
+            {
+              "line": 123,
+              "target": "ValueError"
+            },
+            {
+              "line": 126,
+              "target": "next"
+            },
+            {
+              "line": 129,
+              "target": "reads.get"
+            },
+            {
+              "line": 130,
+              "target": "reads.get"
+            },
+            {
+              "line": 139,
+              "target": "ValueError"
+            },
+            {
+              "line": 140,
+              "target": "next"
+            },
+            {
+              "line": 141,
+              "target": "next"
+            },
+            {
+              "line": 144,
+              "target": "snapshots.get"
+            },
+            {
+              "line": 147,
+              "target": "ValueError"
+            },
+            {
+              "line": 155,
+              "target": "ValueError"
+            },
+            {
+              "line": 156,
+              "target": "set"
+            },
+            {
+              "line": 156,
+              "target": "set"
+            },
+            {
+              "line": 157,
+              "target": "set"
+            },
+            {
+              "line": 157,
+              "target": "set"
+            },
+            {
+              "line": 158,
+              "target": "ValueError"
+            },
+            {
+              "line": 161,
+              "target": "route_map.get"
+            },
+            {
+              "line": 163,
+              "target": "ValueError"
+            },
+            {
+              "line": 165,
+              "target": "actual.append"
+            },
+            {
+              "line": 167,
+              "target": "arrivals.get"
+            },
+            {
+              "line": 169,
+              "target": "ValueError"
+            },
+            {
+              "line": 170,
+              "target": "actual.append"
+            },
+            {
+              "line": 171,
+              "target": "any"
+            },
+            {
+              "line": 173,
+              "target": "sorted"
+            },
+            {
+              "line": 173,
+              "target": "tuple"
+            },
+            {
+              "line": 174,
+              "target": "ValueError"
+            },
+            {
+              "line": 176,
+              "target": "bind_computed_emission_v0"
+            },
+            {
+              "line": 181,
+              "target": "ValueError"
+            },
+            {
+              "line": 183,
+              "target": "ValueError"
+            },
+            {
+              "line": 186,
+              "target": "BackpressureServiceFrameV0"
+            },
+            {
+              "line": 189,
+              "target": "advance_owned_service_tick_v0"
+            },
+            {
+              "line": 196,
+              "target": "len"
+            },
+            {
+              "line": 199,
+              "target": "ValueError"
+            },
+            {
+              "line": 204,
+              "target": "set"
+            },
+            {
+              "line": 205,
+              "target": "ValueError"
+            },
+            {
+              "line": 206,
+              "target": "commit_core_transition_v0"
+            },
+            {
+              "line": 209,
+              "target": "ValueError"
+            },
+            {
+              "line": 211,
+              "target": "ServiceQuantumStateV0"
+            },
+            {
+              "line": 214,
+              "target": "tuple"
+            },
+            {
+              "line": 216,
+              "target": "sorted"
+            },
+            {
+              "line": 216,
+              "target": "tuple"
+            },
+            {
+              "line": 217,
+              "target": "ServiceConfirmedV0"
+            },
+            {
+              "line": 220,
+              "target": "OwnedInternalCommitEvidenceV0"
+            },
+            {
+              "line": 224,
+              "target": "replace"
+            },
+            {
+              "line": 224,
+              "target": "replace"
+            },
+            {
+              "line": 227,
+              "target": "replace"
+            },
+            {
+              "line": 229,
+              "target": "tuple"
+            },
+            {
+              "line": 233,
+              "target": "audit_committed_internal_history_v0"
+            },
+            {
+              "line": 237,
+              "target": "AtomicNeuronalCommitStepV0"
+            }
+          ],
+          "end_line": 240,
+          "raise_lines": [
+            69,
+            71,
+            74,
+            78,
+            81,
+            84,
+            89,
+            100,
+            107,
+            109,
+            113,
+            115,
+            123,
+            139,
+            147,
+            155,
+            158,
+            163,
+            169,
+            174,
+            181,
+            183,
+            199,
+            205,
+            209
+          ],
+          "return_lines": [
+            237
+          ],
+          "self_attribute_reads": [],
+          "self_attribute_writes": [],
+          "semantic_interest_identifiers": [
+            "evidence",
+            "network",
+            "state"
+          ],
+          "start_line": 44,
+          "symbol": "commit_atomic_neuronal_output_v0"
+        }
+      ]
+    },
+    {
+      "original_sha256": "0aeda5c5a0b139bc169e3bf4d89995a2b38df446ffa24a393ac8079988558cfb",
+      "path": "spk_simulator/owned_internal_reads_v0.py",
+      "source_executed": false,
+      "targets": [
+        {
+          "AST_ONLY_NOT_BEHAVIORAL_PROOF": true,
+          "calls": [
+            {
+              "line": 230,
+              "target": "type"
+            },
+            {
+              "line": 231,
+              "target": "TypeError"
+            },
+            {
+              "line": 232,
+              "target": "type"
+            },
+            {
+              "line": 232,
+              "target": "type"
+            },
+            {
+              "line": 233,
+              "target": "TypeError"
+            },
+            {
+              "line": 235,
+              "target": "ValueError"
+            },
+            {
+              "line": 236,
+              "target": "any"
+            },
+            {
+              "line": 236,
+              "target": "type"
+            },
+            {
+              "line": 236,
+              "target": "type"
+            },
+            {
+              "line": 237,
+              "target": "TypeError"
+            },
+            {
+              "line": 239,
+              "target": "len"
+            },
+            {
+              "line": 239,
+              "target": "len"
+            },
+            {
+              "line": 239,
+              "target": "set"
+            },
+            {
+              "line": 240,
+              "target": "ValueError"
+            },
+            {
+              "line": 244,
+              "target": "_canonical_unique"
+            },
+            {
+              "line": 245,
+              "target": "_canonical_unique"
+            },
+            {
+              "line": 246,
+              "target": "_canonical_unique"
+            },
+            {
+              "line": 252,
+              "target": "consume.target_id.startswith"
+            },
+            {
+              "line": 253,
+              "target": "ValueError"
+            },
+            {
+              "line": 254,
+              "target": "len"
+            },
+            {
+              "line": 256,
+              "target": "type"
+            },
+            {
+              "line": 257,
+              "target": "ValueError"
+            },
+            {
+              "line": 264,
+              "target": "_read_binding"
+            },
+            {
+              "line": 266,
+              "target": "ValueError"
+            },
+            {
+              "line": 268,
+              "target": "set"
+            },
+            {
+              "line": 269,
+              "target": "ValueError"
+            },
+            {
+              "line": 271,
+              "target": "pair.values"
+            },
+            {
+              "line": 271,
+              "target": "read_by_batch.values"
+            },
+            {
+              "line": 274,
+              "target": "ValueError"
+            },
+            {
+              "line": 275,
+              "target": "len"
+            },
+            {
+              "line": 275,
+              "target": "len"
+            },
+            {
+              "line": 276,
+              "target": "ValueError"
+            },
+            {
+              "line": 283,
+              "target": "ValueError"
+            },
+            {
+              "line": 285,
+              "target": "ValueError"
+            },
+            {
+              "line": 286,
+              "target": "audit_committed_internal_history_v0"
+            },
+            {
+              "line": 292,
+              "target": "by_id.get"
+            },
+            {
+              "line": 294,
+              "target": "ValueError"
+            },
+            {
+              "line": 297,
+              "target": "type"
+            },
+            {
+              "line": 299,
+              "target": "ValueError"
+            },
+            {
+              "line": 301,
+              "target": "snapshots.get"
+            },
+            {
+              "line": 304,
+              "target": "any"
+            },
+            {
+              "line": 306,
+              "target": "ValueError"
+            },
+            {
+              "line": 310,
+              "target": "next"
+            },
+            {
+              "line": 313,
+              "target": "ValueError"
+            },
+            {
+              "line": 321,
+              "target": "len"
+            },
+            {
+              "line": 321,
+              "target": "len"
+            },
+            {
+              "line": 321,
+              "target": "len"
+            },
+            {
+              "line": 321,
+              "target": "len"
+            },
+            {
+              "line": 322,
+              "target": "ValueError"
+            },
+            {
+              "line": 324,
+              "target": "by_id.get"
+            },
+            {
+              "line": 331,
+              "target": "set"
+            },
+            {
+              "line": 331,
+              "target": "sorted"
+            },
+            {
+              "line": 331,
+              "target": "tuple"
+            },
+            {
+              "line": 332,
+              "target": "set"
+            },
+            {
+              "line": 332,
+              "target": "sorted"
+            },
+            {
+              "line": 332,
+              "target": "tuple"
+            },
+            {
+              "line": 335,
+              "target": "ValueError"
+            },
+            {
+              "line": 336,
+              "target": "set"
+            },
+            {
+              "line": 336,
+              "target": "set"
+            },
+            {
+              "line": 337,
+              "target": "set"
+            },
+            {
+              "line": 337,
+              "target": "set"
+            },
+            {
+              "line": 338,
+              "target": "ValueError"
+            },
+            {
+              "line": 341,
+              "target": "route_by_id.get"
+            },
+            {
+              "line": 343,
+              "target": "ValueError"
+            },
+            {
+              "line": 345,
+              "target": "occurrences.append"
+            },
+            {
+              "line": 347,
+              "target": "arrival_by_id.get"
+            },
+            {
+              "line": 349,
+              "target": "ValueError"
+            },
+            {
+              "line": 350,
+              "target": "occurrences.append"
+            },
+            {
+              "line": 351,
+              "target": "any"
+            },
+            {
+              "line": 353,
+              "target": "sorted"
+            },
+            {
+              "line": 353,
+              "target": "tuple"
+            },
+            {
+              "line": 354,
+              "target": "len"
+            },
+            {
+              "line": 355,
+              "target": "ValueError"
+            },
+            {
+              "line": 357,
+              "target": "next"
+            },
+            {
+              "line": 360,
+              "target": "ValueError"
+            },
+            {
+              "line": 361,
+              "target": "read_by_batch.get"
+            },
+            {
+              "line": 364,
+              "target": "prepare_core_transition_v0"
+            },
+            {
+              "line": 367,
+              "target": "ValueError"
+            },
+            {
+              "line": 368,
+              "target": "len"
+            },
+            {
+              "line": 368,
+              "target": "len"
+            },
+            {
+              "line": 369,
+              "target": "ValueError"
+            },
+            {
+              "line": 373,
+              "target": "r.target_id.split"
+            },
+            {
+              "line": 375,
+              "target": "r.target_id.startswith"
+            },
+            {
+              "line": 376,
+              "target": "sorted"
+            },
+            {
+              "line": 376,
+              "target": "tuple"
+            },
+            {
+              "line": 379,
+              "target": "advance_witnessed_core_input_tick_v0"
+            },
+            {
+              "line": 389,
+              "target": "set"
+            },
+            {
+              "line": 389,
+              "target": "sorted"
+            },
+            {
+              "line": 393,
+              "target": "ValueError"
+            },
+            {
+              "line": 394,
+              "target": "req.target_id.split"
+            },
+            {
+              "line": 395,
+              "target": "next"
+            },
+            {
+              "line": 398,
+              "target": "InternalReadEvidenceV0"
+            },
+            {
+              "line": 402,
+              "target": "InternalReadEvidenceV0"
+            },
+            {
+              "line": 405,
+              "target": "new_reads.append"
+            },
+            {
+              "line": 407,
+              "target": "ServiceQuantumStateV0"
+            },
+            {
+              "line": 410,
+              "target": "tuple"
+            },
+            {
+              "line": 412,
+              "target": "sorted"
+            },
+            {
+              "line": 412,
+              "target": "tuple"
+            },
+            {
+              "line": 412,
+              "target": "tuple"
+            },
+            {
+              "line": 413,
+              "target": "ServiceConfirmedV0"
+            },
+            {
+              "line": 416,
+              "target": "replace"
+            },
+            {
+              "line": 416,
+              "target": "replace"
+            },
+            {
+              "line": 418,
+              "target": "sorted"
+            },
+            {
+              "line": 418,
+              "target": "tuple"
+            },
+            {
+              "line": 420,
+              "target": "_canonical_unique"
+            },
+            {
+              "line": 421,
+              "target": "sorted"
+            },
+            {
+              "line": 421,
+              "target": "tuple"
+            },
+            {
+              "line": 421,
+              "target": "tuple"
+            },
+            {
+              "line": 423,
+              "target": "list"
+            },
+            {
+              "line": 433,
+              "target": "read_by_batch.get"
+            },
+            {
+              "line": 435,
+              "target": "ValueError"
+            },
+            {
+              "line": 436,
+              "target": "read_map.get"
+            },
+            {
+              "line": 437,
+              "target": "read_map.get"
+            },
+            {
+              "line": 444,
+              "target": "ValueError"
+            },
+            {
+              "line": 445,
+              "target": "next"
+            },
+            {
+              "line": 450,
+              "target": "ValueError"
+            },
+            {
+              "line": 451,
+              "target": "prepare_core_transition_v0"
+            },
+            {
+              "line": 455,
+              "target": "BoundCorePreparationV0"
+            },
+            {
+              "line": 457,
+              "target": "prepared.append"
+            },
+            {
+              "line": 458,
+              "target": "new_preparations.append"
+            },
+            {
+              "line": 459,
+              "target": "busy_nodes.add"
+            },
+            {
+              "line": 460,
+              "target": "_canonical_unique"
+            },
+            {
+              "line": 460,
+              "target": "sorted"
+            },
+            {
+              "line": 460,
+              "target": "tuple"
+            },
+            {
+              "line": 462,
+              "target": "OwnedInternalReadStepV0"
+            },
+            {
+              "line": 463,
+              "target": "tuple"
+            },
+            {
+              "line": 463,
+              "target": "tuple"
+            },
+            {
+              "line": 464,
+              "target": "OwnedInternalReadStateV0"
+            },
+            {
+              "line": 465,
+              "target": "sorted"
+            },
+            {
+              "line": 465,
+              "target": "tuple"
+            }
+          ],
+          "end_line": 466,
+          "raise_lines": [
+            231,
+            233,
+            235,
+            237,
+            240,
+            253,
+            257,
+            266,
+            269,
+            274,
+            276,
+            283,
+            285,
+            294,
+            299,
+            306,
+            313,
+            322,
+            335,
+            338,
+            343,
+            349,
+            355,
+            360,
+            367,
+            369,
+            393,
+            435,
+            444,
+            450
+          ],
+          "return_lines": [
+            462
+          ],
+          "self_attribute_reads": [],
+          "self_attribute_writes": [],
+          "semantic_interest_identifiers": [
+            "evidence",
+            "network",
+            "receipt",
+            "state"
+          ],
+          "start_line": 213,
+          "symbol": "advance_owned_internal_reads_v0"
+        },
+        {
+          "AST_ONLY_NOT_BEHAVIORAL_PROOF": true,
+          "calls": [
+            {
+              "line": 118,
+              "target": "type"
+            },
+            {
+              "line": 119,
+              "target": "TypeError"
+            },
+            {
+              "line": 121,
+              "target": "any"
+            },
+            {
+              "line": 122,
+              "target": "serialize_internal_access_graph_v0"
+            },
+            {
+              "line": 126,
+              "target": "ValueError"
+            },
+            {
+              "line": 131,
+              "target": "type"
+            },
+            {
+              "line": 132,
+              "target": "any"
+            },
+            {
+              "line": 132,
+              "target": "type"
+            },
+            {
+              "line": 133,
+              "target": "tuple"
+            },
+            {
+              "line": 134,
+              "target": "set"
+            },
+            {
+              "line": 134,
+              "target": "sorted"
+            },
+            {
+              "line": 134,
+              "target": "tuple"
+            },
+            {
+              "line": 135,
+              "target": "set"
+            },
+            {
+              "line": 136,
+              "target": "ValueError"
+            },
+            {
+              "line": 139,
+              "target": "initialize_neuron_image_v0"
+            },
+            {
+              "line": 143,
+              "target": "bindings.get"
+            },
+            {
+              "line": 146,
+              "target": "type"
+            },
+            {
+              "line": 153,
+              "target": "type"
+            },
+            {
+              "line": 155,
+              "target": "ValueError"
+            },
+            {
+              "line": 156,
+              "target": "witnesses.get"
+            },
+            {
+              "line": 157,
+              "target": "by_read.get"
+            },
+            {
+              "line": 157,
+              "target": "by_read.get"
+            },
+            {
+              "line": 163,
+              "target": "last_commit_boundary.get"
+            },
+            {
+              "line": 165,
+              "target": "ValueError"
+            },
+            {
+              "line": 166,
+              "target": "next"
+            },
+            {
+              "line": 170,
+              "target": "ValueError"
+            },
+            {
+              "line": 173,
+              "target": "ValueError"
+            },
+            {
+              "line": 175,
+              "target": "type"
+            },
+            {
+              "line": 176,
+              "target": "ValueError"
+            },
+            {
+              "line": 177,
+              "target": "bind_computed_emission_v0"
+            },
+            {
+              "line": 182,
+              "target": "ValueError"
+            },
+            {
+              "line": 184,
+              "target": "ValueError"
+            },
+            {
+              "line": 186,
+              "target": "set"
+            },
+            {
+              "line": 187,
+              "target": "confirmed.get"
+            },
+            {
+              "line": 191,
+              "target": "set"
+            },
+            {
+              "line": 197,
+              "target": "set"
+            },
+            {
+              "line": 198,
+              "target": "ValueError"
+            },
+            {
+              "line": 200,
+              "target": "ValueError"
+            },
+            {
+              "line": 201,
+              "target": "commit_core_transition_v0"
+            },
+            {
+              "line": 203,
+              "target": "ValueError"
+            },
+            {
+              "line": 209,
+              "target": "ValueError"
+            }
+          ],
+          "end_line": 210,
+          "raise_lines": [
+            119,
+            126,
+            136,
+            155,
+            165,
+            170,
+            173,
+            176,
+            182,
+            184,
+            198,
+            200,
+            203,
+            209
+          ],
+          "return_lines": [
+            210
+          ],
+          "self_attribute_reads": [],
+          "self_attribute_writes": [],
+          "semantic_interest_identifiers": [
+            "network",
+            "state"
+          ],
+          "start_line": 111,
+          "symbol": "audit_committed_internal_history_v0"
+        }
+      ]
+    },
+    {
+      "original_sha256": "8d006c4a2d7aa1cde5bd051aa5cc2bff9d3312e168449aba9eb9dc153ca7f80a",
+      "path": "spk_simulator/owned_root_terminal_commit_v0.py",
+      "source_executed": false,
+      "targets": [
+        {
+          "AST_ONLY_NOT_BEHAVIORAL_PROOF": true,
+          "calls": [
+            {
+              "line": 171,
+              "target": "type"
+            },
+            {
+              "line": 172,
+              "target": "TypeError"
+            },
+            {
+              "line": 173,
+              "target": "state.__post_init__"
+            },
+            {
+              "line": 175,
+              "target": "ValueError"
+            },
+            {
+              "line": 176,
+              "target": "_next"
+            },
+            {
+              "line": 177,
+              "target": "OwnedRootTerminalCommitStateV0"
+            },
+            {
+              "line": 180,
+              "target": "OwnedRootTerminalCommitStepV0"
+            }
+          ],
+          "end_line": 180,
+          "raise_lines": [
+            172,
+            175
+          ],
+          "return_lines": [
+            180
+          ],
+          "self_attribute_reads": [],
+          "self_attribute_writes": [],
+          "semantic_interest_identifiers": [
+            "state"
+          ],
+          "start_line": 169,
+          "symbol": "advance_owned_root_terminal_commit_v0"
+        }
+      ]
+    }
+  ],
+  "decision": "HOLD",
+  "exit_code": 4,
+  "git_head_observed": "3a7d94afc4f2ef55708d45a51b092cb8192b84a0",
+  "human_semantic_review_completed": false,
+  "native_24j_dispatch": false,
+  "no_go_path_in_v0ia": true,
+  "original_owner_lifecycle_bound": false,
+  "original_owner_live_resume": false,
+  "predecessor_v0g_sha256": "ae4a913e0562e78378ddf056fda42fbc5ec7edc9baaa9943c1b54a548ba6da1d",
+  "predecessor_v0h_sha256": "f57e6c5011ffa3275af69c7b73fa91d4df24fc3cd95c9417f4d15e5650bce4d0",
+  "production_release": false,
+  "proposal": {
+    "conditions_for_future_research_GO": [
+      "Human-reviewed exact source mapping with line anchors and pinned source SHA",
+      "Behavioral invocation of ORIGINAL host/provider in an isolated experiment",
+      "Cold restart from SQLite bytes and exact post-restart owner state witness",
+      "Crash/stale-owner and no-duplicate-effects tests with independently observed receipts"
+    ],
+    "input_preconditions": [
+      "Pinned original source set, verified I2c.17 authority and parent lineage",
+      "Exact typed deserialization of a committed SQLite capsule with namespace and generation checks",
+      "No unresolved intent, no stale owner and exclusive local custody before any action",
+      "Explicit reviewed provider compatibility mapping; no use of undocumented host internals"
+    ],
+    "name": "I2C17N_ORIGINAL_OWNER_RESTORE_CONTRACT_PROPOSAL_V0IA",
+    "negative_tests": [
+      "unknown or changed provider interface",
+      "stale or conflicting SQLite generation",
+      "capsule lineage mismatch",
+      "unresolved native intent",
+      "already committed receipt",
+      "lock held by another local owner",
+      "unexpected provider side effect before commit",
+      "attempt to write P or dispatch 24j"
+    ],
+    "remaining_review_questions": [
+      "What concrete object is provider, and which methods does ApplicationRuntimeHostV0 actually invoke?",
+      "Does the frozen provider admit an external recovered state or construct its own root internally?",
+      "Where is host epoch/generation authority bound to the SQLite generation, if at all?",
+      "Can restored state be used without private-field injection, monkeypatching or replay of native effects?",
+      "Does original dispatch cause effects before durable installation, and how are receipts fenced?"
+    ],
+    "required_postconditions": [
+      "A NEW original ApplicationRuntimeHostV0 is instantiated and admitted with the approved provider",
+      "State observed by original provider/host equals the SQLite successor; no baseline fixture fallback",
+      "First post-restore transition uses frozen execution semantics and monotonically advances lineage",
+      "Crash-before-commit stays HOLD; crash-after-commit observes once without re-dispatch",
+      "No duplicate external effects; ACK and dispatch authority require separate future gates"
+    ],
+    "status": "PROPOSED_NOT_ADMITTED"
+  },
+  "recipient_ack_authenticated": false,
+  "research_only": true,
+  "schema": "spk-lab-i2c17n-restore-feasibility-body-map/v0ia",
+  "source_code_executed": false,
+  "source_count_verified": 9,
+  "status": "HOLD_ORIGINAL_OWNER_RESTORE_SEMANTIC_MAPPING_NOT_REVIEWED"
+}

@@ -1,0 +1,23 @@
+{
+  "files": {
+    "docs/spk-v1-reference-semantic-runtime-memory-authority.md": "6741be8d82b948d938edf04f881bcf245369118e89b4d5991f23d73a40466858",
+    "research/spk_v5_t8jkl_mno_pqr/README.md": "dac1357e2f5b85940495e064aaa3fd78190c78ce1cec279a3c6c558b0c3f842b",
+    "research/spk_v5_t8jkl_mno_pqr/cumulative_reference_gate.py": "edf797032f3c8ce7569b4b1ae29d67d4357d6152907370b19eab6852ccc304ae",
+    "research/spk_v5_t8jkl_mno_pqr/p_authority_v1.py": "574bd3f1f28d193152b1b98e80f0364f29f5f7b8e964bda4676fac8c91c9db35",
+    "research/spk_v5_t8jkl_mno_pqr/reference/t8abc-def-ghi.json": "ee90e32993a4a4a1de83376e155812f32d660c1fd51a8645af09d953c2a47b48",
+    "research/spk_v5_t8jkl_mno_pqr/runtime_v1_reference.py": "7f1aaebbb8a791cd9f2bd0fc814c501cd6527000b4a58cc6a733b53b7e13952c",
+    "research/spk_v5_t8jkl_mno_pqr/semantic_bus_v1.py": "6d92bb852c4695c6a8628f2472aa009474edb0168bf23e027dea232f751a1ad5",
+    "research/spk_v5_t8jkl_mno_pqr/tests/test_v1_runtime.py": "8c6f3cbd02fda428d75a2698ac8be228595f2e9c0791f58fd42807adc18a92bd",
+    "search/spk_v5_t8jkl_mno_pqr_cumulative_gate.sh": "c0885d99ee6efc77296540473825b01bd0a824e9c5bb0bcb22f31992bc160c05"
+  },
+  "frozen_BV_sha256": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+  "frozen_PE_sha256": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+  "native_SPK_BV_semantic": false,
+  "native_SPK_P_grants": 0,
+  "native_learning": false,
+  "original_source_pins": 12,
+  "prior_T8_report_sha256": "ee90e32993a4a4a1de83376e155812f32d660c1fd51a8645af09d953c2a47b48",
+  "promotion_allowed": false,
+  "schema": "spk-v5-t8jkl-mno-pqr-v1-reference-manifest/research-v0",
+  "status": "REFERENCE_V1_INTERNAL_GRANTS_NOT_NATIVE_SPK"
+}

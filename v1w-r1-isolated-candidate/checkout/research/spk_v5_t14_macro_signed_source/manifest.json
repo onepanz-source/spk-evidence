@@ -1,0 +1,20 @@
+{
+  "checkpoint": "SPK V5/T14 MACRO Signed Origin + A1d Original Access + P Crediting",
+  "files": {
+    "docs/spk-v5-t14-trust-and-credit-boundary.md": "c89deaa56d73250aa7f271be5e2417789319cb6cb324dc46bd099f3707be1313",
+    "research/spk_v5_t14_macro_signed_source/README.md": "f05c3555307d2a48839b6bbe195c85f650c5431ade01aa3c8da61509ed7fbfcc",
+    "research/spk_v5_t14_macro_signed_source/__init__.py": "a6f4fa91e1b2acbcc9aca2f355e6a7f234b654bf923593f84aa6bbb643fac83d",
+    "research/spk_v5_t14_macro_signed_source/macro_gate.py": "a3c47380bc7690fd1973996dc4eaa82f01744f80f7c79a186f65e247ac72708f",
+    "research/spk_v5_t14_macro_signed_source/reference/t13-original-access.json": "54686e49ec2e66daf317d3e4ed1be3f1dc7ac7a070773319632cd265e4e59b31",
+    "research/spk_v5_t14_macro_signed_source/signed_boundary_v1.py": "dbba694cbb489a5f945441780cdcad35f0e2e568bb16ffe66f7b33ab6bfd46cf",
+    "research/spk_v5_t14_macro_signed_source/tests/test_signed_boundary.py": "e93a982ebf0abd5b52b5434383c913c4ac6afa4e4c0d78931dd30302fe2f0cb6",
+    "search/spk_v5_t14_macro_signed_source_gate.sh": "3e5a3fdd11524496dddc24ac027d727218d366c3777eb2c1e089a1de41ab7337"
+  },
+  "frozen_components_modified": false,
+  "native_learning": false,
+  "original_learning_P_grants": 0,
+  "parent_T13_sha256": "54686e49ec2e66daf317d3e4ed1be3f1dc7ac7a070773319632cd265e4e59b31",
+  "promotion_allowed": false,
+  "schema": "spk-v5-t14-macro-signed-source-manifest/research-v0",
+  "source_mode": "host_controlled_lab_signed_protocol_not_authenticated_external_A"
+}

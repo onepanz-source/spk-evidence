@@ -1,0 +1,15 @@
+{
+  "files": {
+    "docs/spk-v1-native-memory-contract-readiness-dossier.md": "1fffc284dea7d92aa9fb87660b934fe81e3e5c50cc5a221e0785567945a67544",
+    "research/spk_v5_t10stu_vwx_yza/README.md": "20b3bdc99dab4dadff39aef0343ff1aee4fb0eec0ef5e6b46fb9cefc2c3e88d8",
+    "research/spk_v5_t10stu_vwx_yza/__init__.py": "806c4e3df346ffe376f6c6701a6301c54ab69203b38e8bc6a02c9fa55272d075",
+    "research/spk_v5_t10stu_vwx_yza/cumulative_surface_gate.py": "1bcedd64cd648267211a10d41b161b6c75a3049d16c7d2dfeb32a41404f0c395",
+    "research/spk_v5_t10stu_vwx_yza/reference/t10jkl-mno-pqr-cumulative.json": "789f8a13885caf0f2ae2ade81565916411b398c4686e21cb5e382db229cc20d1",
+    "research/spk_v5_t10stu_vwx_yza/surface_probe_v0.py": "d9e58ef9fb7fbe68b7f409724dc3057fd9e2c3e9c79380f97f21c9b42a3afc2b",
+    "research/spk_v5_t10stu_vwx_yza/tests/test_native_surface_readiness.py": "03fcdef384876717e981692a953e6e8c305e6c7df4ada4255e994278b429d648",
+    "search/spk_v5_t10stu_vwx_yza_cumulative_gate.sh": "0f07ccc140e53fbb7f6cff65d73bf3f50895c8969ec9995572de27d8942a7942"
+  },
+  "frozen_components_modified": false,
+  "promotion_allowed": false,
+  "schema": "spk-v5-t10stu-vwx-yza-source-manifest/v0"
+}

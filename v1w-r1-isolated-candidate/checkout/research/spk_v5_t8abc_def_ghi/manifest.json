@@ -1,0 +1,23 @@
+{
+  "files": {
+    "docs/spk-bv-semantic-and-p-admission-v1-candidate.md": "afe8640d3b8aba8cb880bd1787134a3a1a10595f57b5326dd53f91d95c93c9ed",
+    "research/spk_v5_t8abc_def_ghi/README.md": "eddb60e1bec717265da5dfcba47ab684f901b057b4e30aa88de853997561eb02",
+    "research/spk_v5_t8abc_def_ghi/cumulative_gate_v0.py": "0df73adce8fe2db8bc880c448204f05b3e950b107c5df6aea1aa8458bbfb6b7c",
+    "research/spk_v5_t8abc_def_ghi/epoch_port_v1_candidate.py": "71397d4d6f3ecde11cc2bb9b5c1e27636f00bf84ed6955ba477d86809740a215",
+    "research/spk_v5_t8abc_def_ghi/p_admission_v1_candidate.py": "25e7c429100f2a2a9e2d9505142b2e4640a8c20e73b30b89a116c1720068b5bc",
+    "research/spk_v5_t8abc_def_ghi/reference/t7jkl-mno-pqr.json": "9044d665e4b56dbf1d3b58facb175248d294c05343182c095b1cd7440beb01ce",
+    "research/spk_v5_t8abc_def_ghi/semantic_packet_v1_candidate.py": "20d3b5590973fbbc900807a93b08e47ab90c01001474fe7a55e6ee00a233d6cb",
+    "research/spk_v5_t8abc_def_ghi/tests/test_candidate_v1.py": "a5f04ce41a8b2be4bce09cf2c7b387797aaed73898fa701ad6bd3a22dc494f6b",
+    "search/spk_v5_t8abc_def_ghi_cumulative_gate.sh": "f485977398342a6fc72115c2ec8652dc04982094b3dde5221f998be7947d3ef9"
+  },
+  "frozen_BV_sha256": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+  "frozen_PE_sha256": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+  "native_BV_credit": 0,
+  "native_P_memory_adoption": false,
+  "native_P_write_grants": 0,
+  "native_learning": false,
+  "original_source_pins": 12,
+  "prior_T7JKL_report_sha256": "9044d665e4b56dbf1d3b58facb175248d294c05343182c095b1cd7440beb01ce",
+  "promotion_allowed": false,
+  "schema": "spk-v5-t8abc-def-ghi-semantic-contract-candidate-manifest/research-v0"
+}

@@ -1,0 +1,478 @@
+{
+  "P_writes": 0,
+  "architecture_promotion_allowed": false,
+  "bv_to_p_authorized": false,
+  "checks": {
+    "equivalence_present": true,
+    "equivalence_semantics_pinned": true,
+    "i2c17_reference_present": true,
+    "i2c17_reference_structurally_valid": true,
+    "reference_sha256_pinned": true,
+    "results_present": true,
+    "results_structurally_valid": true,
+    "source_present": true,
+    "source_structurally_valid": true
+  },
+  "generated_utc": "2026-10-28T21:28:41.803064+00:00",
+  "inputs": {
+    "equivalence": {
+      "archive_member": "reports/spk-lab-i2c16-cold-native-one-step-equivalence.json",
+      "embedded_in": "/home/ste/Scaricati/SPK_I2c16_Cold_One_Step_Results_20261028T183657Z_127227_0.tar.gz",
+      "found": true,
+      "sha256": "a0e58bd32843051689bc1a9826959293a1ec08fc1d66672aca91af19fcbf84ff",
+      "validation": {
+        "all_passed": true,
+        "checks": {
+          "fanout_1_capsule_digest": true,
+          "fanout_1_custody": true,
+          "fanout_1_equivalence": true,
+          "fanout_2_capsule_digest": true,
+          "fanout_2_custody": true,
+          "fanout_2_equivalence": true,
+          "no_authority_grant": true,
+          "positive_cases": true,
+          "schema": true,
+          "status": true,
+          "unresolved_intent_veto": true
+        }
+      }
+    },
+    "i2c17_reference": {
+      "audit": {
+        "archive_sha256": "f7790e439eaa1d809223dd987ef3ab6e2ed4a680bc04a7d63b3bae64769c433e",
+        "compressed_bytes": 11376,
+        "entries": 11,
+        "entry_hashes": [
+          {
+            "bytes": 11947,
+            "path": "SPK_Lab_I2c17_Atomic_Successor_Research_20261028/tests/test_authority.py",
+            "sha256": "ed75d222016518f780aa758e4ec81f5a40c3dbb1c723b7ed7c33319fbd1544aa"
+          },
+          {
+            "bytes": 51,
+            "path": "SPK_Lab_I2c17_Atomic_Successor_Research_20261028/tests/__init__.py",
+            "sha256": "62c515dc7d8efa131e2935be680788197687e294817aae0e2369208c617c7008"
+          },
+          {
+            "bytes": 165,
+            "path": "SPK_Lab_I2c17_Atomic_Successor_Research_20261028/run_reference_gate.sh",
+            "sha256": "30bb9a043e1a50884ef44dfc74111bcf6e2153ab8e6077baa7bb59d32fa5fd51"
+          },
+          {
+            "bytes": 163,
+            "path": "SPK_Lab_I2c17_Atomic_Successor_Research_20261028/spk_i2c17/__init__.py",
+            "sha256": "51a2cde24de30c4d373020e4385766b4f11125f8b1771b2b0c704e90dba95ac9"
+          },
+          {
+            "bytes": 16887,
+            "path": "SPK_Lab_I2c17_Atomic_Successor_Research_20261028/spk_i2c17/authority.py",
+            "sha256": "42689e7c8669b5c9eb738822725ffc37d34eaa105c4116850ab92152f8e59dfc"
+          },
+          {
+            "bytes": 58,
+            "path": "SPK_Lab_I2c17_Atomic_Successor_Research_20261028/examples/__init__.py",
+            "sha256": "bff8ded954e7f08c56e87751e5d557eb1436dd0bb9df7293a4f2961f57e181a0"
+          },
+          {
+            "bytes": 1341,
+            "path": "SPK_Lab_I2c17_Atomic_Successor_Research_20261028/examples/emit_report.py",
+            "sha256": "ca45118d4238bb9ca5b42df2f7bff5cdab20c96518259fd1b8d53556d73296b1"
+          },
+          {
+            "bytes": 521,
+            "path": "SPK_Lab_I2c17_Atomic_Successor_Research_20261028/examples/hard_crash_probe.py",
+            "sha256": "0844ba168b9e48669ca7104bb77d733174b035b09966805e9f626e5e4a1662fd"
+          },
+          {
+            "bytes": 878,
+            "path": "SPK_Lab_I2c17_Atomic_Successor_Research_20261028/evidence/research_gate_scope.json",
+            "sha256": "8a8e72bf1d5ac8e2f1217d05ae1699ad1053877b04538b2d6bc1af18322f1029"
+          },
+          {
+            "bytes": 990,
+            "path": "SPK_Lab_I2c17_Atomic_Successor_Research_20261028/evidence/spk-lab-i2c17-atomic-install-reference.json",
+            "sha256": "5810d3cc46d419fdaa906bc68084794921665fbdd64a809d86a6092c3e4949ab"
+          },
+          {
+            "bytes": 6223,
+            "path": "SPK_Lab_I2c17_Atomic_Successor_Research_20261028/README.md",
+            "sha256": "964faf141eec5fb0bf14b51198e95767d3de207678452f7f6f740f0bc9f7a94c"
+          }
+        ],
+        "expanded_bytes": 39224,
+        "filename": "SPK_I2c17_Atomic_Successor_v2.tar.gz",
+        "json_files": [
+          "SPK_Lab_I2c17_Atomic_Successor_Research_20261028/evidence/research_gate_scope.json",
+          "SPK_Lab_I2c17_Atomic_Successor_Research_20261028/evidence/spk-lab-i2c17-atomic-install-reference.json"
+        ],
+        "potential_native_references": [
+          {
+            "path": "SPK_Lab_I2c17_Atomic_Successor_Research_20261028/tests/test_authority.py",
+            "sha256": "ed75d222016518f780aa758e4ec81f5a40c3dbb1c723b7ed7c33319fbd1544aa",
+            "symbols": [
+              "I2c16",
+              "INTENT_UNRESOLVED",
+              "RECEIPT_RECORDED"
+            ]
+          },
+          {
+            "path": "SPK_Lab_I2c17_Atomic_Successor_Research_20261028/examples/emit_report.py",
+            "sha256": "ca45118d4238bb9ca5b42df2f7bff5cdab20c96518259fd1b8d53556d73296b1",
+            "symbols": [
+              "I2c16",
+              "INTENT_UNRESOLVED"
+            ]
+          },
+          {
+            "path": "SPK_Lab_I2c17_Atomic_Successor_Research_20261028/evidence/research_gate_scope.json",
+            "sha256": "8a8e72bf1d5ac8e2f1217d05ae1699ad1053877b04538b2d6bc1af18322f1029",
+            "symbols": [
+              "I2c16"
+            ]
+          },
+          {
+            "path": "SPK_Lab_I2c17_Atomic_Successor_Research_20261028/evidence/spk-lab-i2c17-atomic-install-reference.json",
+            "sha256": "5810d3cc46d419fdaa906bc68084794921665fbdd64a809d86a6092c3e4949ab",
+            "symbols": [
+              "I2c16",
+              "INTENT_UNRESOLVED"
+            ]
+          },
+          {
+            "path": "SPK_Lab_I2c17_Atomic_Successor_Research_20261028/README.md",
+            "sha256": "964faf141eec5fb0bf14b51198e95767d3de207678452f7f6f740f0bc9f7a94c",
+            "symbols": [
+              "INTENT_UNRESOLVED",
+              "RECEIPT_RECORDED",
+              "i2c16"
+            ]
+          }
+        ],
+        "python_modules": [
+          "SPK_Lab_I2c17_Atomic_Successor_Research_20261028/tests/test_authority.py",
+          "SPK_Lab_I2c17_Atomic_Successor_Research_20261028/tests/__init__.py",
+          "SPK_Lab_I2c17_Atomic_Successor_Research_20261028/spk_i2c17/__init__.py",
+          "SPK_Lab_I2c17_Atomic_Successor_Research_20261028/spk_i2c17/authority.py",
+          "SPK_Lab_I2c17_Atomic_Successor_Research_20261028/examples/__init__.py",
+          "SPK_Lab_I2c17_Atomic_Successor_Research_20261028/examples/emit_report.py",
+          "SPK_Lab_I2c17_Atomic_Successor_Research_20261028/examples/hard_crash_probe.py"
+        ],
+        "runners": [
+          "SPK_Lab_I2c17_Atomic_Successor_Research_20261028/run_reference_gate.sh"
+        ]
+      },
+      "bytes": 11376,
+      "found": true,
+      "path": "/home/ste/Scaricati/SPK_I2c17_Atomic_Successor_v2.tar.gz",
+      "sha256": "f7790e439eaa1d809223dd987ef3ab6e2ed4a680bc04a7d63b3bae64769c433e"
+    },
+    "results": {
+      "audit": {
+        "archive_sha256": "9c42281bee584c476150877d002e655330d4ee737a1c3b00ee374684230a2e08",
+        "compressed_bytes": 39421,
+        "entries": 15,
+        "entry_hashes": [
+          {
+            "bytes": 2305,
+            "path": "bundle_manifest.json",
+            "sha256": "238dc8dac3fcc84b12d9e0b66aab6b666ac9d932b9496273d176666191c5c0a3"
+          },
+          {
+            "bytes": 1316,
+            "path": "custody/i2c16-manifest.json",
+            "sha256": "c997392b466e9c61ee138beded51c8fd757b3a442d5639093b82fecbfde6e90b"
+          },
+          {
+            "bytes": 1756,
+            "path": "gate.log",
+            "sha256": "d1163442bcf70c16e8c689548d9132a63757efa4278bebbf41703149160d193e"
+          },
+          {
+            "bytes": 2706,
+            "path": "predecessor/i2c15-report.json",
+            "sha256": "9498995527b5a755f12a1afeee6ff2951f48fff809e0f722bc29821bdebe82c1"
+          },
+          {
+            "bytes": 3988,
+            "path": "reports/spk-lab-i2c16-cold-native-one-step-equivalence.json",
+            "sha256": "a0e58bd32843051689bc1a9826959293a1ec08fc1d66672aca91af19fcbf84ff"
+          },
+          {
+            "bytes": 5055493,
+            "path": "tests/sweep1.xml",
+            "sha256": "ea16b9bf15c6cec5539096e216581b65ffd9430562e128a0f35cb037fc2c02d0"
+          },
+          {
+            "bytes": 5055493,
+            "path": "tests/sweep2.xml",
+            "sha256": "0e77d047426ad8f8494983959d296c7666e5651826816f94ff80aff331fc6f3f"
+          },
+          {
+            "bytes": 15382,
+            "path": "tests/tests/test_application_runtime_host_v0.py",
+            "sha256": "22bc447ad52df994cd94d413c4c24e524579c52e4608b9d8d53a928f754a916a"
+          },
+          {
+            "bytes": 14595,
+            "path": "tests/tests/test_atomic_neuronal_commit_v0.py",
+            "sha256": "c284fb3c4b61e809dd386e9f4fb52a4c7328fae9b09785179d354f036f996e4f"
+          },
+          {
+            "bytes": 10443,
+            "path": "tests/tests/test_owned_root_terminal_commit_v0.py",
+            "sha256": "8628a4b45959f5e93bd8b4d37a8f09a830e3fd01aa1481b8be6eac0ece1d1206"
+          },
+          {
+            "bytes": 2687,
+            "path": "tests/tests/test_spk_lab_i2c12_emitting_host_v1.py",
+            "sha256": "d935ac8ace0e97efd23ec0e03267350e5fe2dbe75b5a105875d26f9387c3ddc7"
+          },
+          {
+            "bytes": 9101,
+            "path": "tests/tests/test_spk_lab_i2c13_durable_epoch_registry.py",
+            "sha256": "8fec08a623f567bae517f168403d74ff61621413019e3278a8776f0dbcae2dd5"
+          },
+          {
+            "bytes": 7047,
+            "path": "tests/tests/test_spk_lab_i2c14_audited_checkpoint.py",
+            "sha256": "4a3826999243b2684b0247f7b1abdf142b6ddc160b2ca117f4ab42252afcc038"
+          },
+          {
+            "bytes": 6058,
+            "path": "tests/tests/test_spk_lab_i2c15_native_capsule.py",
+            "sha256": "8dc44f073b845d0fc152c93c6e0b271b16eb27d742fe87f3dfee96a0897e41c7"
+          },
+          {
+            "bytes": 4778,
+            "path": "tests/tests/test_spk_lab_i2c16_cold_continuation.py",
+            "sha256": "8a455c3eaf3dd1629ba660ff1740a70fd22c96b408c6797fb187b1347414fc58"
+          }
+        ],
+        "expanded_bytes": 10193148,
+        "filename": "SPK_I2c16_Cold_One_Step_Results_20261028T183657Z_127227_0.tar.gz",
+        "json_files": [
+          "bundle_manifest.json",
+          "custody/i2c16-manifest.json",
+          "predecessor/i2c15-report.json",
+          "reports/spk-lab-i2c16-cold-native-one-step-equivalence.json"
+        ],
+        "potential_native_references": [
+          {
+            "path": "bundle_manifest.json",
+            "sha256": "238dc8dac3fcc84b12d9e0b66aab6b666ac9d932b9496273d176666191c5c0a3",
+            "symbols": [
+              "i2c16"
+            ]
+          },
+          {
+            "path": "custody/i2c16-manifest.json",
+            "sha256": "c997392b466e9c61ee138beded51c8fd757b3a442d5639093b82fecbfde6e90b",
+            "symbols": [
+              "i2c16"
+            ]
+          },
+          {
+            "path": "predecessor/i2c15-report.json",
+            "sha256": "9498995527b5a755f12a1afeee6ff2951f48fff809e0f722bc29821bdebe82c1",
+            "symbols": [
+              "INTENT_UNRESOLVED",
+              "RECEIPT_RECORDED"
+            ]
+          },
+          {
+            "path": "reports/spk-lab-i2c16-cold-native-one-step-equivalence.json",
+            "sha256": "a0e58bd32843051689bc1a9826959293a1ec08fc1d66672aca91af19fcbf84ff",
+            "symbols": [
+              "INTENT_UNRESOLVED",
+              "RECEIPT_RECORDED",
+              "i2c16"
+            ]
+          },
+          {
+            "path": "tests/tests/test_spk_lab_i2c13_durable_epoch_registry.py",
+            "sha256": "8fec08a623f567bae517f168403d74ff61621413019e3278a8776f0dbcae2dd5",
+            "symbols": [
+              "INTENT_UNRESOLVED",
+              "RECEIPT_RECORDED"
+            ]
+          },
+          {
+            "path": "tests/tests/test_spk_lab_i2c14_audited_checkpoint.py",
+            "sha256": "4a3826999243b2684b0247f7b1abdf142b6ddc160b2ca117f4ab42252afcc038",
+            "symbols": [
+              "INTENT_UNRESOLVED",
+              "RECEIPT_RECORDED"
+            ]
+          },
+          {
+            "path": "tests/tests/test_spk_lab_i2c15_native_capsule.py",
+            "sha256": "8dc44f073b845d0fc152c93c6e0b271b16eb27d742fe87f3dfee96a0897e41c7",
+            "symbols": [
+              "INTENT_UNRESOLVED",
+              "RECEIPT_RECORDED"
+            ]
+          },
+          {
+            "path": "tests/tests/test_spk_lab_i2c16_cold_continuation.py",
+            "sha256": "8a455c3eaf3dd1629ba660ff1740a70fd22c96b408c6797fb187b1347414fc58",
+            "symbols": [
+              "INTENT_UNRESOLVED"
+            ]
+          }
+        ],
+        "python_modules": [
+          "tests/tests/test_application_runtime_host_v0.py",
+          "tests/tests/test_atomic_neuronal_commit_v0.py",
+          "tests/tests/test_owned_root_terminal_commit_v0.py",
+          "tests/tests/test_spk_lab_i2c12_emitting_host_v1.py",
+          "tests/tests/test_spk_lab_i2c13_durable_epoch_registry.py",
+          "tests/tests/test_spk_lab_i2c14_audited_checkpoint.py",
+          "tests/tests/test_spk_lab_i2c15_native_capsule.py",
+          "tests/tests/test_spk_lab_i2c16_cold_continuation.py"
+        ],
+        "runners": []
+      },
+      "bytes": 39421,
+      "found": true,
+      "path": "/home/ste/Scaricati/SPK_I2c16_Cold_One_Step_Results_20261028T183657Z_127227_0.tar.gz",
+      "sha256": "9c42281bee584c476150877d002e655330d4ee737a1c3b00ee374684230a2e08",
+      "text_observations": {
+        "execution_log_verified": false,
+        "log_hits": [
+          {
+            "310_passed_mentions": 2,
+            "gate_exit_0": false,
+            "path": "gate.log"
+          }
+        ]
+      }
+    },
+    "source": {
+      "audit": {
+        "archive_sha256": "a140fc7688a649155fcde8ad4b7a52bee83ceccce6f7e3e6b15cbbda23439547",
+        "compressed_bytes": 9098,
+        "entries": 7,
+        "entry_hashes": [
+          {
+            "bytes": 1262,
+            "path": "docs/spk-lab-i2c16-cold-one-step-equivalence.md",
+            "sha256": "eda4cbf5dca05ebef14de585c673ea0839438a935e54ba3bf7de9869f0d8a146"
+          },
+          {
+            "bytes": 6649,
+            "path": "search/spk_lab_i2c16_one_command.py",
+            "sha256": "1f2acbc86eab2911bef913ae137bdc86415036ad8346e3982f091a0de883a88e"
+          },
+          {
+            "bytes": 120,
+            "path": "search/spk_lab_i2c16_run_and_bundle.sh",
+            "sha256": "0374c53e486850e7d223a2fcb58b62d2b6c35662baa8de9875ecf0ef9bd37674"
+          },
+          {
+            "bytes": 10349,
+            "path": "spk_native_learning_v1/lab_i2c16_cold_continuation.py",
+            "sha256": "9b08f196c9a8b0f0e95b5c7390033868a531438865ffae75d7d933bf43666e98"
+          },
+          {
+            "bytes": 1316,
+            "path": "spk_native_learning_v1/lab_i2c16_manifest.json",
+            "sha256": "c997392b466e9c61ee138beded51c8fd757b3a442d5639093b82fecbfde6e90b"
+          },
+          {
+            "bytes": 2539,
+            "path": "spk_native_learning_v1/lab_i2c16_source_guard.py",
+            "sha256": "e56c0d4b11f873bae82989d1353639cb37875f38d1a0afe3f250bce3d3764195"
+          },
+          {
+            "bytes": 4778,
+            "path": "tests/test_spk_lab_i2c16_cold_continuation.py",
+            "sha256": "8a455c3eaf3dd1629ba660ff1740a70fd22c96b408c6797fb187b1347414fc58"
+          }
+        ],
+        "expanded_bytes": 27013,
+        "filename": "SPK_Lab_I2c16_Cold_One_Step_One_Command_20261028.tar.gz",
+        "json_files": [
+          "spk_native_learning_v1/lab_i2c16_manifest.json"
+        ],
+        "potential_native_references": [
+          {
+            "path": "docs/spk-lab-i2c16-cold-one-step-equivalence.md",
+            "sha256": "eda4cbf5dca05ebef14de585c673ea0839438a935e54ba3bf7de9869f0d8a146",
+            "symbols": [
+              "INTENT_UNRESOLVED"
+            ]
+          },
+          {
+            "path": "search/spk_lab_i2c16_one_command.py",
+            "sha256": "1f2acbc86eab2911bef913ae137bdc86415036ad8346e3982f091a0de883a88e",
+            "symbols": [
+              "GATE_EXIT",
+              "INTENT_UNRESOLVED",
+              "i2c16"
+            ]
+          },
+          {
+            "path": "search/spk_lab_i2c16_run_and_bundle.sh",
+            "sha256": "0374c53e486850e7d223a2fcb58b62d2b6c35662baa8de9875ecf0ef9bd37674",
+            "symbols": []
+          },
+          {
+            "path": "spk_native_learning_v1/lab_i2c16_cold_continuation.py",
+            "sha256": "9b08f196c9a8b0f0e95b5c7390033868a531438865ffae75d7d933bf43666e98",
+            "symbols": [
+              "INTENT_UNRESOLVED",
+              "RECEIPT_RECORDED",
+              "i2c16"
+            ]
+          },
+          {
+            "path": "spk_native_learning_v1/lab_i2c16_manifest.json",
+            "sha256": "c997392b466e9c61ee138beded51c8fd757b3a442d5639093b82fecbfde6e90b",
+            "symbols": [
+              "i2c16"
+            ]
+          },
+          {
+            "path": "spk_native_learning_v1/lab_i2c16_source_guard.py",
+            "sha256": "e56c0d4b11f873bae82989d1353639cb37875f38d1a0afe3f250bce3d3764195",
+            "symbols": [
+              "i2c16"
+            ]
+          },
+          {
+            "path": "tests/test_spk_lab_i2c16_cold_continuation.py",
+            "sha256": "8a455c3eaf3dd1629ba660ff1740a70fd22c96b408c6797fb187b1347414fc58",
+            "symbols": [
+              "INTENT_UNRESOLVED"
+            ]
+          }
+        ],
+        "python_modules": [
+          "search/spk_lab_i2c16_one_command.py",
+          "spk_native_learning_v1/lab_i2c16_cold_continuation.py",
+          "spk_native_learning_v1/lab_i2c16_source_guard.py",
+          "tests/test_spk_lab_i2c16_cold_continuation.py"
+        ],
+        "runners": [
+          "search/spk_lab_i2c16_run_and_bundle.sh"
+        ]
+      },
+      "bytes": 9098,
+      "found": true,
+      "path": "/home/ste/Scaricati/SPK_Lab_I2c16_Cold_One_Step_One_Command_20261028.tar.gz",
+      "sha256": "a140fc7688a649155fcde8ad4b7a52bee83ceccce6f7e3e6b15cbbda23439547"
+    }
+  },
+  "limitations": [
+    "No original I2c.16 code was executed by this tool.",
+    "Log strings are observations, not fresh native test results.",
+    "No independent native-owner authority, recipient ACK, 24j dispatch, BV or P.",
+    "SQLite atomicity does not encompass original native function effects."
+  ],
+  "native_original_integrated": false,
+  "native_successor_installed": false,
+  "production_release": false,
+  "schema": "spk-lab-i2c17n-native-source-custody-preflight/v1",
+  "scope": "LOCAL_SOURCE_CUSTODY_PREFLIGHT_ONLY",
+  "status": "PREFLIGHT_INPUTS_READY_FOR_NATIVE_BINDING_REVIEW_NOT_NATIVE_PASS"
+}

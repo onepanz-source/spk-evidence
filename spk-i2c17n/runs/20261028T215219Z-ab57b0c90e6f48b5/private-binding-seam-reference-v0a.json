@@ -1,0 +1,48 @@
+{
+  "BV_to_P_authorized": false,
+  "P_writes": 0,
+  "acceptance_next": "Implement and test ORIGINAL I2c.16 executor and independent audit in a private bounded run, then same-authority durable install and native crash recovery; no ambiguous replay.",
+  "architecture_promotion_allowed": false,
+  "generated_utc": "2026-10-28T21:52:20.512728+00:00",
+  "git_HEAD_observed": "d3f1cd832fee84a6b6a379e4f469a30781c12691",
+  "limitations": [
+    "Reference seam tests use an explicit test double, not the original native I2c.16 callable.",
+    "SHA-verified source inventory does not establish native execution provenance.",
+    "SQLite transaction does not include external native side effects.",
+    "Audit callbacks must be independently trusted and source-proven before native acceptance."
+  ],
+  "native_24j_dispatch": false,
+  "native_backend_bound": false,
+  "native_original_executed_by_new_binding": false,
+  "native_successor_installed": false,
+  "original_source_archive_sha256": "a140fc7688a649155fcde8ad4b7a52bee83ceccce6f7e3e6b15cbbda23439547",
+  "original_source_member_sha256": "9b08f196c9a8b0f0e95b5c7390033868a531438865ffae75d7d933bf43666e98",
+  "production_release": false,
+  "recipient_ack_authenticated": false,
+  "schema": "spk-lab-i2c17n-private-binding-seam-reference/v0a",
+  "sqlite_reference_archive_sha256": "f7790e439eaa1d809223dd987ef3ab6e2ed4a680bc04a7d63b3bae64769c433e",
+  "sqlite_reference_member_sha256": "42689e7c8669b5c9eb738822725ffc37d34eaa105c4116850ab92152f8e59dfc",
+  "status": "PRIVATE_BINDING_SEAM_REFERENCE_PASS_NOT_NATIVE",
+  "tests": {
+    "existing_i2c17n": {
+      "passed": 17,
+      "suite_counts": [
+        11,
+        6
+      ]
+    },
+    "private_binding_contract": {
+      "passed": 18,
+      "suite_counts": [
+        18
+      ]
+    },
+    "sqlite_reference": {
+      "passed": 29,
+      "suite_counts": [
+        29
+      ]
+    }
+  },
+  "total_passed": 64
+}

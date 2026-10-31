@@ -1,0 +1,169 @@
+{
+  "T9STU": {
+    "fenced_affinity": {
+      "core_rows_sha256": "5d1c4ac4203d65fe6488e68c59bafb76a8109f1ac3163dbddb84201681d6c618",
+      "custody": {
+        "authenticated_A_source": false,
+        "grant_custody_sha256": "8aefbf097719753f65d39a663435f306a3df1804850cf3181b540a48503f693c",
+        "native_SPK_memory_grants": 0,
+        "verified_reference_grants": 8
+      },
+      "dispatcher_slots": 480,
+      "episodes": 96,
+      "max_active": 2,
+      "native_P_grants": 0,
+      "native_P_writes": 0,
+      "reference_P_grants": 8,
+      "reference_P_writes": 8,
+      "restart_every_wave": false,
+      "stale_vetoes": 0,
+      "strategy": "context_affinity",
+      "successes": 88,
+      "target_projection_sha256": "19e2763a9e34aa58f8e682324e41e05db3ce0f28cb305da00d74c3456d66d262",
+      "waves": 48
+    },
+    "fenced_naive": {
+      "core_rows_sha256": "1b79538cf3e73f2aac32e34001a1bf5cb7504fd9c4c29f147c023d86561516d6",
+      "custody": {
+        "authenticated_A_source": false,
+        "grant_custody_sha256": "910992086373e78236bbcac7e0cefb17e0eb60b64bef2dfad632e65c1ba3b62f",
+        "native_SPK_memory_grants": 0,
+        "verified_reference_grants": 8
+      },
+      "dispatcher_slots": 480,
+      "episodes": 96,
+      "max_active": 3,
+      "native_P_grants": 0,
+      "native_P_writes": 0,
+      "reference_P_grants": 8,
+      "reference_P_writes": 8,
+      "restart_every_wave": false,
+      "stale_vetoes": 4,
+      "strategy": "batch3",
+      "successes": 84,
+      "target_projection_sha256": "9ec32084ba04cf8ff6a95cf8b11220b1ea6bc3aa67e391ab0777eb0b0838781f",
+      "waves": 32
+    },
+    "fenced_serial": {
+      "core_rows_sha256": "5d1c4ac4203d65fe6488e68c59bafb76a8109f1ac3163dbddb84201681d6c618",
+      "custody": {
+        "authenticated_A_source": false,
+        "grant_custody_sha256": "354f9791ed78c11dca7d5a2bf66d9ecf3f5b67966a6151fe8eb5d3380b42a818",
+        "native_SPK_memory_grants": 0,
+        "verified_reference_grants": 8
+      },
+      "dispatcher_slots": 480,
+      "episodes": 96,
+      "max_active": 1,
+      "native_P_grants": 0,
+      "native_P_writes": 0,
+      "reference_P_grants": 8,
+      "reference_P_writes": 8,
+      "restart_every_wave": false,
+      "stale_vetoes": 0,
+      "strategy": "serial",
+      "successes": 88,
+      "target_projection_sha256": "e1eaf033326fe18292c043f49c57df0dc44a603940c329209cd87c3de7f8aedb",
+      "waves": 96
+    },
+    "reference_P_CAS_enforced_by_SQL_trigger": true
+  },
+  "T9VWX": {
+    "authenticated_host_authority": false,
+    "native_memory_contract_port_implemented": false,
+    "native_target_admission": "DENIED_NO_NATIVE_MEMORY_CONTRACT_PORT",
+    "reference_grant_lineage_independently_verified": true,
+    "reference_target_maps_exact_C_P_version": true
+  },
+  "T9YZA": {
+    "benefit_successes": 4,
+    "fixed_control": {
+      "core_rows_sha256": "e75ca28a3e70e34604e5d06dd5f7dcfc0fb39481e4befa6bafe0aedbf25f6a1e",
+      "custody": {
+        "authenticated_A_source": false,
+        "grant_custody_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "native_SPK_memory_grants": 0,
+        "verified_reference_grants": 0
+      },
+      "dispatcher_slots": 480,
+      "episodes": 96,
+      "max_active": 3,
+      "native_P_grants": 0,
+      "native_P_writes": 0,
+      "reference_P_grants": 0,
+      "reference_P_writes": 0,
+      "restart_every_wave": false,
+      "stale_vetoes": 0,
+      "strategy": "batch3",
+      "successes": 48,
+      "target_projection_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "waves": 32
+    },
+    "negative_witness": {
+      "direct_P_attempts_denied": [
+        "UPDATE",
+        "UPDATE",
+        "DELETE",
+        "INSERT"
+      ],
+      "direct_trigger_drop_detected": true,
+      "independent_grant_lineage": {
+        "authenticated_A_source": false,
+        "grant_custody_sha256": "02aafcd9a6632b7e8d312e5a0c08fa229a1797ffb609cdcba556040bb2a611f9",
+        "native_SPK_memory_grants": 0,
+        "verified_reference_grants": 1
+      },
+      "native_admission_granted": false,
+      "native_port_unavailable": true,
+      "one_reference_grant_two_same_version_verdicts": true,
+      "privileged_host_can_reseal": true,
+      "replay_and_restart_safe": true,
+      "second_direct_CAS_denied": true,
+      "unreconciled_P_tamper_detected": true
+    },
+    "performance_cost_waves": 16,
+    "restarted_affinity": {
+      "core_rows_sha256": "5d1c4ac4203d65fe6488e68c59bafb76a8109f1ac3163dbddb84201681d6c618",
+      "custody": {
+        "authenticated_A_source": false,
+        "grant_custody_sha256": "8aefbf097719753f65d39a663435f306a3df1804850cf3181b540a48503f693c",
+        "native_SPK_memory_grants": 0,
+        "verified_reference_grants": 8
+      },
+      "dispatcher_slots": 480,
+      "episodes": 96,
+      "max_active": 2,
+      "native_P_grants": 0,
+      "native_P_writes": 0,
+      "reference_P_grants": 8,
+      "reference_P_writes": 8,
+      "restart_every_wave": true,
+      "stale_vetoes": 0,
+      "strategy": "context_affinity",
+      "successes": 88,
+      "target_projection_sha256": "19e2763a9e34aa58f8e682324e41e05db3ce0f28cb305da00d74c3456d66d262",
+      "waves": 48
+    }
+  },
+  "frozen_BV_sha256": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+  "frozen_PE_sha256": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+  "host_can_forge": true,
+  "limits": [
+    "A reference-v1 P UPDATE is now fenced by an independent SQLite trigger requiring an existing grant and completed C semantic event",
+    "SQLite is still fully controlled by the privileged host; trigger removal/reseal is possible, not independent authority",
+    "Versioned C/P memory target is a typed research projection, NOT the frozen SPK Memory Contract admission",
+    "Reference-v1 events are epoch-local ticks; not a physical PE clock or native resource admission",
+    "Goals and A observations remain synthetic and host-authored; no real-world causal learning",
+    "SPK frozen PE/BV and Memory Contract unchanged; zero native learning"
+  ],
+  "native_BV_semantic_deliveries": 0,
+  "native_SPK_P_grants": 0,
+  "native_SPK_P_writes": 0,
+  "native_learning": false,
+  "new_frozen_scheduler_calls": 0,
+  "original_source_pins": 12,
+  "promotion_allowed": false,
+  "schema": "spk-v5-t9stu-vwx-yza-reference-P-fence-and-native-seam/research-v0",
+  "source_T9JKL_SHA256": "55d433477111f2e820b60074d206e449a5af7cd9d44fd6e2ad7411964fe56ae8",
+  "status": "REFERENCE_P_STORE_FENCE_GRANT_LINEAGE_AND_NATIVE_ADMISSION_SEAM_RESEARCH_ONLY"
+}

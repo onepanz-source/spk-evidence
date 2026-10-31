@@ -1,0 +1,77 @@
+{
+  "BV_to_P_authorized": false,
+  "P_writes": 0,
+  "architecture_promotion_allowed": false,
+  "cases": [
+    {
+      "P_writes": 0,
+      "baseline_tick": 7,
+      "fanout": 1,
+      "final_sha256": "c4444ccb4cd55a9892d1ec8f0e6255871b1295a076e68a5ff9635b16417d6810",
+      "local_parallel_owner_excluded": true,
+      "native_parent_capsule_unchanged": true,
+      "recovered_ticks": [
+        8,
+        9,
+        10
+      ],
+      "three_durable_decisions": true,
+      "three_generations": true,
+      "two_separate_owner_process_starts": true
+    },
+    {
+      "P_writes": 0,
+      "baseline_tick": 7,
+      "fanout": 2,
+      "final_sha256": "363b152f8e493c3e88a254aa126b6d1b41c556ecc83e7002fd281c5846c1163f",
+      "local_parallel_owner_excluded": true,
+      "native_parent_capsule_unchanged": true,
+      "recovered_ticks": [
+        8,
+        9,
+        10
+      ],
+      "three_durable_decisions": true,
+      "three_generations": true,
+      "two_separate_owner_process_starts": true
+    }
+  ],
+  "crashes": [
+    {
+      "P_writes": 0,
+      "automatic_native_retry": false,
+      "child_exit": 91,
+      "fault": "hard_before_commit",
+      "generation_after_crash": 1,
+      "local_lock_released": true,
+      "recovery_is_observe_only": true
+    },
+    {
+      "P_writes": 0,
+      "automatic_native_retry": false,
+      "child_exit": 92,
+      "fault": "hard_after_commit",
+      "generation_after_crash": 2,
+      "local_lock_released": true,
+      "recovery_is_observe_only": true
+    }
+  ],
+  "cross_machine_fencing": false,
+  "disposable_private_controller_only": true,
+  "external_principal_authenticated": false,
+  "limitations": [
+    "A temporary research controller executes the frozen native internal-read transition; the original application owner lifecycle is NOT integrated.",
+    "fcntl.flock is cooperative LOCAL advisory process exclusion, not a distributed or SQLite-native epoch lease.",
+    "A separate cold process using the same frozen implementation is not independent external authentication.",
+    "Crash-before-commit remains ambiguous: observation-only, no automatic retry.",
+    "No original 24j dispatch, recipient ACK, cross-machine fencing, BV, grant or P writes."
+  ],
+  "lineage_tamper_veto": true,
+  "local_owner_lock_linux_flock": true,
+  "native_24j_dispatch": false,
+  "original_owner_live_resume": false,
+  "production_release": false,
+  "recipient_ack_authenticated": false,
+  "schema": "spk-lab-i2c17n-private-local-owner-admission/v0f",
+  "status": "I2C17N_PRIVATE_LOCAL_OWNER_ADMISSION_RESEARCH_PASS_NOT_LIVE_OWNER"
+}

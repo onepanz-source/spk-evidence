@@ -1,0 +1,20 @@
+{
+  "files": {
+    "research/spk_v5_t7abc_def_ghi/README.md": "30a9113dd8b08f65766850e7f2e1fe748ecaf9fa0666089e8dfd7243d76d82fd",
+    "research/spk_v5_t7abc_def_ghi/cumulative_gate_v0.py": "38fe237f655cec8aaa150f903cab856b22b6ed1f69d3eb2eb1b94892f742c973",
+    "research/spk_v5_t7abc_def_ghi/epoch_state_v0.py": "bbbc98b853645a45f48bfe6db92dd28f2835a8c4732f661cfbfebe3d96f22409",
+    "research/spk_v5_t7abc_def_ghi/reference/t6stu-vwx-yza-cumulative.json": "4d5115384c480117e087cb63a7e5d8e6334f9de02557116572904b63d3ac0922",
+    "research/spk_v5_t7abc_def_ghi/scheduler_bridge_v0.py": "5b655e7f0180c34565fb52cb6be04785266b2491ce8d4efebf69ae1f8098bd8c",
+    "research/spk_v5_t7abc_def_ghi/tests/test_epoch_bridge.py": "7704f20189eadd65a2244ca1ee7bc62e60c509bb398b0356048cfd1477a94eaa",
+    "search/spk_v5_t7abc_def_ghi_cumulative_gate.sh": "f7346574687c8900f9a716a5f42cd7fb677d2b79757ded14accf5a9a96b3a4f6"
+  },
+  "frozen_BV_sha256": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+  "frozen_PE_sha256": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+  "frozen_components_modified": false,
+  "native_BV_credit": 0,
+  "native_learning": false,
+  "original_source_pins": 12,
+  "promotion_allowed": false,
+  "reference_T6_STU_VWX_YZA_SHA256": "4d5115384c480117e087cb63a7e5d8e6334f9de02557116572904b63d3ac0922",
+  "schema": "spk-v5-t7abc-def-ghi-frozen-bv-epoch-adapter-manifest/research-v0"
+}

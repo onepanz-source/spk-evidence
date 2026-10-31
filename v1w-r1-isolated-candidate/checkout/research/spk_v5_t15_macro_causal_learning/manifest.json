@@ -1,0 +1,20 @@
+{
+  "checkpoint": "SPK V5/T15 MACRO Prospective A-Computed Feedback Research Falsification",
+  "files": {
+    "docs/spk-v5-t15-prospective-hypothesis-and-acceptance.md": "83fa1fa98f433b2f08e04d78c5e722d0ffda1696b8d0bba49db8230598ed5eb4",
+    "research/spk_v5_t15_macro_causal_learning/README.md": "4c22a4ef7a22def1c4f393dcd2b9e0e38701ba2ea71f56d3f1a70522a8ea070c",
+    "research/spk_v5_t15_macro_causal_learning/__init__.py": "f315806334bf8ea9e60b527a46574649bef13b097476d2ce5bcd9854324e3986",
+    "research/spk_v5_t15_macro_causal_learning/causal_cell_v1.py": "a52b01d62dd2fbb4de69832546e3cb9865d7106696fa51b01a4445154e5b6881",
+    "research/spk_v5_t15_macro_causal_learning/prospective_gate.py": "57abf16a49a6c7f929e09be8c3db8cffdfa4b2fb031932fe289f6c580026632a",
+    "research/spk_v5_t15_macro_causal_learning/reference/t14-lab-signed-source.json": "2f204181d43c3ce3835daeb31f19d29d84409b93e34644b4b47248a264a69e4b",
+    "research/spk_v5_t15_macro_causal_learning/tests/test_causal_learning.py": "be1f398cb4356797f4af06766497a486b25a98598561de5481f18407417ff95d",
+    "search/spk_v5_t15_macro_prospective_learning_gate.sh": "28696eef5753f7077eb8e21a80faa040c2b1deebbc709c7be17a0b6286d52511"
+  },
+  "frozen_components_modified": false,
+  "native_learning": false,
+  "original_PE_sha256": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+  "parent_T14_sha256": "2f204181d43c3ce3835daeb31f19d29d84409b93e34644b4b47248a264a69e4b",
+  "promotion_allowed": false,
+  "schema": "spk-v5-t15-macro-prospective-learning-manifest/research-v0",
+  "source_mode": "host-controlled deterministic world, A-local PE-computed feedback, C original local PE fragment; new v1 research loop only"
+}

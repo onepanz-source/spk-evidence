@@ -1,0 +1,26 @@
+{
+  "additive_only": true,
+  "files": {
+    "docs/spk-v1-macro-owned-memory-contract-integration.md": "9eea48c2cb7b577cfb64cb95cf8b5b7534f91f8244cdd1c00d38b41789f61c2e",
+    "research/spk_v5_t11_macro_memory_v1/README.md": "3ca479a950d14bc80ad9a0e2e650818e862293a50f6fb81c0d0790ca88bb9d52",
+    "research/spk_v5_t11_macro_memory_v1/__init__.py": "ff907e3c7e4d240cd80c6fcf0ac2beb50b112030cfad5d1c68150f4a6da3b2d8",
+    "research/spk_v5_t11_macro_memory_v1/macro_gate.py": "f46e851219c045465f0dad347683684838dff00126720d3c6307e06ca71e6682",
+    "research/spk_v5_t11_macro_memory_v1/memory_authority_v1.py": "423cb8f7229bb8b62ff67c118b1446a116592f6105aeea477f607a6f3f509106",
+    "research/spk_v5_t11_macro_memory_v1/reference/t10jkl-mno-pqr-cumulative.json": "789f8a13885caf0f2ae2ade81565916411b398c4686e21cb5e382db229cc20d1",
+    "research/spk_v5_t11_macro_memory_v1/tests/test_owned_memory_v1.py": "c50ccf40773a46b279602109c6054fe53b92fa21633521cb5bdf025d186af22b",
+    "search/spk_v5_t11_macro_owned_memory_v1_cumulative_gate.sh": "36fa6475caf55d8383ea8e0d29edbe6e080ac3d50f3c95194f8c8379d8d93230"
+  },
+  "frozen_components_modified": false,
+  "native_learning": false,
+  "previous_fwork_T10STU_report_sha256": "8e06cd938024ccfaf63ad43f3c9b5e02d1b1d4f34fa4fccc5b201135a824f36c",
+  "promotion_allowed": false,
+  "schema": "spk-v5-t11-macro-owned-memory-v1/manifest-v0",
+  "workstreams": [
+    "owned_memory_contract",
+    "tick_authority",
+    "resource_scope",
+    "concurrent_credit",
+    "recovery_adversarial",
+    "frozen_compatibility"
+  ]
+}

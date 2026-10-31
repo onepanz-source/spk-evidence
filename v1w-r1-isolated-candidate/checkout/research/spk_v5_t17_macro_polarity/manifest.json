@@ -1,0 +1,16 @@
+{
+  "files": {
+    "research/spk_v5_t17_macro_polarity/README.md": "7682beb1f6bfee5106cad3d4dcc4a11785b5989a17e61bb10fe474e82bf159e5",
+    "research/spk_v5_t17_macro_polarity/__init__.py": "4ab3c646bb9f38f712d2fc0347a9a78d32254ee1cbe00b1f5965fa519ddebab0",
+    "research/spk_v5_t17_macro_polarity/adaptive_runtime_v2.py": "ab262653ffdcb2ba288d2e12b7f62919ab4e0a689ce2314c19d68f43645f44b3",
+    "research/spk_v5_t17_macro_polarity/macro_gate.py": "10cc7c8cb1f9fb5e4ff18e7b5d101b66760c7af4e7e5fcba558861e3b654f73d",
+    "research/spk_v5_t17_macro_polarity/reference/t16-fwork.json": "e768acd122f39c38dfb3c3dee8df2c1d3e74479beb53be1a5e746a957dd6d2ca",
+    "research/spk_v5_t17_macro_polarity/tests/test_adaptive_runtime.py": "f9d5d6b7e457862416f2748874aadb57a6573266e5b42df43a21a58ec4ed6790",
+    "search/spk_v5_t17_macro_unknown_actuator_gate.sh": "431f01e9741e1edc99eaf9ce0cc15cd0c3789e2693371521533311da143e54af"
+  },
+  "frozen_components_modified": false,
+  "native_learning": false,
+  "parent_T16_sha256": "e768acd122f39c38dfb3c3dee8df2c1d3e74479beb53be1a5e746a957dd6d2ca",
+  "promotion_allowed": false,
+  "schema": "spk-v5-t17-macro-frozen-PE-polarity-evidence-manifest/v0"
+}

@@ -1,0 +1,64 @@
+{
+  "BV_to_P_authorized": false,
+  "P_writes": 0,
+  "architecture_promotion_allowed": false,
+  "cases": [
+    {
+      "P_writes": 0,
+      "durable_sqlite_successor_installed": true,
+      "fanout": 1,
+      "independent_cold_audit": true,
+      "original_native_private_step_executed": true,
+      "original_native_storage_unchanged": true,
+      "parent_sha256": "af1ade446aa45079d98db6c727911a74441f3caaa3732b5f84ea17e2b4d85d55",
+      "parent_tick": 7,
+      "reopened_in_new_authority": true,
+      "successor_sha256": "6fc23956079ba26bc3b292ad565e67fcf5ac900b91d1c60378b1c0927c4f8637",
+      "successor_tick": 8
+    },
+    {
+      "P_writes": 0,
+      "durable_sqlite_successor_installed": true,
+      "fanout": 2,
+      "independent_cold_audit": true,
+      "original_native_private_step_executed": true,
+      "original_native_storage_unchanged": true,
+      "parent_sha256": "bfef4423c315b9f229dedfeab807140bd0712919c79d699f0a95dda222f04fa9",
+      "parent_tick": 7,
+      "reopened_in_new_authority": true,
+      "successor_sha256": "17bc6b43f5ad95f757c0f2a881f594c84d5d536f6008901b624d3a88118c31c4",
+      "successor_tick": 8
+    }
+  ],
+  "crashes": [
+    {
+      "P_writes": 0,
+      "child_exit": 91,
+      "durable_decisions": 0,
+      "durable_generation": 0,
+      "fault": "hard_before_commit",
+      "native_replay_after_crash": false
+    },
+    {
+      "P_writes": 0,
+      "child_exit": 92,
+      "durable_decisions": 1,
+      "durable_generation": 1,
+      "fault": "hard_after_commit",
+      "native_replay_after_crash": false
+    }
+  ],
+  "limitations": [
+    "Original I2c.16 internal-read transition on a private, committed I2c.15 fixture; no live owner resume.",
+    "SQLite durability covers the stored successor, not external original native side effects.",
+    "Local SHA/source guard does not authenticate an external machine or principal.",
+    "No recipient ACK, 24j dispatch, BV assessment, P mutation or production authority."
+  ],
+  "original_live_owner_resumed": false,
+  "original_native_24j_dispatch": false,
+  "original_native_fixture_used": true,
+  "production_release": false,
+  "recipient_ack_authenticated": false,
+  "schema": "spk-lab-i2c17n-original-private-native-sqlite-install/v0d",
+  "status": "I2C17N_ORIGINAL_PRIVATE_NATIVE_SQLITE_INSTALL_RESEARCH_PASS_NOT_OWNER_RESTART"
+}

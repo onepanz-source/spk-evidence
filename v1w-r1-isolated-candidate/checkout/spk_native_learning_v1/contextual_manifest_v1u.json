@@ -1,0 +1,13 @@
+{
+  "files": {
+    "docs/spk-native-learning-v1u-contextual-P-bank.md": "399c1a0bdbd9e846779b11bf4e45cfdeffa3f90743ff42beb4984f180ca6f8cf",
+    "search/spk_native_learning_v1u_contextual_macro_gate.sh": "840132150add2135c49b7bb2c43e10377894f665f83211cc23217611b3c026bc",
+    "spk_native_learning_v1/contextual_conformance_v1u.py": "c3f350da9e3304f69f37f94937da8385c66eb90f86ff6a2ee6b7e751259cfb98",
+    "spk_native_learning_v1/contextual_durable_v1u.py": "d7590c2208faf4eb78835c56eaf823c5df9e83d9abfbaa264b16982bff3b3452",
+    "spk_native_learning_v1/contextual_serial_v1u.py": "72636e6d3538977eee4fe8c513124e3dcc3328b83730e6d1a1b07c92ecf67157",
+    "tests/test_spk_native_learning_v1_contextual.py": "ebb749dea692d985d2ac2f74f29876a87017595f47e01cc5f317426fd2c9e76b"
+  },
+  "frozen_components_modified": false,
+  "parent": "v1t",
+  "schema": "spk-native-learning-v1u-contextual-P-bank-macro-manifest/v1"
+}

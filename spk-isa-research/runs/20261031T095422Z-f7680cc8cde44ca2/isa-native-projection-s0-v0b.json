@@ -1,0 +1,76 @@
+{
+  "BV_to_P_authorized": false,
+  "G2_owner_authorized": false,
+  "P_writes": 0,
+  "actual_native_core_routed_fixture_executed": true,
+  "compiler_v0_equivalence_proven": false,
+  "decision": "HOLD",
+  "exit_code": 4,
+  "external_dispatch": false,
+  "fanouts": [
+    1,
+    2
+  ],
+  "fixture_import_mode": "EXACT_CHECKED_FILE_PATH_V0BR1",
+  "limitations": [
+    "Native samples use the ORIGINAL frozen Core/Network code on its ORIGINAL synthetic in-memory fixture; not real sensor data.",
+    "Observational projection fingerprints are not native cryptographic receipts.",
+    "Routed fanout 1/2 only; silent path and Compiler v0 equivalence remain unverified.",
+    "No independent authorization or external-effect absence proof."
+  ],
+  "native_24j_dispatch": false,
+  "native_call_sources_sha256_observed_not_pinned": {
+    "spk_simulator/atomic_neuronal_commit_v0.py": "929e9527e1f780bf429881ca15e22412ddc9517afbc6e243f9ff542214f2bdcc",
+    "spk_simulator/computed_emission_binding_v0.py": "254cd24c6a17cba7ec22d4ba0657030c72b3cdb693f8e8c00bfd09bb162b7a5a",
+    "spk_simulator/versioned_core_transition_v0.py": "1e3140631d4cbc7a42b397aeeb9050f3effa866c265cc3f35446782bf6b5f84a"
+  },
+  "native_fixture_sha256_observed_not_pinned": "c284fb3c4b61e809dd386e9f4fb52a4c7328fae9b09785179d354f036f996e4f",
+  "native_isa_approved": false,
+  "native_original_calls": {
+    "bind_computed_emission_v0": 4,
+    "commit_atomic_neuronal_output_v0": 2,
+    "commit_core_transition_v0": 4,
+    "prepare_core_transition_v0": 12
+  },
+  "native_projection_trace_sha256": [
+    "471d8f00883b26791adaefb1fe0a5650d13c603f209efab7ee10094c8e6ad68c",
+    "812057eaca551b001b7de70e1fd2848d70dd43f97a3b5ca1ad0161c2d054764d"
+  ],
+  "native_receipts": [
+    {
+      "commit_request_id": 80,
+      "emission_request_id": 3,
+      "new_version": 1,
+      "old_version": 0,
+      "route_request_ids": [
+        13
+      ]
+    },
+    {
+      "commit_request_id": 80,
+      "emission_request_id": 3,
+      "new_version": 1,
+      "old_version": 0,
+      "route_request_ids": [
+        13,
+        14
+      ]
+    }
+  ],
+  "native_silent_trace_verified": false,
+  "no_external_effects_proven": false,
+  "parent_v0a_sha256": "840e80f3399dab267afe7681e7bec3921f9d38a7705ff7c4c02b3619dd8bfff9",
+  "postcommit_owner_executed": false,
+  "production_release": false,
+  "research_only": true,
+  "same_observation_two_fresh_processes": true,
+  "schema": "spk-isa-s0-native-projection-witness/v0b",
+  "source_archive_sha256": "1350acd0b22ef940e7ea32a44fcc818af9123c884c1fbaabdfe41d7d54ef0aea",
+  "source_pins": {
+    "spk_simulator/atomic_neuronal_commit_v0.py": "929e9527e1f780bf429881ca15e22412ddc9517afbc6e243f9ff542214f2bdcc",
+    "spk_simulator/owned_internal_reads_v0.py": "0aeda5c5a0b139bc169e3bf4d89995a2b38df446ffa24a393ac8079988558cfb",
+    "spk_simulator/owned_root_terminal_commit_v0.py": "8d006c4a2d7aa1cde5bd051aa5cc2bff9d3312e168449aba9eb9dc153ca7f80a"
+  },
+  "status": "NATIVE_ROUTED_FIXTURE_PROJECTION_PASS_SILENT_COMPILER_HOLD",
+  "v0br1_research_sha256": "d2b1c8328c59dc21381a50290d6aec9aa60cc6c9de18911c533b684bb32f7be5"
+}

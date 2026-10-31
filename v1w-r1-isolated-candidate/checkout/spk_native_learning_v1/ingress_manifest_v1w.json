@@ -1,0 +1,12 @@
+{
+  "files": {
+    "docs/spk-native-learning-v1w-queued-pe-ingress.md": "9cb9395d48fea9c98b22a319c5cd95c4d2cc453bf4618d2d6f97d94761d59730",
+    "search/spk_native_learning_v1w_queued_ingress_macro_gate.sh": "29a5853fdc3d411115c0b10d96dfba0a73c02c8a39967a52b866f6b700dd767d",
+    "spk_native_learning_v1/ingress_conformance_v1w.py": "d81de5ecc5831828a2a36dddf37ee9205929feee41c5922f963919dd001f5558",
+    "spk_native_learning_v1/ingress_scheduler_v1w.py": "e66a5039435bffb9d285358c741c1ee3328c859ad6241d180f9e96c07308ec41",
+    "tests/test_spk_native_learning_v1_queued_ingress.py": "6b3bea95500f09dd54436732d896d6bcc36a718450e49623b92768336ace68ea"
+  },
+  "frozen_components_modified": false,
+  "parent_v1v_SHA256": "172b2a1c72a526ca3cc49d9792d4d765b606f7d4b346f43a46ddc2ef50fdd59c",
+  "schema": "spk-native-learning-v1w-queued-ingress-manifest/v1"
+}

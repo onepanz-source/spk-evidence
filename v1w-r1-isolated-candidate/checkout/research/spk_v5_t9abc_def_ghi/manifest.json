@@ -1,0 +1,15 @@
+{
+  "files": {
+    "docs/spk-v1-concurrent-reference-admission-p-cas.md": "208cca87054ae2b18f8b4d05f4e43ee009848fec26e13efb0fbd8fd5bf282820",
+    "research/spk_v5_t9abc_def_ghi/README.md": "8461b3b4f73c3228cd59919332d0089bbbc62b9e1a90765d772f25ff8d4c4aa9",
+    "research/spk_v5_t9abc_def_ghi/concurrent_engine_v1.py": "eeaf893ff525f6f1230b36de7e633d59768707df402952d843738deb6b562752",
+    "research/spk_v5_t9abc_def_ghi/cumulative_concurrency_gate.py": "9efb9c65085019c7cfdb828d4702e4a12b2ef43a395df15f50f8f9e467303a19",
+    "research/spk_v5_t9abc_def_ghi/reference/t8stu-vwx-yza.json": "da9339781f6425a45f5e4d271811960d6cd12de44cd38870ab371c41fcc92799",
+    "research/spk_v5_t9abc_def_ghi/tests/test_concurrent_reference.py": "67bf7af0d51e3da957f8e1d31053b2549f8b5910411c52b525bd96101c2d58d6",
+    "search/spk_v5_t9abc_def_ghi_cumulative_gate.sh": "bc21c77b215ea10c05a23182000af5577b4d31eb3dd97cef7f94bdbfe227dd86"
+  },
+  "parent_report_sha256": "da9339781f6425a45f5e4d271811960d6cd12de44cd38870ab371c41fcc92799",
+  "promotion_allowed": false,
+  "schema": "spk-v5-t9abc-def-ghi-cumulative-manifest/research-v0",
+  "status": "RESEARCH_ONLY_NO_NATIVE_PROMOTION"
+}

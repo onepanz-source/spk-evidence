@@ -1,0 +1,24 @@
+{
+  "files": {
+    "docs/spk-native-learning-v1s-serialized-macro-contract.md": "8671917e4b5a3d4eceae1651598203314cfa7eb7ee39faf91a018983dd9f5d5e",
+    "search/spk_native_learning_v1s_serialized_macro_gate.sh": "5c26fcf57b84d1714896e1a3d6d13d40a922d8e3e891145d50242a835d938629",
+    "spk_native_learning_v1/serialized_conformance_v1s.py": "3314353a8e93794952117d7c4d561228b5c98dadda145d17a95e8053237c675a",
+    "spk_native_learning_v1/serialized_runtime_v1s.py": "ffe142c444715e3d70d8498fc44a6f1499983f3befb569d071639dca0091ff84",
+    "tests/test_spk_native_learning_v1_serialized.py": "c01be1c58a5754754926ff75c2dbc1e980e9d2e4513ebb5ee01bf9467fb66016"
+  },
+  "frozen_v0e_modified": false,
+  "frozen_v0e_native_learning": false,
+  "limitations": [
+    "advisory-cooperative-writers-only",
+    "genesis replay is not heap restore",
+    "no irreversible external side effects",
+    "bounded three neuron binary P",
+    "no authenticated hardware source"
+  ],
+  "old_versioned_v1r_reused_unchanged": true,
+  "original_frozen_source_local_execution_unverified": true,
+  "parent_report_must_be_successful": "spk-native-learning-v1-durable-macro-proof/v1",
+  "schema": "spk-native-learning-v1s-serialized-macro-manifest/v1",
+  "stage": "cooperative serialized multi-process P continuity with deterministic causal replay",
+  "verified_local_test_cases": 35
+}

@@ -1,0 +1,27 @@
+{
+  "BV_to_P_authorized": false,
+  "P_writes": 0,
+  "contract_admitted": false,
+  "contract_sha256": "c7699413587ff784748766b9dab15cf6fe07f835b85dfb70371ca87f5a1164a5",
+  "decision": "HOLD",
+  "exit_code": 4,
+  "external_dispatch": false,
+  "go_path": false,
+  "independent_review_completed": false,
+  "next": "Human semantic contract review; owner code not authorized",
+  "owner_executed": false,
+  "predecessors_verified": {
+    "v0g_report_sha256": "ae4a913e0562e78378ddf056fda42fbc5ec7edc9baaa9943c1b54a548ba6da1d",
+    "v0ia_r1_report_sha256": "61b4df547822e79c38a9dd745d820378d2e7246eeab6dadb6fcab978f953e917"
+  },
+  "production_release": false,
+  "recipient_ack_authenticated": false,
+  "review_archive_sha256": "1350acd0b22ef940e7ea32a44fcc818af9123c884c1fbaabdfe41d7d54ef0aea",
+  "schema": "spk-lab-i2c17n-postcommit-owner-predeclaration-review-gate/v0id",
+  "source_count_verified": 12,
+  "source_original_imported": false,
+  "specification_sha256": "38272263652609f27c86312be0963de216e8b9d311a31680ab32f8d0f4034b11",
+  "sqlite_db_opened": false,
+  "status": "HOLD_POSTCOMMIT_OWNER_CONTRACT_PREDECLARED_NOT_REVIEWED",
+  "v0ic_review_sha256": "84587ef6e674a8ef0dd53bcbef0082150a6e160e85071b77e743ae8be5ce664e"
+}

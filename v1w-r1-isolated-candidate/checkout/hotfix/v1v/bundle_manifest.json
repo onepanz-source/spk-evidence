@@ -1,0 +1,16 @@
+{
+  "files": {
+    "hotfix/v1v/README.md": "82ae44989930d0a6908031abe7943fefe893abe76abea69104cc98f56112ab2f",
+    "hotfix/v1v/apply.py": "5a16cf11dec94a69c6cb1de406c46423954e0a557279a27a317ee1801bf82181",
+    "hotfix/v1v/sensed_context_manifest_v1v.json": "13926f5badd0fde54473bd7a8c91e08766eec14990c31f5a41f4ac59edd5d171",
+    "hotfix/v1v/sensed_context_v1v.py": "0c57ea48429b1449b0ca5257c99979cef51397f2e6f82bbb70362e19a976ac9a",
+    "hotfix/v1v/test_v1v_exception_contract.py": "920272c6f687e090902ac53bb2a0a3dc6520d6e33127c012086f1ca97fe924fe",
+    "search/spk_native_learning_v1v_provenance_hotfix_gate.sh": "c3850ccab6ccc2272cfe067d41c2d779134c83f56879b85260013fa0c67a8849"
+  },
+  "frozen_original_components_modified": false,
+  "original_v1v_manifest_sha256": "c4e3bbaf86a0c2c1059b0bb7f2b7cc1284897133c1b856db34f812729bb89e4b",
+  "original_v1v_source_sha256": "184b67afc93722a2f59f4ca0a5a3eff5a9fafdbe27e66e613e2f831d89160de3",
+  "patched_v1v_manifest_sha256": "13926f5badd0fde54473bd7a8c91e08766eec14990c31f5a41f4ac59edd5d171",
+  "patched_v1v_source_sha256": "0c57ea48429b1449b0ca5257c99979cef51397f2e6f82bbb70362e19a976ac9a",
+  "schema": "spk-native-learning-v1v-provenance-exception-hotfix/v1"
+}

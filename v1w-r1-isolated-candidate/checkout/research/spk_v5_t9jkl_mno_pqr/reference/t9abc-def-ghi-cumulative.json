@@ -1,0 +1,259 @@
+{
+  "T9ABC": {
+    "concurrent_scheduler_reference": true,
+    "epoch_local_ticks_not_global_physical_clock": true,
+    "one_dispatch_slot_per_processed_event": true,
+    "serial_t8_parity": {
+      "P_writes": 8,
+      "audit": {
+        "P_policy": {
+          "0": 12,
+          "1": 11
+        },
+        "P_versions": {
+          "0": 4,
+          "1": 4
+        },
+        "P_writes": 8,
+        "dispatcher_slots": 480,
+        "episodes": 96,
+        "ledger_events": 1641,
+        "ledger_tip": "76cd544564ab15228a08cd0721d5d9231195a0a6c8897242ba372f5919041516",
+        "max_inflight": 1,
+        "pending_events": 0,
+        "reference_v1_tick_grants": 8,
+        "running": 0,
+        "settled": 96,
+        "stale_vetoes": 0
+      },
+      "batch_versions_sha256": "d3c9ba81163d8994d3222163fa88a1fa95a65397bfd8f9127e98f418f5eaba5e",
+      "dispatcher_slots": 480,
+      "episodes": 96,
+      "grants": 8,
+      "inflight_budget": 1,
+      "learn": true,
+      "rows_sha256": "5d1c4ac4203d65fe6488e68c59bafb76a8109f1ac3163dbddb84201681d6c618",
+      "successes": 88,
+      "vetoes": 0
+    },
+    "three_epoch_adaptive": {
+      "P_writes": 8,
+      "audit": {
+        "P_policy": {
+          "0": 12,
+          "1": 11
+        },
+        "P_versions": {
+          "0": 4,
+          "1": 4
+        },
+        "P_writes": 8,
+        "dispatcher_slots": 480,
+        "episodes": 96,
+        "ledger_events": 1645,
+        "ledger_tip": "df0ed7630a0140744c1236039cfb0a8f878722fcf2992af604efe825bbd69b05",
+        "max_inflight": 3,
+        "pending_events": 0,
+        "reference_v1_tick_grants": 8,
+        "running": 0,
+        "settled": 96,
+        "stale_vetoes": 4
+      },
+      "batch_versions_sha256": "6c96df0360819f313851e9bb168928cc0912e1665246a7ea10aa8af08a6aa3e1",
+      "dispatcher_slots": 480,
+      "episodes": 96,
+      "grants": 8,
+      "inflight_budget": 3,
+      "learn": true,
+      "rows_sha256": "1b79538cf3e73f2aac32e34001a1bf5cb7504fd9c4c29f147c023d86561516d6",
+      "successes": 84,
+      "vetoes": 4
+    },
+    "three_epoch_control": {
+      "P_writes": 0,
+      "audit": {
+        "P_policy": {
+          "0": 12,
+          "1": 11
+        },
+        "P_versions": {
+          "0": 0,
+          "1": 0
+        },
+        "P_writes": 0,
+        "dispatcher_slots": 480,
+        "episodes": 96,
+        "ledger_events": 1633,
+        "ledger_tip": "8d64cb9699e5a5219653174ac4a845c5b9185b9dfba25536e07460f69c5c326f",
+        "max_inflight": 3,
+        "pending_events": 0,
+        "reference_v1_tick_grants": 0,
+        "running": 0,
+        "settled": 96,
+        "stale_vetoes": 0
+      },
+      "batch_versions_sha256": "7a5d29a21a11cd0ada830918a33a87714ba240ad49a1e12258dda6c09b8c097d",
+      "dispatcher_slots": 480,
+      "episodes": 96,
+      "grants": 0,
+      "inflight_budget": 3,
+      "learn": false,
+      "rows_sha256": "e75ca28a3e70e34604e5d06dd5f7dcfc0fb39481e4befa6bafe0aedbf25f6a1e",
+      "successes": 48,
+      "vetoes": 0
+    },
+    "three_epoch_no_feedback": {
+      "P_writes": 0,
+      "audit": {
+        "P_policy": {
+          "0": 12,
+          "1": 11
+        },
+        "P_versions": {
+          "0": 0,
+          "1": 0
+        },
+        "P_writes": 0,
+        "dispatcher_slots": 384,
+        "episodes": 96,
+        "ledger_events": 1345,
+        "ledger_tip": "383fd210aa2e02f0bec88eb565178dc591488f2eaf533b229b7dc25b1ac6d57a",
+        "max_inflight": 3,
+        "pending_events": 0,
+        "reference_v1_tick_grants": 0,
+        "running": 0,
+        "settled": 96,
+        "stale_vetoes": 0
+      },
+      "batch_versions_sha256": "7a5d29a21a11cd0ada830918a33a87714ba240ad49a1e12258dda6c09b8c097d",
+      "dispatcher_slots": 384,
+      "episodes": 96,
+      "grants": 0,
+      "inflight_budget": 3,
+      "learn": true,
+      "rows_sha256": "e75ca28a3e70e34604e5d06dd5f7dcfc0fb39481e4befa6bafe0aedbf25f6a1e",
+      "successes": 48,
+      "vetoes": 0
+    },
+    "two_epoch_adaptive": {
+      "P_writes": 8,
+      "audit": {
+        "P_policy": {
+          "0": 12,
+          "1": 11
+        },
+        "P_versions": {
+          "0": 4,
+          "1": 4
+        },
+        "P_writes": 8,
+        "dispatcher_slots": 480,
+        "episodes": 96,
+        "ledger_events": 1641,
+        "ledger_tip": "a72529aa2ecad89a3769f63b922f4ce54161ff077642d3ce89b019b702ef084f",
+        "max_inflight": 2,
+        "pending_events": 0,
+        "reference_v1_tick_grants": 8,
+        "running": 0,
+        "settled": 96,
+        "stale_vetoes": 0
+      },
+      "batch_versions_sha256": "14a5e87af2feca52010ec19eb2a6e2ca437f41726e7e4258c57b7868c064c875",
+      "dispatcher_slots": 480,
+      "episodes": 96,
+      "grants": 8,
+      "inflight_budget": 2,
+      "learn": true,
+      "rows_sha256": "5d1c4ac4203d65fe6488e68c59bafb76a8109f1ac3163dbddb84201681d6c618",
+      "successes": 88,
+      "vetoes": 0
+    }
+  },
+  "T9DEF": {
+    "crash_resume": {
+      "first_dispatch_slots": 9,
+      "one_grant_per_version_after_restart": true,
+      "pending_semantic_events_before_restart": 3,
+      "remaining_dispatch_slots": 6,
+      "replay_safe": true,
+      "stale_vote_veto_after_restart": true
+    },
+    "reopened_three_epoch_adaptive": {
+      "P_writes": 8,
+      "audit": {
+        "P_policy": {
+          "0": 12,
+          "1": 11
+        },
+        "P_versions": {
+          "0": 4,
+          "1": 4
+        },
+        "P_writes": 8,
+        "dispatcher_slots": 480,
+        "episodes": 96,
+        "ledger_events": 1645,
+        "ledger_tip": "df0ed7630a0140744c1236039cfb0a8f878722fcf2992af604efe825bbd69b05",
+        "max_inflight": 3,
+        "pending_events": 0,
+        "reference_v1_tick_grants": 8,
+        "running": 0,
+        "settled": 96,
+        "stale_vetoes": 4
+      },
+      "batch_versions_sha256": "6c96df0360819f313851e9bb168928cc0912e1665246a7ea10aa8af08a6aa3e1",
+      "dispatcher_slots": 480,
+      "episodes": 96,
+      "grants": 8,
+      "inflight_budget": 3,
+      "learn": true,
+      "rows_sha256": "1b79538cf3e73f2aac32e34001a1bf5cb7504fd9c4c29f147c023d86561516d6",
+      "successes": 84,
+      "vetoes": 4
+    },
+    "same_version_CAS_and_context_independence": {
+      "late_same_version_vote_settled_without_P": true,
+      "other_context_independent_grant": true,
+      "recovery_byte_exact": true,
+      "serialized_dispatch_slots": 15,
+      "stale_veto_count": 1,
+      "two_same_version_negative_votes_one_grant": true
+    }
+  },
+  "T9GHI": {
+    "fifo_fairness": {
+      "bounded_active_episodes": 2,
+      "late_episode_dispatch_position": 9,
+      "late_episode_settled": true,
+      "late_veto_due_to_deadline": true,
+      "local_tick_26_not_global_time": true,
+      "total_dispatch_slots": 60
+    },
+    "original_scheduler_is_not_concurrent": true,
+    "resource_admission": {
+      "active_epoch_capacity_denied": true,
+      "deadline_rejects_P_even_when_semantic_verdict_delivered": true,
+      "slot_budget_one_event_per_dispatch": true
+    }
+  },
+  "frozen_BV_sha256": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+  "frozen_PE_sha256": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+  "host_can_forge": true,
+  "limits": [
+    "Concurrent episodes run on a NEW RESEARCH V1 scheduler, not frozen SPK BV-v0e",
+    "Local tick values 10..26 are episode-relative; a serialized dispatch slot is not a physical PE clock or real occupancy",
+    "In-flight admission is a reference quota, not native PE/Memory Contract admission",
+    "Stale-version judgments are observed but cannot produce P grants; no inference of authentic receiver identity",
+    "All goals and A observations are synthetic and host-authored; host forgery still succeeds",
+    "No native SPK semantic BV credit, original Memory Contract P authorization, or learning"
+  ],
+  "native_BV_semantic_deliveries": 0,
+  "native_SPK_P_grants": 0,
+  "native_learning": false,
+  "new_original_BV_scheduler_calls": 0,
+  "original_source_pins": 12,
+  "promotion_allowed": false,
+  "schema": "spk-v5-t9abc-def-ghi-bounded-multi-epoch-reference/research-v0",
+  "source_T8STU_SHA256": "da9339781f6425a45f5e4d271811960d6cd12de44cd38870ab371c41fcc92799",
+  "status": "CONCURRENT_REFERENCE_EPOCHS_P_CAS_AND_FIFO_ADMISSION_NOT_NATIVE_SPK"
+}

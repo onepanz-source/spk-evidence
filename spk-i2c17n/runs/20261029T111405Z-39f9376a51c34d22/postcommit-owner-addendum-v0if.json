@@ -1,0 +1,39 @@
+{
+  "B01_B07_normative_addressed": true,
+  "BV_to_P_authorized": false,
+  "P_writes": 0,
+  "acceptance_tests_operational_passed": 0,
+  "addendum_sha256": "4373f338538df5c94dd79c6212425601278e49b3f43a45a1648bb9b2edbd1942",
+  "addendum_spec_sha256": "e1d36dee9426c6c5cb8b8eebd11d1e214d708c35a899536d90f4d3202083294a",
+  "architecture_promotion": false,
+  "automatic_hold_release_allowed": false,
+  "automatic_retry_allowed": false,
+  "decision": "HOLD",
+  "engineering_G0_source_pin": "PASS",
+  "engineering_G1_pure_contract_conformance": "PASS",
+  "exit_code": 4,
+  "external_dispatch": false,
+  "external_principal_authenticated": false,
+  "g2_approved": false,
+  "limitations": [
+    "Pure static engineering conformance does not certify semantic sufficiency, human independent review or G2",
+    "Journal and CAS do not share atomic transaction; no distributed fencing",
+    "No original owner execution, observable no-effects test, external dispatch, BV/P or production authority"
+  ],
+  "native_step_performed": false,
+  "no_external_effects_proven": false,
+  "original_owner_imported": false,
+  "owner_executed": false,
+  "owner_execution_authorized": false,
+  "predecessors": {
+    "fedora_v0id_report_sha256": "fcab137060141300a42d9b4b59d89d8b4b411491854aefa63715dd50286a6e97",
+    "v0id_contract_sha256": "c7699413587ff784748766b9dab15cf6fe07f835b85dfb70371ca87f5a1164a5",
+    "v0ie_critical_review_sha256": "e0d84176d608ae4aca73ee4932c0dad47c7d77ed744555161e8936e803c1d5ff"
+  },
+  "recipient_ack_authenticated": false,
+  "review_independent": false,
+  "schema": "spk-lab-i2c17n-postcommit-owner-g0g1-gate/v0if",
+  "source_count_verified": 12,
+  "sqlite_opened": false,
+  "status": "HOLD_POSTCOMMIT_OWNER_G0G1_NORMATIVE_AMENDMENT_NOT_INDEPENDENT"
+}

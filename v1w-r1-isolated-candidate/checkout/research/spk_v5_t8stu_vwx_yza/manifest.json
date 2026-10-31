@@ -1,0 +1,21 @@
+{
+  "files": {
+    "docs/spk-v1-integrated-reference-tick-semantics.md": "aa813ab392f17a61646a562c4850a8cae921c8bc93e381b6b274d7f62113f3ee",
+    "research/spk_v5_t8stu_vwx_yza/README.md": "07928a97c472244fdf12f10479a7b6d7be5058301323be89e671b4ccfe6aeb2d",
+    "research/spk_v5_t8stu_vwx_yza/cumulative_tick_gate.py": "802ca74462afd749e298948a375bb0329589056797144725b26c34f4b9f88905",
+    "research/spk_v5_t8stu_vwx_yza/reference/t8jkl-mno-pqr.json": "17902ac0d830bdbe93387bb9b8db75ead268ae69c2b290924c65bf14df61f585",
+    "research/spk_v5_t8stu_vwx_yza/tests/test_integrated_ticks.py": "4e37fbdba3e714f4fd32597e4a2d0882cde49afef90bb3f870f30a343977840d",
+    "research/spk_v5_t8stu_vwx_yza/tick_engine_v1.py": "329f38788d4a09a490400565da650da0dc2287e2147cad618e0c0bc5d99401d7",
+    "search/spk_v5_t8stu_vwx_yza_cumulative_gate.sh": "7192b11374fbe755d4670576d3b3f6b44e90632c8a27f1301081979333ef6041"
+  },
+  "frozen_BV_sha256": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+  "frozen_PE_sha256": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+  "native_BV_semantic": false,
+  "native_SPK_P_grants": 0,
+  "native_learning": false,
+  "original_source_pins": 12,
+  "promotion_allowed": false,
+  "schema": "spk-v5-t8stu-vwx-yza-integrated-tick-reference-manifest/research-v0",
+  "source_T8JKL_MNO_PQR_sha256": "17902ac0d830bdbe93387bb9b8db75ead268ae69c2b290924c65bf14df61f585",
+  "status": "REFERENCE_V1_TICK_P_AUTHORITY_NOT_NATIVE_SPK"
+}

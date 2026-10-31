@@ -1,0 +1,29 @@
+{
+  "additive_only": true,
+  "files": {
+    "docs/spk-t12-original-memory-api-execution-bridge.md": "9738dbbf0328301f3d7e4047641fe3db713953ddcc22cf89712ccdc7e2bd40e9",
+    "research/spk_v5_t12_macro_native_memory_seam/README.md": "207143ec5271b3bab702a586084fe3d09a386a451a37831431b5c6efde5417f3",
+    "research/spk_v5_t12_macro_native_memory_seam/__init__.py": "d04403cd45ec9a8819238d036179cb2a5d167e12ea903e313bc56fdfcf33d95d",
+    "research/spk_v5_t12_macro_native_memory_seam/macro_gate.py": "05aae3d3c67736248a771db7580d11b0f9c946d5bd53b9ef69b391b3ac56b5d3",
+    "research/spk_v5_t12_macro_native_memory_seam/native_bridge.py": "2fb30453d8a0c683c143b154b8553108f47b285f6d500ed8c4f00897453491a3",
+    "research/spk_v5_t12_macro_native_memory_seam/reference/t11-macro-owned-memory-v1.json": "666bb70dfcf7db5a0ddcce78918b428b6936bdb926c65f799d3f55f3d94c0e15",
+    "research/spk_v5_t12_macro_native_memory_seam/tests/test_native_memory_seam.py": "0afe97e8fc24be83da3c3a0878a07a6ed05fef188eb890c9f641cd50b23b03f9",
+    "search/spk_v5_t12_macro_native_memory_seam_gate.sh": "e8374dc19b7912570fa245baf227aa0ad14cd56b180fbabfda12e6cb87c4e221"
+  },
+  "frozen_components_modified": false,
+  "macro_workstreams": [
+    "original_frozen_source_api_pins",
+    "original_memory_projection_and_access_calls",
+    "execution_access_vs_learning_p_boundary",
+    "new_v1_owned_memory_parity",
+    "concurrent_recovery_and_adversarial",
+    "historical_compatibility_and_release_gate"
+  ],
+  "native_learning": false,
+  "original_memory_execution_access_is_not_learning_P_authority": true,
+  "original_memory_module_count_required_on_fwork": 5,
+  "parent_T11_fwork_evidence_sha256": "666bb70dfcf7db5a0ddcce78918b428b6936bdb926c65f799d3f55f3d94c0e15",
+  "promotion_allowed": false,
+  "require_at_least_one_original_execution_memory_admission": true,
+  "schema": "spk-v5-t12-macro-original-memory-execution-seam/manifest-v0"
+}

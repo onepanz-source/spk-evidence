@@ -1,0 +1,16 @@
+{
+  "files": {
+    "docs/spk-v1-historical-verdict-credit-and-admission-frontier.md": "aa275e8243ca35cc47a5faf2ce923725189b72da379e66eaef41091a13349e6c",
+    "research/spk_v5_t9jkl_mno_pqr/README.md": "4cf9272faad5f66b6205a66dfd836b18a15fc07c42bcb2821db69e11251c2faf",
+    "research/spk_v5_t9jkl_mno_pqr/admission_frontier_v1.py": "c3a13ce837776f8f5c124b2f0c94a6a08954327603968035b528dedd98f09e56",
+    "research/spk_v5_t9jkl_mno_pqr/cumulative_evidence_frontier.py": "ed707f41049c4c1b35da7f393ecfd1d638a023e2838d7f6da462fe1fbc5365d4",
+    "research/spk_v5_t9jkl_mno_pqr/reference/t9abc-def-ghi-cumulative.json": "3e664630227170e105aa945f550518a442ac8ee08086ee13ff721163527b8b92",
+    "research/spk_v5_t9jkl_mno_pqr/stale_evidence_v1.py": "bf52ac1f8c09a12b28bacc586e739c53e3b26f20253970ae2cc17816f78da753",
+    "research/spk_v5_t9jkl_mno_pqr/tests/test_t9_evidence_frontier.py": "c75fe431ac4332cae7b7ae530204040245641013b561743ddcd83daa117f66fb",
+    "search/spk_v5_t9jkl_mno_pqr_cumulative_gate.sh": "448282f3fbbf45fca5af4e3b124f5872c3bf8bca1d18a3457664cb9911f35e7f"
+  },
+  "parent_report_sha256": "3e664630227170e105aa945f550518a442ac8ee08086ee13ff721163527b8b92",
+  "promotion_allowed": false,
+  "schema": "spk-v5-t9jkl-mno-pqr-cumulative-manifest/research-v0",
+  "status": "RESEARCH_ONLY_NO_NATIVE_PROMOTION"
+}

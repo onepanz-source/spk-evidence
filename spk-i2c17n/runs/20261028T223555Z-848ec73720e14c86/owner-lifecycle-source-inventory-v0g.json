@@ -1,0 +1,1462 @@
+{
+  "BV_to_P_authorized": false,
+  "P_writes": 0,
+  "application_host_candidate_present": true,
+  "architecture_promotion_allowed": false,
+  "cross_machine_fencing": false,
+  "external_principal_authenticated": false,
+  "git_head_observed": "02cc4cfe897054986ce435716ec40ca07ddf84aa",
+  "limitations": [
+    "Read-only AST and SHA inventory, not a behavioral owner-lifecycle proof.",
+    "Available application-host source does not establish an owner restore/install API.",
+    "No production owner, dispatch, recipient ACK, external principal or BV/P authority.",
+    "Source bytes are needed for a reviewed additive owner-lifecycle adapter; optional review archive is local only."
+  ],
+  "native_24j_dispatch": false,
+  "optional_paths_missing": [],
+  "original_owner_lifecycle_bound": false,
+  "original_owner_live_resume": false,
+  "production_owner_admitted": false,
+  "recipient_ack_authenticated": false,
+  "required_paths": [
+    "spk_native_learning_v1/lab_i2c16_cold_continuation.py",
+    "spk_native_learning_v1/lab_i2c15_native_capsule.py",
+    "spk_simulator/owned_internal_reads_v0.py"
+  ],
+  "research_only": true,
+  "schema": "spk-lab-i2c17n-owner-lifecycle-source-inventory/v0g",
+  "source_surfaces": [
+    {
+      "bytes": 10349,
+      "classes": [
+        {
+          "line": 21,
+          "methods": [],
+          "name": "ColdContinuationRejected"
+        }
+      ],
+      "functions": [
+        {
+          "args": [
+            "state"
+          ],
+          "async": false,
+          "line": 24,
+          "name": "_identities"
+        },
+        {
+          "args": [
+            "recovered",
+            "evidence"
+          ],
+          "async": false,
+          "line": 34,
+          "name": "_validate_predecessor"
+        },
+        {
+          "args": [
+            "recovered",
+            "evidence",
+            "namespace"
+          ],
+          "async": false,
+          "line": 49,
+          "name": "one_step_preview"
+        },
+        {
+          "args": [
+            "path",
+            "namespace"
+          ],
+          "async": false,
+          "line": 83,
+          "name": "cold_child"
+        },
+        {
+          "args": [
+            "path",
+            "namespace"
+          ],
+          "async": false,
+          "line": 88,
+          "name": "_child"
+        },
+        {
+          "args": [
+            "path",
+            "namespace",
+            "fanout"
+          ],
+          "async": false,
+          "line": 99,
+          "name": "run_case"
+        },
+        {
+          "args": [
+            "path",
+            "namespace"
+          ],
+          "async": false,
+          "line": 128,
+          "name": "run_uncertain"
+        },
+        {
+          "args": [
+            "parent"
+          ],
+          "async": false,
+          "line": 145,
+          "name": "run_native"
+        },
+        {
+          "args": [],
+          "async": false,
+          "line": 167,
+          "name": "main"
+        }
+      ],
+      "path": "spk_native_learning_v1/lab_i2c16_cold_continuation.py",
+      "project_imports": [
+        {
+          "module": "spk_native_learning_v1.lab_i2c12_emitting_host_v1",
+          "names": [
+            "EmittingReceiptV1",
+            "SCOPE",
+            "canonical"
+          ]
+        },
+        {
+          "module": "spk_native_learning_v1.lab_i2c13_durable_epoch_registry",
+          "names": [
+            "EpochFenceRejected",
+            "OWNER",
+            "_sha"
+          ]
+        },
+        {
+          "module": "spk_native_learning_v1.lab_i2c14_audited_checkpoint",
+          "names": [
+            "CheckpointRejected",
+            "witness_from_original"
+          ]
+        },
+        {
+          "module": "spk_native_learning_v1.lab_i2c15_native_capsule",
+          "names": [
+            "DurableNativeCapsuleV1",
+            "NativeCapsuleRejected",
+            "cold_audit",
+            "deserialize_capsule",
+            "serialize_capsule"
+          ]
+        }
+      ],
+      "read_only_ast": true,
+      "sha256": "9b08f196c9a8b0f0e95b5c7390033868a531438865ffae75d7d933bf43666e98"
+    },
+    {
+      "bytes": 19311,
+      "classes": [
+        {
+          "line": 26,
+          "methods": [],
+          "name": "NativeCapsuleRejected"
+        },
+        {
+          "line": 50,
+          "methods": [
+            {
+              "args": [
+                "self",
+                "root",
+                "allowed_catalog"
+              ],
+              "async": false,
+              "line": 51,
+              "name": "__init__"
+            },
+            {
+              "args": [
+                "self",
+                "depth"
+              ],
+              "async": false,
+              "line": 56,
+              "name": "_step"
+            },
+            {
+              "args": [
+                "self",
+                "t"
+              ],
+              "async": false,
+              "line": 60,
+              "name": "_catalog_class"
+            },
+            {
+              "args": [
+                "self",
+                "x",
+                "depth"
+              ],
+              "async": false,
+              "line": 67,
+              "name": "encode"
+            },
+            {
+              "args": [
+                "self",
+                "name"
+              ],
+              "async": false,
+              "line": 92,
+              "name": "_get_class"
+            },
+            {
+              "args": [
+                "self",
+                "x",
+                "depth"
+              ],
+              "async": false,
+              "line": 103,
+              "name": "decode"
+            }
+          ],
+          "name": "TypedCodec"
+        },
+        {
+          "line": 183,
+          "methods": [
+            {
+              "args": [
+                "self",
+                "path"
+              ],
+              "async": false,
+              "line": 184,
+              "name": "__init__"
+            },
+            {
+              "args": [
+                "self",
+                "cap",
+                "receipt",
+                "evidence",
+                "capsule_raw"
+              ],
+              "async": false,
+              "line": 194,
+              "name": "record_all"
+            },
+            {
+              "args": [
+                "self",
+                "namespace"
+              ],
+              "async": false,
+              "line": 222,
+              "name": "reopen_capsule_read_only"
+            }
+          ],
+          "name": "DurableNativeCapsuleV1"
+        }
+      ],
+      "functions": [
+        {
+          "args": [
+            "v"
+          ],
+          "async": false,
+          "line": 29,
+          "name": "_is_sha"
+        },
+        {
+          "args": [
+            "t"
+          ],
+          "async": false,
+          "line": 32,
+          "name": "_class_name"
+        },
+        {
+          "args": [
+            "mod",
+            "root"
+          ],
+          "async": false,
+          "line": 42,
+          "name": "_module_file"
+        },
+        {
+          "args": [
+            "data",
+            "root",
+            "namespace"
+          ],
+          "async": false,
+          "line": 152,
+          "name": "serialize_capsule"
+        },
+        {
+          "args": [
+            "raw",
+            "root",
+            "namespace"
+          ],
+          "async": false,
+          "line": 165,
+          "name": "deserialize_capsule"
+        },
+        {
+          "args": [
+            "path",
+            "namespace"
+          ],
+          "async": false,
+          "line": 241,
+          "name": "cold_audit"
+        },
+        {
+          "args": [
+            "path",
+            "namespace",
+            "fanout",
+            "crash_after_native"
+          ],
+          "async": false,
+          "line": 259,
+          "name": "run_case"
+        },
+        {
+          "args": [
+            "parent_sha"
+          ],
+          "async": false,
+          "line": 296,
+          "name": "run_native"
+        },
+        {
+          "args": [],
+          "async": false,
+          "line": 318,
+          "name": "main"
+        }
+      ],
+      "path": "spk_native_learning_v1/lab_i2c15_native_capsule.py",
+      "project_imports": [
+        {
+          "module": "spk_native_learning_v1.lab_i2c12_emitting_host_v1",
+          "names": [
+            "EmittingReceiptV1",
+            "SCOPE",
+            "canonical"
+          ]
+        },
+        {
+          "module": "spk_native_learning_v1.lab_i2c13_durable_epoch_registry",
+          "names": [
+            "ClaimV1",
+            "EpochFenceRejected",
+            "OWNER",
+            "_intent",
+            "_sha"
+          ]
+        },
+        {
+          "module": "spk_native_learning_v1.lab_i2c14_audited_checkpoint",
+          "names": [
+            "AuditedOutputEvidenceV1",
+            "CheckpointRejected",
+            "DurableNativeEvidenceV1",
+            "PARENT_SHA",
+            "witness_from_original"
+          ]
+        }
+      ],
+      "read_only_ast": true,
+      "sha256": "a7521c393a9c4cdab0149c8c9f1ce18794201a33e2caf1e9d387ef9272f65665"
+    },
+    {
+      "bytes": 26288,
+      "classes": [
+        {
+          "line": 35,
+          "methods": [],
+          "name": "InternalReadEvidenceV0"
+        },
+        {
+          "line": 53,
+          "methods": [],
+          "name": "BoundCorePreparationV0"
+        },
+        {
+          "line": 61,
+          "methods": [],
+          "name": "OwnedInternalCommitEvidenceV0"
+        },
+        {
+          "line": 70,
+          "methods": [],
+          "name": "OwnedInternalReadStateV0"
+        },
+        {
+          "line": 80,
+          "methods": [],
+          "name": "OwnedInternalReadStepV0"
+        }
+      ],
+      "functions": [
+        {
+          "args": [
+            "entries",
+            "key",
+            "description"
+          ],
+          "async": false,
+          "line": 87,
+          "name": "_canonical_unique"
+        },
+        {
+          "args": [
+            "req",
+            "consume",
+            "nodes",
+            "epoch"
+          ],
+          "async": false,
+          "line": 93,
+          "name": "_read_binding"
+        },
+        {
+          "args": [
+            "network",
+            "state",
+            "requests",
+            "graph",
+            "*",
+            "architecture",
+            "manifest",
+            "admission"
+          ],
+          "async": false,
+          "line": 111,
+          "name": "audit_committed_internal_history_v0"
+        },
+        {
+          "args": [
+            "architecture",
+            "network",
+            "manifest",
+            "admission",
+            "requests",
+            "graph",
+            "state",
+            "*",
+            "ingress"
+          ],
+          "async": false,
+          "line": 213,
+          "name": "advance_owned_internal_reads_v0"
+        }
+      ],
+      "path": "spk_simulator/owned_internal_reads_v0.py",
+      "project_imports": [
+        {
+          "module": "spk_architecture.access_v0",
+          "names": [
+            "AccessIntentKindV0"
+          ]
+        },
+        {
+          "module": "spk_architecture.access_v0",
+          "names": [
+            "MemoryDomainV0"
+          ]
+        },
+        {
+          "module": "spk_architecture.profile_v0",
+          "names": [
+            "ArchitectureProfileV0"
+          ]
+        },
+        {
+          "module": "spk_architecture.transaction_mapping_v0",
+          "names": [
+            "MemoryServiceRequestV0"
+          ]
+        },
+        {
+          "module": "spk_network.model_v0",
+          "names": [
+            "NetworkV0"
+          ]
+        },
+        {
+          "module": "spk_simulator.access_dependencies_v0",
+          "names": [
+            "AccessDependencyGraphV0"
+          ]
+        },
+        {
+          "module": "spk_simulator.atomic_emission_admission_v0",
+          "names": [
+            "AtomicEmissionAdmissionV0"
+          ]
+        },
+        {
+          "module": "spk_simulator.causal_service_quantum_v0",
+          "names": [
+            "ServiceConfirmedV0",
+            "ServiceQuantumStateV0"
+          ]
+        },
+        {
+          "module": "spk_simulator.computed_emission_binding_v0",
+          "names": [
+            "ComputedEmissionBindingV0",
+            "bind_computed_emission_v0"
+          ]
+        },
+        {
+          "module": "spk_simulator.external_ingress_v0",
+          "names": [
+            "ExternalIngressBindingV0"
+          ]
+        },
+        {
+          "module": "spk_simulator.owned_service_tick_v0",
+          "names": [
+            "OwnedServiceTickStateV0"
+          ]
+        },
+        {
+          "module": "spk_simulator.routing_binding_v0",
+          "names": [
+            "RoutedBindingManifestV0"
+          ]
+        },
+        {
+          "module": "spk_simulator.versioned_core_transition_v0",
+          "names": [
+            "CoreStateCommitReceiptV0",
+            "PreparedCoreTransitionV0",
+            "VersionedNeuronImageV0",
+            "commit_core_transition_v0",
+            "initialize_neuron_image_v0",
+            "prepare_core_transition_v0"
+          ]
+        },
+        {
+          "module": "spk_simulator.witnessed_core_input_v0",
+          "names": [
+            "WitnessedCoreInputBatchV0",
+            "WitnessedCoreInputTickV0",
+            "advance_witnessed_core_input_tick_v0"
+          ]
+        }
+      ],
+      "read_only_ast": true,
+      "sha256": "0aeda5c5a0b139bc169e3bf4d89995a2b38df446ffa24a393ac8079988558cfb"
+    },
+    {
+      "bytes": 10482,
+      "classes": [
+        {
+          "line": 24,
+          "methods": [],
+          "name": "HostPhaseV0"
+        },
+        {
+          "line": 31,
+          "methods": [],
+          "name": "HostLifecycleErrorV0"
+        },
+        {
+          "line": 35,
+          "methods": [],
+          "name": "HostAdmissionErrorV0"
+        },
+        {
+          "line": 39,
+          "methods": [],
+          "name": "HostExecutionErrorV0"
+        },
+        {
+          "line": 44,
+          "methods": [
+            {
+              "args": [
+                "self"
+              ],
+              "async": false,
+              "line": 53,
+              "name": "completed"
+            }
+          ],
+          "name": "HostStatusV0"
+        },
+        {
+          "line": 60,
+          "methods": [
+            {
+              "args": [
+                "self",
+                "*",
+                "provider",
+                "provider_id"
+              ],
+              "async": false,
+              "line": 76,
+              "name": "__init__"
+            },
+            {
+              "args": [
+                "view"
+              ],
+              "async": false,
+              "line": 91,
+              "name": "_committed"
+            },
+            {
+              "args": [
+                "self",
+                "view"
+              ],
+              "async": false,
+              "line": 104,
+              "name": "_promote_locked"
+            },
+            {
+              "args": [
+                "self"
+              ],
+              "async": false,
+              "line": 109,
+              "name": "_status_locked"
+            },
+            {
+              "args": [
+                "self"
+              ],
+              "async": false,
+              "line": 133,
+              "name": "status"
+            },
+            {
+              "args": [
+                "self",
+                "*",
+                "epoch_id"
+              ],
+              "async": false,
+              "line": 138,
+              "name": "admit"
+            },
+            {
+              "args": [
+                "self",
+                "request"
+              ],
+              "async": false,
+              "line": 173,
+              "name": "dispatch"
+            },
+            {
+              "args": [
+                "self"
+              ],
+              "async": false,
+              "line": 220,
+              "name": "shutdown"
+            }
+          ],
+          "name": "ApplicationRuntimeHostV0"
+        }
+      ],
+      "functions": [],
+      "path": "spk_simulator/application_runtime_host_v0.py",
+      "project_imports": [
+        {
+          "module": "spk_simulator.owned_shared_event_cycle_v0",
+          "names": [
+            "OwnedSharedEventCycleStateV0"
+          ]
+        },
+        {
+          "module": "spk_simulator.owned_root_execution_dispatch_v0",
+          "names": [
+            "CustodyPhaseV0",
+            "CustodyStaleRevisionV0",
+            "DispatchEpochMismatchV0",
+            "DispatchOperationV0",
+            "DispatchRequestV0",
+            "DispatchResultV0",
+            "OwnedRootExecutionDispatcherV0",
+            "OwnedRootExecutionViewV0"
+          ]
+        }
+      ],
+      "read_only_ast": true,
+      "sha256": "9499365c4d1314f58509c790bae9cc507598906751060c929881409bd0416e98"
+    },
+    {
+      "bytes": 8696,
+      "classes": [
+        {
+          "line": 27,
+          "methods": [],
+          "name": "TerminalCommitQuantumV0"
+        },
+        {
+          "line": 132,
+          "methods": [
+            {
+              "args": [
+                "self"
+              ],
+              "async": false,
+              "line": 138,
+              "name": "__post_init__"
+            },
+            {
+              "args": [
+                "self"
+              ],
+              "async": false,
+              "line": 146,
+              "name": "committed"
+            }
+          ],
+          "name": "OwnedRootTerminalCommitStateV0"
+        },
+        {
+          "line": 151,
+          "methods": [],
+          "name": "OwnedRootTerminalCommitStepV0"
+        }
+      ],
+      "functions": [
+        {
+          "args": [
+            "root"
+          ],
+          "async": false,
+          "line": 36,
+          "name": "_handoff_contract"
+        },
+        {
+          "args": [
+            "root",
+            "service",
+            "image"
+          ],
+          "async": false,
+          "line": 73,
+          "name": "_next"
+        },
+        {
+          "args": [
+            "root",
+            "events"
+          ],
+          "async": false,
+          "line": 114,
+          "name": "_replay"
+        },
+        {
+          "args": [
+            "root"
+          ],
+          "async": false,
+          "line": 156,
+          "name": "handoff_owned_root_terminal_commit_v0"
+        },
+        {
+          "args": [
+            "state"
+          ],
+          "async": false,
+          "line": 169,
+          "name": "advance_owned_root_terminal_commit_v0"
+        }
+      ],
+      "path": "spk_simulator/owned_root_terminal_commit_v0.py",
+      "project_imports": [
+        {
+          "module": "spk_architecture.access_v0",
+          "names": [
+            "AccessIntentKindV0"
+          ]
+        },
+        {
+          "module": "spk_simulator.causal_service_quantum_v0",
+          "names": [
+            "ServiceQuantumSliceV0",
+            "ServiceQuantumStateV0",
+            "advance_service_quantum_v0"
+          ]
+        },
+        {
+          "module": "spk_simulator.owned_root_single_clock_v0",
+          "names": [
+            "OwnedRootSingleClockStateV0"
+          ]
+        },
+        {
+          "module": "spk_simulator.serialized_internal_graph_v0",
+          "names": [
+            "serialize_internal_access_graph_v0"
+          ]
+        },
+        {
+          "module": "spk_simulator.versioned_core_transition_v0",
+          "names": [
+            "CoreStateCommitReceiptV0",
+            "VersionedNeuronImageV0",
+            "commit_core_transition_v0"
+          ]
+        }
+      ],
+      "read_only_ast": true,
+      "sha256": "8d006c4a2d7aa1cde5bd051aa5cc2bff9d3312e168449aba9eb9dc153ca7f80a"
+    },
+    {
+      "bytes": 13608,
+      "classes": [
+        {
+          "line": 35,
+          "methods": [],
+          "name": "AtomicNeuronalCommitStepV0"
+        }
+      ],
+      "functions": [
+        {
+          "args": [
+            "architecture",
+            "network",
+            "manifest",
+            "admission",
+            "requests",
+            "graph",
+            "state",
+            "*",
+            "commit_request_id",
+            "emission_request_id",
+            "ingress"
+          ],
+          "async": false,
+          "line": 44,
+          "name": "commit_atomic_neuronal_output_v0"
+        }
+      ],
+      "path": "spk_simulator/atomic_neuronal_commit_v0.py",
+      "project_imports": [
+        {
+          "module": "spk_architecture.access_v0",
+          "names": [
+            "AccessIntentKindV0",
+            "MemoryDomainV0"
+          ]
+        },
+        {
+          "module": "spk_architecture.profile_v0",
+          "names": [
+            "ArchitectureProfileV0"
+          ]
+        },
+        {
+          "module": "spk_architecture.transaction_mapping_v0",
+          "names": [
+            "MemoryServiceRequestV0"
+          ]
+        },
+        {
+          "module": "spk_network.model_v0",
+          "names": [
+            "NetworkV0"
+          ]
+        },
+        {
+          "module": "spk_simulator.access_dependencies_v0",
+          "names": [
+            "AccessDependencyGraphV0"
+          ]
+        },
+        {
+          "module": "spk_simulator.atomic_emission_admission_v0",
+          "names": [
+            "AtomicEmissionAdmissionV0"
+          ]
+        },
+        {
+          "module": "spk_simulator.bounded_backpressure_driver_v0",
+          "names": [
+            "BackpressureServiceFrameV0"
+          ]
+        },
+        {
+          "module": "spk_simulator.causal_service_quantum_v0",
+          "names": [
+            "ServiceConfirmedV0",
+            "ServiceQuantumStateV0"
+          ]
+        },
+        {
+          "module": "spk_simulator.computed_emission_binding_v0",
+          "names": [
+            "ComputedEmissionBindingV0",
+            "bind_computed_emission_v0"
+          ]
+        },
+        {
+          "module": "spk_simulator.external_ingress_v0",
+          "names": [
+            "ExternalIngressBindingV0"
+          ]
+        },
+        {
+          "module": "spk_simulator.owned_internal_reads_v0",
+          "names": [
+            "OwnedInternalCommitEvidenceV0",
+            "OwnedInternalReadStateV0",
+            "audit_committed_internal_history_v0"
+          ]
+        },
+        {
+          "module": "spk_simulator.owned_service_tick_v0",
+          "names": [
+            "OwnedServiceTickResultV0",
+            "advance_owned_service_tick_v0"
+          ]
+        },
+        {
+          "module": "spk_simulator.routing_binding_v0",
+          "names": [
+            "RoutedBindingManifestV0"
+          ]
+        },
+        {
+          "module": "spk_simulator.serialized_internal_graph_v0",
+          "names": [
+            "serialize_internal_access_graph_v0"
+          ]
+        },
+        {
+          "module": "spk_simulator.versioned_core_transition_v0",
+          "names": [
+            "commit_core_transition_v0"
+          ]
+        }
+      ],
+      "read_only_ast": true,
+      "sha256": "929e9527e1f780bf429881ca15e22412ddc9517afbc6e243f9ff542214f2bdcc"
+    },
+    {
+      "bytes": 12961,
+      "classes": [
+        {
+          "line": 13,
+          "methods": [],
+          "name": "EmittingHostRejected"
+        },
+        {
+          "line": 14,
+          "methods": [],
+          "name": "HostPhaseV1"
+        },
+        {
+          "line": 26,
+          "methods": [
+            {
+              "args": [
+                "self"
+              ],
+              "async": false,
+              "line": 46,
+              "name": "__post_init__"
+            }
+          ],
+          "name": "EmittingReceiptV1"
+        },
+        {
+          "line": 62,
+          "methods": [
+            {
+              "args": [
+                "self"
+              ],
+              "async": false,
+              "line": 70,
+              "name": "completed"
+            }
+          ],
+          "name": "EmittingHostViewV1"
+        },
+        {
+          "line": 72,
+          "methods": [
+            {
+              "args": [
+                "self",
+                "*",
+                "owner_id",
+                "epoch_id",
+                "provider"
+              ],
+              "async": false,
+              "line": 79,
+              "name": "__init__"
+            },
+            {
+              "args": [
+                "self"
+              ],
+              "async": false,
+              "line": 85,
+              "name": "view"
+            },
+            {
+              "args": [
+                "c",
+                "epoch"
+              ],
+              "async": false,
+              "line": 89,
+              "name": "_verify_native_input"
+            },
+            {
+              "args": [
+                "self",
+                "*",
+                "epoch_id"
+              ],
+              "async": false,
+              "line": 117,
+              "name": "admit"
+            },
+            {
+              "args": [
+                "self",
+                "*",
+                "epoch_id",
+                "expected_generation"
+              ],
+              "async": false,
+              "line": 128,
+              "name": "commit"
+            }
+          ],
+          "name": "BoundedEmittingHostV1"
+        }
+      ],
+      "functions": [
+        {
+          "args": [
+            "o"
+          ],
+          "async": false,
+          "line": 20,
+          "name": "canonical"
+        },
+        {
+          "args": [
+            "o"
+          ],
+          "async": false,
+          "line": 21,
+          "name": "sha"
+        },
+        {
+          "args": [
+            "x"
+          ],
+          "async": false,
+          "line": 23,
+          "name": "_exact_int"
+        },
+        {
+          "args": [
+            "parent_sha"
+          ],
+          "async": false,
+          "line": 169,
+          "name": "run_native"
+        }
+      ],
+      "path": "spk_native_learning_v1/lab_i2c12_emitting_host_v1.py",
+      "project_imports": [],
+      "read_only_ast": true,
+      "sha256": "c0f03eea3d34774ddd3c378190bfe6240400c287dbe761b07c56e91bab74a09a"
+    },
+    {
+      "bytes": 15393,
+      "classes": [
+        {
+          "line": 26,
+          "methods": [],
+          "name": "EpochFenceRejected"
+        },
+        {
+          "line": 50,
+          "methods": [
+            {
+              "args": [
+                "self"
+              ],
+              "async": false,
+              "line": 56,
+              "name": "__post_init__"
+            }
+          ],
+          "name": "ClaimV1"
+        },
+        {
+          "line": 63,
+          "methods": [
+            {
+              "args": [
+                "self",
+                "path"
+              ],
+              "async": false,
+              "line": 69,
+              "name": "__init__"
+            },
+            {
+              "args": [
+                "self"
+              ],
+              "async": false,
+              "line": 106,
+              "name": "_connect"
+            },
+            {
+              "args": [
+                "self"
+              ],
+              "async": false,
+              "line": 114,
+              "name": "_tx"
+            },
+            {
+              "args": [
+                "row"
+              ],
+              "async": false,
+              "line": 129,
+              "name": "_check_row"
+            },
+            {
+              "args": [
+                "x"
+              ],
+              "async": false,
+              "line": 163,
+              "name": "_view"
+            },
+            {
+              "args": [
+                "self",
+                "namespace"
+              ],
+              "async": false,
+              "line": 171,
+              "name": "inspect"
+            },
+            {
+              "args": [
+                "self",
+                "*",
+                "namespace",
+                "owner",
+                "epoch",
+                "expected_generation"
+              ],
+              "async": false,
+              "line": 180,
+              "name": "claim"
+            },
+            {
+              "args": [
+                "self",
+                "db",
+                "claim"
+              ],
+              "async": false,
+              "line": 193,
+              "name": "_holder"
+            },
+            {
+              "args": [
+                "self",
+                "claim",
+                "*",
+                "fanout",
+                "expected_generation"
+              ],
+              "async": false,
+              "line": 203,
+              "name": "begin_intent"
+            },
+            {
+              "args": [
+                "self",
+                "claim",
+                "receipt"
+              ],
+              "async": false,
+              "line": 215,
+              "name": "record_native_result"
+            }
+          ],
+          "name": "DurableEpochRegistryV1"
+        }
+      ],
+      "functions": [
+        {
+          "args": [
+            "raw"
+          ],
+          "async": false,
+          "line": 30,
+          "name": "_sha"
+        },
+        {
+          "args": [
+            "x"
+          ],
+          "async": false,
+          "line": 34,
+          "name": "_ident"
+        },
+        {
+          "args": [
+            "x"
+          ],
+          "async": false,
+          "line": 38,
+          "name": "_exact_int"
+        },
+        {
+          "args": [
+            "namespace",
+            "owner",
+            "fanout"
+          ],
+          "async": false,
+          "line": 42,
+          "name": "_intent"
+        },
+        {
+          "args": [
+            "db_path",
+            "namespace",
+            "fanout",
+            "*",
+            "simulated_crash_after_native"
+          ],
+          "async": false,
+          "line": 232,
+          "name": "run_fenced_native_case"
+        },
+        {
+          "args": [
+            "parent_sha"
+          ],
+          "async": false,
+          "line": 273,
+          "name": "run_native"
+        }
+      ],
+      "path": "spk_native_learning_v1/lab_i2c13_durable_epoch_registry.py",
+      "project_imports": [
+        {
+          "module": "spk_native_learning_v1.lab_i2c12_emitting_host_v1",
+          "names": [
+            "BoundedEmittingHostV1",
+            "EmittingReceiptV1",
+            "HostPhaseV1",
+            "canonical"
+          ]
+        }
+      ],
+      "read_only_ast": true,
+      "sha256": "87eb03e4a5502d49e0d672d04851cedfad9fb1348f58e2cc5b11d8c22bde1bec"
+    },
+    {
+      "bytes": 14371,
+      "classes": [
+        {
+          "line": 22,
+          "methods": [],
+          "name": "CheckpointRejected"
+        },
+        {
+          "line": 29,
+          "methods": [
+            {
+              "args": [
+                "self"
+              ],
+              "async": false,
+              "line": 52,
+              "name": "__post_init__"
+            },
+            {
+              "args": [
+                "self"
+              ],
+              "async": false,
+              "line": 73,
+              "name": "raw"
+            },
+            {
+              "args": [
+                "self"
+              ],
+              "async": false,
+              "line": 74,
+              "name": "digest"
+            }
+          ],
+          "name": "AuditedOutputEvidenceV1"
+        },
+        {
+          "line": 94,
+          "methods": [
+            {
+              "args": [
+                "self",
+                "path"
+              ],
+              "async": false,
+              "line": 100,
+              "name": "__init__"
+            },
+            {
+              "args": [
+                "self",
+                "namespace"
+              ],
+              "async": false,
+              "line": 110,
+              "name": "claim"
+            },
+            {
+              "args": [
+                "self",
+                "cap",
+                "fanout"
+              ],
+              "async": false,
+              "line": 111,
+              "name": "begin"
+            },
+            {
+              "args": [
+                "self",
+                "cap",
+                "receipt",
+                "evidence"
+              ],
+              "async": false,
+              "line": 113,
+              "name": "record_both"
+            },
+            {
+              "args": [
+                "self",
+                "namespace"
+              ],
+              "async": false,
+              "line": 138,
+              "name": "recover_evidence_read_only"
+            }
+          ],
+          "name": "DurableNativeEvidenceV1"
+        }
+      ],
+      "functions": [
+        {
+          "args": [
+            "x"
+          ],
+          "async": false,
+          "line": 24,
+          "name": "exact_int"
+        },
+        {
+          "args": [
+            "x"
+          ],
+          "async": false,
+          "line": 26,
+          "name": "is_sha"
+        },
+        {
+          "args": [
+            "raw"
+          ],
+          "async": false,
+          "line": 77,
+          "name": "from_untrusted_raw"
+        },
+        {
+          "args": [
+            "c",
+            "step",
+            "namespace"
+          ],
+          "async": false,
+          "line": 166,
+          "name": "witness_from_original"
+        },
+        {
+          "args": [
+            "path",
+            "namespace",
+            "fanout",
+            "crash_after_native"
+          ],
+          "async": false,
+          "line": 193,
+          "name": "run_case"
+        },
+        {
+          "args": [
+            "parent_sha"
+          ],
+          "async": false,
+          "line": 233,
+          "name": "run_native"
+        }
+      ],
+      "path": "spk_native_learning_v1/lab_i2c14_audited_checkpoint.py",
+      "project_imports": [
+        {
+          "module": "spk_native_learning_v1.lab_i2c12_emitting_host_v1",
+          "names": [
+            "EmittingReceiptV1",
+            "SCOPE",
+            "canonical"
+          ]
+        },
+        {
+          "module": "spk_native_learning_v1.lab_i2c13_durable_epoch_registry",
+          "names": [
+            "ClaimV1",
+            "DurableEpochRegistryV1",
+            "EpochFenceRejected",
+            "OWNER",
+            "_intent",
+            "_sha"
+          ]
+        }
+      ],
+      "read_only_ast": true,
+      "sha256": "13b231bd2ad2530428959d23df9df1edb8c70297e3bf02e5283255afee7f3976"
+    }
+  ],
+  "status": "I2C17N_V0G_SOURCE_SURFACE_INVENTORY_PASS_NOT_OWNER_INTEGRATION"
+}

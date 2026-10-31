@@ -1,0 +1,154 @@
+{
+  "A_sensor_authenticated": false,
+  "C_source_authenticated": false,
+  "T8STU": {
+    "adaptive_96": {
+      "audit": {
+        "P_policy": {
+          "0": 12,
+          "1": 11
+        },
+        "P_versions": {
+          "0": 4,
+          "1": 4
+        },
+        "P_writes": 8,
+        "episodes": 96,
+        "ledger_events": 1161,
+        "ledger_tip": "93100390b7977940ebda9cb11f111dcd55eee9135e02b1387163f44aa3248bfa",
+        "pending_events": 0,
+        "reference_v1_tick_grants": 8,
+        "settled": 96
+      },
+      "episodes": 96,
+      "failures": 8,
+      "reference_tick_P_commits": 8,
+      "reference_tick_P_grants": 8,
+      "reference_tick_events_executed": 480,
+      "rows_sha256": "9b8c2ed7bbb7fdc60de943d1fe91c749f16fd9a65485ae3428446cde1ff80679",
+      "semantic_receipts": 96,
+      "source_oracle_calls": 96,
+      "source_oracle_rows_sha256": "f9bfb2aa1ecb84cc7fb4d1cb06a1a493475a9b5757f35e93d76caaa71b3e1fc1",
+      "successes": 88
+    },
+    "baseline_96": {
+      "audit": {
+        "P_policy": {
+          "0": 12,
+          "1": 11
+        },
+        "P_versions": {
+          "0": 0,
+          "1": 0
+        },
+        "P_writes": 0,
+        "episodes": 96,
+        "ledger_events": 1153,
+        "ledger_tip": "ce78bf836227292251936ef055149346ba26d2b8786a611c66d94c5ab4c4c759",
+        "pending_events": 0,
+        "reference_v1_tick_grants": 0,
+        "settled": 96
+      },
+      "episodes": 96,
+      "failures": 48,
+      "reference_tick_P_commits": 0,
+      "reference_tick_P_grants": 0,
+      "reference_tick_events_executed": 480,
+      "rows_sha256": "dbaaab27412f73aefacb562cf9add8f205a74a63d650d5a20fd17abb08087888",
+      "semantic_receipts": 96,
+      "source_oracle_calls": 96,
+      "source_oracle_rows_sha256": "ad11980aacbf34649712518b9fa089fcdfb23e6d62c8d4632ecbe9821cbc2138",
+      "successes": 48
+    },
+    "lost_forward_24": {
+      "audit": {
+        "P_policy": {
+          "0": 12,
+          "1": 11
+        },
+        "P_versions": {
+          "0": 0,
+          "1": 0
+        },
+        "P_writes": 0,
+        "episodes": 24,
+        "ledger_events": 145,
+        "ledger_tip": "0035e7f85e31d8076c9a0aea8b153969a6388f94a2dbcb1ca8dc52c93bfedbbf",
+        "pending_events": 0,
+        "reference_v1_tick_grants": 0,
+        "settled": 24
+      },
+      "episodes": 24,
+      "failures": 0,
+      "reference_tick_P_commits": 0,
+      "reference_tick_P_grants": 0,
+      "reference_tick_events_executed": 48,
+      "rows_sha256": "4bf1dda609e338f9ed1a3879c7f52da48cfef5269d9e2698cf57256f851435ca",
+      "semantic_receipts": 0,
+      "source_oracle_calls": 24,
+      "source_oracle_rows_sha256": "f98ee78d49b63fdd1b29e68dc028ffc30628e4041f58c320c604bf6ebda86123",
+      "successes": 0
+    },
+    "native_v0e_code_unchanged": true,
+    "original_PE_compute_used": true,
+    "reference_integrated_tick_scheduler": true,
+    "semantic_feedback_during_tick": true,
+    "separate_tick_events": [
+      "PE_C",
+      "PE_B",
+      "PE_A",
+      "SEM_A_B",
+      "SEM_B_C"
+    ]
+  },
+  "T8VWX": {
+    "P_reference_commits_in_same_tick_transaction": 8,
+    "P_reference_grants_from_C_receipt_tick": 8,
+    "deadline": {
+      "deadline_tick_18_accepted": true,
+      "late_semantic_verdict_observed": true,
+      "tick_19_denied_P": true
+    },
+    "oracle_read_only": true,
+    "original_scheduler_oracle_calls": 216,
+    "parity_to_T8_full_frozen_source_sha": true,
+    "recovery": {
+      "feedback_ticks_after_restart": 2,
+      "one_P_grant_after_restart": true,
+      "pending_semantic_event_durable": true,
+      "replay_did_not_reapply": true,
+      "three_PE_steps_before_restart": 3
+    }
+  },
+  "T8YZA": {
+    "host_goal_control_counterexample": {
+      "host_can_drive_reference_grant": true,
+      "host_changed_only_unattested_A_goal": true,
+      "native_SPK_grant": false,
+      "opposite_A_verdicts": true,
+      "same_C_choice": true
+    },
+    "native_BV_semantic_events": 0,
+    "native_P_grants": 0,
+    "no_signer_or_attestation": true
+  },
+  "frozen_BV_sha256": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+  "frozen_PE_sha256": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+  "host_can_forge": true,
+  "limits": [
+    "This NEW V1 research tick engine is not the frozen SPK BV scheduler, and does not grant SPK native P access",
+    "V1 forwards semantic feedback and commits P in tick transactions rather than interpreting an after-the-fact source report",
+    "The original frozen BV-v0e is run independently after each episode solely as a parity oracle, NOT as an authority for the v1 tick engine",
+    "All tasks, goals, C source choices and A sensor semantics remain synthetic and controlled by the privileged host",
+    "Episodes are sequential and three-node only, with idealized ticks; this proves neither asynchronous full scheduler integration nor general learning"
+  ],
+  "native_BV_semantic_deliveries": 0,
+  "native_SPK_P_grants": 0,
+  "native_SPK_P_writes": 0,
+  "native_learning": false,
+  "original_source_pins": 12,
+  "promotion_allowed": false,
+  "schema": "spk-v5-t8stu-vwx-yza-integrated-reference-ticks/research-v0",
+  "source_T8JKL_MNO_PQR_sha256": "17902ac0d830bdbe93387bb9b8db75ead268ae69c2b290924c65bf14df61f585",
+  "status": "V1_REFERENCE_INTEGRATED_TICK_EVENT_SEMANTIC_AND_P_COMMIT_NOT_NATIVE_SPK"
+}

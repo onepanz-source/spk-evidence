@@ -1,0 +1,63 @@
+{
+  "BV_to_P_authorized": false,
+  "P_writes": 0,
+  "architecture_promotion_allowed": false,
+  "cases": [
+    {
+      "P_writes": 0,
+      "decisions": 2,
+      "fanout": 1,
+      "first_durable_tick": 8,
+      "first_successor_sha256": "a6955dd53c54f95bc2b4c8e0e772b5619c1877f5fc7f84c14b09cb2c13b764b6",
+      "new_authority_reopened": true,
+      "original_native_parent_store_unchanged": true,
+      "original_transition_in_separate_post_restart_process": true,
+      "second_durable_tick": 9,
+      "second_successor_sha256": "3d46bd71d0ca5c5ad38e7e85a476852507b40b1adb67e02ded85e90a6b1d2d11"
+    },
+    {
+      "P_writes": 0,
+      "decisions": 2,
+      "fanout": 2,
+      "first_durable_tick": 8,
+      "first_successor_sha256": "9d87360b7951c3d74221a13c0491bf7372c229693cc7974893c6a22b5498e993",
+      "new_authority_reopened": true,
+      "original_native_parent_store_unchanged": true,
+      "original_transition_in_separate_post_restart_process": true,
+      "second_durable_tick": 9,
+      "second_successor_sha256": "48d965e7c28d63f642df20ff8ca2ff25c1226d77770979b1753bc5f832cb4c4e"
+    }
+  ],
+  "crashes": [
+    {
+      "P_writes": 0,
+      "automatic_native_retry": false,
+      "child_exit": 91,
+      "durable_decisions": 1,
+      "durable_generation": 1,
+      "fault": "hard_before_commit"
+    },
+    {
+      "P_writes": 0,
+      "automatic_native_retry": false,
+      "child_exit": 92,
+      "durable_decisions": 2,
+      "durable_generation": 2,
+      "fault": "hard_after_commit"
+    }
+  ],
+  "limitations": [
+    "The post-restart caller is a disposable private research process, NOT the production owner lifecycle.",
+    "A second cold process uses the same frozen native implementation; this checks determinism and original audit but is not independent external authentication.",
+    "SQLite covers successor and decisions, not an atomic original external hardware/native commit.",
+    "No original 24j dispatch, recipient ACK, BV assessment, grant, P writing, production release or cross-machine fencing."
+  ],
+  "original_24j_dispatch": false,
+  "original_owner_service_live_resume": false,
+  "production_release": false,
+  "recipient_ack_authenticated": false,
+  "research_private_owner_continuation": true,
+  "schema": "spk-lab-i2c17n-private-owner-cold-continuation/v0e",
+  "source_original_I2c16": true,
+  "status": "I2C17N_PRIVATE_ORIGINAL_OWNER_COLD_CONTINUATION_PASS_NOT_LIVE_OWNER"
+}

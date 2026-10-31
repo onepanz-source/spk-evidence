@@ -1,0 +1,12 @@
+{
+  "files": {
+    "docs/spk-native-learning-v1v-pe-sensed-context.md": "5ff67614a03fa70d6dae41f480958c63aeb2f1e97afc4376e09a9901dc8a58cf",
+    "search/spk_native_learning_v1v_sensed_context_macro_gate.sh": "41ea8920b354d8d681cab5b748b49df73716349b22ea6b0cc5696a8915b2c09c",
+    "spk_native_learning_v1/sensed_context_conformance_v1v.py": "976d854a16a3090ffbbd89fc5ca8a7ef315cb65819367212cbb315fe57bbe457",
+    "spk_native_learning_v1/sensed_context_v1v.py": "0c57ea48429b1449b0ca5257c99979cef51397f2e6f82bbb70362e19a976ac9a",
+    "tests/test_spk_native_learning_v1_sensed_context.py": "0df7cc11cb8b52fb3975cae4b7792465b6a87bb3d0bfbdafd4127e0208d69988"
+  },
+  "frozen_components_modified": false,
+  "parent": "v1u",
+  "schema": "spk-native-learning-v1v-pe-sensed-context-manifest/v1"
+}

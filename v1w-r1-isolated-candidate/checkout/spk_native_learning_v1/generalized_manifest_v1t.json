@@ -1,0 +1,19 @@
+{
+  "candidate_set": [
+    11,
+    12,
+    15
+  ],
+  "files": {
+    "docs/spk-native-learning-v1t-three-choice-macro.md": "61b5e4e723385caf9ba628a3a10cba07fae345eb1fcd4b34503d076fcea86d18",
+    "search/spk_native_learning_v1t_three_choice_macro_gate.sh": "3c47e0a4b97b9c6ee40680ce57f49e57dbfb3a8d1e001f68f90f2104a51be325",
+    "spk_native_learning_v1/generalized_case_v1t.py": "b3c6af38013f60b4d958793d44ffdbe7274845631a3627f0ceee88566fd95cd6",
+    "spk_native_learning_v1/generalized_conformance_v1t.py": "ddb24bba6463361f4c9684f22952beb5995f2a5069d05d13a7eae7199aaf1c45",
+    "spk_native_learning_v1/generalized_durable_v1t.py": "9fdb335437d9d266baf178af69dae0d7b689f563990a278adb019e5a8ddda827",
+    "spk_native_learning_v1/generalized_scheduler_v1t.py": "2cfe10403d8058f6c2b8f71cb34ef2c87195ab89d31edbd4547062aa46b4bbab",
+    "spk_native_learning_v1/generalized_serial_v1t.py": "c27d3cd7d8743450037aaffecca1dc2507fcc06f29a52954af0e89cfb1ddea1c",
+    "tests/test_spk_native_learning_v1_generalized.py": "94cd536d19765048040abe1daa14bf84d97218e1e7edaa53ebaa08ae7a941037"
+  },
+  "frozen_components_modified": false,
+  "schema": "spk-native-learning-v1t-generalized-macro-manifest/v1"
+}

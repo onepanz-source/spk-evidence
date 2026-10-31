@@ -1,0 +1,171 @@
+{
+  "A_sensor_authenticated": false,
+  "C_source_authenticated": false,
+  "D_sensor_authenticated": false,
+  "T6STU": {
+    "PE_ID": "PE-C-RESEARCH",
+    "atomic_issue_vote_quorum_commit": true,
+    "domain": "P",
+    "frozen_BV_scheduler_used": false,
+    "implementation": "SQLite WAL FULL synchronous host-managed research adapter",
+    "mode": "execute",
+    "native_SPK_memory_contract_bound": false,
+    "original_PE_compute_used": true,
+    "owner": "C",
+    "state_update_writes_versioned_P": true
+  },
+  "T6VWX": {
+    "case_results": [
+      {
+        "episodes": 96,
+        "joint_successes": 80,
+        "ledger_events": 377,
+        "ledger_tip": "22879c2e433db1bd18b41700bd62858342dbe4fc503885d31743aae403edf239",
+        "rows_sha256": "3c6aa50abaa37fadf25dbe57ec92d122834a8224eed1b6c3c92bb9f2a06933ff",
+        "scenario": {
+          "default": true
+        },
+        "transcripts_sha256": "bff99bfc43b8aac5857dde246e1bb4f9ba79fe1e7bf9a6f4ae256d6de2040036",
+        "updates": 8
+      },
+      {
+        "episodes": 96,
+        "joint_successes": 48,
+        "ledger_events": 385,
+        "ledger_tip": "0ff96b5d6b993393c84011618adc10cee95e0279106553cd55432d0fac4b4cb3",
+        "rows_sha256": "70c95624f17cece89771f558313c9f2f2ce98bad7ff327c44e65880e3d8fc0e5",
+        "scenario": {
+          "learn": false
+        },
+        "transcripts_sha256": "7decc5308171b9e24288ddca79682cdec8e10c7b9e7581ffb13f55980d100377",
+        "updates": 0
+      },
+      {
+        "episodes": 96,
+        "joint_successes": 80,
+        "ledger_events": 377,
+        "ledger_tip": "87eef07d1f4700bd2739b3ec3340dc9f9be6ddbbd1ea9b757a4df0842ed72031",
+        "rows_sha256": "3c6aa50abaa37fadf25dbe57ec92d122834a8224eed1b6c3c92bb9f2a06933ff",
+        "scenario": {
+          "mode": "reverse"
+        },
+        "transcripts_sha256": "ca25f1488bd1a7128d9358e366c11f7870ae584a8fbad1c101d8799da00a4aac",
+        "updates": 8
+      },
+      {
+        "episodes": 96,
+        "joint_successes": 80,
+        "ledger_events": 371,
+        "ledger_tip": "49f7eb5af4377730833c5bae4f291a2ce88225392bb36e345c1da6f5c6160db3",
+        "rows_sha256": "3c6aa50abaa37fadf25dbe57ec92d122834a8224eed1b6c3c92bb9f2a06933ff",
+        "scenario": {
+          "mode": "jitter",
+          "seed": 42
+        },
+        "transcripts_sha256": "23ae1d6b85bc8563ac6467481d7d7c5ca9936e07324b745b2f458c874640e4fe",
+        "updates": 8
+      },
+      {
+        "episodes": 96,
+        "joint_successes": 80,
+        "ledger_events": 351,
+        "ledger_tip": "a68bc199022ceda41745e6cf5f4f2d7c67a22b8b53530df0e9c0e3dc7112410e",
+        "rows_sha256": "3c6aa50abaa37fadf25dbe57ec92d122834a8224eed1b6c3c92bb9f2a06933ff",
+        "scenario": {
+          "drop_mod": 7,
+          "mode": "jitter",
+          "seed": 42
+        },
+        "transcripts_sha256": "6f684ea2bf9e31811926367e6995ebc999dc44a933febe6ab18f1f1e9fa1ef73",
+        "updates": 8
+      },
+      {
+        "episodes": 96,
+        "joint_successes": 40,
+        "ledger_events": 381,
+        "ledger_tip": "058beee80ace7830dd9bb3bf726311361a1f41e9c36d0172ba328a7a40fe5908",
+        "rows_sha256": "272ec6378a6075b4108c9b85adcece797daa697753eda369996ac2d42057f5c1",
+        "scenario": {
+          "conflict_contexts": [
+            0
+          ]
+        },
+        "transcripts_sha256": "879d399f1d37b10f5f305e609d50eb63f5b5dc4b95bcfbf831baaffbc162cf68",
+        "updates": 4
+      },
+      {
+        "episodes": 96,
+        "joint_successes": 48,
+        "ledger_events": 193,
+        "ledger_tip": "40380f4e75800423cd2a154c28d5959bc05b29f231dcb33b62fdc7482f98fab9",
+        "rows_sha256": "70c95624f17cece89771f558313c9f2f2ce98bad7ff327c44e65880e3d8fc0e5",
+        "scenario": {
+          "drop_mod": 1
+        },
+        "transcripts_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "updates": 0
+      },
+      {
+        "episodes": 96,
+        "joint_successes": 44,
+        "ledger_events": 383,
+        "ledger_tip": "123d394a71d431078e96e993e8a43aafc0aecff8081775c9958a0af845ab8293",
+        "rows_sha256": "4e488cae16701c9c9a1e22316ac3f2891b75a2ad68fc525423a0e19372d22f4c",
+        "scenario": {
+          "budget": 1
+        },
+        "transcripts_sha256": "460193bf44bad9277790a322fce51f7feb23a9a0182e56a5d6e901871377d982",
+        "updates": 2
+      }
+    ],
+    "model_adaptive_successes": 80,
+    "model_adaptive_updates": 8,
+    "model_control_successes": 48,
+    "recovered_parity_byte_exact": true,
+    "scenarios": 8,
+    "scenarios_reopened_each_batch": 8,
+    "source_T6_jkl_replay_byte_exact": true,
+    "ten_restarted_jitter_seeds_successes": [
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80,
+      80
+    ]
+  },
+  "T6YZA": {
+    "duplicate_rejected_after_reopen": true,
+    "durable_vote_and_commit_recovered": true,
+    "one_commit_after_reopen": true,
+    "pending_versions_not_reused": true,
+    "privileged_DB_mutation_detected_without_reseal": true,
+    "privileged_host_impersonation_succeeds": true,
+    "reference_transaction_ledger_sha256": "e0cfacd54bd9bd38ac6fbd7eac535b60ac833582cb8a0ffe8a58372900c2c289",
+    "reference_transaction_state_sha256": "0c75cec92782cbf96973a53c8822cbd0417d6ad0407b1c41199af016abde1e54",
+    "stale_pending_vote_rejected": true
+  },
+  "frozen_BV_sha256": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+  "frozen_PE_sha256": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+  "host_can_forge": true,
+  "host_can_replace_full_SQLite_ledger": true,
+  "limits": [
+    "P owner C is an explicit host-managed research-state model, not adoption by frozen SPK Memory Contract or native PE scheduler",
+    "Atomic SQLite WAL recovery protects against ordinary interrupted transactions and duplicate delivery, not a privileged host rewrite",
+    "Eight prior synthetic scenario results are replayed byte-exact but all goals, PE fragment graph and receiver evidence are host authored",
+    "No sensor attestation, no native semantic Back Validation, no native learning, no physical causal inference",
+    "Crash recovery is tested as process/connection interruption and restart; power-loss durability depends on host filesystem and SQLite guarantees"
+  ],
+  "native_BV_credit": 0,
+  "native_C_policy_modified": false,
+  "native_learning": false,
+  "original_source_pins": 12,
+  "promotion_allowed": false,
+  "reference_T6_JKL_MNO_PQR_SHA256": "4f060fa63c1d8a99bcde25d6a551f7e31f15c102d9cc7878b40317ebd0235631",
+  "schema": "spk-v5-t6stu-vwx-yza-persistent-owned-c-state/research-v0",
+  "status": "PERSISTENT_OWNED_C_RESEARCH_PE_FRAGMENT_ONLY"
+}

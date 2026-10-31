@@ -1,0 +1,268 @@
+{
+  "adaptive_gain_absolute": 0.21333333333333337,
+  "cell_rows_sha256": "89832b871280f8f835b5d825e4e39e961366a1b566151c0efc46056a31df800f",
+  "evaluation_has_no_P_writes": true,
+  "experiment_precommit": {
+    "A_reward": "A-local error features and original _compute_local PE comparator",
+    "C_program": "two complementary original _compute_local PE branches",
+    "credit_rule": "monotone one-dimensional threshold versioned CAS on worsening",
+    "equilibria": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "exclude_equilibrium": true,
+    "heldout_temperatures_odd": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15
+    ],
+    "initial_theta": 12,
+    "physical_sensor": "simulated, NOT authenticated hardware",
+    "plant": "heat +1, cool -1, bounded [0,15]",
+    "positive_margin_absolute": 0.1,
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "training_temperatures_even": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14
+    ],
+    "world": "deterministic clipped linear thermal cell"
+  },
+  "gain_by_world": [
+    {
+      "adaptive_hits": 21,
+      "delta": 12,
+      "frozen_hits": 9,
+      "setpoint": 3
+    },
+    {
+      "adaptive_hits": 21,
+      "delta": 9,
+      "frozen_hits": 12,
+      "setpoint": 4
+    },
+    {
+      "adaptive_hits": 21,
+      "delta": 9,
+      "frozen_hits": 12,
+      "setpoint": 5
+    },
+    {
+      "adaptive_hits": 21,
+      "delta": 6,
+      "frozen_hits": 15,
+      "setpoint": 6
+    },
+    {
+      "adaptive_hits": 21,
+      "delta": 6,
+      "frozen_hits": 15,
+      "setpoint": 7
+    },
+    {
+      "adaptive_hits": 21,
+      "delta": 3,
+      "frozen_hits": 18,
+      "setpoint": 8
+    },
+    {
+      "adaptive_hits": 21,
+      "delta": 3,
+      "frozen_hits": 18,
+      "setpoint": 9
+    },
+    {
+      "adaptive_hits": 21,
+      "delta": 0,
+      "frozen_hits": 21,
+      "setpoint": 10
+    },
+    {
+      "adaptive_hits": 21,
+      "delta": 0,
+      "frozen_hits": 21,
+      "setpoint": 11
+    },
+    {
+      "adaptive_hits": 24,
+      "delta": 0,
+      "frozen_hits": 24,
+      "setpoint": 12
+    }
+  ],
+  "hypothesis_support_on_restricted_world": true,
+  "negative_controls_fail_closed": true,
+  "original_frozen_sPK_P_learning": false,
+  "promotion_allowed": false,
+  "reversed_actuator_counterfactual": {
+    "adaptive": {
+      "cases": 75,
+      "commits": 45,
+      "hits": 30
+    },
+    "frozen": {
+      "cases": 75,
+      "commits": 0,
+      "hits": 20
+    }
+  },
+  "schema": "spk-v5-t15-prospective-A-computed-feedback-falsification/research-v0",
+  "scientific_limits": [
+    "A and C actors are Python-hosted research implementations; only the local PE primitive comes from original SPK",
+    "A Python actor encodes absolute-distance sensor features before PE comparison",
+    "C update assumes known monotone signed actuator model, not inferred world dynamics",
+    "World equilibria and deterministic transition law are authored by the test harness; no external attestation",
+    "Held-out temperatures are new within each world but drawn from the same one-dimensional thermal dynamics",
+    "Repeated seeds share the same worlds and held-out temperatures; not independent physical samples",
+    "The result does not test other topologies, real time, physical transport, native original BV, or native SPK learning",
+    "Signed laboratory protocol T14 and original A1d access are not part of this falsification harness",
+    "Reversing actuator sign invalidates the credit rule assumption and is an explicit model-misspecification counterfactual",
+    "No broad claims about generalization or causal discovery are licensed"
+  ],
+  "source_T14_report_sha256": "2f204181d43c3ce3835daeb31f19d29d84409b93e34644b4b47248a264a69e4b",
+  "status": "RESTRICTED_CAUSAL_LEARNING_SUPPORTED",
+  "totals": {
+    "adaptive": {
+      "heldout_accuracy": 0.9466666666666667,
+      "heldout_cases": 225,
+      "heldout_improved": 213,
+      "heldout_physical_loss": 879,
+      "per_seed": {
+        "17": {
+          "cases": 75,
+          "commits": 8,
+          "hits": 71
+        },
+        "29": {
+          "cases": 75,
+          "commits": 10,
+          "hits": 71
+        },
+        "43": {
+          "cases": 75,
+          "commits": 13,
+          "hits": 71
+        }
+      },
+      "training_P_commits": 31
+    },
+    "altered": {
+      "heldout_accuracy": 0.7333333333333333,
+      "heldout_cases": 225,
+      "heldout_improved": 165,
+      "heldout_physical_loss": 975,
+      "per_seed": {
+        "17": {
+          "cases": 75,
+          "commits": 0,
+          "hits": 55
+        },
+        "29": {
+          "cases": 75,
+          "commits": 0,
+          "hits": 55
+        },
+        "43": {
+          "cases": 75,
+          "commits": 0,
+          "hits": 55
+        }
+      },
+      "training_P_commits": 0
+    },
+    "frozen": {
+      "heldout_accuracy": 0.7333333333333333,
+      "heldout_cases": 225,
+      "heldout_improved": 165,
+      "heldout_physical_loss": 975,
+      "per_seed": {
+        "17": {
+          "cases": 75,
+          "commits": 0,
+          "hits": 55
+        },
+        "29": {
+          "cases": 75,
+          "commits": 0,
+          "hits": 55
+        },
+        "43": {
+          "cases": 75,
+          "commits": 0,
+          "hits": 55
+        }
+      },
+      "training_P_commits": 0
+    },
+    "no_feedback": {
+      "heldout_accuracy": 0.7333333333333333,
+      "heldout_cases": 225,
+      "heldout_improved": 165,
+      "heldout_physical_loss": 975,
+      "per_seed": {
+        "17": {
+          "cases": 75,
+          "commits": 0,
+          "hits": 55
+        },
+        "29": {
+          "cases": 75,
+          "commits": 0,
+          "hits": 55
+        },
+        "43": {
+          "cases": 75,
+          "commits": 0,
+          "hits": 55
+        }
+      },
+      "training_P_commits": 0
+    },
+    "wrong_lineage": {
+      "heldout_accuracy": 0.7333333333333333,
+      "heldout_cases": 225,
+      "heldout_improved": 165,
+      "heldout_physical_loss": 975,
+      "per_seed": {
+        "17": {
+          "cases": 75,
+          "commits": 0,
+          "hits": 55
+        },
+        "29": {
+          "cases": 75,
+          "commits": 0,
+          "hits": 55
+        },
+        "43": {
+          "cases": 75,
+          "commits": 0,
+          "hits": 55
+        }
+      },
+      "training_P_commits": 0
+    }
+  }
+}

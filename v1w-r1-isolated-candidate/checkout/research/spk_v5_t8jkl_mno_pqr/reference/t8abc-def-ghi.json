@@ -1,0 +1,143 @@
+{
+  "A_sensor_authenticated": false,
+  "C_source_authenticated": false,
+  "T8ABC": {
+    "A_semantic_source": "separate original PE emission 21/22",
+    "research_packet_only": true,
+    "semantic_messages_in_adaptive_shadow_epochs": 96,
+    "source_transport": "original BV v0e structural A-B-C",
+    "v0e_native_packets_have_semantic_payload": false,
+    "v1_candidate_packet_generated": true
+  },
+  "T8DEF": {
+    "model_P_updates": 8,
+    "native_P_updates": 0,
+    "native_admission_success_count": 0,
+    "native_memory_contract_admission": "DENIED_NO_NATIVE_MEMORY_CONTRACT_GRANT",
+    "proposed_P_domain": "P",
+    "proposed_P_owner": "C",
+    "proposed_mode": "execute",
+    "research_P_recovery": {
+      "native_P_written": false,
+      "pending_decision_survived_restart": true,
+      "replay_after_reopen_denied": true,
+      "settled_once": true
+    }
+  },
+  "T8GHI": {
+    "adaptive_96": {
+      "audit": {
+        "episodes": 96,
+        "ledger_events": 193,
+        "ledger_tip": "f04f4b489c8dd94473cbad85453ba3480f91fa913f7bf673c835e69b6fd7a033",
+        "pending": 0,
+        "policy": {
+          "0": 12,
+          "1": 11
+        },
+        "settled": 96,
+        "updates": 8,
+        "versions": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_request_count": 96,
+      "episodes": 96,
+      "native_P_writes": 0,
+      "native_grants": 0,
+      "native_semantic_BV_deliveries": 0,
+      "rows_digest": "9422e85be1288e9781dd2326d3091a85cad557590fcaeed36c236d7872262845",
+      "semantic_packet_count": 96,
+      "source_rows_digest": "f9bfb2aa1ecb84cc7fb4d1cb06a1a493475a9b5757f35e93d76caaa71b3e1fc1",
+      "successes": 88,
+      "updates": 8
+    },
+    "baseline_96": {
+      "audit": {
+        "episodes": 96,
+        "ledger_events": 193,
+        "ledger_tip": "8e3c3b2f376cb1758d8f59ace1d42c797a73690b9ebcec31c290513a1d7024ca",
+        "pending": 0,
+        "policy": {
+          "0": 12,
+          "1": 11
+        },
+        "settled": 96,
+        "updates": 0,
+        "versions": {
+          "0": 0,
+          "1": 0
+        }
+      },
+      "candidate_request_count": 96,
+      "episodes": 96,
+      "native_P_writes": 0,
+      "native_grants": 0,
+      "native_semantic_BV_deliveries": 0,
+      "rows_digest": "eb1bf4fc6480a6e9d9c2d1647ca9bbb5252e345215aee6a1aea53d2e62067871",
+      "semantic_packet_count": 96,
+      "source_rows_digest": "ad11980aacbf34649712518b9fa089fcdfb23e6d62c8d4632ecbe9821cbc2138",
+      "successes": 48,
+      "updates": 0
+    },
+    "dropped_forward_24": {
+      "audit": {
+        "episodes": 24,
+        "ledger_events": 49,
+        "ledger_tip": "7ed33dca839aefd5b03fe79ed8bf9cbcbc5d65b89a8dd570dc9dfb4568c0c28b",
+        "pending": 0,
+        "policy": {
+          "0": 12,
+          "1": 11
+        },
+        "settled": 24,
+        "updates": 0,
+        "versions": {
+          "0": 0,
+          "1": 0
+        }
+      },
+      "candidate_request_count": 0,
+      "episodes": 24,
+      "native_P_writes": 0,
+      "native_grants": 0,
+      "native_semantic_BV_deliveries": 0,
+      "rows_digest": "88b9a48b7eeca82203117d82fc2273049fb1beb0a5c7e58a4481ea5cb619dc78",
+      "semantic_packet_count": 0,
+      "source_rows_digest": "f98ee78d49b63fdd1b29e68dc028ffc30628e4041f58c320c604bf6ebda86123",
+      "successes": 0,
+      "updates": 0
+    },
+    "model_success_delta": 40,
+    "privileged_host_counterexample": {
+      "host_fabricated_source_accepted_by_shadow_adapter": true,
+      "native_P_changed": false,
+      "native_grant_issued": false,
+      "native_origin_authenticated": false,
+      "new_real_scheduler_calls": 0,
+      "research_P_changed": true
+    }
+  },
+  "frozen_BV_sha256": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+  "frozen_PE_sha256": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+  "host_can_forge": true,
+  "limits": [
+    "Candidate v1 message is built by host after V0e; native V0e packets remain structural",
+    "No real SPK Memory Contract authorization call exists: native grant always DENIED",
+    "Host-managed research SQLite C-state is updated; genuine SPK P state is untouched",
+    "A goals and episodes remain host-authored synthetic, without trusted physical causal observations",
+    "Host can synthesize a coherent BV-looking report to update research P without a scheduler call",
+    "Full native learning needs a versioned runtime API and native P write transaction with independent authority"
+  ],
+  "native_P_state_modified": false,
+  "native_learning": false,
+  "native_semantic_BV_credit": 0,
+  "original_frozen_code_unchanged": true,
+  "original_scheduler_calls": 216,
+  "original_source_pins": 12,
+  "prior_T7JKL_report_sha256": "9044d665e4b56dbf1d3b58facb175248d294c05343182c095b1cd7440beb01ce",
+  "promotion_allowed": false,
+  "schema": "spk-v5-t8abc-def-ghi-semantic-P-candidate-contract/research-v0",
+  "status": "CANDIDATE_V1_SEMANTIC_PACKET_AND_P_ADMISSION_DRY_RUN_NO_NATIVE_ADOPTION"
+}

@@ -1,0 +1,15 @@
+{
+  "files": {
+    "docs/spk-v1-reference-provider-native-adoption-boundary.md": "8c8cf033d989f2c8876b5a3626686ef63f44bdde8765442b7505e90d59036ec5",
+    "research/spk_v5_t10abc_def_ghi/README.md": "d362d70919357fabc4a4ca06a3cb6719aac79499433f0b34fdde32a50e2c4144",
+    "research/spk_v5_t10abc_def_ghi/cumulative_provider_gate.py": "960d7b04990b5114e18ae2e1a1b2eddb7487613285ccc6ace509cfbf5f9d1959",
+    "research/spk_v5_t10abc_def_ghi/provider_v1.py": "84af52571f6076a9b1a178c31b653dd98c34dacf52abf49f00fc0123f7471871",
+    "research/spk_v5_t10abc_def_ghi/reference/t9stu-vwx-yza-cumulative.json": "d4660c5e744a7e43346e72f39018483cbd9bd12474ad0f27196c40d90ffc382d",
+    "research/spk_v5_t10abc_def_ghi/tests/test_provider_v1.py": "aa345a25fae86d864d283239d4d8e2d90f276f4d2ed4e678d06c3a130fe81b2b",
+    "search/spk_v5_t10abc_def_ghi_cumulative_gate.sh": "b906c4d1b3b514d55448bc7cb1d144a9eda28e23521f4cac50774b35bea1413d"
+  },
+  "parent_report_sha256": "d4660c5e744a7e43346e72f39018483cbd9bd12474ad0f27196c40d90ffc382d",
+  "promotion_allowed": false,
+  "schema": "spk-v5-t10abc-def-ghi-cumulative-manifest/research-v0",
+  "status": "REFERENCE_PROVIDER_TICK_ADMISSION_NOT_NATIVE"
+}

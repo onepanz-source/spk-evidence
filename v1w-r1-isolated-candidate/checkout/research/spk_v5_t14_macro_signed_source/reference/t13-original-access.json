@@ -1,0 +1,63 @@
+{
+  "M1_original_chain_completed_T12": 4,
+  "M2_original_access_gates_live_C_tick": {
+    "actual_A1d_execution_during_provider_authorization": true,
+    "matching_choice_and_goal_required": true,
+    "original_P_learning_authority": false,
+    "required_for_each_reference_P_write": true,
+    "same_tick_SQL_transaction_and_rollback": true
+  },
+  "M3_reference_v1_runtime": {
+    "dispatcher_slots": 480,
+    "episodes": 96,
+    "max_active": 2,
+    "original_SPK_learning": false,
+    "original_SPK_learning_P_grants": 0,
+    "original_witness": {
+      "host_can_forge": true,
+      "new_runtime_v1_P_grants": 8,
+      "original_A1d_executions_for_witnesses": 32,
+      "original_access_witness_rows_sha256": "780c43e6a94667d1be37fb5eb96d7adb6f13d869ba4e3b712ed9f8a4a345f947",
+      "original_access_witnesses": 8,
+      "original_learning_P_grants": 0,
+      "same_tick_transaction": true,
+      "source_authenticated": false,
+      "test_only_witnesses": 0,
+      "witness_kind": "ORIGINAL_A1D_EXECUTION_ACCESS"
+    },
+    "reference_P_grants": 8,
+    "row_digest": "46317e020c129c63db1a1a937f0bde7a3ef6c0b20fd8dbea9642b2da664fb062",
+    "stale_vetoes": 0,
+    "successes": 88,
+    "test_only": false,
+    "v1_owned_memory_P_commits": 8,
+    "waves": 48
+  },
+  "M4_old_vs_new": {
+    "new_rows_digest": "46317e020c129c63db1a1a937f0bde7a3ef6c0b20fd8dbea9642b2da664fb062",
+    "new_successes": 88,
+    "old_rows_digest": "46317e020c129c63db1a1a937f0bde7a3ef6c0b20fd8dbea9642b2da664fb062",
+    "old_successes": 88,
+    "same_grants": true
+  },
+  "M5_boundary": {
+    "host_source_authenticated": false,
+    "original_BV_semantic_feedback": 0,
+    "original_P_learning_grants": 0,
+    "original_P_learning_writes": 0,
+    "original_memory_access_not_equivalent_to_learning": true,
+    "privileged_host_can_reseal": true,
+    "test_only_release_forbidden": true
+  },
+  "frozen_BV_sha256": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+  "frozen_PE_sha256": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+  "native_learning": false,
+  "original_A1d_sha256": "efe461bdaf1c6dfe902407fef6f4dfe6ec31cf1e771fd66c2a075eedf2eeb8c8",
+  "original_learning": false,
+  "original_memory_catalog_sha256": "5ba6aa4fd4b89d18c2ad332958e8163d6b16bf5e4f26f4121b3e58a9520852f5",
+  "production_original_A1d_invoked_during_C_tick": true,
+  "promotion_allowed": false,
+  "schema": "spk-v5-t13-macro-original-execution-access-on-live-C-P-ticks/research-v0",
+  "source_T12_SHA256": "af405aeef4e0c5a0de1279077b6e6c228527b3b229a22124b6bc372f45767475",
+  "status": "T13_ORIGINAL_EXECUTION_ACCESS_ON_LIVE_REFERENCE_C_TICK_NOT_NATIVE_P_LEARNING"
+}

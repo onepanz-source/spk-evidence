@@ -1,0 +1,159 @@
+{
+  "A_sensor_authenticated": false,
+  "C_source_authenticated": false,
+  "T7JKL": {
+    "A_B_C_semantic_overlay_only": true,
+    "adaptive_96": {
+      "P_final": {
+        "0": 12,
+        "1": 11
+      },
+      "P_updates": 8,
+      "P_versions": {
+        "0": 4,
+        "1": 4
+      },
+      "durable_audit": {
+        "episodes": 96,
+        "ledger_events": 193,
+        "ledger_tip": "f04f4b489c8dd94473cbad85453ba3480f91fa913f7bf673c835e69b6fd7a033",
+        "pending": 0,
+        "policy": {
+          "0": 12,
+          "1": 11
+        },
+        "settled": 96,
+        "updates": 8,
+        "versions": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "episodes": 96,
+      "forward_deliveries": 96,
+      "full_rows_sha256": "41aaa36886ccb097a214ae318b02c4e33730af738cf4a8f62a57cc14ef1b1ee7",
+      "intents_sha256": "ea7a60dffbfd0e9bbdf2a415aee4edbe7c7dbc88ae634be80047a3cd4a0101d0",
+      "raw_bv_calls": 96,
+      "receipt_rows_sha256": "1428926934476b0e8c13a4fa38216ad64ed2cf6e8b1837eed018aced343ff9d5",
+      "source_sha256": "f9bfb2aa1ecb84cc7fb4d1cb06a1a493475a9b5757f35e93d76caaa71b3e1fc1",
+      "successes": 88
+    },
+    "control_96": {
+      "P_final": {
+        "0": 12,
+        "1": 11
+      },
+      "P_updates": 0,
+      "P_versions": {
+        "0": 0,
+        "1": 0
+      },
+      "durable_audit": {
+        "episodes": 96,
+        "ledger_events": 193,
+        "ledger_tip": "8e3c3b2f376cb1758d8f59ace1d42c797a73690b9ebcec31c290513a1d7024ca",
+        "pending": 0,
+        "policy": {
+          "0": 12,
+          "1": 11
+        },
+        "settled": 96,
+        "updates": 0,
+        "versions": {
+          "0": 0,
+          "1": 0
+        }
+      },
+      "episodes": 96,
+      "forward_deliveries": 96,
+      "full_rows_sha256": "81547a236a3a823b9f74fb0fbc2b9d69f52d3443470fcc1f1d61ba5bd00c922e",
+      "intents_sha256": "40bc94cfc7744cb44a85445ff640786436acc9b89469bdbe03d4259de26492d4",
+      "raw_bv_calls": 96,
+      "receipt_rows_sha256": "a16cc5db19e50afab21d1bbcf340c8a14d47e6afad3eae927491ec2b1e6cf243",
+      "source_sha256": "ad11980aacbf34649712518b9fa089fcdfb23e6d62c8d4632ecbe9821cbc2138",
+      "successes": 48
+    },
+    "native_BV_packet_semantic": false,
+    "original_frozen_scheduler_calls": 217,
+    "semantic_bound_to_A_PE_emission": true
+  },
+  "T7MNO": {
+    "full_source_PE_BV_used": true,
+    "native_memory_contract_admission": false,
+    "persisted_model_improvement": 40,
+    "research_P_intent_domain": "P",
+    "research_P_intent_owner": "C",
+    "research_P_intent_version_bound": true,
+    "restart_once_and_replay_reject": {
+      "P_version_after_recover": 1,
+      "one_commit": true,
+      "reopen_before_vote": true,
+      "replay_denied": true
+    }
+  },
+  "T7PQR": {
+    "dropped_forward_24": {
+      "P_final": {
+        "0": 12,
+        "1": 11
+      },
+      "P_updates": 0,
+      "P_versions": {
+        "0": 0,
+        "1": 0
+      },
+      "durable_audit": {
+        "episodes": 24,
+        "ledger_events": 49,
+        "ledger_tip": "7ed33dca839aefd5b03fe79ed8bf9cbcbc5d65b89a8dd570dc9dfb4568c0c28b",
+        "pending": 0,
+        "policy": {
+          "0": 12,
+          "1": 11
+        },
+        "settled": 24,
+        "updates": 0,
+        "versions": {
+          "0": 0,
+          "1": 0
+        }
+      },
+      "episodes": 24,
+      "forward_deliveries": 0,
+      "full_rows_sha256": "d4cb9f32b13ba1725f0caf3f98c9a329f8a42ff962b216f3f3c081b18dd68e09",
+      "intents_sha256": "77b5d1fd715c60cc41689ae9324ebb0ab16727446ed052aa4cdbd14e8a4b33cc",
+      "raw_bv_calls": 24,
+      "receipt_rows_sha256": "38d79985b820e2c955eb46626d2bf3fa0ee896d774609c56eeca9725b730ad92",
+      "source_sha256": "f98ee78d49b63fdd1b29e68dc028ffc30628e4041f58c320c604bf6ebda86123",
+      "successes": 0
+    },
+    "native_BV_credit": 0,
+    "native_learning": false,
+    "privileged_host_full_source_rebinding": {
+      "forged_A_B_C_semantic_custody_accepted": true,
+      "forged_research_P_intent_committed": true,
+      "host_generated_coherent_fake_raw_scheduler_report": true,
+      "native_attestation": false,
+      "new_original_scheduler_calls": 0
+    }
+  },
+  "frozen_BV_sha256": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+  "frozen_PE_sha256": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+  "host_can_forge": true,
+  "limits": [
+    "Frozen BV-v0e transports only structural A-B-C deliveries, not A 21/22 verdict",
+    "Shadow semantic capsule joins host-visible A PE channel with frozen structural path; not native BV semantics",
+    "P-write intent is checked and committed by host SQLite research adapter, NOT native Memory Contract or PE P",
+    "All goals, per-epoch programs and A observations remain synthetic and host-authored",
+    "A privileged host can provide a fully forged source-looking report and coherent semantic custody without calling BV",
+    "No native causal learning, authenticated sensors, trusted source, or frozen contract edits"
+  ],
+  "native_BV_credit": 0,
+  "native_P_state_modified": false,
+  "native_learning": false,
+  "original_source_pins": 12,
+  "promotion_allowed": false,
+  "schema": "spk-v5-t7jkl-mno-pqr-bv-semantic-custody-and-P-intent/research-v0",
+  "source_T7_reference_sha256": "1d44f2884eb565c318e963ed06e6752e90f496ad01b6fc30bceb52183160a1b2",
+  "status": "FROZEN_BV_STRUCTURAL_SEMANTIC_OVERLAY_WITH_RESEARCH_P_INTENT_ONLY"
+}

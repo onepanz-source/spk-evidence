@@ -1,0 +1,49 @@
+{
+  "BV_to_P_authorized": false,
+  "P_writes": 0,
+  "architecture_promotion_allowed": false,
+  "decision": "HOLD",
+  "exit_code": 4,
+  "git_head_observed": "df265551e146be78a074cb18d9174bde8b3969db",
+  "inventory": {
+    "assessment": "Static API names alone cannot prove or rule out an adapter. The approved mapping from I2c.17 SQLite capsule to the ORIGINAL host/provider lifecycle is not evidenced. No implementation may infer authority from AST names.",
+    "hold_reasons": [
+      "NO_REVIEWED_ORIGINAL_OWNER_RESTORE_INSTALL_MAPPING",
+      "NO_EXECUTED_ORIGINAL_HOST_REHYDRATION_PROOF",
+      "NO_ORIGINAL_HOST_RESTART_CAS_DISPATCH_AND_NO_DUPLICATE_EFFECT_PROOF",
+      "NO_EXTERNAL_PRINCIPAL_AUTHENTICATION_OR_CROSS_MACHINE_FENCING"
+    ],
+    "host_provider_constructor_present": true,
+    "host_public_methods": [
+      "admit",
+      "dispatch",
+      "shutdown",
+      "status"
+    ],
+    "host_restore_named_public_methods": [],
+    "missing_for_next_gate": [
+      "Source-reviewed adapter from I2c.17 successor capsule to frozen application host/provider state, without frozen changes",
+      "Original host lifecycle behavioral tests using actual provider, admission and post-restart execution",
+      "Crash and stale-owner veto before any real dispatch, with receipt boundaries proven separately"
+    ],
+    "native_deserializer_present": true,
+    "native_transition_present": true,
+    "static_inventory_complete": true
+  },
+  "native_24j_dispatch": false,
+  "no_frozen_code_imported": true,
+  "no_go_path_in_v0h": true,
+  "no_native_dispatch_attempted": true,
+  "no_original_owner_executed": true,
+  "no_sqlite_db_opened": true,
+  "original_owner_lifecycle_bound": false,
+  "original_owner_live_resume": false,
+  "predecessor_inventory_sha256": "ae4a913e0562e78378ddf056fda42fbc5ec7edc9baaa9943c1b54a548ba6da1d",
+  "predecessor_owner_admission_sha256": "e8634541ad87524476138d0fd6141e896e2779e492c36dc86788f0f0ee99d7ce",
+  "production_release": false,
+  "recipient_ack_authenticated": false,
+  "research_only": true,
+  "schema": "spk-lab-i2c17n-original-owner-lifecycle-boundary/v0h",
+  "source_count_pinned_and_ast_rechecked": 9,
+  "status": "HOLD_ORIGINAL_OWNER_RESTORE_CONTRACT_NOT_ESTABLISHED"
+}

@@ -1,0 +1,23 @@
+{
+  "T14_attested_sensor_integrated": false,
+  "checkpoint": "SPK V5/T16 Macro Durable Staged A-Computed Feedback Runtime",
+  "files": {
+    "docs/spk-v5-t16-staged-causal-learning-and-native-boundary.md": "a4c91f3a6893817d8e161c9d268ac60e288f018832fa23dc6938c55734d06d3a",
+    "research/spk_v5_t16_macro_runtime/README.md": "febd58267797fb985c6c3ef4843a6d0d33e10a0c9beb131ad17f6830ed2b3b59",
+    "research/spk_v5_t16_macro_runtime/__init__.py": "fce33c775b1775565c00de840ab9da75dfb1a8d927b3cfe2b26321f954a880c5",
+    "research/spk_v5_t16_macro_runtime/macro_gate.py": "6359cab5c5e7e9311a63341e9703af491c1095eb81bd02ee78fbb8982439ef71",
+    "research/spk_v5_t16_macro_runtime/reference/t15-prospective-fwork.json": "83da0277ebf6ec36e0ab8fb8aab4cbd55d7eb926e64b94aef81f94e6cd353a77",
+    "research/spk_v5_t16_macro_runtime/staged_runtime_v1.py": "cc8e413f099e7fdac0a2aa0860760b9154b8ad6cc4de588aedc7797d1b446d69",
+    "research/spk_v5_t16_macro_runtime/tests/test_staged_runtime.py": "44e7cf2d4c77b84d671bc9db75f874df9cd805da33a706a0c398519e7eea0e7f",
+    "search/spk_v5_t16_macro_staged_learning_gate.sh": "3978d7c1a49d3985c5a7b911b2e85d13a73868f1e0b36bcaa393c21d4e0a7a8b"
+  },
+  "frozen_components_modified": false,
+  "native_learning": false,
+  "original_BV_sha256": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+  "original_PE_sha256": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+  "original_T13_A1d_access_for_T16_thermal_P_commits": false,
+  "parent_T15_sha256": "83da0277ebf6ec36e0ab8fb8aab4cbd55d7eb926e64b94aef81f94e6cd353a77",
+  "promotion_allowed": false,
+  "schema": "spk-v5-t16-owned-staged-causal-learning-manifest/research-v0",
+  "source_mode": "frozen PE fragments, five durable research dispatch stages; not original BV or original native P learning"
+}

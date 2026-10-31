@@ -1,0 +1,3 @@
+# T12 MACRO native original memory execution seam
+
+Add-only. No replacement of frozen SPK source. Original source code hash-pinned from T11 native `fwork` AST survey. T12 invokes actual original `memory_projection_v1a`, `memory_access_v1b`, and `memory_service_v1c` operations for A/B/C native executions. This is *original execution access*, not C learning P authority. One release gate for 23 historical suites, direct source call witness, recovery, versioning, original source pins, two deterministic cumulative reports. The gate aborts if original sources are absent or all native memory admissions reject.

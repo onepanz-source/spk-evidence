@@ -1,0 +1,17 @@
+{
+  "files": {
+    "docs/spk-native-learning-v1-first-scheduler-contract.md": "83958d3a06bbd3d6e1784c2868546460b2fd4afda9338f0a27648253ac9ad8dd",
+    "search/spk_native_learning_v1_first_gate.sh": "24c8feff273236022b9d3b88ab8304bd9def406d999c9d2c53ae221ec1a86d29",
+    "spk_native_learning_v1/README.md": "962bc50b4d54db900d3d33fb38473c2a8a231058d79595a1644650c3af3eaa20",
+    "spk_native_learning_v1/__init__.py": "d8b13286cb6d7af52c4ff743488af521c0e7447a0690482776239b9c8f3c887e",
+    "spk_native_learning_v1/conformance_v1.py": "045f40f839e2625dea23f15cd7fb4a38c3c77e464d8467dc6532ca799d10f2d3",
+    "spk_native_learning_v1/live_learning_scheduler_v1.py": "ed105a8c70922df9409543d2cb4b349dded9ca72040099756634572a7018b012",
+    "spk_native_learning_v1/reference/t17-fwork.json": "9f26022d0ae1361f77b92d9ecb5180dd107696b1909f9f28c23708d123f5c0ac",
+    "tests/test_spk_native_learning_v1.py": "b18f85be1b2e2d6953e065e6bd41f9022615b1c7173896759aec7df6b5d56859"
+  },
+  "frozen_v0e_modified": false,
+  "original_v0e_learning": false,
+  "schema": "spk-native-learning-v1-manifest/first-release",
+  "scope": "bounded three-node binary program switch",
+  "versioned_v1_native_learning": true
+}

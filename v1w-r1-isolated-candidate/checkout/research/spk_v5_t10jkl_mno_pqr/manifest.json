@@ -1,0 +1,15 @@
+{
+  "files": {
+    "docs/spk-v1-bounded-P-resource-admission-reference.md": "be02052e05e601bbfb4b23454229c503d5f4f46f20e1b3e6b69ed5ce315e70c7",
+    "research/spk_v5_t10jkl_mno_pqr/README.md": "fd4f171df7bff0cfb1bec0f59105106603d6b3b59950f7b78b52aa438358f72e",
+    "research/spk_v5_t10jkl_mno_pqr/cumulative_resource_gate.py": "e3b72785401b76d1a8e89e383e6474051604178fee83f6a9d73135c23a05fe33",
+    "research/spk_v5_t10jkl_mno_pqr/reference/t10abc-def-ghi-cumulative.json": "68285626ba06cc63f108176eb2176d26e6954f349de3ffde0f3d45c4325f1eac",
+    "research/spk_v5_t10jkl_mno_pqr/resource_authority_v1.py": "d8a6c3e219cba8aa5bc9cb28e99a4ae839ca7dd834d2183a728ce3a86909167b",
+    "research/spk_v5_t10jkl_mno_pqr/tests/test_resource_authority_v1.py": "1336ddd998159df2d43516851a3ba20ad96d0a16c16d710915e70adb0f0b850f",
+    "search/spk_v5_t10jkl_mno_pqr_cumulative_gate.sh": "7e5b5bee5cbcb6bea4212237038d753cacfc458c7ede9aaf04d538ec9f455cb4"
+  },
+  "parent_report_sha256": "68285626ba06cc63f108176eb2176d26e6954f349de3ffde0f3d45c4325f1eac",
+  "promotion_allowed": false,
+  "schema": "spk-v5-t10jkl-mno-pqr-resource-cumulative-manifest/research-v0",
+  "status": "REFERENCE_P_RESOURCE_ADMISSION_NOT_NATIVE"
+}

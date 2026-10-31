@@ -1,0 +1,21 @@
+{
+  "files": {
+    "research/spk_v5_t7jkl_mno_pqr/README.md": "e4d86e586c6f317ae0130f691a4b8b1e9440d75f35910d43611aef4987d58cdd",
+    "research/spk_v5_t7jkl_mno_pqr/cumulative_gate_v0.py": "04f2e13074fbdcb659693e13dfaa8912cce1320505243edc270f3a1ea5c1f99c",
+    "research/spk_v5_t7jkl_mno_pqr/native_epoch_v0.py": "35402d6698116252ef61bc197eaad61085b106eb70ddc67208639175d3a39386",
+    "research/spk_v5_t7jkl_mno_pqr/p_intent_v0.py": "069870674e1b3cc0b00acc23aba10acf22210b6ad6149986723cb3d2e198ec4d",
+    "research/spk_v5_t7jkl_mno_pqr/reference/t7abc-def-ghi.json": "1d44f2884eb565c318e963ed06e6752e90f496ad01b6fc30bceb52183160a1b2",
+    "research/spk_v5_t7jkl_mno_pqr/semantic_custody_v0.py": "91f7dba3759b577e5b79dc365cb2d97602951581945df10fabc1bff42dca192d",
+    "research/spk_v5_t7jkl_mno_pqr/tests/test_semantic_custody.py": "7f1da69f3379cd6855dfd63486d2741e281d82f0f2bd951118962c42fd0fe4ec",
+    "search/spk_v5_t7jkl_mno_pqr_cumulative_gate.sh": "62aa8bf074dbf5082d23e68f6820b4a4369c789dfa030e894a6384592fb30c60"
+  },
+  "frozen_BV_sha256": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+  "frozen_PE_sha256": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+  "native_BV_credit": 0,
+  "native_P_memory_adoption": false,
+  "native_learning": false,
+  "original_source_pins": 12,
+  "prior_T7_reference_sha256": "1d44f2884eb565c318e963ed06e6752e90f496ad01b6fc30bceb52183160a1b2",
+  "promotion_allowed": false,
+  "schema": "spk-v5-t7jkl-mno-pqr-semantic-research-manifest/v0"
+}

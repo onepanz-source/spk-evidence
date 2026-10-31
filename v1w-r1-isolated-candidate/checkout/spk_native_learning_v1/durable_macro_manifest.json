@@ -1,0 +1,24 @@
+{
+  "files": {
+    "docs/spk-native-learning-v1-durable-macro-contract.md": "909a9f27f1ecf7a47529d07366a2290d486de90a68dc9d35fc9cc86efda34eed",
+    "search/spk_native_learning_v1_durable_macro_gate.sh": "69b546426c2fe616f38e409e24dbac0a162f0f63be1ae8e65b57e432dba361f4",
+    "spk_native_learning_v1/durable_conformance_v1.py": "fc72447aca0eee0e282b8ba0858e371e505ce437de9b31f0866c19c8b64dce8b",
+    "spk_native_learning_v1/durable_runtime_v1.py": "70c64ce29530f77d631952b9117288f8879df64618c28e0e3678555838e59e70",
+    "spk_native_learning_v1/live_learning_scheduler_v1r.py": "54864f8e95d9ad1b57f022e8cc0e24509f7066af0f11bdb4453a8f544a49feb2",
+    "spk_native_learning_v1/reference/native-v1-first-fwork.json": "b3ed1b68bacd15643523a89d65777369ed4cce7ab61e48132d90d9dde0d3de4e",
+    "tests/test_spk_native_learning_v1_durable.py": "3fcff37300a59a4c1a97307ee9aef1fb49733a82714611c43c8f610a25eb0955"
+  },
+  "first_native_v1_parent_SHA256": "b3ed1b68bacd15643523a89d65777369ed4cce7ab61e48132d90d9dde0d3de4e",
+  "limitations": [
+    "not N-node learning",
+    "genesis replay not heap restore",
+    "no irreversible external effects",
+    "host not independent source"
+  ],
+  "original_frozen_BV_modified": false,
+  "original_frozen_BV_natively_learns": false,
+  "original_scope": "3-node bounded binary PE/BV",
+  "schema": "spk-native-learning-v1r-durable-macro-manifest/v1",
+  "stage": "first bounded integrated same-scheduler learning with durable genesis-replay and cross-epoch P",
+  "verified_local_test_count": 42
+}

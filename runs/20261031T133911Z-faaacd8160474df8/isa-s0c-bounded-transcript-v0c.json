@@ -1,0 +1,61 @@
+{
+  "BV_to_P_authorized": false,
+  "G2_owner_authorized": false,
+  "ISA_approved": false,
+  "P_writes": 0,
+  "compiler_v0_equivalence_proven": false,
+  "decision": "HOLD",
+  "declarative_lowering": {
+    "compiler_v0_equivalence_proven": false,
+    "frames_native_independent": 12,
+    "frames_synthetic_mesh": 11,
+    "frames_synthetic_sequential": 15,
+    "machine_encoding_present": false,
+    "native_independent_cohort_sha256": "b08e85b8a62c4da788cc2319d4a4fe20881a9044bfb96b3480fb59a469e69a1b",
+    "synthetic_mesh_sha256": "4ba692f6124fbbc67d0950038fcc73bdc2df6c11f1909d1a9e93a7d207ada4f8",
+    "synthetic_sequential_sha256": "455be372517e35733125dda8b258eb1935c607fe36f9d7d210a5adaaf5bbabb2"
+  },
+  "exit_code": 4,
+  "external_dispatch": false,
+  "limitations": [
+    "Native routed cases are independent original in-memory fixture experiments, not a two-tick chain.",
+    "Silent three-step chain and mesh are synthetic pure ISA research, not original Core executions.",
+    "Observation hashes are fingerprints, not authenticated receipts.",
+    "Compiler v0 equivalence, hardware ISA, authenticated routing and owner C0-C5 remain unproven."
+  ],
+  "native_independent_cohort": {
+    "digest": "343e43c5685f9f1b921b4be336b39b8095cb40b547eacf5e755d53f063afda19",
+    "fanouts": [
+      1,
+      2
+    ],
+    "independent_cases_not_chained": true,
+    "original_routed_fixture_executed": true,
+    "trace_digests": [
+      "471d8f00883b26791adaefb1fe0a5650d13c603f209efab7ee10094c8e6ad68c",
+      "812057eaca551b001b7de70e1fd2848d70dd43f97a3b5ca1ad0161c2d054764d"
+    ],
+    "two_fresh_processes_identical": true
+  },
+  "native_projection_implementation_sha256": "d2b1c8328c59dc21381a50290d6aec9aa60cc6c9de18911c533b684bb32f7be5",
+  "native_silent_proven": false,
+  "original_review_archive_sha256": "1350acd0b22ef940e7ea32a44fcc818af9123c884c1fbaabdfe41d7d54ef0aea",
+  "owner_executed": false,
+  "parent_v0b_sha256": "001ada57f50126fd9b2b8e4a3ccd17feb68f86151167785c533530ccf6291a3f",
+  "production_release": false,
+  "research_only": true,
+  "schema": "spk-isa-s0c-bounded-transcript-witness/v0c",
+  "shadow_snapshot_sha256": "4eccc04c274c14a3b83894850778de794cb7006d60e3cbda13814fdabb7fe38b",
+  "source_pins": {
+    "spk_simulator/atomic_neuronal_commit_v0.py": "929e9527e1f780bf429881ca15e22412ddc9517afbc6e243f9ff542214f2bdcc",
+    "spk_simulator/owned_internal_reads_v0.py": "0aeda5c5a0b139bc169e3bf4d89995a2b38df446ffa24a393ac8079988558cfb",
+    "spk_simulator/owned_root_terminal_commit_v0.py": "8d006c4a2d7aa1cde5bd051aa5cc2bff9d3312e168449aba9eb9dc153ca7f80a"
+  },
+  "status": "RESEARCH_NATIVE_ROUTED_COHORT_AND_SYNTHETIC_CAUSAL_STREAM_PASS_COMPILER_HOLD",
+  "synthetic_research": {
+    "mesh_linked_routes": 1,
+    "mesh_routed_to_silent_transcript_sha256": "da4d819d6e530b0a426abd540b5f109cf18920af21ef702d1ddf5a02442342ed",
+    "original_silent_executed": false,
+    "silent_three_step_transcript_sha256": "713ee7ab8cda438e17b28f63e0e6e6dbd2c6c9b5dfa891e604ba0d606a0b58ed"
+  }
+}

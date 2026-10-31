@@ -1,0 +1,17 @@
+{
+  "files": {
+    "research/spk_v5_t6jkl_mno_pqr/README.md": "e78886fe60c61ff1899b719844a3840b800fec590d30ae9e53aedf22d6c156aa",
+    "research/spk_v5_t6jkl_mno_pqr/__init__.py": "9f0154536d1e75e8830f9d2437b70c4381e4d4f2d7d0075356bd90c52d587d48",
+    "research/spk_v5_t6jkl_mno_pqr/async_multi_v0.py": "25c3bca1b37c5ee74dc6b418f3cf7814a1c5c3befd39366854a49ab066a1c951",
+    "research/spk_v5_t6jkl_mno_pqr/cumulative_gate_v0.py": "47e1353106021d6987d9ae6bab387a59d2f11dbbb65bfd6fc721e1e1a60599a0",
+    "research/spk_v5_t6jkl_mno_pqr/reference/t6abc-def-ghi-functional-loop.json": "21ee3b772801d2b3618022ffd9a1ff715231765e181ce8025dbc2518ce1e0e14",
+    "research/spk_v5_t6jkl_mno_pqr/tests/test_async_multi_v0.py": "0ce5861cc4dea595cc2fd175d51159a70535dc9b2dcbe45288c27d33680b8ab1",
+    "search/spk_v5_t6jkl_mno_pqr_cumulative_gate.sh": "a9fdfe5a59d3b2b44365e897049145012d746142459dcc8d0e4ced202c7d3779"
+  },
+  "frozen_components_modified": false,
+  "native_BV_credit": 0,
+  "native_learning": false,
+  "promotion_allowed": false,
+  "reference_T6_sha256": "21ee3b772801d2b3618022ffd9a1ff715231765e181ce8025dbc2518ce1e0e14",
+  "schema": "spk-v5-t6jkl-mno-pqr-cumulative-manifest/research-v0"
+}

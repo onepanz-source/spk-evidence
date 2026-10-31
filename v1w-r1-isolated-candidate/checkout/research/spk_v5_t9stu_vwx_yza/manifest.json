@@ -1,0 +1,16 @@
+{
+  "files": {
+    "docs/spk-v1-p-store-boundary-and-native-seam.md": "d151bdf615c42e1e0a037f1ef27766702268e9a2ee1ba06ac71fbd5c0a0614d5",
+    "research/spk_v5_t9stu_vwx_yza/README.md": "272f4ab78df902817f6d4cd398a758ddbbb2400b1bcd1e8a7ca42f286c269ab0",
+    "research/spk_v5_t9stu_vwx_yza/cumulative_p_boundary_gate.py": "dc9e8e55c0669cb15accee9ad35dee42d7164b673f64e3c7d7a5567b22f97e92",
+    "research/spk_v5_t9stu_vwx_yza/fenced_p_store_v1.py": "7b1cd3b79043dd6923293b2b602146ba42ab9e97a00ab39a61b2ba52bff43e7f",
+    "research/spk_v5_t9stu_vwx_yza/p_target_admission_port_v1.py": "2feaa1901404da1bf39f51ac137451e548e443b0f56e81fe7c61b19a6d9ebfbe",
+    "research/spk_v5_t9stu_vwx_yza/reference/t9jkl-mno-pqr-cumulative.json": "55d433477111f2e820b60074d206e449a5af7cd9d44fd6e2ad7411964fe56ae8",
+    "research/spk_v5_t9stu_vwx_yza/tests/test_fenced_boundary_v1.py": "1058878cdd22c78268e4ba29a5a7756bf52ae67e37b2efc2d13c95eca189e884",
+    "search/spk_v5_t9stu_vwx_yza_cumulative_gate.sh": "4c53aab6ad439462e378e74792a7030806ede38b40ebafec9869e2f0e9e10c34"
+  },
+  "parent_report_sha256": "55d433477111f2e820b60074d206e449a5af7cd9d44fd6e2ad7411964fe56ae8",
+  "promotion_allowed": false,
+  "schema": "spk-v5-t9stu-vwx-yza-cumulative-manifest/research-v0",
+  "status": "REFERENCE_P_BOUNDARY_ONLY_NO_NATIVE_PROMOTION"
+}
