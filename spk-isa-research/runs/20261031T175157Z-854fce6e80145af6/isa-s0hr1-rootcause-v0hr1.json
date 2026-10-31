@@ -1,0 +1,29 @@
+{
+  "claims": {
+    "BV_to_P_authorized": false,
+    "G2_owner_authorized": false,
+    "P_writes": 0,
+    "compiler_to_isa_equivalence_proven": false,
+    "external_dispatch": false,
+    "postcommit_owner_executed": false
+  },
+  "consequence": "S0-H VETO 2 (OUTPUT_BEARING_REFERENCE) was spurious; preserved as immutable history per protocol. HR1 witness classifies ADAPTER_DEFECT. No S0-H PASS is claimed; no frozen source patched.",
+  "evidence": {
+    "asdict_preserves_tuple": true,
+    "hr1_compiler_functional_equal": true,
+    "hr1_core_batch_match": true,
+    "hr1_native_prepared_candidate_outputs": 0,
+    "hr1_native_receipt_candidate_outputs": 0,
+    "hr1_normalized_emissions": 0,
+    "hr1_normalized_terminal_outputs": 0,
+    "hr1_processed_batches": 1,
+    "hr1_processed_events": 1,
+    "repro": "python -c \"from dataclasses import dataclass,asdict; R=dataclass(frozen=True)(type('R',(),{'__annotations__':{'emissions':tuple}})) if False else None\" ; asdict on NetworkResultV0 yields tuple emissions; ()==[] is False",
+    "s0h_check_line": "research/spk_isa_s0h_owned_reference.py:62 must(a['emissions']==[] and a['terminal_outputs']==[],'OUTPUT_BEARING_REFERENCE')",
+    "tuple_empty_eq_list_empty": false
+  },
+  "root_cause": "ADAPTER_DEFECT: spk_isa_s0h_owned_reference.py check_case compares asdict() tuple fields to [] (list). dataclasses.asdict preserves tuple type, and () == [] is False, so OUTPUT_BEARING_REFERENCE fired on a genuinely silent run.",
+  "run_id": "20261031T175157Z-854fce6e80145af6",
+  "schema": "spk-isa-s0hr1-rootcause-addendum/v0hr1",
+  "witness_sha256": "d8cc8db4b33cd6546b0d3317a9e33ac81763b709a83fe90eb4b62b7fdd4a07a9"
+}

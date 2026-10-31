@@ -1,0 +1,56 @@
+{
+  "child_digests": {
+    "1": [
+      "6b291cb4135eb7ac8f9e38c667cefba880c0018d6dbe8ba5b95087f4f5748d15",
+      "37d733437bc456be7b00263877269d3a0317c3f0dec2aba2f9fde2132e605377"
+    ],
+    "7": [
+      "24436c1060e940be028ef323dea58f913dfac7361cb606da500727de90ab332e",
+      "294d9904c1902fed4f9dcaf0978def94e23c3095851328b42a5407fa29640646"
+    ]
+  },
+  "claims": {
+    "BV_to_P_authorized": false,
+    "G2_owner_authorized": false,
+    "P_writes": 0,
+    "compiler_to_isa_equivalence_proven": false,
+    "external_dispatch": false,
+    "hardware_executed": false,
+    "postcommit_owner_executed": false,
+    "s0h_veto_preserved": true
+  },
+  "decision": "HOLD",
+  "diagnosis": {
+    "compiler_functional_equal": true,
+    "core_batch_match": true,
+    "emission_origins": [],
+    "from_initial_c_batch": false,
+    "native_silent": true,
+    "network_emissions": [],
+    "network_terminal_outputs": [],
+    "processed_batches": 1,
+    "processed_events": 1,
+    "verdict": "ADAPTER_DEFECT"
+  },
+  "exit_code": 4,
+  "limitations": [
+    "diagnostic witness, not an S0-H PASS",
+    "fingerprints are not authenticated receipts",
+    "no Compiler<->ISA equivalence",
+    "no owner authority",
+    "C0-C5 needs independent human review"
+  ],
+  "parents": {
+    "compiler_commit": "24b15156aa31967bd0079debcc97ccb6e3ac4325",
+    "s0d": "12664e9f91bf23da9d160c991abe0866a170a574ee3061147b54a51f3b1fb52d",
+    "s0e": "48a4f31821dd817fa6cfc7daf9b45983c10544a872c070b47cd1b1594e64396d",
+    "s0g": "3967dc70db163b96cc54ec5df27f3f9fc60fc611d91bfb8bd64895315d7fd6b2"
+  },
+  "research_only": true,
+  "s0h_issue": 9,
+  "s0h_veto": "OUTPUT_BEARING_REFERENCE",
+  "s0h_zip_sha256": "56daa04fe3ff3e98d46a40f5d7b6af8651b9a233dc0402f5151b0528e2ab01e4",
+  "schema": "spk-isa-s0hr1-diagnostic-witness/v0hr1",
+  "spec_sha256": "822246785097e413a48838459aef56cbf2d14c8d6c7049ee5c5516712612667f",
+  "status": "S0HR1_DIAGNOSTIC_WITNESS_ADAPTER_DEFECT"
+}
