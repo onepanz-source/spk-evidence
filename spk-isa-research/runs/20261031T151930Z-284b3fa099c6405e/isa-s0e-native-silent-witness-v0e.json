@@ -1,0 +1,245 @@
+{
+  "BV_to_P_authorized": false,
+  "G2_owner_authorized": false,
+  "ISA_approved": false,
+  "P_writes": 0,
+  "ancillary_root_fixture_git_blob": "f234f3da21ca486f9d974bc404fb5f627cb8eb06",
+  "cases": [
+    {
+      "candidate_outputs": 0,
+      "commit_receipt_outputs": 0,
+      "confirmations": [
+        [
+          3
+        ]
+      ],
+      "epoch": "E0",
+      "new_timestamp": 3,
+      "new_version": 1,
+      "no_output_publication": true,
+      "node": "C",
+      "old_timestamp": 0,
+      "old_version": 0,
+      "postcommit_owner_executed": false,
+      "request_id": 3,
+      "research_only": true,
+      "schema": "spk-isa-s0e-original-terminal-silent/v0e",
+      "service_ticks": [
+        7,
+        8
+      ],
+      "storage_unchanged": true,
+      "total_units": 1,
+      "trace": {
+        "base_version": 0,
+        "epoch_id": "E0",
+        "event_time": 3,
+        "instructions": [
+          {
+            "args": {
+              "event_refs": [
+                "external:0"
+              ],
+              "request_id": 2,
+              "service_tick": 6
+            },
+            "deps": [],
+            "id": 0,
+            "op": "EVENT_CONSUME"
+          },
+          {
+            "args": {
+              "program_sha256": "705add468546f02bcc81faa2eeef4de9bd676e1b74ce40dcbb6f5b452472e3ae",
+              "request_id": 0,
+              "service_tick": 5
+            },
+            "deps": [],
+            "id": 1,
+            "op": "PROGRAM_REFERENCE"
+          },
+          {
+            "args": {
+              "base_version": 0,
+              "request_id": 1,
+              "service_tick": 5,
+              "state_sha256": "6dc09f5f17b420d3745ad8a64b6f656d1c83c1fe9bdf1928caf710952d6aee58"
+            },
+            "deps": [],
+            "id": 2,
+            "op": "STATE_LOAD"
+          },
+          {
+            "args": {
+              "base_version": 0,
+              "candidate_output_count": 0,
+              "transition_sha256": "d73f7840504cefe40b87350747f8fa2b0f634a738359a43ee50f8873c4065a8f"
+            },
+            "deps": [
+              0,
+              1,
+              2
+            ],
+            "id": 3,
+            "op": "CORE_PREPARE_OPAQUE"
+          },
+          {
+            "args": {
+              "next_version": 1,
+              "request_id": 3,
+              "service_tick": 8,
+              "state_sha256": "a8b70e4043a46593b7ad60aa76ef6df7ce84e12f99b6aeb94736a495b8fac509"
+            },
+            "deps": [
+              3
+            ],
+            "id": 4,
+            "op": "STATE_COMMIT_OBSERVED"
+          }
+        ],
+        "node_id": "C",
+        "pe_id": "PE0",
+        "research_only": true,
+        "schema": "spk-isa-semantic-shadow-s0/v0a"
+      },
+      "trace_sha256": "5384844999e7a7ebd1c5228515e56c475c59de96048c5e84c6fd57965a46c1b5",
+      "units": 1,
+      "work_finished_before_confirmation": true
+    },
+    {
+      "candidate_outputs": 0,
+      "commit_receipt_outputs": 0,
+      "confirmations": [
+        [
+          3
+        ]
+      ],
+      "epoch": "E0",
+      "new_timestamp": 3,
+      "new_version": 1,
+      "no_output_publication": true,
+      "node": "C",
+      "old_timestamp": 0,
+      "old_version": 0,
+      "postcommit_owner_executed": false,
+      "request_id": 3,
+      "research_only": true,
+      "schema": "spk-isa-s0e-original-terminal-silent/v0e",
+      "service_ticks": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "storage_unchanged": true,
+      "total_units": 7,
+      "trace": {
+        "base_version": 0,
+        "epoch_id": "E0",
+        "event_time": 3,
+        "instructions": [
+          {
+            "args": {
+              "event_refs": [
+                "external:0"
+              ],
+              "request_id": 2,
+              "service_tick": 6
+            },
+            "deps": [],
+            "id": 0,
+            "op": "EVENT_CONSUME"
+          },
+          {
+            "args": {
+              "program_sha256": "705add468546f02bcc81faa2eeef4de9bd676e1b74ce40dcbb6f5b452472e3ae",
+              "request_id": 0,
+              "service_tick": 5
+            },
+            "deps": [],
+            "id": 1,
+            "op": "PROGRAM_REFERENCE"
+          },
+          {
+            "args": {
+              "base_version": 0,
+              "request_id": 1,
+              "service_tick": 5,
+              "state_sha256": "6dc09f5f17b420d3745ad8a64b6f656d1c83c1fe9bdf1928caf710952d6aee58"
+            },
+            "deps": [],
+            "id": 2,
+            "op": "STATE_LOAD"
+          },
+          {
+            "args": {
+              "base_version": 0,
+              "candidate_output_count": 0,
+              "transition_sha256": "d73f7840504cefe40b87350747f8fa2b0f634a738359a43ee50f8873c4065a8f"
+            },
+            "deps": [
+              0,
+              1,
+              2
+            ],
+            "id": 3,
+            "op": "CORE_PREPARE_OPAQUE"
+          },
+          {
+            "args": {
+              "next_version": 1,
+              "request_id": 3,
+              "service_tick": 11,
+              "state_sha256": "a8b70e4043a46593b7ad60aa76ef6df7ce84e12f99b6aeb94736a495b8fac509"
+            },
+            "deps": [
+              3
+            ],
+            "id": 4,
+            "op": "STATE_COMMIT_OBSERVED"
+          }
+        ],
+        "node_id": "C",
+        "pe_id": "PE0",
+        "research_only": true,
+        "schema": "spk-isa-semantic-shadow-s0/v0a"
+      },
+      "trace_sha256": "6f7bd347d5ed2b982d1eb2acceddefd9ad80a4f9b9bfe570ca55321f6131d0de",
+      "units": 7,
+      "work_finished_before_confirmation": true
+    }
+  ],
+  "compiler_v0_equivalence_proven": false,
+  "decision": "HOLD",
+  "exit_code": 4,
+  "external_delivery_or_no_effects_proven": false,
+  "external_dispatch": false,
+  "fingerprints_are_authenticated_receipts": false,
+  "limitations": [
+    "Original in-memory k24d fixture only; no real sensors",
+    "Terminal 24j owner fixture is NOT post-commit C0-C5 owner",
+    "Observational fingerprints are not authenticated receipts",
+    "Compiler v0 equivalence and machine ISA not established"
+  ],
+  "original_silent_fixture_executed": true,
+  "original_terminal_owner_fixture_executed": true,
+  "parent_v0d_sha256": "12664e9f91bf23da9d160c991abe0866a170a574ee3061147b54a51f3b1fb52d",
+  "postcommit_owner_executed": false,
+  "research_only": true,
+  "same_observations_two_fresh_processes": true,
+  "schema": "spk-isa-s0e-native-silent-witness/v0e",
+  "silent_case_units": [
+    1,
+    7
+  ],
+  "source_archive_sha256": "411fefb2e33d060cead4e2b16d4b9a57a201ebee58cfd57ec8656889cc0b6c0b",
+  "source_pins": {
+    "spk_simulator/causal_service_quantum_v0.py": "6391b9532a04ba8d9d9cb8bea48f7a05a7034ace17ceae37cd9a2cfd075b7bbb",
+    "spk_simulator/owned_root_single_clock_v0.py": "262f0b162160af1f2bcb2670a479daa82b5d13ea9e16a8acea538f9e129397dd",
+    "spk_simulator/owned_root_terminal_commit_v0.py": "8d006c4a2d7aa1cde5bd051aa5cc2bff9d3312e168449aba9eb9dc153ca7f80a",
+    "spk_simulator/serialized_internal_graph_v0.py": "b3eaa8359e7703a9a44a3ccc108b1ebbfaa49d105eeeb7ec9790d124978233b0",
+    "spk_simulator/versioned_core_transition_v0.py": "1e3140631d4cbc7a42b397aeeb9050f3effa866c265cc3f35446782bf6b5f84a",
+    "tests/test_owned_root_terminal_commit_v0.py": "8628a4b45959f5e93bd8b4d37a8f09a830e3fd01aa1481b8be6eac0ece1d1206"
+  },
+  "status": "NATIVE_TERMINAL_SILENT_FIXTURE_PASS_COMPILER_EQUIVALENCE_HOLD"
+}
