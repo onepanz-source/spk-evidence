@@ -1,0 +1,31 @@
+{
+  "BV_to_P_authorized": false,
+  "G2_owner_authorized": false,
+  "P_writes": 0,
+  "compiler_manifest_sha256": "b5da98369f23d664eb07903d0e77c4f302a75073cbcb65fdc958f09df66c82b1",
+  "compiler_to_isa_equivalence_proven": false,
+  "decision": "HOLD",
+  "deployment_sha256": "092b00f6f4b8396008793aa7696c7abdc124e107e1e612d424ab54dd23811490",
+  "exit_code": 4,
+  "external_dispatch": false,
+  "functional_network_result_sha256": "c2d2e734d50e9641ef72edef0186ffbe6c1f8c8cc0f942d2cf989a51836ce4cf",
+  "functional_reference_artifact_sha256": "118e4d64ceb1ede8e74675516244681daf77eb5d83da748fbf2e5a3a36d20750",
+  "limitations": [
+    "Only original C3 static Compiler and original frozen Network v0 functional reference share exactly the same network and events.",
+    "Network functional runtime has no PE service-clock, memory-owner receipt, host delivery or hardware semantics.",
+    "Prior S0-B routed and S0-E silent observations are distinct fixtures and cannot be joined by node label.",
+    "The SHA fingerprints describe data bytes and are not cryptographic source authentication.",
+    "No Compiler backend, machine ISA equivalence, BV-to-P, external dispatch, owner C0-C5 or P writes."
+  ],
+  "logical_workload_sha256": "2519cf1e8e203a4caf2e99d8f9e646422ee656ce499d063c94b28bb0ac9024e8",
+  "native_owned_runtime_executed": false,
+  "parent_s0f_manifest_sha256": "7e0213eb309fcf87dd19e4967e8cbb32ed65f58021920d36a07803dab40b62c5",
+  "parent_s0f_report_sha256": "c5157bd3b7d4d8ebb2b0c54e7c1e6e6fb010af96364ed4d5bb870f12d5108b90",
+  "postcommit_owner_executed": false,
+  "research_only": true,
+  "schema": "spk-isa-s0g-shared-workload-identity-gate/v0g",
+  "shared_workload_between_compiler_and_frozen_network_reference": true,
+  "shared_workload_between_compiler_and_owned_isa_native": false,
+  "status": "C3_SHARED_STATIC_AND_FUNCTIONAL_NETWORK_REFERENCE_PASS_OWNED_ISA_HOLD",
+  "two_fresh_processes_identical": true
+}
