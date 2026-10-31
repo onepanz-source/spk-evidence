@@ -1,0 +1,176 @@
+{
+  "assessments": [
+    {
+      "confidence": 0.6,
+      "evidence_sha256": "3f9e4298f1e6e661894b06854c6539ecbce11684310919778b618d400a1d225d",
+      "id": "a1",
+      "metric_id": "local-response-v0",
+      "metric_policy_sha256": "a9abbb22710fbf816a5a12587ad6a2bb37941a6a207e36a4d6390beb8531116f",
+      "observed_at": 2,
+      "observer": "C",
+      "observer_context_id": "ctx_C",
+      "occurrence_id": "r3",
+      "reason": null,
+      "status": "OBSERVED",
+      "value": 0.25
+    }
+  ],
+  "budgets": {
+    "max_assessments": 4,
+    "max_contexts": 8,
+    "max_edges": 8,
+    "max_hops": 4,
+    "max_nodes": 8,
+    "max_occurrences": 8,
+    "max_parents": 8,
+    "max_propagations": 8,
+    "max_proposals": 4
+  },
+  "contexts": [
+    {
+      "extractor_sha256": "dda867a0d2d30f1cabdcd46cd0a045ba2ba9f8dd7be2ff8e222ecbbfc14bf30d",
+      "features_sha256": "3d12042db0b46cfd25db9f598c06cb1a6db70a9bed35e396342a5896c64f05a7",
+      "id": "ctx_A",
+      "node_id": "A",
+      "program_sha256": "92b16765e27b90df12ca1676d16eccf0e11cb50ea939c45771c79a2f10078e59",
+      "window_end": 0,
+      "window_start": 0
+    },
+    {
+      "extractor_sha256": "dda867a0d2d30f1cabdcd46cd0a045ba2ba9f8dd7be2ff8e222ecbbfc14bf30d",
+      "features_sha256": "e01ec8f395e94830098d307bd7ab2c7a79130dbd03afae743f2e49df93769fde",
+      "id": "ctx_B",
+      "node_id": "B",
+      "program_sha256": "8dc70434e11365678c8f7026cb23aa072a05a3ae8603ae530814800bf6b228ab",
+      "window_end": 1,
+      "window_start": 0
+    },
+    {
+      "extractor_sha256": "dda867a0d2d30f1cabdcd46cd0a045ba2ba9f8dd7be2ff8e222ecbbfc14bf30d",
+      "features_sha256": "10309828636b25733bee4c8b92da8ef543b5979cf955da889ab56bfeecd63b8e",
+      "id": "ctx_C",
+      "node_id": "C",
+      "program_sha256": "36025d6b40724d8bd31a9fc41573bee3752d07fe2cb011dbaa9aa335186058b3",
+      "window_end": 2,
+      "window_start": 0
+    }
+  ],
+  "edges": [
+    {
+      "delay_ticks": 1,
+      "id": "eAB1",
+      "source": "A",
+      "source_channel": 0,
+      "target": "B",
+      "target_channel": 0
+    },
+    {
+      "delay_ticks": 1,
+      "id": "eAB2",
+      "source": "A",
+      "source_channel": 0,
+      "target": "B",
+      "target_channel": 0
+    },
+    {
+      "delay_ticks": 1,
+      "id": "eBC",
+      "source": "B",
+      "source_channel": 0,
+      "target": "C",
+      "target_channel": 0
+    }
+  ],
+  "epoch": 1,
+  "occurrences": [
+    {
+      "delivered_at": 1,
+      "edge_id": "eAB1",
+      "emitted_at": 0,
+      "id": "r1",
+      "parent_ids": [],
+      "source": "A",
+      "source_channel": 0,
+      "source_context_id": "ctx_A",
+      "source_program_sha256": "92b16765e27b90df12ca1676d16eccf0e11cb50ea939c45771c79a2f10078e59",
+      "target": "B",
+      "target_channel": 0
+    },
+    {
+      "delivered_at": 1,
+      "edge_id": "eAB2",
+      "emitted_at": 0,
+      "id": "r2",
+      "parent_ids": [],
+      "source": "A",
+      "source_channel": 0,
+      "source_context_id": "ctx_A",
+      "source_program_sha256": "92b16765e27b90df12ca1676d16eccf0e11cb50ea939c45771c79a2f10078e59",
+      "target": "B",
+      "target_channel": 0
+    },
+    {
+      "delivered_at": 2,
+      "edge_id": "eBC",
+      "emitted_at": 1,
+      "id": "r3",
+      "parent_ids": [
+        "r1",
+        "r2"
+      ],
+      "source": "B",
+      "source_channel": 0,
+      "source_context_id": "ctx_B",
+      "source_program_sha256": "8dc70434e11365678c8f7026cb23aa072a05a3ae8603ae530814800bf6b228ab",
+      "target": "C",
+      "target_channel": 0
+    }
+  ],
+  "propagations": [
+    {
+      "assessment_id": "a1",
+      "id": "p1",
+      "path": [
+        "r3",
+        "r1"
+      ]
+    },
+    {
+      "assessment_id": "a1",
+      "id": "p2",
+      "path": [
+        "r3",
+        "r2"
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "assessment_ids": [],
+      "candidate_sha256": "fcd6d3dc0518ef3aac3dfce7a9a3e3bc2360a0e6301288278264f102fb4c1b57",
+      "from_program_sha256": "92b16765e27b90df12ca1676d16eccf0e11cb50ea939c45771c79a2f10078e59",
+      "id": "qA",
+      "propagation_ids": [
+        "p1",
+        "p2"
+      ],
+      "proposer": "A",
+      "proposer_context_id": "ctx_A",
+      "status": "STAGED_UNVERIFIED"
+    },
+    {
+      "assessment_ids": [
+        "a1"
+      ],
+      "candidate_sha256": "90fc884daf13bcd87176dbdd4f142470940f165b7d4b5fc8458188379f2f9863",
+      "from_program_sha256": "8dc70434e11365678c8f7026cb23aa072a05a3ae8603ae530814800bf6b228ab",
+      "id": "qB",
+      "propagation_ids": [],
+      "proposer": "B",
+      "proposer_context_id": "ctx_B",
+      "status": "STAGED_UNVERIFIED"
+    }
+  ],
+  "schema": "spk-back-validation-trace/v0",
+  "topology_sha256": "f1a8c63abfca5fbc74c2eb7d498e0f36fad4fb291d0c49795fbb132681289791"
+}

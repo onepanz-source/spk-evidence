@@ -1,0 +1,4320 @@
+{
+  "baseline_commit": "5af99cd1f4d603bf0c8e1557a6561c107765fdb5",
+  "baseline_tag": "spk-architecture-bounded-reference-v1",
+  "contexts": [
+    {
+      "extractor_sha256": "958c7cd79ef5ff9892e8c801404451213c16e1fd472e86a600e2793b5e34e453",
+      "id": "beneficial",
+      "pre_treatment_features_sha256": "7e5a7c624fc513f48956b407d8f958f5b2fd43c044a45246853b28457ebad2f7"
+    },
+    {
+      "extractor_sha256": "958c7cd79ef5ff9892e8c801404451213c16e1fd472e86a600e2793b5e34e453",
+      "id": "consensus-trap",
+      "pre_treatment_features_sha256": "af0745bc6c8f7bd9167cb34b2cf0d337e03cbdd179f0ced28642fa1d9c91d466"
+    },
+    {
+      "extractor_sha256": "958c7cd79ef5ff9892e8c801404451213c16e1fd472e86a600e2793b5e34e453",
+      "id": "ambiguous",
+      "pre_treatment_features_sha256": "292d44890d53e236835ef20f6426b296bf20623f26aa358dd97b5df864d1dc48"
+    },
+    {
+      "extractor_sha256": "958c7cd79ef5ff9892e8c801404451213c16e1fd472e86a600e2793b5e34e453",
+      "id": "global-unavailable",
+      "pre_treatment_features_sha256": "652e5cea1e05606c45fe90f7704bbd4a732d05b77a4113bd6fb2ee79702fbc18"
+    },
+    {
+      "extractor_sha256": "958c7cd79ef5ff9892e8c801404451213c16e1fd472e86a600e2793b5e34e453",
+      "id": "resource-regression",
+      "pre_treatment_features_sha256": "9ffc0c84f9f44770caf6d75095ccf69212522382ff8cb08c9098d43e3a49f7e0"
+    }
+  ],
+  "policy": {
+    "alpha_ppm": 50000,
+    "cost_weights": {
+      "candidate_eval_operations": 1.0,
+      "feedback_messages": 0.2,
+      "memory_accesses": 0.1,
+      "operations": 1.0,
+      "spike_messages": 0.1
+    },
+    "global_metric_id": "held-out-task-utility",
+    "global_metric_policy_sha256": "55a9d821cf75660fb3c13acad1cf435e167aa32fd74a5bd08a3a26fa29eb8db6",
+    "local_metric_id": "receiver-local-utility",
+    "local_metric_policy_sha256": "badd9a9854d03fbc3e0a649a353aa700fb5dcc5160f27609c1e5970ff77aa498",
+    "max_cost_per_arm": 50,
+    "max_mean_extra_cost": 2.0,
+    "max_pairs": 100,
+    "max_receivers": 8,
+    "minimum_mean_gain": 0.1,
+    "minimum_pairs": 8
+  },
+  "program": {
+    "baseline_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+    "candidate_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+    "node_id": "N0"
+  },
+  "schema": "spk-bv-contextual-credit/v0a",
+  "topology_sha256": "e736f31ada242f24eee1294839d03f64df9b5f3e414ceb6dfc936facd9cd79b4",
+  "trial_pairs": [
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "271151c0b15ad442e9ed3c366714b1a4404dfa01285f507197706d7ca1c20679"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "bb14dcaa701599ce750eb1b74456c82a9bd8c7a1fbaa79fd29de03c19200343b"
+      },
+      "context_id": "beneficial",
+      "id": "beneficial-00",
+      "initial_state_sha256": "dbe242778b6a52053c05907f10cf996df4cf250df7e3a174e42845dd9b452a47",
+      "input_sha256": "cbf13255d03d221e4844253166dd59374e3483f2f78ea0ff1e46524b928f3e0f",
+      "seed": 0
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "f33ba7841407a80a5f5095c8d703f27f5d487a4d30b62104a8ed58162511cff8"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "5e5cd44222f274f68768cd339bb3cbe28642b51f7b59a0f0c2e2dfd03b336bce"
+      },
+      "context_id": "beneficial",
+      "id": "beneficial-01",
+      "initial_state_sha256": "aa981e6ff46d09d165650c05c87dd5f0cbc0c96cedc51ad9130e60b114d5a7c3",
+      "input_sha256": "4fdf84cb38bc39ea8c7472cd841a9c3e7d2d4d2efe2ac52e5e97cf4fb957f1cb",
+      "seed": 1
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "b2c3c3719ab8e98393122441eaee085d6dce6f88a95726a48e350ffe9872edf3"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "c7cb3e8465ffe14dbd61960f7c4936db882ea22e852aaa7d1c32803fd4c2805a"
+      },
+      "context_id": "beneficial",
+      "id": "beneficial-02",
+      "initial_state_sha256": "04a53458087a90db5282618b3975f92bbe4b4e912d241e91de532a6180d93084",
+      "input_sha256": "ac7bc15a6d2d063b5de020f9c256ed71e6cdeff33161dd29d1a7365b5c060a66",
+      "seed": 2
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "5564d38876f6d88961f244c0b2f348e14234a25eb619bfa2e09c52c520e1ecc9"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "71eecd4bf185302aa00aafeb3779dcf04af6c23f86d8d0c39c2529f9633eea34"
+      },
+      "context_id": "beneficial",
+      "id": "beneficial-03",
+      "initial_state_sha256": "82725aec15b3001537493877b43fde9ac28677f39dd6e956fd561a9b76bb9a4e",
+      "input_sha256": "28d495f9342747e83e800212ed48296aae5dccdd595ca9ee391d0a45bc70f711",
+      "seed": 3
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "25f5a8e7f2f0532a18c1233d21cd9a7875d8c460a228be2cb4a9e8e01c87d5fe"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "cc57a68d3a542d5cbd6b4432e5c168bf5f33eee7e40bd616cb9e48d1f4a3c7ba"
+      },
+      "context_id": "beneficial",
+      "id": "beneficial-04",
+      "initial_state_sha256": "b5cde88d0ff7c3d08f0e6eb3a274b910992b350dac67e20a50234560995abef0",
+      "input_sha256": "d1c27a97bb6467a42caef08f23bddc3b35f37b4756ad5b22fbf2617287d2144e",
+      "seed": 4
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "06b301bf7e7a432fdea513657782be107cd84d7bf24eab7fb66b5f2191787bd8"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "d8eebadf8cd61cdbe2c2c301f064c4c3eb0860ed77df25e94e50083cf7b2e2ee"
+      },
+      "context_id": "beneficial",
+      "id": "beneficial-05",
+      "initial_state_sha256": "1f1d4f75d5ab8bbad07374d5b5aa43ad354ebc24aa50ea98fcd779c85ca93b78",
+      "input_sha256": "b7ffb698db46172e95d0d60a69ca06304ada55e26c3eef392fd98e05c7f9a25b",
+      "seed": 5
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "a0fdc733aaeb99a0de74065f393aa06c0ccee00d23bd1a2d3da93197bff8b5fe"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "8c9a93bd9e547f06432ee7adc373a5c936fcc39c4d1d28488c45b0a132b84930"
+      },
+      "context_id": "beneficial",
+      "id": "beneficial-06",
+      "initial_state_sha256": "99bdb454530d57295bd0853f91571b729a03bec41c43c90065ca3b5cec0b39bd",
+      "input_sha256": "2c58163262ba3939750fc2d8bc8b3803a0241a9f52cbab1de9ad4716704b0bb9",
+      "seed": 6
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "d1d456a7d348694c904c8c250fcefe9c6cecc677a659f3c6077db12d09f3e295"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "1cd6309a4aa78879bcd32638c81ad497692c93c8e6bcaf4e3d4c222b1b630749"
+      },
+      "context_id": "beneficial",
+      "id": "beneficial-07",
+      "initial_state_sha256": "1ba6a9473832444fb5341c6861a6e6bef276165af41d41e8aa912e23ec2ae264",
+      "input_sha256": "0f3abfe707ebd111d2aa1a30fe2439d1e35d866a98047635eef98958f94fec24",
+      "seed": 7
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "d93527a07d2bfc81af1e7976faecf2e4e11ba377ee0572fc64b695478fb7de04"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "15aee242dc81c98ef528677ecf997820368334bf163a07213e81b6be055dcaae"
+      },
+      "context_id": "beneficial",
+      "id": "beneficial-08",
+      "initial_state_sha256": "606e768794723e3ccfa2c446deeb45018dd8a7ea046fdfa78375108fe8284f19",
+      "input_sha256": "fa4ab02866187605c15128d815a154957d037268cea8e73a4c16442a02a66731",
+      "seed": 8
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "8c701c111818caa65de2db0f01871fab4cb46330386f717adfe56b48b4cdab8e"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "497da55120b8b36207b9b085ba3b5a8e1c76901ebbf32cec7a68ee6c5e5ab698"
+      },
+      "context_id": "beneficial",
+      "id": "beneficial-09",
+      "initial_state_sha256": "1a0a532b0be344b4a318f0784de04fcd64e9124b7c3f14c045e1523b9dc090d8",
+      "input_sha256": "e4bfd58df552619eb1fbf477a30a7ac8d9d89ae5269a903d767fac8f0dbaa0ae",
+      "seed": 9
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "354872b08602cd9d9c614b9885f60ea9feb844a036482edae70b69a41e46223d"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "bd920d43a7ce7b7deedb2cebd96383b2857e9b6881609a6fc3fa916bf64454d8"
+      },
+      "context_id": "beneficial",
+      "id": "beneficial-10",
+      "initial_state_sha256": "3ca8cd87658d0ff089524bffd21da32650de68f9b5795d50ba0b83c12d2d2072",
+      "input_sha256": "77ac667583d7397d628208f20b32ea0b3f7cf611cc5f16ee792b9cf428ffcc94",
+      "seed": 10
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "80e21d68245499d96d1b17bb5c664820ae82b6215ad41aac88e30b6571a702ad"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "43c1637f285961f7c7dcdc5782f3629f2ff7a3ec9f58317665f359b25e8966f4"
+      },
+      "context_id": "beneficial",
+      "id": "beneficial-11",
+      "initial_state_sha256": "aa58b667ea7373ba1326e8658c298e6af3811fe78561718f442b867062335bdb",
+      "input_sha256": "fd244e12f09828a55efc1b278e8e7f52b402b936ef1fc343caa5eeb7aa13efee",
+      "seed": 11
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "56fe2122d18e3f1d4f1a8b64dc9d5df825687611422e1f7526d5366ef31c3e3e"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": -0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "fb668b27ab399b57635c2dffef998ca60d5a91fa433ee709537502e30da34b45"
+      },
+      "context_id": "consensus-trap",
+      "id": "consensus-trap-00",
+      "initial_state_sha256": "350079f6ba5c3fc4dc317f9b7105a80434002740499605b6f851f8f8fd698cee",
+      "input_sha256": "ff086e4544dd77e27917b5366e8326718ff9512833638a6708d23eab552f7c4f",
+      "seed": 10000
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "99c3fb2ae2e20525a7c1e64e50543bb8518011b5103d9e4452df3d6cb8bb82ca"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": -0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "d8b006c292545a7f36a654283ab98d7a35d57896df0dacc2b6ed7e0482902093"
+      },
+      "context_id": "consensus-trap",
+      "id": "consensus-trap-01",
+      "initial_state_sha256": "3b2f591adf3290793a88253ad1f88cca5a6d8860cbee376789e5de0637ba3218",
+      "input_sha256": "90895124bf3f7199cbf980adafdda4e52b6a8ba861a4f9345535d4217f50605d",
+      "seed": 10001
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "48d3cfb82c06ea99d4a4ab6b73ef3a18e1f845363c4b8654d82f6408732c9f02"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": -0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "a5cea316b85c1a1177b22f116f03935a4651dadad03e09581e662eddaafefff9"
+      },
+      "context_id": "consensus-trap",
+      "id": "consensus-trap-02",
+      "initial_state_sha256": "4086ef6aad76664c93905a8526200402d6c530a8e62feeabd089706cd69c9724",
+      "input_sha256": "4cd898fb52abec4947527c5d290b531a71537dc79462044bfa423963e93be9e4",
+      "seed": 10002
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "34934ca9f0a6d7df12648fffb89b196564c5bfd5a4e8539e557dafef515bee82"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": -0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "9d472325d5398647f6d51d890f5ae27fa8dc370f3856050b3d5f75098924a20f"
+      },
+      "context_id": "consensus-trap",
+      "id": "consensus-trap-03",
+      "initial_state_sha256": "b8d8c0987f78baa60964e4b1a902f68b0c2ba2d2f14bdeb2ef7f40a3d5022c84",
+      "input_sha256": "461ddda9efd4e03ec049e1cc489dc15b32a46676a26d74467fbdcc81024656a3",
+      "seed": 10003
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "c4f52006146585d39ce378f677e9cdfbcda2c49d1bcbfb947256395e7d6766d5"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": -0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "d188a5f3f0741d204938bf55e7a521dfc8629f62fcea355beb62422b70d312b0"
+      },
+      "context_id": "consensus-trap",
+      "id": "consensus-trap-04",
+      "initial_state_sha256": "3239303b4344b4751b7a9a287f2ed68c65c5c33e0d4d25fb0d762af3c9dc9a29",
+      "input_sha256": "63d9234cbd5f44845db396ee7515b0151b0c6c18de112af31742a64550a1dec4",
+      "seed": 10004
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "26568bf87589971cc68bdaae5a471d8ec4f373e0a1c0d30c8f0bfa893d38c9e0"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": -0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "b2628fc942f7ea5b390b82549b581c025a606397b07e3cbd87bbc0a3680651aa"
+      },
+      "context_id": "consensus-trap",
+      "id": "consensus-trap-05",
+      "initial_state_sha256": "d5a9974fc53137212c6c7054fd531956a3469e057c952437ccb8633f30e35af0",
+      "input_sha256": "67ab3babbc8d2f54abfb0c950d6230770fc26039bf9e2b1c149dbcb24d81ae51",
+      "seed": 10005
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "512677b23f96f4ad95573c18a1fc17f7ebe24645479c6f0595c7f6964e72466c"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": -0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "6c6c4016f35f38c1bb1fa574f00432e180fc540f4bf4549635c14807d5cc231a"
+      },
+      "context_id": "consensus-trap",
+      "id": "consensus-trap-06",
+      "initial_state_sha256": "cd2dded9f9d165ed871819d5f5dfcfd570f09bb3026000b1ece6809828c801ed",
+      "input_sha256": "f9baadff431e5bef105d457413d08f43d60e5c0daed196da1b6289a52ea4efa8",
+      "seed": 10006
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "8f568559f3a493557259a3b2f3d143fd13d08e743de24c157f8ac65c9945de0a"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": -0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "31a0397b9a179927c6f6eb17330743d38bd790eb4fc06a9c949d9b2de4fe1284"
+      },
+      "context_id": "consensus-trap",
+      "id": "consensus-trap-07",
+      "initial_state_sha256": "32152a15953e0b235f497fc09cfe271526bfe9ca9735d5b07fe5d22bc5c6083f",
+      "input_sha256": "07d5cec9b8a85df3a0326c470d4e65fc347d46736e972b334da4c5e76e4534da",
+      "seed": 10007
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "7f5b723a187bd22c86abc800af9cb988ee3f479a03f13daac2f826ed5fe01242"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": -0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "9989395c2ecd867aa156835e4b7f5958e038928e2fc6011691208fa8b4f138ca"
+      },
+      "context_id": "consensus-trap",
+      "id": "consensus-trap-08",
+      "initial_state_sha256": "2dcc17232f572719afab7b731860b22b063df1a553393a13b83e3d20ca5a58c3",
+      "input_sha256": "a6e791c9059fad899884b838f14a94da9542355ba405887f3d52801cef7d40cf",
+      "seed": 10008
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "1fbac01f14a516ba084e1a8fb6b250b43933a8b5b58c65fc8c98ba246ad883d5"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": -0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "6112a953e44bb6524f59bb6fc032efd5d1a23f456ae0edee7c02c7ede349e2f2"
+      },
+      "context_id": "consensus-trap",
+      "id": "consensus-trap-09",
+      "initial_state_sha256": "adb40aa319e61f4925a344c78af1724095fd59693da14d4a0332c7a7969adba5",
+      "input_sha256": "d9ac4565cc0d5eb5bd5e23200dbf79bce3f3e7c75566087f28e87f83f13e2f42",
+      "seed": 10009
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "ee688c0f4e9310b2656efab57a23143051855ddda836fb42e8b1ace9d4f4e04a"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": -0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "4d4948accc835a2716d18637e1323364dd46398bd658e071d39c0089b01732f1"
+      },
+      "context_id": "consensus-trap",
+      "id": "consensus-trap-10",
+      "initial_state_sha256": "4802192d74de96d3b224a815d164f3c92da528f2f8e162941abd1e3240b9e606",
+      "input_sha256": "1880714c017025c628b63b76d0d0a02730c1c54d97120edef68e3a66775de7be",
+      "seed": 10010
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "09ae089bd190415f7b2aee8c5c2864714392a1582c47f18205dc2b28c3977fed"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": -0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "cde7868202395980af2d0827d08ebe1176b0521015786ab14f606f5191edd5ad"
+      },
+      "context_id": "consensus-trap",
+      "id": "consensus-trap-11",
+      "initial_state_sha256": "1acafa2bba87f2c9520f9032f2a343f7ab2457af3668cbdfcedd69e9f505b97b",
+      "input_sha256": "8a747904ef570290bdf2f8e29692277ff30c86042ba8cb879af90e86ba9dd0f7",
+      "seed": 10011
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "959848f156c8cf756ace9e7b7dc396a3db79eb5596ce702baae3a374ab1648b8"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.25,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.25,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.25,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.12,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "04ddf448525376bdde93bf6110ba0494f78bc3e6625073064f846dfd1b8a12cb"
+      },
+      "context_id": "ambiguous",
+      "id": "ambiguous-00",
+      "initial_state_sha256": "4827e2a969481e2e2f85a3c827c1b4902818c2f28aa21f0ce8a381c0944e3ea4",
+      "input_sha256": "f8318ecaa5fc4debcf66dbc1e7b70ba2b8c9dab3907f7ec02d6bac8c25ce6fb0",
+      "seed": 20000
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "8f3c8250246aed2081c7b41b4ee6637d4d461ea664072db75416b5bc0dc214f6"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": -0.25,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": -0.25,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": -0.25,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": -0.12,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "6d026a9bcd14949988a44f8485cdb78ca81e2238cd4393764f713e347f2df978"
+      },
+      "context_id": "ambiguous",
+      "id": "ambiguous-01",
+      "initial_state_sha256": "3f9447462b85b2fdd283c32b6939a3130f81b0f3d7b79b88d689c76408b125b9",
+      "input_sha256": "a23afa31f8eedf9006cb004ee2a1e7ec58d0702d49e1c806e621c1bdf21691af",
+      "seed": 20001
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "7ad516f06aea0f4e168286c94f84374c3c0a057f816a6971657452ddf068dd0a"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.25,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.25,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.25,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.12,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "cb5b6aa715170b1e2053eb6d0e4a55a704e268feefe6b0666fed880fe6749b49"
+      },
+      "context_id": "ambiguous",
+      "id": "ambiguous-02",
+      "initial_state_sha256": "f443fab659f309ff810912230a812fd179f767733f59c96532c19663472b911d",
+      "input_sha256": "3e92df003a480f4ced16993ee8db4355451849a0288013a0ab1c07d6a48764ad",
+      "seed": 20002
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "60f8528ae280c8b18d96eda1f536b239e004875c2cab4cfdcc7eade700741820"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": -0.25,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": -0.25,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": -0.25,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": -0.12,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "c812044dc5f6b976ca91f68632291fcb89193da0a5f031b2c8d57f833dd9b35e"
+      },
+      "context_id": "ambiguous",
+      "id": "ambiguous-03",
+      "initial_state_sha256": "2f7a8fa26eb920d73507d1b0181420ad7d50e29da4c704c5c2b80dc2cde781b9",
+      "input_sha256": "cec452e7085f6e1ffd6cd185528b37c872d026599cd4ab4cc8fb9b0e58a4aa26",
+      "seed": 20003
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "cad535f1ed2cb7e6a71e2f7c07e5268febd757953fca62acfac5030931a9e638"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.25,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.25,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.25,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.12,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "158e41304a04e72b4078a5534d42ffb58232e1b1a22023607755dee4a4e4032a"
+      },
+      "context_id": "ambiguous",
+      "id": "ambiguous-04",
+      "initial_state_sha256": "c6eb88883293be2af42eb5a211f47739c041275fec9d6c24b38a477bbb26b2e7",
+      "input_sha256": "a4a08aedaed955c09d676c63369268f6b518d40df6c7b63f3d19d1ea2af9e4c2",
+      "seed": 20004
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "b2fc4ae7313ac8f5ff5de2c03e7b3670af5b7da1f348df5e0f0916a5c9c77426"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": -0.25,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": -0.25,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": -0.25,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": -0.12,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "9903d20c80c7f707d2168c97c741ad18e44188f45dcfab40bd9025de9247900f"
+      },
+      "context_id": "ambiguous",
+      "id": "ambiguous-05",
+      "initial_state_sha256": "1e34853b464d98b098313ca65045d2b64f79967cb572c65d2e54de696a32bf59",
+      "input_sha256": "cd761986d54ff0ed4ece163b64c0f7fa45034a220e2f116de4811021d18b3280",
+      "seed": 20005
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "bb67ecabcb2fd45fd1e25a812ec096adbeac65ea382eae071aac4d824ae891a2"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.25,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.25,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.25,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.12,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "021cb82c57cb0212a73dadc539a053f163a60c570f8882b8f256ab3d8fc0ba38"
+      },
+      "context_id": "ambiguous",
+      "id": "ambiguous-06",
+      "initial_state_sha256": "4101cdde1e2d6fdd6936676568d3d433c29ff17b0331e0927c3ace5d6e120ba7",
+      "input_sha256": "4cfa8a10a4b8d3616776fe02cb199305bc59a8a861ca09dabb3821b50b098c33",
+      "seed": 20006
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "0325f627ff204b28baa5b28d4d307aacbf39d309dae65832efc81fdff7eb6bd8"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": -0.25,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": -0.25,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": -0.25,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": -0.12,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "2044ec508faecd9a82c875af69322e4bb2e2ad53fc5247b17be9c5d0af6d0e8b"
+      },
+      "context_id": "ambiguous",
+      "id": "ambiguous-07",
+      "initial_state_sha256": "c865113209fe6ca3650686f746ff04b654a73998f71ca6fb3defad44a0018ba3",
+      "input_sha256": "8c838d1eb2fe6c006209370c0dee185318a70f191174ff3656e6587c22773add",
+      "seed": 20007
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "1d8e67c07fd629d48382016058d7fe1e51854d4ddb6f78fbfa62fa5f113ca4ce"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.25,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.25,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.25,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.12,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "09ad1e2cd90cbcf839e40a6312bb744c92341fa47612ab8b4d0fe11dd83bb4e6"
+      },
+      "context_id": "ambiguous",
+      "id": "ambiguous-08",
+      "initial_state_sha256": "2632e2a3d91edb55ac1235fbdc258ddf35570829f1b4bf2798e6c668e299e9ee",
+      "input_sha256": "dc987556af8e5170e72482ea2e068897abd59bf84b01875f325b4f9e35a790db",
+      "seed": 20008
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "c4ec4a9f2895ee118d18b79ce19be87c66db4b9c08b04e3153ab867fc1e1f8c0"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": -0.25,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": -0.25,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": -0.25,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": -0.12,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "90f2553bf19c6c7dd8c8ea42009d82593d390c5e6784655be63786baad65f13f"
+      },
+      "context_id": "ambiguous",
+      "id": "ambiguous-09",
+      "initial_state_sha256": "65e4f5ea39e183ba75c5d7d9d03c02e598dc5cce9a08ef991f151c4126c0bf6d",
+      "input_sha256": "20d342b5b8126951868b83f0d616dd3275178d53cb8bedd2b398a9057dced582",
+      "seed": 20009
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "7444f0abff221a78ce87f429bfd5b87d5ae4b40e8fe46fba9a88ffaacc32e56b"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.25,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.25,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.25,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.12,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "b2c7bab8a2dc4cfb82a9dba4d731e1ad8b10bf6f3d232b1c4935509283f9a012"
+      },
+      "context_id": "ambiguous",
+      "id": "ambiguous-10",
+      "initial_state_sha256": "c5e0213ee4d1d4340e1ef1b9374b5cccf5a5fcc0332e2f193668ec55bd2cf747",
+      "input_sha256": "a973609c087a7147a549bb384523a9aca47094b3425ad3799c2a681db82f624b",
+      "seed": 20010
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "2bef756a41ba95d2139a9947c8478ffc4ce9c6875f93d8d4963216ec9e9922f3"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": -0.25,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": -0.25,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": -0.25,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": -0.12,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "4194fc3ca47c0d050f60ed623ae9d271fec41c1038d1328487bf60a0225d77a4"
+      },
+      "context_id": "ambiguous",
+      "id": "ambiguous-11",
+      "initial_state_sha256": "57ec8fcbc8c4bcd3d0035edb287061a28b39bfb20e3baaaf89ae304dcce91bb2",
+      "input_sha256": "274d9f3645bd404bbbec9dfc2cb3201d893a8ccb6d905c051b46fb7fbf4b9441",
+      "seed": 20011
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "0988588f03bd175bb0aa4b40cf9a73baeb16f502f363993edd645e987fed9d5d"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": null,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "a64f90edee0caa6af17b0a0c815bc02dc27fbacd71a9363881807970eb081a80"
+      },
+      "context_id": "global-unavailable",
+      "id": "global-unavailable-00",
+      "initial_state_sha256": "5a2ec4fe585ddcebb97e97db0e4dd218abc8c035a03375abd58934b1b3cf8199",
+      "input_sha256": "058c0b07b5dffa57220d773f687011ee9382da2da5d73b52a2f98a965ec34851",
+      "seed": 30000
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "cb5624ea6bd5c9f3a06bafd2a6cdbfd968cccf57a1339830909d534f7c7aa3dd"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": null,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "3e41619f6ff3344ff200b8771f2c6d7e265dd37e14a3e41749c1fee332741762"
+      },
+      "context_id": "global-unavailable",
+      "id": "global-unavailable-01",
+      "initial_state_sha256": "2ea5ccb5d95b5a2a05b0be32a8797589b359fe95b8e74ac50becbb7c2db942e1",
+      "input_sha256": "a5e78a64786591893fe5e79f7cf87cae70fc8f340ed541ec5b4472b0a05c23bb",
+      "seed": 30001
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "31c9c6cfdc884972fc1d19ea2c87b8fc7580f930809a42c59a9414d792493b11"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": null,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "24e558f2d3d4bb8a879c9d29230bf3235f07cc42e8e6fb82f39c8dfb945db6b4"
+      },
+      "context_id": "global-unavailable",
+      "id": "global-unavailable-02",
+      "initial_state_sha256": "84699c1d56e83bf649cc2d8cfc94330308dff50d18521b0676f5fe9a1a925851",
+      "input_sha256": "673724c1e38110441483c4e02c2f2dac17e52c07c9071460bdc55e173aa10dbb",
+      "seed": 30002
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "f663d81e4ecd8b0821cf01b713b5e2327f82764976407bff9889c13a6221a258"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": null,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "897cf498f9781e70795533cc9eedb2adc5a6dfeed321b7eb3eb6b16677f0c9bd"
+      },
+      "context_id": "global-unavailable",
+      "id": "global-unavailable-03",
+      "initial_state_sha256": "247f30a5872983754bb284730f1f4f05759ae803b0c43eb79cea0d3157f31bc1",
+      "input_sha256": "3b0331d4de2c11b2fe394023f0327bfb1929a063934d7aebbb04803abe34cd05",
+      "seed": 30003
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "07b946f620f107b556df884372de0153de92a6c5be39b77271514a54ddaf9d27"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": null,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "4923727995a6ac76ca375806eb5c5395ecc0b471ce7123af7d90f69452be2ed4"
+      },
+      "context_id": "global-unavailable",
+      "id": "global-unavailable-04",
+      "initial_state_sha256": "1bbba95426babae596c0b117c1a560d0224e915e8f1248d12b6882d79adafc91",
+      "input_sha256": "7b3ca676715d7d1e2ef4c92c9e46a12ebfa6711c8ffa2c3fede69d0af49040e1",
+      "seed": 30004
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "0ce98298a3d59d0ee6dc12dc2e669a39bd4079502495b19d52bcb68deb08761c"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": null,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "9d80af2b7d77e54eb2d41797fac6a4eb73e3cbc03121b79ecd42bedfbad5e850"
+      },
+      "context_id": "global-unavailable",
+      "id": "global-unavailable-05",
+      "initial_state_sha256": "efd3a8c13aa704ada09be8095eabb2bfe85080200e30bf00b461b0e025e351bb",
+      "input_sha256": "8e150c824eacdc0eb47bb755ae31d1d701e55b7b1e9c215c522526b65960a396",
+      "seed": 30005
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "710d7c391a9ef8ffda4fc67822ebaf846c06ffc80306e4404ff5ba0abde6c834"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": null,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "aba411ee4fd6066734a391cb261112e586aa92bcabaac8ab2f1b4d8074a0a5b7"
+      },
+      "context_id": "global-unavailable",
+      "id": "global-unavailable-06",
+      "initial_state_sha256": "dbcaae537c307fa193993753e5a01e2febdd0e0b228a1c2a846f52ea9555e9e9",
+      "input_sha256": "db240a6afb49b5f1c566623f80387c9f47ef672ddc7cfee6b393fc36d7feb515",
+      "seed": 30006
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "89da2a67eaa21d545db9de5acbc1a03cdfbeabe274ba0aa626067dd06034ae62"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": null,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "fe348a01929ccba5af29b10c8c405ce9670e2879d8525f476523e7c4ba6eb41c"
+      },
+      "context_id": "global-unavailable",
+      "id": "global-unavailable-07",
+      "initial_state_sha256": "7482559849ccacff3f458929ba84c75812086a256c373deb4b7d8d8c6517c438",
+      "input_sha256": "b2dc5b62e21ec82aa0e2ac3a1cc4f289915756e44825645d325319258f1f11f2",
+      "seed": 30007
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "4b7adcb902c10df21f1c19e56c92503bc0d3462aee0f2b1bad677ad5da19d019"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": null,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "623ad9617919a27e4742ded05d2e50d2a771bb7dec40e9cc6b9d7b5c473c3ed3"
+      },
+      "context_id": "global-unavailable",
+      "id": "global-unavailable-08",
+      "initial_state_sha256": "16277bd66bba3d059bc4968755284a0f3eb718088e169c6bc9f5838accd74839",
+      "input_sha256": "b15c94bd63c1f1436865a6fb22f371187c17729daab66bb4b1e1bdd7e830daac",
+      "seed": 30008
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "c41600012a77b869037c0f02246ce88f4005b939049b435612ce284249e5b908"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": null,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "ae160c43e060ca3937e865ea46f0a0a780878e143a2ea7ea3075954d09292378"
+      },
+      "context_id": "global-unavailable",
+      "id": "global-unavailable-09",
+      "initial_state_sha256": "cf65679fa82da94e36631088949cf57c1d9e232af36de45c2d5f533f659b034c",
+      "input_sha256": "2d9200eba30428e4df0e2fa30b634fa900361ce323438ee2801b102a79667599",
+      "seed": 30009
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "57005a674ed5ae123977fe7738298a40a4e713b41c7d31b6f656457a04988ccf"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": null,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "d7483b7be38815b46e2efd90938385156f10440d654d82b7e9a27f1d54b1804a"
+      },
+      "context_id": "global-unavailable",
+      "id": "global-unavailable-10",
+      "initial_state_sha256": "90d66b2229c8d0d473be30de6ef30e852c351b29a7d645cf9dea34cfa5156f26",
+      "input_sha256": "0c36078212e01a241528509bd6d0f73b71f12e68b73317645ee300e98029de2a",
+      "seed": 30010
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "0c72beae39c10ab6b99ca5d67d24d4451e0386dcbe206bf67e8c423a1e5f4c93"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 3,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": null,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "0a95ace3c4469b1a861bb09adbfa8fbe3a6e5abedd0bf5883f90adbcb959f936"
+      },
+      "context_id": "global-unavailable",
+      "id": "global-unavailable-11",
+      "initial_state_sha256": "52097ddb886d6d2e2900c3ccc9c659ff56df5dab9f49324960237fc22d31a2ee",
+      "input_sha256": "2bba1e83cadc58c59db5db37137cea2a1c088448bcf93b63ea7f7675a55bdc08",
+      "seed": 30011
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "e7e04593ef0ae67f54b6d8ae50aa2d9f0b7e87e08b10697afeb784254a114991"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 12,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "f6264c42eb3a9afd70c718ee8924871cd0ba739e7fb516dddf31ee42851af362"
+      },
+      "context_id": "resource-regression",
+      "id": "resource-regression-00",
+      "initial_state_sha256": "7f3b5ae161df5e028ca0c07dc74179b65e7adc62fe9458d30f5c4d9dd615f70a",
+      "input_sha256": "cdf4c195af7a52796e0038245b304b3ffc4538865d8831d753204ddbf3e72162",
+      "seed": 40000
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "782f7bfd8597e720f80d1b42ebfbb9196bc02a13024d89e6aea064be27dc34c9"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 12,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "9c3ca2bb235e557cb27c826e283051488ffbe17c0124c01de48e532572eebd7f"
+      },
+      "context_id": "resource-regression",
+      "id": "resource-regression-01",
+      "initial_state_sha256": "3ca70975d81560d74bf2c622798a31f9b89c00df7a27065bcb4c3e3de97c6bf7",
+      "input_sha256": "6c1c37ef6b92de50fb7bb6c9a41b0c2a8cf75bfec61ed95949050cae0b4f34a3",
+      "seed": 40001
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "038f059634f7963a655beed585324f13508ef7e2b426cb83cd34a090b3c7c3a4"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 12,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "5be1236249ba9f8ed99f09a2f6ba0ececa6b7bc76064b4f5e89fe721052c065d"
+      },
+      "context_id": "resource-regression",
+      "id": "resource-regression-02",
+      "initial_state_sha256": "c65016a19859004a6c6c5fd2b9cbaedecfbbeccd9e647f5e26e784de33b55702",
+      "input_sha256": "1cd5167573434219ab50f08524f7ba149cd88c6bd99eb621bdcce93443d05704",
+      "seed": 40002
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "b43cda0375f6991efc1e3ba8e53aa865b3ccca8ede9e26ef3fb770ed883609bb"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 12,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "9bc5928b39b950b9beb252eb5659286f9a6c228b69886b1ad2fd2b041fcca8bf"
+      },
+      "context_id": "resource-regression",
+      "id": "resource-regression-03",
+      "initial_state_sha256": "d802673f656f2a19cc7ad30f31e6d6b9fda3877bd58963731b6b2abc946139d9",
+      "input_sha256": "46a2f96ad2937482dbe24ba52d5ae739e0d2432366ba96bfc906fcd7003dbd8f",
+      "seed": 40003
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "57a1b7586cea5a3bb8fcd2e035557365dc6ac54309c6478927917c09e5e30429"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 12,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "cf916b72cc2947b7d148eb7c652e4984c4157bc46fa2950658640a2f56a42576"
+      },
+      "context_id": "resource-regression",
+      "id": "resource-regression-04",
+      "initial_state_sha256": "a6d8022e6c0b9f6827c78b327a8d7a92a6181456b93a4fa2f034c953965832bb",
+      "input_sha256": "40d4d5e820252e105f42ded384d2c72f73e4b26d4f916a2c9145bf2eb33bc62f",
+      "seed": 40004
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "99448c2c2c9d0ebc01c2623f94d563bd2f72a2e696c7ef7a95f5c0bd69c5a458"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 12,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "4e718ca4b2bc5fb3b87260b25f4fa61dc1bd0e3ed34a29f3e8c1828f1a68d0b7"
+      },
+      "context_id": "resource-regression",
+      "id": "resource-regression-05",
+      "initial_state_sha256": "5869decb6ba3c04bff3902671e317c311066ea0874da9b7cd27160ccad85b830",
+      "input_sha256": "887b539f30000b76a7d845324d683340b5abd699056645196c96159c52b5c1ed",
+      "seed": 40005
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "5cf4ca1663e2fea8fb645421b3925a77e778d0cec0b4ab0af698bc14bcf938e8"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 12,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "5ea1a7f6fca9cbb6d2dff526ca20d33afe1045d39e2d4d498b8db7743fb64104"
+      },
+      "context_id": "resource-regression",
+      "id": "resource-regression-06",
+      "initial_state_sha256": "9589ac9dd8698fde89f697977fd339c05f9c3a3be75a04277b659fdbdcd5b0f6",
+      "input_sha256": "88210f2def0d0ef6237bc389ce5b54490af13086f0d1a06ce0343f1cfbef4f6d",
+      "seed": 40006
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "a8472cb6b1af046192ff94e538bf00e0c254c8d96a18c7d4e2e0994db6eb3802"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 12,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "55a7b902a46009ff9ba813059a39eb368da5d1bbe6f6199487b2b8a9d896761f"
+      },
+      "context_id": "resource-regression",
+      "id": "resource-regression-07",
+      "initial_state_sha256": "8a12d8940930a9aacb1f1285ef6b68f9f13735847c24612e646993dacc899fd6",
+      "input_sha256": "15b33b472de4f8d2ed3c0ece780ba3cc774056bdb7335628ab90273ed35490c8",
+      "seed": 40007
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "229580844913f9cbef2379fdb1571286576921752dac53959b9fe84a95944810"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 12,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "694ed1c3b0f0a59da582982ba91d8031ab742a05dcc519a2a23dcf1ea21d0645"
+      },
+      "context_id": "resource-regression",
+      "id": "resource-regression-08",
+      "initial_state_sha256": "a00f8dbad481c0c7b424bfc94295c0de6d454c53854a40a4b29b23d00d1dd2ee",
+      "input_sha256": "52908205f1b9452d251d732302cc69bad879e0678e45e16227f565084e9826d6",
+      "seed": 40008
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "98d03987960044e787da2d385ad36307895489cc39738693aab05995408dbdb7"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 12,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "f9df0f5851d1ffeb37d0dd4cd8342c71612046f008a5c809a2773d3ec58a6def"
+      },
+      "context_id": "resource-regression",
+      "id": "resource-regression-09",
+      "initial_state_sha256": "4d9dc45c4dd7c1d3d662d92b94a82b237212ce62d01ca9ab8a04ee5b13a958bc",
+      "input_sha256": "b5796b1e42f0634b6044b65be3b70f435df1effb40eb4eda02e89d3801806656",
+      "seed": 40009
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "02568b89c25ee9c986b265c0a5dfd774faa8829228d7dbd910c703e04736878e"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 12,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "9a677f693615e4f34c4130cf1b05418f070e27fca04c952ffd870c3498432611"
+      },
+      "context_id": "resource-regression",
+      "id": "resource-regression-10",
+      "initial_state_sha256": "fa687c526f18f0bf8ddaf3dde7504d450d8b2672d45ea8dce31ccef50e0cd5ec",
+      "input_sha256": "9cd6fe62c2726f3a09de14ecc0f0b475209a56aa7a0c49487bfdd34046e33ede",
+      "seed": 40010
+    },
+    {
+      "baseline": {
+        "cost": {
+          "candidate_eval_operations": 0,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 2,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.0,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.0,
+        "program_sha256": "b8d8e6c63221c4afc22d97122ddf09b2cb5fe80e68988b78d8704c450cde3b01",
+        "trace_sha256": "00f3c435dc3b536ee5b3e9708f82867eb9c789d168033528ce17f2b5057aace8"
+      },
+      "candidate": {
+        "cost": {
+          "candidate_eval_operations": 1,
+          "feedback_messages": 3,
+          "memory_accesses": 1,
+          "operations": 12,
+          "spike_messages": 2
+        },
+        "feedback": [
+          {
+            "observer": "N1",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N2",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          },
+          {
+            "observer": "N3",
+            "reason": null,
+            "score": 0.6,
+            "status": "OBSERVED"
+          }
+        ],
+        "global_score": 0.6,
+        "program_sha256": "423f5c87651a311ea4992b72323a3dbe2f030849d35092259d3eec815a9540f2",
+        "trace_sha256": "24699f6e31674dcc11969836c360ae4608b034531cbfdaf535dbaea52496d06b"
+      },
+      "context_id": "resource-regression",
+      "id": "resource-regression-11",
+      "initial_state_sha256": "39ec823fc424e5ceaccc66fe2ecc90d36e60473d6ec4db8349af6ac8124d83f6",
+      "input_sha256": "5739aa043671ff2cdfcf8a6d11fd695fcfb48116176b0c038bda6fe51343c745",
+      "seed": 40011
+    }
+  ]
+}
