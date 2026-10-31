@@ -1,0 +1,95 @@
+{
+  "authenticated_C_sensor": false,
+  "environment": "research_shadow",
+  "episodes": [
+    {
+      "episode_id": "ep-001",
+      "events": [
+        {
+          "action": "emit",
+          "author": "A",
+          "decision_id": "decision-001",
+          "episode_id": "ep-001",
+          "event_id": "e1",
+          "kind": "source_decision",
+          "pass_id": "observed",
+          "tick": 0
+        },
+        {
+          "author": "A",
+          "decision_id": "decision-001",
+          "episode_id": "ep-001",
+          "event_id": "e2",
+          "kind": "source_emission",
+          "parent": "e1",
+          "pass_id": "observed",
+          "tick": 1
+        },
+        {
+          "author": "C",
+          "decision_id": "decision-001",
+          "episode_id": "ep-001",
+          "event_id": "e3",
+          "kind": "receiver_ingress",
+          "parent": "e2",
+          "pass_id": "observed",
+          "tick": 2
+        },
+        {
+          "authenticated": false,
+          "author": "host_adapter",
+          "episode_id": "ep-001",
+          "event_id": "e4",
+          "kind": "c_sensor",
+          "pass_id": "observed",
+          "sensor_value": false,
+          "tick": 3
+        },
+        {
+          "author": "C",
+          "decision_id": "decision-001",
+          "episode_id": "ep-001",
+          "event_id": "e5",
+          "kind": "c_verdict",
+          "parent": "e3",
+          "pass_id": "observed",
+          "policy_id": "C_SENSOR_BOOL_SIGN_V0",
+          "sensor_event_id": "e4",
+          "tick": 4,
+          "verdict": "negative"
+        },
+        {
+          "author": "shadow_registry",
+          "decision_id": "decision-001",
+          "episode_id": "ep-001",
+          "event_id": "e6",
+          "kind": "credit_admission",
+          "parent": "e5",
+          "pass_id": "observed",
+          "tick": 5,
+          "verdict": "negative"
+        }
+      ],
+      "resources": {
+        "grants": [
+          {
+            "grant_id": "g1",
+            "tick": 1,
+            "units": 1
+          },
+          {
+            "grant_id": "g2",
+            "tick": 4,
+            "units": 1
+          }
+        ],
+        "per_tick_capacity": 1
+      }
+    }
+  ],
+  "mode": "single_pass",
+  "native_learning": false,
+  "native_semantic_BV": false,
+  "schema": "spk-v5-t3rst-single-pass-trace/research-v0",
+  "selection_after_replay": false
+}

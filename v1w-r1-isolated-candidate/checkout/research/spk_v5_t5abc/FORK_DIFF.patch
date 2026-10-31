@@ -1,0 +1,119 @@
+--- frozen/live_dual_scheduler_v0e.py
++++ research/spk_v5_t5abc/live_semantic_fork_v0.py
+@@ -83,6 +83,10 @@
+     terminal = []
+     emissions = []
+     bv_deliveries = []
++    # T5ABC additive fork only: runtime-context semantic messages, NOT native authority.
++    semantic_issuances = []
++    semantic_by_assessment = {}
++    semantic_hops = []
+     contention = Counter()
+     occupancy_peak = 0
+     reserved_memory = 0
+@@ -103,12 +107,25 @@
+         serial += 1
+         return True
+ 
+-    def offer_feedback(aid, ids, sender, hop, ready):
++    def offer_feedback(aid, ids, sender, hop, ready, inherited_semantic=None):
+         nonlocal feedback_serial
+         if not bv.enabled or not ids:
+             return
+         if hop > bv.max_hops:
+             raise LiveBVRejected('feedback ancestry exceeds max_hops')
++        # C owns first issuance in this simulated scheduler execution; B passes
++        # the packet's payload, not a host reconstruction from the final output.
++        if hop == 1:
++            semantic = semantic_by_assessment.get(aid)
++        else:
++            semantic = inherited_semantic
++        if semantic is not None:
++            if (semantic.get('assessment_id') != aid or
++                    semantic.get('C_source') != 'C' or
++                    semantic.get('sign') not in (-1, 1) or
++                    semantic.get('source_channel') not in (11, 12) or
++                    (semantic['source_channel'] == 11) != (semantic['sign'] == 1)):
++                raise LiveBVRejected('experimental semantic payload custody violation')
+         by_receiver=defaultdict(set)
+         for oid in ids:
+             if oid not in occurrences or occurrences[oid]['target'] != sender:
+@@ -120,7 +137,8 @@
+             feedback_serial += 1
+             ready_feedback.append({'packet_id':f'bv{feedback_serial}', 'assessment_id':aid,
+                  'sender':sender,'receiver':dest, 'evidence_ids':tuple(sorted(by_receiver[dest])),
+-                 'hop':hop,'ready':ready})
++                 'hop':hop,'ready':ready,
++                 'semantic':dict(semantic) if semantic is not None else None})
+ 
+     while pending or inflight or any(outboxes.values()) or ready_feedback:
+         if now-first_tick >= min(bv.max_ticks,pplan.max_service_span_ticks,
+@@ -144,10 +162,20 @@
+                     'receiver':item['receiver'],'sender':item['sender'],
+                     'packet_id':item['packet_id'],'independent_receiver':independent,
+                     'evidence_ids':list(item['evidence_ids'])})
++                experimental_semantic = item.get('semantic')
++                if experimental_semantic is not None:
++                    semantic_hops.append({'tick':now, 'assessment_id':item['assessment_id'],
++                        'packet_id':item['packet_id'], 'sender':item['sender'],
++                        'receiver':item['receiver'], 'hop':item['hop'],
++                        'C_emission_id':experimental_semantic['C_emission_id'],
++                        'source_channel':experimental_semantic['source_channel'],
++                        'sign':experimental_semantic['sign'],
++                        'receiver_authenticates_C':False})
+                 ancestors=set()
+                 for oid in item['evidence_ids']:
+                     ancestors.update(occurrences[oid]['parents'])
+-                offer_feedback(item['assessment_id'],ancestors,item['receiver'],item['hop']+1,now)
++                offer_feedback(item['assessment_id'],ancestors,item['receiver'],item['hop']+1,now,
++                               experimental_semantic)
+ 
+         service_used = Counter()
+         mem_pe_used = Counter()
+@@ -191,6 +219,23 @@
+                 for p,q in pe_mem.items():mem_pe_used[p]+=q
+                 for d,q in dom_mem.items():mem_dom_used[d]+=q
+                 parents=tuple(sorted({oid for _ch,oid in items if oid is not None}))
++                # C's semantic channels are emitted by the ORIGINAL PE compute,
++                # within this SAME scheduler batch (no A1b or JSON replay).
++                # This fork keeps the frozen compute result and scheduler output
++                # byte-identical; only feedback packets carry metadata internally.
++                c_sign_channels = [ch for ch in outs if nid == 'C' and ch in (11, 12)]
++                if len(c_sign_channels) > 1:
++                    raise LiveBVRejected('experimental ambiguous C semantic channels')
++                semantic_for_batch = None
++                if c_sign_channels:
++                    if 30 not in outs:
++                        raise LiveBVRejected('experimental C sign without fixed terminal')
++                    ch = c_sign_channels[0]
++                    semantic_for_batch = {'C_emission_id':f'C-batch-{batch_count}-tick-{now}',
++                        'C_source':'C', 'tick':now, 'source_channel':ch,
++                        'sign':1 if ch == 11 else -1,
++                        'causal_parents':list(parents), 'compute_batch':batch_count}
++                    semantic_issuances.append(dict(semantic_for_batch))
+                 batches.append({'tick':now,'ready':ready,'node':nid,'channels':sorted(channels),
+                                 'parents':list(parents),'raw':raw,'outputs':list(outs)})
+                 for ch in outs:
+@@ -203,6 +248,9 @@
+                             aid=f'a{assessment_serial}'
+                             assessments.append({'id':aid,'observer':nid,'tick':now,
+                                                 'input_occurrences':list(parents)})
++                            if nid == 'C' and semantic_for_batch is not None:
++                                semantic_by_assessment[aid] = {
++                                    **semantic_for_batch, 'assessment_id':aid}
+                             offer_feedback(aid,parents,nid,1,now)
+                     for edge in edges:
+                         if occurrence_serial >= bv.max_occurrences:
+@@ -322,4 +370,11 @@
+             'constraints':['three-node-admission','global-logical-clock',
+                            'atomic-conservative-memory','no-learning','no-promotion',
+                            'no-verified-global-credit','no-A3d-bitwise-equivalence',
+-                           'nonphysical-cost-proxy','not-N-node']}
++                           'nonphysical-cost-proxy','not-N-node'],
++            # Additive field only. This is NOT cryptographic/native C authority.
++            'experimental_semantic_port':{
++                'status':'IN_SCHEDULER_PE_OUTPUT_BOUND_RECEIVER_VISIBLE_RESEARCH',
++                'issuances':semantic_issuances, 'feedback_hops':semantic_hops,
++                'receiver_A_sign_receipts':[x for x in semantic_hops if x['receiver']=='A'],
++                'host_can_forge':True,'native_origin_authenticated':False,
++                'native_receiver_semantic_credit':False,'native_learning':False}}

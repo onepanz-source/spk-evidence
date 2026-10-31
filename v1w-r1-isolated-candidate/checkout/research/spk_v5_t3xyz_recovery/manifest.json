@@ -1,0 +1,18 @@
+{
+  "schema": "spk-v5-t3xyz-trace-volume-hotfix/research-v0",
+  "parent": "T3UVW PASS; original T3XYZ stopped with PROBE_TRACE_SIZE_INVALID",
+  "root_cause": "Original trace was 47545722 bytes; original hard cap 32000000 bytes",
+  "mechanism": "streaming-only independent recovery of already-captured exact evidence",
+  "expected_original_report_sha256": "813753afd706eabff52653cf0a7674e1a44755981df61c6760fcbd4652c790d2",
+  "expected_uploaded_profile_sha256": "21ac7a5197c56cdff3edb816b86233d1c4749e601848eadac1c7413232e17484",
+  "expected_uploaded_log_sha256": "1554f4f89a46a7b889c1986f5ab1e5305b0926c535e60230e8e734e0833cc110",
+  "max_profile_bytes": 128000000,
+  "captured_per_process_event_cap": 25000,
+  "known_saturated_processes": 2,
+  "source_edits_to_frozen_files": false,
+  "original_T3XYZ_pass_claim": false,
+  "full_compute_coverage_proven": false,
+  "C_authored_native_semantic_verdict_proven": false,
+  "native_learning_promoted": false,
+  "independent_sensor_authenticated": false
+}

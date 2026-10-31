@@ -1,0 +1,20 @@
+{
+  "files": {
+    "research/spk_v5_t4ghi/README.md": "567f7460333dede5605e95f7bce10bce2cccb1c4e71f335053974402dc5a5402",
+    "research/spk_v5_t4ghi/reference/t4def-single-source.json": "02169ef1000ef9a0864e331ff9d6ae8ca05c4523c4c2d48cf589c86a14be13d3",
+    "research/spk_v5_t4ghi/t4ghi.py": "9f58dc3e0db338b1c42bb1117f6ccbc2e08fc72ac0311fef6618b25e6cdc967d",
+    "research/spk_v5_t4ghi/tests/test_t4ghi.py": "e6ceb41156a7af1c20cc7c5c323d92dcbb8373c038faf3d9afa96f2baf4a5912",
+    "search/spk_v5_t4ghi_one_pass_sign_observation_gate.sh": "821ead1ae945b575fd9adb2c730c019cb2aacc67c1aeef7209d6e6c878c686a7"
+  },
+  "input_T4DEF_module_sha256": "b5262709d40714811fe91bfa28389afb8f3a8edc847eb21e5564b677d3516945",
+  "input_T4DEF_sha256": "02169ef1000ef9a0864e331ff9d6ae8ca05c4523c4c2d48cf589c86a14be13d3",
+  "limitations": [
+    "No native semantic BV",
+    "No native learning",
+    "No signed receiver messages",
+    "One frozen BV source invocation per case, not real hardware execution",
+    "No independent sensor authentication or blind evaluation"
+  ],
+  "schema": "spk-v5-t4ghi-milestone-manifest/research-v0",
+  "status": "RESEARCH_ONLY"
+}

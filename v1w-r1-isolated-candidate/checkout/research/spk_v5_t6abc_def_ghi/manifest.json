@@ -1,0 +1,17 @@
+{
+  "files": {
+    "research/spk_v5_t6abc_def_ghi/README.md": "9a8207c4c0e54c320411ff8652a620d0c5ab1177d7397195d638ca385c4ce150",
+    "research/spk_v5_t6abc_def_ghi/__init__.py": "a101280c1dd011b692ec324beda44b63442ee451ca1bbb560bf020e6a1c17e55",
+    "research/spk_v5_t6abc_def_ghi/cumulative_gate_v0.py": "ed05ade91abac5c32cd0cf06ee906b7bcb8373e17d0e64d289a942a72219c2a7",
+    "research/spk_v5_t6abc_def_ghi/loop_v0.py": "1b2afa206c61c6995e4345723f6007d068bebea76351dbf4f9b2dd17848f81f8",
+    "research/spk_v5_t6abc_def_ghi/reference/t5pqr-stu-vwx-cumulative.json": "7928c3726eff1f9aef7a4cc2424bc230b7751673adedb081e8f893880996059d",
+    "research/spk_v5_t6abc_def_ghi/tests/test_loop_v0.py": "9d2a183c56b34db03a542131f20ca202a2f694bbfdbba5a8aea0f0172784204f",
+    "search/spk_v5_t6abc_def_ghi_cumulative_gate.sh": "b71f824adab596f5a9a5dc7b910c69c57b75c1e919b7d917c441fcc7c6e7323a"
+  },
+  "frozen_components_modified": false,
+  "native_BV_credit": 0,
+  "native_learning": false,
+  "promotion_allowed": false,
+  "schema": "spk-v5-t6abc-def-ghi-cumulative-functional-closed-loop-manifest/research-v0",
+  "source_report_sha256": "7928c3726eff1f9aef7a4cc2424bc230b7751673adedb081e8f893880996059d"
+}

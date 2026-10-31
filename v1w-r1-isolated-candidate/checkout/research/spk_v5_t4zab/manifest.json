@@ -1,0 +1,11 @@
+{
+  "files": {
+    "research/spk_v5_t4zab/README.md": "eb5711eb5e6fd2f170bc89455c5a128693a82f91c0de3bf17a1987c050ae5fd6",
+    "research/spk_v5_t4zab/reference/t4wxy-c-context-reference.json": "37c29062f235b36d7f1ba3b41c1b5bc5f9f2b0cf8e3da0fc0eb06be14c9933c3",
+    "research/spk_v5_t4zab/t4zab.py": "aaa08b6204694bb0ffd5dc7677656bbae592f494e63d7dcf6e2a87cc96276dd7",
+    "research/spk_v5_t4zab/tests/test_t4zab.py": "9c922245d5f8f34a69e4ca07114fbf3d5dba485795c6c93277e2ac8757037fca",
+    "search/spk_v5_t4zab_live_C_seam_gate.sh": "abe70a6cded09dec501318f15e8b071bb7498af45f638348d35c2a9fec595850"
+  },
+  "purpose": "additive research gate, no frozen edits",
+  "schema": "spk-v5-t4zab-file-custody/v0"
+}

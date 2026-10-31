@@ -1,0 +1,10 @@
+{
+  "files": {
+    "research/spk_v5_t4jkl_fix/README.md": "670cb984161ed5cedad7ba6eb8e962dc52dc165f51b972476866108f215685d0",
+    "research/spk_v5_t4jkl_fix/t4jkl_fix.py": "e425b447ed73a6355d4faec6209526e58334c865e3d897537d0bd01bdcd03b73",
+    "research/spk_v5_t4jkl_fix/tests/test_t4jkl_fix.py": "1bd029cc21964c61c62e0949847a554d4206ead183079ebe74d7e260707e2bcc",
+    "search/spk_v5_t4jklm_control_flag_hotfix_gate.sh": "46cba5529f6cc85c375fa85fe5c1a2e464a08e60315988b187c262dcce38bba4"
+  },
+  "note": "additive hotfix only; original T4JKL code and frozen SPK untouched; source recipe control flags are not native receipts",
+  "schema": "spk-v5-t4jklm-incremental-file-custody/v0"
+}

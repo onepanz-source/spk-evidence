@@ -1,0 +1,12 @@
+{
+  "files": {
+    "research/spk_v5_t5def/FORK_DIFF.patch": "902106cb74424da82c23f466e974eef5659301c2a4b5524bbc231c6cbb6f8c55",
+    "research/spk_v5_t5def/README.md": "2bc46a24f3b202927a953fb981730c39a4a12330f0a80103e7cdab6a02ba657d",
+    "research/spk_v5_t5def/live_pe_issuer_fork_v0.py": "22fcdd3c8de9ec029fb8ae32b53e37fd434ad1b1460fb3226a0a5a735e5fe585",
+    "research/spk_v5_t5def/pe_semantic_issuer_v0.py": "d2b5c52d81add3c38c187f68c23039d49480d25aa6f3131a850cfbe65bbd7821",
+    "research/spk_v5_t5def/reference/t5abc-semantic-transit.json": "17416abffffd0c959eb79df32e4fc397eda014a0ba9986ef20f38fb1a9798872",
+    "research/spk_v5_t5def/t5def.py": "2d90e2cdcc43e82c368eb099b39efd2a087d82831f561e4ede9bc2204a6e77a6",
+    "research/spk_v5_t5def/tests/test_t5def.py": "1f74871a4dab08d76b007d7cc4a0caa3eecff9b1772a1110ddd2a2c33a5b6300"
+  },
+  "schema": "spk-v5-t5def-additive-source-manifest/v0"
+}

@@ -1,0 +1,16 @@
+{
+  "files": {
+    "research/spk_v5_t5pqr_stu_vwx/README.md": "d56087539cb8adaf4cc6bf2a4a19d2a98ca9c61e6d74d1a34989fb67fd5f455f",
+    "research/spk_v5_t5pqr_stu_vwx/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "research/spk_v5_t5pqr_stu_vwx/causal_contract_v0.py": "41563d30aa12928a54da0f76010d332303ad28d3d1cb24859601c6b724f8729d",
+    "research/spk_v5_t5pqr_stu_vwx/cumulative_gate_v0.py": "8c609d3cf68e7ed032034295ecdf12fb38f5afee2c54d3a149f174e633f93dfb",
+    "research/spk_v5_t5pqr_stu_vwx/feedback_process_v0.py": "0c8ed35ed06f4ca29d9c87f5ec4296c94f756f87470545de9b0792614a77c458",
+    "research/spk_v5_t5pqr_stu_vwx/reference/t5mno-A-local-outcome.json": "1eb6a4b43297cc8c111fb1811d00954ac119e2a9c604407785ec54059ee78706",
+    "research/spk_v5_t5pqr_stu_vwx/tests/test_cumulative_v0.py": "c3397dd2c3c2047294c613ebc036c5b1f590afd51a35bdb3ae34c85b63000d23",
+    "search/spk_v5_t5pqr_stu_vwx_cumulative_gate.sh": "299562fdf65078864db28549bcc0ae919afee57bbe48e9cf446aeeacdc62c589"
+  },
+  "frozen_components_modified": false,
+  "promotion_allowed": false,
+  "schema": "spk-v5-t5pqr-stu-vwx-cumulative-manifest/research-v0",
+  "source_report_sha256": "1eb6a4b43297cc8c111fb1811d00954ac119e2a9c604407785ec54059ee78706"
+}

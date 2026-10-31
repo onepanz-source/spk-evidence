@@ -1,0 +1,11 @@
+{
+ "schema":"spk-v5-t3xyz-passive-python-observer-milestone/v0",
+ "phase":"V5/T3X-Y-Z cumulativo",
+ "parent":"V5/T3UVW SOURCE CUSTODY PASS (report sha dffa2c9635347fc177594dc4d2a4dbed807f7a65ef43c0118e1b259350e9f554)",
+ "frozen_architecture_modified":false,
+ "native_learning_promoted":false,
+ "native_semantic_BV_promoted":false,
+ "fresh_blind_external_goal_proven":false,
+ "test_subject":"original source T3OPQ with passive CPython profile; observational scope only",
+ "validation_boundary":"after delivery, execute on the user's original repository to validate inherited gates, source hashes and byte-exact profile parity"
+}

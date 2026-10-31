@@ -1,0 +1,10 @@
+{
+  "files": {
+    "research/spk_v5_t4zabc/README.md": "2df3fef846a46d2b86d1bd1856928d0a32679f9e6a4879a755cecdfcc815d32e",
+    "research/spk_v5_t4zabc/t4zabc.py": "a20247b6331aa964d6309b010bb9e36115116d57bd721fb529567f4d1e98b5b1",
+    "research/spk_v5_t4zabc/tests/test_t4zabc.py": "b44af4208eaef959065ea3fe399b22a52415dbbc45055dab6b9bb48e75f3fcdf",
+    "search/spk_v5_t4zabc_topology_correction_gate.sh": "794e84d27f531aa193321df52d553b80d4b4c15faa80b0ad874ccf83712c5b5c"
+  },
+  "purpose": "differential topology correction for failed T4ZAB; retains frozen architecture and source lineage",
+  "schema": "spk-v5-t4zabc-additive-file-custody/v0"
+}

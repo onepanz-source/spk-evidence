@@ -1,0 +1,16 @@
+{
+  "schema": "spk-v5-t3uvw-milestone/research-v0",
+  "version": "T3UVW",
+  "date": "2026-10-21",
+  "parent": "T3RST (36 local harness tests PASS, native source unverified)",
+  "scope": "Additive original-source custody and repeated research replay verification",
+  "local_new_tests": 29,
+  "inherited_tests_requested_on_user_checkout": 36,
+  "original_T3OPQ_reruns_requested_on_user_checkout": 2,
+  "original_T3OPQ_run_in_creation_environment": false,
+  "native_single_pass_C_semantic_verdict_proven": false,
+  "native_learning_proven": false,
+  "blind_validation_proven": false,
+  "frozen_sources_modified": false,
+  "promotion_allowed": false
+}

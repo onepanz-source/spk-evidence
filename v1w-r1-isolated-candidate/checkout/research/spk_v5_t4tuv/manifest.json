@@ -1,0 +1,10 @@
+{
+  "files": {
+    "research/spk_v5_t4tuv/README.md": "21e9bd3f485940450fea9986def90a2fb6883e355c58ede83e73cb5668ba37c8",
+    "research/spk_v5_t4tuv/reference/t4qrs-process-receiver-port.json": "174176faf2dec41a0120008bbc3e5813cf89291aec6de6cf953079941d2f54b4",
+    "research/spk_v5_t4tuv/t4tuv.py": "9659eed21fd0e101ee9e4d2bd25d6552cc237524e3b772643835a51a1b1c65dc",
+    "research/spk_v5_t4tuv/tests/test_t4tuv.py": "e8099ef5463c52beaa1c81ed1148d33924e6740f388358d1dcc10e299384f76b",
+    "search/spk_v5_t4tuv_host_authority_counterexample_gate.sh": "deb0de1cc4c46d8fb1bdf2eb7b854d147be244be76690e69b6e85f62c6bac062"
+  },
+  "schema": "spk-v5-t4tuv-incremental-file-custody/v0"
+}

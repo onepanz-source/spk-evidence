@@ -1,0 +1,10 @@
+{
+  "files": {
+    "research/spk_v5_t4qrs/README.md": "87fc3da53c552811a5e4679cd5d0010c4c8b60a01ae6a88a00f092821bd434d7",
+    "research/spk_v5_t4qrs/reference/t4nop-receiver-boundary.json": "32fe39cdd994c02b653e88f99887d989539ba32a9910b805884c7ab439d9b974",
+    "research/spk_v5_t4qrs/t4qrs.py": "69c9d0462fcfeef6d51eddc3e2fcbb43b1099e251c02a48b560cec7239241e3b",
+    "research/spk_v5_t4qrs/tests/test_t4qrs.py": "b85a4f97176774006171779f0da426310bbc9536aaf3cc92d1175bcd1c50f751",
+    "search/spk_v5_t4qrs_process_receiver_port_gate.sh": "d44e0d6f4f527f405930908b74be1ecd4202f4b226e52c869a502353c2a5551a"
+  },
+  "schema": "spk-v5-t4qrs-incremental-file-custody/v0"
+}

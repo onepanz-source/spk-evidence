@@ -1,0 +1,11 @@
+{
+  "files": {
+    "research/spk_v5_t4jkl/README.md": "3eb66ee0bddee12fa64f8170dc1a3fe08e7d81fe1ac9098773a31090668c26bd",
+    "research/spk_v5_t4jkl/reference/t4ghi-one-pass-sign.json": "dc98a1a5e45270d665e5119540ae960e405f4d02b703bd0c52d04202873abef3",
+    "research/spk_v5_t4jkl/t4jkl.py": "3cf4aa1670483153da01216bd0377b33dd9e06b8184599d8f2e91461737c377a",
+    "research/spk_v5_t4jkl/tests/test_t4jkl.py": "51971a63d79bf3a1e161c1c52a34545fe73494b24f5b7bff29ddd87a723b4d1f",
+    "search/spk_v5_t4jkl_causal_receipt_guard_gate.sh": "9372c19c653b8efeb6e6f9f65ff78c98921e872a93522bab67703d1b03827dcc"
+  },
+  "note": "incremental research files, frozen sources not bundled",
+  "schema": "spk-v5-t4jkl-incremental-file-custody/v0"
+}

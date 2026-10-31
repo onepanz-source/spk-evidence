@@ -1,0 +1,10 @@
+{
+  "files": {
+    "research/spk_v5_t4wxy/README.md": "43b85c381dc08cee5136b47d72127160cd1f3315c3a3c30c8dd80743ce48f523",
+    "research/spk_v5_t4wxy/reference/t4tuv-host-authority-counterexample.json": "c9896293b6030820968217b1f628346e04377716c464b9dd971999a3140a339a",
+    "research/spk_v5_t4wxy/t4wxy.py": "559b6dbdf2effb9088c8d75d7b2cd1b73237cde60e23dab5a00ee88969c7663b",
+    "research/spk_v5_t4wxy/tests/test_t4wxy.py": "54ed58d24c89ea10923df689346cd990126012a7fae387f60b4581c0533dbacf",
+    "search/spk_v5_t4wxy_c_context_reference_gate.sh": "fe9ffdcb264266a0d55d9d6e2aa83079dd94ee3134da4e9266717df0ab8e3518"
+  },
+  "schema": "spk-v5-t4wxy-incremental-file-custody/v0"
+}

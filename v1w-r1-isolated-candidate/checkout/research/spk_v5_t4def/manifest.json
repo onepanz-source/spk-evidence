@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-10-22",
+  "files": {
+    "research/spk_v5_t4def/README.md": "4e7b48ba89adc12630113abf4529be0b75b080c73e08ea3d08a1ac0e1663dd53",
+    "research/spk_v5_t4def/t4def.py": "b5262709d40714811fe91bfa28389afb8f3a8edc847eb21e5564b677d3516945",
+    "research/spk_v5_t4def/tests/test_t4def.py": "1c075e5f84e09fb0b52ac1a98b0d49f03e1792e4cba2675d7dc2eea0dc15df17",
+    "search/spk_v5_t4def_single_source_gate.sh": "82e3bdc50ac439de1fa3820b595b8ba601b14014342e094867faa422e54ad2ce"
+  },
+  "local_unittest_count": 30,
+  "native_learning": false,
+  "native_semantic_BV": false,
+  "nonpromotion": true,
+  "schema": "spk-v5-t4def-additive-milestone/manifest-v0",
+  "source_t4abc_dossier_sha256": "01bf2f6181369bdbea1630e4eab0fa2bb576e431fee1ba372825c90ed910096d",
+  "status": "LOCAL_UNIT_TESTED_NATIVE_GATE_PENDING"
+}

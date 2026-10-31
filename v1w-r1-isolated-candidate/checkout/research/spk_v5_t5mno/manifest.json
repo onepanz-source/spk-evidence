@@ -1,0 +1,16 @@
+{
+  "files": {
+    "research/spk_v5_t5mno/README.md": "2ba2ce7ac5f575cdbdd8a72e1cb41d667de500f340bcb0910ef17c623bbff6ff",
+    "research/spk_v5_t5mno/__init__.py": "d0989c028a274ae60d27f9651ad8129e95789c42831f0d3191a38ea7b5c0b539",
+    "research/spk_v5_t5mno/a_local_outcome_v0.py": "351c5fa7f46bb72835e0fb740ad442687a70fc909e49d002786edecdcd8b9fd5",
+    "research/spk_v5_t5mno/a_receiver_process_v0.py": "eb642f152ad6e57d0f8f44435b189823899bbed7d9f39e74d814516616174020",
+    "research/spk_v5_t5mno/reference/t5jkl-receiver-independence.json": "6967fb45f7d612b0e7297e30e0c16a1e47650614988cf1530748bd958a5271c8",
+    "research/spk_v5_t5mno/t5mno.py": "4620a4030eaa75c6761424bb36c19f2576cbdc3c75b187176b1076eaf4a1bfea",
+    "research/spk_v5_t5mno/tests/test_t5mno.py": "e0b6eb6f2aac065751001bb56e80ab9ac7f868ac7093e71a4b17674923feeed9",
+    "search/spk_v5_t5mno_A_local_outcome_gate.sh": "b668233649ef1c93f27a68ed679535d25da003707d2a59333ec004f93172b0cd"
+  },
+  "frozen_components_modified": false,
+  "promotion_allowed": false,
+  "schema": "spk-v5-t5mno-additive-A-local-outcome-manifest/research-v0",
+  "source_report": "6967fb45f7d612b0e7297e30e0c16a1e47650614988cf1530748bd958a5271c8"
+}

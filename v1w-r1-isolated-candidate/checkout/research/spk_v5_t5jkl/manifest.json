@@ -1,0 +1,12 @@
+{
+  "files": {
+    "research/spk_v5_t5jkl/README.md": "6a27a551ca1edbc475f6e13d8589c8ad6cd77b432039a8bae7b95fb87d2ffa96",
+    "research/spk_v5_t5jkl/independence_contract_v0.py": "f3fa4a89c7455a8db034999a45212e82ba67a33a535da971aa9816af0eb0cb0d",
+    "research/spk_v5_t5jkl/reference/t4ghi-one-pass-sign.json": "dc98a1a5e45270d665e5119540ae960e405f4d02b703bd0c52d04202873abef3",
+    "research/spk_v5_t5jkl/reference/t5ghi-receiver-freshness.json": "f4296cdc55313967fcaab3f34810867128b2550ad85978e4a3f9196eb8028a86",
+    "research/spk_v5_t5jkl/t5jkl.py": "970077fec3a0eff200697d1b1343ed65ace173e37bc64973684bea15848acdad",
+    "research/spk_v5_t5jkl/tests/test_t5jkl.py": "3bfeceb9954c70fa53919c01026d087b89c30eee2947bfffb3a0ea7e61b17eb8",
+    "search/spk_v5_t5jkl_receiver_independence_gate.sh": "ecf29a85aaf6f1a5dea7d5ed9d9dedbdeb623d5f8cca003ea07124dea59d159e"
+  },
+  "schema": "spk-v5-t5jkl-additive-manifest/research-v0"
+}

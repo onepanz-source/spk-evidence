@@ -1,0 +1,15 @@
+{
+  "files": {
+    "research/spk_v5_t5ghi/FORK_DIFF.patch": "6f7a3ffea06105cf78b2d26fe0abe9622936ae8daf2bf99a6d469a7534fd3494",
+    "research/spk_v5_t5ghi/README.md": "6fbaacfa4ed6efe96f8cead3aeaf38f8a208e11d6b1dc473b5593f87c22d17d1",
+    "research/spk_v5_t5ghi/challenge_contract_v0.py": "ea86a377638c1b335ec1711d6e625aa3c1765b95137d0b3e04a16239e4749df7",
+    "research/spk_v5_t5ghi/live_challenge_fork_v0.py": "08d8ab6996e219c3cfea0208e2113d8332b53a39c22d6c2a9bd0cd3f729f48e4",
+    "research/spk_v5_t5ghi/pe_challenge_issuer_v0.py": "c2c48da0df0df35dcd85948494e01abd9fcfd963da5f7bdc0ec271ec9ced6df0",
+    "research/spk_v5_t5ghi/receiver_authority_v0.py": "6fb4905ac278781bd7420a9fd2de98f575ac531e31ff5a3e96ebfd86737c77d0",
+    "research/spk_v5_t5ghi/reference/t5def-pe-scope-issuer.json": "e5e966c7692a839cee0cc5575f031bfde2c7d02e5b3ca29ed41f3d97f0674e55",
+    "research/spk_v5_t5ghi/t5ghi.py": "434391a0a6e827d8abbaac75831b53f57b4d7287dbeb1e8a9469e2673589a820",
+    "research/spk_v5_t5ghi/tests/test_t5ghi.py": "6dafd8de826dcad398a23952e46a5738b2ebd0b6e26566e19b8657ceebe7a24d",
+    "search/spk_v5_t5ghi_receiver_freshness_gate.sh": "a0d9dd09a27b342648a874b411069919838e26851a5bae93b44bab295aa675c2"
+  },
+  "schema": "spk-v5-t5ghi-additive-manifest/research-v0"
+}

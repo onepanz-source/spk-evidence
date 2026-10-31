@@ -1,0 +1,12 @@
+{
+  "files": {
+    "research/spk_v5_t5abc/FORK_DIFF.patch": "1c640c33816e201ec9a3f4146f77bae67626b38bac84e0bbdd3c2550bad219b1",
+    "research/spk_v5_t5abc/README.md": "a2aa53f10c09675012a02de827e515bbe46cc5309da7937ad08a99c4bfeccc48",
+    "research/spk_v5_t5abc/live_semantic_fork_v0.py": "3b75d21cd14ecf4262234646a1247ac568e2c26be9d67fd640e4d7eb169201c1",
+    "research/spk_v5_t5abc/reference/t4zabc-topology.json": "7de3ccc8c374212748ccedcbd1a4b3d4e99f116b9a6f39e0190695a746cf9d4c",
+    "research/spk_v5_t5abc/t5abc.py": "8df1842d4937caadbfd17f9a0c3156943d0245e132e9974eaed949de32a8c8bc",
+    "research/spk_v5_t5abc/tests/test_t5abc.py": "bf6443c515d405062f0024288d7c6bae6f7ca219c4a1c93aea64be10ed8b8bf3"
+  },
+  "schema": "spk-v5-t5abc-additive-source-manifest/v0",
+  "status": "RESEARCH_ONLY_NONPROMOTION"
+}

@@ -1,0 +1,28 @@
+{
+  "blockers": [
+    "actual T3OPQ source archive not executable in this environment",
+    "trace provenance not independently authenticated",
+    "single-pass C verdict not observed in frozen native scheduler",
+    "no independent goal authority or blind evidence"
+  ],
+  "gates": {
+    "S_single_pass": {
+      "authenticated_C_sensor": false,
+      "episodes": 1,
+      "goal_identifiability": "NOT_ESTABLISHED",
+      "native_learning": false,
+      "native_semantic_BV": false,
+      "outcome": "SHADOW_CAUSAL_ORDER_PASS",
+      "source_origin_authenticated": false,
+      "source_structural_credit_events": 0,
+      "verdict_counts": {}
+    }
+  },
+  "no_authenticated_C_sensor": true,
+  "no_blind_evaluation": true,
+  "no_native_learning": true,
+  "no_native_semantic_BV": true,
+  "overall": "RESEARCH_ONLY_SOURCE_BOUND_UNVERIFIED",
+  "promotion_allowed": false,
+  "schema": "spk-v5-t3rst-audit/research-v0"
+}

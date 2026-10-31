@@ -1,0 +1,11 @@
+{
+  "files": {
+    "research/spk_v5_t4nop/README.md": "8942bbc553106b4600df2eb30facb05ca1f033d46a04a718d5a855ed6ab2ac27",
+    "research/spk_v5_t4nop/reference/t4jklm-control-flag.json": "29623afe61f35cae178b25383a5cf7621b212d4128d586cba011433da7c7bd74",
+    "research/spk_v5_t4nop/t4nop.py": "6d1c2ec86507f9b360ef3543449b5c4ffcf69b63b5b738a72b9a5ab0a9227971",
+    "research/spk_v5_t4nop/tests/test_t4nop.py": "14624fed77e5164ad2b590ce339efb0b452190a5e47a33c8a31cbe9cede38736",
+    "search/spk_v5_t4nop_receiver_boundary_gate.sh": "c5d5d6a1971bec5340d78604a54a204fd65ea86942f78966aae6d1846e4cd8d5"
+  },
+  "note": "read-only receiver semantic boundary inventory; prior milestones/frozen source unchanged; no native credit or learning",
+  "schema": "spk-v5-t4nop-incremental-file-custody/v0"
+}

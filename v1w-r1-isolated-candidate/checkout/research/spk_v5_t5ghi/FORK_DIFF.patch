@@ -1,0 +1,51 @@
+--- research/spk_v5_t5def/live_pe_issuer_fork_v0.py
++++ research/spk_v5_t5ghi/live_challenge_fork_v0.py
+@@ -12,7 +12,7 @@
+ import heapq
+ 
+ from spk_architecture_v1.pe_execution_v1b import _admit
+-from research.spk_v5_t5def.pe_semantic_issuer_v0 import compute_and_issue, PEEmission
++from research.spk_v5_t5ghi.pe_challenge_issuer_v0 import compute_and_issue, PEEmission
+ from spk_architecture_v1.temporal_transport_v1a import _admit_plan
+ from spk_architecture_v1.temporal_service_v1b import _valid_plan
+ from spk_architecture_v1.causal_memory_v1c import _valid_memory, _reservation
+@@ -39,7 +39,7 @@
+     max_events: int = 512
+ 
+ 
+-def execute_live_v0e(case, fabric, tplan, pplan, mplan, lplan, bv=LiveBVPlanV0e()):
++def execute_live_v0e(case, fabric, tplan, pplan, mplan, lplan, bv=LiveBVPlanV0e(), receiver_challenge=None):
+     """Bounded live scheduler, with per-tick atomic reservation, deterministic order.
+ 
+     Limitations: frozen A1 three-neuron domain, no progressive memory permits,
+@@ -125,7 +125,9 @@
+                     semantic.get('C_source') != 'C' or
+                     semantic.get('sign') not in (-1, 1) or
+                     semantic.get('source_channel') not in (11, 12) or
+-                    (semantic['source_channel'] == 11) != (semantic['sign'] == 1)):
++                    (semantic['source_channel'] == 11) != (semantic['sign'] == 1) or
++                    (receiver_challenge is not None and
++                     (type(semantic.get('challenge_digest')) is not str or len(semantic['challenge_digest'])!=64))):
+                 raise LiveBVRejected('experimental semantic payload custody violation')
+         by_receiver=defaultdict(set)
+         for oid in ids:
+@@ -171,7 +173,9 @@
+                         'C_emission_id':experimental_semantic['C_emission_id'],
+                         'source_channel':experimental_semantic['source_channel'],
+                         'sign':experimental_semantic['sign'],
+-                        'receiver_authenticates_C':False})
++                        'receiver_authenticates_C':False,
++                        **({'challenge_digest':experimental_semantic['challenge_digest']}
++                           if 'challenge_digest' in experimental_semantic else {})})
+                 ancestors=set()
+                 for oid in item['evidence_ids']:
+                     ancestors.update(occurrences[oid]['parents'])
+@@ -211,7 +215,7 @@
+                 if now<states[nid][1]:raise LiveBVRejected('backward state timestamp')
+                 parents=tuple(sorted({oid for _ch,oid in items if oid is not None}))
+                 raw,guard,outs,pe_emission=compute_and_issue(
+-                    nodes[nid],states[nid],now,channels,parents,batch_count+1)
++                    nodes[nid],states[nid],now,channels,parents,batch_count+1,receiver_challenge)
+                 remote=sum(1 for ch in outs for edge in out.get((nid,ch),()) if edge.target_pe!=pid)
+                 if remote>lplan.max_outbox_per_pe:
+                     raise LiveBVRejected('sender outbox overflow, no truncated emission')

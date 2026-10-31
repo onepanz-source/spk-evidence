@@ -1,0 +1,21 @@
+{
+  "files": {
+    "CHECKPOINT.md": "923f4a85717cf98941dcfac260ff76e5cd2680b7ef55fd96de1a52009cf77de8",
+    "fixtures/single_pass_negative_future.json": "1a1dfddb2077e7189d241f695422209fa6a625f9d2d436a5fef2a618b393d35f",
+    "fixtures/single_pass_positive.json": "035cd8876c70cc9ec9c8b117cdf3ba64f1dfe2961029bc410716967f22104967",
+    "fixtures/single_pass_silent.json": "a9c9d39e4afe52307a158988780ae321d46b0b7c9968eff72040ad30bd280f2a",
+    "paired_audit.json": "6ae07e29dc3e420c55a75dd4fbaefdeb8cea60c27b49ae0d5064f3762df8ca6b",
+    "silent_audit.json": "2baef137c5b7fa528923bf80f0af118abf9166234143d5c24f11c4a4a7c74b35",
+    "src/spk_t3rst.py": "19421209f6c92b88085df5fdb9d65516c2f6d2bf59d3a0e256cb940ff51b2227",
+    "tests/test_spk_t3rst.py": "05cc7db584a245733357b99b3761bca1ab9bd3e4078757f6b5affbd46db426cc"
+  },
+  "native_source_executed": false,
+  "promotion_allowed": false,
+  "reference_report_hash_independently_verified": false,
+  "reference_report_sha256_claim": "813753afd706eabff52653cf0a7674e1a44755981df61c6760fcbd4652c790d2",
+  "schema": "spk-v5-t3rst-checkpoint/research-v0",
+  "tests": {
+    "executed": 36,
+    "passed": 36
+  }
+}

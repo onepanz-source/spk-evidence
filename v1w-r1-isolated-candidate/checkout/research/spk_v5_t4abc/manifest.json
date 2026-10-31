@@ -1,0 +1,11 @@
+{
+  "schema": "spk-v5-t4abc-causal-origin-dossier/manifest-v0",
+  "scope": "research-only, additive, no frozen source modifications",
+  "input_recovery_sha256": "4546d8070272736e1362f50fa408961331f5e198030fb7a9f4f102c8c240da7b",
+  "input_trace_sha256": "21ac7a5197c56cdff3edb816b86233d1c4749e601848eadac1c7413232e17484",
+  "input_T3OPQ_report_sha256": "813753afd706eabff52653cf0a7674e1a44755981df61c6760fcbd4652c790d2",
+  "primary_functions_to_localize": ["_source_pass", "evidence", "execute", "receipt_for"],
+  "success_claim": "source boundary and call ancestry localized; semantic C authorship not proven",
+  "native_BV_promoted": false,
+  "native_learning_promoted": false
+}
