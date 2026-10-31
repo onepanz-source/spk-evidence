@@ -1,0 +1,56 @@
+{
+  "BV_to_P_authorized": false,
+  "G2_owner_authorized": false,
+  "ISA_approved": false,
+  "P_writes": 0,
+  "compiler_c3_full_manifest_artifact_sha256": "7e0213eb309fcf87dd19e4967e8cbb32ed65f58021920d36a07803dab40b62c5",
+  "compiler_c3_manifest_sha256": "b5da98369f23d664eb07903d0e77c4f302a75073cbcb65fdc958f09df66c82b1",
+  "compiler_fixture_node_ids": [
+    "A",
+    "B"
+  ],
+  "compiler_fixture_placements": [
+    {
+      "node_id": "A",
+      "pe_id": "PE0"
+    },
+    {
+      "node_id": "B",
+      "pe_id": "PE1"
+    }
+  ],
+  "compiler_scope": "STATIC_NETWORK_IR_RESOURCE_AND_PE_ADMISSION",
+  "compiler_tag_commit": "24b15156aa31967bd0079debcc97ccb6e3ac4325",
+  "compiler_two_fresh_processes_identical": true,
+  "compiler_v0_equivalence_proven": false,
+  "decision": "HOLD",
+  "exit_code": 4,
+  "external_dispatch": false,
+  "isa_native_scope": "INDEPENDENT_ROUTED_AND_SILENT_ORIGINAL_FIXTURES",
+  "limitations": [
+    "Original C3 compiler fixture uses A/B; routed ISA native uses B and silent ISA uses C. Shared node labels are not an authenticated identical workload.",
+    "Static resource/PE admission does not prove dynamic schedule, neuronal receipts or physical delivery.",
+    "Two compiler processes prove deterministic static outputs in one bounded fixture, not compiler-to-ISA equivalence.",
+    "No post-commit owner, hardware backend, dynamic migration, learning, sensor identity or external-effect proof."
+  ],
+  "parent_evidence": {
+    "native_observations_are_from_separate_fixtures": true,
+    "routed_native_independent_fanouts": [
+      1,
+      2
+    ],
+    "routed_parent_sha256": "001ada57f50126fd9b2b8e4a3ccd17feb68f86151167785c533530ccf6291a3f",
+    "silent_native_independent_service_units": [
+      1,
+      7
+    ],
+    "silent_parent_sha256": "48a4f31821dd817fa6cfc7daf9b45983c10544a872c070b47cd1b1594e64396d",
+    "source_intake_sha256": "12664e9f91bf23da9d160c991abe0866a170a574ee3061147b54a51f3b1fb52d"
+  },
+  "postcommit_owner_executed": false,
+  "research_only": true,
+  "schema": "spk-isa-s0f-static-dynamic-boundary/v0f",
+  "shared_workload_identity_proven": false,
+  "static_to_native_binding_proven": false,
+  "status": "STATIC_COMPILER_C3_AND_NATIVE_ISA_FIXTURE_BOUNDARY_PASS_EQUIVALENCE_HOLD"
+}
