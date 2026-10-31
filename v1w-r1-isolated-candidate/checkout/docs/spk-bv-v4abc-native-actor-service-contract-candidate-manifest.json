@@ -1,0 +1,56 @@
+{
+  "schema": "spk-bv-v4abc-native-actor-service-contract-candidate-manifest/v1",
+  "milestone": "v4a-v4c-native-actor-service-contract-candidate",
+  "status": "DRAFT_NATIVE_ACK_SERVICE_RATE_CONTRACT_NOT_ADMITTED",
+  "authorization_scope": "proposal_and_independent_verification_only",
+  "native_actor_service_policy_implemented": false,
+  "native_actor_learning_implemented": false,
+  "new_native_liveness_guarantee_proven": false,
+  "freezes_preserved": [
+    "SPK Core v0",
+    "SPK Network v0",
+    "SPK Compiler v0",
+    "SPK Architecture v1",
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py"
+  ],
+  "frozen_native_source_sha256": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+  "canonical_predecessor_v3tuv_sha256": "f783be9952613aa98eafef59d24c19eb64ccc09d29265017eabb675fe0155827",
+  "canonical_report": {
+    "filename": "spk-bv-v4abc-native-contract-candidate.json",
+    "sha256": "96b0b33a6ec4fa592459cbe99259b29fa12fe04c182229eb30fed475ce9fbbb3",
+    "derived_contexts": 72,
+    "source_ticks": 2560,
+    "real_global_ACK_grants": 329,
+    "four_tick_contexts_with_zero_grant_window": 65,
+    "eight_tick_contexts_with_zero_grant_window": 56
+  },
+  "new_source_pins_sha256": {
+    "spk_bv_research/native_actor_service_contract_candidate_v4abc.py": "013cf9de199c9364339d9b3da808f1fd0b8d6719368f4d4f63137b93bdd5f7c2",
+    "search/spk_bv_v4abc_native_actor_contract_candidate.py": "7d5a48ca8a2705b938dc97f5d31681a188b8634afa71b7a6361a89cf71642b15",
+    "search/spk_bv_v4abc_native_actor_contract_candidate_gate.sh": "f427b88b629aada159cdc8f926fc9a0c0490aabd1e75e96e14b5d36960e3c02b",
+    "search/spk_bv_v4abc_inherited_regression_gate.sh": "5a1201d5707419818eda691efbf60449788be328b5bc89e8fed707b2be0ee0d0",
+    "tests/test_spk_bv_v4abc_native_actor_contract_candidate.py": "d2c6ecae9d3e314926634b1d0a4fda7495cb8225061a9f335a982d73682eeca0",
+    "docs/spk-bv-v4abc-native-actor-service-contract-candidate.md": "533ef0955dbd18b6e9d7fed58fe2e4f16078daf21e1375588ec23d64c2a2633f"
+  },
+  "checks": {
+    "candidate_test_count": 14,
+    "candidate_tests_local": "PASS",
+    "signed_source_and_create_only_gate_local": "PASS",
+    "regression_tests_fwork_prior_milestone": 413,
+    "regression_tests_fwork_prior_milestone_status": "PASS",
+    "regression_local_current_status": "BLOCKED_BY_INCOMPLETE_INHERITED_V2O_JSON_FIXTURE",
+    "regression_local_current_error": "v2p JSONDecodeError: 2 tests; local v2o file truncated at byte 2173952",
+    "regression_local_current_scope": "historical fixture parsing, not v4 candidate implementation",
+    "new_contract_native_release_gate": "BLOCKED_PENDING_VERSIONED_DESIGN_AND_IMPLEMENTATION"
+  },
+  "candidate_modes": [
+    "NATIVE_COMPATIBLE",
+    "RESERVED_ACK_WINDOW"
+  ],
+  "example_not_adopted": {
+    "window_ticks": 4,
+    "max_admitted_due_queue_rank": 16,
+    "conditional_last_grant_offset_ticks": 63
+  },
+  "continuation": "review_tradeoff_then_separate_authorization_for_native_versioned_contract"
+}

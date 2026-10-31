@@ -1,0 +1,57 @@
+{
+  "schema": "spk-bv-v4akam-research-milestone-manifest/v1",
+  "milestone": "v4ak-v4am-separately-retained-head-valid-fork-and-rollback-counterexample",
+  "classification": "RESEARCH_ONLY_SAME_HOST_OUTSIDE_FILE_PUBLIC_TEST_KEY_NO_REAL_TRUST_ROOT",
+  "signed_input_sha256": {
+    "spk-bv-v4ahaj-durable-escrow.json": "8fd397a7b3b1cf693f1c5e3be3e78021f504609a0b2695b2bbe67e07d65f8674",
+    "spk-bv-v4aeag-two-view-adjudication.json": "01211a6cdc2f8efc707514c56934b7c980f001bd22d4ed3df586ace2db5ff152",
+    "spk-bv-v3tuv-grant-rank.json": "f783be9952613aa98eafef59d24c19eb64ccc09d29265017eabb675fe0155827"
+  },
+  "pinned_existing_code_sha256": {
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+    "spk_bv_research/task_disagreement_v4aeag.py": "937d4b9c1cd00e5a0331ee05581c7fa64a0d8784f92a968742cf2ea53618988c",
+    "spk_bv_research/task_disagreement_fixture_v4aeag.py": "4a0dc6dc4c339df3f9ee0c5e58ea2632a8ddbb57c377d4df69e8e37ffbc44e2b",
+    "spk_bv_research/task_escrow_store_v4ahaj.py": "85c81558f058ea2b28bfaf0eca729483c076019d762b3e3206e1229f08b5727a",
+    "spk_bv_research/task_escrow_fixture_v4ahaj.py": "8e3c2d87031851a1bccabe8070ec148513fe73030b74d4e626b0f6ea43e423c8",
+    "spk_bv_research/task_escrow_audit_v4ahaj.py": "9fdea72ea4a8072693deb7979eb150d1cc9fe43343f67555f3981df5631ba4e5"
+  },
+  "new_file_sha256": {
+    "spk_bv_research/task_anchor_v4akam.py": "4ef1434bbda231bb6be9b398faa12bb29884c40d67140e8cb8ae0b4d79a2dc12",
+    "spk_bv_research/task_anchor_fixture_v4akam.py": "3fde29952eb787d528ce15fe86726012e710029678a030dcb1d7d555c5103278",
+    "spk_bv_research/task_anchor_audit_v4akam.py": "51d716ce411f6cf3f4964ac2e2093fcabc18fb76d20af080c04a6f724b9fae1f",
+    "search/spk_bv_v4akam_external_anchor.py": "1a942c1ec0c4a9ed7057a5a6dd359dbd5f48514712db8bc1faafc55fbd8d7fd9",
+    "search/spk_bv_v4akam_external_anchor_gate.sh": "8fb636ffa61266590031a19042dd830e65c485c3756d12b12e34c06f01379d3f",
+    "tests/test_spk_bv_v4akam_external_anchor.py": "b40cfb7b3f6e000658852ff9227ee6e4ac468254f03e4f7d46ff1f736b84fd29",
+    "docs/spk-bv-v4akam-external-anchor-research.md": "a6cbcac6f9c2bec2417f90efc189f0a343a42ced641008825fdc8154102352b9",
+    "docs/spk-bv-v4akam-anchor-fixture.json": "1654e88d8c7dd8d88aac656f58ce0838e10f25d4f1b4b956a1af876a3ad593a0",
+    "docs/spk-bv-v4akam-external-anchor-observation.json": "36dc505c9758e83173246f1f106389a121332119603431cf661d210f7758c1af"
+  },
+  "tests": {
+    "new_v4akam_passed": 29,
+    "inherited_v4ahaj_passed": 29,
+    "inherited_v4aeag_passed": 26,
+    "inherited_v4abad_passed": 24,
+    "inherited_v4yzaa_passed": 19,
+    "inherited_v4vwx_passed": 18,
+    "inherited_v4stu_passed": 21,
+    "inherited_v4pqr_passed": 18,
+    "inherited_v4mno_passed": 15,
+    "total_passed": 199
+  },
+  "experimental_witness": {
+    "valid_self_consistent_sqlite_forks": 2,
+    "external_head_catches_alternate_valid_fork": true,
+    "external_capsule_digest_catches_same_public_key_resigning": true,
+    "newly_published_external_head_catches_valid_prior_history_rollback": true,
+    "pinned_predecessor_sqlite_entries": 72,
+    "pinned_predecessor_nonce_count": 144,
+    "reference_external_capsule_sha256": "1654e88d8c7dd8d88aac656f58ce0838e10f25d4f1b4b956a1af876a3ad593a0",
+    "real_trust_root_provisioned": false,
+    "independent_task_ground_truth": false,
+    "native_program_adoptions": 0,
+    "native_learning_updates": 0
+  },
+  "caveat": "Two locally coherent journals can disagree; an independently retained anchor detects the mismatch. This experiment uses public HMAC fixture keys and artifacts on the same host, so its witness is not truly held by a separate authority. A storage owner who can replace both DB and pinned witness defeats the check.",
+  "frozen_native_modified": false,
+  "architecture_v1_modified": false
+}

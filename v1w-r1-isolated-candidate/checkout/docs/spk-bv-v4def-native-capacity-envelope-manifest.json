@@ -1,0 +1,52 @@
+{
+  "schema": "spk-bv-v4def-native-capacity-envelope-manifest/v1",
+  "milestone": "v4d-v4f-source-native-capacity-reservation-envelope",
+  "status": "SOURCE_REPLAY_RESOURCE_OPPORTUNITY_ONLY_NO_RESERVED_ACK_ADMISSION",
+  "authorization_scope": "unadmitted_counterfactual_research_only",
+  "native_scheduler_modified": false,
+  "native_service_reservation_implemented": false,
+  "native_actor_learning_implemented": false,
+  "native_deadline_or_fairness_proven": false,
+  "frozen_components": [
+    "SPK Core v0",
+    "SPK Network v0",
+    "SPK Compiler v0",
+    "SPK Architecture v1",
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py"
+  ],
+  "frozen_native_source_sha256": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+  "signed_predecessor_v3tuv_sha256": "f783be9952613aa98eafef59d24c19eb64ccc09d29265017eabb675fe0155827",
+  "signed_predecessor_v4abc_sha256": "96b0b33a6ec4fa592459cbe99259b29fa12fe04c182229eb30fed475ce9fbbb3",
+  "canonical_report": {
+    "filename": "spk-bv-v4def-native-capacity-envelope.json",
+    "sha256": "fdc4335bbb42e145319ec266c3d893348026d617f05a1c5b8383c5caab426a03",
+    "native_original_replays": 18,
+    "derived_source_contexts": 72,
+    "native_horizon_min_max_ticks": [17, 45],
+    "pending_no_grant_ticks": 1812,
+    "pending_no_grant_global_PE_full": 1294,
+    "pending_no_grant_all_resources_spare": 518,
+    "W4_overlapping_no_grant_windows_without_spare": 950,
+    "W8_overlapping_no_grant_windows_without_spare": 708
+  },
+  "new_source_pins_sha256": {
+    "spk_bv_research/native_actor_capacity_envelope_v4def.py": "8d3cf89aada738f8da3788bcf6d9594f86f66bb64380510175e4640d769679fd",
+    "search/spk_bv_v4def_native_capacity_envelope.py": "94225ab59ef4b5e39a8db8a9e1b5fb9f42b58f14257f989e8e615c2a659e91f4",
+    "search/spk_bv_v4def_native_capacity_envelope_gate.sh": "bfb25bc011a6f9d7d67417053a36c9890a38e50b4e26e47f6eaff7749d665c60",
+    "search/spk_bv_v4def_inherited_regression_gate.sh": "7ced91fb60792e535cef8229f6298913ab3645e34297b2b4ace75f9fd84c6783",
+    "tests/test_spk_bv_v4def_native_capacity_envelope.py": "83f78d6906a5638970b0fc66645b42b55fd972a16bfac72874c689094f259054",
+    "docs/spk-bv-v4def-native-capacity-envelope.md": "8529016f5db8c61ef6c8407b839204e06cf659748926fb6c2362cb638286270e"
+  },
+  "checks": {
+    "new_adversarial_tests_local": 14,
+    "new_adversarial_tests_status": "PASS",
+    "signed_18_native_replay_and_72_contexts_status": "PASS",
+    "canonical_reproduction_byte_identical": true,
+    "v4abc_fwork_prior_new_tests": 14,
+    "v4abc_fwork_prior_inherited_tests": 217,
+    "v4abc_fwork_prior_gate_status": "PASS",
+    "new_native_policy_release_gate": "BLOCKED"
+  },
+  "interpretation_boundary": "capacity opportunity and isolated-window lower bound, not executed reservation or measured forward slowdown",
+  "next_gate": "VERSIONED_NATIVE_RESOURCE_ARBITER_AND_ADMISSION_PROOF_REQUIRED"
+}

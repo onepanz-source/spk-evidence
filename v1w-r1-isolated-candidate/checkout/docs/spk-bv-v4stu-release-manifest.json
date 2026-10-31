@@ -1,0 +1,34 @@
+{
+  "schema": "spk-bv-v4stu-research-milestone-manifest/v1",
+  "milestone": "v4s-v4u-paid-derived-actor-ACK-consumption",
+  "classification": "RESEARCH_ONLY_NOT_NATIVE_LEARNING",
+  "signed_input_sha256": {
+    "spk-bv-v3tuv-grant-rank.json": "f783be9952613aa98eafef59d24c19eb64ccc09d29265017eabb675fe0155827",
+    "spk-bv-v4pqr-endogenous-actor-ACK.json": "9e33e4257cfb660861afcfb6f46efc6ee6893e78d060490faaefbd47d0dc5872"
+  },
+  "frozen_code_sha256": {
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+    "spk_bv_research/native_ack_causal_replay_v4mno.py": "b256c82f6452eb39789481d265d6e79bbcb5527e4c8155b66524a0e8d8680261",
+    "spk_bv_research/native_ack_actor_loop_v4pqr.py": "e489ceca0730d2404face2c79c2da36ffbfdeb82e63dd04dd9a07210a3586f85"
+  },
+  "new_file_sha256": {
+    "spk_bv_research/native_ack_paid_consumer_v4stu.py": "4ee3c1704aee638b6271277c18735e345783e9e4eeca5c65958613abb37fa046",
+    "spk_bv_research/native_ack_paid_consumer_audit_v4stu.py": "7cdcd65f1cc4ea5373d19a1e1c0e43057b94ac850429147941a2105118d55eda",
+    "search/spk_bv_v4stu_paid_actor_consumer.py": "14c09da215ab50fb2ef31907c03a59986f6ec8fcf50495fe6e62fdf5165e6a66",
+    "search/spk_bv_v4stu_paid_actor_consumer_gate.sh": "4f1f109c99b234ab6cec580bae7c59d24d5f949342d9ce975c67ff87a988e2bd",
+    "tests/test_spk_bv_v4stu_paid_actor_consumer.py": "8015801cab606b17dea1579e421ea91a5218df2b357591bebb01277f05063942",
+    "docs/spk-bv-v4stu-paid-actor-consumer-observation.json": "ba0396540e3347114c27a9c26af69b12741f2cf86cc1a8845fca60ffccb0b20c"
+  },
+  "new_tests_passed": 21,
+  "inherited_v4pqr_tests_passed": 18,
+  "inherited_v4mno_tests_passed": 15,
+  "matrix": {
+    "original_native_replays": 18,
+    "derived_scenarios": 90,
+    "transport_delivered_ACKs": 1152,
+    "paid_consumer_services": 576,
+    "null_native_exact_parity": 18
+  },
+  "native_learning_implemented": false,
+  "native_architecture_modified": false
+}

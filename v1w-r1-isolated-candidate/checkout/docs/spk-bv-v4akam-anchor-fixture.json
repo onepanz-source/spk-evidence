@@ -1,0 +1,17 @@
+{
+  "body": {
+    "issuer": "LAB_ANCHOR_ROLE",
+    "previous_anchor_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "schema": "spk-bv-external-head-witness/research-v4ak-v4am",
+    "serial": 1,
+    "signer_kind": "PUBLIC_RESEARCH_FIXTURE_NO_REAL_IDENTITY",
+    "source_report_sha256": "8fd397a7b3b1cf693f1c5e3be3e78021f504609a0b2695b2bbe67e07d65f8674",
+    "sqlite_witness": {
+      "entries": 72,
+      "head": "3beb754a5f7a35b80142be9a97b057b84db65a9defeb62c8dae8dd7466e63e97",
+      "parent_sha256": "01211a6cdc2f8efc707514c56934b7c980f001bd22d4ed3df586ace2db5ff152",
+      "persisted_unique_nonces": 144
+    }
+  },
+  "mac_sha256": "ced2a99488c99194279b487963b90162fc8b3bdefa9b9c0c23e3be6e7df8f88d"
+}

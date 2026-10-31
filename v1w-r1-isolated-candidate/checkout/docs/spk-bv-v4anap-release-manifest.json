@@ -1,0 +1,52 @@
+{
+  "schema": "spk-bv-v4anap-bounded-research-closure-manifest/v1",
+  "milestone": "v4an-v4ap-bounded-research-evidence-closure-and-external-validation-handoff",
+  "classification": "RESEARCH_PROTOCOL_BOUNDARY_CLOSED_REAL_WORLD_VALIDATION_NOT_CLAIMED",
+  "predecessor_manifest_sha256": "da872bf46700c5d8b2fc5cd68b814bc940ccde96fe1c5696c3a215b5fdc4df9b",
+  "signed_source_sha256": {
+    "spk-bv-v4aeag-two-view-adjudication.json": "01211a6cdc2f8efc707514c56934b7c980f001bd22d4ed3df586ace2db5ff152",
+    "spk-bv-v4ahaj-durable-escrow.json": "8fd397a7b3b1cf693f1c5e3be3e78021f504609a0b2695b2bbe67e07d65f8674",
+    "spk-bv-v4akam-anchor.json": "1654e88d8c7dd8d88aac656f58ce0838e10f25d4f1b4b956a1af876a3ad593a0",
+    "spk-bv-v4akam-report.json": "36dc505c9758e83173246f1f106389a121332119603431cf661d210f7758c1af"
+  },
+  "new_file_sha256": {
+    "spk_bv_research/research_closure_v4anap.py": "e184ceda0ea9ac63a338bf201b38e26b52308194f6a7e4d3d71ff4a98a646a82",
+    "search/spk_bv_v4anap_research_closure.py": "dd5b9d4417e71e8fadcca91b59ed8a34198a0fff449f8450d3819f334b1b7bee",
+    "search/spk_bv_v4anap_research_closure_gate.sh": "5d57d5e071b824ad1c98fc83566fc4e1969f6d946529ab63f8efe28a81e21bbe",
+    "tests/test_spk_bv_v4anap_research_closure.py": "88cb7240cd63668ad81b98e82ed1545e741a6d04ba220f00cb908d15134a8d0a",
+    "docs/spk-bv-v4anap-bounded-research-closure.md": "25a61c28c27905fd0af54ef492f9d661e4bee36330be2eb4498f1606540eddfc",
+    "docs/spk-bv-v4anap-research-closure-observation.json": "c9123cc1a611ee8980c8918fe8f080b525e635e519db632fea8beccb4a23bf90"
+  },
+  "gate": {
+    "script": "search/spk_bv_v4anap_research_closure_gate.sh",
+    "new_adversarial_tests": 19,
+    "inherited_v4akam_tests": 29,
+    "inherited_v4ahaj_tests": 29,
+    "inherited_v4aeag_tests": 26,
+    "inherited_v4abad_tests": 24,
+    "inherited_v4yzaa_tests": 19,
+    "inherited_v4vwx_tests": 18,
+    "inherited_v4stu_tests": 21,
+    "inherited_v4pqr_tests": 18,
+    "inherited_v4mno_tests": 15,
+    "total_unit_tests_passed": 218,
+    "frozen_native_two_scheduler_smoke_passed": true,
+    "byte_exact_reference_closure_passed": true
+  },
+  "closure_acceptance": {
+    "bounded_research_requirements_checked": 8,
+    "pinned_release_source_or_fixture_checks": 15,
+    "native_program_adoptions": 0,
+    "native_learning_implemented": false,
+    "real_independent_task_truth_attested": false,
+    "external_trust_root_provisioned": false,
+    "hardware_mesh_performance_measured": false
+  },
+  "frozen_native_modified": false,
+  "architecture_v1_modified": false,
+  "next_phase_requires": [
+    "externally-owned-retained-anchor-and-trust-identity",
+    "independent-task-ground-truth-and-holdout",
+    "separately-authorized-neuron-learning-and-adoption-safety-policy"
+  ]
+}

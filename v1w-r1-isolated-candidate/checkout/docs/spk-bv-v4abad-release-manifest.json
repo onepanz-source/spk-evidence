@@ -1,0 +1,49 @@
+{
+  "schema": "spk-bv-v4abad-research-milestone-manifest/v1",
+  "milestone": "v4ab-v4ad-task-oracle-provenance-and-dual-attested-poison-quarantine",
+  "classification": "RESEARCH_ONLY_TEST_HMAC_PUBLIC_KEYS_NO_NATIVE_LEARNING_NO_ADOPTION",
+  "signed_input_sha256": {
+    "spk-bv-v3tuv-grant-rank.json": "f783be9952613aa98eafef59d24c19eb64ccc09d29265017eabb675fe0155827",
+    "spk-bv-v4yzaa-task-objective.json": "049e2c555ca42f7a0b029b6ac112801233df5794ebcffc26a63554ce534149a3"
+  },
+  "pinned_existing_code_sha256": {
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+    "spk_bv_research/native_ack_causal_replay_v4mno.py": "b256c82f6452eb39789481d265d6e79bbcb5527e4c8155b66524a0e8d8680261",
+    "spk_bv_research/native_ack_actor_loop_v4pqr.py": "e489ceca0730d2404face2c79c2da36ffbfdeb82e63dd04dd9a07210a3586f85",
+    "spk_bv_research/native_ack_paid_consumer_v4stu.py": "4ee3c1704aee638b6271277c18735e345783e9e4eeca5c65958613abb37fa046",
+    "spk_bv_research/native_actor_candidate_boundary_v4vwx.py": "c8a6aa32f615a73a0779a5ee095d2b04652544394e14be0889a08f6a1b3173b0",
+    "spk_bv_research/native_actor_objective_v4yzaa.py": "7c1b53cb7adf4e3d35fdddc9efa134d365ac2f0a392aeb75a6facf0e2995c5b9",
+    "spk_bv_research/native_actor_objective_audit_v4yzaa.py": "498b094bf1b759827f5b30ab6f65bb72a2ae6da88d5eab0b8fd09ae084edb99e"
+  },
+  "new_file_sha256": {
+    "spk_bv_research/task_oracle_custody_v4abad.py": "15cc718297d8684f52003d3ee0297f2af5345e2ce9bb20aabf42686bab674c3c",
+    "spk_bv_research/task_oracle_fixture_v4abad.py": "d2c9d86be72f62980935a341a5a067615aca78538dab24ab677c061332a09127",
+    "spk_bv_research/task_oracle_audit_v4abad.py": "f665ce8b07716c4b0335646c0cc71fcdfc2707ba088237229e75459bc1b89507",
+    "search/spk_bv_v4abad_oracle_custody.py": "7df194569d857bea7e14a632488eb94c489963393fef8c92123513b0dbf7cd01",
+    "search/spk_bv_v4abad_oracle_custody_gate.sh": "4db593f677fa426fcd53e310bdbfb6b40e10c6faed267c3123fe3967a09a50ea",
+    "tests/test_spk_bv_v4abad_oracle_custody.py": "f94f63f38510ababa067ad869e1dc32eef70d4fb48371b6e097a6c7a0b0e975f",
+    "docs/spk-bv-v4abad-oracle-custody-research.md": "8f1a55c0f142d5639c8770f31da439850d16075b77afadc7ae0e90557abbec55",
+    "docs/spk-bv-v4abad-oracle-custody-observation.json": "2c5d2971a1df638d00341dd91c39e1f3a1212c712dd7a97641601fb876e043bf"
+  },
+  "tests": {
+    "new_v4abad_passed": 24,
+    "inherited_v4yzaa_passed": 19,
+    "inherited_v4vwx_passed": 18,
+    "inherited_v4stu_passed": 21,
+    "inherited_v4pqr_passed": 18,
+    "inherited_v4mno_passed": 15,
+    "total_passed": 115
+  },
+  "matrix": {
+    "original_signed_native_replays": 18,
+    "oracle_provenance_scenarios": 216,
+    "test_fixture_MAC_quorum_valid": 144,
+    "test_fixture_accepted_research_witnesses": 18,
+    "co_signed_poison_semantic_quarantines": 18,
+    "program_adoptions": 0,
+    "native_learning_updates": 0
+  },
+  "caveat": "Embedded test HMAC keys provide mechanism coverage only, not real-world signer identity. The pinned semantic canary inherits the prior synthetic task assumption and is not independent truth.",
+  "frozen_native_modified": false,
+  "architecture_v1_modified": false
+}

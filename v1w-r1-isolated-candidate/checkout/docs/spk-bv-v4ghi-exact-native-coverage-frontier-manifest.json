@@ -1,0 +1,72 @@
+{
+  "schema": "spk-bv-v4ghi-exact-native-coverage-frontier-manifest/v1",
+  "milestone": "v4g-v4i-exact-finite-interval-native-opportunity-coverage",
+  "status": "EXACT_FINITE_COVERAGE_ONLY_NO_NATIVE_RESERVATION_OR_LIVENESS",
+  "authorization_scope": "signed_source_counterfactual_research_only",
+  "native_scheduler_modified": false,
+  "native_service_admission_implemented": false,
+  "native_actor_learning_implemented": false,
+  "universal_native_ACK_deadline_or_forward_fairness_proven": false,
+  "frozen_components": [
+    "SPK Core v0",
+    "SPK Network v0",
+    "SPK Compiler v0",
+    "SPK Architecture v1",
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py"
+  ],
+  "frozen_native_source_sha256": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+  "signed_predecessor_v3tuv_sha256": "f783be9952613aa98eafef59d24c19eb64ccc09d29265017eabb675fe0155827",
+  "signed_predecessor_v4abc_sha256": "96b0b33a6ec4fa592459cbe99259b29fa12fe04c182229eb30fed475ce9fbbb3",
+  "signed_predecessor_v4def_sha256": "fdc4335bbb42e145319ec266c3d893348026d617f05a1c5b8383c5caab426a03",
+  "canonical_report": {
+    "filename": "spk-bv-v4ghi-exact-native-coverage-frontier.json",
+    "sha256": "ad94dcfe5513da0f93b8e81daf84eead84617409dfa5b72fc758982ee2df2c32",
+    "original_native_replays": 18,
+    "derived_source_contexts": 72,
+    "W2": {
+      "zero_grant_windows": 1615,
+      "no_spare_windows": 1128,
+      "strict_spare_only_infeasible_contexts": 64,
+      "minimum_unrestricted_cover_slots": 846,
+      "minimum_optimistic_nonspare_cover_slots": 610
+    },
+    "W4": {
+      "zero_grant_windows": 1359,
+      "no_spare_windows": 950,
+      "strict_spare_only_infeasible_contexts": 50,
+      "minimum_unrestricted_cover_slots": 399,
+      "minimum_optimistic_nonspare_cover_slots": 280
+    },
+    "W8": {
+      "zero_grant_windows": 955,
+      "no_spare_windows": 708,
+      "strict_spare_only_infeasible_contexts": 32,
+      "minimum_unrestricted_cover_slots": 161,
+      "minimum_optimistic_nonspare_cover_slots": 112
+    }
+  },
+  "new_source_pins_sha256": {
+    "spk_bv_research/native_actor_coverage_frontier_v4ghi.py": "262afa18daa46239c526b05a84fbe9745ccdd85f3bdbc55e65df39be34b288a1",
+    "search/spk_bv_v4ghi_native_coverage_frontier.py": "29e72502b3494bc730ba5385429c95fe36b83709ba925c79799993689a9bb3ca",
+    "search/spk_bv_v4ghi_native_coverage_frontier_gate.sh": "945376cff26caef25570861c0a375f9b5eba4c5f4661e203a2078ab19bb97284",
+    "search/spk_bv_v4ghi_inherited_regression_gate.sh": "371062b9ed706e7314a4cec02d8ce5a3a14288ac45119837d0b580b4b77f2d09",
+    "tests/test_spk_bv_v4ghi_native_coverage_frontier.py": "d9e761ae0bc82a6a1b9838cf151256631509edb82f946c897ce0ae875c14aa71",
+    "docs/spk-bv-v4ghi-exact-native-coverage-frontier.md": "8a492f1786f05d70f52417bca0abdf012f091b91d02296c9d2af21c3e8529e01"
+  },
+  "verification": {
+    "new_adversarial_tests_local": 12,
+    "new_adversarial_tests_status": "PASS",
+    "finite_solver_independent_exhaustive_lengths": "0..7",
+    "signed_18_original_native_replays": "PASS",
+    "72_source_derived_contexts": "PASS",
+    "source_v4def_window_count_conservation": "PASS",
+    "inherited_selected_v4def_v4abc_v3tuv_tests_local": 40,
+    "inherited_selected_status": "PASS",
+    "v4def_prior_fwork_cumulative_regression_tests": 245,
+    "v4def_prior_fwork_cumulative_regression_status": "PASS",
+    "this_milestone_fwork_full_gate": "AWAITING_FWORK_REPLAY",
+    "versioned_native_ack_policy_release_gate": "BLOCKED"
+  },
+  "interpretation_boundary": "exact finite interval coverage of original native-source observation only; optimistic nonspare opportunity lower bound, not executable native preemption or ACK deadline",
+  "next_gate": "VERSIONED_RESOURCE_ARBITER_OWNER_O_E_ADMISSION_REQUIRED_BEFORE_POLICY_ADOPTION"
+}

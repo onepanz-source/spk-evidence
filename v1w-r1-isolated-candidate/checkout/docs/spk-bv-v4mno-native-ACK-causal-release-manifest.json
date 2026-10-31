@@ -1,0 +1,36 @@
+{
+  "schema": "spk-bv-native-ACK-causal-research-release-manifest/v4m-v4o",
+  "scope": "RESEARCH_ONLY_NO_ACTOR_CREDIT_OR_LEARNING",
+  "predecessor_sha256": {
+    "spk-bv-v3tuv-grant-rank.json": "f783be9952613aa98eafef59d24c19eb64ccc09d29265017eabb675fe0155827",
+    "spk-bv-v4jkl-shadow-arbiter.json": "2f95569edb1d52bb930395477a3ad4217a04dbf038dc32c3625413f2347c6bff"
+  },
+  "frozen_source_sha256": {
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+    "spk_bv_research/native_ack_shadow_arbiter_v4jkl.py": "64d84026fed3bbc0350a001fab66b41212987a10c4ad64ac92f543b86a1c02a1"
+  },
+  "research_source_sha256": {
+    "spk_bv_research/native_ack_causal_replay_v4mno.py": "b256c82f6452eb39789481d265d6e79bbcb5527e4c8155b66524a0e8d8680261",
+    "spk_bv_research/native_ack_causal_audit_v4mno.py": "94918f92027334527cb52ed100c1a1a831eea4ad34403553bf90cf650cd9b366",
+    "search/spk_bv_v4mno_native_ACK_causal_replay.py": "a7b54a56a5102cce30e8b8a10b8f9d83bbf8aca2e2f89663230beb998cba74b0"
+  },
+  "report": {
+    "path": "docs/spk-bv-v4mno-native-ACK-causal-observation.json",
+    "sha256": "0030c7bd9c84c022b3eddfadce4ae590f919186c5ee76a228cf57870b7f55721",
+    "signed_original_native_replays": 18,
+    "source_derived_scenarios": 72,
+    "exogenous_requests_and_transport_deliveries": 399,
+    "previous_shadow_donor_tokens_not_1to1_repaid": 291,
+    "native_forward_changed_scenarios": 59,
+    "native_BV_changed_scenarios": 48,
+    "horizon_extended_scenarios": 60,
+    "real_actor_credit_applied": false
+  },
+  "gates": [
+    "search/spk_bv_v4mno_native_ACK_causal_gate.sh",
+    "search/spk_bv_v4mno_inherited_regression_gate.sh"
+  ],
+  "native_scheduler_policy_adopted": false,
+  "native_architecture_modified": false,
+  "next_gate": "DYNAMIC_ACTOR_REQUEST_PROVENANCE_AND_RECEIVER_CREDIT_REEXECUTION"
+}

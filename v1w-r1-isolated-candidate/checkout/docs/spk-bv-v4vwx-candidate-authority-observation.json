@@ -1,0 +1,3642 @@
+{
+  "adopted_derived_algorithm_updates": 0,
+  "applied_native_learning_updates": 0,
+  "authority_model": "EXPLICIT_OWNER_AND_REVIEWER_RESEARCH_FLAGS_NOT_AUTHENTICATION",
+  "candidate_execution": "SEPARATE_NEXT_EPISODE_INPUT_NOT_IN_PLACE_NATIVE_MUTATION",
+  "claims_excluded": [
+    "feedback sign is not a global training loss or an optimization target",
+    "equality on signed native episodes does not imply global equivalence",
+    "a signed report and boolean research role flags are not remote identity authentication",
+    "no native learning authority, program promotion or parameter optimization was implemented",
+    "no source-specific spike weighting, network topology or physical hardware model"
+  ],
+  "native_Architecture_v1_modified": false,
+  "native_v0e_modified": false,
+  "next_gate": "FORMAL_LEARNER_OBJECTIVE_AND_AUTHORITY_BEFORE_ANY_NATIVE_COMPUTATIONAL_ADOPTION",
+  "scenarios": [
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": false
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "4d97e8dd3e6c052a8264f4ee3d898878ad287e04395ac9537fc1245b1c736471",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "4d97e8dd3e6c052a8264f4ee3d898878ad287e04395ac9537fc1245b1c736471"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "50426f0d7eac254ed5ab4a81114e216c8d4a5545b2ae8bcb9489db72e3c21a08",
+        "receipts_root_A": "cac30ef129a1c891b16053492ac71b9ee2e59ca30b0829e538489a08d66ba3c8",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "a8851ca010e923253734faeebab7aa1d8ef76dc477526a7c19e7f99774f090e8",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_front_back",
+      "variant": "owner_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": false,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "4d97e8dd3e6c052a8264f4ee3d898878ad287e04395ac9537fc1245b1c736471",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "4d97e8dd3e6c052a8264f4ee3d898878ad287e04395ac9537fc1245b1c736471"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "ef3f3eaad9454508dce2aee843fed3969a0a5fdc4cfca3daf7738bc0344f6844",
+        "receipts_root_A": "cac30ef129a1c891b16053492ac71b9ee2e59ca30b0829e538489a08d66ba3c8",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "a8851ca010e923253734faeebab7aa1d8ef76dc477526a7c19e7f99774f090e8",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_front_back",
+      "variant": "reviewer_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 0,
+        "candidate_holdout_terminal": 0,
+        "candidate_native_forward_sha256": "31cbf363b1080a753a67f98e4e77d022f8c29d187e6dff6d65a10719f84413cb",
+        "candidate_paid_ACK_receipts": 0,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": false,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "4d97e8dd3e6c052a8264f4ee3d898878ad287e04395ac9537fc1245b1c736471"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "08221afb492c55b673aaddb727634ada5dfee73784aa1b67b3b7a9650ffe8dc2",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "3fe610b29f054bcbd9546bb07175b2d3c1b03cb70c312dbb4f9755c89510de22",
+        "receipts_root_A": "cac30ef129a1c891b16053492ac71b9ee2e59ca30b0829e538489a08d66ba3c8",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "a8851ca010e923253734faeebab7aa1d8ef76dc477526a7c19e7f99774f090e8",
+        "threshold_before": 1,
+        "threshold_proposed": 2
+      },
+      "schedule": "eight_front_back",
+      "variant": "signed_unsafe",
+      "verdict": "VETO_SIGNED_SOURCE_SEMANTICS"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "4d97e8dd3e6c052a8264f4ee3d898878ad287e04395ac9537fc1245b1c736471",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "4d97e8dd3e6c052a8264f4ee3d898878ad287e04395ac9537fc1245b1c736471"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "5a798bb2b55152b2c71d37af9800a1628047c2d9f61d900f1bf31e626edcefac",
+        "receipts_root_A": "cac30ef129a1c891b16053492ac71b9ee2e59ca30b0829e538489a08d66ba3c8",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "a8851ca010e923253734faeebab7aa1d8ef76dc477526a7c19e7f99774f090e8",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_front_back",
+      "variant": "holdout_unsafe",
+      "verdict": "VETO_OFF_MATRIX_COUNTEREXAMPLE"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 21,
+        "candidate_holdout_terminal": 7,
+        "candidate_native_forward_sha256": "4d97e8dd3e6c052a8264f4ee3d898878ad287e04395ac9537fc1245b1c736471",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": true,
+        "program_changed": false,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "4d97e8dd3e6c052a8264f4ee3d898878ad287e04395ac9537fc1245b1c736471"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "99d0f5066d804ff2cf75d1c8fe9f00500ae135c65c3516eeb37698111ea89226",
+        "receipts_root_A": "cac30ef129a1c891b16053492ac71b9ee2e59ca30b0829e538489a08d66ba3c8",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "a8851ca010e923253734faeebab7aa1d8ef76dc477526a7c19e7f99774f090e8",
+        "threshold_before": 1,
+        "threshold_proposed": 1
+      },
+      "schedule": "eight_front_back",
+      "variant": "no_op",
+      "verdict": "VETO_NO_OP_NOT_LEARNING"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": false
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "d5dda367d695ed2bf7a5bf37ac5feed28716a778627c2fa324db733cc700bc85",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d5dda367d695ed2bf7a5bf37ac5feed28716a778627c2fa324db733cc700bc85"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "470ffd0c04d2c67be6b88e594b3f297974aabf9fe7e96d623399f72e3aa22470",
+        "receipts_root_A": "1625799e1b226c77fe89d6f5b777374f296bffd717e57fd203f4cf36045d158f",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "7fb62cbf0feb0fbdd627313a22c0fa0795fe63f34c9a801f05fe2c9a1ecd9992",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_front_back",
+      "variant": "owner_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": false,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "d5dda367d695ed2bf7a5bf37ac5feed28716a778627c2fa324db733cc700bc85",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d5dda367d695ed2bf7a5bf37ac5feed28716a778627c2fa324db733cc700bc85"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "f723259b6e61091d99d30278190d1ee7a5d8ad27e8a6bd2ebb9a7b8414ee5d4d",
+        "receipts_root_A": "1625799e1b226c77fe89d6f5b777374f296bffd717e57fd203f4cf36045d158f",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "7fb62cbf0feb0fbdd627313a22c0fa0795fe63f34c9a801f05fe2c9a1ecd9992",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_front_back",
+      "variant": "reviewer_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 0,
+        "candidate_holdout_terminal": 0,
+        "candidate_native_forward_sha256": "31cbf363b1080a753a67f98e4e77d022f8c29d187e6dff6d65a10719f84413cb",
+        "candidate_paid_ACK_receipts": 0,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": false,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d5dda367d695ed2bf7a5bf37ac5feed28716a778627c2fa324db733cc700bc85"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "08221afb492c55b673aaddb727634ada5dfee73784aa1b67b3b7a9650ffe8dc2",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "74969790a730299c8e62e9ff981a623043e081da33baa3bdc833efa23cb9629f",
+        "receipts_root_A": "1625799e1b226c77fe89d6f5b777374f296bffd717e57fd203f4cf36045d158f",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "7fb62cbf0feb0fbdd627313a22c0fa0795fe63f34c9a801f05fe2c9a1ecd9992",
+        "threshold_before": 1,
+        "threshold_proposed": 2
+      },
+      "schedule": "eight_front_back",
+      "variant": "signed_unsafe",
+      "verdict": "VETO_SIGNED_SOURCE_SEMANTICS"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "d5dda367d695ed2bf7a5bf37ac5feed28716a778627c2fa324db733cc700bc85",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d5dda367d695ed2bf7a5bf37ac5feed28716a778627c2fa324db733cc700bc85"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "bb3f65d8846efb39717f2389f11b850139b9d73a25ebfe5fee394c8a69cfa139",
+        "receipts_root_A": "1625799e1b226c77fe89d6f5b777374f296bffd717e57fd203f4cf36045d158f",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "7fb62cbf0feb0fbdd627313a22c0fa0795fe63f34c9a801f05fe2c9a1ecd9992",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_front_back",
+      "variant": "holdout_unsafe",
+      "verdict": "VETO_OFF_MATRIX_COUNTEREXAMPLE"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 21,
+        "candidate_holdout_terminal": 7,
+        "candidate_native_forward_sha256": "d5dda367d695ed2bf7a5bf37ac5feed28716a778627c2fa324db733cc700bc85",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": true,
+        "program_changed": false,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d5dda367d695ed2bf7a5bf37ac5feed28716a778627c2fa324db733cc700bc85"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "f3d4504f479f49ff215686c4d107ddccea39d6846a9376f82dc3993b44fcdf6c",
+        "receipts_root_A": "1625799e1b226c77fe89d6f5b777374f296bffd717e57fd203f4cf36045d158f",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "7fb62cbf0feb0fbdd627313a22c0fa0795fe63f34c9a801f05fe2c9a1ecd9992",
+        "threshold_before": 1,
+        "threshold_proposed": 1
+      },
+      "schedule": "eight_front_back",
+      "variant": "no_op",
+      "verdict": "VETO_NO_OP_NOT_LEARNING"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": false
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "4d97e8dd3e6c052a8264f4ee3d898878ad287e04395ac9537fc1245b1c736471",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "4d97e8dd3e6c052a8264f4ee3d898878ad287e04395ac9537fc1245b1c736471"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "50426f0d7eac254ed5ab4a81114e216c8d4a5545b2ae8bcb9489db72e3c21a08",
+        "receipts_root_A": "cac30ef129a1c891b16053492ac71b9ee2e59ca30b0829e538489a08d66ba3c8",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "a8851ca010e923253734faeebab7aa1d8ef76dc477526a7c19e7f99774f090e8",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_front_back",
+      "variant": "owner_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": false,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "4d97e8dd3e6c052a8264f4ee3d898878ad287e04395ac9537fc1245b1c736471",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "4d97e8dd3e6c052a8264f4ee3d898878ad287e04395ac9537fc1245b1c736471"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "ef3f3eaad9454508dce2aee843fed3969a0a5fdc4cfca3daf7738bc0344f6844",
+        "receipts_root_A": "cac30ef129a1c891b16053492ac71b9ee2e59ca30b0829e538489a08d66ba3c8",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "a8851ca010e923253734faeebab7aa1d8ef76dc477526a7c19e7f99774f090e8",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_front_back",
+      "variant": "reviewer_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 0,
+        "candidate_holdout_terminal": 0,
+        "candidate_native_forward_sha256": "31cbf363b1080a753a67f98e4e77d022f8c29d187e6dff6d65a10719f84413cb",
+        "candidate_paid_ACK_receipts": 0,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": false,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "4d97e8dd3e6c052a8264f4ee3d898878ad287e04395ac9537fc1245b1c736471"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "08221afb492c55b673aaddb727634ada5dfee73784aa1b67b3b7a9650ffe8dc2",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "3fe610b29f054bcbd9546bb07175b2d3c1b03cb70c312dbb4f9755c89510de22",
+        "receipts_root_A": "cac30ef129a1c891b16053492ac71b9ee2e59ca30b0829e538489a08d66ba3c8",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "a8851ca010e923253734faeebab7aa1d8ef76dc477526a7c19e7f99774f090e8",
+        "threshold_before": 1,
+        "threshold_proposed": 2
+      },
+      "schedule": "eight_front_back",
+      "variant": "signed_unsafe",
+      "verdict": "VETO_SIGNED_SOURCE_SEMANTICS"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "4d97e8dd3e6c052a8264f4ee3d898878ad287e04395ac9537fc1245b1c736471",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "4d97e8dd3e6c052a8264f4ee3d898878ad287e04395ac9537fc1245b1c736471"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "5a798bb2b55152b2c71d37af9800a1628047c2d9f61d900f1bf31e626edcefac",
+        "receipts_root_A": "cac30ef129a1c891b16053492ac71b9ee2e59ca30b0829e538489a08d66ba3c8",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "a8851ca010e923253734faeebab7aa1d8ef76dc477526a7c19e7f99774f090e8",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_front_back",
+      "variant": "holdout_unsafe",
+      "verdict": "VETO_OFF_MATRIX_COUNTEREXAMPLE"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 21,
+        "candidate_holdout_terminal": 7,
+        "candidate_native_forward_sha256": "4d97e8dd3e6c052a8264f4ee3d898878ad287e04395ac9537fc1245b1c736471",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": true,
+        "program_changed": false,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "4d97e8dd3e6c052a8264f4ee3d898878ad287e04395ac9537fc1245b1c736471"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "99d0f5066d804ff2cf75d1c8fe9f00500ae135c65c3516eeb37698111ea89226",
+        "receipts_root_A": "cac30ef129a1c891b16053492ac71b9ee2e59ca30b0829e538489a08d66ba3c8",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "a8851ca010e923253734faeebab7aa1d8ef76dc477526a7c19e7f99774f090e8",
+        "threshold_before": 1,
+        "threshold_proposed": 1
+      },
+      "schedule": "eight_front_back",
+      "variant": "no_op",
+      "verdict": "VETO_NO_OP_NOT_LEARNING"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": false
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "d5dda367d695ed2bf7a5bf37ac5feed28716a778627c2fa324db733cc700bc85",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d5dda367d695ed2bf7a5bf37ac5feed28716a778627c2fa324db733cc700bc85"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "470ffd0c04d2c67be6b88e594b3f297974aabf9fe7e96d623399f72e3aa22470",
+        "receipts_root_A": "1625799e1b226c77fe89d6f5b777374f296bffd717e57fd203f4cf36045d158f",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "7fb62cbf0feb0fbdd627313a22c0fa0795fe63f34c9a801f05fe2c9a1ecd9992",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_front_back",
+      "variant": "owner_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": false,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "d5dda367d695ed2bf7a5bf37ac5feed28716a778627c2fa324db733cc700bc85",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d5dda367d695ed2bf7a5bf37ac5feed28716a778627c2fa324db733cc700bc85"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "f723259b6e61091d99d30278190d1ee7a5d8ad27e8a6bd2ebb9a7b8414ee5d4d",
+        "receipts_root_A": "1625799e1b226c77fe89d6f5b777374f296bffd717e57fd203f4cf36045d158f",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "7fb62cbf0feb0fbdd627313a22c0fa0795fe63f34c9a801f05fe2c9a1ecd9992",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_front_back",
+      "variant": "reviewer_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 0,
+        "candidate_holdout_terminal": 0,
+        "candidate_native_forward_sha256": "31cbf363b1080a753a67f98e4e77d022f8c29d187e6dff6d65a10719f84413cb",
+        "candidate_paid_ACK_receipts": 0,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": false,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d5dda367d695ed2bf7a5bf37ac5feed28716a778627c2fa324db733cc700bc85"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "08221afb492c55b673aaddb727634ada5dfee73784aa1b67b3b7a9650ffe8dc2",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "74969790a730299c8e62e9ff981a623043e081da33baa3bdc833efa23cb9629f",
+        "receipts_root_A": "1625799e1b226c77fe89d6f5b777374f296bffd717e57fd203f4cf36045d158f",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "7fb62cbf0feb0fbdd627313a22c0fa0795fe63f34c9a801f05fe2c9a1ecd9992",
+        "threshold_before": 1,
+        "threshold_proposed": 2
+      },
+      "schedule": "eight_front_back",
+      "variant": "signed_unsafe",
+      "verdict": "VETO_SIGNED_SOURCE_SEMANTICS"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "d5dda367d695ed2bf7a5bf37ac5feed28716a778627c2fa324db733cc700bc85",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d5dda367d695ed2bf7a5bf37ac5feed28716a778627c2fa324db733cc700bc85"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "bb3f65d8846efb39717f2389f11b850139b9d73a25ebfe5fee394c8a69cfa139",
+        "receipts_root_A": "1625799e1b226c77fe89d6f5b777374f296bffd717e57fd203f4cf36045d158f",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "7fb62cbf0feb0fbdd627313a22c0fa0795fe63f34c9a801f05fe2c9a1ecd9992",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_front_back",
+      "variant": "holdout_unsafe",
+      "verdict": "VETO_OFF_MATRIX_COUNTEREXAMPLE"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 21,
+        "candidate_holdout_terminal": 7,
+        "candidate_native_forward_sha256": "d5dda367d695ed2bf7a5bf37ac5feed28716a778627c2fa324db733cc700bc85",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": true,
+        "program_changed": false,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d5dda367d695ed2bf7a5bf37ac5feed28716a778627c2fa324db733cc700bc85"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "f3d4504f479f49ff215686c4d107ddccea39d6846a9376f82dc3993b44fcdf6c",
+        "receipts_root_A": "1625799e1b226c77fe89d6f5b777374f296bffd717e57fd203f4cf36045d158f",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "7fb62cbf0feb0fbdd627313a22c0fa0795fe63f34c9a801f05fe2c9a1ecd9992",
+        "threshold_before": 1,
+        "threshold_proposed": 1
+      },
+      "schedule": "eight_front_back",
+      "variant": "no_op",
+      "verdict": "VETO_NO_OP_NOT_LEARNING"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": false
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "4d97e8dd3e6c052a8264f4ee3d898878ad287e04395ac9537fc1245b1c736471",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "4d97e8dd3e6c052a8264f4ee3d898878ad287e04395ac9537fc1245b1c736471"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "50426f0d7eac254ed5ab4a81114e216c8d4a5545b2ae8bcb9489db72e3c21a08",
+        "receipts_root_A": "cac30ef129a1c891b16053492ac71b9ee2e59ca30b0829e538489a08d66ba3c8",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "a8851ca010e923253734faeebab7aa1d8ef76dc477526a7c19e7f99774f090e8",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_front_back",
+      "variant": "owner_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": false,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "4d97e8dd3e6c052a8264f4ee3d898878ad287e04395ac9537fc1245b1c736471",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "4d97e8dd3e6c052a8264f4ee3d898878ad287e04395ac9537fc1245b1c736471"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "ef3f3eaad9454508dce2aee843fed3969a0a5fdc4cfca3daf7738bc0344f6844",
+        "receipts_root_A": "cac30ef129a1c891b16053492ac71b9ee2e59ca30b0829e538489a08d66ba3c8",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "a8851ca010e923253734faeebab7aa1d8ef76dc477526a7c19e7f99774f090e8",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_front_back",
+      "variant": "reviewer_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 0,
+        "candidate_holdout_terminal": 0,
+        "candidate_native_forward_sha256": "31cbf363b1080a753a67f98e4e77d022f8c29d187e6dff6d65a10719f84413cb",
+        "candidate_paid_ACK_receipts": 0,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": false,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "4d97e8dd3e6c052a8264f4ee3d898878ad287e04395ac9537fc1245b1c736471"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "08221afb492c55b673aaddb727634ada5dfee73784aa1b67b3b7a9650ffe8dc2",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "3fe610b29f054bcbd9546bb07175b2d3c1b03cb70c312dbb4f9755c89510de22",
+        "receipts_root_A": "cac30ef129a1c891b16053492ac71b9ee2e59ca30b0829e538489a08d66ba3c8",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "a8851ca010e923253734faeebab7aa1d8ef76dc477526a7c19e7f99774f090e8",
+        "threshold_before": 1,
+        "threshold_proposed": 2
+      },
+      "schedule": "eight_front_back",
+      "variant": "signed_unsafe",
+      "verdict": "VETO_SIGNED_SOURCE_SEMANTICS"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "4d97e8dd3e6c052a8264f4ee3d898878ad287e04395ac9537fc1245b1c736471",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "4d97e8dd3e6c052a8264f4ee3d898878ad287e04395ac9537fc1245b1c736471"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "5a798bb2b55152b2c71d37af9800a1628047c2d9f61d900f1bf31e626edcefac",
+        "receipts_root_A": "cac30ef129a1c891b16053492ac71b9ee2e59ca30b0829e538489a08d66ba3c8",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "a8851ca010e923253734faeebab7aa1d8ef76dc477526a7c19e7f99774f090e8",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_front_back",
+      "variant": "holdout_unsafe",
+      "verdict": "VETO_OFF_MATRIX_COUNTEREXAMPLE"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 21,
+        "candidate_holdout_terminal": 7,
+        "candidate_native_forward_sha256": "4d97e8dd3e6c052a8264f4ee3d898878ad287e04395ac9537fc1245b1c736471",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": true,
+        "program_changed": false,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "4d97e8dd3e6c052a8264f4ee3d898878ad287e04395ac9537fc1245b1c736471"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "99d0f5066d804ff2cf75d1c8fe9f00500ae135c65c3516eeb37698111ea89226",
+        "receipts_root_A": "cac30ef129a1c891b16053492ac71b9ee2e59ca30b0829e538489a08d66ba3c8",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "a8851ca010e923253734faeebab7aa1d8ef76dc477526a7c19e7f99774f090e8",
+        "threshold_before": 1,
+        "threshold_proposed": 1
+      },
+      "schedule": "eight_front_back",
+      "variant": "no_op",
+      "verdict": "VETO_NO_OP_NOT_LEARNING"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": false
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "d5dda367d695ed2bf7a5bf37ac5feed28716a778627c2fa324db733cc700bc85",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d5dda367d695ed2bf7a5bf37ac5feed28716a778627c2fa324db733cc700bc85"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "470ffd0c04d2c67be6b88e594b3f297974aabf9fe7e96d623399f72e3aa22470",
+        "receipts_root_A": "1625799e1b226c77fe89d6f5b777374f296bffd717e57fd203f4cf36045d158f",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "7fb62cbf0feb0fbdd627313a22c0fa0795fe63f34c9a801f05fe2c9a1ecd9992",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_front_back",
+      "variant": "owner_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": false,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "d5dda367d695ed2bf7a5bf37ac5feed28716a778627c2fa324db733cc700bc85",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d5dda367d695ed2bf7a5bf37ac5feed28716a778627c2fa324db733cc700bc85"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "f723259b6e61091d99d30278190d1ee7a5d8ad27e8a6bd2ebb9a7b8414ee5d4d",
+        "receipts_root_A": "1625799e1b226c77fe89d6f5b777374f296bffd717e57fd203f4cf36045d158f",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "7fb62cbf0feb0fbdd627313a22c0fa0795fe63f34c9a801f05fe2c9a1ecd9992",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_front_back",
+      "variant": "reviewer_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 0,
+        "candidate_holdout_terminal": 0,
+        "candidate_native_forward_sha256": "31cbf363b1080a753a67f98e4e77d022f8c29d187e6dff6d65a10719f84413cb",
+        "candidate_paid_ACK_receipts": 0,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": false,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d5dda367d695ed2bf7a5bf37ac5feed28716a778627c2fa324db733cc700bc85"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "08221afb492c55b673aaddb727634ada5dfee73784aa1b67b3b7a9650ffe8dc2",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "74969790a730299c8e62e9ff981a623043e081da33baa3bdc833efa23cb9629f",
+        "receipts_root_A": "1625799e1b226c77fe89d6f5b777374f296bffd717e57fd203f4cf36045d158f",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "7fb62cbf0feb0fbdd627313a22c0fa0795fe63f34c9a801f05fe2c9a1ecd9992",
+        "threshold_before": 1,
+        "threshold_proposed": 2
+      },
+      "schedule": "eight_front_back",
+      "variant": "signed_unsafe",
+      "verdict": "VETO_SIGNED_SOURCE_SEMANTICS"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "d5dda367d695ed2bf7a5bf37ac5feed28716a778627c2fa324db733cc700bc85",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d5dda367d695ed2bf7a5bf37ac5feed28716a778627c2fa324db733cc700bc85"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "bb3f65d8846efb39717f2389f11b850139b9d73a25ebfe5fee394c8a69cfa139",
+        "receipts_root_A": "1625799e1b226c77fe89d6f5b777374f296bffd717e57fd203f4cf36045d158f",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "7fb62cbf0feb0fbdd627313a22c0fa0795fe63f34c9a801f05fe2c9a1ecd9992",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_front_back",
+      "variant": "holdout_unsafe",
+      "verdict": "VETO_OFF_MATRIX_COUNTEREXAMPLE"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 21,
+        "candidate_holdout_terminal": 7,
+        "candidate_native_forward_sha256": "d5dda367d695ed2bf7a5bf37ac5feed28716a778627c2fa324db733cc700bc85",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": true,
+        "program_changed": false,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d5dda367d695ed2bf7a5bf37ac5feed28716a778627c2fa324db733cc700bc85"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "f3d4504f479f49ff215686c4d107ddccea39d6846a9376f82dc3993b44fcdf6c",
+        "receipts_root_A": "1625799e1b226c77fe89d6f5b777374f296bffd717e57fd203f4cf36045d158f",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "7fb62cbf0feb0fbdd627313a22c0fa0795fe63f34c9a801f05fe2c9a1ecd9992",
+        "threshold_before": 1,
+        "threshold_proposed": 1
+      },
+      "schedule": "eight_front_back",
+      "variant": "no_op",
+      "verdict": "VETO_NO_OP_NOT_LEARNING"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": false
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "d4fce383d9a5bcd843224c87489a26a237e0c7e018c37d6bf7b2c77303e4901b",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d4fce383d9a5bcd843224c87489a26a237e0c7e018c37d6bf7b2c77303e4901b"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "e96d2ef5a270fc5df4d97a0f0d76dd922c2e514dd82d4e3cce7b619514e056d2",
+        "receipts_root_A": "f8da6f7af209b5539734461d7d8fb4b85d5c97431b65f3221fd535d301ac7d59",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "238ece5371b051fd68411b0c7897cf79ea8394bd502c6bdf031c148e39a95ee2",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "owner_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": false,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "d4fce383d9a5bcd843224c87489a26a237e0c7e018c37d6bf7b2c77303e4901b",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d4fce383d9a5bcd843224c87489a26a237e0c7e018c37d6bf7b2c77303e4901b"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "40c4a7ce8044ee905ea579d76f405f40cdeb17db5f770da58f553c19960321f0",
+        "receipts_root_A": "f8da6f7af209b5539734461d7d8fb4b85d5c97431b65f3221fd535d301ac7d59",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "238ece5371b051fd68411b0c7897cf79ea8394bd502c6bdf031c148e39a95ee2",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "reviewer_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 0,
+        "candidate_holdout_terminal": 0,
+        "candidate_native_forward_sha256": "5103c886faa2c1e3563a71b2a6ad5e2f54170b499e0e36a5a72010d7cb74e4e6",
+        "candidate_paid_ACK_receipts": 0,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": false,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d4fce383d9a5bcd843224c87489a26a237e0c7e018c37d6bf7b2c77303e4901b"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "08221afb492c55b673aaddb727634ada5dfee73784aa1b67b3b7a9650ffe8dc2",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "d40f001e3687ae2b7d951451dbd9985943f809b56cf972d0e3502b7030780da8",
+        "receipts_root_A": "f8da6f7af209b5539734461d7d8fb4b85d5c97431b65f3221fd535d301ac7d59",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "238ece5371b051fd68411b0c7897cf79ea8394bd502c6bdf031c148e39a95ee2",
+        "threshold_before": 1,
+        "threshold_proposed": 2
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "signed_unsafe",
+      "verdict": "VETO_SIGNED_SOURCE_SEMANTICS"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "d4fce383d9a5bcd843224c87489a26a237e0c7e018c37d6bf7b2c77303e4901b",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d4fce383d9a5bcd843224c87489a26a237e0c7e018c37d6bf7b2c77303e4901b"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "a37ed6dc1920c6915282f37f4da8d8dfe09ab5e2cfca9fb91169914d2cb1a9ff",
+        "receipts_root_A": "f8da6f7af209b5539734461d7d8fb4b85d5c97431b65f3221fd535d301ac7d59",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "238ece5371b051fd68411b0c7897cf79ea8394bd502c6bdf031c148e39a95ee2",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "holdout_unsafe",
+      "verdict": "VETO_OFF_MATRIX_COUNTEREXAMPLE"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 21,
+        "candidate_holdout_terminal": 7,
+        "candidate_native_forward_sha256": "d4fce383d9a5bcd843224c87489a26a237e0c7e018c37d6bf7b2c77303e4901b",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": true,
+        "program_changed": false,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d4fce383d9a5bcd843224c87489a26a237e0c7e018c37d6bf7b2c77303e4901b"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "c9353ed6e7c9a55c07ff5f2a2521008b1140e13937aafaf5b096b50d5d4b228b",
+        "receipts_root_A": "f8da6f7af209b5539734461d7d8fb4b85d5c97431b65f3221fd535d301ac7d59",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "238ece5371b051fd68411b0c7897cf79ea8394bd502c6bdf031c148e39a95ee2",
+        "threshold_before": 1,
+        "threshold_proposed": 1
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "no_op",
+      "verdict": "VETO_NO_OP_NOT_LEARNING"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": false
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "f4204046d0bb87787c0b0b77f75dc27b7936b1755dee33db44e071196fe6f78e",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "f4204046d0bb87787c0b0b77f75dc27b7936b1755dee33db44e071196fe6f78e"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "58f793eed78637a11fd7cdbc203c375016e14444cde1de07a7cb4ee3a217a451",
+        "receipts_root_A": "ed099ff0c599d0c8286c740c543093d0769bc06ad67b404aec22925f61ebdb7c",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "d0b80c52b32375321420aedc812c5cc4c4769804f1ad50ecc30e967a81eae0ce",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "owner_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": false,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "f4204046d0bb87787c0b0b77f75dc27b7936b1755dee33db44e071196fe6f78e",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "f4204046d0bb87787c0b0b77f75dc27b7936b1755dee33db44e071196fe6f78e"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "11f76786097aa8e2591052bcbb87b2467a16112ba639f24aec863cd6e10533df",
+        "receipts_root_A": "ed099ff0c599d0c8286c740c543093d0769bc06ad67b404aec22925f61ebdb7c",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "d0b80c52b32375321420aedc812c5cc4c4769804f1ad50ecc30e967a81eae0ce",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "reviewer_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 0,
+        "candidate_holdout_terminal": 0,
+        "candidate_native_forward_sha256": "5103c886faa2c1e3563a71b2a6ad5e2f54170b499e0e36a5a72010d7cb74e4e6",
+        "candidate_paid_ACK_receipts": 0,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": false,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "f4204046d0bb87787c0b0b77f75dc27b7936b1755dee33db44e071196fe6f78e"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "08221afb492c55b673aaddb727634ada5dfee73784aa1b67b3b7a9650ffe8dc2",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "a81505b380bd459b961365d51408a5aed0889afa5cfa769b41bcad88022a1efa",
+        "receipts_root_A": "ed099ff0c599d0c8286c740c543093d0769bc06ad67b404aec22925f61ebdb7c",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "d0b80c52b32375321420aedc812c5cc4c4769804f1ad50ecc30e967a81eae0ce",
+        "threshold_before": 1,
+        "threshold_proposed": 2
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "signed_unsafe",
+      "verdict": "VETO_SIGNED_SOURCE_SEMANTICS"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "f4204046d0bb87787c0b0b77f75dc27b7936b1755dee33db44e071196fe6f78e",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "f4204046d0bb87787c0b0b77f75dc27b7936b1755dee33db44e071196fe6f78e"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "4c454436009c866f8090ddf840e49b2f2f4f9be315f7a62a68775fc15c1420d1",
+        "receipts_root_A": "ed099ff0c599d0c8286c740c543093d0769bc06ad67b404aec22925f61ebdb7c",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "d0b80c52b32375321420aedc812c5cc4c4769804f1ad50ecc30e967a81eae0ce",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "holdout_unsafe",
+      "verdict": "VETO_OFF_MATRIX_COUNTEREXAMPLE"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 21,
+        "candidate_holdout_terminal": 7,
+        "candidate_native_forward_sha256": "f4204046d0bb87787c0b0b77f75dc27b7936b1755dee33db44e071196fe6f78e",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": true,
+        "program_changed": false,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "f4204046d0bb87787c0b0b77f75dc27b7936b1755dee33db44e071196fe6f78e"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "a1ed9f4c3bd5112aa6761d4d299e9b04fe038f5408050faf7330e8e17ac31b86",
+        "receipts_root_A": "ed099ff0c599d0c8286c740c543093d0769bc06ad67b404aec22925f61ebdb7c",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "d0b80c52b32375321420aedc812c5cc4c4769804f1ad50ecc30e967a81eae0ce",
+        "threshold_before": 1,
+        "threshold_proposed": 1
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "no_op",
+      "verdict": "VETO_NO_OP_NOT_LEARNING"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": false
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "d4fce383d9a5bcd843224c87489a26a237e0c7e018c37d6bf7b2c77303e4901b",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d4fce383d9a5bcd843224c87489a26a237e0c7e018c37d6bf7b2c77303e4901b"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "e96d2ef5a270fc5df4d97a0f0d76dd922c2e514dd82d4e3cce7b619514e056d2",
+        "receipts_root_A": "f8da6f7af209b5539734461d7d8fb4b85d5c97431b65f3221fd535d301ac7d59",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "238ece5371b051fd68411b0c7897cf79ea8394bd502c6bdf031c148e39a95ee2",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "owner_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": false,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "d4fce383d9a5bcd843224c87489a26a237e0c7e018c37d6bf7b2c77303e4901b",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d4fce383d9a5bcd843224c87489a26a237e0c7e018c37d6bf7b2c77303e4901b"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "40c4a7ce8044ee905ea579d76f405f40cdeb17db5f770da58f553c19960321f0",
+        "receipts_root_A": "f8da6f7af209b5539734461d7d8fb4b85d5c97431b65f3221fd535d301ac7d59",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "238ece5371b051fd68411b0c7897cf79ea8394bd502c6bdf031c148e39a95ee2",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "reviewer_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 0,
+        "candidate_holdout_terminal": 0,
+        "candidate_native_forward_sha256": "5103c886faa2c1e3563a71b2a6ad5e2f54170b499e0e36a5a72010d7cb74e4e6",
+        "candidate_paid_ACK_receipts": 0,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": false,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d4fce383d9a5bcd843224c87489a26a237e0c7e018c37d6bf7b2c77303e4901b"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "08221afb492c55b673aaddb727634ada5dfee73784aa1b67b3b7a9650ffe8dc2",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "d40f001e3687ae2b7d951451dbd9985943f809b56cf972d0e3502b7030780da8",
+        "receipts_root_A": "f8da6f7af209b5539734461d7d8fb4b85d5c97431b65f3221fd535d301ac7d59",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "238ece5371b051fd68411b0c7897cf79ea8394bd502c6bdf031c148e39a95ee2",
+        "threshold_before": 1,
+        "threshold_proposed": 2
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "signed_unsafe",
+      "verdict": "VETO_SIGNED_SOURCE_SEMANTICS"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "d4fce383d9a5bcd843224c87489a26a237e0c7e018c37d6bf7b2c77303e4901b",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d4fce383d9a5bcd843224c87489a26a237e0c7e018c37d6bf7b2c77303e4901b"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "a37ed6dc1920c6915282f37f4da8d8dfe09ab5e2cfca9fb91169914d2cb1a9ff",
+        "receipts_root_A": "f8da6f7af209b5539734461d7d8fb4b85d5c97431b65f3221fd535d301ac7d59",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "238ece5371b051fd68411b0c7897cf79ea8394bd502c6bdf031c148e39a95ee2",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "holdout_unsafe",
+      "verdict": "VETO_OFF_MATRIX_COUNTEREXAMPLE"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 21,
+        "candidate_holdout_terminal": 7,
+        "candidate_native_forward_sha256": "d4fce383d9a5bcd843224c87489a26a237e0c7e018c37d6bf7b2c77303e4901b",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": true,
+        "program_changed": false,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d4fce383d9a5bcd843224c87489a26a237e0c7e018c37d6bf7b2c77303e4901b"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "c9353ed6e7c9a55c07ff5f2a2521008b1140e13937aafaf5b096b50d5d4b228b",
+        "receipts_root_A": "f8da6f7af209b5539734461d7d8fb4b85d5c97431b65f3221fd535d301ac7d59",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "238ece5371b051fd68411b0c7897cf79ea8394bd502c6bdf031c148e39a95ee2",
+        "threshold_before": 1,
+        "threshold_proposed": 1
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "no_op",
+      "verdict": "VETO_NO_OP_NOT_LEARNING"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": false
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "f4204046d0bb87787c0b0b77f75dc27b7936b1755dee33db44e071196fe6f78e",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "f4204046d0bb87787c0b0b77f75dc27b7936b1755dee33db44e071196fe6f78e"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "58f793eed78637a11fd7cdbc203c375016e14444cde1de07a7cb4ee3a217a451",
+        "receipts_root_A": "ed099ff0c599d0c8286c740c543093d0769bc06ad67b404aec22925f61ebdb7c",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "d0b80c52b32375321420aedc812c5cc4c4769804f1ad50ecc30e967a81eae0ce",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "owner_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": false,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "f4204046d0bb87787c0b0b77f75dc27b7936b1755dee33db44e071196fe6f78e",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "f4204046d0bb87787c0b0b77f75dc27b7936b1755dee33db44e071196fe6f78e"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "11f76786097aa8e2591052bcbb87b2467a16112ba639f24aec863cd6e10533df",
+        "receipts_root_A": "ed099ff0c599d0c8286c740c543093d0769bc06ad67b404aec22925f61ebdb7c",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "d0b80c52b32375321420aedc812c5cc4c4769804f1ad50ecc30e967a81eae0ce",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "reviewer_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 0,
+        "candidate_holdout_terminal": 0,
+        "candidate_native_forward_sha256": "5103c886faa2c1e3563a71b2a6ad5e2f54170b499e0e36a5a72010d7cb74e4e6",
+        "candidate_paid_ACK_receipts": 0,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": false,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "f4204046d0bb87787c0b0b77f75dc27b7936b1755dee33db44e071196fe6f78e"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "08221afb492c55b673aaddb727634ada5dfee73784aa1b67b3b7a9650ffe8dc2",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "a81505b380bd459b961365d51408a5aed0889afa5cfa769b41bcad88022a1efa",
+        "receipts_root_A": "ed099ff0c599d0c8286c740c543093d0769bc06ad67b404aec22925f61ebdb7c",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "d0b80c52b32375321420aedc812c5cc4c4769804f1ad50ecc30e967a81eae0ce",
+        "threshold_before": 1,
+        "threshold_proposed": 2
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "signed_unsafe",
+      "verdict": "VETO_SIGNED_SOURCE_SEMANTICS"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "f4204046d0bb87787c0b0b77f75dc27b7936b1755dee33db44e071196fe6f78e",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "f4204046d0bb87787c0b0b77f75dc27b7936b1755dee33db44e071196fe6f78e"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "4c454436009c866f8090ddf840e49b2f2f4f9be315f7a62a68775fc15c1420d1",
+        "receipts_root_A": "ed099ff0c599d0c8286c740c543093d0769bc06ad67b404aec22925f61ebdb7c",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "d0b80c52b32375321420aedc812c5cc4c4769804f1ad50ecc30e967a81eae0ce",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "holdout_unsafe",
+      "verdict": "VETO_OFF_MATRIX_COUNTEREXAMPLE"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 21,
+        "candidate_holdout_terminal": 7,
+        "candidate_native_forward_sha256": "f4204046d0bb87787c0b0b77f75dc27b7936b1755dee33db44e071196fe6f78e",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": true,
+        "program_changed": false,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "f4204046d0bb87787c0b0b77f75dc27b7936b1755dee33db44e071196fe6f78e"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "a1ed9f4c3bd5112aa6761d4d299e9b04fe038f5408050faf7330e8e17ac31b86",
+        "receipts_root_A": "ed099ff0c599d0c8286c740c543093d0769bc06ad67b404aec22925f61ebdb7c",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "d0b80c52b32375321420aedc812c5cc4c4769804f1ad50ecc30e967a81eae0ce",
+        "threshold_before": 1,
+        "threshold_proposed": 1
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "no_op",
+      "verdict": "VETO_NO_OP_NOT_LEARNING"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": false
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "d4fce383d9a5bcd843224c87489a26a237e0c7e018c37d6bf7b2c77303e4901b",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d4fce383d9a5bcd843224c87489a26a237e0c7e018c37d6bf7b2c77303e4901b"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "e96d2ef5a270fc5df4d97a0f0d76dd922c2e514dd82d4e3cce7b619514e056d2",
+        "receipts_root_A": "f8da6f7af209b5539734461d7d8fb4b85d5c97431b65f3221fd535d301ac7d59",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "238ece5371b051fd68411b0c7897cf79ea8394bd502c6bdf031c148e39a95ee2",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "owner_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": false,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "d4fce383d9a5bcd843224c87489a26a237e0c7e018c37d6bf7b2c77303e4901b",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d4fce383d9a5bcd843224c87489a26a237e0c7e018c37d6bf7b2c77303e4901b"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "40c4a7ce8044ee905ea579d76f405f40cdeb17db5f770da58f553c19960321f0",
+        "receipts_root_A": "f8da6f7af209b5539734461d7d8fb4b85d5c97431b65f3221fd535d301ac7d59",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "238ece5371b051fd68411b0c7897cf79ea8394bd502c6bdf031c148e39a95ee2",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "reviewer_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 0,
+        "candidate_holdout_terminal": 0,
+        "candidate_native_forward_sha256": "5103c886faa2c1e3563a71b2a6ad5e2f54170b499e0e36a5a72010d7cb74e4e6",
+        "candidate_paid_ACK_receipts": 0,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": false,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d4fce383d9a5bcd843224c87489a26a237e0c7e018c37d6bf7b2c77303e4901b"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "08221afb492c55b673aaddb727634ada5dfee73784aa1b67b3b7a9650ffe8dc2",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "d40f001e3687ae2b7d951451dbd9985943f809b56cf972d0e3502b7030780da8",
+        "receipts_root_A": "f8da6f7af209b5539734461d7d8fb4b85d5c97431b65f3221fd535d301ac7d59",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "238ece5371b051fd68411b0c7897cf79ea8394bd502c6bdf031c148e39a95ee2",
+        "threshold_before": 1,
+        "threshold_proposed": 2
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "signed_unsafe",
+      "verdict": "VETO_SIGNED_SOURCE_SEMANTICS"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "d4fce383d9a5bcd843224c87489a26a237e0c7e018c37d6bf7b2c77303e4901b",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d4fce383d9a5bcd843224c87489a26a237e0c7e018c37d6bf7b2c77303e4901b"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "a37ed6dc1920c6915282f37f4da8d8dfe09ab5e2cfca9fb91169914d2cb1a9ff",
+        "receipts_root_A": "f8da6f7af209b5539734461d7d8fb4b85d5c97431b65f3221fd535d301ac7d59",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "238ece5371b051fd68411b0c7897cf79ea8394bd502c6bdf031c148e39a95ee2",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "holdout_unsafe",
+      "verdict": "VETO_OFF_MATRIX_COUNTEREXAMPLE"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 21,
+        "candidate_holdout_terminal": 7,
+        "candidate_native_forward_sha256": "d4fce383d9a5bcd843224c87489a26a237e0c7e018c37d6bf7b2c77303e4901b",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": true,
+        "program_changed": false,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "d4fce383d9a5bcd843224c87489a26a237e0c7e018c37d6bf7b2c77303e4901b"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "c9353ed6e7c9a55c07ff5f2a2521008b1140e13937aafaf5b096b50d5d4b228b",
+        "receipts_root_A": "f8da6f7af209b5539734461d7d8fb4b85d5c97431b65f3221fd535d301ac7d59",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "238ece5371b051fd68411b0c7897cf79ea8394bd502c6bdf031c148e39a95ee2",
+        "threshold_before": 1,
+        "threshold_proposed": 1
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "no_op",
+      "verdict": "VETO_NO_OP_NOT_LEARNING"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": false
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "bc8b018c443091a1e7d0c8192a0e8d580b07416268f28ee5e3b31e9b591afc43",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "bc8b018c443091a1e7d0c8192a0e8d580b07416268f28ee5e3b31e9b591afc43"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "c17f7f84e30410649347582a8bc7958aa934aa3d1f8ed835a203d77877f7f288",
+        "receipts_root_A": "7af5a24c835b021cbd5526c5a2a4d5d02d5c92c74b41262be0fdafdbb12a622e",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "0ff383dc8f042ea9e4e15601608b2dd9c66067f0c27b8296fed3232625256e44",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "owner_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": false,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "bc8b018c443091a1e7d0c8192a0e8d580b07416268f28ee5e3b31e9b591afc43",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "bc8b018c443091a1e7d0c8192a0e8d580b07416268f28ee5e3b31e9b591afc43"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "7a3478678c7ed826d61713b7bf2562c415f9bb757f6720e4c6db521db51720e0",
+        "receipts_root_A": "7af5a24c835b021cbd5526c5a2a4d5d02d5c92c74b41262be0fdafdbb12a622e",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "0ff383dc8f042ea9e4e15601608b2dd9c66067f0c27b8296fed3232625256e44",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "reviewer_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 0,
+        "candidate_holdout_terminal": 0,
+        "candidate_native_forward_sha256": "5103c886faa2c1e3563a71b2a6ad5e2f54170b499e0e36a5a72010d7cb74e4e6",
+        "candidate_paid_ACK_receipts": 0,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": false,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "bc8b018c443091a1e7d0c8192a0e8d580b07416268f28ee5e3b31e9b591afc43"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "08221afb492c55b673aaddb727634ada5dfee73784aa1b67b3b7a9650ffe8dc2",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "a062e4c5aa626254385340faba427160a0e441ac9791cca621dda3657b4474ba",
+        "receipts_root_A": "7af5a24c835b021cbd5526c5a2a4d5d02d5c92c74b41262be0fdafdbb12a622e",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "0ff383dc8f042ea9e4e15601608b2dd9c66067f0c27b8296fed3232625256e44",
+        "threshold_before": 1,
+        "threshold_proposed": 2
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "signed_unsafe",
+      "verdict": "VETO_SIGNED_SOURCE_SEMANTICS"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "bc8b018c443091a1e7d0c8192a0e8d580b07416268f28ee5e3b31e9b591afc43",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "bc8b018c443091a1e7d0c8192a0e8d580b07416268f28ee5e3b31e9b591afc43"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "7ec01cd8a86ddb718519137e8d99cbb3cc75854d65bede983dc7e879afa06735",
+        "receipts_root_A": "7af5a24c835b021cbd5526c5a2a4d5d02d5c92c74b41262be0fdafdbb12a622e",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "0ff383dc8f042ea9e4e15601608b2dd9c66067f0c27b8296fed3232625256e44",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "holdout_unsafe",
+      "verdict": "VETO_OFF_MATRIX_COUNTEREXAMPLE"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 21,
+        "candidate_holdout_terminal": 7,
+        "candidate_native_forward_sha256": "bc8b018c443091a1e7d0c8192a0e8d580b07416268f28ee5e3b31e9b591afc43",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": true,
+        "program_changed": false,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "bc8b018c443091a1e7d0c8192a0e8d580b07416268f28ee5e3b31e9b591afc43"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "af5b1e202f2d7a790e8402b4dcc99d8c4f404df9e9395b2362aa3ad8a0f83f5d",
+        "receipts_root_A": "7af5a24c835b021cbd5526c5a2a4d5d02d5c92c74b41262be0fdafdbb12a622e",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "0ff383dc8f042ea9e4e15601608b2dd9c66067f0c27b8296fed3232625256e44",
+        "threshold_before": 1,
+        "threshold_proposed": 1
+      },
+      "schedule": "eight_nine_gap",
+      "variant": "no_op",
+      "verdict": "VETO_NO_OP_NOT_LEARNING"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": false
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "a66d71a6a5d5417fd77a516a957bca52b1686818c8a253fae14159e490b51a96",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "a66d71a6a5d5417fd77a516a957bca52b1686818c8a253fae14159e490b51a96"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "edecc5191b81115f7aaaadfe553a956f2737535205bf0edc68718d38cdbbc5cb",
+        "receipts_root_A": "58adefe3159edfcdb3e8d1e1ec410bfa6ebdba28c6790343e8ed1814d4ca55b5",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "1f31460b11db7aadb42c66d41181245966b63f094dc64ffda42ef2850fafe21f",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "owner_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": false,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "a66d71a6a5d5417fd77a516a957bca52b1686818c8a253fae14159e490b51a96",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "a66d71a6a5d5417fd77a516a957bca52b1686818c8a253fae14159e490b51a96"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "3ec8afcc202d65a8bfe6de7e85dce93de6e539ebeeaedbeaeebbe5c08fd7ea55",
+        "receipts_root_A": "58adefe3159edfcdb3e8d1e1ec410bfa6ebdba28c6790343e8ed1814d4ca55b5",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "1f31460b11db7aadb42c66d41181245966b63f094dc64ffda42ef2850fafe21f",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "reviewer_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 0,
+        "candidate_holdout_terminal": 0,
+        "candidate_native_forward_sha256": "5a8b62da948361fe4d30980635b12bedd7eeb1e0f6378c71bbc48cb578db6195",
+        "candidate_paid_ACK_receipts": 0,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": false,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "a66d71a6a5d5417fd77a516a957bca52b1686818c8a253fae14159e490b51a96"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "08221afb492c55b673aaddb727634ada5dfee73784aa1b67b3b7a9650ffe8dc2",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "16bdfe587996ac48900f6bc8d2cb8a459e74cc83f8bc1efa591ca16b7e9c030b",
+        "receipts_root_A": "58adefe3159edfcdb3e8d1e1ec410bfa6ebdba28c6790343e8ed1814d4ca55b5",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "1f31460b11db7aadb42c66d41181245966b63f094dc64ffda42ef2850fafe21f",
+        "threshold_before": 1,
+        "threshold_proposed": 2
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "signed_unsafe",
+      "verdict": "VETO_SIGNED_SOURCE_SEMANTICS"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "a66d71a6a5d5417fd77a516a957bca52b1686818c8a253fae14159e490b51a96",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "a66d71a6a5d5417fd77a516a957bca52b1686818c8a253fae14159e490b51a96"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "a32f7ba74078da47223ca7e188e1d1b9cf3c2c7ec0c96879fa5487c31b4c78ff",
+        "receipts_root_A": "58adefe3159edfcdb3e8d1e1ec410bfa6ebdba28c6790343e8ed1814d4ca55b5",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "1f31460b11db7aadb42c66d41181245966b63f094dc64ffda42ef2850fafe21f",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "holdout_unsafe",
+      "verdict": "VETO_OFF_MATRIX_COUNTEREXAMPLE"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 21,
+        "candidate_holdout_terminal": 7,
+        "candidate_native_forward_sha256": "a66d71a6a5d5417fd77a516a957bca52b1686818c8a253fae14159e490b51a96",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": true,
+        "program_changed": false,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "a66d71a6a5d5417fd77a516a957bca52b1686818c8a253fae14159e490b51a96"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "9ed90c80643844924046faf292404ea455be6ddfbfa34f94c364c7d6087a7071",
+        "receipts_root_A": "58adefe3159edfcdb3e8d1e1ec410bfa6ebdba28c6790343e8ed1814d4ca55b5",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "1f31460b11db7aadb42c66d41181245966b63f094dc64ffda42ef2850fafe21f",
+        "threshold_before": 1,
+        "threshold_proposed": 1
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "no_op",
+      "verdict": "VETO_NO_OP_NOT_LEARNING"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": false
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "734ddd033625ea0f9e51082371dfe66408e08d0c787aec425f45bd9138fb16a5",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "734ddd033625ea0f9e51082371dfe66408e08d0c787aec425f45bd9138fb16a5"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "874139c3e7bae31b3e852f0e63829387969d6e1ca9a645e9a81e6844b0bc0ef0",
+        "receipts_root_A": "66e156fd6b13c585f61972fa46559933e6c40b1e2ec6634ebb29e3cf00e4a033",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "8a928b3adc1b1d54d2075619409956a0565a94ed175415eae59d827dccc1231f",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "owner_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": false,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "734ddd033625ea0f9e51082371dfe66408e08d0c787aec425f45bd9138fb16a5",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "734ddd033625ea0f9e51082371dfe66408e08d0c787aec425f45bd9138fb16a5"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "7b937d288bb6c185ce36ae46eb2f7c23966b8c1cf75088c5bb7cf17f8bd0de64",
+        "receipts_root_A": "66e156fd6b13c585f61972fa46559933e6c40b1e2ec6634ebb29e3cf00e4a033",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "8a928b3adc1b1d54d2075619409956a0565a94ed175415eae59d827dccc1231f",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "reviewer_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 0,
+        "candidate_holdout_terminal": 0,
+        "candidate_native_forward_sha256": "5a8b62da948361fe4d30980635b12bedd7eeb1e0f6378c71bbc48cb578db6195",
+        "candidate_paid_ACK_receipts": 0,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": false,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "734ddd033625ea0f9e51082371dfe66408e08d0c787aec425f45bd9138fb16a5"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "08221afb492c55b673aaddb727634ada5dfee73784aa1b67b3b7a9650ffe8dc2",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "1e73ecf63b5dd17d76df9e6a4d562eb4036e5c371771071ad76b5343f82dd3cb",
+        "receipts_root_A": "66e156fd6b13c585f61972fa46559933e6c40b1e2ec6634ebb29e3cf00e4a033",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "8a928b3adc1b1d54d2075619409956a0565a94ed175415eae59d827dccc1231f",
+        "threshold_before": 1,
+        "threshold_proposed": 2
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "signed_unsafe",
+      "verdict": "VETO_SIGNED_SOURCE_SEMANTICS"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "734ddd033625ea0f9e51082371dfe66408e08d0c787aec425f45bd9138fb16a5",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "734ddd033625ea0f9e51082371dfe66408e08d0c787aec425f45bd9138fb16a5"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "06c6f4ff7485b8f1c95f7caf702caf2e7eebf4cb5bcd2d848d05d8d07be5de5e",
+        "receipts_root_A": "66e156fd6b13c585f61972fa46559933e6c40b1e2ec6634ebb29e3cf00e4a033",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "8a928b3adc1b1d54d2075619409956a0565a94ed175415eae59d827dccc1231f",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "holdout_unsafe",
+      "verdict": "VETO_OFF_MATRIX_COUNTEREXAMPLE"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 21,
+        "candidate_holdout_terminal": 7,
+        "candidate_native_forward_sha256": "734ddd033625ea0f9e51082371dfe66408e08d0c787aec425f45bd9138fb16a5",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": true,
+        "program_changed": false,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "734ddd033625ea0f9e51082371dfe66408e08d0c787aec425f45bd9138fb16a5"
+      },
+      "mode": "off",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "e7807af5aa72d195f467218d86493d4d73c31f11a038b4da0a31f83fe5c54b11",
+        "receipts_root_A": "66e156fd6b13c585f61972fa46559933e6c40b1e2ec6634ebb29e3cf00e4a033",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "8a928b3adc1b1d54d2075619409956a0565a94ed175415eae59d827dccc1231f",
+        "threshold_before": 1,
+        "threshold_proposed": 1
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "no_op",
+      "verdict": "VETO_NO_OP_NOT_LEARNING"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": false
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "a66d71a6a5d5417fd77a516a957bca52b1686818c8a253fae14159e490b51a96",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "a66d71a6a5d5417fd77a516a957bca52b1686818c8a253fae14159e490b51a96"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "edecc5191b81115f7aaaadfe553a956f2737535205bf0edc68718d38cdbbc5cb",
+        "receipts_root_A": "58adefe3159edfcdb3e8d1e1ec410bfa6ebdba28c6790343e8ed1814d4ca55b5",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "1f31460b11db7aadb42c66d41181245966b63f094dc64ffda42ef2850fafe21f",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "owner_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": false,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "a66d71a6a5d5417fd77a516a957bca52b1686818c8a253fae14159e490b51a96",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "a66d71a6a5d5417fd77a516a957bca52b1686818c8a253fae14159e490b51a96"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "3ec8afcc202d65a8bfe6de7e85dce93de6e539ebeeaedbeaeebbe5c08fd7ea55",
+        "receipts_root_A": "58adefe3159edfcdb3e8d1e1ec410bfa6ebdba28c6790343e8ed1814d4ca55b5",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "1f31460b11db7aadb42c66d41181245966b63f094dc64ffda42ef2850fafe21f",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "reviewer_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 0,
+        "candidate_holdout_terminal": 0,
+        "candidate_native_forward_sha256": "5a8b62da948361fe4d30980635b12bedd7eeb1e0f6378c71bbc48cb578db6195",
+        "candidate_paid_ACK_receipts": 0,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": false,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "a66d71a6a5d5417fd77a516a957bca52b1686818c8a253fae14159e490b51a96"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "08221afb492c55b673aaddb727634ada5dfee73784aa1b67b3b7a9650ffe8dc2",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "16bdfe587996ac48900f6bc8d2cb8a459e74cc83f8bc1efa591ca16b7e9c030b",
+        "receipts_root_A": "58adefe3159edfcdb3e8d1e1ec410bfa6ebdba28c6790343e8ed1814d4ca55b5",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "1f31460b11db7aadb42c66d41181245966b63f094dc64ffda42ef2850fafe21f",
+        "threshold_before": 1,
+        "threshold_proposed": 2
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "signed_unsafe",
+      "verdict": "VETO_SIGNED_SOURCE_SEMANTICS"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "a66d71a6a5d5417fd77a516a957bca52b1686818c8a253fae14159e490b51a96",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "a66d71a6a5d5417fd77a516a957bca52b1686818c8a253fae14159e490b51a96"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "a32f7ba74078da47223ca7e188e1d1b9cf3c2c7ec0c96879fa5487c31b4c78ff",
+        "receipts_root_A": "58adefe3159edfcdb3e8d1e1ec410bfa6ebdba28c6790343e8ed1814d4ca55b5",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "1f31460b11db7aadb42c66d41181245966b63f094dc64ffda42ef2850fafe21f",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "holdout_unsafe",
+      "verdict": "VETO_OFF_MATRIX_COUNTEREXAMPLE"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 21,
+        "candidate_holdout_terminal": 7,
+        "candidate_native_forward_sha256": "a66d71a6a5d5417fd77a516a957bca52b1686818c8a253fae14159e490b51a96",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": true,
+        "program_changed": false,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "a66d71a6a5d5417fd77a516a957bca52b1686818c8a253fae14159e490b51a96"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "9ed90c80643844924046faf292404ea455be6ddfbfa34f94c364c7d6087a7071",
+        "receipts_root_A": "58adefe3159edfcdb3e8d1e1ec410bfa6ebdba28c6790343e8ed1814d4ca55b5",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "1f31460b11db7aadb42c66d41181245966b63f094dc64ffda42ef2850fafe21f",
+        "threshold_before": 1,
+        "threshold_proposed": 1
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "no_op",
+      "verdict": "VETO_NO_OP_NOT_LEARNING"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": false
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "734ddd033625ea0f9e51082371dfe66408e08d0c787aec425f45bd9138fb16a5",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "734ddd033625ea0f9e51082371dfe66408e08d0c787aec425f45bd9138fb16a5"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "874139c3e7bae31b3e852f0e63829387969d6e1ca9a645e9a81e6844b0bc0ef0",
+        "receipts_root_A": "66e156fd6b13c585f61972fa46559933e6c40b1e2ec6634ebb29e3cf00e4a033",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "8a928b3adc1b1d54d2075619409956a0565a94ed175415eae59d827dccc1231f",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "owner_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": false,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "734ddd033625ea0f9e51082371dfe66408e08d0c787aec425f45bd9138fb16a5",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "734ddd033625ea0f9e51082371dfe66408e08d0c787aec425f45bd9138fb16a5"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "7b937d288bb6c185ce36ae46eb2f7c23966b8c1cf75088c5bb7cf17f8bd0de64",
+        "receipts_root_A": "66e156fd6b13c585f61972fa46559933e6c40b1e2ec6634ebb29e3cf00e4a033",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "8a928b3adc1b1d54d2075619409956a0565a94ed175415eae59d827dccc1231f",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "reviewer_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 0,
+        "candidate_holdout_terminal": 0,
+        "candidate_native_forward_sha256": "5a8b62da948361fe4d30980635b12bedd7eeb1e0f6378c71bbc48cb578db6195",
+        "candidate_paid_ACK_receipts": 0,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": false,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "734ddd033625ea0f9e51082371dfe66408e08d0c787aec425f45bd9138fb16a5"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "08221afb492c55b673aaddb727634ada5dfee73784aa1b67b3b7a9650ffe8dc2",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "1e73ecf63b5dd17d76df9e6a4d562eb4036e5c371771071ad76b5343f82dd3cb",
+        "receipts_root_A": "66e156fd6b13c585f61972fa46559933e6c40b1e2ec6634ebb29e3cf00e4a033",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "8a928b3adc1b1d54d2075619409956a0565a94ed175415eae59d827dccc1231f",
+        "threshold_before": 1,
+        "threshold_proposed": 2
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "signed_unsafe",
+      "verdict": "VETO_SIGNED_SOURCE_SEMANTICS"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "734ddd033625ea0f9e51082371dfe66408e08d0c787aec425f45bd9138fb16a5",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "734ddd033625ea0f9e51082371dfe66408e08d0c787aec425f45bd9138fb16a5"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "06c6f4ff7485b8f1c95f7caf702caf2e7eebf4cb5bcd2d848d05d8d07be5de5e",
+        "receipts_root_A": "66e156fd6b13c585f61972fa46559933e6c40b1e2ec6634ebb29e3cf00e4a033",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "8a928b3adc1b1d54d2075619409956a0565a94ed175415eae59d827dccc1231f",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "holdout_unsafe",
+      "verdict": "VETO_OFF_MATRIX_COUNTEREXAMPLE"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 21,
+        "candidate_holdout_terminal": 7,
+        "candidate_native_forward_sha256": "734ddd033625ea0f9e51082371dfe66408e08d0c787aec425f45bd9138fb16a5",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": true,
+        "program_changed": false,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "734ddd033625ea0f9e51082371dfe66408e08d0c787aec425f45bd9138fb16a5"
+      },
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "e7807af5aa72d195f467218d86493d4d73c31f11a038b4da0a31f83fe5c54b11",
+        "receipts_root_A": "66e156fd6b13c585f61972fa46559933e6c40b1e2ec6634ebb29e3cf00e4a033",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "8a928b3adc1b1d54d2075619409956a0565a94ed175415eae59d827dccc1231f",
+        "threshold_before": 1,
+        "threshold_proposed": 1
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "no_op",
+      "verdict": "VETO_NO_OP_NOT_LEARNING"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": false
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "a66d71a6a5d5417fd77a516a957bca52b1686818c8a253fae14159e490b51a96",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "a66d71a6a5d5417fd77a516a957bca52b1686818c8a253fae14159e490b51a96"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "edecc5191b81115f7aaaadfe553a956f2737535205bf0edc68718d38cdbbc5cb",
+        "receipts_root_A": "58adefe3159edfcdb3e8d1e1ec410bfa6ebdba28c6790343e8ed1814d4ca55b5",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "1f31460b11db7aadb42c66d41181245966b63f094dc64ffda42ef2850fafe21f",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "owner_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": false,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "a66d71a6a5d5417fd77a516a957bca52b1686818c8a253fae14159e490b51a96",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "a66d71a6a5d5417fd77a516a957bca52b1686818c8a253fae14159e490b51a96"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "3ec8afcc202d65a8bfe6de7e85dce93de6e539ebeeaedbeaeebbe5c08fd7ea55",
+        "receipts_root_A": "58adefe3159edfcdb3e8d1e1ec410bfa6ebdba28c6790343e8ed1814d4ca55b5",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "1f31460b11db7aadb42c66d41181245966b63f094dc64ffda42ef2850fafe21f",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "reviewer_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 0,
+        "candidate_holdout_terminal": 0,
+        "candidate_native_forward_sha256": "5a8b62da948361fe4d30980635b12bedd7eeb1e0f6378c71bbc48cb578db6195",
+        "candidate_paid_ACK_receipts": 0,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": false,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "a66d71a6a5d5417fd77a516a957bca52b1686818c8a253fae14159e490b51a96"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "08221afb492c55b673aaddb727634ada5dfee73784aa1b67b3b7a9650ffe8dc2",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "16bdfe587996ac48900f6bc8d2cb8a459e74cc83f8bc1efa591ca16b7e9c030b",
+        "receipts_root_A": "58adefe3159edfcdb3e8d1e1ec410bfa6ebdba28c6790343e8ed1814d4ca55b5",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "1f31460b11db7aadb42c66d41181245966b63f094dc64ffda42ef2850fafe21f",
+        "threshold_before": 1,
+        "threshold_proposed": 2
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "signed_unsafe",
+      "verdict": "VETO_SIGNED_SOURCE_SEMANTICS"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "a66d71a6a5d5417fd77a516a957bca52b1686818c8a253fae14159e490b51a96",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "a66d71a6a5d5417fd77a516a957bca52b1686818c8a253fae14159e490b51a96"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "a32f7ba74078da47223ca7e188e1d1b9cf3c2c7ec0c96879fa5487c31b4c78ff",
+        "receipts_root_A": "58adefe3159edfcdb3e8d1e1ec410bfa6ebdba28c6790343e8ed1814d4ca55b5",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "1f31460b11db7aadb42c66d41181245966b63f094dc64ffda42ef2850fafe21f",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "holdout_unsafe",
+      "verdict": "VETO_OFF_MATRIX_COUNTEREXAMPLE"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 21,
+        "candidate_holdout_terminal": 7,
+        "candidate_native_forward_sha256": "a66d71a6a5d5417fd77a516a957bca52b1686818c8a253fae14159e490b51a96",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": true,
+        "program_changed": false,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "a66d71a6a5d5417fd77a516a957bca52b1686818c8a253fae14159e490b51a96"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 1,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "9ed90c80643844924046faf292404ea455be6ddfbfa34f94c364c7d6087a7071",
+        "receipts_root_A": "58adefe3159edfcdb3e8d1e1ec410bfa6ebdba28c6790343e8ed1814d4ca55b5",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "1f31460b11db7aadb42c66d41181245966b63f094dc64ffda42ef2850fafe21f",
+        "threshold_before": 1,
+        "threshold_proposed": 1
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "no_op",
+      "verdict": "VETO_NO_OP_NOT_LEARNING"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": false
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "734ddd033625ea0f9e51082371dfe66408e08d0c787aec425f45bd9138fb16a5",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "734ddd033625ea0f9e51082371dfe66408e08d0c787aec425f45bd9138fb16a5"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "874139c3e7bae31b3e852f0e63829387969d6e1ca9a645e9a81e6844b0bc0ef0",
+        "receipts_root_A": "66e156fd6b13c585f61972fa46559933e6c40b1e2ec6634ebb29e3cf00e4a033",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "8a928b3adc1b1d54d2075619409956a0565a94ed175415eae59d827dccc1231f",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "owner_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": false,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "734ddd033625ea0f9e51082371dfe66408e08d0c787aec425f45bd9138fb16a5",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "734ddd033625ea0f9e51082371dfe66408e08d0c787aec425f45bd9138fb16a5"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "7b937d288bb6c185ce36ae46eb2f7c23966b8c1cf75088c5bb7cf17f8bd0de64",
+        "receipts_root_A": "66e156fd6b13c585f61972fa46559933e6c40b1e2ec6634ebb29e3cf00e4a033",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "8a928b3adc1b1d54d2075619409956a0565a94ed175415eae59d827dccc1231f",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "reviewer_denied",
+      "verdict": "VETO_AUTHORITY"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 0,
+        "candidate_holdout_terminal": 0,
+        "candidate_native_forward_sha256": "5a8b62da948361fe4d30980635b12bedd7eeb1e0f6378c71bbc48cb578db6195",
+        "candidate_paid_ACK_receipts": 0,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": false,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "734ddd033625ea0f9e51082371dfe66408e08d0c787aec425f45bd9138fb16a5"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "08221afb492c55b673aaddb727634ada5dfee73784aa1b67b3b7a9650ffe8dc2",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "1e73ecf63b5dd17d76df9e6a4d562eb4036e5c371771071ad76b5343f82dd3cb",
+        "receipts_root_A": "66e156fd6b13c585f61972fa46559933e6c40b1e2ec6634ebb29e3cf00e4a033",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "8a928b3adc1b1d54d2075619409956a0565a94ed175415eae59d827dccc1231f",
+        "threshold_before": 1,
+        "threshold_proposed": 2
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "signed_unsafe",
+      "verdict": "VETO_SIGNED_SOURCE_SEMANTICS"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 24,
+        "candidate_holdout_terminal": 8,
+        "candidate_native_forward_sha256": "734ddd033625ea0f9e51082371dfe66408e08d0c787aec425f45bd9138fb16a5",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": false,
+        "program_changed": true,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "734ddd033625ea0f9e51082371dfe66408e08d0c787aec425f45bd9138fb16a5"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "971aa647a18324e8c5dfbea43ec4bb2f5666e774d28d78f47b5c32e84b6ddc63",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "06c6f4ff7485b8f1c95f7caf702caf2e7eebf4cb5bcd2d848d05d8d07be5de5e",
+        "receipts_root_A": "66e156fd6b13c585f61972fa46559933e6c40b1e2ec6634ebb29e3cf00e4a033",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "8a928b3adc1b1d54d2075619409956a0565a94ed175415eae59d827dccc1231f",
+        "threshold_before": 1,
+        "threshold_proposed": 0
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "holdout_unsafe",
+      "verdict": "VETO_OFF_MATRIX_COUNTEREXAMPLE"
+    },
+    {
+      "authority": {
+        "cryptographic_authentication_implemented": false,
+        "independent_reviewer_approval": true,
+        "owner_approval": true
+      },
+      "committed_derived_program_version": 0,
+      "counterfactual": {
+        "candidate_holdout_emissions": 21,
+        "candidate_holdout_terminal": 7,
+        "candidate_native_forward_sha256": "734ddd033625ea0f9e51082371dfe66408e08d0c787aec425f45bd9138fb16a5",
+        "candidate_paid_ACK_receipts": 16,
+        "off_matrix_channel_challenge_parity": true,
+        "program_changed": false,
+        "signed_workload_exact_parity": true,
+        "source_holdout_emissions": 21,
+        "source_holdout_terminal": 7,
+        "source_native_forward_sha256": "734ddd033625ea0f9e51082371dfe66408e08d0c787aec425f45bd9138fb16a5"
+      },
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 2,
+      "proposal": {
+        "actor": "A",
+        "base_derived_program_version": 0,
+        "base_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "candidate_derived_program_version": 1,
+        "candidate_program_sha256": "33edcc1e892bd2b275a53ba2a6721b8f208057c90ec66b9c400a5a80529e24cc",
+        "owner_pe": "PE0",
+        "positive_paid_ACK_receipts": 8,
+        "proposal_id": "e7807af5aa72d195f467218d86493d4d73c31f11a038b4da0a31f83fe5c54b11",
+        "receipts_root_A": "66e156fd6b13c585f61972fa46559933e6c40b1e2ec6634ebb29e3cf00e4a033",
+        "source_actor_credit": 8,
+        "source_receipts_sha256": "8a928b3adc1b1d54d2075619409956a0565a94ed175415eae59d827dccc1231f",
+        "threshold_before": 1,
+        "threshold_proposed": 1
+      },
+      "schedule": "eight_late_compressed",
+      "variant": "no_op",
+      "verdict": "VETO_NO_OP_NOT_LEARNING"
+    }
+  ],
+  "schema": "spk-bv-derived-actor-candidate-veto/research-v4v-v4x",
+  "signed_v3tuv_sha256": "f783be9952613aa98eafef59d24c19eb64ccc09d29265017eabb675fe0155827",
+  "signed_v4stu_sha256": "ba0396540e3347114c27a9c26af69b12741f2cf86cc1a8845fca60ffccb0b20c",
+  "source_feedback": "REEXECUTED_PAID_DERIVED_ACTOR_ACK",
+  "source_native": "UNMODIFIED_PINNED_V0E",
+  "status": "ACK_CREDIT_PROPOSES_BUT_CANNOT_SELF_AUTHORIZE_COMPUTATIONAL_ADOPTION",
+  "tested_variants": [
+    "owner_denied",
+    "reviewer_denied",
+    "signed_unsafe",
+    "holdout_unsafe",
+    "no_op"
+  ],
+  "totals": {
+    "candidate_shadow_episodes": 90,
+    "native_source_replays": 18,
+    "off_matrix_parity_cases": 18,
+    "paid_source_actor_reexecutions": 18,
+    "signed_parity_cases": 72,
+    "verdict_VETO_AUTHORITY": 36,
+    "verdict_VETO_NO_OP_NOT_LEARNING": 18,
+    "verdict_VETO_OFF_MATRIX_COUNTEREXAMPLE": 18,
+    "verdict_VETO_SIGNED_SOURCE_SEMANTICS": 18
+  }
+}

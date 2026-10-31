@@ -1,0 +1,58 @@
+{
+  "composition": {
+    "core_program_requires_runtime_nf": true,
+    "edge_delay_ticks_positive": true,
+    "edge_type": "NetworkEdgeV0",
+    "node_type": "NetworkNodeV0",
+    "parallel_edges_preserve_multiplicity": true,
+    "structural_cycles_allowed": true
+  },
+  "core_dependency": {
+    "core_ir_sha256": "910ae1338a211257bee41c4d53ce55b78532a71ce23b3bd4d3d6a683455dce94",
+    "core_version": "0"
+  },
+  "events": {
+    "batch_key": [
+      "timestamp",
+      "node_id"
+    ],
+    "batch_type": "NetworkBatchV0",
+    "canonical_channel_order": true,
+    "event_type": "NetworkEventV0",
+    "multiplicity_preserved": true
+  },
+  "finite_validation": {
+    "claim_scope": "finite declared compatibility corpus; not a universal network-equivalence proof",
+    "historical_differential_cases": 180,
+    "historical_differential_mismatches": 0
+  },
+  "gates": [
+    "search/core_v0_final_gate_v0.sh",
+    "search/network_v0_differential_gate.py",
+    "search/network_v0_final_gate_v0.sh"
+  ],
+  "learning_interface": {
+    "batch_observation": "NetworkBatchObservationV0",
+    "defines_learning_rule": false,
+    "defines_reward_semantics": false,
+    "defines_weight_update": false,
+    "observer_type": "NetworkLearningObserverV0",
+    "read_only": true,
+    "route_observation": "NetworkRouteObservationV0"
+  },
+  "network_version": "0",
+  "runtime": {
+    "entry_point": "run_network_v0",
+    "execution_limits": [
+      "max_batches",
+      "max_events"
+    ],
+    "guard_transient_per_batch": true,
+    "persistent_node_state": [
+      "raw",
+      "last_timestamp"
+    ],
+    "routing_is_strictly_causal": true
+  },
+  "schema": "spk-network-manifest/v0"
+}

@@ -1,0 +1,57 @@
+{
+  "claim_policy": {
+    "back_validation_effective_on_external_tasks": false,
+    "hardware_or_mesh_performance_demonstrated": false,
+    "native_self_learning_implemented": false,
+    "real_external_trust_attested": false,
+    "research_protocol_reproducible": true
+  },
+  "deferred_architecture": [
+    "separate aggregation Sigma and activation sigma",
+    "source identity-dependent semantic weights",
+    "transport quality, jitter, delay, noise, loss and mesh topology",
+    "real external identity, custody and learner adoption policy"
+  ],
+  "evidence_counts": {
+    "inherited_tests": 199,
+    "native_program_adoptions": 0,
+    "persisted_entries": 72,
+    "prior_derived_counterfactual_replays": 72,
+    "prior_escrow_review_attempts": 198,
+    "prior_native_baseline_replays": 18,
+    "unique_persisted_nonces": 144,
+    "valid_distinct_local_forks": 2
+  },
+  "evidence_provenance": {
+    "escrow_head_sha256": "3beb754a5f7a35b80142be9a97b057b84db65a9defeb62c8dae8dd7466e63e97",
+    "frozen_native_v0e_sha256": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+    "inherited_tests_required_by_cumulative_gate": 199,
+    "manifest_sha256": "da872bf46700c5d8b2fc5cd68b814bc940ccde96fe1c5696c3a215b5fdc4df9b",
+    "v4aeag_sha256": "01211a6cdc2f8efc707514c56934b7c980f001bd22d4ed3df586ace2db5ff152",
+    "v4ahaj_sha256": "8fd397a7b3b1cf693f1c5e3be3e78021f504609a0b2695b2bbe67e07d65f8674",
+    "v4akam_capsule_sha256": "1654e88d8c7dd8d88aac656f58ce0838e10f25d4f1b4b956a1af876a3ad593a0",
+    "v4akam_report_sha256": "36dc505c9758e83173246f1f106389a121332119603431cf661d210f7758c1af",
+    "verified_predecessor_source_and_fixture_pins": 15
+  },
+  "handoff": "NEW_VALIDATION_PHASE_REQUIRES_EXTERNAL_OWNER_AND_TASK_TRUTH",
+  "research_acceptance": {
+    "bounded_actor_ACK_credit_priority_fairness_tested_predecessor": true,
+    "causal_native_forward_and_feedback_reexecuted_predecessor": true,
+    "deterministic_research_observation_reproduced": true,
+    "escrow_72_signed_records_144_nonces_verified": true,
+    "local_valid_fork_detected_by_retained_digest": true,
+    "pinned_frozen_native_and_release_sources": true,
+    "valid_rollback_detected_by_retained_digest": true,
+    "zero_native_program_adoptions": true
+  },
+  "schema": "spk-bv-research-closure-v4an-v4ap/v1",
+  "scope": "FROZEN_NATIVE_RESEARCH_ONLY_CAUSAL_BV_AND_ADVERSARIAL_EVIDENCE",
+  "status": "BOUNDED_RESEARCH_PROTOCOL_CLOSED_EXTERNAL_VALIDATION_PENDING",
+  "unmet_independent_validation": {
+    "externally_owned_monotonic_anchor_service": false,
+    "independent_task_holdout_and_ground_truth": false,
+    "noncorrelated_observer_evidence": false,
+    "production_learning_or_policy_adoption": false,
+    "separately_provisioned_signing_identities": false
+  }
+}

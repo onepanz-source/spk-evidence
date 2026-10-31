@@ -1,0 +1,363 @@
+{
+  "algebra": {
+    "combined_basis": [
+      "MERGE",
+      "DELAY",
+      "ACC",
+      "DECAY",
+      "CMP",
+      "EMIT",
+      "RESET"
+    ],
+    "event_basis": [
+      "MERGE",
+      "DELAY"
+    ],
+    "state_basis": [
+      "ACC",
+      "DECAY",
+      "CMP",
+      "EMIT",
+      "RESET"
+    ]
+  },
+  "canonicalization": {
+    "domain_activation": "explicit verified evidence or explicit unchecked proof/search bypass",
+    "full_profile_without_evidence": "domain rules remain disabled",
+    "runtime_profile": "runtime rules only"
+  },
+  "core_version": "0",
+  "finite_validation": {
+    "claim_scope": "finite depth<=5 declared corpus; not a universal termination or confluence proof",
+    "runtime_nf_depth5": {
+      "distinct_runtime_normal_forms": 2499,
+      "fork_joinability_mismatches": 0,
+      "idempotence_failures": 0,
+      "ir_v0_sha256": "910ae1338a211257bee41c4d53ce55b78532a71ce23b3bd4d3d6a683455dce94",
+      "max_depth": 5,
+      "pass_cycles": 0,
+      "residual_helper_edges": 0,
+      "syntactic_programs": 19607,
+      "termination_failures": 0
+    }
+  },
+  "gates": [
+    "search/core_phase3_final_gate_v0.sh",
+    "search/core_domain_premises_final_gate_v0.sh"
+  ],
+  "isa": {
+    "config": {
+      "fields": [
+        "state_bits",
+        "fractional_bits"
+      ],
+      "type": "CoreConfig"
+    },
+    "instructions": [
+      "ShiftDecay",
+      "CoreAcc",
+      "CoreCmp",
+      "CoreEmit",
+      "CoreReset"
+    ],
+    "program": "CoreProgram",
+    "state": {
+      "guard": "transient boolean",
+      "raw": "unsigned fixed-point integer"
+    }
+  },
+  "rewrite_system": {
+    "domain_class": "D",
+    "domain_default": "fail_closed",
+    "domain_judgement": "Gamma_r |- lhs == rhs",
+    "domain_premise_kinds": [
+      "source_defined",
+      "target_defined",
+      "both_defined",
+      "abstract_bound"
+    ],
+    "rules": [
+      {
+        "domain_premise": null,
+        "helper": "_remove_zero_acc",
+        "layer": "core",
+        "rule_ids": [
+          "L-ACC-01"
+        ],
+        "validity": "runtime"
+      },
+      {
+        "domain_premise": null,
+        "helper": "_normalize_acc_runs",
+        "layer": "core",
+        "rule_ids": [
+          "L-ACC-02",
+          "L-ACC-03"
+        ],
+        "validity": "runtime"
+      },
+      {
+        "domain_premise": null,
+        "helper": "_remove_redundant_repeated_compares",
+        "layer": "core",
+        "rule_ids": [
+          "L-CMP-01"
+        ],
+        "validity": "runtime"
+      },
+      {
+        "domain_premise": null,
+        "helper": "_normalize_false_compare_after_reset",
+        "layer": "core",
+        "rule_ids": [
+          "L-CMP-02",
+          "L-GUARD-03"
+        ],
+        "validity": "runtime"
+      },
+      {
+        "domain_premise": null,
+        "helper": "_move_emit_left",
+        "layer": "core",
+        "rule_ids": [
+          "L-EMIT-01"
+        ],
+        "validity": "runtime"
+      },
+      {
+        "domain_premise": null,
+        "helper": "_sort_emit_runs",
+        "layer": "core",
+        "rule_ids": [
+          "L-EMIT-02"
+        ],
+        "validity": "runtime"
+      },
+      {
+        "domain_premise": null,
+        "helper": "_remove_dead_compares",
+        "layer": "core",
+        "rule_ids": [
+          "L-GUARD-01"
+        ],
+        "validity": "runtime"
+      },
+      {
+        "domain_premise": null,
+        "helper": "_remove_false_guard_prefix",
+        "layer": "core",
+        "rule_ids": [
+          "L-GUARD-02"
+        ],
+        "validity": "runtime"
+      },
+      {
+        "domain_premise": null,
+        "helper": "_collapse_adjacent_resets",
+        "layer": "core",
+        "rule_ids": [
+          "L-RESET-01"
+        ],
+        "validity": "runtime"
+      },
+      {
+        "domain_premise": null,
+        "helper": "_commute_zero_reset_across_shift",
+        "layer": "core",
+        "rule_ids": [
+          "L-TIME-01"
+        ],
+        "validity": "runtime"
+      },
+      {
+        "domain_premise": null,
+        "helper": "_remove_shift_between_cmp1_and_reset0",
+        "layer": "core",
+        "rule_ids": [
+          "L-TIME-02"
+        ],
+        "validity": "runtime"
+      },
+      {
+        "domain_premise": null,
+        "helper": "_remove_shift_when_state_known_zero",
+        "layer": "core",
+        "rule_ids": [
+          "L-TIME-03"
+        ],
+        "validity": "runtime"
+      },
+      {
+        "domain_premise": null,
+        "helper": "_sink_known_false_compare_across_shift",
+        "layer": "core",
+        "rule_ids": [
+          "L-TIME-05"
+        ],
+        "validity": "runtime"
+      },
+      {
+        "domain_premise": null,
+        "helper": "_normalize_shift_decay_runs",
+        "layer": "core",
+        "rule_ids": [
+          "L-TIME-06"
+        ],
+        "validity": "runtime"
+      },
+      {
+        "domain_premise": null,
+        "helper": "_pull_saturated_acc_across_compare",
+        "layer": "core",
+        "rule_ids": [
+          "L-ACC-04"
+        ],
+        "validity": "runtime"
+      },
+      {
+        "domain_premise": "source_defined",
+        "helper": "_cap_saturated_acc_before_guarded_reset",
+        "layer": "core",
+        "rule_ids": [
+          "D-ACC-03"
+        ],
+        "validity": "domain"
+      },
+      {
+        "domain_premise": "both_defined",
+        "helper": "_remove_shadowed_resets",
+        "layer": "core",
+        "rule_ids": [
+          "D-RESET-01"
+        ],
+        "validity": "domain"
+      },
+      {
+        "domain_premise": null,
+        "helper": "_cap_shift_before_zero_reset_from_compare_bound",
+        "layer": "core",
+        "rule_ids": [
+          "L-TIME-07"
+        ],
+        "validity": "runtime"
+      },
+      {
+        "domain_premise": "target_defined",
+        "helper": "_remove_pre_acc_shift_under_cmp1_reset0",
+        "layer": "core",
+        "rule_ids": [
+          "D-TIME-05"
+        ],
+        "validity": "domain"
+      },
+      {
+        "domain_premise": "source_defined",
+        "helper": "_strip_state_before_lsb_annihilator",
+        "layer": "core",
+        "rule_ids": [
+          "D-ZERO-01"
+        ],
+        "validity": "domain"
+      },
+      {
+        "domain_premise": null,
+        "helper": "_normalize_shared_count_cmp1_acc_commute",
+        "layer": "semantic",
+        "rule_ids": [
+          "L-COUNT-01"
+        ],
+        "validity": "runtime"
+      },
+      {
+        "domain_premise": null,
+        "helper": "_normalize_cmp_emit_runs",
+        "layer": "semantic",
+        "rule_ids": [
+          "L-CTRL-01"
+        ],
+        "validity": "runtime"
+      },
+      {
+        "domain_premise": null,
+        "helper": "_normalize_emit_reset_partition",
+        "layer": "semantic",
+        "rule_ids": [
+          "L-CTRL-02"
+        ],
+        "validity": "runtime"
+      },
+      {
+        "domain_premise": "source_defined",
+        "helper": "_normalize_positive_acc_before_cmp1_zero_reset",
+        "layer": "semantic",
+        "rule_ids": [
+          "D-ACC-01"
+        ],
+        "validity": "domain"
+      },
+      {
+        "domain_premise": "source_defined",
+        "helper": "_normalize_shared_count_pre_shift_acc",
+        "layer": "semantic",
+        "rule_ids": [
+          "D-COUNT-01"
+        ],
+        "validity": "domain"
+      },
+      {
+        "domain_premise": "abstract_bound",
+        "helper": "_normalize_temporal_shift_width",
+        "layer": "semantic",
+        "rule_ids": [
+          "D-TIME-01"
+        ],
+        "validity": "domain"
+      },
+      {
+        "domain_premise": null,
+        "helper": "_normalize_temporal_cmp2_barrier",
+        "layer": "semantic",
+        "rule_ids": [
+          "L-TIME-08"
+        ],
+        "validity": "runtime"
+      },
+      {
+        "domain_premise": null,
+        "helper": "_normalize_temporal_guarded_reset_commute",
+        "layer": "semantic",
+        "rule_ids": [
+          "L-TIME-09"
+        ],
+        "validity": "runtime"
+      },
+      {
+        "domain_premise": "source_defined",
+        "helper": "_remove_dead_state_before_zero_barrier",
+        "layer": "semantic",
+        "rule_ids": [
+          "D-ZERO-02"
+        ],
+        "validity": "domain"
+      }
+    ],
+    "runtime_class": "L",
+    "runtime_judgement": "top |- lhs ==runtime rhs"
+  },
+  "runtime": {
+    "batching": "all events sharing one timestamp form one batch",
+    "event_multiplicity_preserved": true,
+    "guard_resets_false_each_batch": true,
+    "initial_previous_timestamp": 0,
+    "observables": [
+      "output",
+      "final_raw",
+      "final_guard",
+      "last_timestamp"
+    ],
+    "overflow_is_observable": true,
+    "shared_batch_delta": true,
+    "shared_channel_counts": true
+  },
+  "schema": "spk-core-manifest/v0"
+}

@@ -1,0 +1,40 @@
+{
+  "schema": "spk-bv-v4vwx-research-milestone-manifest/v1",
+  "milestone": "v4v-v4x-feedback-conditioned-computational-candidate-veto",
+  "classification": "RESEARCH_ONLY_FAIL_CLOSED_NO_NATIVE_LEARNING",
+  "signed_input_sha256": {
+    "spk-bv-v3tuv-grant-rank.json": "f783be9952613aa98eafef59d24c19eb64ccc09d29265017eabb675fe0155827",
+    "spk-bv-v4stu-paid-actor-consumer.json": "ba0396540e3347114c27a9c26af69b12741f2cf86cc1a8845fca60ffccb0b20c"
+  },
+  "pinned_existing_code_sha256": {
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+    "spk_bv_research/native_ack_causal_replay_v4mno.py": "b256c82f6452eb39789481d265d6e79bbcb5527e4c8155b66524a0e8d8680261",
+    "spk_bv_research/native_ack_actor_loop_v4pqr.py": "e489ceca0730d2404face2c79c2da36ffbfdeb82e63dd04dd9a07210a3586f85",
+    "spk_bv_research/native_ack_paid_consumer_v4stu.py": "4ee3c1704aee638b6271277c18735e345783e9e4eeca5c65958613abb37fa046",
+    "spk_bv_research/native_ack_paid_consumer_audit_v4stu.py": "7cdcd65f1cc4ea5373d19a1e1c0e43057b94ac850429147941a2105118d55eda"
+  },
+  "new_file_sha256": {
+    "spk_bv_research/native_actor_candidate_boundary_v4vwx.py": "c8a6aa32f615a73a0779a5ee095d2b04652544394e14be0889a08f6a1b3173b0",
+    "spk_bv_research/native_actor_candidate_audit_v4vwx.py": "d0d602076e8d17058cb1705189bb1ebf2cfbf78d333813b47f6372b5e7aa7188",
+    "search/spk_bv_v4vwx_candidate_authority.py": "ba3c20087ed9d7c2c9fbf4540fb73f4d313081fc7844d4d3682a13613b03be8d",
+    "search/spk_bv_v4vwx_candidate_authority_gate.sh": "56742442e0a1998274e1e66cd07b6dcae015a970a76f83fb1b322dde55ae5e20",
+    "tests/test_spk_bv_v4vwx_candidate_authority.py": "1b4566275ba922d8c413de13c667c5e074daa50682538e664ae9df3e870573f3",
+    "docs/spk-bv-v4vwx-candidate-authority-observation.json": "6451c65cc13cd1cb926f89547e25faa8871f69c09479bb16e320cf6e86a6492a"
+  },
+  "new_tests_passed": 18,
+  "inherited_v4stu_tests_passed": 21,
+  "inherited_v4pqr_tests_passed": 18,
+  "inherited_v4mno_tests_passed": 15,
+  "matrix": {
+    "original_native_replays": 18,
+    "paid_source_actor_reexecutions": 18,
+    "candidate_shadow_episodes": 90,
+    "authority_vetoes": 36,
+    "signed_semantics_vetoes": 18,
+    "off_matrix_counterexample_vetoes": 18,
+    "no_op_vetoes": 18,
+    "native_learning_updates": 0
+  },
+  "frozen_native_modified": false,
+  "architecture_v1_modified": false
+}

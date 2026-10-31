@@ -1,0 +1,33 @@
+{
+  "schema": "spk-bv-research-release-manifest/v4p-v4r",
+  "date": "2026-10-20",
+  "status": "REEXECUTED_ACTOR_JUDGMENT_TRANSPORT_AND_DERIVED_CREDIT_NO_NATIVE_LEARNING",
+  "research_only": true,
+  "signed_predecessors_sha256": {
+    "spk-bv-v3tuv-grant-rank.json": "f783be9952613aa98eafef59d24c19eb64ccc09d29265017eabb675fe0155827",
+    "spk-bv-v4mno-native-ACK-causal-replay.json": "0030c7bd9c84c022b3eddfadce4ae590f919186c5ee76a228cf57870b7f55721"
+  },
+  "inherited_v4jkl_sha256": "2f95569edb1d52bb930395477a3ad4217a04dbf038dc32c3625413f2347c6bff",
+  "frozen_native_executor_sha256": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+  "pinned_v4mno_executor_sha256": "b256c82f6452eb39789481d265d6e79bbcb5527e4c8155b66524a0e8d8680261",
+  "files_sha256": {
+    "spk_bv_research/native_ack_actor_loop_v4pqr.py": "e489ceca0730d2404face2c79c2da36ffbfdeb82e63dd04dd9a07210a3586f85",
+    "spk_bv_research/native_ack_actor_audit_v4pqr.py": "40b338e00470fee8dd0a1b2ab34042497c1d7b50e408f4ac50e7017944a4c37b",
+    "search/spk_bv_v4pqr_endogenous_actor_ACK.py": "60644a43e2cb66b40ac8b48d2816c2f40006c384eb030917fb60586a2b1e63a7",
+    "search/spk_bv_v4pqr_endogenous_actor_ACK_gate.sh": "6e88a4173b818ec759a4a48c7e4381985f55ae48fecc4b0955d55a2e1ddeea43",
+    "tests/test_spk_bv_v4pqr_endogenous_actor_ACK.py": "8efb4bc12fe1ac7868ab4b9d94cc526740e4f97c4468ae46d68938113ab07899",
+    "docs/spk-bv-v4pqr-endogenous-actor-ACK-research.md": "1c8a1a85045658410340e1e0b5c906fae636ab10dcf52f9378200661e1659a72",
+    "docs/spk-bv-v4pqr-endogenous-actor-ACK-observation.json": "9e33e4257cfb660861afcfb6f46efc6ee6893e78d060490faaefbd47d0dc5872"
+  },
+  "gate": "search/spk_bv_v4pqr_endogenous_actor_ACK_gate.sh",
+  "new_tests_pass": 18,
+  "inherited_v4mno_tests_pass": 15,
+  "frozen_native_source_smoke_pass": true,
+  "original_native_replays": 18,
+  "derived_causal_reexecutions": 72,
+  "originated_and_charged_deliveries": 864,
+  "derived_actor_credits_applied": 324,
+  "policy_denied_actor_credits": 540,
+  "frozen_native_learning_implemented": false,
+  "architecture_adoption": false
+}

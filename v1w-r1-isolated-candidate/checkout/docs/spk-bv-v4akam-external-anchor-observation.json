@@ -1,0 +1,59 @@
+{
+  "architecture_v1_modified": false,
+  "capsule_body": {
+    "issuer": "LAB_ANCHOR_ROLE",
+    "previous_anchor_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "schema": "spk-bv-external-head-witness/research-v4ak-v4am",
+    "serial": 1,
+    "signer_kind": "PUBLIC_RESEARCH_FIXTURE_NO_REAL_IDENTITY",
+    "source_report_sha256": "8fd397a7b3b1cf693f1c5e3be3e78021f504609a0b2695b2bbe67e07d65f8674",
+    "sqlite_witness": {
+      "entries": 72,
+      "head": "3beb754a5f7a35b80142be9a97b057b84db65a9defeb62c8dae8dd7466e63e97",
+      "parent_sha256": "01211a6cdc2f8efc707514c56934b7c980f001bd22d4ed3df586ace2db5ff152",
+      "persisted_unique_nonces": 144
+    }
+  },
+  "claims_excluded": [
+    "no trusted remote keeper of the signed anchor was deployed",
+    "public research HMAC key is intentionally forgeable by code readers",
+    "same-host custody is not an independent security principal",
+    "correlated reviewers and synthetic labels are not real task truth",
+    "not Byzantine consensus, rollback-proof storage or a live learner"
+  ],
+  "external_custody": "SIMULATED_DIFFERENT_ARTIFACT_NOT_A_REMOTE_TRUST_ROOT",
+  "fork_and_rollback_counterexample": {
+    "alternate_branch_rejected_by_retained_head": true,
+    "different_valid_hash_heads": true,
+    "locally_valid_distinct_forks": 2,
+    "native_program_adoptions": 0,
+    "ordinary_local_integrity_can_detect_this_fork": false,
+    "public_key_resigned_branch_rejected_by_retained_capsule_digest": true,
+    "real_external_issuer_identity": false,
+    "same_parent_signed_native_fixture": true,
+    "valid_branch_passes_anchored_validation": true,
+    "valid_prior_history_rejected_after_new_head_published": true
+  },
+  "independent_task_ground_truth": false,
+  "native_learning_implemented": false,
+  "native_v0e_modified": false,
+  "next_gate": "EXTERNALLY_OWNED_ANCHOR_AND_INDEPENDENT_TASK_HOLDOUT",
+  "prior_committed_sqlite_entries": 72,
+  "prior_persistent_review_attempts": 198,
+  "prior_pinned_counterfactual_native_probes": 72,
+  "prior_pinned_native_source_replays": 18,
+  "program_adoptions": 0,
+  "proof_limit": "PINNED_EXTERNAL_DIGEST_DETECTS_VALID_FORK_BUT_PUBLIC_KEY_CANNOT_PROVE_ISSUER_IDENTITY",
+  "real_external_anchor_service": false,
+  "real_identity_provisioning": false,
+  "schema": "spk-bv-external-head-witness/research-v4ak-v4am",
+  "separately_custodialized_capsule_sha256": "1654e88d8c7dd8d88aac656f58ce0838e10f25d4f1b4b956a1af876a3ad593a0",
+  "signed_v4ahaj_sha256": "8fd397a7b3b1cf693f1c5e3be3e78021f504609a0b2695b2bbe67e07d65f8674",
+  "sqlite_witness": {
+    "entries": 72,
+    "head": "3beb754a5f7a35b80142be9a97b057b84db65a9defeb62c8dae8dd7466e63e97",
+    "parent_sha256": "01211a6cdc2f8efc707514c56934b7c980f001bd22d4ed3df586ace2db5ff152",
+    "persisted_unique_nonces": 144
+  },
+  "status": "EXTERNAL_HEAD_FORK_ROLLBACK_DETECTION_LAB_ONLY_NO_TASK_TRUTH"
+}

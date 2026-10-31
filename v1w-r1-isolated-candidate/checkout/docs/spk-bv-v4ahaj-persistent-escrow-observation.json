@@ -1,0 +1,2186 @@
+{
+  "architecture_v1_modified": false,
+  "claims_excluded": [
+    "no real external reviewer identity or independent task truth",
+    "public test-role HMAC keys cannot stop an impersonating adversary",
+    "unanchored database hash chains can be rewritten by storage owner",
+    "SQLite local durability is not a replicated consensus protocol",
+    "injected exceptions do not prove power-loss/fsync hardware behavior",
+    "zero candidate adoptions, frozen updates or physical energy claims"
+  ],
+  "database_contract": "SQLITE_PRIVATE_SINGLE_HOST_TRANSACTIONAL_RESEARCH",
+  "durability_coverage": "ATOMIC_SQLITE_COMMIT_ROLLBACK_AND_REOPEN_TESTS",
+  "external_trust_anchor": "REPORT_HEAD_MUST_BE_STORED_OUTSIDE_MUTABLE_DATABASE",
+  "native_learning_implemented": false,
+  "native_v0e_modified": false,
+  "next_gate": "REAL_INDEPENDENT_HOLDOUT_WITH_PROVISIONED_TRUST_ROOT",
+  "program_adoptions": 0,
+  "replay_scope": "ON_DISK_RESTART_PERSISTENT_ONE_HOST",
+  "scenario_rows_sha256": "28134b6827eb86c049cba57357dd62d78f96ea9bc31df08bbcc7a38a9899e9d7",
+  "scenarios": [
+    {
+      "decisions": [
+        {
+          "decision_tick": 6,
+          "envelope_sha256": "748e280f6132f7a0ad756e3c0763ba2abfb32bb35ef92e153c7c1f851a43c29f",
+          "head": "4dab53fc52b7665076d279e3765ac974118253b981afc09d1307643571ff9a60",
+          "journaled": true,
+          "recorded_sequence": 1,
+          "source_key": "eight_front_back/off/1",
+          "variant": "consensus_saved",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 6,
+          "envelope_sha256": "748e280f6132f7a0ad756e3c0763ba2abfb32bb35ef92e153c7c1f851a43c29f",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/off/1",
+          "variant": "consensus_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 16,
+          "envelope_sha256": "98927e4de95c6016b0871932f91b87f3129e02d7e80bcafde650293b8630b008",
+          "head": "b1709b42fe6ffbaa33bd416d929c8f6240f4f4673bd43e25a6f10ab414317e49",
+          "journaled": true,
+          "recorded_sequence": 2,
+          "source_key": "eight_front_back/off/1",
+          "variant": "disagreement_saved",
+          "verdict": "JOURNALED_QUARANTINE_REVIEWER_DISAGREEMENT"
+        },
+        {
+          "decision_tick": 16,
+          "envelope_sha256": "98927e4de95c6016b0871932f91b87f3129e02d7e80bcafde650293b8630b008",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/off/1",
+          "variant": "quarantined_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 26,
+          "envelope_sha256": "c7192fd1969c21739062ebdf81a6451b923ccdd455e169a652272be24150a26b",
+          "head": "cb1e325e9a5971863cb52b3c89badf15e6d51555a21696daa309310cb6831642",
+          "journaled": true,
+          "recorded_sequence": 3,
+          "source_key": "eight_front_back/off/1",
+          "variant": "abstention_saved",
+          "verdict": "JOURNALED_QUARANTINE_ABSTENTION"
+        },
+        {
+          "decision_tick": 36,
+          "envelope_sha256": "4cf5008668172daf8f46835110e0252b446289bde031f7d3f11badfdfdf5bb05",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/off/1",
+          "variant": "rollback_before_commit",
+          "verdict": "FAULT_INJECTED_ATOMIC_ROLLBACK"
+        },
+        {
+          "decision_tick": 36,
+          "envelope_sha256": "4cf5008668172daf8f46835110e0252b446289bde031f7d3f11badfdfdf5bb05",
+          "head": "622065ebd9737f911253260da7e0cad38b48a67bf8883e379fd0d6e01e4bede4",
+          "journaled": true,
+          "recorded_sequence": 4,
+          "source_key": "eight_front_back/off/1",
+          "variant": "same_receipt_recovered",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 26,
+          "envelope_sha256": "58c7632f8e9b78e69afc1b92b0af96324b45253f14b1fdfced0fa7d461481c17",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/off/1",
+          "variant": "signed_stale_source_clock",
+          "verdict": "VETO_PERSISTENT_SOURCE_CLOCK"
+        },
+        {
+          "decision_tick": 46,
+          "envelope_sha256": "4dda25f0d68d4a1d30d059aaa0be4e51fd8711489efdc89b38186a0b7e4792c0",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/off/1",
+          "variant": "tampered_review_not_saved",
+          "verdict": "VETO_INVALID_ATTESTATION"
+        },
+        {
+          "decision_tick": 56,
+          "envelope_sha256": "cb6e0e116592e6d9a77f49438debb3dd4eb5ac59a4d1bd24cfc28d700dd368bf",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/off/1",
+          "variant": "wrong_parent_not_saved",
+          "verdict": "VETO_SOURCE_BINDING"
+        },
+        {
+          "decision_tick": 66,
+          "envelope_sha256": "3fed942677a63e80c146efc29d57a41054821e2614dc6ea109bbdacd23081df0",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/off/1",
+          "variant": "co_signed_poison_not_saved",
+          "verdict": "VETO_TASK_CANARY_CONFLICT"
+        }
+      ],
+      "mode": "off",
+      "native_global_PE_capacity": 1,
+      "original_native_sha256": "15d3ac4735931783a3b2c648b3ff9c755fec8b30b0c547a2ff26ed381ffbc52c",
+      "schedule": "eight_front_back"
+    },
+    {
+      "decisions": [
+        {
+          "decision_tick": 6,
+          "envelope_sha256": "d99a5b4bd27154fd3089dc7add26a5d6b97fd381b8b37342237f962a4290ee82",
+          "head": "4db6873c553644e55fecbbf5f04a6e6b5821684eea6e140e2677191edcfb76da",
+          "journaled": true,
+          "recorded_sequence": 5,
+          "source_key": "eight_front_back/off/2",
+          "variant": "consensus_saved",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 6,
+          "envelope_sha256": "d99a5b4bd27154fd3089dc7add26a5d6b97fd381b8b37342237f962a4290ee82",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/off/2",
+          "variant": "consensus_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 16,
+          "envelope_sha256": "0143d536b819607b28ee2c2ead4b1af1bb3311adde15ebe04f6f92cf747a5900",
+          "head": "b61d799dd7b1c69b481f5a5e12d4dab151136dde97d185c1c8947cbcbe8ef6ab",
+          "journaled": true,
+          "recorded_sequence": 6,
+          "source_key": "eight_front_back/off/2",
+          "variant": "disagreement_saved",
+          "verdict": "JOURNALED_QUARANTINE_REVIEWER_DISAGREEMENT"
+        },
+        {
+          "decision_tick": 16,
+          "envelope_sha256": "0143d536b819607b28ee2c2ead4b1af1bb3311adde15ebe04f6f92cf747a5900",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/off/2",
+          "variant": "quarantined_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 26,
+          "envelope_sha256": "c16b8a4371da5b9ffb693cbfb44b1d6cb458016ec43b9115c7b1607e74e40823",
+          "head": "65cb05fbc5703492f991aac8cc15c86a6319ff98b57fdb921d80c78c370c10e3",
+          "journaled": true,
+          "recorded_sequence": 7,
+          "source_key": "eight_front_back/off/2",
+          "variant": "abstention_saved",
+          "verdict": "JOURNALED_QUARANTINE_ABSTENTION"
+        },
+        {
+          "decision_tick": 36,
+          "envelope_sha256": "e25e8ef60eb5945d17a067a5792f7a8e0d675e6cb589b4f63d9312a4ec9df675",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/off/2",
+          "variant": "rollback_before_commit",
+          "verdict": "FAULT_INJECTED_ATOMIC_ROLLBACK"
+        },
+        {
+          "decision_tick": 36,
+          "envelope_sha256": "e25e8ef60eb5945d17a067a5792f7a8e0d675e6cb589b4f63d9312a4ec9df675",
+          "head": "a73642896795aa12c73795828dc7408264cd8b5279862dee975074391f7e0d32",
+          "journaled": true,
+          "recorded_sequence": 8,
+          "source_key": "eight_front_back/off/2",
+          "variant": "same_receipt_recovered",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 26,
+          "envelope_sha256": "e5766cb81a375db9ff31013b13f0e24a56c631eb33101561bd2f2c592e61a12d",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/off/2",
+          "variant": "signed_stale_source_clock",
+          "verdict": "VETO_PERSISTENT_SOURCE_CLOCK"
+        },
+        {
+          "decision_tick": 46,
+          "envelope_sha256": "993e0a5a11d69d01e3055930db2d38ba04e7f8538a70392c30c91a117d55bacf",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/off/2",
+          "variant": "tampered_review_not_saved",
+          "verdict": "VETO_INVALID_ATTESTATION"
+        },
+        {
+          "decision_tick": 56,
+          "envelope_sha256": "fe3ff83d8d132c90300411da92e4303615e151905ceb09d152bc45ef443fdc72",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/off/2",
+          "variant": "wrong_parent_not_saved",
+          "verdict": "VETO_SOURCE_BINDING"
+        },
+        {
+          "decision_tick": 66,
+          "envelope_sha256": "43b13a1a16053fc1c5b232785ec791afbf9a45a4931994f3c22da31b5633467b",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/off/2",
+          "variant": "co_signed_poison_not_saved",
+          "verdict": "VETO_TASK_CANARY_CONFLICT"
+        }
+      ],
+      "mode": "off",
+      "native_global_PE_capacity": 2,
+      "original_native_sha256": "21b988b724e047f4b7f7473b156b90c8a31a236482f4130e994232c407622f49",
+      "schedule": "eight_front_back"
+    },
+    {
+      "decisions": [
+        {
+          "decision_tick": 9,
+          "envelope_sha256": "e286819cd237d3de2a9098aaa01f21457c485aae3316590771ce20e1a0f8c1db",
+          "head": "773128fa18f90584bfbde19c3d083b4d9537ba31ef55dde09b31a7e587930b0f",
+          "journaled": true,
+          "recorded_sequence": 9,
+          "source_key": "eight_front_back/on_forward_first/1",
+          "variant": "consensus_saved",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 9,
+          "envelope_sha256": "e286819cd237d3de2a9098aaa01f21457c485aae3316590771ce20e1a0f8c1db",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/on_forward_first/1",
+          "variant": "consensus_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 19,
+          "envelope_sha256": "ba909578cbe9d1f4bce48b0b584805c980ca88b776497b3c7799b33c822dc039",
+          "head": "8f6482b38293d184f8a359b266790023e90faae2c33f0d2ee0e2d5dc7df51f31",
+          "journaled": true,
+          "recorded_sequence": 10,
+          "source_key": "eight_front_back/on_forward_first/1",
+          "variant": "disagreement_saved",
+          "verdict": "JOURNALED_QUARANTINE_REVIEWER_DISAGREEMENT"
+        },
+        {
+          "decision_tick": 19,
+          "envelope_sha256": "ba909578cbe9d1f4bce48b0b584805c980ca88b776497b3c7799b33c822dc039",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/on_forward_first/1",
+          "variant": "quarantined_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 29,
+          "envelope_sha256": "1340e568ac8b97e73192f48f9fa8cf3bcaeb98e828d55305ff5caa67475f864f",
+          "head": "c7561d142ee6100e0ca7068abaac7e550bea489d27920150be2e0d24bd38885b",
+          "journaled": true,
+          "recorded_sequence": 11,
+          "source_key": "eight_front_back/on_forward_first/1",
+          "variant": "abstention_saved",
+          "verdict": "JOURNALED_QUARANTINE_ABSTENTION"
+        },
+        {
+          "decision_tick": 39,
+          "envelope_sha256": "d8f23056776be5de155e4d5cdc63dfb38c8998b11d08fb9c5ccbd58dab75cb82",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/on_forward_first/1",
+          "variant": "rollback_before_commit",
+          "verdict": "FAULT_INJECTED_ATOMIC_ROLLBACK"
+        },
+        {
+          "decision_tick": 39,
+          "envelope_sha256": "d8f23056776be5de155e4d5cdc63dfb38c8998b11d08fb9c5ccbd58dab75cb82",
+          "head": "78806c3d0b134ba17ef88bd3a2f2a98502c2e7095584fc91a57380207a607cca",
+          "journaled": true,
+          "recorded_sequence": 12,
+          "source_key": "eight_front_back/on_forward_first/1",
+          "variant": "same_receipt_recovered",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 29,
+          "envelope_sha256": "e926cd25b7ba4a2f2733cbb8ebb58556e91f57c310cc0c3da43f52b890ae4b26",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/on_forward_first/1",
+          "variant": "signed_stale_source_clock",
+          "verdict": "VETO_PERSISTENT_SOURCE_CLOCK"
+        },
+        {
+          "decision_tick": 49,
+          "envelope_sha256": "3de33b221eee09994f3d546b64c6ee0de6af1ac23b5c04e03e1b30c55b34f056",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/on_forward_first/1",
+          "variant": "tampered_review_not_saved",
+          "verdict": "VETO_INVALID_ATTESTATION"
+        },
+        {
+          "decision_tick": 59,
+          "envelope_sha256": "70f05b6ed03a1a5b7892a580c27fea762443bcb039b9a631fb10e50f0be6ca6b",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/on_forward_first/1",
+          "variant": "wrong_parent_not_saved",
+          "verdict": "VETO_SOURCE_BINDING"
+        },
+        {
+          "decision_tick": 69,
+          "envelope_sha256": "3e399c2846bd69434ee06e6b398191f6b564c4412f19b1757e6f1bb5c0750295",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/on_forward_first/1",
+          "variant": "co_signed_poison_not_saved",
+          "verdict": "VETO_TASK_CANARY_CONFLICT"
+        }
+      ],
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 1,
+      "original_native_sha256": "26680219e05623e5c715a8e4164990ae74c225bc5fb14d07d6da0ab22f21be7e",
+      "schedule": "eight_front_back"
+    },
+    {
+      "decisions": [
+        {
+          "decision_tick": 8,
+          "envelope_sha256": "f362847c923b56cd04cd8f2712684056ac9db75974aedb62bf1da75bd59dd527",
+          "head": "ce7652bc87d0a27a2bf93d46670ba3d911682108e16ad9d3922744d67fd9b7e3",
+          "journaled": true,
+          "recorded_sequence": 13,
+          "source_key": "eight_front_back/on_forward_first/2",
+          "variant": "consensus_saved",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 8,
+          "envelope_sha256": "f362847c923b56cd04cd8f2712684056ac9db75974aedb62bf1da75bd59dd527",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/on_forward_first/2",
+          "variant": "consensus_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 18,
+          "envelope_sha256": "eed0fd057123657c47aaa3a973e32ab74b0f76b939c457a20356b0e7488feb2a",
+          "head": "6cfcc16c49b44bb112761e94228612c2d1f5d73de9d3ac28d53de0c6d198eb78",
+          "journaled": true,
+          "recorded_sequence": 14,
+          "source_key": "eight_front_back/on_forward_first/2",
+          "variant": "disagreement_saved",
+          "verdict": "JOURNALED_QUARANTINE_REVIEWER_DISAGREEMENT"
+        },
+        {
+          "decision_tick": 18,
+          "envelope_sha256": "eed0fd057123657c47aaa3a973e32ab74b0f76b939c457a20356b0e7488feb2a",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/on_forward_first/2",
+          "variant": "quarantined_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 28,
+          "envelope_sha256": "7f11a17d9dc3d73142d721c51d019f19c1a4f7b8e3775543d085d1afa9aa7a5c",
+          "head": "b5064b7c2cf4d9a0d79f248a6b24b4c898fcb16050f2a7db4dc6c111811d47bf",
+          "journaled": true,
+          "recorded_sequence": 15,
+          "source_key": "eight_front_back/on_forward_first/2",
+          "variant": "abstention_saved",
+          "verdict": "JOURNALED_QUARANTINE_ABSTENTION"
+        },
+        {
+          "decision_tick": 38,
+          "envelope_sha256": "9732915ea3a213e6f01e7a7016d8e817b1f6b29cbac9ddf6d70dbb09ff5afe0e",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/on_forward_first/2",
+          "variant": "rollback_before_commit",
+          "verdict": "FAULT_INJECTED_ATOMIC_ROLLBACK"
+        },
+        {
+          "decision_tick": 38,
+          "envelope_sha256": "9732915ea3a213e6f01e7a7016d8e817b1f6b29cbac9ddf6d70dbb09ff5afe0e",
+          "head": "c6f85e2e35c225b3dff4b5bf1e4f2b546b6786b3a2263f1ea3bf95d040ab679d",
+          "journaled": true,
+          "recorded_sequence": 16,
+          "source_key": "eight_front_back/on_forward_first/2",
+          "variant": "same_receipt_recovered",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 28,
+          "envelope_sha256": "436790c002d1adbc7cc2443e54d98c74f9cbd0b945a4e1a485a02ac29a112804",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/on_forward_first/2",
+          "variant": "signed_stale_source_clock",
+          "verdict": "VETO_PERSISTENT_SOURCE_CLOCK"
+        },
+        {
+          "decision_tick": 48,
+          "envelope_sha256": "c4dfc38b57831f095fe412d75b85a80be2669f39c16a638280db43e41aad7186",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/on_forward_first/2",
+          "variant": "tampered_review_not_saved",
+          "verdict": "VETO_INVALID_ATTESTATION"
+        },
+        {
+          "decision_tick": 58,
+          "envelope_sha256": "ae4934d0a0afeca890a2f3673e9ca54cb7450c90a9716397b8620f02da5982e6",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/on_forward_first/2",
+          "variant": "wrong_parent_not_saved",
+          "verdict": "VETO_SOURCE_BINDING"
+        },
+        {
+          "decision_tick": 68,
+          "envelope_sha256": "3bd7417410af1c56b5890610e0a3d8269d689aa8490401094bad84dc3cf5e1f1",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/on_forward_first/2",
+          "variant": "co_signed_poison_not_saved",
+          "verdict": "VETO_TASK_CANARY_CONFLICT"
+        }
+      ],
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 2,
+      "original_native_sha256": "7428e49f0b6acc831094f6c36b9448960be444076ea1b68531de4d62fc8bf508",
+      "schedule": "eight_front_back"
+    },
+    {
+      "decisions": [
+        {
+          "decision_tick": 9,
+          "envelope_sha256": "3a6430c20e8a98d16fa7099d2553f777c35453d4f2b014d33f008dffc81f40b2",
+          "head": "5b9d955d85530b9dbae71090345bed3a65bf7d30ac7ca38b2cf815c92357f345",
+          "journaled": true,
+          "recorded_sequence": 17,
+          "source_key": "eight_front_back/on_feedback_first/1",
+          "variant": "consensus_saved",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 9,
+          "envelope_sha256": "3a6430c20e8a98d16fa7099d2553f777c35453d4f2b014d33f008dffc81f40b2",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/on_feedback_first/1",
+          "variant": "consensus_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 19,
+          "envelope_sha256": "c783902c618d60be7aba903e72d98a91e801cfcbe9c840329a7195a57fa67d82",
+          "head": "51bb7d268b96f16b1b7e1f73501d76ec1b7b22479a7fa6e2f3b160c53f9a9cfd",
+          "journaled": true,
+          "recorded_sequence": 18,
+          "source_key": "eight_front_back/on_feedback_first/1",
+          "variant": "disagreement_saved",
+          "verdict": "JOURNALED_QUARANTINE_REVIEWER_DISAGREEMENT"
+        },
+        {
+          "decision_tick": 19,
+          "envelope_sha256": "c783902c618d60be7aba903e72d98a91e801cfcbe9c840329a7195a57fa67d82",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/on_feedback_first/1",
+          "variant": "quarantined_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 29,
+          "envelope_sha256": "99489d578966ae10bb9593b6768bbffcec3d54ee5e3fc82261d9801989f13006",
+          "head": "bd24e713c524a497cbf3ea6c8e317aaeef8f26ea52c517233b524b764611831c",
+          "journaled": true,
+          "recorded_sequence": 19,
+          "source_key": "eight_front_back/on_feedback_first/1",
+          "variant": "abstention_saved",
+          "verdict": "JOURNALED_QUARANTINE_ABSTENTION"
+        },
+        {
+          "decision_tick": 39,
+          "envelope_sha256": "48b812cfb61b72cdb58b2a9ec8d43712fec20f7653738e11a6fab57e15c34074",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/on_feedback_first/1",
+          "variant": "rollback_before_commit",
+          "verdict": "FAULT_INJECTED_ATOMIC_ROLLBACK"
+        },
+        {
+          "decision_tick": 39,
+          "envelope_sha256": "48b812cfb61b72cdb58b2a9ec8d43712fec20f7653738e11a6fab57e15c34074",
+          "head": "03391cf6cfbba40aaf3606f379eb04d785bd6892ccb4346c86b4c99faa421c5b",
+          "journaled": true,
+          "recorded_sequence": 20,
+          "source_key": "eight_front_back/on_feedback_first/1",
+          "variant": "same_receipt_recovered",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 29,
+          "envelope_sha256": "8f72b6b5fefd22083bd228eacadab6642092dd0d190d94bf7b7e9710f56dd4d0",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/on_feedback_first/1",
+          "variant": "signed_stale_source_clock",
+          "verdict": "VETO_PERSISTENT_SOURCE_CLOCK"
+        },
+        {
+          "decision_tick": 49,
+          "envelope_sha256": "f1197ec4a254c551ce1d492d1e406de4efe1b2a930ed9b250d12309e32a415e0",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/on_feedback_first/1",
+          "variant": "tampered_review_not_saved",
+          "verdict": "VETO_INVALID_ATTESTATION"
+        },
+        {
+          "decision_tick": 59,
+          "envelope_sha256": "0e5f3ad2451078a6d69369461a784db63606136bad416ef2d7ea026625d3956c",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/on_feedback_first/1",
+          "variant": "wrong_parent_not_saved",
+          "verdict": "VETO_SOURCE_BINDING"
+        },
+        {
+          "decision_tick": 69,
+          "envelope_sha256": "c3393ed1fde3e6b15702617d7db09868f76cc1678ca063794f5c3a70774b46ba",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/on_feedback_first/1",
+          "variant": "co_signed_poison_not_saved",
+          "verdict": "VETO_TASK_CANARY_CONFLICT"
+        }
+      ],
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 1,
+      "original_native_sha256": "5ea6e2f58702a632f0655e402e23dcb407c26e3bce9fb6c2313a5fee1e4b4d19",
+      "schedule": "eight_front_back"
+    },
+    {
+      "decisions": [
+        {
+          "decision_tick": 8,
+          "envelope_sha256": "c8ebe2c69b6b7e67505244aec385a4db6016ae351802f97b7efe1047aa49ae43",
+          "head": "51bc65451715b864f4d73d718bea0d17b6e50e8a0e918136f102bf1d87ff86da",
+          "journaled": true,
+          "recorded_sequence": 21,
+          "source_key": "eight_front_back/on_feedback_first/2",
+          "variant": "consensus_saved",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 8,
+          "envelope_sha256": "c8ebe2c69b6b7e67505244aec385a4db6016ae351802f97b7efe1047aa49ae43",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/on_feedback_first/2",
+          "variant": "consensus_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 18,
+          "envelope_sha256": "cf7f53ab326349d84768dce241395a86cc7a7164c3301b954070c33d07234eab",
+          "head": "05dabdee388a7926ee53c2eb1066397d685438dc1a174253ae2177d37114989d",
+          "journaled": true,
+          "recorded_sequence": 22,
+          "source_key": "eight_front_back/on_feedback_first/2",
+          "variant": "disagreement_saved",
+          "verdict": "JOURNALED_QUARANTINE_REVIEWER_DISAGREEMENT"
+        },
+        {
+          "decision_tick": 18,
+          "envelope_sha256": "cf7f53ab326349d84768dce241395a86cc7a7164c3301b954070c33d07234eab",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/on_feedback_first/2",
+          "variant": "quarantined_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 28,
+          "envelope_sha256": "d08e5bf509e8e27969ce32e59b490b8e113b3ff6afe992242125a8cb2ad2cd53",
+          "head": "1b70633c7381f01c5885ec8796fe8a371f83e7778dc805e8d657683b4f79d8a0",
+          "journaled": true,
+          "recorded_sequence": 23,
+          "source_key": "eight_front_back/on_feedback_first/2",
+          "variant": "abstention_saved",
+          "verdict": "JOURNALED_QUARANTINE_ABSTENTION"
+        },
+        {
+          "decision_tick": 38,
+          "envelope_sha256": "f7e9356130e726069392ddee1d4d5b3532bceb98b1bc93b26bbcd047d396fe40",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/on_feedback_first/2",
+          "variant": "rollback_before_commit",
+          "verdict": "FAULT_INJECTED_ATOMIC_ROLLBACK"
+        },
+        {
+          "decision_tick": 38,
+          "envelope_sha256": "f7e9356130e726069392ddee1d4d5b3532bceb98b1bc93b26bbcd047d396fe40",
+          "head": "1669668b717b3b1ae5c26b76ad4732e6ebda0cd34818123a3824eac857f0acc7",
+          "journaled": true,
+          "recorded_sequence": 24,
+          "source_key": "eight_front_back/on_feedback_first/2",
+          "variant": "same_receipt_recovered",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 28,
+          "envelope_sha256": "cdc028d762960c300b0706c82911591732f000d27b00e302a3974ca89afb45ff",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/on_feedback_first/2",
+          "variant": "signed_stale_source_clock",
+          "verdict": "VETO_PERSISTENT_SOURCE_CLOCK"
+        },
+        {
+          "decision_tick": 48,
+          "envelope_sha256": "88cbcb7f9c53eb3d10fe37ac5909f720719846e4ad8ad25e9af09b2a24ae352a",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/on_feedback_first/2",
+          "variant": "tampered_review_not_saved",
+          "verdict": "VETO_INVALID_ATTESTATION"
+        },
+        {
+          "decision_tick": 58,
+          "envelope_sha256": "8ef75d174ec33bc5cc9feccbdf4f21f5eef2fe72eadf7957658ce3e5a533e8c5",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/on_feedback_first/2",
+          "variant": "wrong_parent_not_saved",
+          "verdict": "VETO_SOURCE_BINDING"
+        },
+        {
+          "decision_tick": 68,
+          "envelope_sha256": "13df9431637db9e6e200b8f1a8b1f7b878e535787d13b4c68c41bac2d6271aec",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_front_back/on_feedback_first/2",
+          "variant": "co_signed_poison_not_saved",
+          "verdict": "VETO_TASK_CANARY_CONFLICT"
+        }
+      ],
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 2,
+      "original_native_sha256": "febaa58aee9177f396f7e270ab8b4ce198a4a1cc2d8b3a315d98d9b130b59b61",
+      "schedule": "eight_front_back"
+    },
+    {
+      "decisions": [
+        {
+          "decision_tick": 6,
+          "envelope_sha256": "7586cf54e53295f42746a284a5bdf00da13de4116801ffd834d73a825bcc4139",
+          "head": "42f08caf1eed719315b9249f5913639d077a13b08e844ebcb079dcfd8c859a63",
+          "journaled": true,
+          "recorded_sequence": 25,
+          "source_key": "eight_nine_gap/off/1",
+          "variant": "consensus_saved",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 6,
+          "envelope_sha256": "7586cf54e53295f42746a284a5bdf00da13de4116801ffd834d73a825bcc4139",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/off/1",
+          "variant": "consensus_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 16,
+          "envelope_sha256": "f0c7b9f9c1f6e6e138706cc40491fc74b98b6c089f8841e27085fe17629d7880",
+          "head": "eab4b634dc337a65ebcd0269194e87b7964f4c8dbd8bc6d6e2cae8291e1db195",
+          "journaled": true,
+          "recorded_sequence": 26,
+          "source_key": "eight_nine_gap/off/1",
+          "variant": "disagreement_saved",
+          "verdict": "JOURNALED_QUARANTINE_REVIEWER_DISAGREEMENT"
+        },
+        {
+          "decision_tick": 16,
+          "envelope_sha256": "f0c7b9f9c1f6e6e138706cc40491fc74b98b6c089f8841e27085fe17629d7880",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/off/1",
+          "variant": "quarantined_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 26,
+          "envelope_sha256": "2c6ab93bddfd08e529cb5dd4b7f0dca73a2431f091ac8232d7eda6f0f41a25aa",
+          "head": "cd2ca10b9ed969e4cb7bba2aead4f8e6f27985d695dbcddd7a1eb81569289a2c",
+          "journaled": true,
+          "recorded_sequence": 27,
+          "source_key": "eight_nine_gap/off/1",
+          "variant": "abstention_saved",
+          "verdict": "JOURNALED_QUARANTINE_ABSTENTION"
+        },
+        {
+          "decision_tick": 36,
+          "envelope_sha256": "ec993a7e4d76c6be0b6bf90dc2689306c1b98be67d580ad4dba08051262942e8",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/off/1",
+          "variant": "rollback_before_commit",
+          "verdict": "FAULT_INJECTED_ATOMIC_ROLLBACK"
+        },
+        {
+          "decision_tick": 36,
+          "envelope_sha256": "ec993a7e4d76c6be0b6bf90dc2689306c1b98be67d580ad4dba08051262942e8",
+          "head": "d23392a2c1206c1fdfc1d30b60b6c5d66cdbfad587e065fad491a13f530f6c2b",
+          "journaled": true,
+          "recorded_sequence": 28,
+          "source_key": "eight_nine_gap/off/1",
+          "variant": "same_receipt_recovered",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 26,
+          "envelope_sha256": "289aa7f88e138b263f6422d490398d2444fec824eb520d41fcbf1027ae1de67e",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/off/1",
+          "variant": "signed_stale_source_clock",
+          "verdict": "VETO_PERSISTENT_SOURCE_CLOCK"
+        },
+        {
+          "decision_tick": 46,
+          "envelope_sha256": "e7dbfbe5dcc8abd4674e15b8261f9115117e70d76c93bc69256256f004293f78",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/off/1",
+          "variant": "tampered_review_not_saved",
+          "verdict": "VETO_INVALID_ATTESTATION"
+        },
+        {
+          "decision_tick": 56,
+          "envelope_sha256": "17972e970cdbb472d2bc0814c6b667e1093d52de61cd43b3452e0e22c4ce976e",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/off/1",
+          "variant": "wrong_parent_not_saved",
+          "verdict": "VETO_SOURCE_BINDING"
+        },
+        {
+          "decision_tick": 66,
+          "envelope_sha256": "2f2b4197c02c40e7aa10120b6b5ab627f0adf2ee54b26848e53e7edf5f31c24c",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/off/1",
+          "variant": "co_signed_poison_not_saved",
+          "verdict": "VETO_TASK_CANARY_CONFLICT"
+        }
+      ],
+      "mode": "off",
+      "native_global_PE_capacity": 1,
+      "original_native_sha256": "3490377b28b15dea11c473e34b465f39c308b79bd2600798934f62819d0e3e5b",
+      "schedule": "eight_nine_gap"
+    },
+    {
+      "decisions": [
+        {
+          "decision_tick": 6,
+          "envelope_sha256": "66c10d1573d43d7d589781ba41e6fd9fe2e3135a1d9ce7a3486d55d616a182e6",
+          "head": "ff4388d722937164655bdd6fea3d44a78ea992dd67f3da3973ee43f2f5aad80f",
+          "journaled": true,
+          "recorded_sequence": 29,
+          "source_key": "eight_nine_gap/off/2",
+          "variant": "consensus_saved",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 6,
+          "envelope_sha256": "66c10d1573d43d7d589781ba41e6fd9fe2e3135a1d9ce7a3486d55d616a182e6",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/off/2",
+          "variant": "consensus_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 16,
+          "envelope_sha256": "d62efce013f854f626eb3042b4714b4c00bac2c014dc808a8012d64510e0f3a8",
+          "head": "d04930a4e69a53f22bde86b90a6aae78719eb4355bfd7d3962396d123987a2aa",
+          "journaled": true,
+          "recorded_sequence": 30,
+          "source_key": "eight_nine_gap/off/2",
+          "variant": "disagreement_saved",
+          "verdict": "JOURNALED_QUARANTINE_REVIEWER_DISAGREEMENT"
+        },
+        {
+          "decision_tick": 16,
+          "envelope_sha256": "d62efce013f854f626eb3042b4714b4c00bac2c014dc808a8012d64510e0f3a8",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/off/2",
+          "variant": "quarantined_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 26,
+          "envelope_sha256": "c502cdfbfe4df575459bd4752c53c7876ca200ad4e8061e91f2361b0bf26eec6",
+          "head": "27c636f8d9db26b7d768286b49d44c8d02e9636c3c38416dde4cfd211b016eb0",
+          "journaled": true,
+          "recorded_sequence": 31,
+          "source_key": "eight_nine_gap/off/2",
+          "variant": "abstention_saved",
+          "verdict": "JOURNALED_QUARANTINE_ABSTENTION"
+        },
+        {
+          "decision_tick": 36,
+          "envelope_sha256": "0addb741d9b600d84738023ec9c0f79d2181ce01dcfb56c89611939fa83d33c0",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/off/2",
+          "variant": "rollback_before_commit",
+          "verdict": "FAULT_INJECTED_ATOMIC_ROLLBACK"
+        },
+        {
+          "decision_tick": 36,
+          "envelope_sha256": "0addb741d9b600d84738023ec9c0f79d2181ce01dcfb56c89611939fa83d33c0",
+          "head": "e98403b366a8e9cf3c9d2a1f2cdbac01f00b8b28e03a52e19a2791b60644cead",
+          "journaled": true,
+          "recorded_sequence": 32,
+          "source_key": "eight_nine_gap/off/2",
+          "variant": "same_receipt_recovered",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 26,
+          "envelope_sha256": "f5919d0c8188c9a9ce255dab0c05c05464d85ecfe69f094cf86bfba3bb2b4fb8",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/off/2",
+          "variant": "signed_stale_source_clock",
+          "verdict": "VETO_PERSISTENT_SOURCE_CLOCK"
+        },
+        {
+          "decision_tick": 46,
+          "envelope_sha256": "536844053919f9a546be0183c363ec3c8efcc41add4871cdfc89b2743b5d3486",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/off/2",
+          "variant": "tampered_review_not_saved",
+          "verdict": "VETO_INVALID_ATTESTATION"
+        },
+        {
+          "decision_tick": 56,
+          "envelope_sha256": "818fc771dc17f246cb0b9f88c148aa7e6bdd8c3ee3d87fce862744d167c2412f",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/off/2",
+          "variant": "wrong_parent_not_saved",
+          "verdict": "VETO_SOURCE_BINDING"
+        },
+        {
+          "decision_tick": 66,
+          "envelope_sha256": "953746d7c75268ca51c4493c58d1e424ecfaaf5a3f8c54ec0eb42b026b3bc5d6",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/off/2",
+          "variant": "co_signed_poison_not_saved",
+          "verdict": "VETO_TASK_CANARY_CONFLICT"
+        }
+      ],
+      "mode": "off",
+      "native_global_PE_capacity": 2,
+      "original_native_sha256": "130ff82a31b5982df304fed462640e35694fc71e61d9df1fbe877945e6722d53",
+      "schedule": "eight_nine_gap"
+    },
+    {
+      "decisions": [
+        {
+          "decision_tick": 9,
+          "envelope_sha256": "83ae0117a228bdefbbfe260631e4b3be4c6a2a4fae3b821d054275c6f8bb64c4",
+          "head": "58b85c6fbec3b41656abe5cbc421e80a8a6a52da7b1b184994a84c187ebe6650",
+          "journaled": true,
+          "recorded_sequence": 33,
+          "source_key": "eight_nine_gap/on_forward_first/1",
+          "variant": "consensus_saved",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 9,
+          "envelope_sha256": "83ae0117a228bdefbbfe260631e4b3be4c6a2a4fae3b821d054275c6f8bb64c4",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/on_forward_first/1",
+          "variant": "consensus_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 19,
+          "envelope_sha256": "6a8a6cf79468d715f6d7670f86c3bec776b4aed0ec359281996965bd36179337",
+          "head": "1c825583ff2c4f9a6d7dcabfb68a8f716da2b16f900bad96d0b8eaf79524c472",
+          "journaled": true,
+          "recorded_sequence": 34,
+          "source_key": "eight_nine_gap/on_forward_first/1",
+          "variant": "disagreement_saved",
+          "verdict": "JOURNALED_QUARANTINE_REVIEWER_DISAGREEMENT"
+        },
+        {
+          "decision_tick": 19,
+          "envelope_sha256": "6a8a6cf79468d715f6d7670f86c3bec776b4aed0ec359281996965bd36179337",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/on_forward_first/1",
+          "variant": "quarantined_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 29,
+          "envelope_sha256": "5acc201e0cb965d0e2d86f3d63396f6d221a2b1b9b460f3d96c72dd56b15fc13",
+          "head": "3cbda6bcd74ce55672d2fd6c4b8bc631621701cfceeca099cdd85d973df50e22",
+          "journaled": true,
+          "recorded_sequence": 35,
+          "source_key": "eight_nine_gap/on_forward_first/1",
+          "variant": "abstention_saved",
+          "verdict": "JOURNALED_QUARANTINE_ABSTENTION"
+        },
+        {
+          "decision_tick": 39,
+          "envelope_sha256": "073a6cf9622521c66997f3baf8e6e7b0e61219509ceb1c3b8c7dabd75f81b3b8",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/on_forward_first/1",
+          "variant": "rollback_before_commit",
+          "verdict": "FAULT_INJECTED_ATOMIC_ROLLBACK"
+        },
+        {
+          "decision_tick": 39,
+          "envelope_sha256": "073a6cf9622521c66997f3baf8e6e7b0e61219509ceb1c3b8c7dabd75f81b3b8",
+          "head": "4015f6fa219c1f8301a605bcfd6e7314bac5a7cae716119aa2c6f1161e44b5dc",
+          "journaled": true,
+          "recorded_sequence": 36,
+          "source_key": "eight_nine_gap/on_forward_first/1",
+          "variant": "same_receipt_recovered",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 29,
+          "envelope_sha256": "c77fddeacc3ee7038f0689bcfacd5566fd948c85fdc300ad03a4f00eedd89784",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/on_forward_first/1",
+          "variant": "signed_stale_source_clock",
+          "verdict": "VETO_PERSISTENT_SOURCE_CLOCK"
+        },
+        {
+          "decision_tick": 49,
+          "envelope_sha256": "7107d6fcd306d7b9cf7337c610527614f941798e4076ae4945cdb154040479f6",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/on_forward_first/1",
+          "variant": "tampered_review_not_saved",
+          "verdict": "VETO_INVALID_ATTESTATION"
+        },
+        {
+          "decision_tick": 59,
+          "envelope_sha256": "67611260daef2d7ee2cc985798cf53a1a802a270fabf4b4caf791f6727f00810",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/on_forward_first/1",
+          "variant": "wrong_parent_not_saved",
+          "verdict": "VETO_SOURCE_BINDING"
+        },
+        {
+          "decision_tick": 69,
+          "envelope_sha256": "6b5f48084bde2cbe30f2df07af23cd80bf30eb98c696b5884ca1e536e16ff51f",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/on_forward_first/1",
+          "variant": "co_signed_poison_not_saved",
+          "verdict": "VETO_TASK_CANARY_CONFLICT"
+        }
+      ],
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 1,
+      "original_native_sha256": "ff35a275a1e61cbb1ecf1112ef6b401180324b8933c4db2d2d27ad7d0f3886cd",
+      "schedule": "eight_nine_gap"
+    },
+    {
+      "decisions": [
+        {
+          "decision_tick": 8,
+          "envelope_sha256": "9514cdcbbd417f5051772ad2c4bf3624b6e10bab91e191c00fd82abe7aaa139a",
+          "head": "074d2940d7f0dfe1059765c706c157caeb275d5ab6395803c168f151e0f25fe0",
+          "journaled": true,
+          "recorded_sequence": 37,
+          "source_key": "eight_nine_gap/on_forward_first/2",
+          "variant": "consensus_saved",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 8,
+          "envelope_sha256": "9514cdcbbd417f5051772ad2c4bf3624b6e10bab91e191c00fd82abe7aaa139a",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/on_forward_first/2",
+          "variant": "consensus_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 18,
+          "envelope_sha256": "ab791680c79f572a50f1c85f8feaea48c88f0f536693baa0c44d9647583555ab",
+          "head": "8fc09b2951bae73e97d41b336b6c42328e224e9ae8ecbcd81aee6af8e5a22285",
+          "journaled": true,
+          "recorded_sequence": 38,
+          "source_key": "eight_nine_gap/on_forward_first/2",
+          "variant": "disagreement_saved",
+          "verdict": "JOURNALED_QUARANTINE_REVIEWER_DISAGREEMENT"
+        },
+        {
+          "decision_tick": 18,
+          "envelope_sha256": "ab791680c79f572a50f1c85f8feaea48c88f0f536693baa0c44d9647583555ab",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/on_forward_first/2",
+          "variant": "quarantined_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 28,
+          "envelope_sha256": "98dea8f1949b3f4101af3a8c0a9da657f21f26cac098ca8b395568688c1af9cc",
+          "head": "45c4aa21d11bc11c11e6b288c7f0e95988e2ae5bd7b030a282ef3c0f0fb3d967",
+          "journaled": true,
+          "recorded_sequence": 39,
+          "source_key": "eight_nine_gap/on_forward_first/2",
+          "variant": "abstention_saved",
+          "verdict": "JOURNALED_QUARANTINE_ABSTENTION"
+        },
+        {
+          "decision_tick": 38,
+          "envelope_sha256": "08177ac068a77fce371b14e0babf97e8c7530e5e33699aefaa4c0c32d5a76609",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/on_forward_first/2",
+          "variant": "rollback_before_commit",
+          "verdict": "FAULT_INJECTED_ATOMIC_ROLLBACK"
+        },
+        {
+          "decision_tick": 38,
+          "envelope_sha256": "08177ac068a77fce371b14e0babf97e8c7530e5e33699aefaa4c0c32d5a76609",
+          "head": "60ce00bd6649de22bda1f2a9862a7d5d06ae588b391c8dbd78108e1c0464b241",
+          "journaled": true,
+          "recorded_sequence": 40,
+          "source_key": "eight_nine_gap/on_forward_first/2",
+          "variant": "same_receipt_recovered",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 28,
+          "envelope_sha256": "848ad4c03abc59d0e94c0183c85e3597a1be9ce9fe823b2b81f74b7ff3cb8e14",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/on_forward_first/2",
+          "variant": "signed_stale_source_clock",
+          "verdict": "VETO_PERSISTENT_SOURCE_CLOCK"
+        },
+        {
+          "decision_tick": 48,
+          "envelope_sha256": "f1898968e39a60166871282930b9a06ac450522cca1755d568e2ec606a79f87b",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/on_forward_first/2",
+          "variant": "tampered_review_not_saved",
+          "verdict": "VETO_INVALID_ATTESTATION"
+        },
+        {
+          "decision_tick": 58,
+          "envelope_sha256": "cb3455c9343aa31e576890da2da445f521c427587011ae76b8a947dee74b6abe",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/on_forward_first/2",
+          "variant": "wrong_parent_not_saved",
+          "verdict": "VETO_SOURCE_BINDING"
+        },
+        {
+          "decision_tick": 68,
+          "envelope_sha256": "41119a299fbb5babc6d7efe33c0c56764cd7e6f8919e6a7978e988df178b8eed",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/on_forward_first/2",
+          "variant": "co_signed_poison_not_saved",
+          "verdict": "VETO_TASK_CANARY_CONFLICT"
+        }
+      ],
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 2,
+      "original_native_sha256": "7bd782b722f3d37426011f5c362f083064deb9f159f12fbf68519c1350475c43",
+      "schedule": "eight_nine_gap"
+    },
+    {
+      "decisions": [
+        {
+          "decision_tick": 9,
+          "envelope_sha256": "3b8d8907b82e743f39db01aafcca2620602cc71b7e697860639e3ba72f11abe5",
+          "head": "a66686e6d16835693545ecd0fa2cdc21528d48ae05fd1aea6b55008a6d6d53cb",
+          "journaled": true,
+          "recorded_sequence": 41,
+          "source_key": "eight_nine_gap/on_feedback_first/1",
+          "variant": "consensus_saved",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 9,
+          "envelope_sha256": "3b8d8907b82e743f39db01aafcca2620602cc71b7e697860639e3ba72f11abe5",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/on_feedback_first/1",
+          "variant": "consensus_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 19,
+          "envelope_sha256": "bf6b2c7300f661a3f1e2579bde6ce6ec35ecfc37c839c2eed965769da25497d9",
+          "head": "27ceac05192c06f79a0a6be060af55b9811283fafa69428461ccd5cb0ccdf17b",
+          "journaled": true,
+          "recorded_sequence": 42,
+          "source_key": "eight_nine_gap/on_feedback_first/1",
+          "variant": "disagreement_saved",
+          "verdict": "JOURNALED_QUARANTINE_REVIEWER_DISAGREEMENT"
+        },
+        {
+          "decision_tick": 19,
+          "envelope_sha256": "bf6b2c7300f661a3f1e2579bde6ce6ec35ecfc37c839c2eed965769da25497d9",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/on_feedback_first/1",
+          "variant": "quarantined_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 29,
+          "envelope_sha256": "a6d5af1be234b690675f0a9bd4a0bb06504198dfe14cd2c40ea8e4eca6b97f6a",
+          "head": "d8d20b300a770cc4165e1f6f5646e28de78c2ea1cbeab34e1e7a31d0732bd982",
+          "journaled": true,
+          "recorded_sequence": 43,
+          "source_key": "eight_nine_gap/on_feedback_first/1",
+          "variant": "abstention_saved",
+          "verdict": "JOURNALED_QUARANTINE_ABSTENTION"
+        },
+        {
+          "decision_tick": 39,
+          "envelope_sha256": "88c20dab5c47db10d05668f02896a4219d0b29769eff1de700169382602538a0",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/on_feedback_first/1",
+          "variant": "rollback_before_commit",
+          "verdict": "FAULT_INJECTED_ATOMIC_ROLLBACK"
+        },
+        {
+          "decision_tick": 39,
+          "envelope_sha256": "88c20dab5c47db10d05668f02896a4219d0b29769eff1de700169382602538a0",
+          "head": "6ca9fec18cc21015bb867107b4498b4cb2bad452a017edf24c37fb3d8721b0f2",
+          "journaled": true,
+          "recorded_sequence": 44,
+          "source_key": "eight_nine_gap/on_feedback_first/1",
+          "variant": "same_receipt_recovered",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 29,
+          "envelope_sha256": "bbefaab1d4141b0b546f51ba2285e64dd2b913ffb47aa0a53e7d825b9f0e9de0",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/on_feedback_first/1",
+          "variant": "signed_stale_source_clock",
+          "verdict": "VETO_PERSISTENT_SOURCE_CLOCK"
+        },
+        {
+          "decision_tick": 49,
+          "envelope_sha256": "347ba643b9e65374570df870de98bee62a6396a95b7cb49c61e6e11d63c51a83",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/on_feedback_first/1",
+          "variant": "tampered_review_not_saved",
+          "verdict": "VETO_INVALID_ATTESTATION"
+        },
+        {
+          "decision_tick": 59,
+          "envelope_sha256": "cd22d9ff572b3be5436c8b179608233157e8e0a54c53a3e901cde6a1a93711aa",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/on_feedback_first/1",
+          "variant": "wrong_parent_not_saved",
+          "verdict": "VETO_SOURCE_BINDING"
+        },
+        {
+          "decision_tick": 69,
+          "envelope_sha256": "9c18c61f34bd756a69647cb76f94b0b3e33f8434d5e768c2057f90addbfdc6bb",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/on_feedback_first/1",
+          "variant": "co_signed_poison_not_saved",
+          "verdict": "VETO_TASK_CANARY_CONFLICT"
+        }
+      ],
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 1,
+      "original_native_sha256": "224c20414a5072fdb0705ad8edc73fcbb9028871e6e0acf37e531b1aed5a6b8a",
+      "schedule": "eight_nine_gap"
+    },
+    {
+      "decisions": [
+        {
+          "decision_tick": 8,
+          "envelope_sha256": "06336a7461aed30e1ca44ef736ab638fbe86a49c2ef6d87b51b5f391f406fcaf",
+          "head": "30e39af52657e03f2816e07db6c3718d6961473258e1de348b2ae9d4223955b4",
+          "journaled": true,
+          "recorded_sequence": 45,
+          "source_key": "eight_nine_gap/on_feedback_first/2",
+          "variant": "consensus_saved",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 8,
+          "envelope_sha256": "06336a7461aed30e1ca44ef736ab638fbe86a49c2ef6d87b51b5f391f406fcaf",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/on_feedback_first/2",
+          "variant": "consensus_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 18,
+          "envelope_sha256": "870eb4812895d0c23687cd01f9ce32732dc2b5e2d72dbe6d8280bac4f74cfc2d",
+          "head": "cd6901ae4a92ef3ccadd708821806771555b5af1bc496bbbda5f50bd58c5a179",
+          "journaled": true,
+          "recorded_sequence": 46,
+          "source_key": "eight_nine_gap/on_feedback_first/2",
+          "variant": "disagreement_saved",
+          "verdict": "JOURNALED_QUARANTINE_REVIEWER_DISAGREEMENT"
+        },
+        {
+          "decision_tick": 18,
+          "envelope_sha256": "870eb4812895d0c23687cd01f9ce32732dc2b5e2d72dbe6d8280bac4f74cfc2d",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/on_feedback_first/2",
+          "variant": "quarantined_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 28,
+          "envelope_sha256": "aca5b75cd3b33c0886aacb1279155285b709b67593967981b8d94aebc2392410",
+          "head": "c1e6664c375d093e74cd18d1ebdc0ee77d2861545a46d5268b42310760cefffa",
+          "journaled": true,
+          "recorded_sequence": 47,
+          "source_key": "eight_nine_gap/on_feedback_first/2",
+          "variant": "abstention_saved",
+          "verdict": "JOURNALED_QUARANTINE_ABSTENTION"
+        },
+        {
+          "decision_tick": 38,
+          "envelope_sha256": "72fd39535ade3f7ddc2dc2f89fadae082a4ddeaef891ba7cc5d7c91dc7d95129",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/on_feedback_first/2",
+          "variant": "rollback_before_commit",
+          "verdict": "FAULT_INJECTED_ATOMIC_ROLLBACK"
+        },
+        {
+          "decision_tick": 38,
+          "envelope_sha256": "72fd39535ade3f7ddc2dc2f89fadae082a4ddeaef891ba7cc5d7c91dc7d95129",
+          "head": "2f8d02969da90da097595d965f44a19cb5533a973b5628ae84eaae8e710e76fd",
+          "journaled": true,
+          "recorded_sequence": 48,
+          "source_key": "eight_nine_gap/on_feedback_first/2",
+          "variant": "same_receipt_recovered",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 28,
+          "envelope_sha256": "372397271e7349b64929409801fbddb4b62bd1ba2829d8442ca2af2accb5ce95",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/on_feedback_first/2",
+          "variant": "signed_stale_source_clock",
+          "verdict": "VETO_PERSISTENT_SOURCE_CLOCK"
+        },
+        {
+          "decision_tick": 48,
+          "envelope_sha256": "3c030d0e83d0eff5e4dd90ab795f495334345a01435ba1c9aaf728d5100e8b51",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/on_feedback_first/2",
+          "variant": "tampered_review_not_saved",
+          "verdict": "VETO_INVALID_ATTESTATION"
+        },
+        {
+          "decision_tick": 58,
+          "envelope_sha256": "76bf973196d2ed4f50b05b1a3153c0ae8629628765990cfe2be4c34fd230f9fc",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/on_feedback_first/2",
+          "variant": "wrong_parent_not_saved",
+          "verdict": "VETO_SOURCE_BINDING"
+        },
+        {
+          "decision_tick": 68,
+          "envelope_sha256": "2429286779b95b02a18b76b7f0f5a1fd8baa17f9fa19a22c1ae24bd337daaac4",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_nine_gap/on_feedback_first/2",
+          "variant": "co_signed_poison_not_saved",
+          "verdict": "VETO_TASK_CANARY_CONFLICT"
+        }
+      ],
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 2,
+      "original_native_sha256": "dc20a3a8e9d217b98c345489386d22e3517e8938ce521d8c5b61ad3ee6b4f694",
+      "schedule": "eight_nine_gap"
+    },
+    {
+      "decisions": [
+        {
+          "decision_tick": 14,
+          "envelope_sha256": "cb07b6700160ef8f35bd47a0fb13a5ae547a08364da32689f4265ab507084e78",
+          "head": "308fe66bb30feb5bcb0814d927cf9c1e46ed9db9db520b5afd950e34ad6693c4",
+          "journaled": true,
+          "recorded_sequence": 49,
+          "source_key": "eight_late_compressed/off/1",
+          "variant": "consensus_saved",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 14,
+          "envelope_sha256": "cb07b6700160ef8f35bd47a0fb13a5ae547a08364da32689f4265ab507084e78",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/off/1",
+          "variant": "consensus_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 24,
+          "envelope_sha256": "c6fcdbb7198a484f376b5ed53522d4e9bb913e9d212c8d6da0de58eda4fa7fb6",
+          "head": "c2f8c0853733b9d84b1e37addefde0385589331304f41879649a31fd64b0017b",
+          "journaled": true,
+          "recorded_sequence": 50,
+          "source_key": "eight_late_compressed/off/1",
+          "variant": "disagreement_saved",
+          "verdict": "JOURNALED_QUARANTINE_REVIEWER_DISAGREEMENT"
+        },
+        {
+          "decision_tick": 24,
+          "envelope_sha256": "c6fcdbb7198a484f376b5ed53522d4e9bb913e9d212c8d6da0de58eda4fa7fb6",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/off/1",
+          "variant": "quarantined_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 34,
+          "envelope_sha256": "210a055dedbb27fd2218799cceb4bcddf6a54611e03be3197db55da07891aaf2",
+          "head": "b5b7524fca125eaca1e59036b3685eafb920682f1684e2d8325aa835a71cd628",
+          "journaled": true,
+          "recorded_sequence": 51,
+          "source_key": "eight_late_compressed/off/1",
+          "variant": "abstention_saved",
+          "verdict": "JOURNALED_QUARANTINE_ABSTENTION"
+        },
+        {
+          "decision_tick": 44,
+          "envelope_sha256": "63210537c89e0a270b01ac56b03faf8150767b9a5a30c99a4bbe7bd4b9a3e5bd",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/off/1",
+          "variant": "rollback_before_commit",
+          "verdict": "FAULT_INJECTED_ATOMIC_ROLLBACK"
+        },
+        {
+          "decision_tick": 44,
+          "envelope_sha256": "63210537c89e0a270b01ac56b03faf8150767b9a5a30c99a4bbe7bd4b9a3e5bd",
+          "head": "17eb8351ac1125c0bf431f6eb69d7a170a2934dc22374c65706f45e31fa6aeaa",
+          "journaled": true,
+          "recorded_sequence": 52,
+          "source_key": "eight_late_compressed/off/1",
+          "variant": "same_receipt_recovered",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 34,
+          "envelope_sha256": "e61911a38fef82eed495e75e6784cde6975a58fd52fb81a17f0cd6a2ced16a97",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/off/1",
+          "variant": "signed_stale_source_clock",
+          "verdict": "VETO_PERSISTENT_SOURCE_CLOCK"
+        },
+        {
+          "decision_tick": 54,
+          "envelope_sha256": "83890f2ed29de880920cbf69f688a7c11e1c02e20f08d1ab95bb2699ccc59640",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/off/1",
+          "variant": "tampered_review_not_saved",
+          "verdict": "VETO_INVALID_ATTESTATION"
+        },
+        {
+          "decision_tick": 64,
+          "envelope_sha256": "3a4b98d75e870b4eb3cade49b58f924a5158f663a5759f545142ce167580237d",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/off/1",
+          "variant": "wrong_parent_not_saved",
+          "verdict": "VETO_SOURCE_BINDING"
+        },
+        {
+          "decision_tick": 74,
+          "envelope_sha256": "f17031c4050a570ca9083ea134b047b4ab9d11866263db2fd2d6225bbf76ee4a",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/off/1",
+          "variant": "co_signed_poison_not_saved",
+          "verdict": "VETO_TASK_CANARY_CONFLICT"
+        }
+      ],
+      "mode": "off",
+      "native_global_PE_capacity": 1,
+      "original_native_sha256": "1557153a8edac142320491bc30c152acf1e20c7eed9662867b6e206e46cde791",
+      "schedule": "eight_late_compressed"
+    },
+    {
+      "decisions": [
+        {
+          "decision_tick": 14,
+          "envelope_sha256": "02cbf35948a587d36fe7d9d2f40f8f73be30fbf15e3689800a360acee6842064",
+          "head": "774ca117705a7434880c11a12a8678c3078ef3218f358e972bf6643cbe11844f",
+          "journaled": true,
+          "recorded_sequence": 53,
+          "source_key": "eight_late_compressed/off/2",
+          "variant": "consensus_saved",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 14,
+          "envelope_sha256": "02cbf35948a587d36fe7d9d2f40f8f73be30fbf15e3689800a360acee6842064",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/off/2",
+          "variant": "consensus_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 24,
+          "envelope_sha256": "e63270769c4d933b89e5d5d2f9bd7a94b86b22341a99a70a61fc8f7d937709fe",
+          "head": "c807d6f15dec500c21be7cec008b0c1fe99314a03b3188b53bfb6d4b0972a79e",
+          "journaled": true,
+          "recorded_sequence": 54,
+          "source_key": "eight_late_compressed/off/2",
+          "variant": "disagreement_saved",
+          "verdict": "JOURNALED_QUARANTINE_REVIEWER_DISAGREEMENT"
+        },
+        {
+          "decision_tick": 24,
+          "envelope_sha256": "e63270769c4d933b89e5d5d2f9bd7a94b86b22341a99a70a61fc8f7d937709fe",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/off/2",
+          "variant": "quarantined_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 34,
+          "envelope_sha256": "6db5c3e04bc5970a11df252c3f366c5a106d5299123da10b9c7390c59a037be1",
+          "head": "9d60bb174b0761668facfbcc16fba051ff82123f88f28c10e95234d91a44dca8",
+          "journaled": true,
+          "recorded_sequence": 55,
+          "source_key": "eight_late_compressed/off/2",
+          "variant": "abstention_saved",
+          "verdict": "JOURNALED_QUARANTINE_ABSTENTION"
+        },
+        {
+          "decision_tick": 44,
+          "envelope_sha256": "7af0d333941b47a085adb0a5c9220c2cc2ea1965e90a3e9758dd0c1db764628a",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/off/2",
+          "variant": "rollback_before_commit",
+          "verdict": "FAULT_INJECTED_ATOMIC_ROLLBACK"
+        },
+        {
+          "decision_tick": 44,
+          "envelope_sha256": "7af0d333941b47a085adb0a5c9220c2cc2ea1965e90a3e9758dd0c1db764628a",
+          "head": "665f531c5abab83329dd63a0824106c73977b809ad680319f56b289c0323f51a",
+          "journaled": true,
+          "recorded_sequence": 56,
+          "source_key": "eight_late_compressed/off/2",
+          "variant": "same_receipt_recovered",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 34,
+          "envelope_sha256": "dd9180603ba2d1b95b99b073d1d7d074e9fcb6cedf9d1bcd94b2d5bb9e2460a5",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/off/2",
+          "variant": "signed_stale_source_clock",
+          "verdict": "VETO_PERSISTENT_SOURCE_CLOCK"
+        },
+        {
+          "decision_tick": 54,
+          "envelope_sha256": "848530cad67b0bea55847f2b17c5167f2dccf693c6b286eedb1548150304129f",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/off/2",
+          "variant": "tampered_review_not_saved",
+          "verdict": "VETO_INVALID_ATTESTATION"
+        },
+        {
+          "decision_tick": 64,
+          "envelope_sha256": "ea0ffe206af8f15cc63dfbf4729c08ebc052bc6fb33540566a48f258a1d33b12",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/off/2",
+          "variant": "wrong_parent_not_saved",
+          "verdict": "VETO_SOURCE_BINDING"
+        },
+        {
+          "decision_tick": 74,
+          "envelope_sha256": "ba5ea6641094e29b89035c461bd4a43b7b607061ff132fbb8c10b74be6aaaa90",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/off/2",
+          "variant": "co_signed_poison_not_saved",
+          "verdict": "VETO_TASK_CANARY_CONFLICT"
+        }
+      ],
+      "mode": "off",
+      "native_global_PE_capacity": 2,
+      "original_native_sha256": "25efd13ba6a3e13cbc83f155c4e050fa9a5ceaba30191a24c632a7db057335b9",
+      "schedule": "eight_late_compressed"
+    },
+    {
+      "decisions": [
+        {
+          "decision_tick": 17,
+          "envelope_sha256": "f514918ade2ef0d8598a10539d6bbc6429fbf74fa8458c4d2d99caa84986436b",
+          "head": "a059741a83481afd57631fde3129c849b7b146c53c9a143cb940faac2e3aed8d",
+          "journaled": true,
+          "recorded_sequence": 57,
+          "source_key": "eight_late_compressed/on_forward_first/1",
+          "variant": "consensus_saved",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 17,
+          "envelope_sha256": "f514918ade2ef0d8598a10539d6bbc6429fbf74fa8458c4d2d99caa84986436b",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/on_forward_first/1",
+          "variant": "consensus_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 27,
+          "envelope_sha256": "9f827706da5ca87d8254b3941ae5b3a6f5b79aa566a0c428b1378b58d6c0dab0",
+          "head": "c835be06fa080f8d2d9cc3290985bc226691b0689e11f5aec83689d274d9f94a",
+          "journaled": true,
+          "recorded_sequence": 58,
+          "source_key": "eight_late_compressed/on_forward_first/1",
+          "variant": "disagreement_saved",
+          "verdict": "JOURNALED_QUARANTINE_REVIEWER_DISAGREEMENT"
+        },
+        {
+          "decision_tick": 27,
+          "envelope_sha256": "9f827706da5ca87d8254b3941ae5b3a6f5b79aa566a0c428b1378b58d6c0dab0",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/on_forward_first/1",
+          "variant": "quarantined_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 37,
+          "envelope_sha256": "d5599dea2159bba9fb40639746981535709ad7d46368a819383ce909fbf0a029",
+          "head": "5ff7a440524b9b772f4359867da28f37932261501cd67fb7a02b47708bf0d20f",
+          "journaled": true,
+          "recorded_sequence": 59,
+          "source_key": "eight_late_compressed/on_forward_first/1",
+          "variant": "abstention_saved",
+          "verdict": "JOURNALED_QUARANTINE_ABSTENTION"
+        },
+        {
+          "decision_tick": 47,
+          "envelope_sha256": "a24ed43596f299b5f6d689371847a394c33bf5944c9eafc92219d91c0f21774a",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/on_forward_first/1",
+          "variant": "rollback_before_commit",
+          "verdict": "FAULT_INJECTED_ATOMIC_ROLLBACK"
+        },
+        {
+          "decision_tick": 47,
+          "envelope_sha256": "a24ed43596f299b5f6d689371847a394c33bf5944c9eafc92219d91c0f21774a",
+          "head": "b042df404ddb80a34abff6fb9b952ce9450a389c054f4c5b464961e669874e38",
+          "journaled": true,
+          "recorded_sequence": 60,
+          "source_key": "eight_late_compressed/on_forward_first/1",
+          "variant": "same_receipt_recovered",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 37,
+          "envelope_sha256": "a394931f73103b4972c0c70c407cb65dbd91d65809eadc55a033e6d9e453d830",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/on_forward_first/1",
+          "variant": "signed_stale_source_clock",
+          "verdict": "VETO_PERSISTENT_SOURCE_CLOCK"
+        },
+        {
+          "decision_tick": 57,
+          "envelope_sha256": "51f7c1ff55bfcef627eee7da5635094e57068d66dd22fb53109acb3de2abdc75",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/on_forward_first/1",
+          "variant": "tampered_review_not_saved",
+          "verdict": "VETO_INVALID_ATTESTATION"
+        },
+        {
+          "decision_tick": 67,
+          "envelope_sha256": "f2d4a8bc9048d6e694a2085d4bb2a23ecc3a30c98b61bcd36d1e22780ba1dfa5",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/on_forward_first/1",
+          "variant": "wrong_parent_not_saved",
+          "verdict": "VETO_SOURCE_BINDING"
+        },
+        {
+          "decision_tick": 77,
+          "envelope_sha256": "91dbaf96902d26f96201ce419a3d1ceb90b2943b4a713bb13735d11338bd8f17",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/on_forward_first/1",
+          "variant": "co_signed_poison_not_saved",
+          "verdict": "VETO_TASK_CANARY_CONFLICT"
+        }
+      ],
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 1,
+      "original_native_sha256": "db54ec0da3ef599a874eeb050f27da27c3b1cef263a9063aa44ed7594248fb8e",
+      "schedule": "eight_late_compressed"
+    },
+    {
+      "decisions": [
+        {
+          "decision_tick": 16,
+          "envelope_sha256": "39ccd8d106f43753efb917c71bc1aba9533fd6f82f9991b15d28411e854f433e",
+          "head": "4b1dd5780fe3f0f63c6239f1591eed94cd736a29f9055be7064389442fcca8c3",
+          "journaled": true,
+          "recorded_sequence": 61,
+          "source_key": "eight_late_compressed/on_forward_first/2",
+          "variant": "consensus_saved",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 16,
+          "envelope_sha256": "39ccd8d106f43753efb917c71bc1aba9533fd6f82f9991b15d28411e854f433e",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/on_forward_first/2",
+          "variant": "consensus_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 26,
+          "envelope_sha256": "67569f9c56a90a489ead0b3dd524f4c4b20a2d4825c8af24ece30516f639f0e3",
+          "head": "4ef01fb5d822d8bc31d72efde491300463b7e7ac4e725ecab39bfd98acdaeb1a",
+          "journaled": true,
+          "recorded_sequence": 62,
+          "source_key": "eight_late_compressed/on_forward_first/2",
+          "variant": "disagreement_saved",
+          "verdict": "JOURNALED_QUARANTINE_REVIEWER_DISAGREEMENT"
+        },
+        {
+          "decision_tick": 26,
+          "envelope_sha256": "67569f9c56a90a489ead0b3dd524f4c4b20a2d4825c8af24ece30516f639f0e3",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/on_forward_first/2",
+          "variant": "quarantined_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 36,
+          "envelope_sha256": "8c851498054150d13a6e386a91ebc5920255102f9915c203ed9b8be954026b9b",
+          "head": "99eb297c7fa1f2eb6bbc43102fb394ddddeba3414304e168ff3372ea60fe19aa",
+          "journaled": true,
+          "recorded_sequence": 63,
+          "source_key": "eight_late_compressed/on_forward_first/2",
+          "variant": "abstention_saved",
+          "verdict": "JOURNALED_QUARANTINE_ABSTENTION"
+        },
+        {
+          "decision_tick": 46,
+          "envelope_sha256": "5fb4be69f96f6aa83c9d61512aef157c08658c6717eac4bd3b5eedbe69003bf5",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/on_forward_first/2",
+          "variant": "rollback_before_commit",
+          "verdict": "FAULT_INJECTED_ATOMIC_ROLLBACK"
+        },
+        {
+          "decision_tick": 46,
+          "envelope_sha256": "5fb4be69f96f6aa83c9d61512aef157c08658c6717eac4bd3b5eedbe69003bf5",
+          "head": "3284f0a014193e17958f23a2f0c7c4eb96e1219ddb0ef7666b3b76c02c519253",
+          "journaled": true,
+          "recorded_sequence": 64,
+          "source_key": "eight_late_compressed/on_forward_first/2",
+          "variant": "same_receipt_recovered",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 36,
+          "envelope_sha256": "0afdd63c6653bd46613b27e5c69197c6c2c3afb5513a33ee1a5372ec24b511ee",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/on_forward_first/2",
+          "variant": "signed_stale_source_clock",
+          "verdict": "VETO_PERSISTENT_SOURCE_CLOCK"
+        },
+        {
+          "decision_tick": 56,
+          "envelope_sha256": "9f861718f301d3801f44ad1ba657fa686b8242a1dc66c63064e0164d7036617a",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/on_forward_first/2",
+          "variant": "tampered_review_not_saved",
+          "verdict": "VETO_INVALID_ATTESTATION"
+        },
+        {
+          "decision_tick": 66,
+          "envelope_sha256": "7b24963f4e213a64f549ebd1067f31fafadfa2b922a63ce26a6c4165907f2f78",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/on_forward_first/2",
+          "variant": "wrong_parent_not_saved",
+          "verdict": "VETO_SOURCE_BINDING"
+        },
+        {
+          "decision_tick": 76,
+          "envelope_sha256": "acc33097612fcc53243a840fcd1992f563ab871c4c2901cf82e3d6363829896f",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/on_forward_first/2",
+          "variant": "co_signed_poison_not_saved",
+          "verdict": "VETO_TASK_CANARY_CONFLICT"
+        }
+      ],
+      "mode": "on_forward_first",
+      "native_global_PE_capacity": 2,
+      "original_native_sha256": "3201b3cac7232ad09d25c0845ac946d1fbf8402c30c4985527f0790692b7fed3",
+      "schedule": "eight_late_compressed"
+    },
+    {
+      "decisions": [
+        {
+          "decision_tick": 17,
+          "envelope_sha256": "e4152e817384aa1cd32775e5f100ce436ba2de251ba1c40ac52dc9f28b99a456",
+          "head": "1cb73a2d08eac7c79f362405fdfd9a14c06bdd4411fba55e56672ffbdd7f9f56",
+          "journaled": true,
+          "recorded_sequence": 65,
+          "source_key": "eight_late_compressed/on_feedback_first/1",
+          "variant": "consensus_saved",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 17,
+          "envelope_sha256": "e4152e817384aa1cd32775e5f100ce436ba2de251ba1c40ac52dc9f28b99a456",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/on_feedback_first/1",
+          "variant": "consensus_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 27,
+          "envelope_sha256": "d93b273a1062e61d878cd541876a8ab66ddca14ab04934737a2c55d5a93423cb",
+          "head": "fcb48952f5d21a747b07c0a798309470a0d5a65afe70d68c06380fb868a59183",
+          "journaled": true,
+          "recorded_sequence": 66,
+          "source_key": "eight_late_compressed/on_feedback_first/1",
+          "variant": "disagreement_saved",
+          "verdict": "JOURNALED_QUARANTINE_REVIEWER_DISAGREEMENT"
+        },
+        {
+          "decision_tick": 27,
+          "envelope_sha256": "d93b273a1062e61d878cd541876a8ab66ddca14ab04934737a2c55d5a93423cb",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/on_feedback_first/1",
+          "variant": "quarantined_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 37,
+          "envelope_sha256": "36552239ffcd105216e94cc5e52858fb627732713037e68c245c3c44858b9221",
+          "head": "914025de41dbd5836cb89efba4977a04af2ff82f98d271e73c65b2af89ace2e7",
+          "journaled": true,
+          "recorded_sequence": 67,
+          "source_key": "eight_late_compressed/on_feedback_first/1",
+          "variant": "abstention_saved",
+          "verdict": "JOURNALED_QUARANTINE_ABSTENTION"
+        },
+        {
+          "decision_tick": 47,
+          "envelope_sha256": "d57d1954bbafcf268e5fc9da650eb04064204535e162974612a7ea37e12c564a",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/on_feedback_first/1",
+          "variant": "rollback_before_commit",
+          "verdict": "FAULT_INJECTED_ATOMIC_ROLLBACK"
+        },
+        {
+          "decision_tick": 47,
+          "envelope_sha256": "d57d1954bbafcf268e5fc9da650eb04064204535e162974612a7ea37e12c564a",
+          "head": "d99f4b7523857524f5b73ef2991406fb81406677c8b3c1bf388407023421ec83",
+          "journaled": true,
+          "recorded_sequence": 68,
+          "source_key": "eight_late_compressed/on_feedback_first/1",
+          "variant": "same_receipt_recovered",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 37,
+          "envelope_sha256": "548ba31c8925494e75be850b03ea995aaf5de7e9aa8bb80c7285a3e65233d3e4",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/on_feedback_first/1",
+          "variant": "signed_stale_source_clock",
+          "verdict": "VETO_PERSISTENT_SOURCE_CLOCK"
+        },
+        {
+          "decision_tick": 57,
+          "envelope_sha256": "0a9b28daec3363a89061e437f826a51d9159d6598c2c8b9496e085080984c2fc",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/on_feedback_first/1",
+          "variant": "tampered_review_not_saved",
+          "verdict": "VETO_INVALID_ATTESTATION"
+        },
+        {
+          "decision_tick": 67,
+          "envelope_sha256": "360f14b9db2c28b2f09e97aa0dcbc7ea5a065292c1e1a41e0b568e529fe9f130",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/on_feedback_first/1",
+          "variant": "wrong_parent_not_saved",
+          "verdict": "VETO_SOURCE_BINDING"
+        },
+        {
+          "decision_tick": 77,
+          "envelope_sha256": "e0839271abec05de1806906c4d030c23ea8ceabf13f02e22ca76caa366a22061",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/on_feedback_first/1",
+          "variant": "co_signed_poison_not_saved",
+          "verdict": "VETO_TASK_CANARY_CONFLICT"
+        }
+      ],
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 1,
+      "original_native_sha256": "6a69d61a8743e3cc43b617e23ef97d8b029b25e50663fe7f77a3a8dadcbbe6b1",
+      "schedule": "eight_late_compressed"
+    },
+    {
+      "decisions": [
+        {
+          "decision_tick": 16,
+          "envelope_sha256": "8fc5685e50990a260a035511654ac31fe00a7052ea034ab674449643a6f67c95",
+          "head": "aa3bd9ccb96bacc93af95db8adb3aec56298c2ed4c7b27edacb9b2bdecec1033",
+          "journaled": true,
+          "recorded_sequence": 69,
+          "source_key": "eight_late_compressed/on_feedback_first/2",
+          "variant": "consensus_saved",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 16,
+          "envelope_sha256": "8fc5685e50990a260a035511654ac31fe00a7052ea034ab674449643a6f67c95",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/on_feedback_first/2",
+          "variant": "consensus_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 26,
+          "envelope_sha256": "4630a8d5def2fc791d5dbb1b49f6f747e0bdfaa3f4ef49f3c0d0f95048f77ebf",
+          "head": "bb97de881ab3a8eb55e164ae2ccc51d84bddb03c31f7b7d8173fcd9d87a10a07",
+          "journaled": true,
+          "recorded_sequence": 70,
+          "source_key": "eight_late_compressed/on_feedback_first/2",
+          "variant": "disagreement_saved",
+          "verdict": "JOURNALED_QUARANTINE_REVIEWER_DISAGREEMENT"
+        },
+        {
+          "decision_tick": 26,
+          "envelope_sha256": "4630a8d5def2fc791d5dbb1b49f6f747e0bdfaa3f4ef49f3c0d0f95048f77ebf",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/on_feedback_first/2",
+          "variant": "quarantined_replay_after_reopen",
+          "verdict": "VETO_PERSISTENT_REPLAY"
+        },
+        {
+          "decision_tick": 36,
+          "envelope_sha256": "a9b456ad5b4c6882ed596e5b992b602d7018f0f6e9323317220a2e45d32fbc82",
+          "head": "555a1dfe6c669f6c3270b1985f4dabfd74cee455d2f0ac67a460483a3d533e97",
+          "journaled": true,
+          "recorded_sequence": 71,
+          "source_key": "eight_late_compressed/on_feedback_first/2",
+          "variant": "abstention_saved",
+          "verdict": "JOURNALED_QUARANTINE_ABSTENTION"
+        },
+        {
+          "decision_tick": 46,
+          "envelope_sha256": "4ff1aad138a0d5705421628cd35c21fb505b7bb59e1a73f2a216a4473014ce74",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/on_feedback_first/2",
+          "variant": "rollback_before_commit",
+          "verdict": "FAULT_INJECTED_ATOMIC_ROLLBACK"
+        },
+        {
+          "decision_tick": 46,
+          "envelope_sha256": "4ff1aad138a0d5705421628cd35c21fb505b7bb59e1a73f2a216a4473014ce74",
+          "head": "3beb754a5f7a35b80142be9a97b057b84db65a9defeb62c8dae8dd7466e63e97",
+          "journaled": true,
+          "recorded_sequence": 72,
+          "source_key": "eight_late_compressed/on_feedback_first/2",
+          "variant": "same_receipt_recovered",
+          "verdict": "JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST"
+        },
+        {
+          "decision_tick": 36,
+          "envelope_sha256": "45a7007ae06f6d9137163d8e6917bc321ff2cebedea555197e0dd77a2ce2c439",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/on_feedback_first/2",
+          "variant": "signed_stale_source_clock",
+          "verdict": "VETO_PERSISTENT_SOURCE_CLOCK"
+        },
+        {
+          "decision_tick": 56,
+          "envelope_sha256": "3384fba2982d44731695c5ae467ae7197beb17012b2626a9e865ee9988d16e31",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/on_feedback_first/2",
+          "variant": "tampered_review_not_saved",
+          "verdict": "VETO_INVALID_ATTESTATION"
+        },
+        {
+          "decision_tick": 66,
+          "envelope_sha256": "a27918dcf8e96228d6ebb2efcffc85fdad6af78a2c76e1ef510eaf7d99068b45",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/on_feedback_first/2",
+          "variant": "wrong_parent_not_saved",
+          "verdict": "VETO_SOURCE_BINDING"
+        },
+        {
+          "decision_tick": 76,
+          "envelope_sha256": "2cedf232931979e3eba1394201269ccc23664e528214f68c9aa2df5e50889cd2",
+          "head": null,
+          "journaled": false,
+          "recorded_sequence": null,
+          "source_key": "eight_late_compressed/on_feedback_first/2",
+          "variant": "co_signed_poison_not_saved",
+          "verdict": "VETO_TASK_CANARY_CONFLICT"
+        }
+      ],
+      "mode": "on_feedback_first",
+      "native_global_PE_capacity": 2,
+      "original_native_sha256": "15fae549c197d16e74de943d5824f61da37be8666148bbdf59180c2f85f6c290",
+      "schedule": "eight_late_compressed"
+    }
+  ],
+  "schema": "spk-bv-persistent-escrow/research-v4ah-v4aj",
+  "semantic_limit": "PERSISTENCE_DOES_NOT_CORRECT_CORRELATED_TASK_LABELS",
+  "signed_v3tuv_sha256": "f783be9952613aa98eafef59d24c19eb64ccc09d29265017eabb675fe0155827",
+  "signed_v4aeag_sha256": "01211a6cdc2f8efc707514c56934b7c980f001bd22d4ed3df586ace2db5ff152",
+  "sqlite_logical_witness": {
+    "entries": 72,
+    "head": "3beb754a5f7a35b80142be9a97b057b84db65a9defeb62c8dae8dd7466e63e97",
+    "parent_sha256": "01211a6cdc2f8efc707514c56934b7c980f001bd22d4ed3df586ace2db5ff152",
+    "persisted_unique_nonces": 144
+  },
+  "status": "SQLITE_ATOMIC_RESTART_REPLAY_AND_QUARANTINE_CUSTODY_NO_LEARNING",
+  "test_key_trust": "PUBLIC_FIXTURE_KEYS_NOT_PRODUCTION_IDENTITY",
+  "tested_variants": [
+    "consensus_saved",
+    "consensus_replay_after_reopen",
+    "disagreement_saved",
+    "quarantined_replay_after_reopen",
+    "abstention_saved",
+    "rollback_before_commit",
+    "same_receipt_recovered",
+    "signed_stale_source_clock",
+    "tampered_review_not_saved",
+    "wrong_parent_not_saved",
+    "co_signed_poison_not_saved"
+  ],
+  "totals": {
+    "counterfactual_native_probes": 72,
+    "custody_attempts": 198,
+    "journaled": 72,
+    "signed_native_replays": 18,
+    "verdict_FAULT_INJECTED_ATOMIC_ROLLBACK": 18,
+    "verdict_JOURNALED_CONSISTENT_CORRELATED_TEST_VIEWS_NO_EXTERNAL_TRUST": 36,
+    "verdict_JOURNALED_QUARANTINE_ABSTENTION": 18,
+    "verdict_JOURNALED_QUARANTINE_REVIEWER_DISAGREEMENT": 18,
+    "verdict_VETO_INVALID_ATTESTATION": 18,
+    "verdict_VETO_PERSISTENT_REPLAY": 36,
+    "verdict_VETO_PERSISTENT_SOURCE_CLOCK": 18,
+    "verdict_VETO_SOURCE_BINDING": 18,
+    "verdict_VETO_TASK_CANARY_CONFLICT": 18
+  }
+}
