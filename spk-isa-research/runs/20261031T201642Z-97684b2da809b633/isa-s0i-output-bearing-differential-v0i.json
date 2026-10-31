@@ -1,0 +1,202 @@
+{
+  "child_digests": {
+    "1": [
+      "a78690cae27ecab46485609305b0c567e5a16f059ff4c20611ae403b61fd110c",
+      "1126fe987e2d71d6872b8244a0e9ad536db7a85666b5e5a5f77920bfa6854cc0"
+    ],
+    "7": [
+      "a34970ffc803f7402dd9d4e7e2a37e80bd38a27ddd6292748c7bacf1ad019644",
+      "7d7da269cf65dfeaa50a087f02a78bc640c916ac4f4e939008d0284a53fceabb"
+    ]
+  },
+  "claims": {
+    "BV_to_P_authorized": false,
+    "G2_owner_authorized": false,
+    "P_writes": 0,
+    "compiler_to_isa_equivalence_proven": false,
+    "external_dispatch": false,
+    "hardware_executed": false,
+    "native_multinode_routing_proven": false,
+    "postcommit_owner_executed": false
+  },
+  "decision": "HOLD",
+  "emissions": [
+    {
+      "channel": 7,
+      "node_id": "C",
+      "terminal": false,
+      "timestamp": 3
+    },
+    {
+      "channel": 7,
+      "node_id": "B",
+      "terminal": true,
+      "timestamp": 5
+    },
+    {
+      "channel": 7,
+      "node_id": "B",
+      "terminal": true,
+      "timestamp": 6
+    }
+  ],
+  "exit_code": 4,
+  "issue": 13,
+  "limitations": [
+    "functional Network v0 differential, not native multi-node routing",
+    "no Compiler<->ISA equivalence",
+    "no owner authority",
+    "C0-C5 needs independent human review"
+  ],
+  "native_scoped": {
+    "result": {
+      "blocker": "output-bearing Core transition requires STATE/OUTPUT owner: output-bearing Core transition requires STATE/OUTPUT owner",
+      "compatible": false,
+      "not_proven": true
+    },
+    "scope": "single-root owner terminal commit only; NOT multi-node native routing"
+  },
+  "negative_controls_rejected": [
+    "emission_order",
+    "missing_emission",
+    "spurious_emission",
+    "source_node_mismatch",
+    "missing_terminal_output",
+    "batch_count",
+    "edge_multiplicity",
+    "compiler_drift",
+    "quiet_flag"
+  ],
+  "observations": {
+    "1": {
+      "emissions": [
+        {
+          "channel": 7,
+          "node_id": "C",
+          "terminal": false,
+          "timestamp": 3
+        },
+        {
+          "channel": 7,
+          "node_id": "B",
+          "terminal": true,
+          "timestamp": 5
+        },
+        {
+          "channel": 7,
+          "node_id": "B",
+          "terminal": true,
+          "timestamp": 6
+        }
+      ],
+      "processed_batches": 3,
+      "processed_events": 3,
+      "states": [
+        {
+          "last_timestamp": 0,
+          "node_id": "A",
+          "raw": 0
+        },
+        {
+          "last_timestamp": 6,
+          "node_id": "B",
+          "raw": 0
+        },
+        {
+          "last_timestamp": 3,
+          "node_id": "C",
+          "raw": 0
+        }
+      ],
+      "terminal_outputs": [
+        {
+          "channel": 7,
+          "node_id": "B",
+          "timestamp": 5
+        },
+        {
+          "channel": 7,
+          "node_id": "B",
+          "timestamp": 6
+        }
+      ]
+    },
+    "7": {
+      "emissions": [
+        {
+          "channel": 7,
+          "node_id": "C",
+          "terminal": false,
+          "timestamp": 3
+        },
+        {
+          "channel": 7,
+          "node_id": "B",
+          "terminal": true,
+          "timestamp": 5
+        },
+        {
+          "channel": 7,
+          "node_id": "B",
+          "terminal": true,
+          "timestamp": 6
+        }
+      ],
+      "processed_batches": 3,
+      "processed_events": 3,
+      "states": [
+        {
+          "last_timestamp": 0,
+          "node_id": "A",
+          "raw": 0
+        },
+        {
+          "last_timestamp": 6,
+          "node_id": "B",
+          "raw": 0
+        },
+        {
+          "last_timestamp": 3,
+          "node_id": "C",
+          "raw": 0
+        }
+      ],
+      "terminal_outputs": [
+        {
+          "channel": 7,
+          "node_id": "B",
+          "timestamp": 5
+        },
+        {
+          "channel": 7,
+          "node_id": "B",
+          "timestamp": 6
+        }
+      ]
+    }
+  },
+  "parents": {
+    "compiler_commit": "24b15156aa31967bd0079debcc97ccb6e3ac4325",
+    "hr1_witness": "d8cc8db4b33cd6546b0d3317a9e33ac81763b709a83fe90eb4b62b7fdd4a07a9",
+    "hr2_witness": "20b79ccf7238f55b4834cca6bc02b098db92a6a46b14fe1e43009558df64a6a2",
+    "s0d": "12664e9f91bf23da9d160c991abe0866a170a574ee3061147b54a51f3b1fb52d",
+    "s0e": "48a4f31821dd817fa6cfc7daf9b45983c10544a872c070b47cd1b1594e64396d",
+    "s0g": "3967dc70db163b96cc54ec5df27f3f9fc60fc611d91bfb8bd64895315d7fd6b2"
+  },
+  "research_only": true,
+  "schema": "spk-isa-s0i-output-bearing-differential-witness/v0i",
+  "status": "OUTPUT_BEARING_SHARED_WORKLOAD_FUNCTIONAL_DIFFERENTIAL_PASS_NATIVE_MULTINODE_NOT_PROVEN",
+  "terminal_outputs": [
+    {
+      "channel": 7,
+      "node_id": "B",
+      "timestamp": 5
+    },
+    {
+      "channel": 7,
+      "node_id": "B",
+      "timestamp": 6
+    }
+  ],
+  "workload": "original k24d root fixture quiet=False: 1 input event (3,C,0) -> C emits ch7 -> 2 parallel C->B edges (delay 2,3) -> B terminal outputs at ts 5,6"
+}
