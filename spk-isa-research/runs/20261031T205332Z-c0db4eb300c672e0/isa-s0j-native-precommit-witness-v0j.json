@@ -1,0 +1,406 @@
+{
+  "child_digests": {
+    "1": [
+      "df07b0a927a4395289357df1584e347c727bdccf60c5a049e7ae11ff23735890",
+      "fad282bb014ba04d64c9053c15166b022e996643385c4ed2e86d306a778e9d40"
+    ],
+    "7": [
+      "88829dc9a34d1d387455c31d5425fb37982bd1ab57f692ed1086997430a68632",
+      "776ef1dbd5c21e5ccd8a1187c3bc5eb3abc5e56865f81c956bdc5d2c28c37adf"
+    ]
+  },
+  "claims": {
+    "BV_to_P_authorized": false,
+    "G2_owner_authorized": false,
+    "P_writes": 0,
+    "compiler_to_machine_ISA_equivalence_proven": false,
+    "external_dispatch": false,
+    "hardware_executed": false,
+    "native_multinode_event_delivery_proven": false,
+    "native_output_published": false,
+    "native_precommit_candidate_bound": true,
+    "postcommit_owner_executed": false
+  },
+  "decision": "HOLD",
+  "exit_code": 4,
+  "hypothesis_HJ": "prepared Core candidate (3,7) at C on original k24d quiet=False fixture == first frozen Network v0 emission; 2 parallel C->B route occurrences delays 2/3, event times 5/6",
+  "issue": 15,
+  "j6_negative_probe": {
+    "exception": "ValueError: output-bearing Core transition requires STATE/OUTPUT owner",
+    "rejected": true
+  },
+  "limitations": [
+    "candidate bound, NOT output publication",
+    "NOT native multi-node delivery",
+    "NOT Compiler-to-machine-ISA equivalence",
+    "no owner authority",
+    "C0-C5 needs independent human review"
+  ],
+  "observations": {
+    "1": {
+      "hash_seed": "17",
+      "j1": {
+        "consumed_external_input_indices": [
+          0
+        ],
+        "events": [
+          {
+            "channel": 0,
+            "node_id": "C",
+            "timestamp": 3
+          }
+        ],
+        "prepared": {
+          "after_raw": 0,
+          "base_version": 0,
+          "before_raw": 0,
+          "candidate_outputs": [
+            [
+              3,
+              7
+            ]
+          ],
+          "channels": [
+            0
+          ],
+          "event_time": 3,
+          "node_id": "C"
+        },
+        "service_confirmed_request_ids": [
+          0,
+          1,
+          2
+        ]
+      },
+      "j2": {
+        "compiler_manifest_sha256": "49864d238f5d80c7b1f778fdf67a429de68d2f339f21879a2e17ebf9c00d9831",
+        "epoch_id": "E0",
+        "network_ir_sha256": "60c503ad260bd7a0806dbe8220aa15e53161fe50985102e5dc6cbae2efb09d59",
+        "placements": [
+          {
+            "node_id": "A",
+            "pe_id": "PE0"
+          },
+          {
+            "node_id": "B",
+            "pe_id": "PE1"
+          },
+          {
+            "node_id": "C",
+            "pe_id": "PE0"
+          }
+        ],
+        "profile_id": "arbiter-lab"
+      },
+      "j3": {
+        "direct_eq_compiled": true,
+        "emissions": [
+          {
+            "channel": 7,
+            "node_id": "C",
+            "timestamp": 3
+          },
+          {
+            "channel": 7,
+            "node_id": "B",
+            "timestamp": 5
+          },
+          {
+            "channel": 7,
+            "node_id": "B",
+            "timestamp": 6
+          }
+        ],
+        "processed_batches": 3,
+        "processed_events": 3,
+        "states": [
+          {
+            "last_timestamp": 0,
+            "node_id": "A",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 6,
+            "node_id": "B",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 3,
+            "node_id": "C",
+            "raw": 0
+          }
+        ],
+        "terminal_outputs": [
+          {
+            "channel": 7,
+            "node_id": "B",
+            "timestamp": 5
+          },
+          {
+            "channel": 7,
+            "node_id": "B",
+            "timestamp": 6
+          }
+        ]
+      },
+      "j4": {
+        "candidate_match": true,
+        "independent_candidate_pairs": [
+          [
+            3,
+            7
+          ]
+        ],
+        "output_published": false,
+        "prepared_candidate_pairs": [
+          [
+            3,
+            7
+          ]
+        ],
+        "single_candidate_3_7": true,
+        "storage_unchanged": true
+      },
+      "j5": {
+        "candidate_outputs": [
+          [
+            3,
+            7
+          ]
+        ],
+        "event_time": 3,
+        "next_event_id": 1000002,
+        "routes": [
+          {
+            "edge_index": 1,
+            "occurrence": {
+              "delivery_event_time": 5,
+              "emission_event_time": 3,
+              "epoch_id": "E0",
+              "event_id": 1000000,
+              "source_channel": 7,
+              "source_node_id": "C",
+              "source_pe_id": "PE0",
+              "target_channel": 0,
+              "target_node_id": "B",
+              "target_pe_id": "PE1"
+            },
+            "output_index": 0
+          },
+          {
+            "edge_index": 2,
+            "occurrence": {
+              "delivery_event_time": 6,
+              "emission_event_time": 3,
+              "epoch_id": "E0",
+              "event_id": 1000001,
+              "source_channel": 7,
+              "source_node_id": "C",
+              "source_pe_id": "PE0",
+              "target_channel": 0,
+              "target_node_id": "B",
+              "target_pe_id": "PE1"
+            },
+            "output_index": 0
+          }
+        ],
+        "source_node_id": "C",
+        "terminal_outputs": []
+      },
+      "j6": {
+        "exception": "ValueError: output-bearing Core transition requires STATE/OUTPUT owner",
+        "rejected": true
+      },
+      "schema": "spk-isa-s0j-native-precommit-child/v0j",
+      "units": 1
+    },
+    "7": {
+      "hash_seed": "17",
+      "j1": {
+        "consumed_external_input_indices": [
+          0
+        ],
+        "events": [
+          {
+            "channel": 0,
+            "node_id": "C",
+            "timestamp": 3
+          }
+        ],
+        "prepared": {
+          "after_raw": 0,
+          "base_version": 0,
+          "before_raw": 0,
+          "candidate_outputs": [
+            [
+              3,
+              7
+            ]
+          ],
+          "channels": [
+            0
+          ],
+          "event_time": 3,
+          "node_id": "C"
+        },
+        "service_confirmed_request_ids": [
+          0,
+          1,
+          2
+        ]
+      },
+      "j2": {
+        "compiler_manifest_sha256": "49864d238f5d80c7b1f778fdf67a429de68d2f339f21879a2e17ebf9c00d9831",
+        "epoch_id": "E0",
+        "network_ir_sha256": "60c503ad260bd7a0806dbe8220aa15e53161fe50985102e5dc6cbae2efb09d59",
+        "placements": [
+          {
+            "node_id": "A",
+            "pe_id": "PE0"
+          },
+          {
+            "node_id": "B",
+            "pe_id": "PE1"
+          },
+          {
+            "node_id": "C",
+            "pe_id": "PE0"
+          }
+        ],
+        "profile_id": "arbiter-lab"
+      },
+      "j3": {
+        "direct_eq_compiled": true,
+        "emissions": [
+          {
+            "channel": 7,
+            "node_id": "C",
+            "timestamp": 3
+          },
+          {
+            "channel": 7,
+            "node_id": "B",
+            "timestamp": 5
+          },
+          {
+            "channel": 7,
+            "node_id": "B",
+            "timestamp": 6
+          }
+        ],
+        "processed_batches": 3,
+        "processed_events": 3,
+        "states": [
+          {
+            "last_timestamp": 0,
+            "node_id": "A",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 6,
+            "node_id": "B",
+            "raw": 0
+          },
+          {
+            "last_timestamp": 3,
+            "node_id": "C",
+            "raw": 0
+          }
+        ],
+        "terminal_outputs": [
+          {
+            "channel": 7,
+            "node_id": "B",
+            "timestamp": 5
+          },
+          {
+            "channel": 7,
+            "node_id": "B",
+            "timestamp": 6
+          }
+        ]
+      },
+      "j4": {
+        "candidate_match": true,
+        "independent_candidate_pairs": [
+          [
+            3,
+            7
+          ]
+        ],
+        "output_published": false,
+        "prepared_candidate_pairs": [
+          [
+            3,
+            7
+          ]
+        ],
+        "single_candidate_3_7": true,
+        "storage_unchanged": true
+      },
+      "j5": {
+        "candidate_outputs": [
+          [
+            3,
+            7
+          ]
+        ],
+        "event_time": 3,
+        "next_event_id": 1000002,
+        "routes": [
+          {
+            "edge_index": 1,
+            "occurrence": {
+              "delivery_event_time": 5,
+              "emission_event_time": 3,
+              "epoch_id": "E0",
+              "event_id": 1000000,
+              "source_channel": 7,
+              "source_node_id": "C",
+              "source_pe_id": "PE0",
+              "target_channel": 0,
+              "target_node_id": "B",
+              "target_pe_id": "PE1"
+            },
+            "output_index": 0
+          },
+          {
+            "edge_index": 2,
+            "occurrence": {
+              "delivery_event_time": 6,
+              "emission_event_time": 3,
+              "epoch_id": "E0",
+              "event_id": 1000001,
+              "source_channel": 7,
+              "source_node_id": "C",
+              "source_pe_id": "PE0",
+              "target_channel": 0,
+              "target_node_id": "B",
+              "target_pe_id": "PE1"
+            },
+            "output_index": 0
+          }
+        ],
+        "source_node_id": "C",
+        "terminal_outputs": []
+      },
+      "j6": {
+        "exception": "ValueError: output-bearing Core transition requires STATE/OUTPUT owner",
+        "rejected": true
+      },
+      "schema": "spk-isa-s0j-native-precommit-child/v0j",
+      "units": 7
+    }
+  },
+  "parents": {
+    "compiler_commit": "24b15156aa31967bd0079debcc97ccb6e3ac4325",
+    "hr1": "d8cc8db4b33cd6546b0d3317a9e33ac81763b709a83fe90eb4b62b7fdd4a07a9",
+    "hr2": "20b79ccf7238f55b4834cca6bc02b098db92a6a46b14fe1e43009558df64a6a2",
+    "s0e": "48a4f31821dd817fa6cfc7daf9b45983c10544a872c070b47cd1b1594e64396d",
+    "s0i": "d0271e7b04ecfd3fc0f9a9eb88d5efad95a8e8883b17ac0b15dd7a7350adffdb",
+    "spec_sha256": "f543374445fc2e203c5a1ee69914589ddbe3d5e8587fcd93f15bc354f17b622d"
+  },
+  "research_only": true,
+  "schema": "spk-isa-s0j-native-precommit-witness/v0j",
+  "status": "NATIVE_PRECOMMIT_CANDIDATE_BOUND_TOPOLOGY_MATCH_OUTPUT_NOT_PUBLISHED_HOLD"
+}
