@@ -1,0 +1,71 @@
+{
+  "child_digests": {
+    "1": [
+      "874ec7a42d11e7ef9a88d5c87190635cfff1a0337e722710382b59f5fda59f19",
+      "7b1ea601b96b006cb002c872a3fe25bd6d366c5533887bcb7017aace55f19094"
+    ],
+    "7": [
+      "9519a9cc816c0d7658d0535dde18bb9ff7625b60222b5f66f00390b4cf773b95",
+      "d061d051a0b8a9f4dbaeb575ee5b72412878c7b00564b2bce3d98c5b779cb945"
+    ]
+  },
+  "claims": {
+    "BV_to_P_authorized": false,
+    "G2_owner_authorized": false,
+    "P_writes": 0,
+    "compiler_to_isa_equivalence_proven": false,
+    "external_dispatch": false,
+    "hardware_executed": false,
+    "postcommit_owner_executed": false,
+    "retroactive_s0h_pass": false,
+    "s0h_veto_preserved": true
+  },
+  "decision": "HOLD",
+  "erratum": {
+    "change": "tuple->list normalization before emptiness comparison in research adapter only",
+    "frozen_sources_modified": false,
+    "masking_check": "synthetic nonzero emission detected as non-silent",
+    "s0h_files_modified": false
+  },
+  "erratum_schema": "spk-isa-s0hr2-adapter-erratum/v0hr2",
+  "exit_code": 4,
+  "limitations": [
+    "erratum touches research adapter only",
+    "no frozen Core/Network/Compiler change",
+    "no S0-H PASS retroattivo",
+    "C0-C5 needs independent human review"
+  ],
+  "observations": {
+    "1": {
+      "compiled_equal": true,
+      "direct_emissions_normalized": [],
+      "direct_emissions_raw_type": "tuple",
+      "direct_terminal_outputs_normalized": [],
+      "processed_batches": 1,
+      "processed_events": 1,
+      "result_fingerprint_sha256": "97ebaa9126d71c257166243fc2c443c87b6ba4db1cff7948d064c8f0e152e3f0",
+      "silent_under_erratum": true
+    },
+    "7": {
+      "compiled_equal": true,
+      "direct_emissions_normalized": [],
+      "direct_emissions_raw_type": "tuple",
+      "direct_terminal_outputs_normalized": [],
+      "processed_batches": 1,
+      "processed_events": 1,
+      "result_fingerprint_sha256": "97ebaa9126d71c257166243fc2c443c87b6ba4db1cff7948d064c8f0e152e3f0",
+      "silent_under_erratum": true
+    }
+  },
+  "predecessors": {
+    "hr1_issue": 11,
+    "hr1_rootcause_sha256": "95d544a94f847a38a46accbafff71f3c6a09ee84d78712dc89c87314273901e6",
+    "hr1_witness_sha256": "d8cc8db4b33cd6546b0d3317a9e33ac81763b709a83fe90eb4b62b7fdd4a07a9",
+    "s0h_issue": 9,
+    "s0h_veto": "OUTPUT_BEARING_REFERENCE (spurious, ADAPTER_DEFECT per HR1)",
+    "s0h_zip_sha256": "56daa04fe3ff3e98d46a40f5d7b6af8651b9a233dc0402f5151b0528e2ab01e4"
+  },
+  "research_only": true,
+  "schema": "spk-isa-s0hr2-adapter-erratum-witness/v0hr2",
+  "status": "ADAPTER_ERRATUM_VERIFIED_ORIGINAL_WORKLOAD_SILENT_NO_MASKING_S0H_VETO_PRESERVED"
+}
