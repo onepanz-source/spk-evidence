@@ -1,0 +1,57 @@
+{
+  "release": "SPK_BV_v3hij_Cumulative_ACK_Tail_Opportunity_Milestone",
+  "research_stages": ["v3h", "v3i", "v3j"],
+  "status": "DERIVED_FINITE_ACK_TAIL_CUTOVER_PREFIX_RESOURCE_ENVELOPE_NO_NATIVE_LIVENESS",
+  "signed_v3efg_predecessor_sha256": "93fd26296492945629f0d93dfc6fbb2e41f69b6ae8d009813b447db1c1ffc4f3",
+  "canonical_v3hij_report_sha256": "0d441433aaa99abb06beab7dffc65ce8c7a886fdfd98c21086bc41ea992aa2c4",
+  "new_native_runs": 27,
+  "new_derived_tail_budget_runs": 454,
+  "new_causal_null_runs": 54,
+  "exact_native_result_projection_runs": 508,
+  "exact_ACK_journal_prefix_comparisons": 454,
+  "monotone_ACK_capacity_comparisons": 400,
+  "exact_finite_tail_cutovers": 54,
+  "finite_lower_bound_tight_contexts": 54,
+  "global_quota_one": {
+    "contexts": 27,
+    "tail_ticks_needed_max": 16,
+    "tail_ticks_needed_sum": 265,
+    "delivered_controls": 330,
+    "fully_acked_controls": 330
+  },
+  "global_quota_two": {
+    "contexts": 27,
+    "tail_ticks_needed_max": 8,
+    "tail_ticks_needed_sum": 138,
+    "delivered_controls": 330,
+    "fully_acked_controls": 330
+  },
+  "frozen_native_source_pin": {
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9"
+  },
+  "new_files_sha256": {
+    "spk_backvalidation_v2/derived_ack_tail_envelope_v3h.py": "8214df58919bc7efab1d695cbd7d15e114e04b1058ccec02d4657f9221d2d723",
+    "spk_bv_research/ack_tail_opportunity_integration_v3hij.py": "92e9d40225506b8e5c359b5c60022046a96a4efbab0035d3e3cb87071f056fc8",
+    "search/spk_bv_v3hij_ack_tail_opportunity_cumulative.py": "4786d2f202d968d0ad6e92ffbcde665af2e7308d7939452c92d97d281d19fe6e",
+    "search/spk_bv_v3hij_ack_tail_opportunity_cumulative_gate.sh": "51e0a0861bd260d9272b3ab3f4e1ad23bb7275cb7518933fd8b8d86271c20c8b",
+    "search/spk_bv_v3hij_inherited_regression_gate.sh": "5f32933c27fa6fa96895b713fc1b3af3cc9b01d306fb844e23345284ea7de023",
+    "tests/test_spk_bv_v3hij_ack_tail_opportunity.py": "93f277a52f6cc618ff1fd351c061625df70bf48cfc3db251cf0e95f9bd4d62b9",
+    "docs/spk-bv-v3hij-cumulative-ack-tail-opportunity-milestone.md": "31d949d871e15f0e391e1de4e0352172a7246ab82eccaf1de312eb0b05326963"
+  },
+  "scientific_boundary": {
+    "finite_post_native_tail_lower_bound_met_in_pinned_matrix": true,
+    "zero_tail_does_not_prove_negative_judgment": true,
+    "strict_original_native_result_projection": true,
+    "source_actor_ACKs_do_not_mutate_frozen_learning": true,
+    "universal_native_ACK_service_or_starvation_freedom": false,
+    "frozen_native_actor_policy_or_learning": false,
+    "native_operator_updates": 0,
+    "S1_pct": 100,
+    "S2_pct": 100,
+    "S3_pct": 60,
+    "S4_pct": 0,
+    "S5_pct": 0,
+    "aggregate_pct": 52,
+    "aggregate_delta_percentage_points": 0
+  }
+}

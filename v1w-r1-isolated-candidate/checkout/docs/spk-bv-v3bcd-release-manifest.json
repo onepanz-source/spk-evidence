@@ -1,0 +1,40 @@
+{
+  "release": "SPK_BV_v3bcd_Cumulative_Episode_Wait_Prefix_Milestone",
+  "research_stages": ["v3b", "v3c", "v3d"],
+  "status": "DERIVED_SOURCE_EPISODE_PREFIX_ACK_WAIT_NATIVE_VETO_COUNTEREXAMPLE",
+  "sha_pinned_v2yza_predecessor": "56d9208e1f0fd2f8dbad6c77030582f7dff8d7fdd1052ce7c2bc8a8c1fcb80f8",
+  "canonical_v3bcd_report_sha256": "d347de60d14893380c5433993d2c6aefee46118bf6dbff6da13198d272ac4b90",
+  "new_original_native_runs": 18,
+  "new_derived_policy_runs": 108,
+  "new_causal_null_runs": 36,
+  "source_external_events_across_native_contexts": 93,
+  "causal_prefix_comparisons": 72,
+  "bounded_null_guard_max_ACK_wait_ticks": 1,
+  "unbounded_null_guard_max_ACK_wait_ticks": 3,
+  "strict_native_priority_max_ACK_wait_ticks": 29,
+  "source_pins": {
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9"
+  },
+  "new_files_sha256": {
+    "spk_backvalidation_v2/derived_ack_wait_audit_v3b.py": "a4c3e26b0e290a65a27abe95f46f9442bfd4b84eaeb29fa0b27ebc01f987e7d3",
+    "spk_bv_research/episode_wait_prefix_integration_v3bcd.py": "e762299efd5b837a1f3568a4cfaf7122dc7456e7a6b8452a01054c897a90fbd3",
+    "search/spk_bv_v3bcd_episode_wait_prefix_cumulative.py": "b0b4b47c1f3e71892daebc3bc76308a445074aa589bfb55ee331205bad78b102",
+    "search/spk_bv_v3bcd_episode_wait_prefix_cumulative_gate.sh": "ca7cb02ffb251fdf067f6960801f5f57eb58aff09d6cbcc24399cf996f6b0396",
+    "search/spk_bv_v3bcd_inherited_regression_gate.sh": "a532d4b2d390f158d92f26720b9b2d182b9e72cfe41e3bedc3000ed0992aec39",
+    "tests/test_spk_bv_v3bcd_episode_wait_prefix.py": "93d78e53f296c5f6c596fd946087299ec7e7cc6257777e55c418e9177519ff41",
+    "docs/spk-bv-v3bcd-cumulative-episode-wait-prefix-milestone.md": "c07715b5247376a53cdb452f2e6caf215696428b3b242413bf05cc33bd4ab3a0"
+  },
+  "scientific_boundary": {
+    "source_extended_episode_finite_causal_prefix_witness": true,
+    "native_veto_unqualified_one_tick_ACK_deadline_counterexample": true,
+    "universal_ACK_starvation_freedom": false,
+    "native_actor_policy_or_learning": false,
+    "native_operator_updates": 0,
+    "S1_pct": 100,
+    "S2_pct": 100,
+    "S3_pct": 60,
+    "S4_pct": 0,
+    "S5_pct": 0,
+    "aggregate_pct": 52
+  }
+}

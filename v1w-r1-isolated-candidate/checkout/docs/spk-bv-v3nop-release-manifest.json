@@ -1,0 +1,49 @@
+{
+  "release": "SPK_BV_v3nop_Native_ACK_Gap_Cumulative_Milestone",
+  "research_stages": ["v3n", "v3o", "v3p"],
+  "status": "DERIVED_FINITE_READY_ACK_WAIT_GAP_SOURCE_DISCRIMINATOR_NO_GLOBAL_DEADLINE",
+  "signed_v3klm_predecessor_sha256": "6fe69d43c3e4ef75e7162ef053903780ad7a470b9f8603220bee607dba761607",
+  "canonical_v3nop_report_sha256": "bbfd059007f2b8c18c4833b207859c277ff04648fa076246085e215470000f94",
+  "new_original_native_runs": 18,
+  "new_derived_gap_policy_capacity_runs": 72,
+  "new_causal_null_runs": 36,
+  "complete_original_native_projection_equal_derived_runs": 108,
+  "source_ready_gap_at_least_8_contexts": 66,
+  "source_ready_gap_at_least_16_contexts": 53,
+  "source_ready_gap_at_least_32_contexts": 24,
+  "longest_observed_source_ready_no_grant_ticks": 37,
+  "long_gaps_ending_in_real_grant": 36,
+  "long_gaps_censored_at_original_native_horizon": 17,
+  "new_higher_global_quota_fewer_inline_ACK_contexts": 3,
+  "frozen_native_source_pin": {
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9"
+  },
+  "new_files_sha256": {
+    "spk_backvalidation_v2/derived_ack_wait_gap_v3n.py": "321c0fe0b8792c30bd604cd7bd43b573754f18ea958b4527d561e5d8687fa8f4",
+    "spk_bv_research/native_ack_gap_integration_v3nop.py": "b82c80ee53eaab3957ba92082977758a0951d5dbb14d15722d61d8c590c7b55b",
+    "search/spk_bv_v3nop_native_ack_gap_cumulative.py": "66dc98a84829b912a218ee0dd207485e275dab11a8c07e17b26d4b0d81f3cc8e",
+    "search/spk_bv_v3nop_native_ack_gap_cumulative_gate.sh": "5c6b44508ce9804441c120a32a7275713b72ef7534d3c37facdc50127c687c79",
+    "search/spk_bv_v3nop_inherited_regression_gate.sh": "1f09062842c0742059f3bcc459ef3f49d21685335e03c91fd66296108b935522",
+    "tests/test_spk_bv_v3nop_native_ack_gap.py": "29aa501f8033168adaf95c46cf099cc8c3603704e7d422363a83f1a2eb74837f",
+    "docs/spk-bv-v3nop-native-ack-gap-cumulative-milestone.md": "b23d272b1c3075691244d05ad4a96746d06e991cc66af4cbcfb7fff0202772ec"
+  },
+  "scientific_boundary": {
+    "all_new_event_schedules_admitted_by_frozen_source": true,
+    "maximum_eight_events_and_external_tick_32_enforced": true,
+    "ready_no_grant_ticks_partitioned_and_resource_replayed": true,
+    "native_veto_and_consumer_queue_are_distinct_miss_classes": true,
+    "native_horizon_end_not_a_negative_or_silence_certificate": true,
+    "more_quota_does_not_monotonically_improve_wait": true,
+    "universal_native_service_deadline_or_starvation_proof": false,
+    "per_actor_fairness_assumption_proven": false,
+    "native_actor_learning_observed": false,
+    "native_operator_updates": 0,
+    "S1_pct": 100,
+    "S2_pct": 100,
+    "S3_pct": 60,
+    "S4_pct": 0,
+    "S5_pct": 0,
+    "aggregate_pct": 52,
+    "aggregate_delta_percentage_points": 0
+  }
+}

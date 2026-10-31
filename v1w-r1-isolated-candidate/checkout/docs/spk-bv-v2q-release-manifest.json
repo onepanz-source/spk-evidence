@@ -1,0 +1,27 @@
+{
+  "schema": "spk-bv-additive-research-release-manifest/v2q",
+  "milestone": "independent-consumer-PE-memory-charge",
+  "status": "DERIVED_ACTOR_CONSUMER_INDEPENDENT_PE_MEMORY_CHARGED_NATIVE_PROJECTION",
+  "signed_predecessor": {
+    "path": "/tmp/spk-bv-v2p-actor-consumer-handoff.json",
+    "sha256": "1c3f2b0010f6a0470ac2b5be021838b8e1992e85760e367a532d5e5dfe8f9ef3"
+  },
+  "local_canonical_v2q_report_sha256": "f214cbe1c75df7535171d14400c2cf37965fa5868aa55d02bc8a56f0891aa926",
+  "frozen_native_files_changed": false,
+  "native_operator_updates": 0,
+  "local_dedicated_unittests_passed": 19,
+  "independent_full_native_parity_cells": 90,
+  "charged_consumer_applications_each_capacity": 156,
+  "independent_PE_charge_each_capacity": 156,
+  "independent_memory_charge_each_capacity": 312,
+  "bounded_resource_intervention_runs": 180,
+  "inherited_413_pytest_gate": "PENDING_FWORK",
+  "code_sha256": {
+    "spk_backvalidation_v2/derived_actor_resource_consumer_v2q.py": "1ba82f4876a716eb4bd8d26ce7259a8e69afc0ce6dae803dbff6af56dbc1b619",
+    "spk_bv_research/actor_resource_consumer_integration_v2q.py": "e15941d42672b27bc74ece82173d16a9f147841f3e050c8c2064ef4d29e790e7",
+    "search/spk_bv_v2q_independent_consumer_resource.py": "9bb2e494c253e0ed4cc5bebf097ef5c3e5de18ffb90eb6197f45acfe8c03907d",
+    "search/spk_bv_v2q_independent_consumer_resource_gate.sh": "b0921f98da62291250c7b8c51c811268b0a65964770fd6f54aadafe912fb7eb3",
+    "search/spk_bv_v2q_inherited_regression_gate.sh": "1d940d49987001bc707416146d52ce465126bb094b62945f864a044bbf1a1238",
+    "tests/test_spk_bv_v2q_independent_consumer_resource.py": "25681800d695552943fb03b60bfafd5176bc816918706bd04ebf0f75b2c0da09"
+  }
+}

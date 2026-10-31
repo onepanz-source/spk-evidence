@@ -1,0 +1,44 @@
+{
+  "release": "SPK_BV_v2k_Integrated_Derived_Actor_Resource_Admission_Milestone",
+  "schema": "spk-bv-v2k-research-release-manifest/1",
+  "predecessor": {
+    "spk-bv-v2j-shadow-actor-control-service.json": "8fd1919c0bf197e83064828f074daa533038a1f798ea6398f8e0b88b0e6ae396",
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9"
+  },
+  "new_files_sha256": {
+    "spk_backvalidation_v2/derived_actor_admission_v2k.py": "fbcce0d368a7200d06d96fc4517e71fc30743bd9965721cb7f3e83abb8134d93",
+    "spk_bv_research/actor_resource_admission_integration_v2k.py": "69a1252d669df6fc12be4ddd8a22d4eb7e80a90429580e3ef3d1c0eab3592438",
+    "search/spk_bv_v2k_integrated_actor_admission.py": "fd9e843521d17a06fd542ea0800c1d4511b2ecfeb24d283a53b0f36a425e6007",
+    "search/spk_bv_v2k_integrated_actor_admission_gate.sh": "1caea8ab617f3c8aa0481d06f37d690e42d72e04bfec282bec07c0d6d9dcc45a",
+    "search/spk_bv_v2k_inherited_regression_gate.sh": "4470095f69f40a79fc9d875598c8ebc31235ee5f60731905939a1e9363844b50",
+    "tests/test_spk_bv_v2k_integrated_actor_admission.py": "25c706886f6f6194b1f31f3992b158046af85ab4ad5b57780e2c85413279752c",
+    "docs/spk-bv-v2k-integrated-actor-resource-admission-milestone.md": "6c8803ad55fcbe4dfcd889aa34b7b303c69539936227bceb6a3963163c277a2a"
+  },
+  "canonical_result_sha256": "774758196caeefd0d8ff629d8c4aca2d543b6e3dee8c2f2fda51eb236afe6ad4",
+  "local_gate": {
+    "new_unittest_methods_passed": 14,
+    "full_original_native_projection_parity_cells": 45,
+    "derived_integrated_resource_timelines_intentionally_changed": 45,
+    "original_native_executions": 46,
+    "derived_integrated_normal_executions": 46,
+    "derived_integrated_intervention_executions": 225,
+    "total_runtime_executions": 317,
+    "source_owned_controls_delivered": 156,
+    "derived_resource_grants_committed": 156,
+    "inline_derived_resource_grants": 140,
+    "derived_control_only_tail_grants": 16,
+    "new_derived_control_only_tail_rows": 16,
+    "unconsumed_normal_controls": 0,
+    "derived_pe_service_units": 156,
+    "derived_memory_units": 312,
+    "real_negative_B_judgments": 2,
+    "real_negative_B_derived_actor_A_credit": -2,
+    "deterministic_report_reexecution": true
+  },
+  "inherited_pytest_regressions_run_in_local_preparation": false,
+  "source_modifications_to_frozen_modules": false,
+  "frozen_native_actor_control_resource_grants_proven": false,
+  "native_actor_learning_proven": false,
+  "native_resource_result_full_parity_claimed": false,
+  "next_gate": "BLOCKED_REAL_NATIVE_ACTOR_EVENT_ADMISSION_AND_SEMANTIC_CREDIT_POLICY"
+}

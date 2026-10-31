@@ -1,0 +1,28 @@
+{
+  "files": {
+    "docs/spk-bv-v1g1-original-occurrence-timing-hotfix.md": {
+      "bytes": 3167,
+      "sha256": "2d565a99f1e9dd1576cbffde2f8ac3a24026a0151c740e7622b2fbb3b7cacb49"
+    },
+    "search/spk_bv_v1g1_research_gate.sh": {
+      "bytes": 676,
+      "sha256": "6b1bbdc023d186fa084ee99848bce947f1b9cf82fa858bca45a4c4e36abe3412"
+    },
+    "spk_bv_research/native_route_lineage_v1g.py": {
+      "bytes": 15653,
+      "sha256": "81e40b181662566b3ffd6735c72b7c486d23a85c9d18b0058dd9beb8300b3997"
+    },
+    "tests/test_spk_bv_v1g1_occurrence_timing_hotfix.py": {
+      "bytes": 4480,
+      "sha256": "6184d66b1b08d19febd1bbc67b32b02e7b2d58280756deb5b6b045a3c0780128"
+    }
+  },
+  "local_evidence": {
+    "inherited_gate": "PASS",
+    "native_fwork_cli": "NOT_RUN_LOCALLY",
+    "pytest_selected_suite": "721 passed, 1 asyncio warning"
+  },
+  "method": "native route temporal verification via exact per-occurrence transport grant join",
+  "schema": "spk-bv-v1g1-original-occurrence-timing-hotfix/v1",
+  "scope": "research-only; frozen architecture and native scheduler unchanged"
+}

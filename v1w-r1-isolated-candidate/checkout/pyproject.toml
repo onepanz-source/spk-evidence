@@ -1,0 +1,9 @@
+[project]
+name = "spk-algebra"
+version = "0.1.0"
+description = "Experimental search for a minimal compositional algebra of spike operators"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

@@ -1,0 +1,42 @@
+[r1 PRE] Exact versioned release manifest and original predecessor custody
+  R1 original v1w + isolated erratum + runner SHA-pinned PASS
+[r1 RUN] Execute unmodified candidate 8-step v1w gate; no shim
+[1/8] Exact v1v PASS, pinned original PE/BV, prior + v1w manifests
+  V1V exact parent, original PE/BV provenance, 6 source manifests PASS
+[2/8] New v1w queued original PE admission, replay, crash and adversarial tests
+............................................                             [100%]
+44 passed in 1.40s
+[3/8] Inherited v1v/v1u/v1t/v1s/v1r/first PE BV P regression suites
+........................................................................ [ 28%]
+........................................................................ [ 57%]
+........................................................................ [ 86%]
+...................................                                      [100%]
+251 passed in 6.92s
+[4/8] T14-T17 source/scientific inherited regressions
+----------------------------------------------------------------------
+Ran 45 tests in 0.073s
+
+OK
+----------------------------------------------------------------------
+Ran 37 tests in 0.130s
+
+OK
+----------------------------------------------------------------------
+Ran 50 tests in 3.802s
+
+OK
+----------------------------------------------------------------------
+Ran 38 tests in 4.680s
+
+OK
+[5/8] Original-source full PE/BV/P v1w experiment A
+V1W_QUEUED_PE_INGRESS_GATES_CONTEXTUAL_NATIVE_V1_P_PASS EPISODES 5 TICKS 325
+[6/8] Independent full PE/BV/P experiment B; exact byte comparison
+V1W_QUEUED_PE_INGRESS_GATES_CONTEXTUAL_NATIVE_V1_P_PASS EPISODES 5 TICKS 325
+[7/8] Functional causal criteria and explicit native v1 / frozen v0e boundary
+  CONTEXT FROM QUEUED PE → NATIVE V1 SAME-SCHEDULER BV P VERIFIED; FROZEN V0E NO LEARNING
+[8/8] Publish immutable verified v1w report
+0f70b4711a3282375d388285462e4dbbb2614b1dfe7ab042800ef9234f511be1  /home/ste/workspace/spk-evidence/spk-native-learning-v1w-r1-clean-gate.json
+SPK NATIVE LEARNING V1W QUEUED PE INGRESS AND CONTEXTUAL BV P REBIND PASS; FROZEN ORIGINAL BV UNMODIFIED
+[r1 POST] Exact original report + identity boundary
+V1W-R1 UNMODIFIED EIGHT-STEP CANDIDATE GATE PASS, NOT SIGNED/CANONICAL RELEASE

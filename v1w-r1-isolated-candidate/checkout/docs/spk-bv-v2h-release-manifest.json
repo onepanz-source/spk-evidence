@@ -1,0 +1,38 @@
+{
+  "release": "SPK_BV_v2h_Derived_Actor_Semantic_Receiver_Port_Milestone",
+  "schema": "spk-bv-v2h-research-release-manifest/1",
+  "source_pins": {
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9",
+    "spk-bv-v2g-derived-native-callsite-parity.json": "eb108df313fb705f6a6b54a08edfa10abc0df170bf98f45249f1068243d703f0"
+  },
+  "new_files_sha256": {
+    "spk_backvalidation_v2/derived_receiver_port_v2h.py": "04f03c9977afc770d7c82c5a11f5474a40319cc0bcee06594171cc4db1f0a7a8",
+    "spk_bv_research/receiver_port_integration_v2h.py": "1f4690ca76c591fe1e20819805cd5c11bebad56bd0affa3a50095af05c8ba030",
+    "search/spk_bv_v2h_derived_receiver_port.py": "6d6bb9f34b5d11b1db44b343813df72c819ecf04359c4f4df75d94bd2cbbdee4",
+    "search/spk_bv_v2h_derived_receiver_port_gate.sh": "bd911db32cfebbc6aa996927cce73b9de7b0a5c1dd6d6829faf322ec4f02e1b0",
+    "search/spk_bv_v2h_inherited_regression_gate.sh": "5e4ca7047c87df4b5dc685a6b44870703672e55de5da89a674c73a47ca1b7ab3",
+    "tests/test_spk_bv_v2h_derived_receiver_port.py": "9386ac6799e00b21efc3a7630d1b97c865e29f8b653150cb4b993d7a157380e5",
+    "docs/spk-bv-v2h-derived-actor-port-milestone.md": "c445a15acde79a09ad4a7697ac4f69979779d1187dc456d139b455f2e37a9ad3"
+  },
+  "new_unittest_methods_passed_local": 9,
+  "local_native_execution": {
+    "original_15x3": 45,
+    "derived_normal_15x3": 45,
+    "derived_fault_15x3x3": 135,
+    "negative_original_and_derived": 2,
+    "total_runtime_replays": 227,
+    "full_native_result_parity_cells": 45,
+    "semantic_emission_events": 156,
+    "semantic_ingress_events": 156,
+    "research_judgments": 156,
+    "research_sender_mailbox_deliveries": 156,
+    "research_post_native_deliveries": 15,
+    "native_negative_B_test_judgments": 2
+  },
+  "inherited_pytest_regressions_run_in_local_preparation": false,
+  "source_modifications_to_frozen_modules": false,
+  "frozen_actor_mailbox_integration_proven": false,
+  "cryptographic_source_authentication_proven": false,
+  "native_learning_proven": false,
+  "next_gate": "BLOCKED_FROZEN_ACTOR_INTAKE_AND_LEARNING_CONTRACT"
+}

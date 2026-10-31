@@ -1,0 +1,38 @@
+{
+  "claims_excluded": [
+    "native-frozen-scheduler-or-CMP-semantic-equivalence",
+    "native-recipient-delivery",
+    "authentication",
+    "native-learning"
+  ],
+  "frozen_source_modifications": false,
+  "native_new_runs_in_v2f": 0,
+  "native_prior_v2e_runs_consumed": 45,
+  "native_receiver_control_messages": 0,
+  "new_source_owned_research_executions": 65,
+  "predecessor_v2e_bytes_sha256": "219cce4eadd862bc09d0f4d8f385057fa8e3db3084a59c5f1b2274a485aaa916",
+  "release": "SPK_BV_v2f_Integrated_Tick_Batch_Receiver_Feedback_Milestone",
+  "research_control_messages_delivered_in_finite_matrix": 52,
+  "research_gate_tests": {
+    "new_v2f": 83,
+    "v2e_v2a_inherited": 296
+  },
+  "schema": "spk-bv-v2f-integrated-release-manifest/1",
+  "selected_historical_regression": {
+    "full_unfiltered_suite_PASS_claimed": false,
+    "hash_seeds": [
+      13,
+      811
+    ],
+    "passed_each_hash_seed": 1957
+  },
+  "source_files": {
+    "docs/spk-bv-v2f-integrated-native-boundary-milestone.md": "ad078f59d37ac5e86f43bace1787a95fe143758192abc73f9bcd79765d2b90a7",
+    "search/spk_bv_v2f_integrated_milestone.py": "b0f0f0b63074baee905d8362ec89d82e2a4a9c17c403d0dc27d1b96e32205140",
+    "search/spk_bv_v2f_integrated_milestone_gate.sh": "8449dab83c1ae648ab79383df2937d07bffcce9872cc0d16172eb0b1a0d9dd7c",
+    "search/spk_bv_v2f_selected_regression_gate.sh": "ab6b8bfc4c09caf74610b67732e96ac992772b4212585239c5d927484ac9127f",
+    "spk_backvalidation_v2/batched_feedback_executor_v2f.py": "d94608c954b0af42caeaeb4df65fa1e4e59ef6d672978c2b42916e85000f1a5d",
+    "spk_bv_research/vertical_slice_integration_v2f.py": "3290a55d0368d5a8db9faf09c7abbe46ff637e461d5331eb3411a48d5b9734a1",
+    "tests/test_spk_bv_v2f_integrated_milestone.py": "cab060f9c457c83a6935057a2959146b1d78ac67c41d683f8116543d21753371"
+  }
+}

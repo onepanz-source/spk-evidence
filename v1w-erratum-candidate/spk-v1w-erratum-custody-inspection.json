@@ -1,0 +1,53 @@
+{
+  "audit_v4_log_sha256": "2415427f56e877b71a7d067fc2264d98532871df6316cbe476d0bdf0c0068dc9",
+  "audit_v4_pass": true,
+  "candidate_release_requirements": [
+    "Review all pins / transitive manifests and their semantics",
+    "Prepare a NEW versioned source and manifest chain under authenticated custody",
+    "Run untouched canonical 8-step gate against the coherent NEW release snapshot",
+    "Pin source and exact published report hashes and record complete release evidence",
+    "Do not alter frozen original PE/BV source modules or call research audit canonical"
+  ],
+  "canonical_source_repin_performed": false,
+  "frozen_v0e_learning": false,
+  "isolated_erratum_gate": {
+    "edit": "exactly one in-assertion parent SHA literal",
+    "path": "search/spk_native_learning_v1w_queued_ingress_macro_gate.sh",
+    "sha256": "6d99000e75d7a6074a35e313a64f8d288e58400298d65f563fe4a3842a132e8a"
+  },
+  "native_v1_learning": true,
+  "original_pinned_gate": {
+    "path": "search/spk_native_learning_v1w_queued_ingress_macro_gate.sh",
+    "sha256": "29a5853fdc3d411115c0b10d96dfba0a73c02c8a39967a52b866f6b700dd767d"
+  },
+  "parent_v1v_sha256": "172b2a1c72a526ca3cc49d9792d4d765b606f7d4b346f43a46ddc2ef50fdd59c",
+  "pin_reference_occurrences": [
+    {
+      "file": "docs/spk-native-learning-v1w-queued-pe-ingress.md",
+      "file_sha256": "9cb9395d48fea9c98b22a319c5cd95c4d2cc453bf4618d2d6f97d94761d59730",
+      "kinds": [
+        "exact_gate_path",
+        "gate_basename"
+      ],
+      "line": 19,
+      "line_preview": "`search/spk_native_learning_v1w_queued_ingress_macro_gate.sh` requires the exact v1v PASS SHA-256 `172b2a1c72a526ca3cc49d9792d4d765b606f7d4b346f43a46ddc2ef50fdd59c` and the true frozen source SHA pins. It checks the six prior versioned manifests plus v1w manifest, runs the dedicated and inherited te"
+    },
+    {
+      "file": "spk_native_learning_v1/ingress_manifest_v1w.json",
+      "file_sha256": "fe2e848de39cc26c21d6be2d927b4e118f77b9df8c0af35522f3583c488f1351",
+      "kinds": [
+        "pinned_original_gate_sha",
+        "exact_gate_path",
+        "gate_basename"
+      ],
+      "line": 4,
+      "line_preview": "    \"search/spk_native_learning_v1w_queued_ingress_macro_gate.sh\": \"29a5853fdc3d411115c0b10d96dfba0a73c02c8a39967a52b866f6b700dd767d\","
+    }
+  ],
+  "promotion_allowed": false,
+  "repository_modified": false,
+  "schema": "spk-v1w-custody-erratum-preparation/v1",
+  "status": "RESEARCH_AUDIT_PASS_CANONICAL_NOT_RELEASED",
+  "unreadable_source_files": [],
+  "v1w_report_sha256": "0f70b4711a3282375d388285462e4dbbb2614b1dfe7ab042800ef9234f511be1"
+}

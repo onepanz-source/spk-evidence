@@ -1,0 +1,53 @@
+{
+  "release": "SPK_BV_v2m_Derived_Actor_Priority_Contention_Milestone",
+  "schema": "spk-bv-v2m-research-release-manifest/1",
+  "predecessor": {
+    "spk-bv-v2l-actor-credit-protocol.json": "b77f257adc6cb6c888e6cef44e67d39e54bf328ed6e9ee4d434eb7eea3bdf3d7",
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9"
+  },
+  "new_files_sha256": {
+    "spk_backvalidation_v2/derived_actor_priority_v2m.py": "5391c8bdc4cb02a1d30fbc7079e111fd55798af46f39522c04d7846c5ef1581f",
+    "spk_bv_research/actor_priority_contention_integration_v2m.py": "ce3e42304a47762e961cae31e99ede8edb52475f74a3235c82e6b2b01f87b74a",
+    "search/spk_bv_v2m_actor_priority_contention.py": "2fdb1a5ea12a879f5cc3da8fceb62ecfaa46cbca889b65197cf4ee550597c8d9",
+    "search/spk_bv_v2m_actor_priority_contention_gate.sh": "b580069ab03553035369de68614cc7bb052c26ed6826403071e99086fbb73e9d",
+    "search/spk_bv_v2m_inherited_regression_gate.sh": "030f2eba54ee3479ae075c58f1a9b8a856487b7d8c998bff65832c59c6a5fad0",
+    "tests/test_spk_bv_v2m_actor_priority_contention.py": "01f3d92b5bd6b12541aad864ae54bc48109e87b1c9ec333fed27bc7cc4fa9ef4",
+    "docs/spk-bv-v2m-actor-priority-contention-milestone.md": "4aaf5d8130f7fbb48b89d9fbb57e01620de73e064d944fca8e8bd9b89733cb2c"
+  },
+  "canonical_result_sha256": "97f023c54198e05fcf8dc63f3602ec955acad0ea83a34544be7ef6f5e2311177",
+  "local_gate": {
+    "new_unittest_methods_passed": 18,
+    "original_native_executions": 91,
+    "derived_forward_first_executions": 91,
+    "derived_actor_first_executions": 91,
+    "derived_causal_null_executions": 135,
+    "total_runtime_executions": 408,
+    "source_backed_workloads_per_priority_and_capacity": 45,
+    "original_capacity_forward_first_full_native_parity": 45,
+    "original_capacity_actor_first_full_native_parity": 38,
+    "original_capacity_actor_first_timing_drift": 6,
+    "original_capacity_actor_first_pre_forward_grants": 140,
+    "contended_capacity_global_PE_slots_per_tick": 1,
+    "contended_capacity_forward_first_full_native_parity": 45,
+    "contended_capacity_actor_first_full_native_parity": 0,
+    "contended_capacity_actor_first_forward_timing_drift": 45,
+    "contended_capacity_actor_first_final_states_parity": 45,
+    "contended_capacity_actor_first_terminal_payload_parity": 45,
+    "contended_capacity_actor_first_forward_event_counts_parity": 45,
+    "contended_capacity_actor_first_pre_forward_grants": 141,
+    "contended_capacity_actor_first_PE_blocked_ready_forward": 162,
+    "contended_capacity_actor_first_acknowledgements": 156,
+    "contended_capacity_loss_restores_native_parity": 45,
+    "contended_capacity_fault_restores_native_parity": 45,
+    "contended_capacity_zero_actor_credit_restores_native_parity": 45,
+    "real_negative_B_judgments": 2,
+    "real_negative_B_actor_A_derived_credit": -2,
+    "bounded_horizon_rejection_not_silence_proof": true,
+    "deterministic_report_reexecution": true
+  },
+  "inherited_pytest_regressions_run_in_local_preparation": false,
+  "source_modifications_to_frozen_modules": false,
+  "frozen_native_actor_priority_contract_proven": false,
+  "native_actor_learning_proven": false,
+  "next_gate": "BLOCKED_FROZEN_NATIVE_ACTOR_PRIORITY_ADMISSION_FAIRNESS_AND_CREDIT_CONSUMPTION"
+}

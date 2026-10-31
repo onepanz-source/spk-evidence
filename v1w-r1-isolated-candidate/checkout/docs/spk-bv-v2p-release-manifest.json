@@ -1,0 +1,25 @@
+{
+  "schema": "spk-bv-additive-research-release-manifest/v2p",
+  "milestone": "derived-actor-ack-consumer-handoff",
+  "status": "DERIVED_ACTOR_CONSUMER_ACK_HANDOFF_EXACTLY_ONCE_NATIVE_PARITY",
+  "predecessor": {
+    "path": "/tmp/spk-bv-v2o-native-causal-admission.json",
+    "sha256": "778a38f312d1e5403f0106015214cec924fe4f284e4cdbf107422f8b76c0716c"
+  },
+  "local_canonical_v2p_report_sha256": "1c3f2b0010f6a0470ac2b5be021838b8e1992e85760e367a532d5e5dfe8f9ef3",
+  "frozen_native_files_changed": false,
+  "native_operator_updates": 0,
+  "dedicated_unittests_passed_locally": 20,
+  "native_full_projection_parity_cells": 90,
+  "normal_consumer_applications_each_PE_regime": 156,
+  "intervention_runs": 180,
+  "inherited_413_pytest_gate": "PENDING_FWORK",
+  "code_sha256": {
+    "spk_backvalidation_v2/derived_actor_consumer_v2p.py": "caaf0fab9e6363ec38a1cafe336b13505a55af313561cd83978d0130212a3a05",
+    "spk_bv_research/actor_consumer_handoff_integration_v2p.py": "f8a5b19097fe25f8a31d88f3837213cffa1891cf1516f9e6424179949096e6f3",
+    "search/spk_bv_v2p_actor_consumer_handoff.py": "a50ecf57125ce3ded74d8a944a69278204e2354a9ff7d8da15475a51d1e6bd48",
+    "search/spk_bv_v2p_actor_consumer_handoff_gate.sh": "19e732d0253982913255d31a943f7bd6361033c95e880faea6f36afcc5defaa7",
+    "search/spk_bv_v2p_inherited_regression_gate.sh": "7db16dc40c312246eb8f1fffa6db86a1fd1c9a7d76ae0bfe7073f19c37a17758",
+    "tests/test_spk_bv_v2p_actor_consumer_handoff.py": "43c0a7030d62eae32e9f63736e7bdcc8db35d162c9b1094abed6928f565fcd35"
+  }
+}

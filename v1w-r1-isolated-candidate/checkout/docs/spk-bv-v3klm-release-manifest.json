@@ -1,0 +1,46 @@
+{
+  "release": "SPK_BV_v3klm_Native_ACK_Opportunity_Cumulative_Milestone",
+  "research_stages": ["v3k", "v3l", "v3m"],
+  "status": "DERIVED_NATIVE_ACK_OPPORTUNITY_RESOURCE_AND_QUEUE_CONDITIONAL_NO_LIVENESS",
+  "signed_v3hij_predecessor_sha256": "0d441433aaa99abb06beab7dffc65ce8c7a886fdfd98c21086bc41ea992aa2c4",
+  "canonical_v3klm_report_sha256": "6fe69d43c3e4ef75e7162ef053903780ad7a470b9f8603220bee607dba761607",
+  "new_original_native_runs": 54,
+  "new_derived_queue_policy_resource_runs": 216,
+  "new_causal_null_runs": 108,
+  "original_native_projection_exact_derived_runs": 324,
+  "sufficient_conditional_source_ACK_opportunity_ticks": 356,
+  "weak_veto_free_ready_without_ACK_ticks": 44,
+  "policy_ACK_first_more_inline_comparison_cells": 15,
+  "higher_global_quota_more_inline_comparison_cells": 31,
+  "higher_global_quota_fewer_inline_comparison_cells": 7,
+  "frozen_native_source_pin": {
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9"
+  },
+  "new_files_sha256": {
+    "spk_backvalidation_v2/derived_native_opportunity_certificate_v3k.py": "b5747d46259d6f24f10657367fd9d469644d421f335850136e854ff53af19930",
+    "spk_bv_research/native_ack_opportunity_integration_v3klm.py": "ef19c5e87d8b0bc175902f86c9588eab8a1bb25d04816bde12212411da3575c7",
+    "search/spk_bv_v3klm_native_ack_opportunity_cumulative.py": "505ca3a28dabdea3695a36e3e8b6be5246cd88d0ce99a1f953ce6566d3d4f427",
+    "search/spk_bv_v3klm_native_ack_opportunity_cumulative_gate.sh": "fbed2145f7a4a62b28242cd9c1269c4517b7ada5ce2aab84dde4e06fbbab818e",
+    "search/spk_bv_v3klm_inherited_regression_gate.sh": "9068511508acc3364ac2e417e87e498761f20571d4b726f5415ecb29b2697fdc",
+    "tests/test_spk_bv_v3klm_native_ack_opportunity.py": "80a7ea08e9cdd9320ae8e50a04e98f3225aa78256a5a0c85a7aebda6e89ab82c",
+    "docs/spk-bv-v3klm-native-ack-opportunity-cumulative-milestone.md": "936b3fa25d57b27d836f727cad7653c6d22a8bae7c6d98fde60983402d93ebcc"
+  },
+  "scientific_boundary": {
+    "finite_source_ready_and_selection_condition_is_explicit": true,
+    "source_PE_and_domain_resource_budget_charged": true,
+    "native_veto_free_alone_is_not_a_service_opportunity": true,
+    "global_inline_ACK_quota_monotonicity_is_false_in_measured_queue": true,
+    "zero_credit_and_transport_loss_never_mint_ACK": true,
+    "strict_full_original_native_result_projection": true,
+    "universal_native_opportunity_gap_or_ACK_deadline_proven": false,
+    "frozen_native_actor_policy_or_learning": false,
+    "native_operator_updates": 0,
+    "S1_pct": 100,
+    "S2_pct": 100,
+    "S3_pct": 60,
+    "S4_pct": 0,
+    "S5_pct": 0,
+    "aggregate_pct": 52,
+    "aggregate_delta_percentage_points": 0
+  }
+}

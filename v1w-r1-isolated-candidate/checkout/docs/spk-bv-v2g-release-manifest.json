@@ -1,0 +1,29 @@
+{
+  "derived_baseline_executions": 45,
+  "derived_observer_fault_executions": 45,
+  "derived_observer_overflow_executions": 45,
+  "expected_research_test_cases": 34,
+  "files_sha256": {
+    "docs/spk-bv-v2g-derived-native-callsite-integration.md": "9b333048d0477645dd9f51957fdf7d9303be61493b37fd001aad610accae9b26",
+    "search/spk_bv_v2g_derived_native_fork.py": "c40004b20767ab617116d49e7d1d7e038d5daabff26a84bfedbf03b154bb2dda",
+    "search/spk_bv_v2g_derived_native_fork_gate.sh": "6a657ea258541ed51d3c0a57dd7ff6dfe2207c8169efbcfb84caad13882f6c40",
+    "search/spk_bv_v2g_selected_regression_gate.sh": "d1c136e12f20da1d5c6331962fcc9962b5027291e18488aceea328d4e8246d9e",
+    "spk_backvalidation_v2/derived_native_fork_v2g.py": "8942cf17a9b4c96ce06cf34e093146e7e706532610475a20309473de380d0116",
+    "spk_bv_research/native_fork_differential_v2g.py": "fd9a105c3194608be0892a7dcbca0e70abf864ea063ffbcbcda9124552a32b7e",
+    "tests/test_spk_bv_v2g_derived_native_fork.py": "9f5e4fffbd866a3af91f739131e55eeacdbce4408f8ed0d11fee6546bc125a38"
+  },
+  "native_executions_to_run_on_fwork": 180,
+  "native_original_executions": 45,
+  "native_receiver_feedback_gate": "BLOCKED",
+  "new_files": [
+    "spk_backvalidation_v2/derived_native_fork_v2g.py",
+    "spk_bv_research/native_fork_differential_v2g.py",
+    "search/spk_bv_v2g_derived_native_fork.py",
+    "search/spk_bv_v2g_derived_native_fork_gate.sh",
+    "search/spk_bv_v2g_selected_regression_gate.sh",
+    "tests/test_spk_bv_v2g_derived_native_fork.py",
+    "docs/spk-bv-v2g-derived-native-callsite-integration.md"
+  ],
+  "release": "SPK_BV_v2g_Derived_Native_Callsite_Parity_Milestone",
+  "selected_regression_passed_per_seed": 1991
+}

@@ -1,0 +1,40 @@
+{
+  "release": "SPK_BV_v2i_Derived_Actor_Batch_Intake_Milestone",
+  "schema": "spk-bv-v2i-research-release-manifest/1",
+  "predecessor": {
+    "spk-bv-v2h-derived-actor-feedback.json": "8407d93d78ca1aba76b1b01e65bafc9692aa35715261b53833366823f37138cd",
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9"
+  },
+  "new_files_sha256": {
+    "spk_backvalidation_v2/derived_actor_intake_v2i.py": "578ac2344d6dcd8452192e3f2bdb1b6257d2414c5cbdd02ab36524c216aaa8c0",
+    "spk_bv_research/actor_intake_integration_v2i.py": "1fdc38a1e30e8af2681e9ca3ab9f87fc4488ba3730f36d9ed6eab82ee95f5f8f",
+    "search/spk_bv_v2i_actor_batch_intake.py": "6141dc41e97f95691eb492b5973d8e29a8f55b12851a5617cddc8c5190f9300c",
+    "search/spk_bv_v2i_actor_batch_intake_gate.sh": "b3164ead6bb19011e4f88cc8e67132e39d2bbbb5350af531a9edece8ff4ffb9f",
+    "search/spk_bv_v2i_inherited_regression_gate.sh": "e2d8ddef4b4d2ef850b0bbf6f8b9bc801f3f7656338daada658f49493c9d2e50",
+    "tests/test_spk_bv_v2i_derived_actor_intake.py": "b02b53f87fff32b3ad6b1189272745d06306f37e0305c376275c9c82fad0e4dc",
+    "docs/spk-bv-v2i-derived-actor-batch-intake-milestone.md": "cf0b37c5c7a48f6ce21c114bd4385065af341e3f1234a665483fc3e6db2d6f62"
+  },
+  "canonical_result_sha256": "b09c0ceb778070f8dafa8913945ba952c497411b5cf9063ff6d8f9f0a7ff3010",
+  "local_gate": {
+    "new_unittest_methods_passed": 12,
+    "full_native_result_parity_cells": 45,
+    "original_native_executions": 46,
+    "derived_normal_executions": 46,
+    "derived_loss_executions": 45,
+    "derived_receipt_pressure_executions": 45,
+    "total_runtime_executions": 182,
+    "committed_actor_batch_visits": 234,
+    "control_delivered": 156,
+    "derived_actor_batch_receipts": 52,
+    "delivered_during_native_unconsumed": 89,
+    "post_native_deliveries_not_native_intake": 15,
+    "negative_fixture_delivered": 2,
+    "negative_fixture_derived_actor_receipts": 1
+  },
+  "inherited_pytest_regressions_run_in_local_preparation": false,
+  "source_modifications_to_frozen_modules": false,
+  "frozen_actor_receives_feedback": false,
+  "native_actor_service_resources_accounted": false,
+  "native_learning_proven": false,
+  "next_gate": "BLOCKED_FROZEN_ACTOR_INTAKE_CONTRACT_AND_RESOURCE_SERVICE"
+}

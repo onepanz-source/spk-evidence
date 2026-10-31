@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "name": "spk-algebra",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.git": true,
+      "**/node_modules": true,
+      "**/.astro": true,
+      "**/dist": true
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/.astro": true,
+      "**/dist": true
+    }
+  }
+}

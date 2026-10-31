@@ -1,0 +1,48 @@
+{
+  "release": "SPK_BV_v2l_Derived_Actor_Credit_Ack_Protocol_Milestone",
+  "schema": "spk-bv-v2l-research-release-manifest/1",
+  "predecessor": {
+    "spk-bv-v2k-integrated-actor-resource-admission.json": "774758196caeefd0d8ff629d8c4aca2d543b6e3dee8c2f2fda51eb236afe6ad4",
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9"
+  },
+  "new_files_sha256": {
+    "spk_backvalidation_v2/derived_actor_credit_protocol_v2l.py": "12d9aaa5692f0e2f7027a7f9c8b9d0a8773cb130ae30c66af52ed54c9cebbb76",
+    "spk_bv_research/actor_credit_protocol_integration_v2l.py": "434c2299a47c5f14b35732af2a4893fdccc2858f9abdefcf9ac1dee22fb71c73",
+    "search/spk_bv_v2l_actor_credit_protocol.py": "7eb038bf43f08d97bec2332b7bf898300d6c0ba3b2acefb4f83e0fdc7a7b02c0",
+    "search/spk_bv_v2l_actor_credit_protocol_gate.sh": "bd4b4362778609ec9e12ee68207d20b26e8906266080d2195ad93e6a3ed2de28",
+    "search/spk_bv_v2l_inherited_regression_gate.sh": "d5f61b877618429fa5780aab30930be2dd4710b2941bb0d5bc10856a0a45b182",
+    "tests/test_spk_bv_v2l_actor_credit_protocol.py": "1235bf77bc76b54f9530d7c3aacfbb515082ef5e2cfab7ba1909905cc8ed4f52",
+    "docs/spk-bv-v2l-actor-credit-ack-protocol-milestone.md": "df3170670bad7463521536aa6c639e3fa9fad483d9633c6ad70be4e932ebeb29"
+  },
+  "canonical_result_sha256": "b77f257adc6cb6c888e6cef44e67d39e54bf328ed6e9ee4d434eb7eea3bdf3d7",
+  "local_gate": {
+    "new_unittest_methods_passed": 19,
+    "full_original_native_projection_parity_cells": 45,
+    "v2k_integrated_derived_resource_parity_cells": 45,
+    "original_native_executions": 46,
+    "derived_credit_normal_executions": 46,
+    "derived_credit_intervention_executions": 316,
+    "total_runtime_executions": 408,
+    "normal_delivered_controls": 156,
+    "derived_actor_credit_acknowledgements": 156,
+    "derived_resource_grants_committed": 156,
+    "derived_inline_grants": 140,
+    "derived_tail_grants": 16,
+    "normal_unconsumed_delivered": 0,
+    "zero_capacity_delivered_but_unacknowledged": 156,
+    "one_credit_cap_acknowledgements": 90,
+    "one_credit_cap_withheld": 66,
+    "global_one_ack_per_run_total": 45,
+    "no_tail_acknowledgements": 138,
+    "no_tail_unconsumed": 18,
+    "real_negative_B_judgments": 2,
+    "real_negative_B_actor_A_derived_credit": -2,
+    "capped_negative_B_actor_A_derived_credit": -1,
+    "deterministic_report_reexecution": true
+  },
+  "inherited_pytest_regressions_run_in_local_preparation": false,
+  "source_modifications_to_frozen_modules": false,
+  "native_actor_credit_contract_proven": false,
+  "native_actor_learning_proven": false,
+  "next_gate": "BLOCKED_NATIVE_ACTOR_EVENT_PRIORITY_AND_CREDIT_CONSUMPTION_CONTRACT"
+}

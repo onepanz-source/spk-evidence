@@ -1,0 +1,42 @@
+{
+  "release": "SPK_BV_v2yza_Cumulative_Burst_Window_Milestone",
+  "research_stages": ["v2y", "v2z", "v3a"],
+  "status": "DERIVED_ACTIVATED_ACK_WINDOW_SOURCE_BURST_CONDITIONAL_NO_NATIVE_LIVENESS",
+  "sha_pinned_v2vwx_predecessor": "c7cb06097b6d09f30a11a810cfd5b7e3197a773a2a0a7e29766f55bd41a553ef",
+  "canonical_v2yza_report_sha256": "56d9208e1f0fd2f8dbad6c77030582f7dff8d7fdd1052ce7c2bc8a8c1fcb80f8",
+  "new_native_runs": 45,
+  "new_derived_policy_runs": 270,
+  "new_causal_ablation_runs": 225,
+  "multi_turn_unbounded_contention_cells": 7,
+  "bounded_window_activated_cells": 7,
+  "bounded_window_activated_ticks": 9,
+  "actual_ACK_grants_in_bounded_windows": 11,
+  "bounded_policy_overrun_cells": 0,
+  "source_pins": {
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9"
+  },
+  "new_files_sha256": {
+    "spk_backvalidation_v2/derived_actor_burst_window_v2y.py": "532bb462f2a4d3f75fc58e6087fbfcd271773f9bb0a700eae989aea9eaa3c7e8",
+    "spk_bv_research/burst_window_cumulative_v2yza.py": "22e06f36b160a36cf4eee8e0b2fdbf5466c1aa73abf72aec5e09f3de1eb1d7b1",
+    "search/spk_bv_v2yza_burst_window_cumulative.py": "9d034972be0b3698d5fcb96804c12a1f69ed9d596ab42c008b3b2ea883fa653a",
+    "search/spk_bv_v2yza_burst_window_cumulative_gate.sh": "f8375497a367b9f26c1d81350fd22074f7afe61599867449caab95aa7fc5400d",
+    "search/spk_bv_v2yza_inherited_regression_gate.sh": "ea73624bd6d4771de8185c583458eab96ae4026ac2aebe4925e5f294df2f2d76",
+    "tests/test_spk_bv_v2yza_burst_window_cumulative.py": "6506e1ebf6789700f182cc31526f81ef18642f5022d71df02774e8382483cff5",
+    "docs/spk-bv-v2yza-cumulative-burst-window-milestone.md": "d8204a7e1ee1878a0916eb4ea87b6a7a70f67876a419bec2637ee4c864a86a05"
+  },
+  "scientific_boundary": {
+    "derived_source_owned_multiturn_priority_witness": true,
+    "derived_bounded_window_activated": true,
+    "conditional_source_opportunity_not_universal_liveness": true,
+    "universal_queue_starvation_freedom": false,
+    "frozen_native_actor_intake_and_learning": false,
+    "frozen_native_ACK_consumer_arbiter": false,
+    "native_operator_updates": 0,
+    "S1_pct": 100,
+    "S2_pct": 100,
+    "S3_pct": 60,
+    "S4_pct": 0,
+    "S5_pct": 0,
+    "aggregate_pct": 52
+  }
+}

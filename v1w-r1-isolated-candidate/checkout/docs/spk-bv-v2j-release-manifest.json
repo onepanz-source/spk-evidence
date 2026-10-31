@@ -1,0 +1,43 @@
+{
+  "release": "SPK_BV_v2j_Shadow_Actor_Control_Service_Milestone",
+  "schema": "spk-bv-v2j-research-release-manifest/1",
+  "predecessor": {
+    "spk-bv-v2i-derived-actor-batch-intake.json": "b09c0ceb778070f8dafa8913945ba952c497411b5cf9063ff6d8f9f0a7ff3010",
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9"
+  },
+  "new_files_sha256": {
+    "spk_backvalidation_v2/derived_actor_control_service_v2j.py": "ff32bbf02e041e1b194d415ae7052936110dc12e95bb9871937b9d1b48f6089c",
+    "spk_bv_research/actor_control_service_integration_v2j.py": "9122de4dbef12e7dede2500fce962ebbc3e38522b96ba88a276aec396f293113",
+    "search/spk_bv_v2j_shadow_actor_control_service.py": "5d62e09592b9ccb092bd4aa99e5007dca99b2da6499371c4ff131662a7b50157",
+    "search/spk_bv_v2j_shadow_actor_control_service_gate.sh": "3617d127fa46ac5601028d6c2f1f7d27a9175f2bf2572804aad59cc511eaf421",
+    "search/spk_bv_v2j_inherited_regression_gate.sh": "4cba647ae739db80c43ef40eefaac20c666709c40919a44a75fa1bf8255b9ad0",
+    "tests/test_spk_bv_v2j_shadow_actor_control_service.py": "2d6374a022b0244d20caf49b54bb9e7ea4b99cb6000553ec0b63959795557fac",
+    "docs/spk-bv-v2j-shadow-actor-control-service-milestone.md": "a6dd4a3347c5dd27abe96902e1a4f88d7a8de6abe1d0749be4cb12a52f8b62cb"
+  },
+  "canonical_result_sha256": "8fd1919c0bf197e83064828f074daa533038a1f798ea6398f8e0b88b0e6ae396",
+  "local_gate": {
+    "new_unittest_methods_passed": 13,
+    "full_native_result_parity_cells": 45,
+    "original_native_executions": 46,
+    "derived_normal_executions": 46,
+    "derived_intervention_executions": 180,
+    "total_runtime_executions": 272,
+    "source_owned_feedback_delivered": 156,
+    "shadow_resource_charged_receipts": 156,
+    "native_tick_slack_shadow_receipts": 140,
+    "post_native_tail_shadow_receipts": 16,
+    "unconsumed_feedback": 0,
+    "shadow_pe_service_units": 156,
+    "shadow_memory_units": 312,
+    "real_negative_B_feedback": 2,
+    "real_negative_B_shadow_actor_credit": -2,
+    "resource_envelope_oversubscriptions": 0,
+    "deterministic_report_reexecution": true
+  },
+  "inherited_pytest_regressions_run_in_local_preparation": false,
+  "source_modifications_to_frozen_modules": false,
+  "frozen_actor_receives_feedback": false,
+  "native_actor_resource_grants_modified": false,
+  "native_learning_proven": false,
+  "next_gate": "BLOCKED_NATIVE_ACTOR_CONTROL_SERVICE_ADMISSION_AND_CREDIT_CONTRACT"
+}

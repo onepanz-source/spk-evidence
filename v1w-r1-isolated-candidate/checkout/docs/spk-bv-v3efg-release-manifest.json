@@ -1,0 +1,50 @@
+{
+  "release": "SPK_BV_v3efg_Cumulative_Native_Veto_Attribution_Milestone",
+  "research_stages": ["v3e", "v3f", "v3g"],
+  "status": "DERIVED_NATIVE_GUARD_FACTORIAL_WAIT_OVERLAP_NO_UNIVERSAL_ACK_DEADLINE",
+  "signed_v3bcd_predecessor_sha256": "d347de60d14893380c5433993d2c6aefee46118bf6dbff6da13198d272ac4b90",
+  "canonical_v3efg_report_sha256": "93fd26296492945629f0d93dfc6fbb2e41f69b6ae8d009813b447db1c1ffc4f3",
+  "new_native_runs": 27,
+  "new_derived_policy_runs": 324,
+  "new_causal_null_runs": 54,
+  "new_no_tail_runs": 27,
+  "new_extended_source_contexts": 9,
+  "native_projection_exact_strict_guard_cells": 81,
+  "functional_forward_payload_equal_cells": 324,
+  "factorial_guard_contrasts": 81,
+  "guard_max_ACK_wait_ticks_bounded_turns": {
+    "both_native_guards": 29,
+    "forward_only_guard": 19,
+    "feedback_only_guard": 29,
+    "no_native_guard": 1
+  },
+  "tail_off_unconsumed_delivered_controls": 266,
+  "frozen_native_source_pin": {
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9"
+  },
+  "new_files_sha256": {
+    "spk_backvalidation_v2/derived_native_veto_wait_audit_v3e.py": "a3b0d36f7730bb39b5a555623a11bdbcf35f96b979cf408003aba63840cea3e1",
+    "spk_bv_research/native_veto_attribution_v3efg.py": "376c16b6d011270a773d4f456b5e7106b28f842b859817f13aa703e23329513d",
+    "search/spk_bv_v3efg_native_veto_attribution_cumulative.py": "deec4815c3e65e7e0b89aba4937b0f50f211bed0c7b76d1c32aca8c9e9b22ccb",
+    "search/spk_bv_v3efg_native_veto_attribution_cumulative_gate.sh": "6ad8a278e7569f4c221ac27fe4c77e3b3fac64689f71dbad4a874ec7d9c1c3b2",
+    "search/spk_bv_v3efg_inherited_regression_gate.sh": "03b615b1a903dccd75bd6a66f844e9817f63d92c9587864a9e7ec8adae48ff5c",
+    "tests/test_spk_bv_v3efg_native_veto_attribution.py": "96c7a0cc6865f63818a960d487de6e2618795ede2315cc8368d11f80ada4293f",
+    "docs/spk-bv-v3efg-cumulative-native-veto-attribution-milestone.md": "336b8a35c32512b1b1d6318677f1cf7d6da0969e7dd85870b9eb7fd3b4557855"
+  },
+  "scientific_boundary": {
+    "finite_wait_source_trace_partition_exact": true,
+    "full_strict_native_projection_preserved": true,
+    "guard_relaxation_may_change_native_timing": true,
+    "no_tail_not_negative_judgment": true,
+    "universal_ACK_service_or_starvation_freedom": false,
+    "frozen_native_actor_policy_or_learning": false,
+    "native_operator_updates": 0,
+    "S1_pct": 100,
+    "S2_pct": 100,
+    "S3_pct": 60,
+    "S4_pct": 0,
+    "S5_pct": 0,
+    "aggregate_pct": 52,
+    "aggregate_delta_percentage_points": 0
+  }
+}

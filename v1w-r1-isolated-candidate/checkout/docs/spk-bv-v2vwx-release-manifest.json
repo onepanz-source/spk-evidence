@@ -1,0 +1,39 @@
+{
+  "release": "SPK_BV_v2vwx_Cumulative_Queue_Precedence_Milestone",
+  "research_stages": ["v2v", "v2w", "v2x"],
+  "status": "DERIVED_TWO_QUEUE_PRIORITY_CAUSAL_DISCRIMINATION_NO_NATIVE_LIVENESS_CONTRACT",
+  "signed_v2stu_predecessor_sha256": "418f8154b25ed78bcbb5dc6ba5f8a0968dc107425d43c2e38c71ba2485b11975",
+  "canonical_v2vwx_report_sha256": "c7cb06097b6d09f30a11a810cfd5b7e3197a773a2a0a7e29766f55bd41a553ef",
+  "new_native_runs": 90,
+  "new_derived_policy_runs": 540,
+  "new_causal_intervention_runs": 135,
+  "ready_queue_collision_cells": 37,
+  "distinct_ACK_journal_policy_cells": 37,
+  "bounded_turn_limit_activated_cells": 0,
+  "source_pins": {
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9"
+  },
+  "new_files_sha256": {
+    "spk_backvalidation_v2/derived_actor_queue_fairness_v2v.py": "322f1cb33304124cb3f7dc6d7dbd614f090e74b30978436405979764c49173ca",
+    "spk_bv_research/queue_precedence_pressure_integration_v2vwx.py": "f7c7b47fd20080141603835b82bdb7cc233b36b976895a944c8cb03238daebb4",
+    "search/spk_bv_v2vwx_queue_precedence_cumulative.py": "8fe6c848206bf046bc8c0fd01ba5c5ec401ef581b2689aee09358dc4b4a15bb3",
+    "search/spk_bv_v2vwx_queue_precedence_cumulative_gate.sh": "5cb6fff86f0e8cdb9dc99832e2fcfdf002df2f912a273c734560a2169153c5f8",
+    "search/spk_bv_v2vwx_inherited_regression_gate.sh": "069a69c01964a72fa54fa62a1cd46a1158bab44cc7e2e9f5e0d4c1e1ebed9d4e",
+    "tests/test_spk_bv_v2vwx_queue_precedence_cumulative.py": "54a365a7156f99aff4081dd6cbe131f413f0a9103f347a08fc385527a568b5d7",
+    "docs/spk-bv-v2vwx-cumulative-queue-precedence-milestone.md": "4ccb001fb9043dab3b265a1461a8aff0d00d7acee55f4111d361f11d90707449"
+  },
+  "scientific_boundary": {
+    "derived_two_queue_causal_priority_discrimination": true,
+    "bounded_turn_limiter_observed_activation": false,
+    "frozen_native_two_queue_policy": false,
+    "universal_ack_fairness_or_starvation_freedom": false,
+    "frozen_native_actor_learning_or_intake": false,
+    "native_operator_updates": 0,
+    "S1_pct": 100,
+    "S2_pct": 100,
+    "S3_pct": 60,
+    "S4_pct": 0,
+    "S5_pct": 0,
+    "aggregate_pct": 52
+  }
+}

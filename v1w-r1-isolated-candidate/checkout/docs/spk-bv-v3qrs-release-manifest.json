@@ -1,0 +1,51 @@
+{
+  "release": "SPK_BV_v3qrs_Actor_Service_Gap_Cumulative_Milestone",
+  "research_stages": ["v3q", "v3r", "v3s"],
+  "status": "DERIVED_ACTOR_SPECIFIC_READY_ACK_CUSTODY_PEER_PROGRESS_NO_NATIVE_FAIRNESS",
+  "sha_pinned_v3nop_predecessor": "bbfd059007f2b8c18c4833b207859c277ff04648fa076246085e215470000f94",
+  "canonical_v3qrs_report_sha256": "fa05758472994887ce55910d4796553d7964cf061ed5df283b305488636c946a",
+  "new_original_native_runs": 18,
+  "derived_actor_policy_runs": 72,
+  "new_causal_null_runs": 36,
+  "exact_original_native_projections": 108,
+  "source_delivered_controls": 1152,
+  "real_source_native_ACKs": 131,
+  "source_actor_ready_ticks": 3928,
+  "source_actor_missed_ticks": 3797,
+  "global_grant_with_waiting_other_actor_ticks": 71,
+  "contexts_with_global_grant_and_waiting_peer": 47,
+  "max_source_actor_ready_miss_streak": 37,
+  "native_horizon_censored_actor_records": 965,
+  "post_native_deliveries_not_native_ready": 56,
+  "frozen_native_source_pin": {
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9"
+  },
+  "new_files_sha256": {
+    "spk_backvalidation_v2/derived_actor_service_gap_v3q.py": "d30f32d200d4c8293fea191fe7e6cce77bd8b01175139397a09e9855743a883c",
+    "spk_bv_research/actor_service_gap_integration_v3qrs.py": "5a90cf0663557141f308517f4a19c8d580b42be4327eccbba0791766146f1f3d",
+    "search/spk_bv_v3qrs_actor_service_gap_cumulative.py": "4c7fe064df512cde30bd58ba8b839b0d5b224542589d7c89c505a564d91e6cf6",
+    "search/spk_bv_v3qrs_actor_service_gap_cumulative_gate.sh": "852bb97a8c8629a98eafad6b0c96aef33ec841abacca3454a946625f27e24b61",
+    "search/spk_bv_v3qrs_inherited_regression_gate.sh": "ca2c62b1745e41bc94545f116235a6ab75926840228725820f6ecc41cbaf2118",
+    "tests/test_spk_bv_v3qrs_actor_service_gap.py": "8cdd751d2fa5431764ef0fc8f5cd062a2be7d91a1800c842e178313d5c34b9ef",
+    "docs/spk-bv-v3qrs-actor-service-gap-cumulative-milestone.md": "2ecaff19216b9fe06e2dd86c4e85f5ca22ea6717dfa9eb16555c26d307f20576"
+  },
+  "scientific_boundary": {
+    "source_mailbox_judgment_actor_custody_reconstructed": true,
+    "global_progress_without_individual_actor_service_witnessed": true,
+    "native_horizon_end_is_censoring_not_negative_judgment": true,
+    "post_native_deliveries_excluded_from_native_ready": true,
+    "strict_original_native_projection": true,
+    "causal_nulls_no_fabricated_ACK_or_absence_certificate": true,
+    "frozen_source_untouched": true,
+    "native_per_actor_service_deadline_or_fairness_proven": false,
+    "frozen_native_actor_learning_observed": false,
+    "native_operator_updates": 0,
+    "S1_pct": 100,
+    "S2_pct": 100,
+    "S3_pct": 60,
+    "S4_pct": 0,
+    "S5_pct": 0,
+    "aggregate_pct_equal_weight": 52,
+    "aggregate_delta_percentage_points": 0
+  }
+}

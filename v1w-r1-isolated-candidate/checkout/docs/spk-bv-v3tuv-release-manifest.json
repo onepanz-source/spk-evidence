@@ -1,0 +1,52 @@
+{
+  "release": "SPK_BV_v3tuv_Finite_Grant_Rank_Cumulative_Milestone",
+  "research_stages": ["v3t", "v3u", "v3v"],
+  "status": "DERIVED_SOURCE_FIFO_GRANT_RANK_EXACT_NO_NATIVE_TICK_DEADLINE",
+  "sha_pinned_v3qrs_predecessor": "fa05758472994887ce55910d4796553d7964cf061ed5df283b305488636c946a",
+  "canonical_v3tuv_report_sha256": "f783be9952613aa98eafef59d24c19eb64ccc09d29265017eabb675fe0155827",
+  "new_original_native_runs": 18,
+  "new_derived_rank_runs": 72,
+  "new_causal_null_runs": 36,
+  "full_original_native_projections": 108,
+  "source_native_grant_ticks": 286,
+  "source_native_grant_units": 329,
+  "source_native_eligible_controls": 1096,
+  "exact_ordinal_grant_rank_certificates": 329,
+  "native_horizon_censored_below_grant_rank": 767,
+  "post_native_deliveries_not_native_ready": 56,
+  "global_grant_with_waiting_other_actor_ticks": 162,
+  "contexts_with_waiting_actor_and_global_grant": 49,
+  "maximum_due_grant_rank": 16,
+  "frozen_native_source_pin": {
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9"
+  },
+  "new_files_sha256": {
+    "spk_backvalidation_v2/derived_grant_rank_certificate_v3t.py": "162fe4efc440a8f6a8a449d61c2c6e292a111d8c3c7449df6d73b25bd2122b44",
+    "spk_bv_research/grant_rank_integration_v3tuv.py": "6120585368d245991537fbb3a626b67c272be3864ba525401c64d4451cc309c8",
+    "search/spk_bv_v3tuv_grant_rank_cumulative.py": "cb1c077c4b3fe6100ca8993bf1313c83e1968a391db2650f3c602a2c14a95614",
+    "search/spk_bv_v3tuv_grant_rank_cumulative_gate.sh": "967b9358775523a83b0f20f3faca65022fe2107b4b28a24cae428958592fd507",
+    "search/spk_bv_v3tuv_inherited_regression_gate.sh": "8f19ac28dc23bde32ac153547fd6e14e68b3496146d1f0af8dd90df16c921ac6",
+    "tests/test_spk_bv_v3tuv_grant_rank.py": "377489a5cff39b85b74c533158eab7ac2f3000179b85b73d617bb2eccc7a7d8b",
+    "docs/spk-bv-v3tuv-finite-grant-rank-cumulative-milestone.md": "90fb345ef33f18fc96fd2a073c064f89093afd84c7b2571397d0a51383f6b2ed"
+  },
+  "scientific_boundary": {
+    "source_FIFO_prefix_for_all_observed_native_grants": true,
+    "exact_ordinal_service_rank_conditional_on_grants": true,
+    "native_horizon_pending_is_censoring_not_negative_judgment": true,
+    "post_native_deliveries_excluded_from_native_ready": true,
+    "strict_original_native_projection": true,
+    "causal_nulls_no_fabricated_ACK_or_absence_certificate": true,
+    "frozen_source_untouched": true,
+    "native_future_grant_rate_proven": false,
+    "universal_native_per_actor_tick_deadline_or_fairness_proven": false,
+    "frozen_native_actor_learning_observed": false,
+    "native_operator_updates": 0,
+    "S1_pct": 100,
+    "S2_pct": 100,
+    "S3_pct": 60,
+    "S4_pct": 0,
+    "S5_pct": 0,
+    "aggregate_pct_equal_weight": 52,
+    "aggregate_delta_percentage_points": 0
+  }
+}

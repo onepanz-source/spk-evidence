@@ -1,0 +1,29 @@
+{
+  "schema": "spk-bv-additive-research-release-manifest/v2r",
+  "milestone": "three-way-causal-priority-discrimination",
+  "status": "DERIVED_THREE_WAY_CAUSAL_GUARD_CONTENTION_DISCRIMINATED_NATIVE_ARBITER_BLOCKED",
+  "signed_predecessor": {
+    "path": "/tmp/spk-bv-v2q-independent-consumer-resource.json",
+    "sha256": "f214cbe1c75df7535171d14400c2cf37965fa5868aa55d02bc8a56f0891aa926"
+  },
+  "local_canonical_v2r_report_sha256": "731050ab7dc675b073afa9625b1cd378a9a4b7289e51d7f61078af294ba9f279",
+  "frozen_native_files_changed": false,
+  "native_operator_updates": 0,
+  "local_dedicated_unittests_passed": 17,
+  "independent_native_original_runs": 90,
+  "four_guard_derived_runs": 360,
+  "causal_resource_intervention_runs": 720,
+  "horizon_execution_attempts": 5,
+  "strict_entire_native_parity_cells_each_PE_regime": 45,
+  "one_PE_forward_only_entire_native_parity_cells": 15,
+  "one_PE_feedback_only_entire_native_parity_cells": 0,
+  "one_PE_actor_first_entire_native_parity_cells": 0,
+  "inherited_413_pytest_gate": "PENDING_FWORK",
+  "code_sha256": {
+    "spk_bv_research/three_way_causal_priority_integration_v2r.py": "ef856b9057e23a64046bdb5e0b842ad25d75dd6d97bac8329b40a5a8f7e19fb4",
+    "search/spk_bv_v2r_three_way_causal_priority.py": "3fd094a22b92c112947d616fdc6a998dce962a6fb3f8df644c29bd1aa40ab438",
+    "search/spk_bv_v2r_three_way_causal_priority_gate.sh": "faea8caf135f4262afaae01c555451bb04668a9bad0ff447801496e9042d4300",
+    "search/spk_bv_v2r_inherited_regression_gate.sh": "84b578710c5d6bd6e3cfa95d25f928b9bed7cd2553777d158c341155db2c33ab",
+    "tests/test_spk_bv_v2r_three_way_causal_priority.py": "22414725f58908732cb2102436148dbdee25bc70a77ce06be71152a6d691a54a"
+  }
+}

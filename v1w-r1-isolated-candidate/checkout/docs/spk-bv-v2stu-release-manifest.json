@@ -1,0 +1,31 @@
+{
+  "release": "SPK_BV_v2stu_Cumulative_Concurrent_Consumer_Milestone",
+  "research_stages": ["v2s", "v2t", "v2u"],
+  "status": "DERIVED_TRUE_PRE_FORWARD_PAID_CONSUMER_CAUSAL_ARBITRATION_NATIVE_BLOCKED",
+  "signed_v2r_predecessor_sha256": "731050ab7dc675b073afa9625b1cd378a9a4b7289e51d7f61078af294ba9f279",
+  "canonical_v2stu_report_sha256": "418f8154b25ed78bcbb5dc6ba5f8a0968dc107425d43c2e38c71ba2485b11975",
+  "new_native_runs": 90,
+  "new_derived_guard_runs": 360,
+  "new_causal_intervention_runs": 180,
+  "new_negative_fixture_runs": 2,
+  "new_bounded_horizon_attempts": 5,
+  "source_pins": {
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9"
+  },
+  "new_files_sha256": {
+    "spk_backvalidation_v2/derived_concurrent_consumer_v2s.py": "67d6e3dcd40beeaa8991102799ebc345a2ded2dbd0adb342a26ed88de6223f79",
+    "spk_bv_research/concurrent_consumer_cumulative_v2stu.py": "e52acccef2e348e1d9bffbd4e78cba82269316ab3eed96fba4e5a452d49b0bdb",
+    "search/spk_bv_v2stu_concurrent_cumulative.py": "820a17496f1d7eea1095fabd75146b5cc5e0838419448374642e106bcc77bd1d",
+    "search/spk_bv_v2stu_concurrent_cumulative_gate.sh": "b31caac4c3f5e9c8997920c43b5c21aff37071dde46321c82fb493299c656276",
+    "search/spk_bv_v2stu_inherited_regression_gate.sh": "81b420226a94ddd28191b5dba16f388d05790125a50044e728d93260296cf8ba",
+    "tests/test_spk_bv_v2stu_concurrent_cumulative.py": "0323c573a15c1fcf301f4024afad2917aa49b5fb406f7ee255a3295c100c434d",
+    "docs/spk-bv-v2stu-cumulative-concurrent-consumer-milestone.md": "7be0e668396dfdb8fc61790c8b0e4d5c163c2040a2a8fa92d6796ee351b6722c"
+  },
+  "scientific_boundary": {
+    "derived_true_pre_forward_paid_consumer": true,
+    "frozen_native_concurrent_three_way_arbiter": false,
+    "frozen_native_learning_or_actor_intake": false,
+    "universal_forward_liveness": false,
+    "native_operator_updates": 0
+  }
+}
