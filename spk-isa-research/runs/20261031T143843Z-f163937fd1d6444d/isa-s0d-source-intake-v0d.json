@@ -1,0 +1,2104 @@
+{
+  "BV_to_P_authorized": false,
+  "G2_owner_authorized": false,
+  "ISA_approved": false,
+  "P_writes": 0,
+  "archive_member_count": 22,
+  "compiler": {
+    "compiler_equivalence": false,
+    "source_count": 9,
+    "status": "PINNED_TAG_SOURCES_EXPORTED",
+    "tag": "spk-compiler-v0",
+    "tag_commit": "24b15156aa31967bd0079debcc97ccb6e3ac4325"
+  },
+  "compiler_sources": {
+    "spk_compiler/__init__.py": {
+      "ast": {
+        "classes": [],
+        "functions": [],
+        "imports": []
+      },
+      "bytes": 0,
+      "provenance": "GIT_TAG_spk-compiler-v0_24b15156aa31967bd0079debcc97ccb6e3ac4325",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "spk_compiler/compilation_manifest_v0.py": {
+      "ast": {
+        "classes": [],
+        "functions": [
+          {
+            "end_line": 30,
+            "line": 26,
+            "name": "_canonical_json"
+          },
+          {
+            "end_line": 37,
+            "line": 33,
+            "name": "_digest"
+          },
+          {
+            "end_line": 46,
+            "line": 40,
+            "name": "_object_pairs_strict"
+          },
+          {
+            "end_line": 50,
+            "line": 49,
+            "name": "_reject_constant"
+          },
+          {
+            "end_line": 56,
+            "line": 53,
+            "name": "_record"
+          },
+          {
+            "end_line": 61,
+            "line": 59,
+            "name": "_instance"
+          },
+          {
+            "end_line": 88,
+            "line": 64,
+            "name": "_as_payload"
+          },
+          {
+            "end_line": 101,
+            "line": 91,
+            "name": "dumps_compilation_manifest_v0"
+          },
+          {
+            "end_line": 171,
+            "line": 104,
+            "name": "loads_compilation_manifest_v0"
+          }
+        ],
+        "imports": [
+          "dataclasses",
+          "hashlib",
+          "json",
+          "re",
+          "spk_architecture.profile_v0",
+          "spk_compiler.compile_pipeline_v0",
+          "spk_compiler.pe_admission_v0",
+          "spk_compiler.resource_admission_v0",
+          "spk_network.events_v0"
+        ]
+      },
+      "bytes": 6173,
+      "provenance": "GIT_TAG_spk-compiler-v0_24b15156aa31967bd0079debcc97ccb6e3ac4325",
+      "sha256": "921d321d243dea8802001d52198fd234113d49a1f2ebac759c65abed1b62f88a"
+    },
+    "spk_compiler/compile_pipeline_v0.py": {
+      "ast": {
+        "classes": [
+          {
+            "end_line": 43,
+            "line": 29,
+            "methods": [],
+            "name": "CompiledNetworkV0"
+          }
+        ],
+        "functions": [
+          {
+            "end_line": 100,
+            "line": 46,
+            "name": "compile_network_ir_v0"
+          }
+        ],
+        "imports": [
+          "dataclasses",
+          "spk_architecture.profile_v0",
+          "spk_compiler.network_ir_v0",
+          "spk_compiler.pe_admission_v0",
+          "spk_compiler.resource_admission_v0",
+          "spk_network.events_v0",
+          "spk_network.model_v0"
+        ]
+      },
+      "bytes": 3787,
+      "provenance": "GIT_TAG_spk-compiler-v0_24b15156aa31967bd0079debcc97ccb6e3ac4325",
+      "sha256": "81aebc3b08776b7a5e4d1cd42257298048533d08eaf898cc436c9dc974479366"
+    },
+    "spk_compiler/network_ir_v0.py": {
+      "ast": {
+        "classes": [],
+        "functions": [
+          {
+            "end_line": 31,
+            "line": 20,
+            "name": "_require_keys"
+          },
+          {
+            "end_line": 64,
+            "line": 34,
+            "name": "build_network_ir_v0"
+          },
+          {
+            "end_line": 130,
+            "line": 67,
+            "name": "parse_network_ir_v0"
+          },
+          {
+            "end_line": 142,
+            "line": 133,
+            "name": "dumps_network_ir_v0"
+          },
+          {
+            "end_line": 153,
+            "line": 145,
+            "name": "_unique_pairs"
+          },
+          {
+            "end_line": 157,
+            "line": 156,
+            "name": "_reject_constant"
+          },
+          {
+            "end_line": 172,
+            "line": 160,
+            "name": "loads_network_ir_v0"
+          }
+        ],
+        "imports": [
+          "json",
+          "spk_core.ir_v0",
+          "spk_network.model_v0"
+        ]
+      },
+      "bytes": 4187,
+      "provenance": "GIT_TAG_spk-compiler-v0_24b15156aa31967bd0079debcc97ccb6e3ac4325",
+      "sha256": "0425a191cc3ecc3df76fe13dac99009cdceccdbc389789bf1967f567b5309460"
+    },
+    "spk_compiler/pe_admission_v0.py": {
+      "ast": {
+        "classes": [
+          {
+            "end_line": 24,
+            "line": 13,
+            "methods": [
+              {
+                "end_line": 24,
+                "line": 16,
+                "name": "__init__"
+              }
+            ],
+            "name": "PEAdmissionRejectedV0"
+          },
+          {
+            "end_line": 40,
+            "line": 28,
+            "methods": [
+              {
+                "end_line": 40,
+                "line": 32,
+                "name": "__post_init__"
+              }
+            ],
+            "name": "NodePlacementV0"
+          },
+          {
+            "end_line": 56,
+            "line": 44,
+            "methods": [],
+            "name": "PEUsageV0"
+          },
+          {
+            "end_line": 67,
+            "line": 60,
+            "methods": [],
+            "name": "PEAdmissionManifestV0"
+          }
+        ],
+        "functions": [
+          {
+            "end_line": 74,
+            "line": 70,
+            "name": "_capacity_check"
+          },
+          {
+            "end_line": 195,
+            "line": 77,
+            "name": "admit_pe_mapping_v0"
+          }
+        ],
+        "imports": [
+          "dataclasses",
+          "spk_network.model_v0",
+          "spk_architecture.profile_v0"
+        ]
+      },
+      "bytes": 5107,
+      "provenance": "GIT_TAG_spk-compiler-v0_24b15156aa31967bd0079debcc97ccb6e3ac4325",
+      "sha256": "ccc76a35f908bd9fbdc8d3dfc23966b4e4109db838e05143b4383a23e437933c"
+    },
+    "spk_compiler/resource_admission_v0.py": {
+      "ast": {
+        "classes": [
+          {
+            "end_line": 29,
+            "line": 18,
+            "methods": [
+              {
+                "end_line": 29,
+                "line": 23,
+                "name": "__init__"
+              }
+            ],
+            "name": "AdmissionRejectedV0"
+          },
+          {
+            "end_line": 83,
+            "line": 33,
+            "methods": [
+              {
+                "end_line": 83,
+                "line": 50,
+                "name": "__post_init__"
+              }
+            ],
+            "name": "ResourceProfileV0"
+          },
+          {
+            "end_line": 98,
+            "line": 87,
+            "methods": [],
+            "name": "AdmissionManifestV0"
+          }
+        ],
+        "functions": [
+          {
+            "end_line": 105,
+            "line": 101,
+            "name": "_check"
+          },
+          {
+            "end_line": 231,
+            "line": 108,
+            "name": "admit_network_v0"
+          }
+        ],
+        "imports": [
+          "collections",
+          "dataclasses",
+          "spk_core.isa",
+          "spk_network.events_v0",
+          "spk_network.model_v0"
+        ]
+      },
+      "bytes": 5670,
+      "provenance": "GIT_TAG_spk-compiler-v0_24b15156aa31967bd0079debcc97ccb6e3ac4325",
+      "sha256": "864673d321b3da0b36d49cb669322808e617fb85657034b5df544aad48281420"
+    },
+    "tests/test_compiler_conformance_v0.py": {
+      "ast": {
+        "classes": [],
+        "functions": [
+          {
+            "end_line": 36,
+            "line": 33,
+            "name": "canonical"
+          },
+          {
+            "end_line": 40,
+            "line": 39,
+            "name": "manual_digest"
+          },
+          {
+            "end_line": 65,
+            "line": 44,
+            "name": "scenario"
+          },
+          {
+            "end_line": 78,
+            "line": 68,
+            "name": "compile_case"
+          },
+          {
+            "end_line": 82,
+            "line": 81,
+            "name": "document"
+          },
+          {
+            "end_line": 90,
+            "line": 85,
+            "name": "rehash_json"
+          },
+          {
+            "end_line": 95,
+            "line": 93,
+            "name": "reject"
+          },
+          {
+            "end_line": 100,
+            "line": 98,
+            "name": "test_independent_canonical_json_oracle"
+          },
+          {
+            "end_line": 106,
+            "line": 103,
+            "name": "test_independent_digest_oracle"
+          },
+          {
+            "end_line": 117,
+            "line": 109,
+            "name": "test_exact_envelope_and_payload_fields"
+          },
+          {
+            "end_line": 126,
+            "line": 120,
+            "name": "test_direct_admission_oracle_matches_embedded_claims"
+          },
+          {
+            "end_line": 132,
+            "line": 129,
+            "name": "test_network_ir_oracle"
+          },
+          {
+            "end_line": 136,
+            "line": 135,
+            "name": "test_roundtrip_is_exact"
+          },
+          {
+            "end_line": 144,
+            "line": 139,
+            "name": "test_duplicate_initial_spikes_and_parallel_edges_survive"
+          },
+          {
+            "end_line": 151,
+            "line": 147,
+            "name": "test_functional_behavior_is_unchanged"
+          },
+          {
+            "end_line": 157,
+            "line": 154,
+            "name": "test_compiled_result_is_frozen"
+          },
+          {
+            "end_line": 164,
+            "line": 160,
+            "name": "test_manifest_stability_under_input_ir_formatting"
+          },
+          {
+            "end_line": 169,
+            "line": 167,
+            "name": "test_manifest_stability_under_placement_order"
+          },
+          {
+            "end_line": 175,
+            "line": 172,
+            "name": "test_empty_initial_events_are_preserved"
+          },
+          {
+            "end_line": 181,
+            "line": 178,
+            "name": "test_checksum_detects_unrehashed_tamper"
+          },
+          {
+            "end_line": 186,
+            "line": 184,
+            "name": "test_rehash_cannot_forge_resource_admission"
+          },
+          {
+            "end_line": 191,
+            "line": 189,
+            "name": "test_rehash_cannot_forge_pe_admission"
+          },
+          {
+            "end_line": 196,
+            "line": 194,
+            "name": "test_rehash_cannot_bypass_logical_capacity"
+          },
+          {
+            "end_line": 201,
+            "line": 199,
+            "name": "test_rehash_cannot_bypass_pe_program_capacity"
+          },
+          {
+            "end_line": 206,
+            "line": 204,
+            "name": "test_rehash_cannot_use_unknown_pe"
+          },
+          {
+            "end_line": 211,
+            "line": 209,
+            "name": "test_rehash_cannot_remove_node_placement"
+          },
+          {
+            "end_line": 216,
+            "line": 214,
+            "name": "test_rehash_cannot_reorder_canonical_placements"
+          },
+          {
+            "end_line": 221,
+            "line": 219,
+            "name": "test_rehash_cannot_insert_unrecognized_payload_field"
+          },
+          {
+            "end_line": 226,
+            "line": 224,
+            "name": "test_rehash_cannot_bypass_network_ir_schema"
+          },
+          {
+            "end_line": 232,
+            "line": 229,
+            "name": "test_wrong_outer_schema_rejected"
+          },
+          {
+            "end_line": 238,
+            "line": 235,
+            "name": "test_wrong_version_rejected"
+          },
+          {
+            "end_line": 244,
+            "line": 241,
+            "name": "test_unrecognized_outer_field_rejected"
+          },
+          {
+            "end_line": 251,
+            "line": 247,
+            "name": "test_duplicate_outer_json_key_rejected"
+          },
+          {
+            "end_line": 256,
+            "line": 254,
+            "name": "test_nonfinite_json_token_rejected"
+          },
+          {
+            "end_line": 262,
+            "line": 259,
+            "name": "test_invalid_checksum_format_rejected"
+          },
+          {
+            "end_line": 269,
+            "line": 265,
+            "name": "test_invalid_public_api_types_rejected"
+          },
+          {
+            "end_line": 278,
+            "line": 272,
+            "name": "test_content_changes_change_digest"
+          },
+          {
+            "end_line": 284,
+            "line": 281,
+            "name": "test_identically_recompiled_content_is_byte_identical"
+          },
+          {
+            "end_line": 319,
+            "line": 287,
+            "name": "test_process_hash_seed_does_not_affect_bytes"
+          }
+        ],
+        "imports": [
+          "dataclasses",
+          "hashlib",
+          "json",
+          "os",
+          "pathlib",
+          "subprocess",
+          "sys",
+          "pytest",
+          "spk_architecture.profile_v0",
+          "spk_compiler.compile_pipeline_v0",
+          "spk_compiler.compilation_manifest_v0",
+          "spk_compiler.network_ir_v0",
+          "spk_compiler.pe_admission_v0",
+          "spk_compiler.resource_admission_v0",
+          "spk_core.isa",
+          "spk_network.events_v0",
+          "spk_network.model_v0",
+          "spk_network.runtime_v0"
+        ]
+      },
+      "bytes": 11866,
+      "provenance": "GIT_TAG_spk-compiler-v0_24b15156aa31967bd0079debcc97ccb6e3ac4325",
+      "sha256": "1e6b4f47f4f8f31636bae4574d27686fa82b67addef42444c56651ef2da8d813"
+    },
+    "tests/test_compiler_freeze_manifest_v0.py": {
+      "ast": {
+        "classes": [],
+        "functions": [
+          {
+            "end_line": 24,
+            "line": 18,
+            "name": "inventory"
+          },
+          {
+            "end_line": 29,
+            "line": 27,
+            "name": "valid"
+          },
+          {
+            "end_line": 34,
+            "line": 32,
+            "name": "check"
+          },
+          {
+            "end_line": 39,
+            "line": 37,
+            "name": "rehash"
+          },
+          {
+            "end_line": 43,
+            "line": 42,
+            "name": "test_manifest_passes_untampered"
+          },
+          {
+            "end_line": 49,
+            "line": 46,
+            "name": "test_json_canonical_is_stable"
+          },
+          {
+            "end_line": 54,
+            "line": 52,
+            "name": "test_manifest_order_is_canonical"
+          },
+          {
+            "end_line": 61,
+            "line": 57,
+            "name": "test_source_file_modification_is_rejected"
+          },
+          {
+            "end_line": 68,
+            "line": 64,
+            "name": "test_manifest_checksum_tampering_is_rejected"
+          },
+          {
+            "end_line": 75,
+            "line": 71,
+            "name": "test_rehashed_digest_does_not_bypass_file_hash"
+          },
+          {
+            "end_line": 82,
+            "line": 78,
+            "name": "test_missing_file_record_is_rejected_even_after_rehash"
+          },
+          {
+            "end_line": 89,
+            "line": 85,
+            "name": "test_duplicate_file_record_is_rejected"
+          },
+          {
+            "end_line": 96,
+            "line": 92,
+            "name": "test_invalid_baseline_is_rejected"
+          },
+          {
+            "end_line": 103,
+            "line": 99,
+            "name": "test_invalid_schema_is_rejected"
+          },
+          {
+            "end_line": 110,
+            "line": 106,
+            "name": "test_unsorted_file_record_is_rejected"
+          },
+          {
+            "end_line": 116,
+            "line": 113,
+            "name": "test_path_traversal_is_rejected"
+          },
+          {
+            "end_line": 123,
+            "line": 119,
+            "name": "test_symlink_is_rejected"
+          },
+          {
+            "end_line": 129,
+            "line": 126,
+            "name": "test_invalid_commit_rejected"
+          }
+        ],
+        "imports": [
+          "copy",
+          "pathlib",
+          "sys",
+          "pytest",
+          "compiler_v0_freeze_manifest"
+        ]
+      },
+      "bytes": 3884,
+      "provenance": "GIT_TAG_spk-compiler-v0_24b15156aa31967bd0079debcc97ccb6e3ac4325",
+      "sha256": "e1c0f513c3b0787e55fb5f044dffefee4ee79203596dea3127a28cd8796891c4"
+    },
+    "tests/test_spk_core_compiler_v0.py": {
+      "ast": {
+        "classes": [],
+        "functions": [
+          {
+            "end_line": 74,
+            "line": 44,
+            "name": "packed_spk_program"
+          },
+          {
+            "end_line": 91,
+            "line": 77,
+            "name": "test_compiler_reconstructs_packed_microcode"
+          },
+          {
+            "end_line": 109,
+            "line": 94,
+            "name": "test_general_exponential_decay_is_rejected"
+          },
+          {
+            "end_line": 128,
+            "line": 112,
+            "name": "test_fractional_acc_weight_is_rejected"
+          },
+          {
+            "end_line": 157,
+            "line": 131,
+            "name": "test_dyadic_compare_is_compiled_exactly"
+          },
+          {
+            "end_line": 186,
+            "line": 160,
+            "name": "test_dyadic_reset_is_compiled_exactly"
+          },
+          {
+            "end_line": 209,
+            "line": 189,
+            "name": "test_nonrepresentable_reset_is_rejected"
+          }
+        ],
+        "imports": [
+          "math",
+          "pytest",
+          "search.interaction_packed_core_v1",
+          "spk.operators",
+          "spk.program",
+          "spk_core.compiler",
+          "spk_core.isa",
+          "spk_core.packed"
+        ]
+      },
+      "bytes": 3320,
+      "provenance": "GIT_TAG_spk-compiler-v0_24b15156aa31967bd0079debcc97ccb6e3ac4325",
+      "sha256": "84ae236485caf009956b3126dbd2ca419f86d97d6e9acf0c0c7a3626b95aeec4"
+    }
+  },
+  "compiler_v0_equivalence_proven": false,
+  "decision": "HOLD",
+  "exit_code": 4,
+  "external_dispatch": false,
+  "limitations": [
+    "Source AST and Git-tag custody are NOT native silent execution.",
+    "Compiler tag source listing is NOT compiler equivalence.",
+    "Original fixture files are OBSERVED unless individually pinned by independent predecessor.",
+    "Source archive is intended for a subsequent source-reviewed isolated differential gate."
+  ],
+  "missing_optional": [],
+  "native_silent_executed": false,
+  "original_silent_module_sha256": "8d006c4a2d7aa1cde5bd051aa5cc2bff9d3312e168449aba9eb9dc153ca7f80a",
+  "originals": {
+    "spk_simulator/atomic_neuronal_commit_v0.py": {
+      "ast": {
+        "classes": [
+          {
+            "end_line": 41,
+            "line": 35,
+            "methods": [],
+            "name": "AtomicNeuronalCommitStepV0"
+          }
+        ],
+        "functions": [
+          {
+            "end_line": 240,
+            "line": 44,
+            "name": "commit_atomic_neuronal_output_v0"
+          }
+        ],
+        "imports": [
+          "dataclasses",
+          "spk_architecture.access_v0",
+          "spk_architecture.profile_v0",
+          "spk_architecture.transaction_mapping_v0",
+          "spk_network.model_v0",
+          "spk_simulator.access_dependencies_v0",
+          "spk_simulator.atomic_emission_admission_v0",
+          "spk_simulator.bounded_backpressure_driver_v0",
+          "spk_simulator.causal_service_quantum_v0",
+          "spk_simulator.computed_emission_binding_v0",
+          "spk_simulator.external_ingress_v0",
+          "spk_simulator.owned_internal_reads_v0",
+          "spk_simulator.owned_service_tick_v0",
+          "spk_simulator.routing_binding_v0",
+          "spk_simulator.serialized_internal_graph_v0",
+          "spk_simulator.versioned_core_transition_v0"
+        ]
+      },
+      "bytes": 13608,
+      "provenance": "OBSERVED_READ_ONLY_NOT_PREPINNED",
+      "sha256": "929e9527e1f780bf429881ca15e22412ddc9517afbc6e243f9ff542214f2bdcc"
+    },
+    "spk_simulator/causal_service_quantum_v0.py": {
+      "ast": {
+        "classes": [
+          {
+            "end_line": 30,
+            "line": 28,
+            "methods": [],
+            "name": "ServiceWorkV0"
+          },
+          {
+            "end_line": 36,
+            "line": 34,
+            "methods": [],
+            "name": "ServiceFinishedV0"
+          },
+          {
+            "end_line": 42,
+            "line": 40,
+            "methods": [],
+            "name": "ServiceConfirmedV0"
+          },
+          {
+            "end_line": 51,
+            "line": 46,
+            "methods": [],
+            "name": "ServiceQuantumSliceV0"
+          },
+          {
+            "end_line": 90,
+            "line": 55,
+            "methods": [
+              {
+                "end_line": 90,
+                "line": 61,
+                "name": "__post_init__"
+              }
+            ],
+            "name": "ServiceQuantumStateV0"
+          },
+          {
+            "end_line": 102,
+            "line": 94,
+            "methods": [],
+            "name": "ServiceQuantumStepV0"
+          }
+        ],
+        "functions": [
+          {
+            "end_line": 24,
+            "line": 20,
+            "name": "_ids"
+          },
+          {
+            "end_line": 243,
+            "line": 105,
+            "name": "advance_service_quantum_v0"
+          }
+        ],
+        "imports": [
+          "dataclasses",
+          "spk_architecture.profile_v0",
+          "spk_architecture.transaction_mapping_v0",
+          "spk_simulator.access_dependencies_v0",
+          "spk_simulator.external_ingress_v0",
+          "spk_simulator.causal_service_frontier_v0"
+        ]
+      },
+      "bytes": 11137,
+      "provenance": "OBSERVED_READ_ONLY_NOT_PREPINNED",
+      "sha256": "6391b9532a04ba8d9d9cb8bea48f7a05a7034ace17ceae37cd9a2cfd075b7bbb"
+    },
+    "spk_simulator/owned_internal_reads_v0.py": {
+      "ast": {
+        "classes": [
+          {
+            "end_line": 49,
+            "line": 35,
+            "methods": [],
+            "name": "InternalReadEvidenceV0"
+          },
+          {
+            "end_line": 57,
+            "line": 53,
+            "methods": [],
+            "name": "BoundCorePreparationV0"
+          },
+          {
+            "end_line": 66,
+            "line": 61,
+            "methods": [],
+            "name": "OwnedInternalCommitEvidenceV0"
+          },
+          {
+            "end_line": 76,
+            "line": 70,
+            "methods": [],
+            "name": "OwnedInternalReadStateV0"
+          },
+          {
+            "end_line": 84,
+            "line": 80,
+            "methods": [],
+            "name": "OwnedInternalReadStepV0"
+          }
+        ],
+        "functions": [
+          {
+            "end_line": 90,
+            "line": 87,
+            "name": "_canonical_unique"
+          },
+          {
+            "end_line": 108,
+            "line": 93,
+            "name": "_read_binding"
+          },
+          {
+            "end_line": 210,
+            "line": 111,
+            "name": "audit_committed_internal_history_v0"
+          },
+          {
+            "end_line": 466,
+            "line": 213,
+            "name": "advance_owned_internal_reads_v0"
+          }
+        ],
+        "imports": [
+          "dataclasses",
+          "spk_architecture.access_v0",
+          "spk_architecture.access_v0",
+          "spk_architecture.profile_v0",
+          "spk_architecture.transaction_mapping_v0",
+          "spk_network.model_v0",
+          "spk_simulator.access_dependencies_v0",
+          "spk_simulator.atomic_emission_admission_v0",
+          "spk_simulator.causal_service_quantum_v0",
+          "spk_simulator.computed_emission_binding_v0",
+          "spk_simulator.external_ingress_v0",
+          "spk_simulator.owned_service_tick_v0",
+          "spk_simulator.routing_binding_v0",
+          "spk_simulator.versioned_core_transition_v0",
+          "spk_simulator.witnessed_core_input_v0"
+        ]
+      },
+      "bytes": 26288,
+      "provenance": "OBSERVED_READ_ONLY_NOT_PREPINNED",
+      "sha256": "0aeda5c5a0b139bc169e3bf4d89995a2b38df446ffa24a393ac8079988558cfb"
+    },
+    "spk_simulator/owned_root_single_clock_v0.py": {
+      "ast": {
+        "classes": [
+          {
+            "end_line": 36,
+            "line": 30,
+            "methods": [],
+            "name": "RootPhysicalReadV0"
+          },
+          {
+            "end_line": 42,
+            "line": 40,
+            "methods": [],
+            "name": "RootPreparedV0"
+          },
+          {
+            "end_line": 135,
+            "line": 46,
+            "methods": [
+              {
+                "end_line": 135,
+                "line": 53,
+                "name": "__post_init__"
+              }
+            ],
+            "name": "OwnedRootSingleClockStateV0"
+          },
+          {
+            "end_line": 147,
+            "line": 139,
+            "methods": [],
+            "name": "OwnedRootSingleClockStepV0"
+          }
+        ],
+        "functions": [
+          {
+            "end_line": 183,
+            "line": 150,
+            "name": "initialize_owned_root_single_clock_v0"
+          },
+          {
+            "end_line": 192,
+            "line": 186,
+            "name": "_shared_with"
+          },
+          {
+            "end_line": 327,
+            "line": 195,
+            "name": "advance_owned_root_single_clock_v0"
+          }
+        ],
+        "imports": [
+          "dataclasses",
+          "spk_architecture.access_v0",
+          "spk_simulator.causal_service_quantum_v0",
+          "spk_simulator.owned_shared_event_cycle_v0",
+          "spk_simulator.owned_dynamic_route_transit_v0",
+          "spk_simulator.owned_dynamic_route_service_cycle_v0",
+          "spk_simulator.owned_sealed_root_batch_v0",
+          "spk_simulator.owned_root_core_handoff_v0",
+          "spk_simulator.versioned_core_transition_v0",
+          "spk_simulator.witnessed_core_input_v0",
+          "spk_simulator.serialized_internal_graph_v0"
+        ]
+      },
+      "bytes": 17465,
+      "provenance": "OBSERVED_READ_ONLY_NOT_PREPINNED",
+      "sha256": "262f0b162160af1f2bcb2670a479daa82b5d13ea9e16a8acea538f9e129397dd"
+    },
+    "spk_simulator/owned_root_terminal_commit_v0.py": {
+      "ast": {
+        "classes": [
+          {
+            "end_line": 33,
+            "line": 27,
+            "methods": [],
+            "name": "TerminalCommitQuantumV0"
+          },
+          {
+            "end_line": 147,
+            "line": 132,
+            "methods": [
+              {
+                "end_line": 143,
+                "line": 138,
+                "name": "__post_init__"
+              },
+              {
+                "end_line": 147,
+                "line": 146,
+                "name": "committed"
+              }
+            ],
+            "name": "OwnedRootTerminalCommitStateV0"
+          },
+          {
+            "end_line": 153,
+            "line": 151,
+            "methods": [],
+            "name": "OwnedRootTerminalCommitStepV0"
+          }
+        ],
+        "functions": [
+          {
+            "end_line": 70,
+            "line": 36,
+            "name": "_handoff_contract"
+          },
+          {
+            "end_line": 111,
+            "line": 73,
+            "name": "_next"
+          },
+          {
+            "end_line": 128,
+            "line": 114,
+            "name": "_replay"
+          },
+          {
+            "end_line": 166,
+            "line": 156,
+            "name": "handoff_owned_root_terminal_commit_v0"
+          },
+          {
+            "end_line": 180,
+            "line": 169,
+            "name": "advance_owned_root_terminal_commit_v0"
+          }
+        ],
+        "imports": [
+          "dataclasses",
+          "spk_architecture.access_v0",
+          "spk_simulator.causal_service_quantum_v0",
+          "spk_simulator.owned_root_single_clock_v0",
+          "spk_simulator.serialized_internal_graph_v0",
+          "spk_simulator.versioned_core_transition_v0"
+        ]
+      },
+      "bytes": 8696,
+      "provenance": "FROZEN_SOURCE_SHA_PINNED",
+      "sha256": "8d006c4a2d7aa1cde5bd051aa5cc2bff9d3312e168449aba9eb9dc153ca7f80a"
+    },
+    "spk_simulator/serialized_internal_graph_v0.py": {
+      "ast": {
+        "classes": [
+          {
+            "end_line": 25,
+            "line": 16,
+            "methods": [],
+            "name": "SerializedNeuronBatchV0"
+          },
+          {
+            "end_line": 32,
+            "line": 29,
+            "methods": [],
+            "name": "SerializedInternalGraphV0"
+          }
+        ],
+        "functions": [
+          {
+            "end_line": 45,
+            "line": 35,
+            "name": "_predecessors"
+          },
+          {
+            "end_line": 69,
+            "line": 48,
+            "name": "_check_acyclic"
+          },
+          {
+            "end_line": 174,
+            "line": 72,
+            "name": "serialize_internal_access_graph_v0"
+          }
+        ],
+        "imports": [
+          "dataclasses",
+          "heapq",
+          "spk_architecture.access_v0",
+          "spk_architecture.transaction_mapping_v0",
+          "spk_simulator.access_dependencies_v0"
+        ]
+      },
+      "bytes": 7746,
+      "provenance": "OBSERVED_READ_ONLY_NOT_PREPINNED",
+      "sha256": "b3eaa8359e7703a9a44a3ccc108b1ebbfaa49d105eeeb7ec9790d124978233b0"
+    },
+    "spk_simulator/versioned_core_transition_v0.py": {
+      "ast": {
+        "classes": [
+          {
+            "end_line": 22,
+            "line": 18,
+            "methods": [],
+            "name": "NeuronVersionV0"
+          },
+          {
+            "end_line": 29,
+            "line": 26,
+            "methods": [],
+            "name": "VersionedNeuronImageV0"
+          },
+          {
+            "end_line": 44,
+            "line": 33,
+            "methods": [],
+            "name": "PreparedCoreTransitionV0"
+          },
+          {
+            "end_line": 58,
+            "line": 48,
+            "methods": [],
+            "name": "CoreStateCommitReceiptV0"
+          },
+          {
+            "end_line": 64,
+            "line": 62,
+            "methods": [],
+            "name": "CoreStateCommitV0"
+          }
+        ],
+        "functions": [
+          {
+            "end_line": 91,
+            "line": 67,
+            "name": "_require_image"
+          },
+          {
+            "end_line": 110,
+            "line": 94,
+            "name": "initialize_neuron_image_v0"
+          },
+          {
+            "end_line": 129,
+            "line": 113,
+            "name": "_check_batch"
+          },
+          {
+            "end_line": 157,
+            "line": 132,
+            "name": "prepare_core_transition_v0"
+          },
+          {
+            "end_line": 206,
+            "line": 160,
+            "name": "commit_core_transition_v0"
+          }
+        ],
+        "imports": [
+          "dataclasses",
+          "spk_network.model_v0",
+          "spk_network.runtime_v0"
+        ]
+      },
+      "bytes": 8276,
+      "provenance": "OBSERVED_READ_ONLY_NOT_PREPINNED",
+      "sha256": "1e3140631d4cbc7a42b397aeeb9050f3effa866c265cc3f35446782bf6b5f84a"
+    },
+    "tests/test_atomic_neuronal_commit_v0.py": {
+      "ast": {
+        "classes": [],
+        "functions": [
+          {
+            "end_line": 60,
+            "line": 17,
+            "name": "scenario"
+          },
+          {
+            "end_line": 64,
+            "line": 63,
+            "name": "tick"
+          },
+          {
+            "end_line": 80,
+            "line": 67,
+            "name": "ready"
+          },
+          {
+            "end_line": 89,
+            "line": 83,
+            "name": "test_real_emission_and_state_commit"
+          },
+          {
+            "end_line": 95,
+            "line": 92,
+            "name": "act"
+          },
+          {
+            "end_line": 99,
+            "line": 98,
+            "name": "change_state"
+          },
+          {
+            "end_line": 105,
+            "line": 102,
+            "name": "test_precommit_has_not_published_core_route"
+          },
+          {
+            "end_line": 111,
+            "line": 108,
+            "name": "test_atomic_boundary_is_not_neuronal_event_time"
+          },
+          {
+            "end_line": 116,
+            "line": 114,
+            "name": "test_same_snapshot_is_deterministic"
+          },
+          {
+            "end_line": 125,
+            "line": 119,
+            "name": "test_neither_old_state_nor_ledger_is_modified"
+          },
+          {
+            "end_line": 134,
+            "line": 128,
+            "name": "test_physical_output_publication_is_complete"
+          },
+          {
+            "end_line": 140,
+            "line": 137,
+            "name": "test_atomic_commit_cleans_preparation"
+          },
+          {
+            "end_line": 150,
+            "line": 143,
+            "name": "test_historical_audit_reconstructs_emitting_state"
+          },
+          {
+            "end_line": 157,
+            "line": 153,
+            "name": "test_audit_requires_output_context"
+          },
+          {
+            "end_line": 164,
+            "line": 160,
+            "name": "test_precommit_cannot_claim_missing_reservation"
+          },
+          {
+            "end_line": 173,
+            "line": 167,
+            "name": "test_cannot_commit_before_emission_service_finishes"
+          },
+          {
+            "end_line": 182,
+            "line": 176,
+            "name": "test_cannot_commit_before_state_service_finishes"
+          },
+          {
+            "end_line": 188,
+            "line": 185,
+            "name": "test_wrong_emission_request_cannot_be_used"
+          },
+          {
+            "end_line": 195,
+            "line": 191,
+            "name": "test_request_replay_is_rejected"
+          },
+          {
+            "end_line": 204,
+            "line": 198,
+            "name": "test_corrupt_output_evidence_is_detected_on_resume"
+          },
+          {
+            "end_line": 217,
+            "line": 207,
+            "name": "test_missing_published_route_identity_fails_audit"
+          },
+          {
+            "end_line": 226,
+            "line": 220,
+            "name": "test_reject_forged_prepared_core_result"
+          },
+          {
+            "end_line": 232,
+            "line": 229,
+            "name": "test_wrong_commit_id_is_rejected"
+          },
+          {
+            "end_line": 238,
+            "line": 235,
+            "name": "test_bad_atomic_input_type_rejected"
+          },
+          {
+            "end_line": 245,
+            "line": 241,
+            "name": "test_returned_immutable_snapshot"
+          },
+          {
+            "end_line": 254,
+            "line": 248,
+            "name": "test_atomic_two_parallel_routes_are_published_together"
+          },
+          {
+            "end_line": 263,
+            "line": 257,
+            "name": "test_atomic_parallel_routes_fail_closed_if_output_capacity_too_small"
+          },
+          {
+            "end_line": 270,
+            "line": 266,
+            "name": "test_wrong_target_epoch_rejected_before_storage_mutation"
+          },
+          {
+            "end_line": 278,
+            "line": 273,
+            "name": "test_prepared_base_version_cannot_be_modified"
+          },
+          {
+            "end_line": 286,
+            "line": 281,
+            "name": "test_original_state_survives_rejected_atomic_commit"
+          },
+          {
+            "end_line": 296,
+            "line": 289,
+            "name": "test_missing_event_tombstone_rejected"
+          },
+          {
+            "end_line": 305,
+            "line": 299,
+            "name": "test_wrong_routed_candidate_channel_rejected"
+          },
+          {
+            "end_line": 313,
+            "line": 308,
+            "name": "test_output_commit_history_cannot_be_omitted"
+          },
+          {
+            "end_line": 322,
+            "line": 316,
+            "name": "test_failed_output_binding_does_not_forge_confirmation"
+          },
+          {
+            "end_line": 328,
+            "line": 325,
+            "name": "test_immutable_publication_receipt"
+          },
+          {
+            "end_line": 338,
+            "line": 331,
+            "name": "test_emitting_commit_requires_serialized_graph"
+          }
+        ],
+        "imports": [
+          "dataclasses",
+          "pytest",
+          "spk_architecture.access_v0",
+          "spk_network.model_v0",
+          "spk_simulator.access_dependencies_v0",
+          "spk_simulator.atomic_emission_admission_v0",
+          "spk_simulator.event_storage_v0",
+          "spk_simulator.routing_binding_v0",
+          "spk_simulator.owned_internal_reads_v0",
+          "spk_simulator.serialized_internal_graph_v0",
+          "spk_simulator.versioned_core_transition_v0",
+          "spk_simulator.atomic_neuronal_commit_v0",
+          "tests.test_owned_internal_state_commit_v0"
+        ]
+      },
+      "bytes": 14595,
+      "provenance": "OBSERVED_READ_ONLY_NOT_PREPINNED",
+      "sha256": "c284fb3c4b61e809dd386e9f4fb52a4c7328fae9b09785179d354f036f996e4f"
+    },
+    "tests/test_owned_root_execution_dispatch_v0.py": {
+      "ast": {
+        "classes": [],
+        "functions": [
+          {
+            "end_line": 25,
+            "line": 23,
+            "name": "shared"
+          },
+          {
+            "end_line": 32,
+            "line": 28,
+            "name": "host"
+          },
+          {
+            "end_line": 36,
+            "line": 35,
+            "name": "command"
+          },
+          {
+            "end_line": 40,
+            "line": 39,
+            "name": "view"
+          },
+          {
+            "end_line": 45,
+            "line": 43,
+            "name": "advance"
+          },
+          {
+            "end_line": 52,
+            "line": 48,
+            "name": "finish"
+          },
+          {
+            "end_line": 61,
+            "line": 55,
+            "name": "until_phase"
+          },
+          {
+            "end_line": 69,
+            "line": 64,
+            "name": "test_no_epoch_installed_rejects_observe_and_mutate"
+          },
+          {
+            "end_line": 77,
+            "line": 72,
+            "name": "test_install_fresh_sealed_epoch_only"
+          },
+          {
+            "end_line": 85,
+            "line": 80,
+            "name": "test_install_rejects_wrong_shared_type"
+          },
+          {
+            "end_line": 93,
+            "line": 88,
+            "name": "test_install_rejects_epoch_identity_mismatch"
+          },
+          {
+            "end_line": 102,
+            "line": 97,
+            "name": "test_install_noncanonical_epoch_never_binds"
+          },
+          {
+            "end_line": 111,
+            "line": 105,
+            "name": "test_no_second_install_even_same_snapshot"
+          },
+          {
+            "end_line": 119,
+            "line": 114,
+            "name": "test_no_second_install_after_close"
+          },
+          {
+            "end_line": 128,
+            "line": 122,
+            "name": "test_wrong_dispatch_epoch_does_not_consume_service"
+          },
+          {
+            "end_line": 142,
+            "line": 131,
+            "name": "test_replies_never_expose_owner_or_registry"
+          },
+          {
+            "end_line": 150,
+            "line": 145,
+            "name": "test_snapshot_is_read_only"
+          },
+          {
+            "end_line": 156,
+            "line": 153,
+            "name": "test_audit_is_replay_from_initial_snapshot"
+          },
+          {
+            "end_line": 165,
+            "line": 159,
+            "name": "test_trace_contains_actual_custody_records"
+          },
+          {
+            "end_line": 176,
+            "line": 168,
+            "name": "test_root_advance_uses_existing_single_service_time"
+          },
+          {
+            "end_line": 198,
+            "line": 179,
+            "name": "test_finite_path_root_handoff_terminal_commit_close"
+          },
+          {
+            "end_line": 209,
+            "line": 201,
+            "name": "test_handoff_spends_no_service_and_terminal_only_after"
+          },
+          {
+            "end_line": 220,
+            "line": 212,
+            "name": "test_version_hidden_until_terminal_confirmation"
+          },
+          {
+            "end_line": 230,
+            "line": 223,
+            "name": "test_bounded_run_can_resume_without_forged_completion"
+          },
+          {
+            "end_line": 239,
+            "line": 233,
+            "name": "test_duplicate_revision_advance_rejected"
+          },
+          {
+            "end_line": 248,
+            "line": 242,
+            "name": "test_duplicate_revision_run_rejected"
+          },
+          {
+            "end_line": 257,
+            "line": 251,
+            "name": "test_closed_rejects_advance_and_run"
+          },
+          {
+            "end_line": 265,
+            "line": 260,
+            "name": "test_stale_after_closed_rejected_as_stale"
+          },
+          {
+            "end_line": 273,
+            "line": 268,
+            "name": "test_closed_still_observable_and_auditable"
+          },
+          {
+            "end_line": 295,
+            "line": 293,
+            "name": "test_request_shapes_reject_noncanonical_values"
+          },
+          {
+            "end_line": 302,
+            "line": 298,
+            "name": "test_nonrequest_refused_at_boundary"
+          },
+          {
+            "end_line": 314,
+            "line": 305,
+            "name": "test_forged_request_revalidated_at_dispatch"
+          },
+          {
+            "end_line": 326,
+            "line": 317,
+            "name": "test_failed_install_keeps_dispatcher_unbound"
+          },
+          {
+            "end_line": 338,
+            "line": 329,
+            "name": "test_failed_owner_progress_does_not_publish_dispatch_result"
+          },
+          {
+            "end_line": 356,
+            "line": 341,
+            "name": "test_handoff_failure_never_falls_back_to_root"
+          },
+          {
+            "end_line": 368,
+            "line": 359,
+            "name": "test_terminal_failure_preserves_accepted_prefix"
+          },
+          {
+            "end_line": 383,
+            "line": 371,
+            "name": "test_concurrent_install_single_winner"
+          },
+          {
+            "end_line": 397,
+            "line": 386,
+            "name": "test_concurrent_advance_one_revision_one_winner"
+          },
+          {
+            "end_line": 411,
+            "line": 400,
+            "name": "test_concurrent_run_one_revision_one_winner"
+          },
+          {
+            "end_line": 420,
+            "line": 414,
+            "name": "test_dispatch_module_never_imports_raw_owner_progress"
+          },
+          {
+            "end_line": 430,
+            "line": 423,
+            "name": "test_multiple_dispatcher_instances_are_not_globally_fenced"
+          }
+        ],
+        "imports": [
+          "concurrent.futures",
+          "dataclasses",
+          "inspect",
+          "pytest",
+          "tests",
+          "tests.test_owned_root_terminal_commit_v0",
+          "spk_simulator",
+          "spk_simulator.owned_root_authority_custody_v0",
+          "spk_simulator.owned_root_execution_dispatch_v0"
+        ]
+      },
+      "bytes": 15009,
+      "provenance": "OBSERVED_READ_ONLY_NOT_PREPINNED",
+      "sha256": "e79f0048d7389331eb3eca34688730fb10e6d060d972383897143a8f054e53d2"
+    },
+    "tests/test_owned_root_single_clock_v0.py": {
+      "ast": {
+        "classes": [],
+        "functions": [
+          {
+            "end_line": 18,
+            "line": 17,
+            "name": "fresh"
+          },
+          {
+            "end_line": 30,
+            "line": 21,
+            "name": "to_prepared"
+          },
+          {
+            "end_line": 36,
+            "line": 33,
+            "name": "test_fresh_epoch_no_forged_ps_or_event_receipts"
+          },
+          {
+            "end_line": 43,
+            "line": 39,
+            "name": "test_single_clock_physical_event_admission"
+          },
+          {
+            "end_line": 50,
+            "line": 46,
+            "name": "test_first_boundary_does_not_claim_instant_ps_reads"
+          },
+          {
+            "end_line": 61,
+            "line": 53,
+            "name": "test_single_clock_spends_each_service_tick_once"
+          },
+          {
+            "end_line": 69,
+            "line": 64,
+            "name": "test_real_ps_service_both_confirmed"
+          },
+          {
+            "end_line": 77,
+            "line": 72,
+            "name": "test_root_batch_is_physically_consumed"
+          },
+          {
+            "end_line": 85,
+            "line": 80,
+            "name": "test_core_prepare_uses_exact_physical_input"
+          },
+          {
+            "end_line": 92,
+            "line": 88,
+            "name": "test_state_commit_is_not_preconfirmed_or_scheduled"
+          },
+          {
+            "end_line": 98,
+            "line": 95,
+            "name": "test_output_not_published"
+          },
+          {
+            "end_line": 114,
+            "line": 101,
+            "name": "test_service_finish_needs_later_physical_effect"
+          },
+          {
+            "end_line": 120,
+            "line": 117,
+            "name": "test_duplicate_channels_preserve_multiplicity"
+          },
+          {
+            "end_line": 125,
+            "line": 123,
+            "name": "test_distinct_channels_sorted"
+          },
+          {
+            "end_line": 135,
+            "line": 128,
+            "name": "test_delayed_arrival_cannot_be_consumed_early"
+          },
+          {
+            "end_line": 141,
+            "line": 138,
+            "name": "test_multicycle_consume_service"
+          },
+          {
+            "end_line": 148,
+            "line": 144,
+            "name": "test_original_snapshot_immutable"
+          },
+          {
+            "end_line": 153,
+            "line": 151,
+            "name": "test_deterministic_successor"
+          },
+          {
+            "end_line": 158,
+            "line": 156,
+            "name": "test_wrong_initial_type_rejected"
+          },
+          {
+            "end_line": 163,
+            "line": 161,
+            "name": "test_wrong_step_type_rejected"
+          },
+          {
+            "end_line": 168,
+            "line": 166,
+            "name": "test_preconfirmed_ps_fixture_rejected"
+          },
+          {
+            "end_line": 173,
+            "line": 171,
+            "name": "test_preconfirmed_consume_rejected"
+          },
+          {
+            "end_line": 180,
+            "line": 176,
+            "name": "test_forced_fabricated_read_without_service_rejected"
+          },
+          {
+            "end_line": 186,
+            "line": 183,
+            "name": "test_dropped_witness_rejected_after_real_event_consume"
+          },
+          {
+            "end_line": 193,
+            "line": 189,
+            "name": "test_modified_witness_rejected"
+          },
+          {
+            "end_line": 199,
+            "line": 196,
+            "name": "test_missing_ps_receipt_rejected_after_core_prepare"
+          },
+          {
+            "end_line": 206,
+            "line": 202,
+            "name": "test_mismatched_preparation_rejected"
+          },
+          {
+            "end_line": 213,
+            "line": 209,
+            "name": "test_read_value_tamper_rejected"
+          },
+          {
+            "end_line": 219,
+            "line": 216,
+            "name": "test_state_is_immutable"
+          },
+          {
+            "end_line": 237,
+            "line": 222,
+            "name": "test_nonroot_initialization_rejected"
+          },
+          {
+            "end_line": 246,
+            "line": 240,
+            "name": "test_external_overflow_fails_atomically"
+          },
+          {
+            "end_line": 252,
+            "line": 249,
+            "name": "test_external_and_service_time_distinct"
+          },
+          {
+            "end_line": 260,
+            "line": 255,
+            "name": "test_no_duplicate_consumption_after_prepare"
+          },
+          {
+            "end_line": 266,
+            "line": 263,
+            "name": "test_confirmed_read_must_remain_in_receipt_history"
+          },
+          {
+            "end_line": 272,
+            "line": 269,
+            "name": "test_duplicate_read_receipt_rejected"
+          },
+          {
+            "end_line": 278,
+            "line": 275,
+            "name": "test_noncanonical_read_receipt_order_rejected"
+          },
+          {
+            "end_line": 284,
+            "line": 281,
+            "name": "test_duplicate_prepared_transition_rejected"
+          }
+        ],
+        "imports": [
+          "dataclasses",
+          "pytest",
+          "spk_architecture.access_v0",
+          "spk_simulator.owned_root_single_clock_v0",
+          "tests.test_owned_root_batch_consumption_v0"
+        ]
+      },
+      "bytes": 9510,
+      "provenance": "OBSERVED_READ_ONLY_NOT_PREPINNED",
+      "sha256": "1c5c55f2d2a0ef9a0053acef025976511af102c1e38ac0bc259794b1357d1442"
+    },
+    "tests/test_owned_root_terminal_commit_v0.py": {
+      "ast": {
+        "classes": [],
+        "functions": [
+          {
+            "end_line": 46,
+            "line": 17,
+            "name": "prepared_root"
+          },
+          {
+            "end_line": 57,
+            "line": 49,
+            "name": "commit_all"
+          },
+          {
+            "end_line": 61,
+            "line": 60,
+            "name": "neuron"
+          },
+          {
+            "end_line": 71,
+            "line": 64,
+            "name": "test_handoff_witnessed_closed_root_and_output_free"
+          },
+          {
+            "end_line": 94,
+            "line": 74,
+            "name": "test_full_service_commit_and_separate_later_confirmation"
+          },
+          {
+            "end_line": 103,
+            "line": 97,
+            "name": "test_multiquantum_partial_service"
+          },
+          {
+            "end_line": 112,
+            "line": 106,
+            "name": "test_deterministic_replay"
+          },
+          {
+            "end_line": 120,
+            "line": 115,
+            "name": "test_cannot_reenter_terminal_owner_after_commit"
+          },
+          {
+            "end_line": 126,
+            "line": 123,
+            "name": "test_missing_preparation_rejected"
+          },
+          {
+            "end_line": 137,
+            "line": 129,
+            "name": "test_unconfirmed_root_rejected"
+          },
+          {
+            "end_line": 146,
+            "line": 140,
+            "name": "test_no_handoff_before_core_prepare"
+          },
+          {
+            "end_line": 154,
+            "line": 149,
+            "name": "test_output_bearing_transition_is_rejected"
+          },
+          {
+            "end_line": 161,
+            "line": 157,
+            "name": "test_tampered_handoff_witness_rejected"
+          },
+          {
+            "end_line": 169,
+            "line": 164,
+            "name": "test_tampered_handoff_core_rejected"
+          },
+          {
+            "end_line": 177,
+            "line": 172,
+            "name": "test_mutated_terminal_tick_rejected"
+          },
+          {
+            "end_line": 191,
+            "line": 184,
+            "name": "test_fabricated_terminal_effect_rejected"
+          },
+          {
+            "end_line": 199,
+            "line": 194,
+            "name": "test_mutated_service_slices_rejected"
+          },
+          {
+            "end_line": 206,
+            "line": 202,
+            "name": "test_dropped_quantum_rejected"
+          },
+          {
+            "end_line": 214,
+            "line": 209,
+            "name": "test_reordered_or_duplicated_quantum_rejected"
+          },
+          {
+            "end_line": 221,
+            "line": 217,
+            "name": "test_forged_service_clock_rejected"
+          },
+          {
+            "end_line": 229,
+            "line": 224,
+            "name": "test_forged_state_version_rejected"
+          },
+          {
+            "end_line": 237,
+            "line": 232,
+            "name": "test_forged_receipt_rejected"
+          },
+          {
+            "end_line": 243,
+            "line": 240,
+            "name": "test_owner_is_immutable"
+          },
+          {
+            "end_line": 250,
+            "line": 246,
+            "name": "test_input_type_rejected"
+          },
+          {
+            "end_line": 260,
+            "line": 253,
+            "name": "test_two_independent_handoffs_remain_possible_without_external_registry"
+          }
+        ],
+        "imports": [
+          "dataclasses",
+          "pytest",
+          "spk_core.isa",
+          "spk_simulator.owned_root_single_clock_v0",
+          "spk_simulator.owned_root_terminal_commit_v0",
+          "tests"
+        ]
+      },
+      "bytes": 10443,
+      "provenance": "OBSERVED_READ_ONLY_NOT_PREPINNED",
+      "sha256": "8628a4b45959f5e93bd8b4d37a8f09a830e3fd01aa1481b8be6eac0ece1d1206"
+    },
+    "tests/test_versioned_core_transition_v0.py": {
+      "ast": {
+        "classes": [],
+        "functions": [
+          {
+            "end_line": 30,
+            "line": 20,
+            "name": "case"
+          },
+          {
+            "end_line": 36,
+            "line": 33,
+            "name": "stage"
+          },
+          {
+            "end_line": 42,
+            "line": 39,
+            "name": "apply"
+          },
+          {
+            "end_line": 48,
+            "line": 45,
+            "name": "test_image_canonical_even_if_network_inverted"
+          },
+          {
+            "end_line": 56,
+            "line": 51,
+            "name": "test_prepare_is_read_only"
+          },
+          {
+            "end_line": 69,
+            "line": 59,
+            "name": "test_single_batch_matches_frozen_network_oracle"
+          },
+          {
+            "end_line": 77,
+            "line": 72,
+            "name": "test_neighbour_state_is_not_changed"
+          },
+          {
+            "end_line": 93,
+            "line": 80,
+            "name": "test_two_batches_sequential_match_oracle"
+          },
+          {
+            "end_line": 109,
+            "line": 96,
+            "name": "test_two_neurons_independently_match_oracle"
+          },
+          {
+            "end_line": 118,
+            "line": 112,
+            "name": "test_channel_multiplicity_preserved"
+          },
+          {
+            "end_line": 126,
+            "line": 121,
+            "name": "test_version_increment_receipt"
+          },
+          {
+            "end_line": 132,
+            "line": 129,
+            "name": "test_separate_epoch_binding"
+          },
+          {
+            "end_line": 141,
+            "line": 135,
+            "name": "test_stale_prepared_cannot_be_replayed"
+          },
+          {
+            "end_line": 151,
+            "line": 144,
+            "name": "test_two_concurrent_preparations_conflict"
+          },
+          {
+            "end_line": 169,
+            "line": 164,
+            "name": "test_forged_transition_rejected"
+          },
+          {
+            "end_line": 176,
+            "line": 173,
+            "name": "test_malformed_channels_rejected"
+          },
+          {
+            "end_line": 183,
+            "line": 180,
+            "name": "test_invalid_timestamp_rejected"
+          },
+          {
+            "end_line": 191,
+            "line": 186,
+            "name": "test_initial_timestamp_zero_allowed_once"
+          },
+          {
+            "end_line": 198,
+            "line": 194,
+            "name": "test_same_timestamp_rejected_after_first_commit"
+          },
+          {
+            "end_line": 205,
+            "line": 201,
+            "name": "test_out_of_order_timestamp_rejected"
+          },
+          {
+            "end_line": 211,
+            "line": 208,
+            "name": "test_unknown_node_rejected"
+          },
+          {
+            "end_line": 219,
+            "line": 214,
+            "name": "test_cross_epoch_rejected"
+          },
+          {
+            "end_line": 226,
+            "line": 222,
+            "name": "test_other_network_rejected"
+          },
+          {
+            "end_line": 232,
+            "line": 230,
+            "name": "test_invalid_epoch_rejected"
+          },
+          {
+            "end_line": 248,
+            "line": 244,
+            "name": "test_malformed_memory_image_rejected"
+          },
+          {
+            "end_line": 257,
+            "line": 251,
+            "name": "test_runtime_oracle_is_not_invoked_by_transition_module"
+          },
+          {
+            "end_line": 267,
+            "line": 260,
+            "name": "test_channels_require_independent_ingress_evidence"
+          }
+        ],
+        "imports": [
+          "dataclasses",
+          "unittest.mock",
+          "pytest",
+          "spk_core.isa",
+          "spk_network.model_v0",
+          "spk_network.events_v0",
+          "spk_network.runtime_v0",
+          "spk_simulator.versioned_core_transition_v0"
+        ]
+      },
+      "bytes": 9678,
+      "provenance": "OBSERVED_READ_ONLY_NOT_PREPINNED",
+      "sha256": "26933183d612a30133cfb4784e4436c8718f8e5b8dc99e95c067ca9ac0fc8c40"
+    }
+  },
+  "parent_v0c_sha256": "d3f6ea8afb52a67f086a21707404aab3723b51641ec23cb1d7d6dc64029cdefc",
+  "postcommit_owner_executed": false,
+  "research_only": true,
+  "schema": "spk-isa-s0d-silent-compiler-source-intake/v0d",
+  "silent_contract_static": {
+    "entrypoints": {
+      "advance_owned_root_terminal_commit_v0": {
+        "end_line": 180,
+        "line": 169,
+        "name": "advance_owned_root_terminal_commit_v0"
+      },
+      "handoff_owned_root_terminal_commit_v0": {
+        "end_line": 166,
+        "line": 156,
+        "name": "handoff_owned_root_terminal_commit_v0"
+      }
+    },
+    "isa_projection_proven": false,
+    "native_execution_proven": false,
+    "proof_requirements": [
+      "ONE_CANONICAL_ROOT_BATCH",
+      "P_S_EVENT_CONFIRMED",
+      "NO_PENDING_SERVICE",
+      "NO_CANDIDATE_OUTPUTS",
+      "STATE_COMMIT_SERVICE_CONFIRMATION",
+      "VERSIONED_S_RECEIPT_NO_OUTPUT",
+      "NO_OWNER_C0_C5_EXECUTION"
+    ]
+  },
+  "source_export_archive_sha256": "411fefb2e33d060cead4e2b16d4b9a57a201ebee58cfd57ec8656889cc0b6c0b",
+  "status": "HOLD_NATIVE_SILENT_AND_COMPILER_REVIEW_INTAKE"
+}
