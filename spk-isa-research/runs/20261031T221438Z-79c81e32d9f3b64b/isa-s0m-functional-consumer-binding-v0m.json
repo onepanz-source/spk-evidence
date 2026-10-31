@@ -1,0 +1,361 @@
+{
+  "child_digests": {
+    "1": [
+      "cf375076315bdd134890248ef57fdeac2df504b3ebe85f146e0b421df05bf181",
+      "a6a8007a724068e2c63c8af39f3d91083b34799f1eac241d0fef67c2ff52de35"
+    ],
+    "7": [
+      "b7309cc5f7ba3cf84185c028e7f8e16c405a536c31e6d6b42a8a04b00e1a2ce4",
+      "8a73a7881c57e2e4bebf6787f3b383b40085dc483e2c02efcc399726dea80455"
+    ]
+  },
+  "claims": {
+    "BV_to_P_authorized": false,
+    "G2_owner_authorized": false,
+    "P_writes": 0,
+    "compiler_to_machine_ISA_equivalence_proven": false,
+    "external_dispatch": false,
+    "functional_b_consumer_binding_proven": true,
+    "hardware_executed": false,
+    "native_consumer_bound": false,
+    "native_multinode_delivery_proven": false,
+    "native_output_published": false,
+    "native_route_service_confirmed": false,
+    "postcommit_owner_executed": false,
+    "static_capacity_classification_verified": true
+  },
+  "decision": "HOLD",
+  "exit_code": 4,
+  "issue": 21,
+  "limitations": [
+    "functional reference only; NOT native B consumption or admission",
+    "static capacity counterfactual; no reservation/grant/service",
+    "no Compiler-to-machine-ISA equivalence",
+    "C0-C5 needs independent human review"
+  ],
+  "negative_control_accounting": {
+    "native_negative_cases_observed": 0,
+    "pure_negative_cases_observed": 10,
+    "pure_test_count": 10,
+    "unexecuted_controls_NOT_RUN": "native admission probes (would need fabricated native bindings)"
+  },
+  "observations": {
+    "1": {
+      "m1": {
+        "candidate": [
+          [
+            3,
+            7
+          ]
+        ],
+        "epoch_id": "E0",
+        "events": [
+          {
+            "channel": 0,
+            "node_id": "C",
+            "timestamp": 3
+          }
+        ],
+        "pe_output_slots": {
+          "PE0": 2,
+          "PE1": 2
+        }
+      },
+      "m2": {
+        "b_batch_consume_count": 2,
+        "b_batch_consumes": [
+          {
+            "event_time": 5,
+            "kind": "BATCH_CONSUME",
+            "request_id": 9,
+            "target_id": "events:B",
+            "target_pe_id": "PE1"
+          },
+          {
+            "event_time": 6,
+            "kind": "BATCH_CONSUME",
+            "request_id": 14,
+            "target_id": "events:B",
+            "target_pe_id": "PE1"
+          }
+        ],
+        "observed_emissions": [
+          [
+            "C",
+            3,
+            7
+          ],
+          [
+            "B",
+            5,
+            7
+          ],
+          [
+            "B",
+            6,
+            7
+          ]
+        ],
+        "plan_reference_count": 17,
+        "request_count": 17,
+        "route_count": 2,
+        "routes": [
+          {
+            "consume_request_id": 9,
+            "delivery_event_time": 5,
+            "emission_event_time": 3,
+            "route_request_id": 5,
+            "source_node_id": "C",
+            "source_pe_id": "PE0",
+            "target_node_id": "B",
+            "target_pe_id": "PE1"
+          },
+          {
+            "consume_request_id": 14,
+            "delivery_event_time": 6,
+            "emission_event_time": 3,
+            "route_request_id": 6,
+            "source_node_id": "C",
+            "source_pe_id": "PE0",
+            "target_node_id": "B",
+            "target_pe_id": "PE1"
+          }
+        ]
+      },
+      "m3": {
+        "admitted": true,
+        "groups": [
+          {
+            "output_capacity": 2,
+            "pe_id": "PE0",
+            "required_output_slots": 2,
+            "route_request_ids": [
+              5,
+              6
+            ],
+            "source_node_id": "C"
+          },
+          {
+            "output_capacity": 2,
+            "pe_id": "PE1",
+            "required_output_slots": 0,
+            "route_request_ids": [],
+            "source_node_id": "B"
+          },
+          {
+            "output_capacity": 2,
+            "pe_id": "PE1",
+            "required_output_slots": 0,
+            "route_request_ids": [],
+            "source_node_id": "B"
+          }
+        ],
+        "routed_occurrence_count": 2,
+        "source_c_group": {
+          "output_capacity": 2,
+          "pe_id": "PE0",
+          "required_output_slots": 2,
+          "route_request_ids": [
+            5,
+            6
+          ],
+          "source_node_id": "C"
+        }
+      },
+      "m4": {
+        "capacity_error": {
+          "capacity": 1,
+          "code": "ATOMIC_EMISSION_FANOUT_EXCEEDS_OUTPUT",
+          "pe_id": "PE0",
+          "required": 2
+        },
+        "cloned_all_pe_output_slots": 1,
+        "original_capacity": {
+          "PE0": 2,
+          "PE1": 2
+        }
+      },
+      "m6": {
+        "b_consumer_in_native_staged": false,
+        "native_admission_proven": false,
+        "native_output_published": false,
+        "native_route_service_confirmed": false,
+        "staged_base_kinds": [
+          "BATCH_CONSUME",
+          "PROGRAM_REFERENCE",
+          "STATE_COMMIT",
+          "STATE_LOAD"
+        ],
+        "storage_unchanged": true
+      }
+    },
+    "7": {
+      "m1": {
+        "candidate": [
+          [
+            3,
+            7
+          ]
+        ],
+        "epoch_id": "E0",
+        "events": [
+          {
+            "channel": 0,
+            "node_id": "C",
+            "timestamp": 3
+          }
+        ],
+        "pe_output_slots": {
+          "PE0": 2,
+          "PE1": 2
+        }
+      },
+      "m2": {
+        "b_batch_consume_count": 2,
+        "b_batch_consumes": [
+          {
+            "event_time": 5,
+            "kind": "BATCH_CONSUME",
+            "request_id": 9,
+            "target_id": "events:B",
+            "target_pe_id": "PE1"
+          },
+          {
+            "event_time": 6,
+            "kind": "BATCH_CONSUME",
+            "request_id": 14,
+            "target_id": "events:B",
+            "target_pe_id": "PE1"
+          }
+        ],
+        "observed_emissions": [
+          [
+            "C",
+            3,
+            7
+          ],
+          [
+            "B",
+            5,
+            7
+          ],
+          [
+            "B",
+            6,
+            7
+          ]
+        ],
+        "plan_reference_count": 17,
+        "request_count": 17,
+        "route_count": 2,
+        "routes": [
+          {
+            "consume_request_id": 9,
+            "delivery_event_time": 5,
+            "emission_event_time": 3,
+            "route_request_id": 5,
+            "source_node_id": "C",
+            "source_pe_id": "PE0",
+            "target_node_id": "B",
+            "target_pe_id": "PE1"
+          },
+          {
+            "consume_request_id": 14,
+            "delivery_event_time": 6,
+            "emission_event_time": 3,
+            "route_request_id": 6,
+            "source_node_id": "C",
+            "source_pe_id": "PE0",
+            "target_node_id": "B",
+            "target_pe_id": "PE1"
+          }
+        ]
+      },
+      "m3": {
+        "admitted": true,
+        "groups": [
+          {
+            "output_capacity": 2,
+            "pe_id": "PE0",
+            "required_output_slots": 2,
+            "route_request_ids": [
+              5,
+              6
+            ],
+            "source_node_id": "C"
+          },
+          {
+            "output_capacity": 2,
+            "pe_id": "PE1",
+            "required_output_slots": 0,
+            "route_request_ids": [],
+            "source_node_id": "B"
+          },
+          {
+            "output_capacity": 2,
+            "pe_id": "PE1",
+            "required_output_slots": 0,
+            "route_request_ids": [],
+            "source_node_id": "B"
+          }
+        ],
+        "routed_occurrence_count": 2,
+        "source_c_group": {
+          "output_capacity": 2,
+          "pe_id": "PE0",
+          "required_output_slots": 2,
+          "route_request_ids": [
+            5,
+            6
+          ],
+          "source_node_id": "C"
+        }
+      },
+      "m4": {
+        "capacity_error": {
+          "capacity": 1,
+          "code": "ATOMIC_EMISSION_FANOUT_EXCEEDS_OUTPUT",
+          "pe_id": "PE0",
+          "required": 2
+        },
+        "cloned_all_pe_output_slots": 1,
+        "original_capacity": {
+          "PE0": 2,
+          "PE1": 2
+        }
+      },
+      "m6": {
+        "b_consumer_in_native_staged": false,
+        "native_admission_proven": false,
+        "native_output_published": false,
+        "native_route_service_confirmed": false,
+        "staged_base_kinds": [
+          "BATCH_CONSUME",
+          "PROGRAM_REFERENCE",
+          "STATE_COMMIT",
+          "STATE_LOAD"
+        ],
+        "storage_unchanged": true
+      }
+    }
+  },
+  "parents": {
+    "compiler_commit": "24b15156aa31967bd0079debcc97ccb6e3ac4325",
+    "s0j": "524e8b31ea89d656eabedc1a8ffc50725fcbbf2d98dd8f4858db0bfba6329000",
+    "s0k": "329ed3c66df2b5c9632d3d885e27df3e6bb10b0f169fc14d485ec3ba027a796e",
+    "s0l": "dcf96ddaa6324a1505aa5491bd411d78422b796c5a2e342061ccb7c3740c3fb3",
+    "spec_sha256": "9aec778500a9d22cd7de3c9a1fe55c87602ec818ef59913e114536c0b7b557bf"
+  },
+  "research_only": true,
+  "s0l_critique": {
+    "finding": "S0-L boundary probes reached only TypeError/heterogeneous-PE errors (vacuous for the intended guards); S0-M repairs them with fully typed original objects and a homogeneous capacity=1 clone",
+    "original_L_witness_preserved": true,
+    "repair": "this witness, M3/M4 with real AtomicEmissionCapacityV0 ATOMIC_EMISSION_FANOUT_EXCEEDS_OUTPUT PE0 required=2 capacity=1"
+  },
+  "schema": "spk-isa-s0m-functional-consumer-binding-witness/v0m",
+  "status": "FUNCTIONAL_B_CONSUMER_BINDING_AND_STATIC_CAPACITY_CLASSIFICATION_PASS_NATIVE_NOT_PROVEN_HOLD",
+  "tracks": {
+    "M-A_functional_binding": "PASS",
+    "M-B_static_capacity_oracle": "PASS"
+  }
+}
