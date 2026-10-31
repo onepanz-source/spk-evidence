@@ -1,0 +1,143 @@
+{
+  "PE_signatures": [
+    "s71",
+    "s72",
+    "s71",
+    "s72",
+    "s71"
+  ],
+  "P_grants_by_epoch": [
+    2,
+    1,
+    0,
+    0,
+    1
+  ],
+  "causal_chain_sha256": "74c0f674fe6d95a4b931b366510b3b51981671e1f74f84cb2050dbb1beafadd9",
+  "derived_context_versions": [
+    2,
+    1,
+    2,
+    1,
+    3
+  ],
+  "derived_contexts": [
+    "ctx0",
+    "ctx1",
+    "ctx0",
+    "ctx1",
+    "ctx0"
+  ],
+  "episodes": 5,
+  "frozen_original_BV_learning": false,
+  "frozen_source_pins": {
+    "spk_architecture_v1/causal_memory_v1c.py": "175362406d3598331ec72c42084030248910e0033ea17d87d0810e221c8d7617",
+    "spk_architecture_v1/pe_execution_v1b.py": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9"
+  },
+  "host_passes_context_label": false,
+  "limitations": [
+    "A bounded pre-episode PE cue classifier; not BV-transported context detection",
+    "Two predeclared sensor cue pairs, 40+42 and 41+43, not open-ended context learning",
+    "Host authors raw observation channels and task goal, no independent sensor or goal authority",
+    "C uses same-scheduler BV-native-v1 learning only AFTER PE context selection",
+    "The older v1u direct context API remains callable and bypasses this optional port",
+    "SQLite hashes detect drift under honest reexecution, not forging by privileged host",
+    "Only 3 PE candidates 11/12/15 and A/B/C; original frozen BV-v0e never learns",
+    "Cooperative POSIX lock, deterministic genesis replay; no irreversible outside effects"
+  ],
+  "negative_sensor_rejections": [
+    "mixed",
+    "ambiguous",
+    "missing",
+    "duplicate"
+  ],
+  "noise_equivalent_classes": true,
+  "original_PE_C_reads": [
+    [
+      10,
+      0,
+      11,
+      [
+        11
+      ]
+    ],
+    [
+      10,
+      0,
+      11,
+      [
+        11
+      ]
+    ],
+    [
+      10,
+      2,
+      15,
+      [
+        15
+      ]
+    ],
+    [
+      10,
+      1,
+      12,
+      [
+        12
+      ]
+    ],
+    [
+      10,
+      2,
+      15,
+      [
+        15
+      ]
+    ]
+  ],
+  "parent_v1u_sha256": "7032bd088b6ed4b1488c61eee0502a64418d6228f3a7bf49bc4b9045c56c2620",
+  "persistent_tick_rows": 325,
+  "promotion_allowed": false,
+  "real_original_PE_classifier": true,
+  "restart_cuts": [
+    {
+      "cut": 1,
+      "journal_head_sha256": "2443c22e383f1268c1439f358fe9d67265749d6b2c0c1188adebe3995a31ecfa"
+    },
+    {
+      "cut": 9,
+      "journal_head_sha256": "2443c22e383f1268c1439f358fe9d67265749d6b2c0c1188adebe3995a31ecfa"
+    },
+    {
+      "cut": 13,
+      "journal_head_sha256": "2443c22e383f1268c1439f358fe9d67265749d6b2c0c1188adebe3995a31ecfa"
+    },
+    {
+      "cut": 14,
+      "journal_head_sha256": "2443c22e383f1268c1439f358fe9d67265749d6b2c0c1188adebe3995a31ecfa"
+    },
+    {
+      "cut": 15,
+      "journal_head_sha256": "2443c22e383f1268c1439f358fe9d67265749d6b2c0c1188adebe3995a31ecfa"
+    },
+    {
+      "cut": 27,
+      "journal_head_sha256": "2443c22e383f1268c1439f358fe9d67265749d6b2c0c1188adebe3995a31ecfa"
+    },
+    {
+      "cut": 60,
+      "journal_head_sha256": "2443c22e383f1268c1439f358fe9d67265749d6b2c0c1188adebe3995a31ecfa"
+    }
+  ],
+  "reversed_observation_order_retains_association": true,
+  "schema": "spk-native-learning-v1v-pe-sensed-context/v1",
+  "second_run_new_tick_rows": 0,
+  "selector_chain_sha256": "4cb45f1595be734fbad5aa5872f6b7fb38ca885f380c1af1667284f048bc2ccd",
+  "signature_to_internal_context": {
+    "s71": "ctx0",
+    "s72": "ctx1"
+  },
+  "status": "V1V_PE_SENSED_CONTEXT_P_RECALL_PASS",
+  "tamper_denied": true,
+  "versioned_v1v_research_learning": true
+}

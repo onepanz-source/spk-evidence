@@ -1,0 +1,47 @@
+{
+  "BV_to_P_live_authorization": false,
+  "P_transfer": false,
+  "architecture_promotion_allowed": false,
+  "compiler_c2_manifest_sha256": "41eb6f71784670312e945944502d43adaa52dcfed886a1be494703214385ccdc",
+  "compiler_to_application_host_dispatch_performed": false,
+  "compiler_to_owned_epoch_converter_implemented": false,
+  "native_original_structural_probe": {
+    "BVs_authorized_to_write_P": false,
+    "all_four_structural_checks_match": false,
+    "comparison": {
+      "architecture_exact": false,
+      "epoch_exact": true,
+      "network_exact": false,
+      "sealed_profile_consistent": true
+    },
+    "compiled_edge_count": 3,
+    "compiled_node_count": 2,
+    "compiled_profile_id": "spk-24m-evidence",
+    "compiled_to_owned_epoch_produced": false,
+    "cross_host_handoff_performed": false,
+    "custody_authority_granted": false,
+    "epoch_id": "E0",
+    "original_service_tick": 4,
+    "owner_edge_count": 3,
+    "owner_node_count": 3,
+    "owner_profile_id": "arbiter-lab"
+  },
+  "next_acceptance": "I2b.4 owner-constructed C2-equivalent sealed epoch plus complete authority/placement/event witness; do not advance I2c before that acceptance",
+  "operator_owner_authorization_authenticated": false,
+  "original_application_host_execution_inherited_from_i2b3": true,
+  "parent_i2b3_sha256": "a88f850a48c3c5d420f444f85ca7defca420c0b7eb1e891c837dfd511cd90d2c",
+  "positive_custody_construction_demonstrated": false,
+  "production_release": false,
+  "reference_host_execution_inherited_from_i2b2": true,
+  "remaining_barriers": [
+    "No source-attested, independently authorized owner factory for a compiler-derived sealed EVENT epoch",
+    "No exact initial EVENT multiplicity and routing projection from C2 into the external-ingress seal",
+    "No independently verified C2 placement to the owner allocation ledger and service reservation proof",
+    "No authenticated causal link from compiled network execution to the one-root 24j custody epoch",
+    "No permission to write or migrate native P; I2c remains gated"
+  ],
+  "research_only": true,
+  "runtime_P_writes": 0,
+  "schema": "spk-lab-i2b4-compiler-owned-custody-contract/v1",
+  "status": "SPK_LAB_I2B4_STRUCTURAL_CUSTODY_BOUNDARY_RESEARCH_PASS"
+}

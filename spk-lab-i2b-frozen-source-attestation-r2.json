@@ -1,0 +1,634 @@
+{
+  "BV_to_P_live_host_authorization_proven": false,
+  "P_transfer_authorized": false,
+  "architecture_promotion_allowed": false,
+  "frozen_api_bindings": 72,
+  "head_ancestry_policy": "NOT_USED_AS_FROZEN_IDENTITY_PROOF",
+  "native_dispatch_executed": false,
+  "next_gate": "I2b compiled-network dispatch with native causal witness, not yet performed",
+  "parent_inventory_sha256": "f7de25d617658d52750e48d8dea21ddd558d3c5cbe7fd9086661a03af9b09d98",
+  "research_only": true,
+  "roots": [
+    {
+      "frozen_api_files": [
+        {
+          "binding": "git_tag_and_manifest",
+          "file": "spk_compiler/compile_pipeline_v0.py",
+          "frozen_tag": "spk-compiler-v0",
+          "sha256": "81aebc3b08776b7a5e4d1cd42257298048533d08eaf898cc436c9dc974479366"
+        },
+        {
+          "binding": "git_tag_and_manifest",
+          "file": "spk_compiler/network_ir_v0.py",
+          "frozen_tag": "spk-compiler-v0",
+          "sha256": "0425a191cc3ecc3df76fe13dac99009cdceccdbc389789bf1967f567b5309460"
+        },
+        {
+          "binding": "git_tag_and_manifest",
+          "file": "spk_compiler/pe_admission_v0.py",
+          "frozen_tag": "spk-compiler-v0",
+          "sha256": "ccc76a35f908bd9fbdc8d3dfc23966b4e4109db838e05143b4383a23e437933c"
+        },
+        {
+          "binding": "git_tag_and_manifest",
+          "file": "spk_compiler/resource_admission_v0.py",
+          "frozen_tag": "spk-compiler-v0",
+          "sha256": "864673d321b3da0b36d49cb669322808e617fb85657034b5df544aad48281420"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_core/canonicalize.py",
+          "frozen_tag": "spk-core-network-v0",
+          "sha256": "d98017a668bb56ae719fd37b33622dcfe483fa16530d8d377ca780753a7ead66"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_core/compiler.py",
+          "frozen_tag": "spk-core-network-v0",
+          "sha256": "66f92545b5f55fd6570d67ca3054cf7a3fd2bd4e13cb41ad3b413bc9a2df608f"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_core/domain.py",
+          "frozen_tag": "spk-core-network-v0",
+          "sha256": "9d782352c553297ac2a1053019a4ac1511dbe4685d6bf34a0832d8bebb4c3e79"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_core/network.py",
+          "frozen_tag": "spk-core-network-v0",
+          "sha256": "e6cea43b0142e98cb68bb5498e40c7ff2c0683d1a66de44441f35d1cc562f1b3"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_core/packed.py",
+          "frozen_tag": "spk-core-network-v0",
+          "sha256": "eb18a036cfd375f6f113cd229574dc7e26d32c29d04151884dc494d72d1e9d54"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_core/rules.py",
+          "frozen_tag": "spk-core-network-v0",
+          "sha256": "ab76081ff6277d272c46a83b3e2d6a1db7a36da101385b07bd1c924c55261c05"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_core/runtime.py",
+          "frozen_tag": "spk-core-network-v0",
+          "sha256": "25b78b476c052c73b9e67687d8b9da24e043613bd8c732520a1a338799f403c8"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_core/semantic_canonicalize.py",
+          "frozen_tag": "spk-core-network-v0",
+          "sha256": "11973ebd7fd2c27212aa5d8db1b317a8a7c1e39228c586b2fb8232daef006414"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_network/events_v0.py",
+          "frozen_tag": "spk-core-network-v0",
+          "sha256": "f632ad1f49e8c88a11aa42537f9085dc12232751395ca79586992b4c2cd71eee"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_network/network_v0.py",
+          "frozen_tag": "spk-core-network-v0",
+          "sha256": "aeacc50807066cec45da947d53f8b3e420e38c73b25d1e8345f2a44d49a524ea"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_network/runtime_v0.py",
+          "frozen_tag": "spk-core-network-v0",
+          "sha256": "4e393a2fdb17e833f3b424f6a5938946d8f6f83ff1cf1ad0da61b3520bb820ce"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/access_dependencies_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "d8e55e6630fc7c861a95497cab19c053b8ca69d1ef65fee6dd6bdea440ea37d8"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/application_runtime_host_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "9499365c4d1314f58509c790bae9cc507598906751060c929881409bd0416e98"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/atomic_neuronal_commit_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "929e9527e1f780bf429881ca15e22412ddc9517afbc6e243f9ff542214f2bdcc"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/autonomous_storage_run_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "30a8685b96772659594d27b415a1495a31e84bedcf36a5f52510d90e4b84d1c1"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/bounded_backpressure_driver_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "81179b353931ac606f7350bf7419ecb9122a53bcd307ebeb012e49ff96040102"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/causal_scheduler_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "e7919d01bfc0e3d085207320e9bb945c5363cbb7d8e76a81d5b5f08557cd60cd"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/event_reservation_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "2e455b8faa9ad8ba3cc34b64e00804577373a7b394af9ba01bc18391f5a2104e"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/functional_trace_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "6e934af2e634bc8605416b70b46fd41cec97d352c21dfe8309c41fb16c022140"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/owned_internal_reads_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "0aeda5c5a0b139bc169e3bf4d89995a2b38df446ffa24a393ac8079988558cfb"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/owned_internal_state_commit_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "6c1a7d546b59641345c4c0e1a1648ff5c0021bf33179f9beab80aefc26191a16"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/owned_root_authority_custody_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "0a661a9590d9ecc80c57c6f483a39dc833ff4db057be1cd8dac3061188dd1ec0"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/owned_root_core_handoff_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "ac144251b0c4c7c7a35de8b9f7634f21ac05811303ef4bf120cf40fb2f69862a"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/owned_root_custody_execution_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "6c0d86eb1211bc944881645c6ea0fcf3ed6cff32d0317116ebc0618cfcdf59f2"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/owned_root_execution_dispatch_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "6d7f2a767c6c00ce5d7fe56afff00d13e521a0be576fcd154978f14a57f30ebd"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/owned_root_terminal_commit_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "8d006c4a2d7aa1cde5bd051aa5cc2bff9d3312e168449aba9eb9dc153ca7f80a"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/owned_service_autoframe_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "77d47397586fbf4c0591a9ac166ad6302441e2815c90bd0b003d28c039d8d3c9"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/owned_service_tick_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "fd3dc015d0adf1d234bdd6f236ef5add493abc157ac1940e93d432a331b29222"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/routing_binding_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "a809d785fc8ea4ae5d0d2f562ee377e944be17e35f6817f719c2da7723ad3a13"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/schedule_boundary_bridge_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "ebb7a1132094cee2afae1ae3547676b88d6db18b591524cd4bdafd2e6d031422"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/versioned_core_transition_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "1e3140631d4cbc7a42b397aeeb9050f3effa866c265cc3f35446782bf6b5f84a"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/witnessed_core_input_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "3650d74588d92bd6a90f41520b4db6cb23e384ed82068987bf847fe79035e0cd"
+        }
+      ],
+      "frozen_source_identity_policy": "DOMAIN_EXACT_GIT_TAG_BLOB_SHA_COMPILER_ONLY_EXACT_MANIFEST_PATH_SHA",
+      "frozen_tags": {
+        "spk-architecture-bounded-reference-v1": "5af99cd1f4d603bf0c8e1557a6561c107765fdb5",
+        "spk-compiler-v0": "24b15156aa31967bd0079debcc97ccb6e3ac4325",
+        "spk-core-network-v0": "01b6728355a60bd6095fb48d7a9c4c6aa1e09790"
+      },
+      "head": "a76ebaae49373a4c6b66f94465d78dbf1cf19f80",
+      "head_ancestry_policy": "NOT_USED_AS_FROZEN_IDENTITY_PROOF",
+      "manifest_sha256": {
+        "docs/spk-compiler-v0-freeze-manifest.json": "3267db34f1aad9a680688a4ee4c72d41463d9e091775ab5c97771991dcf882ad"
+      },
+      "outside_frozen_scope_api_files": [],
+      "required_frozen_domains": [
+        "spk_compiler",
+        "spk_core",
+        "spk_network",
+        "spk_simulator"
+      ],
+      "root": "/home/ste/workspace/spk-algebra",
+      "scanned_files_byte_verified": 84,
+      "semantic_reference_manifests": {
+        "docs/spk-core-v0-manifest.json": {
+          "binding": "git_tag_exact_blob",
+          "classification": "semantic_reference_not_file_pin_source",
+          "frozen_tag": "spk-core-network-v0",
+          "sha256": "db318619fb2cbc228834db3a5f13c4179da06f072671e9809340082124b68c59"
+        }
+      }
+    },
+    {
+      "frozen_api_files": [
+        {
+          "binding": "git_tag_and_manifest",
+          "file": "spk_compiler/compile_pipeline_v0.py",
+          "frozen_tag": "spk-compiler-v0",
+          "sha256": "81aebc3b08776b7a5e4d1cd42257298048533d08eaf898cc436c9dc974479366"
+        },
+        {
+          "binding": "git_tag_and_manifest",
+          "file": "spk_compiler/network_ir_v0.py",
+          "frozen_tag": "spk-compiler-v0",
+          "sha256": "0425a191cc3ecc3df76fe13dac99009cdceccdbc389789bf1967f567b5309460"
+        },
+        {
+          "binding": "git_tag_and_manifest",
+          "file": "spk_compiler/pe_admission_v0.py",
+          "frozen_tag": "spk-compiler-v0",
+          "sha256": "ccc76a35f908bd9fbdc8d3dfc23966b4e4109db838e05143b4383a23e437933c"
+        },
+        {
+          "binding": "git_tag_and_manifest",
+          "file": "spk_compiler/resource_admission_v0.py",
+          "frozen_tag": "spk-compiler-v0",
+          "sha256": "864673d321b3da0b36d49cb669322808e617fb85657034b5df544aad48281420"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_core/canonicalize.py",
+          "frozen_tag": "spk-core-network-v0",
+          "sha256": "d98017a668bb56ae719fd37b33622dcfe483fa16530d8d377ca780753a7ead66"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_core/compiler.py",
+          "frozen_tag": "spk-core-network-v0",
+          "sha256": "66f92545b5f55fd6570d67ca3054cf7a3fd2bd4e13cb41ad3b413bc9a2df608f"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_core/domain.py",
+          "frozen_tag": "spk-core-network-v0",
+          "sha256": "9d782352c553297ac2a1053019a4ac1511dbe4685d6bf34a0832d8bebb4c3e79"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_core/network.py",
+          "frozen_tag": "spk-core-network-v0",
+          "sha256": "e6cea43b0142e98cb68bb5498e40c7ff2c0683d1a66de44441f35d1cc562f1b3"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_core/packed.py",
+          "frozen_tag": "spk-core-network-v0",
+          "sha256": "eb18a036cfd375f6f113cd229574dc7e26d32c29d04151884dc494d72d1e9d54"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_core/rules.py",
+          "frozen_tag": "spk-core-network-v0",
+          "sha256": "ab76081ff6277d272c46a83b3e2d6a1db7a36da101385b07bd1c924c55261c05"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_core/runtime.py",
+          "frozen_tag": "spk-core-network-v0",
+          "sha256": "25b78b476c052c73b9e67687d8b9da24e043613bd8c732520a1a338799f403c8"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_core/semantic_canonicalize.py",
+          "frozen_tag": "spk-core-network-v0",
+          "sha256": "11973ebd7fd2c27212aa5d8db1b317a8a7c1e39228c586b2fb8232daef006414"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_network/events_v0.py",
+          "frozen_tag": "spk-core-network-v0",
+          "sha256": "f632ad1f49e8c88a11aa42537f9085dc12232751395ca79586992b4c2cd71eee"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_network/network_v0.py",
+          "frozen_tag": "spk-core-network-v0",
+          "sha256": "aeacc50807066cec45da947d53f8b3e420e38c73b25d1e8345f2a44d49a524ea"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_network/runtime_v0.py",
+          "frozen_tag": "spk-core-network-v0",
+          "sha256": "4e393a2fdb17e833f3b424f6a5938946d8f6f83ff1cf1ad0da61b3520bb820ce"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/access_dependencies_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "d8e55e6630fc7c861a95497cab19c053b8ca69d1ef65fee6dd6bdea440ea37d8"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/application_runtime_host_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "9499365c4d1314f58509c790bae9cc507598906751060c929881409bd0416e98"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/atomic_neuronal_commit_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "929e9527e1f780bf429881ca15e22412ddc9517afbc6e243f9ff542214f2bdcc"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/autonomous_storage_run_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "30a8685b96772659594d27b415a1495a31e84bedcf36a5f52510d90e4b84d1c1"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/bounded_backpressure_driver_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "81179b353931ac606f7350bf7419ecb9122a53bcd307ebeb012e49ff96040102"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/causal_scheduler_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "e7919d01bfc0e3d085207320e9bb945c5363cbb7d8e76a81d5b5f08557cd60cd"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/event_reservation_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "2e455b8faa9ad8ba3cc34b64e00804577373a7b394af9ba01bc18391f5a2104e"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/functional_trace_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "6e934af2e634bc8605416b70b46fd41cec97d352c21dfe8309c41fb16c022140"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/owned_internal_reads_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "0aeda5c5a0b139bc169e3bf4d89995a2b38df446ffa24a393ac8079988558cfb"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/owned_internal_state_commit_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "6c1a7d546b59641345c4c0e1a1648ff5c0021bf33179f9beab80aefc26191a16"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/owned_root_authority_custody_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "0a661a9590d9ecc80c57c6f483a39dc833ff4db057be1cd8dac3061188dd1ec0"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/owned_root_core_handoff_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "ac144251b0c4c7c7a35de8b9f7634f21ac05811303ef4bf120cf40fb2f69862a"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/owned_root_custody_execution_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "6c0d86eb1211bc944881645c6ea0fcf3ed6cff32d0317116ebc0618cfcdf59f2"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/owned_root_execution_dispatch_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "6d7f2a767c6c00ce5d7fe56afff00d13e521a0be576fcd154978f14a57f30ebd"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/owned_root_terminal_commit_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "8d006c4a2d7aa1cde5bd051aa5cc2bff9d3312e168449aba9eb9dc153ca7f80a"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/owned_service_autoframe_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "77d47397586fbf4c0591a9ac166ad6302441e2815c90bd0b003d28c039d8d3c9"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/owned_service_tick_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "fd3dc015d0adf1d234bdd6f236ef5add493abc157ac1940e93d432a331b29222"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/routing_binding_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "a809d785fc8ea4ae5d0d2f562ee377e944be17e35f6817f719c2da7723ad3a13"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/schedule_boundary_bridge_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "ebb7a1132094cee2afae1ae3547676b88d6db18b591524cd4bdafd2e6d031422"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/versioned_core_transition_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "1e3140631d4cbc7a42b397aeeb9050f3effa866c265cc3f35446782bf6b5f84a"
+        },
+        {
+          "binding": "git_tag",
+          "file": "spk_simulator/witnessed_core_input_v0.py",
+          "frozen_tag": "spk-architecture-bounded-reference-v1",
+          "sha256": "3650d74588d92bd6a90f41520b4db6cb23e384ed82068987bf847fe79035e0cd"
+        }
+      ],
+      "frozen_source_identity_policy": "DOMAIN_EXACT_GIT_TAG_BLOB_SHA_COMPILER_ONLY_EXACT_MANIFEST_PATH_SHA",
+      "frozen_tags": {
+        "spk-architecture-bounded-reference-v1": "5af99cd1f4d603bf0c8e1557a6561c107765fdb5",
+        "spk-compiler-v0": "24b15156aa31967bd0079debcc97ccb6e3ac4325",
+        "spk-core-network-v0": "01b6728355a60bd6095fb48d7a9c4c6aa1e09790"
+      },
+      "head": "5af99cd1f4d603bf0c8e1557a6561c107765fdb5",
+      "head_ancestry_policy": "NOT_USED_AS_FROZEN_IDENTITY_PROOF",
+      "manifest_sha256": {
+        "docs/spk-compiler-v0-freeze-manifest.json": "3267db34f1aad9a680688a4ee4c72d41463d9e091775ab5c97771991dcf882ad"
+      },
+      "outside_frozen_scope_api_files": [
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_backvalidation_v0/contextual_credit_v0a.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_backvalidation_v0/identified_scheduler_v0h.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_backvalidation_v0/live_dual_scheduler_v0e.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_backvalidation_v0/n_node_scheduler_v0f.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_backvalidation_v0/simulator_evidence_v0b.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_native_learning_v1/causal_replay_shadow_v1x_g.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_native_learning_v1/conformance_v1.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_native_learning_v1/contextual_durable_v1u.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_native_learning_v1/contextual_serial_v1u.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_native_learning_v1/durable_runtime_v1.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_native_learning_v1/explicit_cohort_conformance_v1x_c.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_native_learning_v1/finite_projection_v1x_m.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_native_learning_v1/future_suffix_v1x_j.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_native_learning_v1/generalized_durable_v1t.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_native_learning_v1/generalized_scheduler_v1t.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_native_learning_v1/generalized_serial_v1t.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_native_learning_v1/ingress_scheduler_v1w.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_native_learning_v1/live_learning_scheduler_v1.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_native_learning_v1/live_learning_scheduler_v1r.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_native_learning_v1/multi_ingress_v1x.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_native_learning_v1/native_dual_network_i2a.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_native_learning_v1/one_step_alphabet_v1x_k.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_native_learning_v1/order_equivalence_v1x_i.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_native_learning_v1/research_host_boundary_i1.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_native_learning_v1/sensed_context_v1v.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_native_learning_v1/serialized_conformance_v1s.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_native_learning_v1/serialized_runtime_v1s.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_native_learning_v1/signed_cohort_conformance_v1x_d.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_native_learning_v1/signed_epoch_cutover_conformance_v1x_e.py"
+        },
+        {
+          "classification": "research_or_unfrozen_not_architecture_attested",
+          "file": "spk_native_learning_v1/two_step_closure_v1x_l.py"
+        }
+      ],
+      "required_frozen_domains": [
+        "spk_compiler",
+        "spk_core",
+        "spk_network",
+        "spk_simulator"
+      ],
+      "root": "/home/ste/workspace/spk-backvalidation-v0",
+      "scanned_files_byte_verified": 157,
+      "semantic_reference_manifests": {
+        "docs/spk-core-v0-manifest.json": {
+          "binding": "git_tag_exact_blob",
+          "classification": "semantic_reference_not_file_pin_source",
+          "frozen_tag": "spk-core-network-v0",
+          "sha256": "db318619fb2cbc228834db3a5f13c4179da06f072671e9809340082124b68c59"
+        }
+      }
+    }
+  ],
+  "schema": "spk-lab-i2b-frozen-source-attestation/v1-r2",
+  "source_claim": "Exact Git frozen blobs by domain; Compiler additionally exact-path manifest pins; Core manifest only semantic reference byte-identical to its original tag, NOT a per-file pin source; HEAD ancestry not used; research packages separate",
+  "status": "SPK_LAB_I2B_FROZEN_SOURCE_ATTESTATION_R2_PASS_NOT_DISPATCH",
+  "unfrozen_api_candidates": 30
+}

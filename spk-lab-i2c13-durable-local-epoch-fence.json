@@ -1,0 +1,70 @@
+{
+  "P_writes": 0,
+  "architecture_promotion_allowed": false,
+  "bounded_local_sqlite_fencing": true,
+  "bv_to_p_live_authorization": false,
+  "cross_machine_global_fencing": false,
+  "external_owner_authenticated": false,
+  "frozen_24d_24j_modified": false,
+  "interrupted_after_native_return": {
+    "P_writes": 0,
+    "automatic_retry_allowed": false,
+    "native_24j_dispatch": false,
+    "native_returned_before_interruption": true,
+    "phase": "INTENT_UNRESOLVED"
+  },
+  "interrupted_restart_claim_rejected": true,
+  "limitations": [
+    "SQLite serializes local processes only when they share this one trusted local database; independent databases or remote machines are not fenced.",
+    "A durable local journal records intent and a receipt but never serializes/reconstructs the original native owner image.",
+    "If native commit returns and receipt persistence is interrupted, INTENT_UNRESOLVED blocks replay rather than proving commit or rolling back published output.",
+    "Tokens are local fence capabilities, not independent principal authentication; original 24d/24j remain untouched.",
+    "No recipient-owned ACK, BV verdict, or P write authority."
+  ],
+  "multi_process_shared_database_required": true,
+  "native_24j_output_dispatch": false,
+  "native_recipient_ack_authenticated": false,
+  "next_acceptance": "Durable native-state checkpoint/recovery with reconciliation for unresolved INTENT; separate authenticated recipient-owned lifecycle and BV grants.",
+  "original_native_owner_invoked_after_durable_intent": true,
+  "parent_i2c12_sha256": "3c1da87c0d6f04c932f2755364b014703bad8f661c4f73ddaedd63419f4e629f",
+  "persistent_native_state_recovery": false,
+  "positive_cases": [
+    {
+      "audit_passed": true,
+      "duplicate_claim_rejected": true,
+      "durable_local_receipt_sha256": "58980b8ee1fc7fcd11b5228606c97ea6302455a606ac7c1598e7c4269a12d536",
+      "fanout": 1,
+      "generation": 1,
+      "intent_sha256": "7ac5030873187de086d189f27d206ddd1c6ca30ce8ed5d714f7a47c843bbc6fd",
+      "native_24j_dispatch": false,
+      "native_original_output_published": true,
+      "native_recipient_ack": false,
+      "p_writes": 0,
+      "phase": "RECEIPT_RECORDED",
+      "published_route_ids": [
+        13
+      ]
+    },
+    {
+      "audit_passed": true,
+      "duplicate_claim_rejected": true,
+      "durable_local_receipt_sha256": "571dbfaf0cbfaec096d18dd2c79b9dfe6b99fccdaae4bfd8daa435f69b046054",
+      "fanout": 2,
+      "generation": 1,
+      "intent_sha256": "da60d5988ad5d7ce2e35204950208000413c283ee751d641efc511dfe385752e",
+      "native_24j_dispatch": false,
+      "native_original_output_published": true,
+      "native_recipient_ack": false,
+      "p_writes": 0,
+      "phase": "RECEIPT_RECORDED",
+      "published_route_ids": [
+        13,
+        14
+      ]
+    }
+  ],
+  "production_release": false,
+  "research_only": true,
+  "schema": "spk-lab-i2c13-durable-local-fence/v1",
+  "status": "SPK_LAB_I2C13_LOCAL_DURABLE_EPOCH_FENCING_RESEARCH_PASS"
+}

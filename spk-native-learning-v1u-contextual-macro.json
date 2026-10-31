@@ -1,0 +1,131 @@
+{
+  "actual_original_PE_reads": [
+    [
+      10,
+      0,
+      11,
+      [
+        11
+      ]
+    ],
+    [
+      10,
+      0,
+      11,
+      [
+        11
+      ]
+    ],
+    [
+      10,
+      2,
+      15,
+      [
+        15
+      ]
+    ],
+    [
+      10,
+      1,
+      12,
+      [
+        12
+      ]
+    ],
+    [
+      10,
+      2,
+      15,
+      [
+        15
+      ]
+    ]
+  ],
+  "bank": {
+    "alpha": {
+      "choice": 11,
+      "domain": "P",
+      "grants": 3,
+      "owner": "C",
+      "version": 3
+    },
+    "beta": {
+      "choice": 12,
+      "domain": "P",
+      "grants": 1,
+      "owner": "C",
+      "version": 1
+    }
+  },
+  "chain_sha256": "3eaf7dab2b650ad9e117a0dea856504be7ee8ef97a3729e4eea9bca8307d49aa",
+  "committed_tick_rows": 325,
+  "context_order_independent_P_bank": true,
+  "context_order_not_erased_from_ledger": true,
+  "contextual_epoch_count": 5,
+  "contextual_grants": [
+    2,
+    1,
+    0,
+    0,
+    1
+  ],
+  "contextual_versions": [
+    2,
+    1,
+    2,
+    1,
+    3
+  ],
+  "frozen_original_BV_learning": false,
+  "host_controls_context_labels": true,
+  "limitations": [
+    "Three predeclared PE programs and A/B/C corpus only",
+    "Context identity and A target remain host-authored and unauthenticated",
+    "No arbitrary programs, N-node topology or physical validation",
+    "Deterministic genesis replay only, no irreversible outside effects",
+    "Cooperative advisory locking, no resistance to privileged host",
+    "Frozen original BV-v0e stays unchanged and learning-free"
+  ],
+  "native_v1_research_learning": true,
+  "original_frozen_pins": {
+    "spk_architecture_v1/causal_memory_v1c.py": "175362406d3598331ec72c42084030248910e0033ea17d87d0810e221c8d7617",
+    "spk_architecture_v1/pe_execution_v1b.py": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9"
+  },
+  "parent_v1t_sha256": "6f11c639729d99c84907fa42e164714f014f93a8af3c0149ab6db40ae1788f8b",
+  "prior_tamper": "REJECTED",
+  "promotion_allowed": false,
+  "restart_cuts": [
+    {
+      "cut": 1,
+      "head_sha256": "872625a974186d0039843f235d2f60a026a2f8d7173aa847e38483ea9eba3a5a"
+    },
+    {
+      "cut": 9,
+      "head_sha256": "872625a974186d0039843f235d2f60a026a2f8d7173aa847e38483ea9eba3a5a"
+    },
+    {
+      "cut": 13,
+      "head_sha256": "872625a974186d0039843f235d2f60a026a2f8d7173aa847e38483ea9eba3a5a"
+    },
+    {
+      "cut": 14,
+      "head_sha256": "872625a974186d0039843f235d2f60a026a2f8d7173aa847e38483ea9eba3a5a"
+    },
+    {
+      "cut": 15,
+      "head_sha256": "872625a974186d0039843f235d2f60a026a2f8d7173aa847e38483ea9eba3a5a"
+    },
+    {
+      "cut": 27,
+      "head_sha256": "872625a974186d0039843f235d2f60a026a2f8d7173aa847e38483ea9eba3a5a"
+    },
+    {
+      "cut": 60,
+      "head_sha256": "872625a974186d0039843f235d2f60a026a2f8d7173aa847e38483ea9eba3a5a"
+    }
+  ],
+  "schema": "spk-native-learning-v1u-contextual-conformance/v1",
+  "second_run_new_tick_rows": 0,
+  "status": "NATIVE_V1U_CONTEXTUAL_P_SAME_SCHEDULER_CAUSAL_PASS"
+}

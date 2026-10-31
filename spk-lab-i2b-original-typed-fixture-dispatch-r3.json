@@ -1,0 +1,182 @@
+{
+  "BV_to_P_live_host_authorization_proven": false,
+  "P_transfer_authorized": false,
+  "architecture_promotion_allowed": false,
+  "compiler_functional_equivalence_confirmed": true,
+  "frozen_test_source_receipts": [
+    {
+      "derivation_classification": "DIRECT_ORIGINAL_PYTEST_TYPED_FIXTURE",
+      "fixture_kind": "pipeline_inputs",
+      "git_commit": "24b15156aa31967bd0079debcc97ccb6e3ac4325",
+      "git_tag": "spk-compiler-v0",
+      "sha256": "d85fd43f7d57dd790e38db89bad230b07dd2224391aabe2ede868d3ec4a2f96a",
+      "source_file": "tests/test_compile_pipeline_v0.py",
+      "test": "test_pipeline_does_not_change_functional_execution"
+    },
+    {
+      "derivation_classification": "DIRECT_ORIGINAL_PYTEST_TYPED_FIXTURE",
+      "fixture_kind": "compiler_scenario",
+      "git_commit": "24b15156aa31967bd0079debcc97ccb6e3ac4325",
+      "git_tag": "spk-compiler-v0",
+      "sha256": "1e6b4f47f4f8f31636bae4574d27686fa82b67addef42444c56651ef2da8d813",
+      "source_file": "tests/test_compiler_conformance_v0.py",
+      "test": "test_functional_behavior_is_unchanged"
+    },
+    {
+      "derivation_classification": "DIRECT_ORIGINAL_PYTEST_TYPED_FIXTURE",
+      "fixture_kind": "manifest_inputs",
+      "git_commit": "24b15156aa31967bd0079debcc97ccb6e3ac4325",
+      "git_tag": "spk-compiler-v0",
+      "sha256": "f2de08d3a91cb7e747e65da46a0a1e3a44e9b845f9c045cb3a99d3986c356ea2",
+      "source_file": "tests/test_compilation_manifest_v0.py",
+      "test": "test_unchanged_network_functional_result"
+    },
+    {
+      "derivation_classification": "SOURCE_AUTHORED_PE_ADMISSION_CONSTRUCTORS_WITH_FROZEN_DEFAULT_RESOURCE_PROFILE",
+      "fixture_kind": "pe_admission_authored",
+      "git_commit": "24b15156aa31967bd0079debcc97ccb6e3ac4325",
+      "git_tag": "spk-compiler-v0",
+      "sha256": "1975675e62d74bdf91c3fcc278789ef7addfcb683109d3a49a4677e1f5bf98ee",
+      "source_file": "tests/test_pe_admission_v0.py",
+      "test": "test_mapping_does_not_change_execution"
+    }
+  ],
+  "independently_routed_configurations": 2,
+  "limitations": [
+    "Original frozen typed pytest fixtures and original PE-admission-authored constructors, no invented JSON network or IR format",
+    "PE-admission-derived compilation resource uses the original frozen ResourceProfileV0 default; not a pre-existing five-element test fixture",
+    "Functional Compiler->Network propagation only, not integrated native PE/BV/P Back Validation feedback",
+    "Source test SHA pinned to original compiler-v0 tag and static ABI receipt",
+    "No live learning, credit transfer, sensor authentication, production promotion or network sandbox guarantee"
+  ],
+  "native_PE_BV_P_bridge_executed": false,
+  "new_core_manifest_created": false,
+  "observed_witnesses": [
+    {
+      "cases": [
+        {
+          "compiled_type": "spk_compiler.compile_pipeline_v0.CompiledNetworkV0",
+          "derivation_classification": "DIRECT_ORIGINAL_PYTEST_TYPED_FIXTURE",
+          "emissions": 2,
+          "initial_event_count": 2,
+          "input_sha256": "6accafd8419e911ee21b70c1724b431ab5fab4f222f2dda2f70e1b5afb9ebf97",
+          "network_ir_sha256": "493ae8242dead99ce065c7f444c5945e4b63a66bfd8aca60df56ed82a7e855b6",
+          "network_type": "spk_network.model_v0.NetworkV0",
+          "observed_batches": 2,
+          "observed_routes": 2,
+          "original_and_compiled_results_equal": true,
+          "original_compiler_invoked": true,
+          "original_network_runtime_invoked": true,
+          "original_observer_invoked": true,
+          "original_typed_fixture": "pipeline_inputs",
+          "outcome_sha256": "43c7ae535bfa284208398975b0a37739a10381dd33a5bb064e636374f42d005f",
+          "processed_batches": 2,
+          "processed_events": 4,
+          "terminal_outputs": 1,
+          "test_nodeid": "tests/test_compile_pipeline_v0.py::test_pipeline_does_not_change_functional_execution"
+        }
+      ],
+      "fixture_kind": "pipeline_inputs",
+      "schema": "spk-i2b-original-typed-fixture-witness/v1"
+    },
+    {
+      "cases": [
+        {
+          "compiled_type": "spk_compiler.compile_pipeline_v0.CompiledNetworkV0",
+          "derivation_classification": "DIRECT_ORIGINAL_PYTEST_TYPED_FIXTURE",
+          "emissions": 2,
+          "initial_event_count": 2,
+          "input_sha256": "6accafd8419e911ee21b70c1724b431ab5fab4f222f2dda2f70e1b5afb9ebf97",
+          "network_ir_sha256": "493ae8242dead99ce065c7f444c5945e4b63a66bfd8aca60df56ed82a7e855b6",
+          "network_type": "spk_network.model_v0.NetworkV0",
+          "observed_batches": 2,
+          "observed_routes": 2,
+          "original_and_compiled_results_equal": true,
+          "original_compiler_invoked": true,
+          "original_network_runtime_invoked": true,
+          "original_observer_invoked": true,
+          "original_typed_fixture": "compiler_scenario",
+          "outcome_sha256": "43c7ae535bfa284208398975b0a37739a10381dd33a5bb064e636374f42d005f",
+          "processed_batches": 2,
+          "processed_events": 4,
+          "terminal_outputs": 1,
+          "test_nodeid": "tests/test_compiler_conformance_v0.py::test_functional_behavior_is_unchanged"
+        }
+      ],
+      "fixture_kind": "compiler_scenario",
+      "schema": "spk-i2b-original-typed-fixture-witness/v1"
+    },
+    {
+      "cases": [
+        {
+          "compiled_type": "spk_compiler.compile_pipeline_v0.CompiledNetworkV0",
+          "derivation_classification": "DIRECT_ORIGINAL_PYTEST_TYPED_FIXTURE",
+          "emissions": 2,
+          "initial_event_count": 2,
+          "input_sha256": "6accafd8419e911ee21b70c1724b431ab5fab4f222f2dda2f70e1b5afb9ebf97",
+          "network_ir_sha256": "493ae8242dead99ce065c7f444c5945e4b63a66bfd8aca60df56ed82a7e855b6",
+          "network_type": "spk_network.model_v0.NetworkV0",
+          "observed_batches": 2,
+          "observed_routes": 2,
+          "original_and_compiled_results_equal": true,
+          "original_compiler_invoked": true,
+          "original_network_runtime_invoked": true,
+          "original_observer_invoked": true,
+          "original_typed_fixture": "manifest_inputs",
+          "outcome_sha256": "43c7ae535bfa284208398975b0a37739a10381dd33a5bb064e636374f42d005f",
+          "processed_batches": 2,
+          "processed_events": 4,
+          "terminal_outputs": 1,
+          "test_nodeid": "tests/test_compilation_manifest_v0.py::test_unchanged_network_functional_result"
+        }
+      ],
+      "fixture_kind": "manifest_inputs",
+      "schema": "spk-i2b-original-typed-fixture-witness/v1"
+    },
+    {
+      "cases": [
+        {
+          "compiled_type": "spk_compiler.compile_pipeline_v0.CompiledNetworkV0",
+          "derivation_classification": "SOURCE_AUTHORED_PE_ADMISSION_CONSTRUCTORS_WITH_FROZEN_DEFAULT_RESOURCE_PROFILE",
+          "emissions": 3,
+          "initial_event_count": 1,
+          "input_sha256": "0f20ae537234d3ad7f9465967e641446b75244949d80430f9fb01d2b95c35b47",
+          "network_ir_sha256": "4b82fcfd4f053290acbf1834dc48ddb3ce93b58e2f5289feffa9b02a5da5412a",
+          "network_type": "spk_network.model_v0.NetworkV0",
+          "observed_batches": 3,
+          "observed_routes": 3,
+          "original_and_compiled_results_equal": true,
+          "original_compiler_invoked": true,
+          "original_network_runtime_invoked": true,
+          "original_observer_invoked": true,
+          "original_typed_fixture": "pe_admission_authored",
+          "outcome_sha256": "dd13875cd7ff3705b9e76900d7887edbc46e50464f6452abe9fee87d0be4ccd6",
+          "processed_batches": 3,
+          "processed_events": 4,
+          "terminal_outputs": 2,
+          "test_nodeid": "tests/test_pe_admission_v0.py::test_mapping_does_not_change_execution"
+        }
+      ],
+      "fixture_kind": "pe_admission_authored",
+      "schema": "spk-i2b-original-typed-fixture-witness/v1"
+    }
+  ],
+  "original_compiler_called": true,
+  "original_fixture_cases_observed": 4,
+  "original_network_runtime_called": true,
+  "original_simulator_observer_called": true,
+  "original_typed_fixtures_from_frozen_tests": true,
+  "parent_abi_sha256": "87ab40d1f8345a7a59182e636897fd8841e4de7dcead3e20332149840f3656f0",
+  "parent_r2_diversity_hold_sha256": "dec49437b3285c002aff6c9ac5bd7cafd089a711cb4862d1ed3d20ad1eed1d9d",
+  "parent_r2_sha256": "80ef5f4df97aa6991cfe60f0640b1fc71e5adba68903616b2470010e0acd8c73",
+  "pe_admission_derived_resource_profile": "frozen_ResourceProfileV0_default_not_source_authored_PE_fixture",
+  "production_release": false,
+  "research_only": true,
+  "schema": "spk-lab-i2b-original-frozen-typed-fixture-dispatch/r3",
+  "selection_policy": "PREDECLARED_TWO_DISTINCT_ROUTED_NETWORK_IRS_SOURCE_AUTHORED_PE_ADMISSION_DERIVATION",
+  "source_identity_authenticated": false,
+  "status": "SPK_LAB_I2B_ORIGINAL_FROZEN_TYPED_COMPILED_NETWORK_DISPATCH_RESEARCH_PASS",
+  "tested_original_fixture_groups": 4,
+  "two_distinct_routed_networks_verified": true,
+  "unique_original_input_signatures": 2
+}

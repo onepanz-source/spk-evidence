@@ -1,0 +1,42 @@
+{
+  "P_credit_transfer": false,
+  "Q_sha256": "fa66267c58292d958087fdeb5301ef760dce7c30a8cdf71c9fa8de2096e0e7db",
+  "R_sha256": "21c1712131a81798a42fb50b80f4aa20d468f20abba9e3c9ebfac8906a1af4a1",
+  "S_sha256": "5449069bf147f7071f4db6dc128e095b3afb17e8881e88761706effb85b84148",
+  "allowed_read_intents": [
+    "inspect_closure",
+    "inspect_capabilities",
+    "inspect_limits",
+    "inspect_roadmap"
+  ],
+  "architecture_promotion_allowed": false,
+  "denied_write_intents": [
+    "learn",
+    "execute",
+    "P_transfer",
+    "P_credit_transfer",
+    "migrate_P",
+    "grant_authority",
+    "modify_source",
+    "promote_architecture",
+    "inspect_native_P"
+  ],
+  "native_execution_performed": false,
+  "next_gate": "I2 native multi-neuron adaptation, separate authorization and test requirements",
+  "observed_intent_count": 4,
+  "open_barriers": [
+    "Full multi-neuron learning propagation integration",
+    "Causal BV-to-P authorization in live host",
+    "Independent hardware sensor authentication",
+    "New input domain and transport impairments",
+    "Real streaming resource/contention robustness",
+    "Safe P migration and credit (separate formal authorization required)"
+  ],
+  "permission_to_migrate_P": false,
+  "production_release": false,
+  "research_only": true,
+  "schema": "spk-lab-i1-read-only-boundary/v1",
+  "source_identity_authenticated": false,
+  "status": "SPK_LAB_I1_RESEARCH_ONLY_READ_GATE_PASS",
+  "views_sha256": "dc3aed6be8e150f2eb8ec4d0cecc167c8edb638a9a96ed52161e5785926356dc"
+}

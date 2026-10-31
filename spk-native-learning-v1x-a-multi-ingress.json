@@ -1,0 +1,260 @@
+{
+  "P_grants_by_slot": [
+    2,
+    1,
+    0,
+    0,
+    1,
+    0
+  ],
+  "admission_reverse_order_byte_equal": true,
+  "architecture_promotion_allowed": false,
+  "batches": 3,
+  "canonical_epoch_order": [
+    [
+      0,
+      "p0"
+    ],
+    [
+      0,
+      "p1"
+    ],
+    [
+      1,
+      "p0"
+    ],
+    [
+      1,
+      "p1"
+    ],
+    [
+      2,
+      "p0"
+    ],
+    [
+      2,
+      "p1"
+    ]
+  ],
+  "classification_occurs_inside_frozen_BV": false,
+  "cross_db_replay_cuts": [
+    "AFTER_NATIVE_ENQUEUE",
+    "AFTER_NATIVE_ADVANCE",
+    "AFTER_CLOSED_COMMIT"
+  ],
+  "cross_db_replay_receipts_identical": true,
+  "first_PE_reads_by_slot": [
+    [
+      10,
+      0,
+      11,
+      [
+        11
+      ]
+    ],
+    [
+      10,
+      0,
+      11,
+      [
+        11
+      ]
+    ],
+    [
+      10,
+      2,
+      15,
+      [
+        15
+      ]
+    ],
+    [
+      10,
+      1,
+      12,
+      [
+        12
+      ]
+    ],
+    [
+      10,
+      2,
+      15,
+      [
+        15
+      ]
+    ],
+    [
+      10,
+      1,
+      12,
+      [
+        12
+      ]
+    ]
+  ],
+  "frozen_BV_v0e_learning": false,
+  "limitations": [
+    "Producer labels are host-declared, not cryptographically authenticated sensor identities",
+    "Fixed finite-size complete batches; no open-ended stream scheduling or quorum policy",
+    "The canonical order is deterministic only for the same accepted slot set",
+    "The queue and original v1w use separate durable databases; cross-DB recovery is replay, not atomic transactions",
+    "Native P bank is keyed by PE-derived context, not by producer; same-signature producers may share P state",
+    "PE classification precedes native-v1 BV ticks and never occurs in frozen original BV-v0e",
+    "No real actuator replay or privileged-host tamper resistance"
+  ],
+  "native_BV_chain_sha256": "042a5306d91f458d402e428caa783c3fffdf5c84b25a9724249c9567f6b3e4c9",
+  "native_BV_tick_rows": 390,
+  "native_v1_learning": true,
+  "native_v1w_contexts": [
+    "ctx0",
+    "ctx1",
+    "ctx0",
+    "ctx1",
+    "ctx0",
+    "ctx1"
+  ],
+  "producer_identity_authenticated": false,
+  "producers": [
+    "p0",
+    "p1"
+  ],
+  "queue_receipt_sha256": "2f8bbfc92ae4599190e613f0111f49584f8878e83a03f002e2ad205377b2edec",
+  "research_only": true,
+  "schema": "spk-native-learning-v1x-a-multi-producer-admission/v1",
+  "separate_same_signature_producers_share_P": {
+    "context_collision_observed": true,
+    "same_signature_shared_P_state": true,
+    "shared_context": "ctx0"
+  },
+  "slot_receipts": [
+    {
+      "P_grants": 2,
+      "batch": 0,
+      "closed_receipt_sha": "205c46b2aa995e017c463d5e7f4f549b83ee1939a47cb14a8f96f362e23e016d",
+      "context": "ctx0",
+      "epoch": 0,
+      "first_C_PE_read": [
+        10,
+        0,
+        11,
+        [
+          11
+        ]
+      ],
+      "producer": "p0",
+      "request_sha": "534b46129e7dfdd6c5a35609dc1c8274c86e4f6b9e9c06a976640f7e63fbdfec",
+      "signature": "s71"
+    },
+    {
+      "P_grants": 1,
+      "batch": 0,
+      "closed_receipt_sha": "946d93bddba3889fb677a0bfa2e186c83325e71b1c403b40ba42619a236f3d1a",
+      "context": "ctx1",
+      "epoch": 1,
+      "first_C_PE_read": [
+        10,
+        0,
+        11,
+        [
+          11
+        ]
+      ],
+      "producer": "p1",
+      "request_sha": "dca1b1c1d7eba1baf03888af0ad467562ce8436ed42a8fb0c49992d4243db75f",
+      "signature": "s72"
+    },
+    {
+      "P_grants": 0,
+      "batch": 1,
+      "closed_receipt_sha": "8c3d561d5240b9dc332562289a4676670114e34d208afb1b2e5f56edc30e98f3",
+      "context": "ctx0",
+      "epoch": 2,
+      "first_C_PE_read": [
+        10,
+        2,
+        15,
+        [
+          15
+        ]
+      ],
+      "producer": "p0",
+      "request_sha": "b3bad7252a5447d62783b113f2dbf12c1e5bff2fe80836c450f1e0ec6df3d9fd",
+      "signature": "s71"
+    },
+    {
+      "P_grants": 0,
+      "batch": 1,
+      "closed_receipt_sha": "f1b29e67398b9d02897b0706075dce511c6f1a4011001b6d6095479ed0c88142",
+      "context": "ctx1",
+      "epoch": 3,
+      "first_C_PE_read": [
+        10,
+        1,
+        12,
+        [
+          12
+        ]
+      ],
+      "producer": "p1",
+      "request_sha": "3da044caf91eecc44196d337a1eeba07f5962e8aac9e4a4573ed03402d15af86",
+      "signature": "s72"
+    },
+    {
+      "P_grants": 1,
+      "batch": 2,
+      "closed_receipt_sha": "3147914582d6dbe393b8aaedaaf6d7600c2afde6fb3d20356c5c81af490efa8e",
+      "context": "ctx0",
+      "epoch": 4,
+      "first_C_PE_read": [
+        10,
+        2,
+        15,
+        [
+          15
+        ]
+      ],
+      "producer": "p0",
+      "request_sha": "a6661bbc8abfe542b7ce49bcaf225291ce903e9419869d2b5bd68359262775c1",
+      "signature": "s71"
+    },
+    {
+      "P_grants": 0,
+      "batch": 2,
+      "closed_receipt_sha": "510b68ef980f258fc93eda0b5e78bcc40a860cb84b68232552aa6654a9f1323f",
+      "context": "ctx1",
+      "epoch": 5,
+      "first_C_PE_read": [
+        10,
+        1,
+        12,
+        [
+          12
+        ]
+      ],
+      "producer": "p1",
+      "request_sha": "bfd75a4834f163bc536fec502a1fff907294424ee1253ceb327c1ba79ce0cb92",
+      "signature": "s72"
+    }
+  ],
+  "slots": 6,
+  "source_credit_partitioned_by_producer": false,
+  "source_v1w_report_sha256": "0f70b4711a3282375d388285462e4dbbb2614b1dfe7ab042800ef9234f511be1",
+  "status": "V1X_A_NATIVE_QUEUED_PE_BV_P_RESEARCH_PASS",
+  "v1w_P_bank": {
+    "ctx0": {
+      "choice": 11,
+      "domain": "P",
+      "grants": 3,
+      "owner": "C",
+      "version": 3
+    },
+    "ctx1": {
+      "choice": 12,
+      "domain": "P",
+      "grants": 1,
+      "owner": "C",
+      "version": 1
+    }
+  }
+}

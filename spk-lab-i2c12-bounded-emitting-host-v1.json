@@ -1,0 +1,62 @@
+{
+  "BV_to_P_live_authorization": false,
+  "P_writes": 0,
+  "architecture_promotion_allowed": false,
+  "cases": [
+    {
+      "P_writes": 0,
+      "audit_passed": true,
+      "exact_native_internal_owner": true,
+      "fanout": 1,
+      "native_24j_dispatch": false,
+      "new_version": 1,
+      "old_version": 0,
+      "phase": "COMMITTED",
+      "published_route_ids": [
+        13
+      ],
+      "recipient_native_ACK": false,
+      "replay_denied": true,
+      "revision": 1,
+      "source_node": "B",
+      "source_pe": "PE1"
+    },
+    {
+      "P_writes": 0,
+      "audit_passed": true,
+      "exact_native_internal_owner": true,
+      "fanout": 2,
+      "native_24j_dispatch": false,
+      "new_version": 1,
+      "old_version": 0,
+      "phase": "COMMITTED",
+      "published_route_ids": [
+        13,
+        14
+      ],
+      "recipient_native_ACK": false,
+      "replay_denied": true,
+      "revision": 1,
+      "source_node": "B",
+      "source_pe": "PE1"
+    }
+  ],
+  "cross_host_ownership_transfer": false,
+  "external_owner_authenticated": false,
+  "fresh_local_native_internal_owner": true,
+  "limitations": [
+    "New local owner holds one ORIGINAL owned-internal-read epoch; it is NOT 24j/24d and no authority is transferred from 24j.",
+    "Trusted in-process provider only; multiple instances are not globally fenced, no crash/restart durability or independent principal authentication.",
+    "OUTPUT publication is original simulated native storage, not recipient processing/ACK; BV verdict and P remain disallowed."
+  ],
+  "native_24j_output_dispatch": false,
+  "native_atomically_published_fanout_cases": 2,
+  "native_recipient_ACK_authenticated": false,
+  "next_acceptance": "Design and gate a durable single-authority emitting epoch registry with globally fenced admission and authenticated recipient lifecycle, without modifying frozen 24d/24j.",
+  "parent_i2c11_sha256": "d227246f837ef8b4d2b92a6fb57e0b7f5f7ea61515675f9f8f84b71aaa2a68cc",
+  "production_release": false,
+  "research_only": true,
+  "schema": "spk-lab-i2c12-native-owner-emitting-host/v1",
+  "scope": "BOUNDED_ORIGINAL_OWNED_INTERNAL_READS_EMITTING_HOST_V1_RESEARCH",
+  "status": "SPK_LAB_I2C12_BOUNDED_EMITTING_HOST_V1_RESEARCH_PASS"
+}

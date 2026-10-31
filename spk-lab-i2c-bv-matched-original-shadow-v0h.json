@@ -1,0 +1,229 @@
+{
+  "BV_verdict_proven": false,
+  "P_credit_transfer": false,
+  "P_state_mutated": false,
+  "architecture_promotion_allowed": false,
+  "baseline_commit": "8afde0cd2c7888ea7e26b70cad52ac232bb8e1da",
+  "causal_groups_preserved": 3,
+  "context_replay_cases": [
+    {
+      "BV_trial_pair_proven": false,
+      "BV_verdict_proven": false,
+      "P_state_mutated": false,
+      "baseline_and_candidate_compiler_original": true,
+      "baseline_and_candidate_runtime_original": true,
+      "baseline_input_sha256": "6accafd8419e911ee21b70c1724b431ab5fab4f222f2dda2f70e1b5afb9ebf97",
+      "baseline_network_ir_sha256": "493ae8242dead99ce065c7f444c5945e4b63a66bfd8aca60df56ed82a7e855b6",
+      "baseline_outcome_sha256": "43c7ae535bfa284208398975b0a37739a10381dd33a5bb064e636374f42d005f",
+      "baseline_program_A_sha256": "7643c02a333690375d87abeeb705a448474d6eb5c79723b28f3ec12a8524ccc5",
+      "baseline_recipient_batches": [
+        {
+          "channels": [
+            0,
+            0
+          ],
+          "final_guard": true,
+          "final_raw": 0,
+          "node_id": "B",
+          "output_channels": [
+            7
+          ],
+          "timestamp": 4
+        }
+      ],
+      "baseline_routes": 2,
+      "baseline_trace_sha256": "43c7ae535bfa284208398975b0a37739a10381dd33a5bb064e636374f42d005f",
+      "candidate_network_ir_sha256": "5f0f938e84c36d0760d4a932d4ff5d75934ccec588aaccf1c22c7beeb86645ea",
+      "candidate_outcome_sha256": "5f8c40e0447317b8a4618a05ea0b768a29a0dd03e7b2a1dd70ba415709926ef0",
+      "candidate_program_A_sha256": "3680441d54f58fe5f3349a844cdf7683b1971e425120c3c5fd04ba7650828784",
+      "candidate_recipient_batches": [],
+      "candidate_routes": 0,
+      "candidate_trace_sha256": "5f8c40e0447317b8a4618a05ea0b768a29a0dd03e7b2a1dd70ba415709926ef0",
+      "classification": "MATCHED_SHADOW_COMPUTATIONAL_CONTRAST_NOT_BV_TRIAL",
+      "fixture_kind": "pipeline_inputs",
+      "grant_authorized": false,
+      "intervention": "LAB_DESIGNED_SOURCE_A_CMP_THRESHOLD_1_TO_3",
+      "negative_or_positive_efficacy_inferred": false,
+      "parent_i2ca_evidence_group_ids": [
+        "02de646a7403a836fd5ad53e3b1fed5c6d355e10a620b063ac89143ec5937564"
+      ],
+      "parent_i2ca_route_indices": [
+        0,
+        1
+      ],
+      "shared_edges": [
+        {
+          "delay_ticks": 2,
+          "source_channel": 7,
+          "source_node": "A",
+          "target_channel": 0,
+          "target_node": "B"
+        },
+        {
+          "delay_ticks": 2,
+          "source_channel": 7,
+          "source_node": "A",
+          "target_channel": 0,
+          "target_node": "B"
+        }
+      ],
+      "shared_initial_events": [
+        {
+          "channel": 0,
+          "node_id": "A",
+          "timestamp": 2
+        },
+        {
+          "channel": 0,
+          "node_id": "A",
+          "timestamp": 2
+        }
+      ],
+      "test_nodeid": "tests/test_compile_pipeline_v0.py::test_pipeline_does_not_change_functional_execution"
+    },
+    {
+      "BV_trial_pair_proven": false,
+      "BV_verdict_proven": false,
+      "P_state_mutated": false,
+      "baseline_and_candidate_compiler_original": true,
+      "baseline_and_candidate_runtime_original": true,
+      "baseline_input_sha256": "0f20ae537234d3ad7f9465967e641446b75244949d80430f9fb01d2b95c35b47",
+      "baseline_network_ir_sha256": "4b82fcfd4f053290acbf1834dc48ddb3ce93b58e2f5289feffa9b02a5da5412a",
+      "baseline_outcome_sha256": "dd13875cd7ff3705b9e76900d7887edbc46e50464f6452abe9fee87d0be4ccd6",
+      "baseline_program_A_sha256": "7643c02a333690375d87abeeb705a448474d6eb5c79723b28f3ec12a8524ccc5",
+      "baseline_recipient_batches": [
+        {
+          "channels": [
+            0,
+            0
+          ],
+          "final_guard": true,
+          "final_raw": 0,
+          "node_id": "B",
+          "output_channels": [
+            7
+          ],
+          "timestamp": 4
+        },
+        {
+          "channels": [
+            0
+          ],
+          "final_guard": true,
+          "final_raw": 0,
+          "node_id": "B",
+          "output_channels": [
+            7
+          ],
+          "timestamp": 5
+        }
+      ],
+      "baseline_routes": 3,
+      "baseline_trace_sha256": "dd13875cd7ff3705b9e76900d7887edbc46e50464f6452abe9fee87d0be4ccd6",
+      "candidate_network_ir_sha256": "ab08c7fc4451dbf628fb45dde6ba7db8cfff3b394471f28368f4ced956a13d15",
+      "candidate_outcome_sha256": "f835b62accca6960ce21185429f815f4aaab1105544ef5b5e2f12e8504961671",
+      "candidate_program_A_sha256": "3680441d54f58fe5f3349a844cdf7683b1971e425120c3c5fd04ba7650828784",
+      "candidate_recipient_batches": [],
+      "candidate_routes": 0,
+      "candidate_trace_sha256": "f835b62accca6960ce21185429f815f4aaab1105544ef5b5e2f12e8504961671",
+      "classification": "MATCHED_SHADOW_COMPUTATIONAL_CONTRAST_NOT_BV_TRIAL",
+      "fixture_kind": "pe_admission_authored",
+      "grant_authorized": false,
+      "intervention": "LAB_DESIGNED_SOURCE_A_CMP_THRESHOLD_1_TO_3",
+      "negative_or_positive_efficacy_inferred": false,
+      "parent_i2ca_evidence_group_ids": [
+        "a0dabca3147618c044728a88d1126241bfccbf7e7f1f3c79560a66fadd115900",
+        "059a2ccd7b99dc203f1b61d60a5218e8dd20204e108c32401d83e49b175fb699"
+      ],
+      "parent_i2ca_route_indices": [
+        0,
+        1,
+        2
+      ],
+      "shared_edges": [
+        {
+          "delay_ticks": 2,
+          "source_channel": 7,
+          "source_node": "A",
+          "target_channel": 0,
+          "target_node": "B"
+        },
+        {
+          "delay_ticks": 2,
+          "source_channel": 7,
+          "source_node": "A",
+          "target_channel": 0,
+          "target_node": "B"
+        },
+        {
+          "delay_ticks": 3,
+          "source_channel": 7,
+          "source_node": "A",
+          "target_channel": 0,
+          "target_node": "B"
+        }
+      ],
+      "shared_initial_events": [
+        {
+          "channel": 0,
+          "node_id": "A",
+          "timestamp": 2
+        }
+      ],
+      "test_nodeid": "tests/test_pe_admission_v0.py::test_mapping_does_not_change_execution"
+    }
+  ],
+  "grant_authorized": false,
+  "independent_registered_matched_pairs_proven": 0,
+  "intervention_classification": "LAB_DESIGNED_TYPED_PROGRAM_ALTERNATIVE_NOT_FROZEN_SOURCE_AUTHORED",
+  "limits": [
+    "This records matched mechanistic shadow response to a declared intervention, not efficacy or BV trial-pair credit.",
+    "One baseline-vs-candidate comparison per authored network is NOT 8 independent trial pairs.",
+    "Repeated routes sharing a recipient batch are not independent credit votes.",
+    "The modified A program is constructed in research with frozen SPK ISA, not source-authored by the frozen test.",
+    "No global benefit score, local efficacy score, or verified treatment assignment exists.",
+    "No P authority, P write, sensor identity, or production permission."
+  ],
+  "minimum_independent_BV_trial_pairs_per_context": 8,
+  "native_original_BV_evaluate_credit_executed_on_bound_trials": false,
+  "native_original_compiler_and_runtime_executed": true,
+  "observed_original_networks": 2,
+  "original_route_occurrences": 5,
+  "parent_capsule_sha256": "82c59d83d9f7c72472528af7d19089613c10c2ce9b1b04d52065d76d00d18307",
+  "parent_i2ca_sha256": "6b4a6d37ae7242e99e42f3c5260cd6fc1deb37eda6901dabfa6b3232ef190135",
+  "postbaseline_head_custody": {
+    "BV_verdict_proven": false,
+    "P_state_mutated": false,
+    "architecture_promotion_allowed": false,
+    "baseline_commit": "8afde0cd2c7888ea7e26b70cad52ac232bb8e1da",
+    "baseline_to_current_added_paths_sha256": "6cf4289b0c4b4ad5c79a5d2f28216c7fe31107f089528bb1a80bc8fd7abbd949",
+    "baseline_to_current_additions_count": 1326,
+    "baseline_to_current_only_regular_file_additions": true,
+    "checkpoint_authority": "EXACT_BASELINE_COMMIT_TREE_NOT_NAME_PREFIX",
+    "compiler_head": "a76ebaae49373a4c6b66f94465d78dbf1cf19f80",
+    "current_native_head": "fe444194cf206d5b4f27465a0b7db7f6c126e459",
+    "grant_authorized": false,
+    "head_ancestry_not_used_as_frozen_identity_proof": true,
+    "inventory_to_baseline_added_paths_sha256": "b034434fc7cb11a7479534a77efed645fcc69e610182a232b48cd08e5e145fd0",
+    "inventory_to_baseline_additions_count": 80,
+    "inventory_to_baseline_git_blobs_match_worktree": true,
+    "inventory_to_baseline_only_pinned_tree_additions": true,
+    "original_R2_every_non_head_field_byte_identical": true,
+    "original_R2_frozen_tags_and_manifest_revalidated": true,
+    "original_R2_sha256": "80ef5f4df97aa6991cfe60f0640b1fc71e5adba68903616b2470010e0acd8c73",
+    "original_R3_sha256": "31a7ce562bcdd5d568600e55cc4019f938524cec895f7580321392094cd53a84",
+    "original_R3_test_source_receipts_verified": 4,
+    "original_inventory_sha256": "f7de25d617658d52750e48d8dea21ddd558d3c5cbe7fd9086661a03af9b09d98",
+    "original_native_head": "5af99cd1f4d603bf0c8e1557a6561c107765fdb5",
+    "previous_v0g_scope_defect": "UNBOUNDED_PREFIX_GUESSING_EXCLUDED_NATIVE_DUAL_NETWORK_I2A",
+    "provenance": "ORIGINAL_R2_FULL_REATTESTATION_CURRENT_HEAD_IN_MEMORY_ONLY",
+    "schema": "spk-lab-i2cbv-postbaseline-native-head-custody/v0h"
+  },
+  "predeclared_intervention": "A_ONLY_CORE_CMP_THRESHOLD_1_TO_3",
+  "predeclared_local_and_global_metric_proven": false,
+  "production_release": false,
+  "research_only": true,
+  "schema": "spk-lab-i2c-bv-native-matched-program-shadow/v0h",
+  "source_owned_BV_verdict_proven": false,
+  "status": "ORIGINAL_MATCHED_COMPILER_NETWORK_SHADOW_CONTRAST_PASS_NO_BV_VERDICT_V0H"
+}

@@ -1,0 +1,143 @@
+{
+  "A_PE_verdict_carried_on_actual_BV": true,
+  "C_recomputes_on_updated_P_same_scheduler": true,
+  "limits": [
+    "Versioned v1 fork, not frozen BV-v0e",
+    "Only binary C decisions 11/12 and A verdict emissions 21/22 supported",
+    "A corpus program encodes predeclared goal; host controls test cases",
+    "No physical sensor, runtime durability, cryptographic root of trust, N-node topology or generalizable learning",
+    "PE/_compute_local and resource validators execute from original frozen source on fwork",
+    "No original learning P authority promotion"
+  ],
+  "native_v1_research_learning": true,
+  "original_frozen_BV_learning": false,
+  "original_frozen_components_unchanged": true,
+  "proof": {
+    "frozen_parity": {
+      "frozen_PE_forward_and_BV_resource_parity": true,
+      "old_BV_deliveries": 4,
+      "old_batches": 6
+    },
+    "negative_controls": {
+      "BV_disabled": true,
+      "budget_exhausted_denied": true,
+      "dropout_no_P": true,
+      "earlier_C_not_rewritten": true,
+      "forged_verdict_denied": true,
+      "learning_disabled": true,
+      "positive_no_P": true,
+      "replay_denied": true,
+      "same_tick_bv_first": true,
+      "stale_denied": true,
+      "verify_denied": true
+    },
+    "positive_scenarios": {
+      "11->12": {
+        "A_verdicts": [
+          "NEGATIVE",
+          "POSITIVE"
+        ],
+        "BV_deliveries": 4,
+        "C_PE_reads": [
+          [
+            10,
+            0,
+            11,
+            [
+              11
+            ]
+          ],
+          [
+            30,
+            1,
+            12,
+            [
+              12
+            ]
+          ]
+        ],
+        "P_final": {
+          "choice": 12,
+          "domain": "P",
+          "grants": 1,
+          "owner": "C",
+          "version": 1
+        },
+        "P_grants": [
+          {
+            "A_PE_assessment_tick": 12,
+            "P_from": 0,
+            "P_to": 1,
+            "assessment_id": "a1",
+            "causal_occurrences": [
+              "r1"
+            ],
+            "choice_from": 11,
+            "choice_to": 12,
+            "packet_id": "bv2",
+            "source_A_verdict": "NEGATIVE",
+            "tick": 14
+          }
+        ],
+        "resource_digest": "ef9713d6746f9bff57c9bf735523903a2b84e4f1e6ea7ee294dc978a20899dba"
+      },
+      "12->11": {
+        "A_verdicts": [
+          "NEGATIVE",
+          "POSITIVE"
+        ],
+        "BV_deliveries": 4,
+        "C_PE_reads": [
+          [
+            10,
+            0,
+            12,
+            [
+              12
+            ]
+          ],
+          [
+            30,
+            1,
+            11,
+            [
+              11
+            ]
+          ]
+        ],
+        "P_final": {
+          "choice": 11,
+          "domain": "P",
+          "grants": 1,
+          "owner": "C",
+          "version": 1
+        },
+        "P_grants": [
+          {
+            "A_PE_assessment_tick": 12,
+            "P_from": 0,
+            "P_to": 1,
+            "assessment_id": "a1",
+            "causal_occurrences": [
+              "r1"
+            ],
+            "choice_from": 12,
+            "choice_to": 11,
+            "packet_id": "bv2",
+            "source_A_verdict": "NEGATIVE",
+            "tick": 14
+          }
+        ],
+        "resource_digest": "ef9713d6746f9bff57c9bf735523903a2b84e4f1e6ea7ee294dc978a20899dba"
+      }
+    }
+  },
+  "schema": "spk-native-learning-v1-first-same-scheduler-proof/v1",
+  "scope": "BOUNDED_THREE_NEURON_BINARY_PROGRAM_SWAP",
+  "source_pins": {
+    "spk_architecture_v1/causal_memory_v1c.py": "175362406d3598331ec72c42084030248910e0033ea17d87d0810e221c8d7617",
+    "spk_architecture_v1/pe_execution_v1b.py": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9"
+  },
+  "status": "NATIVE_V1_SAME_SCHEDULER_P_MUTATION_DEMONSTRATED"
+}

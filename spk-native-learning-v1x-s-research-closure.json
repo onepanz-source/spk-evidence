@@ -1,0 +1,101 @@
+{
+  "P_credit_transfer": false,
+  "architecture_promotion_allowed": false,
+  "capability_matrix": [
+    {
+      "classification": "externally_frozen_not_released_here",
+      "condition": "Use only independent existing frozen release gates; QRS does not retest them",
+      "id": "core_compiler_architecture"
+    },
+    {
+      "classification": "demonstrated_with_explicit_boundaries",
+      "condition": "Six P states, 24 graph edges; 20 source-interleaved histories; authored four-payload alphabet only",
+      "id": "P_four_payload_finite_projection"
+    },
+    {
+      "classification": "demonstrated_with_explicit_boundaries",
+      "condition": "Six grant-distinguishable states; lower bound three abstract bits, not physical memory",
+      "id": "grant_observer_minimality"
+    },
+    {
+      "classification": "demonstrated_destructive_only",
+      "condition": "Fixed two-event word distinguishes six starts but collapses them to P6/P8; no nondestructive read",
+      "id": "active_P_fingerprint"
+    },
+    {
+      "classification": "research_holdout_only",
+      "condition": "18 original native continuations; valid only when R has zero counterexamples",
+      "id": "native_four_step_prediction"
+    },
+    {
+      "classification": "demonstrated_software_provenance_only",
+      "condition": "GPG owner-signed policies and immutable published report hashes; producer not physically authenticated",
+      "id": "signed_owner_custody"
+    },
+    {
+      "classification": "not_authorized",
+      "condition": "No bank copies, credit reassignment, or ownership migration",
+      "id": "P_transfer_and_credit"
+    },
+    {
+      "classification": "not_demonstrated",
+      "condition": "Needs new native integration contract and tests beyond four authored computational inputs",
+      "id": "general_learning_and_live_stream"
+    },
+    {
+      "classification": "not_demonstrated",
+      "condition": "Needs separately authenticated device identity and loss/delay/jitter transport model",
+      "id": "hardware_sensor_identity"
+    },
+    {
+      "classification": "prohibited",
+      "condition": "Research closure does not change frozen SPK Architecture or runtime authority",
+      "id": "production_promotion"
+    }
+  ],
+  "closure_bundle_modifies_frozen_components": false,
+  "exit_decision": "FREEZE_BOUNDED_V1X_RESEARCH_NOT_PRODUCTION",
+  "future_development": [
+    {
+      "acceptance": "Read-only gate consumes QRS evidence; explicit ownership and deny-by-default learning intents",
+      "name": "research-to-host boundary",
+      "stage": "I1"
+    },
+    {
+      "acceptance": "Original compiler/network/runtime/BV/P cycle on >=2 configured networks, causal feedback and no implicit P transfer",
+      "name": "end-to-end native adaptation",
+      "stage": "I2"
+    },
+    {
+      "acceptance": "Typed independently authorized new input corpus; injected delay/drop/jitter; failures and recovery; no semantic promotion without proof",
+      "name": "robustness and new stimulus coverage",
+      "stage": "I3"
+    },
+    {
+      "acceptance": "Reproducible clean-checkout release, CLI observation, resource gates, independent signed validation",
+      "name": "lab v1 release",
+      "stage": "I4"
+    }
+  ],
+  "native_r_counterexample_count": 0,
+  "native_r_prediction_match_count": 18,
+  "parent_q_sha256": "fa66267c58292d958087fdeb5301ef760dce7c30a8cdf71c9fa8de2096e0e7db",
+  "parent_r_sha256": "21c1712131a81798a42fb50b80f4aa20d468f20abba9e3c9ebfac8906a1af4a1",
+  "permission_to_migrate_P": false,
+  "pinned_native_report_count": 16,
+  "production_release": false,
+  "published_manifest_count": 16,
+  "research_closure_complete": true,
+  "research_only": true,
+  "schema": "spk-native-learning-v1x-s-research-closure/v1",
+  "source_identity_authenticated": false,
+  "status": "V1X_S_RESEARCH_CLOSURE_V1_WITH_EXPLICIT_BOUNDARIES",
+  "unresolved": [
+    "Full multi-neuron learning propagation integration",
+    "Causal BV-to-P authorization in live host",
+    "Independent hardware sensor authentication",
+    "New input domain and transport impairments",
+    "Real streaming resource/contention robustness",
+    "Safe P migration and credit (separate formal authorization required)"
+  ]
+}

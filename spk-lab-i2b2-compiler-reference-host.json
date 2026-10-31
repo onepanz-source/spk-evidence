@@ -1,0 +1,72 @@
+{
+  "P_credit_transfer": false,
+  "P_writes_by_i2b2": 0,
+  "application_runtime_host_dispatch_proven": false,
+  "architecture_promotion_allowed": false,
+  "bounded_case_count": 3,
+  "cases": [
+    {
+      "batch_observations": 3,
+      "host_receipt_sha256": "44150fa199a989d63f6a19885870ee988b2e64d2c9ab5c1829a848fefdd2dc5b",
+      "id": "BASE_2N_3E",
+      "independent_oracle": "INDEPENDENT_PASS",
+      "manifest_sha256": "41eb6f71784670312e945944502d43adaa52dcfed886a1be494703214385ccdc",
+      "processed_batches": 3,
+      "processed_events": 4,
+      "reason": null,
+      "reference_receipt_sha256": "465ccd96dbf0355edd3945c8dd9d3277746ad44e75f2b4e9be044eea81c4fbc4",
+      "route_observations": 3,
+      "status": "CLOSED"
+    },
+    {
+      "batch_observations": 3,
+      "host_receipt_sha256": "4cf4950dcc5cbc22cea713b8c203f5b70e04ab7a315f6308b9153f1352a5ceba",
+      "id": "FRESH_2N_2E",
+      "independent_oracle": "INDEPENDENT_PASS",
+      "manifest_sha256": "a801a96fcf98f403edf9cd75dcf90a44c466daa4cd7ebbb136c8da41e533e958",
+      "processed_batches": 3,
+      "processed_events": 3,
+      "reason": null,
+      "reference_receipt_sha256": "843bd9c4d0e3ce8a9f012b2302bae592ceef8006be6e1aedbc799ebbc8abdf37",
+      "route_observations": 2,
+      "status": "CLOSED"
+    },
+    {
+      "batch_observations": null,
+      "host_receipt_sha256": "4eb468fac02dbf4c5113dcb8a6123db36f1173a0a8a16d4a1bde2b5fd7e7b1db",
+      "id": "LIMIT_2N_3E",
+      "independent_oracle": "LIMIT_PARITY",
+      "manifest_sha256": "41eb6f71784670312e945944502d43adaa52dcfed886a1be494703214385ccdc",
+      "processed_batches": null,
+      "processed_events": null,
+      "reason": "max_events",
+      "reference_receipt_sha256": null,
+      "route_observations": null,
+      "status": "LIMIT_REACHED"
+    }
+  ],
+  "closed_case_count": 2,
+  "compiler_network_reference_host_execution_performed": true,
+  "fresh_two_neuron_topology_executed": true,
+  "limit_case_count": 1,
+  "limitations": [
+    "Connects frozen C1/C2 to 24p NetworkReferenceHostV0, NOT single-root ApplicationRuntimeHostV0",
+    "24p uses frozen 24n independent network oracle; 24m cross-replay shares frozen Network v0 runtime",
+    "Three bounded two-neuron scenarios; not general host authority, continuous execution or live BV-to-P learning",
+    "LIMIT_REACHED offers no successful receipt or atomic rollback guarantee",
+    "27 captured source hashes pin selected code, not the full transitive dependency closure",
+    "No P writes or transfer, physical source authentication or production promotion"
+  ],
+  "live_BV_to_P_authorization_proven": false,
+  "new_additive_adapter_implemented": true,
+  "next_acceptance": "I2b.3: reconcile 24p network reference path with original owned application runtime host/launcher without bypassing custody; then I2c separately addresses BV-to-P authority",
+  "original_24m_cross_replay_performed": true,
+  "original_independent_24n_oracle_used": true,
+  "parent_i2b1_sha256": "07eccc837829283ace617e4e0cb6b3f84345452348da19f7b98bccc4f94b4cf3",
+  "permission_to_migrate_P": false,
+  "physical_sensor_authenticated": false,
+  "production_release": false,
+  "research_only": true,
+  "schema": "spk-lab-i2b2-compiler-reference-host-bridge/v1",
+  "status": "SPK_LAB_I2B2_COMPILER_REFERENCE_HOST_NATIVE_RESEARCH_PASS"
+}

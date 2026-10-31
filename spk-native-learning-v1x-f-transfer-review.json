@@ -1,0 +1,193 @@
+{
+  "P_credit_transfer": false,
+  "architecture_promotion_allowed": false,
+  "candidate_full_bank_copies": 0,
+  "candidates": [
+    {
+      "context": "ctx0",
+      "decision": "DENY_COHORT_MEMBERSHIP_DRIFT",
+      "full_bank_copy_permission": false,
+      "membership_equal": false,
+      "reason": "Whole P bank contains history from a different producer set",
+      "source_group": "g0",
+      "source_members": [
+        "p0",
+        "p1"
+      ],
+      "target_group": "g0",
+      "target_members": [
+        "p0"
+      ]
+    },
+    {
+      "context": "ctx0",
+      "decision": "DENY_COHORT_MEMBERSHIP_DRIFT",
+      "full_bank_copy_permission": false,
+      "membership_equal": false,
+      "reason": "Whole P bank contains history from a different producer set",
+      "source_group": "g0",
+      "source_members": [
+        "p0",
+        "p1"
+      ],
+      "target_group": "g1",
+      "target_members": [
+        "p1",
+        "p2"
+      ]
+    },
+    {
+      "context": "ctx0",
+      "decision": "DENY_COHORT_MEMBERSHIP_DRIFT",
+      "full_bank_copy_permission": false,
+      "membership_equal": false,
+      "reason": "Whole P bank contains history from a different producer set",
+      "source_group": "g1",
+      "source_members": [
+        "p2"
+      ],
+      "target_group": "g0",
+      "target_members": [
+        "p0"
+      ]
+    },
+    {
+      "context": "ctx0",
+      "decision": "DENY_COHORT_MEMBERSHIP_DRIFT",
+      "full_bank_copy_permission": false,
+      "membership_equal": false,
+      "reason": "Whole P bank contains history from a different producer set",
+      "source_group": "g1",
+      "source_members": [
+        "p2"
+      ],
+      "target_group": "g1",
+      "target_members": [
+        "p1",
+        "p2"
+      ]
+    }
+  ],
+  "candidates_rejected": 4,
+  "independent_authority_authenticated": false,
+  "limitations": [
+    "A producer-attributed grant ledger is not separable native P state",
+    "Review-only: no selective transfer performed, no native database write",
+    "Owner signature authenticates policy bytes, not physical sensor identities",
+    "Privileged host may bypass additive wrappers",
+    "Changes to cohort membership require a separate causal state reconstruction proof"
+  ],
+  "native_P_banks_written": false,
+  "owner_fingerprint": "6CB89264EE8CAE4915522B7B22087AC39BDFFD22",
+  "predecessor_ledger": {
+    "attribution": {
+      "p0": {
+        "observed_grants": 4,
+        "receipt_count": 3,
+        "receipt_sha256": [
+          "28ed3259bbf7df700ecf8b206ce18f0fd0904d198031da4974560c7afd9c2d71",
+          "eac0a9e8e10ed8f949e4c260ea976c5258d1c3403ffc24946fa4869864cc1a43",
+          "c0a35576c8a9930d64662aee444ef61ec1d55e2c894834b145670f8f2b3f2191"
+        ]
+      },
+      "p1": {
+        "observed_grants": 4,
+        "receipt_count": 3,
+        "receipt_sha256": [
+          "16dcb356b860b04de03fb46c4603d94ec4683b921b34beed0ce260456b075105",
+          "ef0fd9a76141c1eedaf86f241cb8458f33b9c8fe62f0925859cc489fd0440588",
+          "b71dbc152c934a68e7ad4ad8cfacb5ec5c58e6a8319eb41809671b16efb2d6c4"
+        ]
+      },
+      "p2": {
+        "observed_grants": 1,
+        "receipt_count": 3,
+        "receipt_sha256": [
+          "1e56f9e0d709e71c337f4b5907bcbd77657a15c349b962a5055e0aa1cf57330a",
+          "93f1ac6ed79108f93354c1cc7c6819f9dc2544b0f1e74427d0a6ae50999fe9e7",
+          "8f676d976578c982440ae5b853e7725d6103d1d74003710851d93311fd74329f"
+        ]
+      }
+    },
+    "group_epoch_counts": {
+      "g0": 6,
+      "g1": 3
+    },
+    "group_final_P": {
+      "g0": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "g1": {
+        "choice": 12,
+        "domain": "P",
+        "grants": 1,
+        "owner": "C",
+        "version": 1
+      }
+    },
+    "note": "Observed grants by producer do not define independently reconstructable producer P state"
+  },
+  "research_only": true,
+  "schema": "spk-native-learning-v1x-f-transfer-review/v1",
+  "signed_review_policy_sha256": "3e7d5f172664ab9b6df0e652fc8d359f0a5c58d5505ba77ae7e4a7dcce8fd1ac",
+  "source_identity_authenticated": false,
+  "source_v1x_d_sha256": "1e2115526be911641d4e6ca1459ac568c8565758aeaa260763e6e1184ffd33b5",
+  "source_v1x_e_sha256": "7987b9ed4471eba512f7d41ad15865064f047f41e426308b939f43a5ac140747",
+  "status": "V1X_F_OWNER_SIGNED_P_PROVENANCE_REVIEW_RESEARCH_PASS",
+  "successor_ledger": {
+    "attribution": {
+      "p0": {
+        "observed_grants": 3,
+        "receipt_count": 3,
+        "receipt_sha256": [
+          "28ed3259bbf7df700ecf8b206ce18f0fd0904d198031da4974560c7afd9c2d71",
+          "e1a37f6d368918bd175d2158a4e339b85650296af15e08370e1894c524992765",
+          "f69c2abedcf6b22b068be8ab601c8213aa06170ea6aace7c509213c61833f42a"
+        ]
+      },
+      "p1": {
+        "observed_grants": 1,
+        "receipt_count": 3,
+        "receipt_sha256": [
+          "4f0ecf8c03b2d0e88dd91b063074e4c3abfe8b58fd48311f4f590b0bb9573e14",
+          "a943b3a815a2cd924f56d0b08736041a84ac982ab0baaff20f2b21de350131a9",
+          "65e82f67099545c6e2de56bea0ef87e3656acf47a195374045f8451fb6fffcca"
+        ]
+      },
+      "p2": {
+        "observed_grants": 0,
+        "receipt_count": 3,
+        "receipt_sha256": [
+          "9294d0c4c8702e6d67f5933d183e767a99cddd45ac26d24f68461ae41bd5340a",
+          "034018bc6c437065cfeeb7f58c69e4b86e7dd912889208dd49c36c5cd0abb07f",
+          "7b2719e43ffe8593946d790b626335ab9e1b1dad9b09e4827c5b5c0b7a244258"
+        ]
+      }
+    },
+    "group_epoch_counts": {
+      "g0": 3,
+      "g1": 6
+    },
+    "group_final_P": {
+      "g0": {
+        "choice": 11,
+        "domain": "P",
+        "grants": 3,
+        "owner": "C",
+        "version": 3
+      },
+      "g1": {
+        "choice": 12,
+        "domain": "P",
+        "grants": 1,
+        "owner": "C",
+        "version": 1
+      }
+    },
+    "note": "Observed grants by producer do not define independently reconstructable producer P state"
+  }
+}

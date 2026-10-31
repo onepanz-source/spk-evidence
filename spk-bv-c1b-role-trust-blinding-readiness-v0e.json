@@ -1,0 +1,77 @@
+{
+  "P_state_mutated": false,
+  "actual_ground_truth_attested": false,
+  "approved_actors": 0,
+  "approved_external_targets": 0,
+  "architecture_promotion_allowed": false,
+  "blinding_enforcement_proven": false,
+  "blinding_policy_declared": true,
+  "cryptographic_trust_implemented": false,
+  "eligible_trial_pairs": 0,
+  "grant_authorized": false,
+  "label_provenance_missing_fields": [
+    "adjudication_protocol_sha256",
+    "annotation_protocol_sha256",
+    "independent_reviewer_receipt",
+    "label_schema_sha256",
+    "label_source_kind",
+    "negative_examples_dataset_sha256",
+    "positive_examples_dataset_sha256",
+    "pretreatment_freeze_receipt",
+    "sampling_frame_sha256",
+    "source_collection_timestamp",
+    "source_generator_version_sha256",
+    "source_system_or_collection",
+    "target_approved_by_author"
+  ],
+  "mandatory_distinct_principal_constraints_count": 8,
+  "native_BV_verdict_proven": false,
+  "parent_v0d_manifest_sha256": "9486451b5ee396100916afcd490ccc9b9b765eb118b4de52aac00b19fb4fdbf7",
+  "parent_v0d_sha256": "c1a055df4a44f4f6f08ea340c5d61b106bc87a04d364a709feb7e2183b53f49b",
+  "positive_negative_label_provenance_defined_as_required": true,
+  "production_release": false,
+  "protocol_sha256": "04aa0ab116c5f12a8f4386cc48f852e6dada79d921664a52bc7bc6b4d4e3b1a5",
+  "receiver_feedback": "ABSTAIN_NULL",
+  "research_only": true,
+  "research_trust_mode": "LOCAL_SHA256_PINNED_EXCLUSIVE_CREATE_ONLY",
+  "role_mapping": [
+    {
+      "functional_anchor": "UNASSIGNED_EXTERNAL_TASK_OWNER",
+      "principal_authenticated": false,
+      "role": "target_author"
+    },
+    {
+      "functional_anchor": "UNASSIGNED_INDEPENDENT_REVIEWER",
+      "principal_authenticated": false,
+      "role": "target_reviewer"
+    },
+    {
+      "functional_anchor": "UNASSIGNED_AUTHENTIC_RECEIVER_B_WITNESS",
+      "principal_authenticated": false,
+      "role": "receiver_feedback_authority"
+    },
+    {
+      "functional_anchor": "FEDORA_NATIVE_GATE_PROCESS_OBSERVED_NOT_PERSON_AUTHENTICATED",
+      "principal_authenticated": false,
+      "role": "trial_operator"
+    },
+    {
+      "functional_anchor": "LOCAL_SHA_PINNED_EXCLUSIVE_CREATE_PIPELINE_NOT_WORM",
+      "principal_authenticated": false,
+      "role": "evidence_custodian"
+    },
+    {
+      "functional_anchor": "ORIGINAL_BV_EVALUATE_CREDIT_SOURCE_AUDITED_NOT_APPROVED_PRINCIPAL",
+      "principal_authenticated": false,
+      "role": "bv_evaluator"
+    },
+    {
+      "functional_anchor": "UNASSIGNED_NEVER_INVOKED",
+      "principal_authenticated": false,
+      "role": "grant_issuer"
+    }
+  ],
+  "schema": "spk-bv-c1b-roles-trust-blinding-label-lineage-readiness/v0e",
+  "sha_chain_is_not_signature": true,
+  "status": "C1B_V0E_ROLE_TRUST_BLINDING_AND_LABEL_PROVENANCE_DESIGN_PASS_AUTHORITY_HOLD"
+}

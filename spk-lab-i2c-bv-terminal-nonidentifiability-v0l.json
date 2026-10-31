@@ -1,0 +1,116 @@
+{
+  "BV_trial_pair_eligibility_proven": false,
+  "BV_verdict_proven": false,
+  "P_credit_transfer": false,
+  "P_state_mutated": false,
+  "architecture_promotion_allowed": false,
+  "baseline_commit": "8afde0cd2c7888ea7e26b70cad52ac232bb8e1da",
+  "bv_original_tests_smoke_pass_proven": true,
+  "classification": "CLOSED_NEGATIVE_IDENTIFIABILITY_FOR_EXISTING_EVIDENCE_ONLY",
+  "contexts": [
+    {
+      "attribution_scope": "AGGREGATE_OR_UNIDENTIFIED",
+      "authored_input_multiplicity": 2,
+      "factorial_computational_cells": 9,
+      "fixture_kind": "pipeline_inputs",
+      "observed_route_matrix": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "original_BV_minimum_pairs_per_context": 8,
+      "original_recipient_groups": 1,
+      "original_route_occurrences": 2,
+      "recipient_preference_signed_or_metric_bound": false,
+      "registered_independent_BV_pairs": 0,
+      "source_owned_verdict_eligible": false,
+      "source_owner_logical": "A"
+    },
+    {
+      "attribution_scope": "AGGREGATE_OR_UNIDENTIFIED",
+      "authored_input_multiplicity": 1,
+      "factorial_computational_cells": 9,
+      "fixture_kind": "pe_admission_authored",
+      "observed_route_matrix": [
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          3,
+          3,
+          0
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "original_BV_minimum_pairs_per_context": 8,
+      "original_recipient_groups": 2,
+      "original_route_occurrences": 3,
+      "recipient_preference_signed_or_metric_bound": false,
+      "registered_independent_BV_pairs": 0,
+      "source_owned_verdict_eligible": false,
+      "source_owner_logical": "A"
+    }
+  ],
+  "factorial_computational_cells": 18,
+  "future_new_cohort_allowed_as_separate_predeclared_research": true,
+  "grant_authorized": false,
+  "native_BV_evaluate_credit_invoked_on_causally_bound_trials": false,
+  "negative_closure_reasons": [
+    "ZERO_REGISTERED_INDEPENDENT_MATCHED_PAIRS_PER_CONTEXT_VS_ORIGINAL_MINIMUM_EIGHT",
+    "RECIPIENT_PREFERENCE_AND_LOCAL_GLOBAL_UTILITY_METRICS_UNDEFINED",
+    "FACTORIAL_CELLS_AND_SHARED_ROUTES_NOT_INDEPENDENT_TRIALS",
+    "NO_BV_EVALUATE_CREDIT_ON_CAUSALLY_BOUND_TRIALS"
+  ],
+  "next_new_cohort_prerequisites": [
+    "SAMPLED_CONTEXTS_AND_PRE_REGISTERED_INDEPENDENT_MATCHED_PAIRS",
+    "ORIGINAL_BV_TYPED_DOCUMENT_CONSTRUCTORS",
+    "VERIFIED_LOCAL_AND_GLOBAL_UTILITY_AND_COST_POLICIES",
+    "CUSTODIED_TREATMENT_ASSIGNMENT_AND_SEED_POLICY",
+    "RECEIVER_ATTRIBUTION_AND_AGGREGATE_ROUTE_SCOPE",
+    "NO_GRANT_OR_P_MUTATION"
+  ],
+  "not_inferred": [
+    "BV_UNIVERSALLY_IMPOSSIBLE",
+    "SILENCE_IS_GOOD_OR_BAD",
+    "SOURCE_A_EFFICACY_OR_PREFERENCE",
+    "FUTURE_NEW_COHORT_INVALID"
+  ],
+  "observed_mechanistic_contrast_proven": true,
+  "original_BV_minimum_pairs_per_context": 8,
+  "original_BV_module_sha256": "34f3c52d5e36109e0fec8705e4c0c93780a24056df6cfdde789706cafe676f80",
+  "parent_reports_sha256": {
+    "spk-lab-i2c-a-route-recipient-causal-observation.json": "6b4a6d37ae7242e99e42f3c5260cd6fc1deb37eda6901dabfa6b3232ef190135",
+    "spk-lab-i2c-bv-input-factorial-v0k.json": "4049fab3c3e41af552c694edb91642d7d3f5707f58234373e5d5686572201330",
+    "spk-lab-i2c-bv-matched-original-shadow-v0h.json": "fbc7a284b8aaa8cc203edece43283b44ff0dfef91e2a49f6060f5723f9050c6c",
+    "spk-lab-i2c-bv-original-counterfactual-source-capsule-v0c.zip": "82c59d83d9f7c72472528af7d19089613c10c2ce9b1b04d52065d76d00d18307",
+    "spk-lab-i2c-bv-original-smoke-causal-compat-v0b.json": "34ce371f81a265ad6e05dba63f5fbbc8a160f4aff02447a1ccf3e950e0d6f9bd",
+    "spk-lab-i2c-bv-original-threshold-sensitivity-v0j.json": "863238af09f5d9580e9d30f183f12050c0a16aa9a53c04a75ec174b2f96bc5a4"
+  },
+  "production_release": false,
+  "recipient_batch_groups": 3,
+  "registered_independent_matched_BV_pairs_per_context": 0,
+  "research_only": true,
+  "route_occurrences": 5,
+  "schema": "spk-lab-i2c-bv-terminal-evidence-nonidentifiability/v0l",
+  "source_authored_network_contexts": 2,
+  "source_owned_BV_verdict_proven": false,
+  "status": "TERMINAL_EVIDENCE_SCOPE_NONIDENTIFIABLE_NO_BV_VERDICT"
+}

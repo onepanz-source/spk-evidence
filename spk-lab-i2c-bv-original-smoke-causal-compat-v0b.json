@@ -1,0 +1,181 @@
+{
+  "BV_grant_authorized": false,
+  "BV_verdict_proven": false,
+  "P_credit_transfer": false,
+  "P_state_mutated": false,
+  "P_transfer": false,
+  "architecture_promotion_allowed": false,
+  "baseline_commit": "8afde0cd2c7888ea7e26b70cad52ac232bb8e1da",
+  "conclusion": "Native BV smoke is independent of I2c-A; original BV trial pairs and matched counterfactual causal binding are unproven.",
+  "groups_verified": 3,
+  "native_BV_invoked_on_I2CA_causally_bound_document": false,
+  "native_BV_invoked_on_source_authored_noncausal_test_documents": true,
+  "native_original_BV_functional_smoke": {
+    "native_test_suite_passed": true,
+    "original_entrypoint_called_by_source_tests": true,
+    "original_smoke_is_not_i2ca_causal_verdict": true,
+    "test_path": "tests/test_spk_bv_contextual_credit_v0a.py",
+    "test_sha256": "27569208d90924a603f8da00635779848c6f4cef0d3a4963e4e89145dbd2c015"
+  },
+  "next_requirement": "Use original BV source-authored typed trial constructors; execute matched baseline/candidate against I2c-A contexts with no dropped groups and independent witnesses; retain aggregate attribution.",
+  "original_BV_source_identity": {
+    "all_accessed_literal_keys": [
+      "alpha_ppm",
+      "baseline",
+      "baseline_commit",
+      "baseline_sha256",
+      "baseline_tag",
+      "candidate",
+      "candidate_sha256",
+      "context_id",
+      "contexts",
+      "cost",
+      "cost_weights",
+      "extractor_sha256",
+      "feedback",
+      "global_score",
+      "initial_state_sha256",
+      "input_sha256",
+      "max_cost_per_arm",
+      "max_mean_extra_cost",
+      "max_pairs",
+      "max_receivers",
+      "minimum_mean_gain",
+      "minimum_pairs",
+      "node_id",
+      "policy",
+      "pre_treatment_features_sha256",
+      "program",
+      "program_sha256",
+      "schema",
+      "seed",
+      "topology_sha256",
+      "trace_sha256",
+      "trial_pairs"
+    ],
+    "doc_direct_literal_keys": [
+      "baseline_commit",
+      "baseline_tag",
+      "contexts",
+      "policy",
+      "program",
+      "schema",
+      "topology_sha256",
+      "trial_pairs"
+    ],
+    "native_head": "478e7cbe2817e1d760c6d48c7a30d9ab231bacd9",
+    "original_BV": "34f3c52d5e36109e0fec8705e4c0c93780a24056df6cfdde789706cafe676f80",
+    "original_smoke_test_names": [
+      "test_five_predeclared_outcomes",
+      "test_no_side_effects_on_input"
+    ],
+    "original_test": "27569208d90924a603f8da00635779848c6f4cef0d3a4963e4e89145dbd2c015",
+    "original_test_file": "tests/test_spk_bv_contextual_credit_v0a.py",
+    "source_authored_test_document_builders": [
+      {
+        "called_functions_in_original_builder_AST": [
+          "change",
+          "deepcopy",
+          "evaluate_credit",
+          "raises"
+        ],
+        "dict_keys_in_original_builder_AST": [],
+        "line": 20,
+        "name": "fail",
+        "not_a_causal_I2CA_binding": true,
+        "source_file": "tests/test_spk_bv_contextual_credit_v0a.py"
+      },
+      {
+        "called_functions_in_original_builder_AST": [
+          "evaluate_credit"
+        ],
+        "dict_keys_in_original_builder_AST": [],
+        "line": 27,
+        "name": "rows",
+        "not_a_causal_I2CA_binding": true,
+        "source_file": "tests/test_spk_bv_contextual_credit_v0a.py"
+      }
+    ],
+    "source_call_signature": [
+      "doc"
+    ]
+  },
+  "parent_i2ca_sha256": "6b4a6d37ae7242e99e42f3c5260cd6fc1deb37eda6901dabfa6b3232ef190135",
+  "parent_v0a_sha256": "b7c480f35b1232cadc278fb5590d102d9adfdcf6e3172c89b95856388ca1826c",
+  "production_release": false,
+  "research_only": true,
+  "route_occurrences_preserved": 5,
+  "schema": "spk-lab-i2c-bv-original-bv-smoke-causal-compatibility/v0b",
+  "source_observation_groups": [
+    {
+      "attribution_scope": "AGGREGATE_OR_UNIDENTIFIED",
+      "evidence_group_id": "02de646a7403a836fd5ad53e3b1fed5c6d355e10a620b063ac89143ec5937564",
+      "fixture_kind": "pipeline_inputs",
+      "individually_identified_route_credit": false,
+      "missing_proof": [
+        "original_BV_typed_trial_pair_from_same_context",
+        "baseline_and_candidate_original_native_execution",
+        "matching_pre_treatment_state_and_cost_policy",
+        "independent_causal_attribution"
+      ],
+      "native_BV_input_bound_to_this_group": false,
+      "network_ir_sha256": "493ae8242dead99ce065c7f444c5945e4b63a66bfd8aca60df56ed82a7e855b6",
+      "original_BV_verdict_for_this_group": false,
+      "recipient_batch_sha256": "242c9eab5b7816862bc298565d998724299bee959fcc8bd58b141fa9087eeb16",
+      "recipient_observation_in_i2ca": true,
+      "route_indices": [
+        0,
+        1
+      ],
+      "route_multiplicity": 2,
+      "source_owner_logical": "A"
+    },
+    {
+      "attribution_scope": "AGGREGATE_OR_UNIDENTIFIED",
+      "evidence_group_id": "a0dabca3147618c044728a88d1126241bfccbf7e7f1f3c79560a66fadd115900",
+      "fixture_kind": "pe_admission_authored",
+      "individually_identified_route_credit": false,
+      "missing_proof": [
+        "original_BV_typed_trial_pair_from_same_context",
+        "baseline_and_candidate_original_native_execution",
+        "matching_pre_treatment_state_and_cost_policy",
+        "independent_causal_attribution"
+      ],
+      "native_BV_input_bound_to_this_group": false,
+      "network_ir_sha256": "4b82fcfd4f053290acbf1834dc48ddb3ce93b58e2f5289feffa9b02a5da5412a",
+      "original_BV_verdict_for_this_group": false,
+      "recipient_batch_sha256": "242c9eab5b7816862bc298565d998724299bee959fcc8bd58b141fa9087eeb16",
+      "recipient_observation_in_i2ca": true,
+      "route_indices": [
+        0,
+        1
+      ],
+      "route_multiplicity": 2,
+      "source_owner_logical": "A"
+    },
+    {
+      "attribution_scope": "AGGREGATE_OR_UNIDENTIFIED",
+      "evidence_group_id": "059a2ccd7b99dc203f1b61d60a5218e8dd20204e108c32401d83e49b175fb699",
+      "fixture_kind": "pe_admission_authored",
+      "individually_identified_route_credit": false,
+      "missing_proof": [
+        "original_BV_typed_trial_pair_from_same_context",
+        "baseline_and_candidate_original_native_execution",
+        "matching_pre_treatment_state_and_cost_policy",
+        "independent_causal_attribution"
+      ],
+      "native_BV_input_bound_to_this_group": false,
+      "network_ir_sha256": "4b82fcfd4f053290acbf1834dc48ddb3ce93b58e2f5289feffa9b02a5da5412a",
+      "original_BV_verdict_for_this_group": false,
+      "recipient_batch_sha256": "a00ba6c17b959b5a51b4b406f5c6d5e99db8cdeb0f5549c1a5bf2fb1aecc829f",
+      "recipient_observation_in_i2ca": true,
+      "route_indices": [
+        2
+      ],
+      "route_multiplicity": 1,
+      "source_owner_logical": "A"
+    }
+  ],
+  "source_owned_i2ca_BV_verdict_proven": false,
+  "status": "I2CBV_V0B_ORIGINAL_BV_FUNCTIONAL_SMOKE_PASS_CAUSAL_BINDING_HOLD"
+}

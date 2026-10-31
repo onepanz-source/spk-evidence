@@ -1,0 +1,79 @@
+{
+  "P_state_mutated": false,
+  "approved_actor_count": 0,
+  "approved_external_target_count": 0,
+  "architecture_promotion_allowed": false,
+  "blockers": [
+    "EXTERNAL_TASK_TARGET_AND_POSITIVE_NEGATIVE_LABELS_MISSING",
+    "TARGET_AUTHOR_NOT_AUTHENTICATED",
+    "INDEPENDENT_REVIEWER_NOT_AUTHENTICATED",
+    "RECEIVER_B_LOGICAL_ID_NOT_AUTHENTICATED",
+    "SIGNED_METRICS_AND_COSTS_MISSING",
+    "INDEPENDENT_TRIAL_ASSIGNMENT_AND_RESET_NOT_ATTESTED"
+  ],
+  "bv_grant_authorized": false,
+  "eligible_bv_pairs": 0,
+  "external_target_approved": false,
+  "network_contexts": 2,
+  "original_bv_source_sha256": "34f3c52d5e36109e0fec8705e4c0c93780a24056df6cfdde789706cafe676f80",
+  "original_bv_verdict_proven": false,
+  "parent_c1b_v0c_sha256": "dde05a6768cdd460d282fe5ab74c517f4fe1da8ea1e7663a684a3444b8eb0b3a",
+  "parent_c1b_v0c_source_manifest_sha256": "cd45c64c5d87d69c0b4437075e74c66116445ab11ebbfce368f5095f5416d469",
+  "production_release": false,
+  "protocol_sha256": "f5780393b74157746a0de39feda549d15e93449a9dbb14d4cc957cbb681d05e3",
+  "receiver_feedback_policy": "ABSTAIN_NULL_UNTIL_AUTHENTIC_B_WITNESS",
+  "registered_trial_pairs": 0,
+  "required_roles": [
+    "target_author",
+    "target_reviewer",
+    "receiver_feedback_authority",
+    "trial_operator",
+    "evidence_custodian",
+    "bv_evaluator",
+    "grant_issuer"
+  ],
+  "required_separation_constraints": [
+    [
+      "target_author",
+      "trial_operator"
+    ],
+    [
+      "target_author",
+      "target_reviewer"
+    ],
+    [
+      "target_reviewer",
+      "trial_operator"
+    ],
+    [
+      "target_reviewer",
+      "bv_evaluator"
+    ],
+    [
+      "trial_operator",
+      "bv_evaluator"
+    ],
+    [
+      "bv_evaluator",
+      "grant_issuer"
+    ],
+    [
+      "evidence_custodian",
+      "grant_issuer"
+    ],
+    [
+      "receiver_feedback_authority",
+      "trial_operator"
+    ]
+  ],
+  "research_only": true,
+  "reviewer_approval_count": 0,
+  "schema": "spk-bv-c1b-independent-target-authority-readiness/v0d",
+  "signed_metric_count": 0,
+  "status": "C1B_V0D_INDEPENDENT_TARGET_GOVERNANCE_DESIGN_PASS_AUTHORITY_HOLD",
+  "target_rule": "INDEPENDENT_PRETREATMENT_GOLD_LABELS_NOT_BASELINE_OUTPUT",
+  "topology_proposal_sha256": [
+    "ff99b00b7da5a9a6ba99a30a36fc5b32cc56a8f2e9a8c3a563b1606844b113a3",
+    "f7cef3c7fff80ce2fb5ddaf8ea0b3efd3276fc6afa60f693811d9fa48f56d761"
+  ]
+}

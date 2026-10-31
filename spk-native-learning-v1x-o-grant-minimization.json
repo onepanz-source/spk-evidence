@@ -1,0 +1,392 @@
+{
+  "P_credit_transfer": false,
+  "action_alias_classes": [
+    [
+      "p0-e0",
+      "p0-e1"
+    ],
+    [
+      "p0-e2"
+    ],
+    [
+      "p1-e0"
+    ]
+  ],
+  "all_15_pairs_distinguishable_within_two_actions": true,
+  "all_pair_shortest_grant_witnesses": [
+    {
+      "grants_left": [
+        2
+      ],
+      "grants_right": [
+        1
+      ],
+      "minimal_length": 1,
+      "states": [
+        3,
+        4
+      ],
+      "word": [
+        "p0-e0"
+      ]
+    },
+    {
+      "grants_left": [
+        2
+      ],
+      "grants_right": [
+        0
+      ],
+      "minimal_length": 1,
+      "states": [
+        3,
+        5
+      ],
+      "word": [
+        "p0-e0"
+      ]
+    },
+    {
+      "grants_left": [
+        2,
+        1
+      ],
+      "grants_right": [
+        2,
+        0
+      ],
+      "minimal_length": 2,
+      "states": [
+        3,
+        6
+      ],
+      "word": [
+        "p0-e0",
+        "p0-e2"
+      ]
+    },
+    {
+      "grants_left": [
+        2
+      ],
+      "grants_right": [
+        1
+      ],
+      "minimal_length": 1,
+      "states": [
+        3,
+        7
+      ],
+      "word": [
+        "p0-e0"
+      ]
+    },
+    {
+      "grants_left": [
+        2
+      ],
+      "grants_right": [
+        0
+      ],
+      "minimal_length": 1,
+      "states": [
+        3,
+        8
+      ],
+      "word": [
+        "p0-e0"
+      ]
+    },
+    {
+      "grants_left": [
+        1
+      ],
+      "grants_right": [
+        0
+      ],
+      "minimal_length": 1,
+      "states": [
+        4,
+        5
+      ],
+      "word": [
+        "p0-e0"
+      ]
+    },
+    {
+      "grants_left": [
+        1
+      ],
+      "grants_right": [
+        2
+      ],
+      "minimal_length": 1,
+      "states": [
+        4,
+        6
+      ],
+      "word": [
+        "p0-e0"
+      ]
+    },
+    {
+      "grants_left": [
+        2
+      ],
+      "grants_right": [
+        1
+      ],
+      "minimal_length": 1,
+      "states": [
+        4,
+        7
+      ],
+      "word": [
+        "p0-e2"
+      ]
+    },
+    {
+      "grants_left": [
+        1
+      ],
+      "grants_right": [
+        0
+      ],
+      "minimal_length": 1,
+      "states": [
+        4,
+        8
+      ],
+      "word": [
+        "p0-e0"
+      ]
+    },
+    {
+      "grants_left": [
+        0
+      ],
+      "grants_right": [
+        2
+      ],
+      "minimal_length": 1,
+      "states": [
+        5,
+        6
+      ],
+      "word": [
+        "p0-e0"
+      ]
+    },
+    {
+      "grants_left": [
+        0
+      ],
+      "grants_right": [
+        1
+      ],
+      "minimal_length": 1,
+      "states": [
+        5,
+        7
+      ],
+      "word": [
+        "p0-e0"
+      ]
+    },
+    {
+      "grants_left": [
+        1
+      ],
+      "grants_right": [
+        0
+      ],
+      "minimal_length": 1,
+      "states": [
+        5,
+        8
+      ],
+      "word": [
+        "p0-e2"
+      ]
+    },
+    {
+      "grants_left": [
+        2
+      ],
+      "grants_right": [
+        1
+      ],
+      "minimal_length": 1,
+      "states": [
+        6,
+        7
+      ],
+      "word": [
+        "p0-e0"
+      ]
+    },
+    {
+      "grants_left": [
+        2
+      ],
+      "grants_right": [
+        0
+      ],
+      "minimal_length": 1,
+      "states": [
+        6,
+        8
+      ],
+      "word": [
+        "p0-e0"
+      ]
+    },
+    {
+      "grants_left": [
+        1
+      ],
+      "grants_right": [
+        0
+      ],
+      "minimal_length": 1,
+      "states": [
+        7,
+        8
+      ],
+      "word": [
+        "p0-e0"
+      ]
+    }
+  ],
+  "alphabet": [
+    "p0-e0",
+    "p0-e1",
+    "p0-e2",
+    "p1-e0"
+  ],
+  "architecture_promotion_allowed": false,
+  "crash_replay_byte_equal": true,
+  "grant_delayed_distinguishing_pair": {
+    "grants_left": [
+      2,
+      1
+    ],
+    "grants_right": [
+      2,
+      0
+    ],
+    "minimal_length": 2,
+    "states": [
+      3,
+      6
+    ],
+    "word": [
+      "p0-e0",
+      "p0-e2"
+    ]
+  },
+  "grant_observer_pair_count": 15,
+  "grants_only_observer": true,
+  "independent_native_witness_byte_equal": true,
+  "limitations": [
+    "Finite observer-relative certificate over six observed P banks, not global PE/BV/P minimization",
+    "Three-bit lower bound concerns the six abstract observed grant states, NOT physical memory or implementation",
+    "p0-e0 and p0-e1 are equivalent only in the bounded authored computational alphabet",
+    "Signed source custody is not authentication of physical sensors",
+    "Original native replay only in disposable scratch SQLite; no historic P writes or migration"
+  ],
+  "lower_bound_state_bits": 3,
+  "minimal_state_count_under_grant_observer": 6,
+  "native_derived_grant_edges": 24,
+  "native_predecessor_banks_written": false,
+  "native_ticks_total": 3120,
+  "native_witness_count": 2,
+  "native_witnesses": [
+    {
+      "P_after_second_version": 6,
+      "P_grants": [
+        2,
+        1
+      ],
+      "initial_P_version": 3,
+      "prefix": "111000",
+      "probes": [
+        "p0-e0",
+        "p0-e2"
+      ],
+      "response_sha256": [
+        "68e2a6e82a90ab36f1883e83a9bdb5dd6ad9a1793b92924b31b2cc7702fda4f7",
+        "7166711d28dbf21e9eba2c04e579231c2c76ea5953789ca2bc2e056a59e20231"
+      ]
+    },
+    {
+      "P_after_second_version": 8,
+      "P_grants": [
+        2,
+        0
+      ],
+      "initial_P_version": 6,
+      "prefix": "001110",
+      "probes": [
+        "p0-e0",
+        "p0-e2"
+      ],
+      "response_sha256": [
+        "67c7bae60e3238778e9df850000925597e81782722439630c91e7960000b274a",
+        "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+      ]
+    }
+  ],
+  "observed_P_state_count": 6,
+  "observed_P_states": [
+    [
+      "P",
+      "C",
+      3,
+      11,
+      3
+    ],
+    [
+      "P",
+      "C",
+      4,
+      12,
+      4
+    ],
+    [
+      "P",
+      "C",
+      5,
+      15,
+      5
+    ],
+    [
+      "P",
+      "C",
+      6,
+      11,
+      6
+    ],
+    [
+      "P",
+      "C",
+      7,
+      12,
+      7
+    ],
+    [
+      "P",
+      "C",
+      8,
+      15,
+      8
+    ]
+  ],
+  "observed_graph_only": true,
+  "parent_v1x_n_report_sha256": "4483296af18b52949ea24fbc2ec9f4b39c3aa8bad5f00af4073a272107309b36",
+  "permission_to_migrate_P": false,
+  "research_only": true,
+  "schema": "spk-native-learning-v1x-o-grant-minimization/v1",
+  "source_identity_authenticated": false,
+  "status": "V1X_O_BOUNDED_GRANT_MEALY_NATIVE_WITNESS_RESEARCH_PASS"
+}

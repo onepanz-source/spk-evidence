@@ -1,0 +1,180 @@
+{
+  "BV_recovery": [
+    {
+      "cut": 1,
+      "head_sha256": "262369399158ad50bfdbb03edc98fe3d13adf80827674ad1b613f08c63d6f7c6"
+    },
+    {
+      "cut": 9,
+      "head_sha256": "262369399158ad50bfdbb03edc98fe3d13adf80827674ad1b613f08c63d6f7c6"
+    },
+    {
+      "cut": 13,
+      "head_sha256": "262369399158ad50bfdbb03edc98fe3d13adf80827674ad1b613f08c63d6f7c6"
+    },
+    {
+      "cut": 14,
+      "head_sha256": "262369399158ad50bfdbb03edc98fe3d13adf80827674ad1b613f08c63d6f7c6"
+    },
+    {
+      "cut": 15,
+      "head_sha256": "262369399158ad50bfdbb03edc98fe3d13adf80827674ad1b613f08c63d6f7c6"
+    },
+    {
+      "cut": 27,
+      "head_sha256": "262369399158ad50bfdbb03edc98fe3d13adf80827674ad1b613f08c63d6f7c6"
+    },
+    {
+      "cut": 60,
+      "head_sha256": "262369399158ad50bfdbb03edc98fe3d13adf80827674ad1b613f08c63d6f7c6"
+    }
+  ],
+  "C_actual_PE_first_reads": [
+    [
+      10,
+      0,
+      11,
+      [
+        11
+      ]
+    ],
+    [
+      10,
+      0,
+      11,
+      [
+        11
+      ]
+    ],
+    [
+      10,
+      2,
+      15,
+      [
+        15
+      ]
+    ],
+    [
+      10,
+      1,
+      12,
+      [
+        12
+      ]
+    ],
+    [
+      10,
+      2,
+      15,
+      [
+        15
+      ]
+    ]
+  ],
+  "P_grants": [
+    2,
+    1,
+    0,
+    0,
+    1
+  ],
+  "P_versions": [
+    2,
+    1,
+    2,
+    1,
+    3
+  ],
+  "classification_on_queue": false,
+  "closed_P_bank": {
+    "ctx0": {
+      "choice": 11,
+      "domain": "P",
+      "grants": 3,
+      "owner": "C",
+      "version": 3
+    },
+    "ctx1": {
+      "choice": 12,
+      "domain": "P",
+      "grants": 1,
+      "owner": "C",
+      "version": 1
+    }
+  },
+  "committed_BV_tick_rows": 325,
+  "context_ids": [
+    "ctx0",
+    "ctx1",
+    "ctx0",
+    "ctx1",
+    "ctx0"
+  ],
+  "episodes": 5,
+  "frozen_BV_v0e_learning": false,
+  "frozen_source_pins": {
+    "spk_architecture_v1/causal_memory_v1c.py": "175362406d3598331ec72c42084030248910e0033ea17d87d0810e221c8d7617",
+    "spk_architecture_v1/pe_execution_v1b.py": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9"
+  },
+  "host_supplies_context_name": false,
+  "journal_head_SHA256": "10817120f9f23856aa702f5482da055e9d529556f902d27a93624b5ebae27e9f",
+  "legacy_context_api_fenced_on_v1w_db": true,
+  "limitations": [
+    "PE classification occurs in a durable ingress stage BEFORE native-v1 BV ticks, not inside frozen BV scheduler",
+    "Two predeclared cue classes; not discovery of arbitrary contexts",
+    "v1w database trigger fences cooperative direct old API inserts only; a privileged host can bypass it",
+    "Host still authors raw observations and goals; no authenticated sensor or independent goal issuer",
+    "Replay re-executes original PE/BV logical computation, not irreversible external actions",
+    "This proves versioned v1 native contextual learning, never learning in frozen original v0e"
+  ],
+  "native_v1_BV_and_P_after_ingress": true,
+  "negative_inputs_denied": [
+    "mixed",
+    "ambiguous",
+    "duplicate",
+    "unknown"
+  ],
+  "observed_PE_signatures": [
+    "s71",
+    "s72",
+    "s71",
+    "s72",
+    "s71"
+  ],
+  "original_PE_classification_at_ingress_consumption": true,
+  "original_frozen_components_unchanged": true,
+  "parent_v1v_SHA256": "172b2a1c72a526ca3cc49d9792d4d765b606f7d4b346f43a46ddc2ef50fdd59c",
+  "promotion_allowed": false,
+  "research_v1_native_learning": true,
+  "reverse_context_order_binding": {
+    "s71": "ctx1",
+    "s72": "ctx0"
+  },
+  "schema": "spk-native-learning-v1w-durable-queued-ingress-conformance/v1",
+  "second_run_new_BV_ticks": 0,
+  "signature_context_binding": {
+    "s71": "ctx0",
+    "s72": "ctx1"
+  },
+  "stage_recovery": [
+    {
+      "head_sha256": "262369399158ad50bfdbb03edc98fe3d13adf80827674ad1b613f08c63d6f7c6",
+      "stage": "OBSERVED"
+    },
+    {
+      "head_sha256": "262369399158ad50bfdbb03edc98fe3d13adf80827674ad1b613f08c63d6f7c6",
+      "stage": "PE_CLASSIFIED"
+    },
+    {
+      "head_sha256": "262369399158ad50bfdbb03edc98fe3d13adf80827674ad1b613f08c63d6f7c6",
+      "stage": "P_SELECTED"
+    },
+    {
+      "head_sha256": "262369399158ad50bfdbb03edc98fe3d13adf80827674ad1b613f08c63d6f7c6",
+      "stage": "BV_COMPLETED"
+    }
+  ],
+  "staged_ingress_event_rows": 25,
+  "status": "V1W_QUEUED_PE_INGRESS_GATES_CONTEXTUAL_NATIVE_V1_P_PASS"
+}

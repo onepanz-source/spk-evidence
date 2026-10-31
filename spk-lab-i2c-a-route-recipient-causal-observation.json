@@ -1,0 +1,191 @@
+{
+  "BV_to_P_live_host_authorization_proven": false,
+  "BV_verdict_proven": false,
+  "P_credit_transfer": false,
+  "P_state_mutated": false,
+  "P_transfer": false,
+  "architecture_promotion_allowed": false,
+  "case_receipts": [
+    {
+      "BV_to_P_write_authorized": false,
+      "BV_verdict_received": false,
+      "P_state_mutated": false,
+      "fixture_kind": "pipeline_inputs",
+      "frozen_test_source_sha256": "d85fd43f7d57dd790e38db89bad230b07dd2224391aabe2ede868d3ec4a2f96a",
+      "input_sha256": "6accafd8419e911ee21b70c1724b431ab5fab4f222f2dda2f70e1b5afb9ebf97",
+      "logical_node_identity_observed": true,
+      "network_ir_sha256": "493ae8242dead99ce065c7f444c5945e4b63a66bfd8aca60df56ed82a7e855b6",
+      "original_R3_witness_recomputed": true,
+      "original_compiler_and_network_reexecuted": true,
+      "outcome_sha256": "43c7ae535bfa284208398975b0a37739a10381dd33a5bb064e636374f42d005f",
+      "paired_route_count": 2,
+      "recipient_batch_count": 2,
+      "route_count": 2,
+      "source_identity_authenticated": false,
+      "source_recipient_receipts": [
+        {
+          "P_credit_granted": false,
+          "backvalidation_verdict_proven": false,
+          "delay_ticks": 2,
+          "recipient_batch_index": 1,
+          "recipient_batch_sha256": "242c9eab5b7816862bc298565d998724299bee959fcc8bd58b141fa9087eeb16",
+          "recipient_channel": 0,
+          "recipient_final_guard": true,
+          "recipient_final_raw": 0,
+          "recipient_node": "B",
+          "recipient_outcome_observed": true,
+          "recipient_output_channels": [
+            7
+          ],
+          "recipient_tick": 4,
+          "route_index": 0,
+          "route_sha256": "8bd19ef87ca755c1c4385925cb575602d6a06b0e20b874bedb193d47499339c1",
+          "source_batch_index": 0,
+          "source_batch_sha256": "b401e2872bd10839fc2ce64181184f66e1d90b3c4ac5391f6108edea43207119",
+          "source_channel": 7,
+          "source_node": "A",
+          "source_tick": 2
+        },
+        {
+          "P_credit_granted": false,
+          "backvalidation_verdict_proven": false,
+          "delay_ticks": 2,
+          "recipient_batch_index": 1,
+          "recipient_batch_sha256": "242c9eab5b7816862bc298565d998724299bee959fcc8bd58b141fa9087eeb16",
+          "recipient_channel": 0,
+          "recipient_final_guard": true,
+          "recipient_final_raw": 0,
+          "recipient_node": "B",
+          "recipient_outcome_observed": true,
+          "recipient_output_channels": [
+            7
+          ],
+          "recipient_tick": 4,
+          "route_index": 1,
+          "route_sha256": "8bd19ef87ca755c1c4385925cb575602d6a06b0e20b874bedb193d47499339c1",
+          "source_batch_index": 0,
+          "source_batch_sha256": "b401e2872bd10839fc2ce64181184f66e1d90b3c4ac5391f6108edea43207119",
+          "source_channel": 7,
+          "source_node": "A",
+          "source_tick": 2
+        }
+      ],
+      "test_nodeid": "tests/test_compile_pipeline_v0.py::test_pipeline_does_not_change_functional_execution"
+    },
+    {
+      "BV_to_P_write_authorized": false,
+      "BV_verdict_received": false,
+      "P_state_mutated": false,
+      "fixture_kind": "pe_admission_authored",
+      "frozen_test_source_sha256": "1975675e62d74bdf91c3fcc278789ef7addfcb683109d3a49a4677e1f5bf98ee",
+      "input_sha256": "0f20ae537234d3ad7f9465967e641446b75244949d80430f9fb01d2b95c35b47",
+      "logical_node_identity_observed": true,
+      "network_ir_sha256": "4b82fcfd4f053290acbf1834dc48ddb3ce93b58e2f5289feffa9b02a5da5412a",
+      "original_R3_witness_recomputed": true,
+      "original_compiler_and_network_reexecuted": true,
+      "outcome_sha256": "dd13875cd7ff3705b9e76900d7887edbc46e50464f6452abe9fee87d0be4ccd6",
+      "paired_route_count": 3,
+      "recipient_batch_count": 3,
+      "route_count": 3,
+      "source_identity_authenticated": false,
+      "source_recipient_receipts": [
+        {
+          "P_credit_granted": false,
+          "backvalidation_verdict_proven": false,
+          "delay_ticks": 2,
+          "recipient_batch_index": 1,
+          "recipient_batch_sha256": "242c9eab5b7816862bc298565d998724299bee959fcc8bd58b141fa9087eeb16",
+          "recipient_channel": 0,
+          "recipient_final_guard": true,
+          "recipient_final_raw": 0,
+          "recipient_node": "B",
+          "recipient_outcome_observed": true,
+          "recipient_output_channels": [
+            7
+          ],
+          "recipient_tick": 4,
+          "route_index": 0,
+          "route_sha256": "8bd19ef87ca755c1c4385925cb575602d6a06b0e20b874bedb193d47499339c1",
+          "source_batch_index": 0,
+          "source_batch_sha256": "60892e3873806ba737ec61bd3e06054a0f843c57b7537c0d71bd7d3ea397b823",
+          "source_channel": 7,
+          "source_node": "A",
+          "source_tick": 2
+        },
+        {
+          "P_credit_granted": false,
+          "backvalidation_verdict_proven": false,
+          "delay_ticks": 2,
+          "recipient_batch_index": 1,
+          "recipient_batch_sha256": "242c9eab5b7816862bc298565d998724299bee959fcc8bd58b141fa9087eeb16",
+          "recipient_channel": 0,
+          "recipient_final_guard": true,
+          "recipient_final_raw": 0,
+          "recipient_node": "B",
+          "recipient_outcome_observed": true,
+          "recipient_output_channels": [
+            7
+          ],
+          "recipient_tick": 4,
+          "route_index": 1,
+          "route_sha256": "8bd19ef87ca755c1c4385925cb575602d6a06b0e20b874bedb193d47499339c1",
+          "source_batch_index": 0,
+          "source_batch_sha256": "60892e3873806ba737ec61bd3e06054a0f843c57b7537c0d71bd7d3ea397b823",
+          "source_channel": 7,
+          "source_node": "A",
+          "source_tick": 2
+        },
+        {
+          "P_credit_granted": false,
+          "backvalidation_verdict_proven": false,
+          "delay_ticks": 3,
+          "recipient_batch_index": 2,
+          "recipient_batch_sha256": "a00ba6c17b959b5a51b4b406f5c6d5e99db8cdeb0f5549c1a5bf2fb1aecc829f",
+          "recipient_channel": 0,
+          "recipient_final_guard": true,
+          "recipient_final_raw": 0,
+          "recipient_node": "B",
+          "recipient_outcome_observed": true,
+          "recipient_output_channels": [
+            7
+          ],
+          "recipient_tick": 5,
+          "route_index": 2,
+          "route_sha256": "433d48b1f539a89dfffc42d4ce8366e679af1b421967381dd727c74127a34cc2",
+          "source_batch_index": 0,
+          "source_batch_sha256": "60892e3873806ba737ec61bd3e06054a0f843c57b7537c0d71bd7d3ea397b823",
+          "source_channel": 7,
+          "source_node": "A",
+          "source_tick": 2
+        }
+      ],
+      "test_nodeid": "tests/test_pe_admission_v0.py::test_mapping_does_not_change_execution"
+    }
+  ],
+  "limitations": [
+    "Matching a native route to a recipient batch is observation, not BV judgment or permission to change P",
+    "Logical node IDs are not authenticated physical sensor identities",
+    "Original R3 two configurations remain source-authored and source-derived; no arbitrary topology guarantee",
+    "No live PE/BV/P feedback bridge or P writes were exercised"
+  ],
+  "logical_route_source_recipient_observed": true,
+  "network_count": 2,
+  "next_gates": [
+    "I2c-B: independently source-owned BV verdict with causal recipient evidence and scoped grant",
+    "I2c-C: demonstrate bounded P mutation only under verified BV authority, with negative forged/replay/foreign-node controls"
+  ],
+  "original_compiler_network_simulator_executed": true,
+  "original_native_PE_BV_P_executed_in_this_gate": false,
+  "parent_r2_sha256": "80ef5f4df97aa6991cfe60f0640b1fc71e5adba68903616b2470010e0acd8c73",
+  "parent_r3_sha256": "31a7ce562bcdd5d568600e55cc4019f938524cec895f7580321392094cd53a84",
+  "predeclared_distinct_original_networks": [
+    "pipeline_inputs",
+    "pe_admission_authored"
+  ],
+  "production_release": false,
+  "research_only": true,
+  "route_pairs_total": 5,
+  "schema": "spk-lab-i2c-a-route-recipient-native-evidence/v0",
+  "source_identity_authenticated": false,
+  "status": "SPK_LAB_I2C_A_ORIGINAL_ROUTE_RECIPIENT_CAUSAL_OBSERVATION_PASS_NOT_BV_P"
+}

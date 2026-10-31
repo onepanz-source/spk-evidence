@@ -1,0 +1,600 @@
+{
+  "candidate_choices": [
+    11,
+    12,
+    15
+  ],
+  "durable_three_choice_chain": {
+    "C_PE_reads_by_epoch": [
+      [
+        [
+          10,
+          0,
+          11,
+          [
+            11
+          ]
+        ],
+        [
+          30,
+          1,
+          12,
+          [
+            12
+          ]
+        ],
+        [
+          50,
+          2,
+          15,
+          [
+            15
+          ]
+        ],
+        [
+          70,
+          2,
+          15,
+          [
+            15
+          ]
+        ]
+      ],
+      [
+        [
+          10,
+          2,
+          15,
+          [
+            15
+          ]
+        ],
+        [
+          30,
+          2,
+          15,
+          [
+            15
+          ]
+        ],
+        [
+          50,
+          2,
+          15,
+          [
+            15
+          ]
+        ],
+        [
+          70,
+          2,
+          15,
+          [
+            15
+          ]
+        ]
+      ],
+      [
+        [
+          10,
+          2,
+          15,
+          [
+            15
+          ]
+        ],
+        [
+          30,
+          3,
+          11,
+          [
+            11
+          ]
+        ],
+        [
+          50,
+          3,
+          11,
+          [
+            11
+          ]
+        ],
+        [
+          70,
+          3,
+          11,
+          [
+            11
+          ]
+        ]
+      ]
+    ],
+    "chain_sha256": "7fd988308a628fb2c48b37c98d66b570fde77941fe4d484d054b0dd1c7b6b27b",
+    "committed_ticks": 195,
+    "crash_recovery": [
+      {
+        "P_to": 2,
+        "cut": 1,
+        "journal_sha256": "b744c60545b2d550b3e0fd815a1ed73f7c1860c55b617a6dc08fad2eefcbab8d"
+      },
+      {
+        "P_to": 2,
+        "cut": 9,
+        "journal_sha256": "b744c60545b2d550b3e0fd815a1ed73f7c1860c55b617a6dc08fad2eefcbab8d"
+      },
+      {
+        "P_to": 2,
+        "cut": 13,
+        "journal_sha256": "b744c60545b2d550b3e0fd815a1ed73f7c1860c55b617a6dc08fad2eefcbab8d"
+      },
+      {
+        "P_to": 2,
+        "cut": 14,
+        "journal_sha256": "b744c60545b2d550b3e0fd815a1ed73f7c1860c55b617a6dc08fad2eefcbab8d"
+      },
+      {
+        "P_to": 2,
+        "cut": 15,
+        "journal_sha256": "b744c60545b2d550b3e0fd815a1ed73f7c1860c55b617a6dc08fad2eefcbab8d"
+      },
+      {
+        "P_to": 2,
+        "cut": 27,
+        "journal_sha256": "b744c60545b2d550b3e0fd815a1ed73f7c1860c55b617a6dc08fad2eefcbab8d"
+      },
+      {
+        "P_to": 2,
+        "cut": 60,
+        "journal_sha256": "b744c60545b2d550b3e0fd815a1ed73f7c1860c55b617a6dc08fad2eefcbab8d"
+      }
+    ],
+    "epochs": 3,
+    "second_run_new_ticks": 0,
+    "versions": [
+      2,
+      2,
+      3
+    ]
+  },
+  "frozen_BV_disabled_learning_parity": {
+    "frozen_3choice_PE_BV_parity": true,
+    "original_BV_deliveries": 8,
+    "original_batches": 12
+  },
+  "frozen_original_source_pins": {
+    "spk_architecture_v1/causal_memory_v1c.py": "175362406d3598331ec72c42084030248910e0033ea17d87d0810e221c8d7617",
+    "spk_architecture_v1/pe_execution_v1b.py": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9"
+  },
+  "frozen_v0e_learning": false,
+  "limitations": [
+    "bounded 3-node A/B/C and three enumerated C programs 11/12/15",
+    "negative feedback rotates through a PREDECLARED candidate set, no arbitrary program search",
+    "host-authored goal encoded in original A PE program; no independent goal issuer",
+    "A PE comparator is native primitive but semantic test environment remains synthetic",
+    "cooperative advisory flock, not privileged-host security or distributed consensus",
+    "persistence is original-event genesis replay, not heap restoration",
+    "no irreversible external actions, no physical sensing, no N-node topology proof",
+    "frozen v0e remains unchanged and DOES NOT natively learn"
+  ],
+  "parent_v1s_sha256": "af6c8323cc23f3eee8471751027532abd6919b6e7e6d325217acd3a03e679067",
+  "schema": "spk-native-learning-v1t-three-choice-macro-conformance/v1",
+  "status": "NATIVE_V1T_THREE_CHOICE_SAME_SCHEDULER_DURABLE_LEARNING_PASS",
+  "three_choice_pairs": [
+    {
+      "BV_deliveries": 8,
+      "C_PE_reads": [
+        [
+          10,
+          0,
+          11,
+          [
+            11
+          ]
+        ],
+        [
+          30,
+          0,
+          11,
+          [
+            11
+          ]
+        ],
+        [
+          50,
+          0,
+          11,
+          [
+            11
+          ]
+        ],
+        [
+          70,
+          0,
+          11,
+          [
+            11
+          ]
+        ]
+      ],
+      "PE_A_emissions": [
+        21,
+        21,
+        21,
+        21
+      ],
+      "P_grants": 0,
+      "goal": 11,
+      "initial": 11
+    },
+    {
+      "BV_deliveries": 8,
+      "C_PE_reads": [
+        [
+          10,
+          0,
+          11,
+          [
+            11
+          ]
+        ],
+        [
+          30,
+          1,
+          12,
+          [
+            12
+          ]
+        ],
+        [
+          50,
+          1,
+          12,
+          [
+            12
+          ]
+        ],
+        [
+          70,
+          1,
+          12,
+          [
+            12
+          ]
+        ]
+      ],
+      "PE_A_emissions": [
+        22,
+        21,
+        21,
+        21
+      ],
+      "P_grants": 1,
+      "goal": 12,
+      "initial": 11
+    },
+    {
+      "BV_deliveries": 8,
+      "C_PE_reads": [
+        [
+          10,
+          0,
+          11,
+          [
+            11
+          ]
+        ],
+        [
+          30,
+          1,
+          12,
+          [
+            12
+          ]
+        ],
+        [
+          50,
+          2,
+          15,
+          [
+            15
+          ]
+        ],
+        [
+          70,
+          2,
+          15,
+          [
+            15
+          ]
+        ]
+      ],
+      "PE_A_emissions": [
+        22,
+        22,
+        21,
+        21
+      ],
+      "P_grants": 2,
+      "goal": 15,
+      "initial": 11
+    },
+    {
+      "BV_deliveries": 8,
+      "C_PE_reads": [
+        [
+          10,
+          0,
+          12,
+          [
+            12
+          ]
+        ],
+        [
+          30,
+          1,
+          15,
+          [
+            15
+          ]
+        ],
+        [
+          50,
+          2,
+          11,
+          [
+            11
+          ]
+        ],
+        [
+          70,
+          2,
+          11,
+          [
+            11
+          ]
+        ]
+      ],
+      "PE_A_emissions": [
+        22,
+        22,
+        21,
+        21
+      ],
+      "P_grants": 2,
+      "goal": 11,
+      "initial": 12
+    },
+    {
+      "BV_deliveries": 8,
+      "C_PE_reads": [
+        [
+          10,
+          0,
+          12,
+          [
+            12
+          ]
+        ],
+        [
+          30,
+          0,
+          12,
+          [
+            12
+          ]
+        ],
+        [
+          50,
+          0,
+          12,
+          [
+            12
+          ]
+        ],
+        [
+          70,
+          0,
+          12,
+          [
+            12
+          ]
+        ]
+      ],
+      "PE_A_emissions": [
+        21,
+        21,
+        21,
+        21
+      ],
+      "P_grants": 0,
+      "goal": 12,
+      "initial": 12
+    },
+    {
+      "BV_deliveries": 8,
+      "C_PE_reads": [
+        [
+          10,
+          0,
+          12,
+          [
+            12
+          ]
+        ],
+        [
+          30,
+          1,
+          15,
+          [
+            15
+          ]
+        ],
+        [
+          50,
+          1,
+          15,
+          [
+            15
+          ]
+        ],
+        [
+          70,
+          1,
+          15,
+          [
+            15
+          ]
+        ]
+      ],
+      "PE_A_emissions": [
+        22,
+        21,
+        21,
+        21
+      ],
+      "P_grants": 1,
+      "goal": 15,
+      "initial": 12
+    },
+    {
+      "BV_deliveries": 8,
+      "C_PE_reads": [
+        [
+          10,
+          0,
+          15,
+          [
+            15
+          ]
+        ],
+        [
+          30,
+          1,
+          11,
+          [
+            11
+          ]
+        ],
+        [
+          50,
+          1,
+          11,
+          [
+            11
+          ]
+        ],
+        [
+          70,
+          1,
+          11,
+          [
+            11
+          ]
+        ]
+      ],
+      "PE_A_emissions": [
+        22,
+        21,
+        21,
+        21
+      ],
+      "P_grants": 1,
+      "goal": 11,
+      "initial": 15
+    },
+    {
+      "BV_deliveries": 8,
+      "C_PE_reads": [
+        [
+          10,
+          0,
+          15,
+          [
+            15
+          ]
+        ],
+        [
+          30,
+          1,
+          11,
+          [
+            11
+          ]
+        ],
+        [
+          50,
+          2,
+          12,
+          [
+            12
+          ]
+        ],
+        [
+          70,
+          2,
+          12,
+          [
+            12
+          ]
+        ]
+      ],
+      "PE_A_emissions": [
+        22,
+        22,
+        21,
+        21
+      ],
+      "P_grants": 2,
+      "goal": 12,
+      "initial": 15
+    },
+    {
+      "BV_deliveries": 8,
+      "C_PE_reads": [
+        [
+          10,
+          0,
+          15,
+          [
+            15
+          ]
+        ],
+        [
+          30,
+          0,
+          15,
+          [
+            15
+          ]
+        ],
+        [
+          50,
+          0,
+          15,
+          [
+            15
+          ]
+        ],
+        [
+          70,
+          0,
+          15,
+          [
+            15
+          ]
+        ]
+      ],
+      "PE_A_emissions": [
+        21,
+        21,
+        21,
+        21
+      ],
+      "P_grants": 0,
+      "goal": 15,
+      "initial": 15
+    }
+  ],
+  "versioned_v1t_learning": true
+}

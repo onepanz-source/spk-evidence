@@ -1,0 +1,50 @@
+{
+  "BV_to_P_live_authorization": false,
+  "P_migration": false,
+  "P_writes": 0,
+  "architecture_promotion_allowed": false,
+  "authenticated_cross_host_causal_handoff": false,
+  "compiler_manifest_to_owned_epoch_constructed": false,
+  "interpretation": "Reverse owner-to-C2 admission is NOT forward C2-to-owner construction or independent operator authentication",
+  "next_acceptance": "Recover original 24g fixture dependencies, construct fresh C2-derived sealed EVENT epoch under explicitly designated in-process owner, prove causal mapping and original dispatcher/host acceptance before I2c",
+  "original_owned_host_execution_inherited": true,
+  "original_reference_host_execution_inherited": true,
+  "owner_reverse_compiler_alignment": {
+    "BV_to_P_authorized": false,
+    "admission_blocker": "UNRESOLVED_ORIGINAL_OWNER_NODE_PLACEMENTS",
+    "forward_compiler_to_owner_construction": false,
+    "initial_service_tick": 4,
+    "original_edge_count": 3,
+    "original_node_count": 3,
+    "original_owner_architecture": "arbiter-lab",
+    "original_owner_epoch_id": "E0",
+    "original_pe_count": 2,
+    "owner_source_authenticated": false,
+    "placement_evidence": {
+      "complete": false,
+      "mapping": {
+        "C": "PE0"
+      },
+      "provenance": {
+        "C": [
+          "SEALED_EXTERNAL_INGRESS",
+          "SERVICE_PROGRAM",
+          "SERVICE_STATE"
+        ]
+      },
+      "unresolved_node_ids": [
+        "A",
+        "B"
+      ]
+    },
+    "reconstructed_manifest_sha256": null,
+    "reverse_C1_C2_admitted": false,
+    "sealed_event_occurrences_sha256": "4af1bb4744107298626f4c42d4e6b0d04ada3245d2bdaf381d26f6c461b8f7e1",
+    "sealed_initial_event_count": 1
+  },
+  "parent_i2b4_sha256": "6478cc932c62d0b5f6d12508434121dec44bc22899e5dc9fadc0e4dbcf5afcab",
+  "production_release": false,
+  "research_only": true,
+  "schema": "spk-lab-i2b4a-owner-anchored-reverse-c2-alignment/v1",
+  "status": "SPK_LAB_I2B4A_OWNER_ANCHORED_C2_ALIGNMENT_RESEARCH_PASS"
+}

@@ -1,0 +1,86 @@
+{
+  "BV_to_P_live_authorization": false,
+  "P_transfer": false,
+  "P_writes": 0,
+  "architecture_promotion_allowed": false,
+  "compiler_to_owner_reconstruction_demonstrated": true,
+  "cross_host_handoff_performed": false,
+  "external_owner_authenticated": false,
+  "limitations": [
+    "In-process original test fixture is the designated owner; source identity is not independently authenticated",
+    "Owner-provided pre-existing P/S/EVENT request graph, policy and physical arrival/release binding are prerequisites; C2 alone cannot mint them",
+    "Three bounded sessions are a single-root output-free finite fixture, not general multi-neuron streamed custody or cross-host transfer",
+    "No source-signed causal mapping between 24p reference execution and 24j state; no P writes/credit transfer/BV learning"
+  ],
+  "next_acceptance": "I2c must still establish authenticated causality/authority BV-to-P; no transfer or architecture promotion",
+  "original_application_host_executed_on_reconstructed_epoch": true,
+  "owner_constructed_epoch": {
+    "BV_to_P_authorized": false,
+    "P_writes": 0,
+    "compiler_c2_sha256": "393d52d31b7e5cd3c35e765bfda2c2bdd25d6d824fc10125e5c317ff87f7dc4c",
+    "cross_host_causal_handoff": false,
+    "edge_count": 3,
+    "fresh_epoch_equals_owner_initial_fixture": true,
+    "fresh_epoch_rebuilt_from_c2_and_owner_service_graph": "OwnedSharedEventCycleStateV0",
+    "host_sessions": [
+      {
+        "actions": 6,
+        "completed": true,
+        "epoch_id": "E0",
+        "handoffs": 1,
+        "new_version": 1,
+        "next_service_tick": 9,
+        "old_version": 0,
+        "phase": "CLOSED",
+        "provider_id": "I2B4B-DESIGNATED-IN-PROCESS-NOT-AUTHENTICATED",
+        "revision": 6,
+        "service_ticks_spent": 5
+      },
+      {
+        "actions": 6,
+        "completed": true,
+        "epoch_id": "E0",
+        "handoffs": 1,
+        "new_version": 1,
+        "next_service_tick": 9,
+        "old_version": 0,
+        "phase": "CLOSED",
+        "provider_id": "I2B4B-DESIGNATED-IN-PROCESS-NOT-AUTHENTICATED",
+        "revision": 6,
+        "service_ticks_spent": 5
+      },
+      {
+        "actions": 1,
+        "completed": false,
+        "epoch_id": "E0",
+        "handoffs": 0,
+        "new_version": null,
+        "next_service_tick": 5,
+        "old_version": null,
+        "phase": "INCOMPLETE",
+        "provider_id": "I2B4B-DESIGNATED-IN-PROCESS-NOT-AUTHENTICATED",
+        "revision": 1,
+        "service_ticks_spent": 1
+      }
+    ],
+    "in_process_owner_designated": true,
+    "independent_operator_authenticated": false,
+    "initial_event_count": 1,
+    "initial_event_occurrences_sha256": "4af1bb4744107298626f4c42d4e6b0d04ada3245d2bdaf381d26f6c461b8f7e1",
+    "node_count": 3,
+    "original_owner_constructed_by_fixture": true,
+    "original_owner_epoch_id": "E0",
+    "original_start_service_tick": 4,
+    "pe_count": 2,
+    "placement": {
+      "A": "PE0",
+      "B": "PE1",
+      "C": "PE0"
+    }
+  },
+  "parent_i2b4a_sha256": "7ec8cd8b7be4039564b5f5fab54b994536f4873242c630cdd853ca5685ad2da9",
+  "production_release": false,
+  "research_only": true,
+  "schema": "spk-lab-i2b4b-in-process-owner-constructed-epoch/v1",
+  "status": "SPK_LAB_I2B4B_OWNER_CONSTRUCTED_C2_SEALED_EPOCH_RESEARCH_PASS"
+}

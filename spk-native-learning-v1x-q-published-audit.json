@@ -1,0 +1,120 @@
+{
+  "P_credit_transfer": false,
+  "architecture_promotion_allowed": false,
+  "closure_bundle_contains_frozen_source_changes": false,
+  "diagnostic_destinations": [
+    6,
+    8
+  ],
+  "erratum": {
+    "corrected_manifest_sha256": "f9d481a36031d14f366ff89c494cd4db2c0d8f9e702efb1b4816fa5a540658bd",
+    "milestone": "o",
+    "original_archive_manifest_sha256": "b5c3740f242adb071bc8223cac404d9a921c1d55a2c95576ac9dcf6d333704b2",
+    "single_field_parent_correction": true
+  },
+  "grant_diagnostic_fixed_word": [
+    "p0-e0",
+    "p0-e2"
+  ],
+  "induced_states": 6,
+  "native_p_witness_count": 6,
+  "observed_native_edges": 24,
+  "pairwise_grant_distinguishability": 15,
+  "permission_to_migrate_P": false,
+  "pinned_native_report_count": 16,
+  "published_manifest_count": 16,
+  "published_source_count": 88,
+  "report_pins": [
+    {
+      "sha256": "79ce25c6418fa8fd9c5379ffc36b0943f14b03cc301e997bac6bc0ac97776247",
+      "status": "V1X_A_NATIVE_QUEUED_PE_BV_P_RESEARCH_PASS",
+      "step": "a"
+    },
+    {
+      "sha256": "c6e29f9dadebf82a57b56e64e446a94de061d64868e761797f7ed718556c1e27",
+      "status": "V1X_B_R1_ORIGINAL_PE_BV_P_SOURCE_PARTITION_RESEARCH_PASS",
+      "step": "b"
+    },
+    {
+      "sha256": "a660e88b4bf4035ad12957dae138357db7a3b365782ec00f0b12d4239d3a6f35",
+      "status": "V1X_C_EXPLICIT_COHORT_ORIGINAL_PE_BV_P_RESEARCH_PASS",
+      "step": "c"
+    },
+    {
+      "sha256": "1e2115526be911641d4e6ca1459ac568c8565758aeaa260763e6e1184ffd33b5",
+      "status": "V1X_D_OWNER_SIGNED_COHORT_ORIGINAL_PE_BV_P_RESEARCH_PASS",
+      "step": "d"
+    },
+    {
+      "sha256": "7987b9ed4471eba512f7d41ad15865064f047f41e426308b939f43a5ac140747",
+      "status": "V1X_E_SIGNED_FRESH_EPOCH_CUTOVER_ORIGINAL_PE_BV_P_RESEARCH_PASS",
+      "step": "e"
+    },
+    {
+      "sha256": "e2291f77eb6496eb01e424ade2f0629caadc2d6f3a4fdffa10ef76d4185aaab0",
+      "status": "V1X_F_OWNER_SIGNED_P_PROVENANCE_REVIEW_RESEARCH_PASS",
+      "step": "f"
+    },
+    {
+      "sha256": "9d8d1535bc67e72487f73d74012706b78ac42310ba79a4690db39d8470f1b794",
+      "status": "V1X_G_ORIGINAL_PE_BV_P_COUNTERFACTUAL_SHADOW_RESEARCH_PASS",
+      "step": "g"
+    },
+    {
+      "sha256": "8de159bf25edca7887792408c44be54f3951f546fc1ec6a5ee84244b54284f9b",
+      "status": "V1X_H_BOUNDED_ORIGINAL_PE_BV_P_ORDER_INTERVENTION_RESEARCH_PASS",
+      "step": "h"
+    },
+    {
+      "sha256": "a3356dfdb8dfeddde40bf437d9e3c4dc3b8de19f623a896ed84006ac49b618b6",
+      "status": "V1X_I_ADJACENT_SWAP_CAUSAL_EQUIVALENCE_RESEARCH_PASS",
+      "step": "i"
+    },
+    {
+      "sha256": "5d5bceb9b5873d63092831908cf1012fad17cfe893a62fa954422f7db1453179",
+      "status": "V1X_J_ORIGINAL_PE_BV_P_BOUNDED_FUTURE_SUFFIX_RESEARCH_PASS",
+      "step": "j"
+    },
+    {
+      "sha256": "7d6ba4b2d2090d50233a045f7a38ff272dcc37e1966c1567ef3a55301db1fa5f",
+      "status": "V1X_K_ORIGINAL_PE_BV_P_ONE_STEP_ALPHABET_RESEARCH_PASS",
+      "step": "k"
+    },
+    {
+      "sha256": "31496a66d6568e7e2f6e1faf32811f795304a3d747190693e5180f59a6b82dd3",
+      "status": "V1X_L_ORIGINAL_PE_BV_P_BOUNDED_TWO_STEP_RESEARCH_PASS",
+      "step": "l"
+    },
+    {
+      "sha256": "730fdd1a1437e0461496ef9661a7a8e4733f78c9991786be05d66e7df05506f3",
+      "status": "V1X_M_BOUNDED_NATIVE_THIRD_STEP_RESEARCH_PASS",
+      "step": "m"
+    },
+    {
+      "sha256": "4483296af18b52949ea24fbc2ec9f4b39c3aa8bad5f00af4073a272107309b36",
+      "status": "V1X_N_NONABSORBING_FRONTIER_NATIVE_RESEARCH_PASS",
+      "step": "n"
+    },
+    {
+      "sha256": "27172e15b543b57d5de8c744df6c9eee323503b475ac248ff7fe2f80c898f97a",
+      "status": "V1X_O_BOUNDED_GRANT_MEALY_NATIVE_WITNESS_RESEARCH_PASS",
+      "step": "o"
+    },
+    {
+      "sha256": "dcba7a9c75251be115f805ad158b59a9cd79fd4911d5aa29cb0d02bce68ed4b6",
+      "status": "V1X_P_BOUNDED_NATIVE_ACTIVE_GRANT_FINGERPRINT_RESEARCH_PASS",
+      "step": "p"
+    }
+  ],
+  "research_only": true,
+  "schema": "spk-native-learning-v1x-q-published-evidence-audit/v1",
+  "source_identity_authenticated": false,
+  "status": "V1X_Q_PUBLISHED_CUSTODY_AND_CROSS_EVIDENCE_PASS",
+  "unverified": [
+    "Generalized arbitrary input alphabet",
+    "Physical sensor source authentication",
+    "Complete hidden PE/BV/P state equivalence",
+    "Nondestructive identification",
+    "Real-time distributed learning"
+  ]
+}

@@ -1,0 +1,2770 @@
+{
+  "BV_to_P_live_authorization": false,
+  "P_transfer": false,
+  "P_writes": 0,
+  "additive_hostile_tests_pass": 8,
+  "architecture_promotion_allowed": false,
+  "frozen_native_owner_modules": [
+    {
+      "declarations": [
+        {
+          "kind": "class",
+          "name": "AtomicEmissionCapacityV0"
+        },
+        {
+          "kind": "class",
+          "name": "AtomicEmissionGroupV0"
+        },
+        {
+          "kind": "class",
+          "name": "AtomicEmissionAdmissionV0"
+        },
+        {
+          "kind": "function",
+          "name": "admit_atomic_emissions_v0"
+        }
+      ],
+      "import_dependencies": [
+        "dataclasses",
+        "spk_architecture.access_v0",
+        "spk_architecture.profile_v0",
+        "spk_architecture.transaction_mapping_v0",
+        "spk_simulator.logical_access_v0",
+        "spk_simulator.routing_binding_v0"
+      ],
+      "path": "spk_simulator/atomic_emission_admission_v0.py",
+      "sha256": "1fb9611e6d40d16f9e9ec91b83d177c4d825d3d1402c329123b72fbbe1e2439e",
+      "size_bytes": 6620
+    },
+    {
+      "declarations": [
+        {
+          "kind": "class",
+          "name": "BlockedAtomicEmissionV0"
+        },
+        {
+          "kind": "class",
+          "name": "AtomicEmissionOfferPlanV0"
+        },
+        {
+          "kind": "function",
+          "name": "plan_atomic_emission_offers_v0"
+        }
+      ],
+      "import_dependencies": [
+        "dataclasses",
+        "spk_architecture.profile_v0",
+        "spk_simulator.atomic_emission_admission_v0",
+        "spk_simulator.backpressure_boundary_v0",
+        "spk_simulator.event_reservation_v0",
+        "spk_simulator.event_storage_v0",
+        "spk_simulator.routing_binding_v0"
+      ],
+      "path": "spk_simulator/atomic_emission_offer_plan_v0.py",
+      "sha256": "4183c85006640049a7bd07396ae2c50fa4a331254af263109e641e6edcb749a3",
+      "size_bytes": 6851
+    },
+    {
+      "declarations": [
+        {
+          "kind": "class",
+          "name": "AtomicNeuronalCommitStepV0"
+        },
+        {
+          "kind": "function",
+          "name": "commit_atomic_neuronal_output_v0"
+        }
+      ],
+      "import_dependencies": [
+        "dataclasses",
+        "spk_architecture.access_v0",
+        "spk_architecture.profile_v0",
+        "spk_architecture.transaction_mapping_v0",
+        "spk_network.model_v0",
+        "spk_simulator.access_dependencies_v0",
+        "spk_simulator.atomic_emission_admission_v0",
+        "spk_simulator.bounded_backpressure_driver_v0",
+        "spk_simulator.causal_service_quantum_v0",
+        "spk_simulator.computed_emission_binding_v0",
+        "spk_simulator.external_ingress_v0",
+        "spk_simulator.owned_internal_reads_v0",
+        "spk_simulator.owned_service_tick_v0",
+        "spk_simulator.routing_binding_v0",
+        "spk_simulator.serialized_internal_graph_v0",
+        "spk_simulator.versioned_core_transition_v0"
+      ],
+      "path": "spk_simulator/atomic_neuronal_commit_v0.py",
+      "sha256": "929e9527e1f780bf429881ca15e22412ddc9517afbc6e243f9ff542214f2bdcc",
+      "size_bytes": 13608
+    },
+    {
+      "declarations": [
+        {
+          "kind": "class",
+          "name": "AtomicOfferBoundaryResultV0"
+        },
+        {
+          "kind": "function",
+          "name": "advance_atomic_offer_boundary_v0"
+        }
+      ],
+      "import_dependencies": [
+        "dataclasses",
+        "spk_architecture.profile_v0",
+        "spk_simulator.atomic_emission_admission_v0",
+        "spk_simulator.atomic_emission_offer_plan_v0",
+        "spk_simulator.backpressure_boundary_v0",
+        "spk_simulator.routing_binding_v0"
+      ],
+      "path": "spk_simulator/atomic_offer_boundary_v0.py",
+      "sha256": "c75a61f72305825213a0d981582131ea6c4cb8b696d292ddeaab76d7093edc9d",
+      "size_bytes": 5144
+    },
+    {
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "_ids"
+        },
+        {
+          "kind": "class",
+          "name": "ServiceWorkV0"
+        },
+        {
+          "kind": "class",
+          "name": "ServiceFinishedV0"
+        },
+        {
+          "kind": "class",
+          "name": "ServiceConfirmedV0"
+        },
+        {
+          "kind": "class",
+          "name": "ServiceQuantumSliceV0"
+        },
+        {
+          "kind": "class",
+          "name": "ServiceQuantumStateV0"
+        },
+        {
+          "kind": "class",
+          "name": "ServiceQuantumStepV0"
+        },
+        {
+          "kind": "function",
+          "name": "advance_service_quantum_v0"
+        }
+      ],
+      "import_dependencies": [
+        "dataclasses",
+        "spk_architecture.profile_v0",
+        "spk_architecture.transaction_mapping_v0",
+        "spk_simulator.access_dependencies_v0",
+        "spk_simulator.causal_service_frontier_v0",
+        "spk_simulator.external_ingress_v0"
+      ],
+      "path": "spk_simulator/causal_service_quantum_v0.py",
+      "sha256": "6391b9532a04ba8d9d9cb8bea48f7a05a7034ace17ceae37cd9a2cfd075b7bbb",
+      "size_bytes": 11137
+    },
+    {
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "_id"
+        },
+        {
+          "kind": "class",
+          "name": "RoutedOccurrenceV0"
+        },
+        {
+          "kind": "class",
+          "name": "RoutedStorageStateV0"
+        },
+        {
+          "kind": "class",
+          "name": "RoutedPEOccupancyV0"
+        },
+        {
+          "kind": "class",
+          "name": "RoutedStorageBlockedV0"
+        },
+        {
+          "kind": "function",
+          "name": "_validate"
+        },
+        {
+          "kind": "function",
+          "name": "routed_storage_usage_v0"
+        },
+        {
+          "kind": "function",
+          "name": "offer_routed_output_v0"
+        },
+        {
+          "kind": "function",
+          "name": "admit_routed_event_v0"
+        },
+        {
+          "kind": "function",
+          "name": "consume_routed_event_v0"
+        }
+      ],
+      "import_dependencies": [
+        "dataclasses",
+        "spk_architecture.profile_v0"
+      ],
+      "path": "spk_simulator/event_storage_v0.py",
+      "sha256": "183468b3765502ad098c2cb05a0e170bd472b81345a9faac27cc4619135270b4",
+      "size_bytes": 8375
+    },
+    {
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "_canonical_ids"
+        },
+        {
+          "kind": "class",
+          "name": "OutputStartReservationV0"
+        },
+        {
+          "kind": "class",
+          "name": "OutputStartLedgerV0"
+        },
+        {
+          "kind": "class",
+          "name": "OutputStartUsageV0"
+        },
+        {
+          "kind": "class",
+          "name": "OutputStartDecisionV0"
+        },
+        {
+          "kind": "function",
+          "name": "_validate"
+        },
+        {
+          "kind": "function",
+          "name": "output_start_usage_v0"
+        },
+        {
+          "kind": "function",
+          "name": "reserve_output_starts_v0"
+        },
+        {
+          "kind": "function",
+          "name": "cancel_output_start_v0"
+        },
+        {
+          "kind": "function",
+          "name": "confirm_output_publications_v0"
+        }
+      ],
+      "import_dependencies": [
+        "dataclasses",
+        "spk_architecture.profile_v0",
+        "spk_simulator.atomic_emission_admission_v0",
+        "spk_simulator.event_storage_v0"
+      ],
+      "path": "spk_simulator/output_start_reservation_v0.py",
+      "sha256": "1c74704196ae516e3da0b8c209697b1589dc9c57161a29687e617fe1dafa65f5",
+      "size_bytes": 12247
+    },
+    {
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "_canonical_request_ids"
+        },
+        {
+          "kind": "class",
+          "name": "OwnedComputedEmissionAllocationV0"
+        },
+        {
+          "kind": "class",
+          "name": "ComputedEmissionAllocationLedgerV0"
+        },
+        {
+          "kind": "class",
+          "name": "ComputedEmissionAllocationStepV0"
+        },
+        {
+          "kind": "function",
+          "name": "initialize_computed_emission_allocation_v0"
+        },
+        {
+          "kind": "function",
+          "name": "allocate_computed_emission_v0"
+        }
+      ],
+      "import_dependencies": [
+        "dataclasses",
+        "spk_architecture.profile_v0",
+        "spk_compiler.pe_admission_v0",
+        "spk_network.model_v0",
+        "spk_simulator.computed_topology_routing_v0",
+        "spk_simulator.versioned_core_transition_v0"
+      ],
+      "path": "spk_simulator/owned_computed_emission_allocation_v0.py",
+      "sha256": "2394bc4719d550755c18c281fe8d1b257472ce9cb2a59943243a465c0315ab88",
+      "size_bytes": 9803
+    },
+    {
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "_routes"
+        },
+        {
+          "kind": "class",
+          "name": "OwnedDynamicRouteServiceCycleStateV0"
+        },
+        {
+          "kind": "class",
+          "name": "OwnedDynamicRouteServiceCycleStepV0"
+        },
+        {
+          "kind": "function",
+          "name": "advance_owned_dynamic_route_service_cycle_v0"
+        }
+      ],
+      "import_dependencies": [
+        "dataclasses",
+        "spk_architecture.access_v0",
+        "spk_simulator.causal_service_quantum_v0",
+        "spk_simulator.owned_dynamic_route_transit_v0"
+      ],
+      "path": "spk_simulator/owned_dynamic_route_service_cycle_v0.py",
+      "sha256": "403017259a61ea31d58332372625869c710d159956bf6bdd9e9f3dd576a65ec5",
+      "size_bytes": 7447
+    },
+    {
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "_predecessors"
+        },
+        {
+          "kind": "function",
+          "name": "_require_request_graph"
+        },
+        {
+          "kind": "class",
+          "name": "DynamicServiceCostsV0"
+        },
+        {
+          "kind": "class",
+          "name": "DynamicEmissionServiceRegistrationV0"
+        },
+        {
+          "kind": "class",
+          "name": "OwnedDynamicServiceRegistrationStateV0"
+        },
+        {
+          "kind": "class",
+          "name": "OwnedDynamicServiceRegistrationStepV0"
+        },
+        {
+          "kind": "function",
+          "name": "initialize_owned_dynamic_services_v0"
+        },
+        {
+          "kind": "function",
+          "name": "register_owned_computed_emission_services_v0"
+        }
+      ],
+      "import_dependencies": [
+        "dataclasses",
+        "spk_architecture.access_v0",
+        "spk_architecture.profile_v0",
+        "spk_architecture.transaction_mapping_v0",
+        "spk_compiler.pe_admission_v0",
+        "spk_network.model_v0",
+        "spk_simulator.access_dependencies_v0",
+        "spk_simulator.owned_computed_emission_allocation_v0",
+        "spk_simulator.serialized_internal_graph_v0",
+        "spk_simulator.versioned_core_transition_v0"
+      ],
+      "path": "spk_simulator/owned_dynamic_service_registration_v0.py",
+      "sha256": "c502a40dd0dd00c378cc31bc814d202f76ef1c92d318bb25d5fb675547eeb3f2",
+      "size_bytes": 14514
+    },
+    {
+      "declarations": [
+        {
+          "kind": "class",
+          "name": "OwnedRootExecutionViewV0"
+        },
+        {
+          "kind": "class",
+          "name": "OwnedRootExecutionStepV0"
+        },
+        {
+          "kind": "class",
+          "name": "OwnedRootExecutionRunV0"
+        },
+        {
+          "kind": "class",
+          "name": "OwnedRootCustodyExecutionV0"
+        }
+      ],
+      "import_dependencies": [
+        "dataclasses",
+        "spk_simulator.owned_root_authority_custody_v0",
+        "spk_simulator.owned_root_single_clock_v0",
+        "spk_simulator.owned_shared_event_cycle_v0",
+        "spk_simulator.versioned_core_transition_v0",
+        "threading"
+      ],
+      "path": "spk_simulator/owned_root_custody_execution_v0.py",
+      "sha256": "6c0d86eb1211bc944881645c6ea0fcf3ed6cff32d0317116ebc0618cfcdf59f2",
+      "size_bytes": 7111
+    },
+    {
+      "declarations": [
+        {
+          "kind": "class",
+          "name": "TerminalCommitQuantumV0"
+        },
+        {
+          "kind": "function",
+          "name": "_handoff_contract"
+        },
+        {
+          "kind": "function",
+          "name": "_next"
+        },
+        {
+          "kind": "function",
+          "name": "_replay"
+        },
+        {
+          "kind": "class",
+          "name": "OwnedRootTerminalCommitStateV0"
+        },
+        {
+          "kind": "class",
+          "name": "OwnedRootTerminalCommitStepV0"
+        },
+        {
+          "kind": "function",
+          "name": "handoff_owned_root_terminal_commit_v0"
+        },
+        {
+          "kind": "function",
+          "name": "advance_owned_root_terminal_commit_v0"
+        }
+      ],
+      "import_dependencies": [
+        "dataclasses",
+        "spk_architecture.access_v0",
+        "spk_simulator.causal_service_quantum_v0",
+        "spk_simulator.owned_root_single_clock_v0",
+        "spk_simulator.serialized_internal_graph_v0",
+        "spk_simulator.versioned_core_transition_v0"
+      ],
+      "path": "spk_simulator/owned_root_terminal_commit_v0.py",
+      "sha256": "8d006c4a2d7aa1cde5bd051aa5cc2bff9d3312e168449aba9eb9dc153ca7f80a",
+      "size_bytes": 8696
+    }
+  ],
+  "independent_sweeps_identical": true,
+  "limitations": [
+    "Pinned original service/atomic APIs are captured and their unmodified tests run, not automatically composed into a new cross-domain owner.",
+    "Original 24d output-bearing veto is preserved. Previous I2c.8 private capacity claims are not native reservations.",
+    "No authentic source EVENT -> native recipient ACK -> BV -> P authority proven."
+  ],
+  "native_output_event_published": false,
+  "native_recipient_ACK_authenticated": false,
+  "native_state_and_OUTPUT_EVENT_single_owner_proven": false,
+  "next_acceptance": "Implement an additive native-authority transaction only after inspecting the exact captured original APIs and their existing tests; retain 24d veto and no P write.",
+  "original_native_transaction_end_to_end_proven": false,
+  "original_source_pins_checked": 12,
+  "original_test_case_count_per_sweep": 452,
+  "original_test_case_outcomes": [
+    {
+      "class": "tests.test_atomic_emission_admission_v0",
+      "name": "test_atomic_fanout_exceeds_source_output_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_admission_v0",
+      "name": "test_corrupt_target_pe_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_admission_v0",
+      "name": "test_deterministic",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_admission_v0",
+      "name": "test_duplicate_service_request_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_admission_v0",
+      "name": "test_input_objects_remain_unchanged",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_admission_v0",
+      "name": "test_missing_request_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_admission_v0",
+      "name": "test_missing_route_binding_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_admission_v0",
+      "name": "test_output_capacity_four_admitted",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_admission_v0",
+      "name": "test_output_is_frozen",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_admission_v0",
+      "name": "test_parallel_routes_distinct",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_admission_v0",
+      "name": "test_real_three_route_fanout",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_admission_v0",
+      "name": "test_same_pe_route_allowed",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_admission_v0",
+      "name": "test_single_slot_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_admission_v0",
+      "name": "test_source_output_required_matches_exact_fanout",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_admission_v0",
+      "name": "test_wrong_architecture_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_admission_v0",
+      "name": "test_wrong_epoch_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_admission_v0",
+      "name": "test_wrong_manifest_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_admission_v0",
+      "name": "test_wrong_plan_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_admission_v0",
+      "name": "test_wrong_profile_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_admission_v0",
+      "name": "test_wrong_reference_request_identity_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_admission_v0",
+      "name": "test_wrong_requests_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_admission_v0",
+      "name": "test_zero_routing_empty_input",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_after_source_slot_release_blocked_group_can_retry",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_atomic_group_fits_and_keeps_duplicates_distinct",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_corrupted_group_route_identity_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_corrupted_waiting_route_without_source_owner_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_duplicate_logical_emission_group_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_empty_group_accepted_without_output_capacity",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_existing_source_occupant_blocks_later_atomic_emission",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_frozen_result",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_full_atomic_group_permitted_at_exact_capacity",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_incorrect_output_capacity_in_group_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_independent_pe_may_publish_while_another_is_full",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_invalid_ready_id_containers_rejected[None]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_invalid_ready_id_containers_rejected[bad1]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_invalid_ready_id_containers_rejected[bad2]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_invalid_ready_id_containers_rejected[bad3]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_invalid_ready_id_containers_rejected[bad4]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_invalid_ready_id_containers_rejected[bad5]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_manifest_route_coverage_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_no_event_time_mutation",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_no_partial_publication_when_output_insufficient",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_no_ready_emission_is_noop",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_plan_determinism_and_input_order_independence",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_plan_does_not_mutate_caller_state",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_reoffer_existing_complete_group_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_reoffer_partially_published_group_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_selected_offers_integrate_with_boundary_controller",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_two_groups_do_not_overcommit_shared_pe",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_unknown_ready_emission_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_wrong_architecture_type_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_emission_offer_plan_v0",
+      "name": "test_wrong_epoch_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_atomic_boundary_is_not_neuronal_event_time",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_atomic_commit_cleans_preparation",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_atomic_parallel_routes_fail_closed_if_output_capacity_too_small",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_atomic_two_parallel_routes_are_published_together",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_audit_requires_output_context",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_bad_atomic_input_type_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_cannot_commit_before_emission_service_finishes",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_cannot_commit_before_state_service_finishes",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_corrupt_output_evidence_is_detected_on_resume",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_emitting_commit_requires_serialized_graph",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_failed_output_binding_does_not_forge_confirmation",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_historical_audit_reconstructs_emitting_state",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_immutable_publication_receipt",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_missing_event_tombstone_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_missing_published_route_identity_fails_audit",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_neither_old_state_nor_ledger_is_modified",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_original_state_survives_rejected_atomic_commit",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_output_commit_history_cannot_be_omitted",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_physical_output_publication_is_complete",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_precommit_cannot_claim_missing_reservation",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_precommit_has_not_published_core_route",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_prepared_base_version_cannot_be_modified",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_real_emission_and_state_commit",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_reject_forged_prepared_core_result",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_request_replay_is_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_returned_immutable_snapshot",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_same_snapshot_is_deterministic",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_wrong_commit_id_is_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_wrong_emission_request_cannot_be_used",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_wrong_routed_candidate_channel_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_neuronal_commit_v0",
+      "name": "test_wrong_target_epoch_rejected_before_storage_mutation",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_bad_ready_emissions_rejected[None]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_bad_ready_emissions_rejected[bad1]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_bad_ready_emissions_rejected[bad2]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_bad_ready_emissions_rejected[bad3]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_bad_ready_emissions_rejected[bad4]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_bad_ready_emissions_rejected[bad5]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_bad_ready_routes_rejected[None]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_bad_ready_routes_rejected[bad1]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_bad_ready_routes_rejected[bad2]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_bad_ready_routes_rejected[bad3]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_bad_ready_routes_rejected[bad4]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_bad_ready_routes_rejected[bad5]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_blocked_emission_can_retry_after_source_output_transfer",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_boundary_replay_strict_increases",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_constructor_and_snapshot_types_are_checked",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_denied_route_remains_in_output_and_waiters",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_denied_route_retry_after_consume",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_determinism_wrt_ready_order",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_due_external_ingress_admitted_at_bound_service_time",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_empty_cycle",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_empty_fanout_group_admission",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_event_time_untouched",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_existing_retained_route_may_start_without_reoffer",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_existing_waiting_route_retries_automatically",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_external_consumption_unlocks_awaiting_route",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_failure_does_not_mutate_input_state",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_new_routes_can_be_reserved_when_offer_is_accepted",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_no_republication_of_existing_group",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_no_skip_due_external_ingress",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_nonbackpressurable_external_overflow_fails_closed",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_one_atomic_emission_publishes_exact_routes",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_pe_event_claims_never_exceed_limit",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_pe_output_usage_never_exceeds_limit",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_preexisting_output_blocks_group_without_modifying_it",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_result_immutable",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_route_start_for_blocked_group_rejected_before_any_transition",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_two_competing_atomic_groups_no_partial_publication",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_two_due_external_inputs_exceed_capacity_fail_closed",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_unknown_emission_fails_closed",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_unknown_route_cannot_start",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_atomic_offer_boundary_v0",
+      "name": "test_zero_boundary_invalid_type",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_admit_single_atomic_group",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_admitted_emission_evidence_checked",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_automatic_retry_after_output_is_released",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_bad_frame_limit_rejected[-1]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_bad_frame_limit_rejected[0]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_bad_frame_limit_rejected[1.0]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_bad_frame_limit_rejected[None]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_bad_frame_limit_rejected[True]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_bad_identity_lists_rejected[None]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_bad_identity_lists_rejected[invalid0]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_bad_identity_lists_rejected[invalid2]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_bad_identity_lists_rejected[invalid3]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_bad_identity_lists_rejected[invalid4]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_bad_identity_lists_rejected[invalid5]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_blocked_group_remains_in_identity_queue",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_driver_state_invalid_partition_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_empty_waiting_cycle_does_not_claim_deadlock",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_event_time_is_not_converted",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_first_boundary_must_be_zero",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_frame_limit_is_explicit_not_deadlock",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_full_run_multiple_steps",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_immutable_records",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_initial_empty_boundary_idle",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_invalid_boundary_type_rejected[-1]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_invalid_boundary_type_rejected[0]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_invalid_boundary_type_rejected[None]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_invalid_boundary_type_rejected[True]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_missing_due_external_arrival_fails_closed",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_no_mutation_on_later_frame_failure",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_no_retry_duplication_of_admitted_emission",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_nonconsecutive_boundary_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_premature_route_start_refused_without_state_mutation",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_reannouncing_submission_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_reannouncing_waiting_emission_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_reordering_ready_identities_preserves_result",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_replay_deterministic",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_route_arbiter_retries_without_reannouncing_route",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_route_readiness_replay_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_runner_empty_frames",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_runner_resume_is_equivalent_to_one_shot",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_status_waiting_for_event_slot",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_storage_capacity_remains_finite",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_unknown_emission_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_bounded_backpressure_driver_v0",
+      "name": "test_unknown_route_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_bad_ready_ids_fail_closed[None]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_bad_ready_ids_fail_closed[ids1]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_bad_ready_ids_fail_closed[ids2]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_bad_ready_ids_fail_closed[ids3]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_bad_ready_ids_fail_closed[ids4]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_bad_ready_ids_fail_closed[ids5]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_can_replay_committed_emission_as_completed_but_not_new_start",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_can_reserve_followup_after_consumption_of_prior_group",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_cancel_frees_output_capacity",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_cannot_cancel_after_storage_already_published",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_confirm_requires_exact_route_occurrences",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_confirm_without_start_grant_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_corrupted_reservation_exceeds_capacity_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_double_cancel_is_invalid",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_duplicate_ledger_identity_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_duplicate_start_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_empty_snapshot_has_full_free_capacity",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_exact_capacity_for_two_slot_fanout",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_independent_pe_reservations_do_not_contend",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_input_order_does_not_change_priority",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_invalid_input_does_not_mutate_ledger",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_malformed_group_capacity_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_multiple_competing_emissions_grant_only_one",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_new_identity_in_destination_does_not_prove_output_publication",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_new_identity_in_tombstone_does_not_prove_output_publication",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_new_output_from_wrong_source_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_no_commit_ids_cannot_change_storage",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_no_physical_spike_is_created_at_service_start",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_partial_bundle_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_released_original_snapshot_is_immutable",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_reserve_single_emission_accounts_slots",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_unknown_start_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_unsolicited_new_route_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_wrong_profile_or_epoch_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_output_start_reservation_v0",
+      "name": "test_zero_fanout_emission_needs_no_slots",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_accept_reserved_finished_service",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_accept_reserved_partial_service",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_atomic_output_event_delivery_and_confirmation",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_backpressure_recovers_after_event_consumed",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_can_resume_from_immutable_partial_snapshot",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_delivery_of_previously_finished_route",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_destination_inventory_still_open",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_frozen_state",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_full_event_buffer_blocks_reservation",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_full_event_buffer_does_not_confirm_delivery",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_no_batch_consume_authorized",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_no_duplicate_delivery_after_finished",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_no_early_delivery",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_no_forged_service_confirmation",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_no_implicit_emission_publication",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_no_source_publication_means_no_dynamic_grant",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_one_free_slot_limits_grant_count",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_other_base_service_is_not_falsely_confirmed",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_preserves_event_time",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_pure_transition",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_reject_duplicate_reservations",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_reject_event_overcommit_with_reservation",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_reject_negative_reservations",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_reject_non_tuple_reservations",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_reject_reservation_for_emission_request_id",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_reject_reservation_for_unknown_route",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_reject_reservation_without_physical_output",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_reject_reserved_and_completed",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_reject_unowned_internal_service_starts",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_reject_unreserved_finished_service",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_reject_unreserved_partial_service",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_reject_unsorted_reservations",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_repeatability",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_reservation_persists_through_partial_work",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_reservation_removed_on_delivery",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_reusing_old_snapshot_only_replays_same_result_not_new_ids",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_routes_cost_three_service_ticks",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_service_budget_is_finite",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_service_does_not_claim_next_tick_without_running",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_service_time_increases_by_one",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_service_without_event_space_does_not_start_dynamic_route",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_static_event_occupants_are_not_treated_as_reserved_route",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_terminal_output_does_not_invent_route_delivery",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_two_routes_are_reserved_before_any_service",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_wrong_cycle_input_type",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_dynamic_route_service_cycle_v0",
+      "name": "test_wrong_transit_input_type",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_cannot_skip_due_event_with_later_service_tick",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_completing_service_does_not_consume_same_boundary",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_confirmed_at_boundary_after_finish",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_consumed_without_confirmed_service_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_determinism",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_duplicate_tombstone_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_early_forged_consumption_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_external_consumption_updates_pe_budget",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_immutable_external_seal",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_immutable_result",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_later_arrival_blocks_early_service",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_mismatched_quantity_rejected_before_service",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_multiple_external_instances_one_batch",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_multiunit_service_requires_multiple_boundaries",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_next_step_refuses_unowned_state_commit",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_no_early_consume_before_work_exhausted",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_output_event_time_distinct_from_service",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_overflow_is_atomic",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_preconfirmed_consume_without_physical_effect_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_pure_snapshot",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_reservations_remain_intact",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_resident_and_consumed_overlap_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_root_batch_lifecycle_has_no_terminal_spike",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_route_fixture_with_incomplete_external_release_fails_closed",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_same_channel_preserves_multiplicity",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_single_input_first_boundary_is_service_only",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_single_input_second_boundary_consumes_atomically",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_stale_root_is_not_reported_as_ready_after_consumption",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_storage_preserved",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_type_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_batch_consumption_v0",
+      "name": "test_unknown_tombstone_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_audit_is_replay_from_initial_snapshot",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_bounded_run_can_resume_without_forged_completion",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_closed_rejects_advance_and_run",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_closed_still_observable_and_auditable",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_concurrent_advance_one_revision_one_winner",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_concurrent_install_single_winner",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_concurrent_run_one_revision_one_winner",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_dispatch_module_never_imports_raw_owner_progress",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_duplicate_revision_advance_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_duplicate_revision_run_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_failed_install_keeps_dispatcher_unbound",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_failed_owner_progress_does_not_publish_dispatch_result",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_finite_path_root_handoff_terminal_commit_close",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_forged_request_revalidated_at_dispatch",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_handoff_failure_never_falls_back_to_root",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_handoff_spends_no_service_and_terminal_only_after",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_install_fresh_sealed_epoch_only",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_install_noncanonical_epoch_never_binds[7]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_install_noncanonical_epoch_never_binds[None]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_install_noncanonical_epoch_never_binds[True]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_install_noncanonical_epoch_never_binds[]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_install_rejects_epoch_identity_mismatch",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_install_rejects_wrong_shared_type",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_multiple_dispatcher_instances_are_not_globally_fenced",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_no_epoch_installed_rejects_observe_and_mutate",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_no_second_install_after_close",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_no_second_install_even_same_snapshot",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_nonrequest_refused_at_boundary",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_replies_never_expose_owner_or_registry",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_request_shapes_reject_noncanonical_values[args0]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_request_shapes_reject_noncanonical_values[args10]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_request_shapes_reject_noncanonical_values[args11]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_request_shapes_reject_noncanonical_values[args12]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_request_shapes_reject_noncanonical_values[args13]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_request_shapes_reject_noncanonical_values[args14]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_request_shapes_reject_noncanonical_values[args1]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_request_shapes_reject_noncanonical_values[args2]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_request_shapes_reject_noncanonical_values[args3]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_request_shapes_reject_noncanonical_values[args4]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_request_shapes_reject_noncanonical_values[args5]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_request_shapes_reject_noncanonical_values[args6]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_request_shapes_reject_noncanonical_values[args7]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_request_shapes_reject_noncanonical_values[args8]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_request_shapes_reject_noncanonical_values[args9]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_root_advance_uses_existing_single_service_time",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_snapshot_is_read_only",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_stale_after_closed_rejected_as_stale",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_terminal_failure_preserves_accepted_prefix",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_trace_contains_actual_custody_records",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_version_hidden_until_terminal_confirmation",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_execution_dispatch_v0",
+      "name": "test_wrong_dispatch_epoch_does_not_consume_service",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_terminal_commit_v0",
+      "name": "test_cannot_reenter_terminal_owner_after_commit",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_terminal_commit_v0",
+      "name": "test_deterministic_replay",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_terminal_commit_v0",
+      "name": "test_dropped_quantum_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_terminal_commit_v0",
+      "name": "test_fabricated_terminal_effect_rejected[confirmed_request_ids]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_terminal_commit_v0",
+      "name": "test_fabricated_terminal_effect_rejected[work_finished_request_ids]",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_terminal_commit_v0",
+      "name": "test_forged_receipt_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_terminal_commit_v0",
+      "name": "test_forged_service_clock_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_terminal_commit_v0",
+      "name": "test_forged_state_version_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_terminal_commit_v0",
+      "name": "test_full_service_commit_and_separate_later_confirmation",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_terminal_commit_v0",
+      "name": "test_handoff_witnessed_closed_root_and_output_free",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_terminal_commit_v0",
+      "name": "test_input_type_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_terminal_commit_v0",
+      "name": "test_missing_preparation_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_terminal_commit_v0",
+      "name": "test_multiquantum_partial_service",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_terminal_commit_v0",
+      "name": "test_mutated_service_slices_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_terminal_commit_v0",
+      "name": "test_mutated_terminal_tick_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_terminal_commit_v0",
+      "name": "test_no_handoff_before_core_prepare",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_terminal_commit_v0",
+      "name": "test_output_bearing_transition_is_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_terminal_commit_v0",
+      "name": "test_owner_is_immutable",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_terminal_commit_v0",
+      "name": "test_reordered_or_duplicated_quantum_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_terminal_commit_v0",
+      "name": "test_tampered_handoff_core_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_terminal_commit_v0",
+      "name": "test_tampered_handoff_witness_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_terminal_commit_v0",
+      "name": "test_two_independent_handoffs_remain_possible_without_external_registry",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_root_terminal_commit_v0",
+      "name": "test_unconfirmed_root_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_service_tick_v0",
+      "name": "test_bad_graph_fails_closed",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_service_tick_v0",
+      "name": "test_causal_dependency_prevents_early_output_grant",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_service_tick_v0",
+      "name": "test_first_boundary_automatically_grants_one_finite_bundle",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_service_tick_v0",
+      "name": "test_first_quantum_serves_only_output_granted_emission",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_service_tick_v0",
+      "name": "test_frame_cannot_fabricate_completion",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_service_tick_v0",
+      "name": "test_invalid_frame_type_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_service_tick_v0",
+      "name": "test_invalid_ledger_profile_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_service_tick_v0",
+      "name": "test_invalid_state_type_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_service_tick_v0",
+      "name": "test_multiunit_emission_keeps_start_grant_until_publication",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_service_tick_v0",
+      "name": "test_no_implicit_event_time_mutation",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_service_tick_v0",
+      "name": "test_no_post_effect_capacity_borrowed_for_new_start",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_service_tick_v0",
+      "name": "test_no_silent_state_mutation_on_invalid_effect",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_service_tick_v0",
+      "name": "test_output_grant_is_not_route_grant",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_service_tick_v0",
+      "name": "test_output_start_grants_remain_unique_after_wait",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_service_tick_v0",
+      "name": "test_previous_confirmed_emission_needs_ledger_evidence",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_service_tick_v0",
+      "name": "test_publication_requires_previously_reserved_start",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_service_tick_v0",
+      "name": "test_released_capacity_not_reused_at_same_boundary",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_service_tick_v0",
+      "name": "test_reordering_request_tuple_deterministic",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_service_tick_v0",
+      "name": "test_repeat_from_same_snapshot_deterministic",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_service_tick_v0",
+      "name": "test_reservation_capacity_unaffected_by_requested_order",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_service_tick_v0",
+      "name": "test_route_start_does_not_bypass_unfinished_emission_dependency",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_service_tick_v0",
+      "name": "test_second_tick_publication_confirms_first_bundle",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_service_tick_v0",
+      "name": "test_service_does_not_imply_output_publication",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_service_tick_v0",
+      "name": "test_state_is_immutable",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_service_tick_v0",
+      "name": "test_unknown_emission_in_admission_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_service_tick_v0",
+      "name": "test_waiting_bundle_retries_automatically_after_route_commit",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_service_tick_v0",
+      "name": "test_wrong_boundary_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_cycle_does_not_mutate_input",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_duplicate_external_indices_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_empty_input_equivalent_route_ownership",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_event_capacity_usage_balances",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_external_capacity_failure_does_not_spend_service",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_external_event_on_source_pe_with_route_on_other_pe_is_valid",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_external_event_time_never_confused_with_service_time",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_external_not_admitted_twice_after_first_boundary",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_external_on_other_pe_does_not_block_routes",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_four_external_inputs_overflow_atomically",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_future_external_fabrication_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_future_external_input_not_counted_early",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_future_external_overflow_if_route_claims_persist",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_invalid_dynamic_type_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_invalid_external_indices_type_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_invalid_seal_type_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_invalid_tick_input_type_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_invalid_usage_input_type_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_late_extra_ingress_in_seal_fails_closed",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_later_due_external_preserves_initial_count",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_negative_external_index_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_no_destination_batch_closure_authorized",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_no_external_consumption_is_fabricated",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_noncanonical_external_indices_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_past_due_external_accepted_when_resident",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_past_due_external_missing_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_prefix_includes_due_event_with_later_event_time",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_repeated_tick_on_unchanged_snapshot_is_deterministic",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_requests_not_for_route_rejected_before_physical_effect",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_routing_with_external_resident_can_finish",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_same_logical_time_multiplicity_kept",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_seal_node_ids_tampering_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_second_external_arrival_overflows_when_slot_reserved",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_service_partial_retains_claim_and_external_slot",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_shared_capacity_overcommit_at_initialization_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_single_external_takes_shared_slot_first",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_state_dataclass_is_immutable",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_strict_next_tick_service_progress",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_three_external_inputs_block_both_route_claims",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_two_external_inputs_leave_only_one_dynamic_route_claim",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_unknown_external_identity_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_wrong_epoch_seal_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_owned_shared_event_cycle_v0",
+      "name": "test_wrong_profile_seal_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_service_effect_authority_v0",
+      "name": "test_auto_retry_witness_confirms_later_boundary",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_service_effect_authority_v0",
+      "name": "test_batch_consume_cannot_come_before_finished_service",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_service_effect_authority_v0",
+      "name": "test_blocked_emission_is_not_confirmed",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_service_effect_authority_v0",
+      "name": "test_boundary_tick_mismatch_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_service_effect_authority_v0",
+      "name": "test_complete_route_consumption_can_confirm_own_batch",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_service_effect_authority_v0",
+      "name": "test_duplicate_requests_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_service_effect_authority_v0",
+      "name": "test_emission_publication_is_authenticated",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_service_effect_authority_v0",
+      "name": "test_empty_fanout_emission_can_confirm_without_offer",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_service_effect_authority_v0",
+      "name": "test_epoch_mismatch_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_service_effect_authority_v0",
+      "name": "test_external_arrival_is_not_a_consumption_confirmation",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_service_effect_authority_v0",
+      "name": "test_idle_boundary_no_spurious_confirmation",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_service_effect_authority_v0",
+      "name": "test_invalid_frame_type_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_service_effect_authority_v0",
+      "name": "test_invalid_request_kind_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_service_effect_authority_v0",
+      "name": "test_invalid_service_state_type_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_service_effect_authority_v0",
+      "name": "test_mismatched_route_pe_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_service_effect_authority_v0",
+      "name": "test_no_confirmation_for_missing_work",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_service_effect_authority_v0",
+      "name": "test_no_premature_confirmation",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_service_effect_authority_v0",
+      "name": "test_partial_batch_is_rejected_before_driver",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_service_effect_authority_v0",
+      "name": "test_profile_mismatch_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_service_effect_authority_v0",
+      "name": "test_quantum_service_finish_then_authentic_storage_effect",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_service_effect_authority_v0",
+      "name": "test_repeat_same_boundary_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_service_effect_authority_v0",
+      "name": "test_route_and_external_must_be_consumed_together_for_one_batch",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_service_effect_authority_v0",
+      "name": "test_route_commit_cannot_come_before_finished_service",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_service_effect_authority_v0",
+      "name": "test_route_commit_requires_completed_work_and_real_reservation",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_service_effect_authority_v0",
+      "name": "test_route_grant_is_not_service_completion",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_service_effect_authority_v0",
+      "name": "test_storage_result_is_immutable",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_service_effect_authority_v0",
+      "name": "test_unbound_consumption_rejected",
+      "outcome": "PASS"
+    },
+    {
+      "class": "tests.test_service_effect_authority_v0",
+      "name": "test_unfinished_emission_rejected_before_mutation",
+      "outcome": "PASS"
+    }
+  ],
+  "original_test_files": [
+    "tests/test_atomic_emission_admission_v0.py",
+    "tests/test_atomic_emission_offer_plan_v0.py",
+    "tests/test_atomic_neuronal_commit_v0.py",
+    "tests/test_atomic_offer_boundary_v0.py",
+    "tests/test_bounded_backpressure_driver_v0.py",
+    "tests/test_output_start_reservation_v0.py",
+    "tests/test_owned_dynamic_route_service_cycle_v0.py",
+    "tests/test_owned_root_batch_consumption_v0.py",
+    "tests/test_owned_root_execution_dispatch_v0.py",
+    "tests/test_owned_root_terminal_commit_v0.py",
+    "tests/test_owned_service_tick_v0.py",
+    "tests/test_owned_shared_event_cycle_v0.py",
+    "tests/test_service_effect_authority_v0.py"
+  ],
+  "original_test_pass_per_sweep": 452,
+  "original_test_skipped_per_sweep": 0,
+  "parent_i2c8_sha256": "287ef54c60b7bc31fad8ef94779bd20f282b1cdf99da539aaab103cfee6cf112",
+  "production_release": false,
+  "research_only": true,
+  "schema": "spk-lab-i2c9-native-owner-api-conformance/v1",
+  "scope": "ORIGINAL_NATIVE_ATOMIC_OWNER_API_BASELINE_ONLY",
+  "status": "SPK_LAB_I2C9_PINNED_NATIVE_OWNER_API_CONFORMANCE_RESEARCH_PASS"
+}

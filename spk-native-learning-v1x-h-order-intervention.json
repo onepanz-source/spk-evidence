@@ -1,0 +1,3764 @@
+{
+  "P_credit_transfer": false,
+  "architecture_promotion_allowed": false,
+  "bounded_merge_count": 20,
+  "bounded_order_sensitivity_observed": true,
+  "byte_identical_independent_sweeps": true,
+  "canonical_native_BV_chain_sha256": "6aa98105d3dc7cb40ef163c712c62c459a0131f3b7011d203952619f9eeab0e6",
+  "canonical_native_P_bank": {
+    "ctx0": {
+      "choice": 15,
+      "domain": "P",
+      "grants": 8,
+      "owner": "C",
+      "version": 8
+    }
+  },
+  "canonical_schedule": [
+    "p0",
+    "p1",
+    "p0",
+    "p1",
+    "p0",
+    "p1"
+  ],
+  "changed_per_producer_local_traces_vs_canonical": {
+    "p0": 17,
+    "p1": 19
+  },
+  "changed_source_local_trace_schedules_vs_canonical": 19,
+  "distinct_final_P_banks": 5,
+  "distinct_source_local_traces": 20,
+  "limitations": [
+    "Exactly 20 interleavings of two bounded three-event histories, not unbounded concurrency",
+    "Each producer local event order is fixed; global cross-producer timing is intervened",
+    "Observed differences of P traces do not confer causal ownership of shared state",
+    "Final P version is not a measure of transferable knowledge or utility",
+    "Native state writes use disposable scratch databases only",
+    "No state copy, no source authentication, no independent transfer authorization",
+    "Frozen PE/BV/v1w and signed predecessor policies remain untouched"
+  ],
+  "native_predecessor_banks_written": false,
+  "native_ticks_per_merge": 390,
+  "native_ticks_reference_and_crash": 780,
+  "native_ticks_total": 16380,
+  "native_ticks_two_independent_sweeps": 15600,
+  "original_v1x_g_history_reproduced": true,
+  "owner_fingerprint": "6CB89264EE8CAE4915522B7B22087AC39BDFFD22",
+  "parent_v1x_f_report_sha256": "e2291f77eb6496eb01e424ade2f0629caadc2d6f3a4fdffa10ef76d4185aaab0",
+  "parent_v1x_g_report_sha256": "9d8d1535bc67e72487f73d74012706b78ac42310ba79a4690db39d8470f1b794",
+  "permission_to_migrate_P": false,
+  "research_only": true,
+  "results": [
+    {
+      "P_bank": {
+        "ctx0": {
+          "choice": 12,
+          "domain": "P",
+          "grants": 4,
+          "owner": "C",
+          "version": 4
+        }
+      },
+      "bank_sha256": "7f53ec865756b9bab7f603ca42bea6f036e560a933b68377b2e0c39a4f0cb500",
+      "native_BV_chain_sha256": "c370118b60e37e48d8ef1ac7887ba7ce80153de4c073d41bd927bf435ca48cd6",
+      "native_ticks": 390,
+      "per_source_traces": {
+        "p0": [
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 0,
+              "owner": "C",
+              "version": 0
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              0,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 3,
+              "owner": "C",
+              "version": 3
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ],
+        "p1": [
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 3,
+              "owner": "C",
+              "version": 3
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              3,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              4,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              4,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ]
+      },
+      "schedule": [
+        "p0",
+        "p0",
+        "p0",
+        "p1",
+        "p1",
+        "p1"
+      ],
+      "trace_sha256": "6c9853e467591ba47d8f1fe1b8805234878bfeed8a5a72c51d92fa05f4ad8340"
+    },
+    {
+      "P_bank": {
+        "ctx0": {
+          "choice": 12,
+          "domain": "P",
+          "grants": 7,
+          "owner": "C",
+          "version": 7
+        }
+      },
+      "bank_sha256": "d4eca9c608ff3f6007119dac33e00596f1c1fdea4a0e8d6e9ec351b1241449aa",
+      "native_BV_chain_sha256": "71a27023048bd7f30645e9dbd49ce9adf40fe5bbdfcd764a8d1b5d4da55522f8",
+      "native_ticks": 390,
+      "per_source_traces": {
+        "p0": [
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 0,
+              "owner": "C",
+              "version": 0
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              0,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 6,
+              "owner": "C",
+              "version": 6
+            },
+            "first_C_PE_read": [
+              10,
+              4,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ],
+        "p1": [
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 6,
+              "owner": "C",
+              "version": 6
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 7,
+              "owner": "C",
+              "version": 7
+            },
+            "first_C_PE_read": [
+              10,
+              6,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 7,
+              "owner": "C",
+              "version": 7
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 7,
+              "owner": "C",
+              "version": 7
+            },
+            "first_C_PE_read": [
+              10,
+              7,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ]
+      },
+      "schedule": [
+        "p0",
+        "p0",
+        "p1",
+        "p0",
+        "p1",
+        "p1"
+      ],
+      "trace_sha256": "bfb1fe6a683b3f37434d76296ad828b8cd1abbc7a7de6a58b77e5b8dbd4cdc1e"
+    },
+    {
+      "P_bank": {
+        "ctx0": {
+          "choice": 12,
+          "domain": "P",
+          "grants": 7,
+          "owner": "C",
+          "version": 7
+        }
+      },
+      "bank_sha256": "d4eca9c608ff3f6007119dac33e00596f1c1fdea4a0e8d6e9ec351b1241449aa",
+      "native_BV_chain_sha256": "e00bd57ecc1b4d123fbfb0b8acd6bf02abe9d69f95ed5b7da8b39ecb76052796",
+      "native_ticks": 390,
+      "per_source_traces": {
+        "p0": [
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 0,
+              "owner": "C",
+              "version": 0
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              0,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 6,
+              "owner": "C",
+              "version": 6
+            },
+            "first_C_PE_read": [
+              10,
+              4,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ],
+        "p1": [
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              4,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 6,
+              "owner": "C",
+              "version": 6
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 7,
+              "owner": "C",
+              "version": 7
+            },
+            "first_C_PE_read": [
+              10,
+              6,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ]
+      },
+      "schedule": [
+        "p0",
+        "p0",
+        "p1",
+        "p1",
+        "p0",
+        "p1"
+      ],
+      "trace_sha256": "6b16ae9929885e1d18ff19cda561a1577fcbc36529048c36cc81d8960bcbd049"
+    },
+    {
+      "P_bank": {
+        "ctx0": {
+          "choice": 11,
+          "domain": "P",
+          "grants": 6,
+          "owner": "C",
+          "version": 6
+        }
+      },
+      "bank_sha256": "6dea5e97a39acd90e758178bf4a3210ec4336041de9f567a6f47f51a4330630d",
+      "native_BV_chain_sha256": "a987b029457c7e4e178498aba3704664df21abe61dd3e23247acfd125ffbd150",
+      "native_ticks": 390,
+      "per_source_traces": {
+        "p0": [
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 0,
+              "owner": "C",
+              "version": 0
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              0,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 6,
+              "owner": "C",
+              "version": 6
+            },
+            "first_C_PE_read": [
+              10,
+              4,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ],
+        "p1": [
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              4,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              4,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ]
+      },
+      "schedule": [
+        "p0",
+        "p0",
+        "p1",
+        "p1",
+        "p1",
+        "p0"
+      ],
+      "trace_sha256": "8af271e0b49d6ad92284650128b29747a1ac0347edbd97625314d8249ee77bd1"
+    },
+    {
+      "P_bank": {
+        "ctx0": {
+          "choice": 12,
+          "domain": "P",
+          "grants": 7,
+          "owner": "C",
+          "version": 7
+        }
+      },
+      "bank_sha256": "d4eca9c608ff3f6007119dac33e00596f1c1fdea4a0e8d6e9ec351b1241449aa",
+      "native_BV_chain_sha256": "38a4ebfbfc31fb0d24204c380e26a785aee9b0bd88dce6b5c409edcc93db5560",
+      "native_ticks": 390,
+      "per_source_traces": {
+        "p0": [
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 0,
+              "owner": "C",
+              "version": 0
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              0,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 5,
+              "owner": "C",
+              "version": 5
+            },
+            "first_C_PE_read": [
+              10,
+              4,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 5,
+              "owner": "C",
+              "version": 5
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 6,
+              "owner": "C",
+              "version": 6
+            },
+            "first_C_PE_read": [
+              10,
+              5,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ],
+        "p1": [
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 6,
+              "owner": "C",
+              "version": 6
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 7,
+              "owner": "C",
+              "version": 7
+            },
+            "first_C_PE_read": [
+              10,
+              6,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 7,
+              "owner": "C",
+              "version": 7
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 7,
+              "owner": "C",
+              "version": 7
+            },
+            "first_C_PE_read": [
+              10,
+              7,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ]
+      },
+      "schedule": [
+        "p0",
+        "p1",
+        "p0",
+        "p0",
+        "p1",
+        "p1"
+      ],
+      "trace_sha256": "755dea65cd991f8772003b55836d988e31849b7cd950ea3756697b6e3a457f1d"
+    },
+    {
+      "P_bank": {
+        "ctx0": {
+          "choice": 15,
+          "domain": "P",
+          "grants": 8,
+          "owner": "C",
+          "version": 8
+        }
+      },
+      "bank_sha256": "9ce1adf4f24ebfdf4abe335db92c33336ce2e9aa253d357a801ed74bf81ac37f",
+      "native_BV_chain_sha256": "6aa98105d3dc7cb40ef163c712c62c459a0131f3b7011d203952619f9eeab0e6",
+      "native_ticks": 390,
+      "per_source_traces": {
+        "p0": [
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 0,
+              "owner": "C",
+              "version": 0
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              0,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 5,
+              "owner": "C",
+              "version": 5
+            },
+            "first_C_PE_read": [
+              10,
+              4,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 7,
+              "owner": "C",
+              "version": 7
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 8,
+              "owner": "C",
+              "version": 8
+            },
+            "first_C_PE_read": [
+              10,
+              7,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ],
+        "p1": [
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 5,
+              "owner": "C",
+              "version": 5
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 7,
+              "owner": "C",
+              "version": 7
+            },
+            "first_C_PE_read": [
+              10,
+              5,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 8,
+              "owner": "C",
+              "version": 8
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 8,
+              "owner": "C",
+              "version": 8
+            },
+            "first_C_PE_read": [
+              10,
+              8,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ]
+      },
+      "schedule": [
+        "p0",
+        "p1",
+        "p0",
+        "p1",
+        "p0",
+        "p1"
+      ],
+      "trace_sha256": "591f9bfbd1a0996bcfecdfe4b8bbd1add0dc0cf0d6d6d8e7b50745295a548c54"
+    },
+    {
+      "P_bank": {
+        "ctx0": {
+          "choice": 15,
+          "domain": "P",
+          "grants": 8,
+          "owner": "C",
+          "version": 8
+        }
+      },
+      "bank_sha256": "9ce1adf4f24ebfdf4abe335db92c33336ce2e9aa253d357a801ed74bf81ac37f",
+      "native_BV_chain_sha256": "3ed3790f69e53db73550a078f0d9f3000ea9abff969b159591c14a59ad99ee96",
+      "native_ticks": 390,
+      "per_source_traces": {
+        "p0": [
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 0,
+              "owner": "C",
+              "version": 0
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              0,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 5,
+              "owner": "C",
+              "version": 5
+            },
+            "first_C_PE_read": [
+              10,
+              4,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 7,
+              "owner": "C",
+              "version": 7
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 8,
+              "owner": "C",
+              "version": 8
+            },
+            "first_C_PE_read": [
+              10,
+              7,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ],
+        "p1": [
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 5,
+              "owner": "C",
+              "version": 5
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 7,
+              "owner": "C",
+              "version": 7
+            },
+            "first_C_PE_read": [
+              10,
+              5,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 7,
+              "owner": "C",
+              "version": 7
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 7,
+              "owner": "C",
+              "version": 7
+            },
+            "first_C_PE_read": [
+              10,
+              7,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ]
+      },
+      "schedule": [
+        "p0",
+        "p1",
+        "p0",
+        "p1",
+        "p1",
+        "p0"
+      ],
+      "trace_sha256": "bb1f4c006702b9577d0de1a7c76892741759bae74d3a7bc68bf8136fd8577208"
+    },
+    {
+      "P_bank": {
+        "ctx0": {
+          "choice": 12,
+          "domain": "P",
+          "grants": 7,
+          "owner": "C",
+          "version": 7
+        }
+      },
+      "bank_sha256": "d4eca9c608ff3f6007119dac33e00596f1c1fdea4a0e8d6e9ec351b1241449aa",
+      "native_BV_chain_sha256": "0b175eeaf83738611e8fa13c4bf2631629639a0a7e2a14e0a2428ea41d683980",
+      "native_ticks": 390,
+      "per_source_traces": {
+        "p0": [
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 0,
+              "owner": "C",
+              "version": 0
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              0,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 5,
+              "owner": "C",
+              "version": 5
+            },
+            "first_C_PE_read": [
+              10,
+              4,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 5,
+              "owner": "C",
+              "version": 5
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 6,
+              "owner": "C",
+              "version": 6
+            },
+            "first_C_PE_read": [
+              10,
+              5,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ],
+        "p1": [
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              4,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 6,
+              "owner": "C",
+              "version": 6
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 7,
+              "owner": "C",
+              "version": 7
+            },
+            "first_C_PE_read": [
+              10,
+              6,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ]
+      },
+      "schedule": [
+        "p0",
+        "p1",
+        "p1",
+        "p0",
+        "p0",
+        "p1"
+      ],
+      "trace_sha256": "fcca319022247a38f569b9b50044c72d198107c5c631345d4503b7349d20f4b3"
+    },
+    {
+      "P_bank": {
+        "ctx0": {
+          "choice": 15,
+          "domain": "P",
+          "grants": 8,
+          "owner": "C",
+          "version": 8
+        }
+      },
+      "bank_sha256": "9ce1adf4f24ebfdf4abe335db92c33336ce2e9aa253d357a801ed74bf81ac37f",
+      "native_BV_chain_sha256": "08313fcb52274b99605d5a1b1d725d208caef4842ce53b966198648f33159f1c",
+      "native_ticks": 390,
+      "per_source_traces": {
+        "p0": [
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 0,
+              "owner": "C",
+              "version": 0
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              0,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 5,
+              "owner": "C",
+              "version": 5
+            },
+            "first_C_PE_read": [
+              10,
+              4,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 7,
+              "owner": "C",
+              "version": 7
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 8,
+              "owner": "C",
+              "version": 8
+            },
+            "first_C_PE_read": [
+              10,
+              7,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ],
+        "p1": [
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              4,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 5,
+              "owner": "C",
+              "version": 5
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 7,
+              "owner": "C",
+              "version": 7
+            },
+            "first_C_PE_read": [
+              10,
+              5,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ]
+      },
+      "schedule": [
+        "p0",
+        "p1",
+        "p1",
+        "p0",
+        "p1",
+        "p0"
+      ],
+      "trace_sha256": "70fadad412720ea173b72bb603cf88626bb240b1bea112063ce998bde00d2e05"
+    },
+    {
+      "P_bank": {
+        "ctx0": {
+          "choice": 11,
+          "domain": "P",
+          "grants": 6,
+          "owner": "C",
+          "version": 6
+        }
+      },
+      "bank_sha256": "6dea5e97a39acd90e758178bf4a3210ec4336041de9f567a6f47f51a4330630d",
+      "native_BV_chain_sha256": "9acd3e607d3b96b3c4cb19905b1044b89ec92da184cc26e1607e560570b41047",
+      "native_ticks": 390,
+      "per_source_traces": {
+        "p0": [
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 0,
+              "owner": "C",
+              "version": 0
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              0,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 5,
+              "owner": "C",
+              "version": 5
+            },
+            "first_C_PE_read": [
+              10,
+              4,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 5,
+              "owner": "C",
+              "version": 5
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 6,
+              "owner": "C",
+              "version": 6
+            },
+            "first_C_PE_read": [
+              10,
+              5,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ],
+        "p1": [
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              4,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              4,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ]
+      },
+      "schedule": [
+        "p0",
+        "p1",
+        "p1",
+        "p1",
+        "p0",
+        "p0"
+      ],
+      "trace_sha256": "6f5e706fb106aa0964fd70253fc646a4638a63b782ec9c8e085caa5afaf3970b"
+    },
+    {
+      "P_bank": {
+        "ctx0": {
+          "choice": 12,
+          "domain": "P",
+          "grants": 4,
+          "owner": "C",
+          "version": 4
+        }
+      },
+      "bank_sha256": "7f53ec865756b9bab7f603ca42bea6f036e560a933b68377b2e0c39a4f0cb500",
+      "native_BV_chain_sha256": "50b5735c5aa2b8945a03768a442d40dd1cc758632735a201567408ac1c0b61d1",
+      "native_ticks": 390,
+      "per_source_traces": {
+        "p0": [
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              1,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 3,
+              "owner": "C",
+              "version": 3
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ],
+        "p1": [
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 0,
+              "owner": "C",
+              "version": 0
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "first_C_PE_read": [
+              10,
+              0,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 3,
+              "owner": "C",
+              "version": 3
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              3,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              4,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ]
+      },
+      "schedule": [
+        "p1",
+        "p0",
+        "p0",
+        "p0",
+        "p1",
+        "p1"
+      ],
+      "trace_sha256": "6a9fac7c6edbd2425b922f3ed74551bfd314082c7c7c486c0bab3461335002f7"
+    },
+    {
+      "P_bank": {
+        "ctx0": {
+          "choice": 12,
+          "domain": "P",
+          "grants": 7,
+          "owner": "C",
+          "version": 7
+        }
+      },
+      "bank_sha256": "d4eca9c608ff3f6007119dac33e00596f1c1fdea4a0e8d6e9ec351b1241449aa",
+      "native_BV_chain_sha256": "1d29b1c334b6476a0ba16fa6e1b5a6d398cab9a0714116c1b9da13ebe1175383",
+      "native_ticks": 390,
+      "per_source_traces": {
+        "p0": [
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              1,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 6,
+              "owner": "C",
+              "version": 6
+            },
+            "first_C_PE_read": [
+              10,
+              4,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ],
+        "p1": [
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 0,
+              "owner": "C",
+              "version": 0
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "first_C_PE_read": [
+              10,
+              0,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 6,
+              "owner": "C",
+              "version": 6
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 7,
+              "owner": "C",
+              "version": 7
+            },
+            "first_C_PE_read": [
+              10,
+              6,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ]
+      },
+      "schedule": [
+        "p1",
+        "p0",
+        "p0",
+        "p1",
+        "p0",
+        "p1"
+      ],
+      "trace_sha256": "73b94e6d22a43c73e8cf2b7aa28421f63f69218831c25977ae2fe590d9a24577"
+    },
+    {
+      "P_bank": {
+        "ctx0": {
+          "choice": 11,
+          "domain": "P",
+          "grants": 6,
+          "owner": "C",
+          "version": 6
+        }
+      },
+      "bank_sha256": "6dea5e97a39acd90e758178bf4a3210ec4336041de9f567a6f47f51a4330630d",
+      "native_BV_chain_sha256": "603b6c08d5a882a02bcaad4979abe365a9f7749cd624e4eea840d637288c4372",
+      "native_ticks": 390,
+      "per_source_traces": {
+        "p0": [
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              1,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 6,
+              "owner": "C",
+              "version": 6
+            },
+            "first_C_PE_read": [
+              10,
+              4,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ],
+        "p1": [
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 0,
+              "owner": "C",
+              "version": 0
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "first_C_PE_read": [
+              10,
+              0,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              4,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ]
+      },
+      "schedule": [
+        "p1",
+        "p0",
+        "p0",
+        "p1",
+        "p1",
+        "p0"
+      ],
+      "trace_sha256": "7d0d8d626e5a6a45a26b01c64b8ef303f41719d688b6a3bfc273f5e57a1e6829"
+    },
+    {
+      "P_bank": {
+        "ctx0": {
+          "choice": 12,
+          "domain": "P",
+          "grants": 7,
+          "owner": "C",
+          "version": 7
+        }
+      },
+      "bank_sha256": "d4eca9c608ff3f6007119dac33e00596f1c1fdea4a0e8d6e9ec351b1241449aa",
+      "native_BV_chain_sha256": "1ea410f7dc66fd82678b9aa55b087208eb17ce414387e23fc1948caba80f91f8",
+      "native_ticks": 390,
+      "per_source_traces": {
+        "p0": [
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              1,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 5,
+              "owner": "C",
+              "version": 5
+            },
+            "first_C_PE_read": [
+              10,
+              4,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 5,
+              "owner": "C",
+              "version": 5
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 6,
+              "owner": "C",
+              "version": 6
+            },
+            "first_C_PE_read": [
+              10,
+              5,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ],
+        "p1": [
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 0,
+              "owner": "C",
+              "version": 0
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "first_C_PE_read": [
+              10,
+              0,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 6,
+              "owner": "C",
+              "version": 6
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 7,
+              "owner": "C",
+              "version": 7
+            },
+            "first_C_PE_read": [
+              10,
+              6,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ]
+      },
+      "schedule": [
+        "p1",
+        "p0",
+        "p1",
+        "p0",
+        "p0",
+        "p1"
+      ],
+      "trace_sha256": "a49ebf92efb5802ca54668be1241287a98ecf5b127df1193c2d5976bc7453129"
+    },
+    {
+      "P_bank": {
+        "ctx0": {
+          "choice": 15,
+          "domain": "P",
+          "grants": 8,
+          "owner": "C",
+          "version": 8
+        }
+      },
+      "bank_sha256": "9ce1adf4f24ebfdf4abe335db92c33336ce2e9aa253d357a801ed74bf81ac37f",
+      "native_BV_chain_sha256": "017b5ac70e4109fd7f4a7934f4962422f1d5d164de64cd36ff6d9e0ee83488bc",
+      "native_ticks": 390,
+      "per_source_traces": {
+        "p0": [
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              1,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 5,
+              "owner": "C",
+              "version": 5
+            },
+            "first_C_PE_read": [
+              10,
+              4,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 7,
+              "owner": "C",
+              "version": 7
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 8,
+              "owner": "C",
+              "version": 8
+            },
+            "first_C_PE_read": [
+              10,
+              7,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ],
+        "p1": [
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 0,
+              "owner": "C",
+              "version": 0
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "first_C_PE_read": [
+              10,
+              0,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 5,
+              "owner": "C",
+              "version": 5
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 7,
+              "owner": "C",
+              "version": 7
+            },
+            "first_C_PE_read": [
+              10,
+              5,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ]
+      },
+      "schedule": [
+        "p1",
+        "p0",
+        "p1",
+        "p0",
+        "p1",
+        "p0"
+      ],
+      "trace_sha256": "4574598c7860f7fe77ba8abbcd33cff222fd09ca638d6b928adb3ac72243dd56"
+    },
+    {
+      "P_bank": {
+        "ctx0": {
+          "choice": 11,
+          "domain": "P",
+          "grants": 6,
+          "owner": "C",
+          "version": 6
+        }
+      },
+      "bank_sha256": "6dea5e97a39acd90e758178bf4a3210ec4336041de9f567a6f47f51a4330630d",
+      "native_BV_chain_sha256": "ab95fda52466d8f8aa03103ad65b7a5852d4ff4ca37bc148638e5998a08ba160",
+      "native_ticks": 390,
+      "per_source_traces": {
+        "p0": [
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              1,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 5,
+              "owner": "C",
+              "version": 5
+            },
+            "first_C_PE_read": [
+              10,
+              4,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 5,
+              "owner": "C",
+              "version": 5
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 6,
+              "owner": "C",
+              "version": 6
+            },
+            "first_C_PE_read": [
+              10,
+              5,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ],
+        "p1": [
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 0,
+              "owner": "C",
+              "version": 0
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "first_C_PE_read": [
+              10,
+              0,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              4,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ]
+      },
+      "schedule": [
+        "p1",
+        "p0",
+        "p1",
+        "p1",
+        "p0",
+        "p0"
+      ],
+      "trace_sha256": "baaa2df2648e2ef921650d6971c6b0e6cb36e91ab0115d4d44f9560a5dd62d80"
+    },
+    {
+      "P_bank": {
+        "ctx0": {
+          "choice": 12,
+          "domain": "P",
+          "grants": 4,
+          "owner": "C",
+          "version": 4
+        }
+      },
+      "bank_sha256": "7f53ec865756b9bab7f603ca42bea6f036e560a933b68377b2e0c39a4f0cb500",
+      "native_BV_chain_sha256": "6bc166af9c9c1f5f9e2214f9501d82d2bee3b16f599f3b15f762e494b81e6548",
+      "native_ticks": 390,
+      "per_source_traces": {
+        "p0": [
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              1,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 3,
+              "owner": "C",
+              "version": 3
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ],
+        "p1": [
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 0,
+              "owner": "C",
+              "version": 0
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "first_C_PE_read": [
+              10,
+              0,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "first_C_PE_read": [
+              10,
+              1,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 3,
+              "owner": "C",
+              "version": 3
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              3,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ]
+      },
+      "schedule": [
+        "p1",
+        "p1",
+        "p0",
+        "p0",
+        "p0",
+        "p1"
+      ],
+      "trace_sha256": "24c819695fe696eb74530895b7a6c02f834b3c625d2759782804a5a7fa9866aa"
+    },
+    {
+      "P_bank": {
+        "ctx0": {
+          "choice": 11,
+          "domain": "P",
+          "grants": 6,
+          "owner": "C",
+          "version": 6
+        }
+      },
+      "bank_sha256": "6dea5e97a39acd90e758178bf4a3210ec4336041de9f567a6f47f51a4330630d",
+      "native_BV_chain_sha256": "b7209dbf369a4cb88c6452a34e498b9f15bc50addd9ec2884e284af10a3096a6",
+      "native_ticks": 390,
+      "per_source_traces": {
+        "p0": [
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              1,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 6,
+              "owner": "C",
+              "version": 6
+            },
+            "first_C_PE_read": [
+              10,
+              4,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ],
+        "p1": [
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 0,
+              "owner": "C",
+              "version": 0
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "first_C_PE_read": [
+              10,
+              0,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "first_C_PE_read": [
+              10,
+              1,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ]
+      },
+      "schedule": [
+        "p1",
+        "p1",
+        "p0",
+        "p0",
+        "p1",
+        "p0"
+      ],
+      "trace_sha256": "052ef27324ed1c58ec76507736ab39672ba1b9af2a50838353ba030ff09636eb"
+    },
+    {
+      "P_bank": {
+        "ctx0": {
+          "choice": 11,
+          "domain": "P",
+          "grants": 6,
+          "owner": "C",
+          "version": 6
+        }
+      },
+      "bank_sha256": "6dea5e97a39acd90e758178bf4a3210ec4336041de9f567a6f47f51a4330630d",
+      "native_BV_chain_sha256": "8e26aff0ffdaa6d7c9105375c8cf7c06c71b5127523cc471cca2e8aa69d3b89c",
+      "native_ticks": 390,
+      "per_source_traces": {
+        "p0": [
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              1,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 5,
+              "owner": "C",
+              "version": 5
+            },
+            "first_C_PE_read": [
+              10,
+              4,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 5,
+              "owner": "C",
+              "version": 5
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 6,
+              "owner": "C",
+              "version": 6
+            },
+            "first_C_PE_read": [
+              10,
+              5,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ],
+        "p1": [
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 0,
+              "owner": "C",
+              "version": 0
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "first_C_PE_read": [
+              10,
+              0,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "first_C_PE_read": [
+              10,
+              1,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 2,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 4,
+              "owner": "C",
+              "version": 4
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ]
+      },
+      "schedule": [
+        "p1",
+        "p1",
+        "p0",
+        "p1",
+        "p0",
+        "p0"
+      ],
+      "trace_sha256": "acc48b09d6941314563949b411f9a935ae13c88e21d53da9933584de162d9174"
+    },
+    {
+      "P_bank": {
+        "ctx0": {
+          "choice": 11,
+          "domain": "P",
+          "grants": 3,
+          "owner": "C",
+          "version": 3
+        }
+      },
+      "bank_sha256": "a05f708f2ae9120d0ef75cf20439f8f4a4fa2a9b10767f0a8ef3907a1cb6e014",
+      "native_BV_chain_sha256": "b7ed03bf4677de3901607fc27d0e31a0a56dda359cdaa40219e076ab56ef33f3",
+      "native_ticks": 390,
+      "per_source_traces": {
+        "p0": [
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              1,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 15,
+              "domain": "P",
+              "grants": 2,
+              "owner": "C",
+              "version": 2
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 3,
+              "owner": "C",
+              "version": 3
+            },
+            "first_C_PE_read": [
+              10,
+              2,
+              15,
+              [
+                15
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ],
+        "p1": [
+          {
+            "P_from": {
+              "choice": 11,
+              "domain": "P",
+              "grants": 0,
+              "owner": "C",
+              "version": 0
+            },
+            "P_grants": 1,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "first_C_PE_read": [
+              10,
+              0,
+              11,
+              [
+                11
+              ]
+            ],
+            "source_epoch": 0
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "first_C_PE_read": [
+              10,
+              1,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 1
+          },
+          {
+            "P_from": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "P_grants": 0,
+            "P_to": {
+              "choice": 12,
+              "domain": "P",
+              "grants": 1,
+              "owner": "C",
+              "version": 1
+            },
+            "first_C_PE_read": [
+              10,
+              1,
+              12,
+              [
+                12
+              ]
+            ],
+            "source_epoch": 2
+          }
+        ]
+      },
+      "schedule": [
+        "p1",
+        "p1",
+        "p1",
+        "p0",
+        "p0",
+        "p0"
+      ],
+      "trace_sha256": "fbf8559e87a340837ac7d921bded2fe03ce6b00f1d73920ed9f6bc4ef419ed8f"
+    }
+  ],
+  "same_source_local_orders_retained": true,
+  "schema": "spk-native-learning-v1x-h-bounded-order-intervention/v1",
+  "shared_history_crash_replay_identical": true,
+  "signed_review_policy_sha256": "3e7d5f172664ab9b6df0e652fc8d359f0a5c58d5505ba77ae7e4a7dcce8fd1ac",
+  "source_event_counts": {
+    "p0": 3,
+    "p1": 3
+  },
+  "source_identity_authenticated": false,
+  "status": "V1X_H_BOUNDED_ORIGINAL_PE_BV_P_ORDER_INTERVENTION_RESEARCH_PASS"
+}

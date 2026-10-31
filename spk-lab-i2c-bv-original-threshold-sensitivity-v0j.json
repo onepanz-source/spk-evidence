@@ -1,0 +1,124 @@
+{
+  "BV_verdict_proven": false,
+  "P_credit_transfer": false,
+  "P_state_mutated": false,
+  "architecture_promotion_allowed": false,
+  "baseline_commit": "8afde0cd2c7888ea7e26b70cad52ac232bb8e1da",
+  "current_head_custody": {
+    "P_state_mutated": false,
+    "architecture_promotion_allowed": false,
+    "baseline_commit": "8afde0cd2c7888ea7e26b70cad52ac232bb8e1da",
+    "compiler_head": "a76ebaae49373a4c6b66f94465d78dbf1cf19f80",
+    "current_head_is_operational_provenance_not_architecture_promotion": true,
+    "current_native_head": "aa56a7560a67936fe12e1430ee2f72c3c9b1428f",
+    "grant_authorized": false,
+    "head_continuation_verified_only_additions": true,
+    "historical_v0h_head": "fe444194cf206d5b4f27465a0b7db7f6c126e459",
+    "historical_v0h_intervals_revalidated": true,
+    "original_R2_every_non_head_field_byte_identical": true,
+    "original_R2_frozen_tags_and_manifest_revalidated": true,
+    "original_R3_test_source_receipts_verified": 4,
+    "post_v0h_added_paths_sha256": "33e1e4e68b61d51ab664f1423dc914df72975cf6d286d5f4cbca866d56975e97",
+    "post_v0h_additions_count": 37,
+    "schema": "spk-lab-i2cbv-readonly-head-continuation/v0j",
+    "source_owned_BV_verdict_proven": false,
+    "untracked_files_were_not_staged_or_authorized": true
+  },
+  "experimental_units": "TWO_ORIGINAL_NETWORK_CONTEXTS_NOT_FIVE_ROUTED_SPIKES",
+  "frozen_runtime_compiler_only": true,
+  "grant_authorized": false,
+  "historical_v0h_custody_revalidated": true,
+  "independent_registered_matched_pairs_proven": 0,
+  "limits": [
+    "Deterministic threshold sweep is computational sensitivity, not efficacy.",
+    "Three threshold choices do not create independent BV trial pairs.",
+    "Five route occurrences in three recipient batches are not five independent votes.",
+    "Original BV judge not invoked on causally bound trial data.",
+    "No grant, P update, sensor identity or architecture promotion."
+  ],
+  "mechanistic_contrast_observed": true,
+  "native_BV_evaluate_credit_executed_on_bound_trials": false,
+  "networks": [
+    {
+      "fixture_kind": "pipeline_inputs",
+      "monotonic_route_count_observed": true,
+      "original_native_baseline_and_high_endpoints_reverified": true,
+      "parent_I2CA_group_ids": [
+        "02de646a7403a836fd5ad53e3b1fed5c6d355e10a620b063ac89143ec5937564"
+      ],
+      "parent_I2CA_route_indices": [
+        0,
+        1
+      ],
+      "threshold_2": {
+        "full_native_result_observer_equal": true,
+        "network_ir_sha256": "5af279fe2ed734452e21e9c3e9a5b0699621eaa5a347e58bb238dd492ef7650d",
+        "outcome_sha256": "43c7ae535bfa284208398975b0a37739a10381dd33a5bb064e636374f42d005f",
+        "program_A_sha256": "623eea1088cbcb7f4b090eaf33cc4cc8a3d6d842759c6469098ca9442679a8e2",
+        "recipient_batches": [
+          {
+            "channels": [
+              0,
+              0
+            ],
+            "final_guard": true,
+            "final_raw": 0,
+            "node_id": "B",
+            "output_channels": [
+              7
+            ],
+            "timestamp": 4
+          }
+        ],
+        "route_count": 2,
+        "unmodified_inputs_and_placements": true
+      },
+      "threshold_route_counts": {
+        "1": 2,
+        "2": 2,
+        "3": 0
+      }
+    },
+    {
+      "fixture_kind": "pe_admission_authored",
+      "monotonic_route_count_observed": true,
+      "original_native_baseline_and_high_endpoints_reverified": true,
+      "parent_I2CA_group_ids": [
+        "a0dabca3147618c044728a88d1126241bfccbf7e7f1f3c79560a66fadd115900",
+        "059a2ccd7b99dc203f1b61d60a5218e8dd20204e108c32401d83e49b175fb699"
+      ],
+      "parent_I2CA_route_indices": [
+        0,
+        1,
+        2
+      ],
+      "threshold_2": {
+        "full_native_result_observer_equal": true,
+        "network_ir_sha256": "feebe24ae092ab83cc2cdd349bc2d82341b37c3e303c146f480a3ab46ee54433",
+        "outcome_sha256": "f835b62accca6960ce21185429f815f4aaab1105544ef5b5e2f12e8504961671",
+        "program_A_sha256": "623eea1088cbcb7f4b090eaf33cc4cc8a3d6d842759c6469098ca9442679a8e2",
+        "recipient_batches": [],
+        "route_count": 0,
+        "unmodified_inputs_and_placements": true
+      },
+      "threshold_route_counts": {
+        "1": 3,
+        "2": 0,
+        "3": 0
+      }
+    }
+  ],
+  "parent_i2ca_sha256": "6b4a6d37ae7242e99e42f3c5260cd6fc1deb37eda6901dabfa6b3232ef190135",
+  "parent_v0h_sha256": "fbc7a284b8aaa8cc203edece43283b44ff0dfef91e2a49f6060f5723f9050c6c",
+  "production_release": false,
+  "recipient_preference_or_global_metric_defined": false,
+  "research_only": true,
+  "schema": "spk-lab-i2c-bv-original-native-threshold-sensitivity/v0j",
+  "source_owned_BV_verdict_proven": false,
+  "status": "I2CBV_V0J_THREE_ARM_NATIVE_THRESHOLD_SENSITIVITY_PASS_HEAD_CONTINUED_NO_BV_VERDICT",
+  "thresholds_raw_predeclared": [
+    1,
+    2,
+    3
+  ]
+}

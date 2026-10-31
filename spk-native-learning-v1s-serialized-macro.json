@@ -1,0 +1,140 @@
+{
+  "actual_same_scheduler_C_PE_reads": [
+    [
+      [
+        10,
+        0,
+        12,
+        [
+          12
+        ]
+      ],
+      [
+        30,
+        1,
+        11,
+        [
+          11
+        ]
+      ]
+    ],
+    [
+      [
+        10,
+        1,
+        11,
+        [
+          11
+        ]
+      ],
+      [
+        30,
+        1,
+        11,
+        [
+          11
+        ]
+      ]
+    ],
+    [
+      [
+        10,
+        1,
+        11,
+        [
+          11
+        ]
+      ],
+      [
+        30,
+        2,
+        12,
+        [
+          12
+        ]
+      ]
+    ]
+  ],
+  "audited_epochs": 3,
+  "causal_chain_sha256": "0f6a0aae936b5a9ff583dffa19f5b68a7f6d0441e7e20e474d28f0f34bd4f047",
+  "committed_tick_rows": 75,
+  "concurrency": "ADVISORY_POSIX_FLOCK_ACROSS_CAUSAL_REPLAY_AND_COMMIT",
+  "continuous_P_versions": [
+    1,
+    1,
+    2
+  ],
+  "durable_predecessor_sha256": "01c1d3bfa6655e9ea3ea2b38be1ae45f75fb896fd94150ce59dc3a0cfc643407",
+  "frozen_disabled_learning_parity": {
+    "frozen_PE_forward_and_BV_resource_parity": true,
+    "old_BV_deliveries": 4,
+    "old_batches": 6
+  },
+  "limitations": [
+    "v1s is versioned three-node binary learning, not frozen original BV-v0e",
+    "Lock is advisory: old v1r callers and privileged host can bypass it",
+    "Persistence is a verified deterministic genesis replay, not heap restoration",
+    "Batch of epochs commits a recoverable prefix; it is NOT multi-epoch atomic",
+    "No irreversible external effects, signed hardware source, or N-node proof",
+    "No generalizable semantic credit outside 11/12 and A 21/22"
+  ],
+  "original_frozen_pins": {
+    "spk_architecture_v1/causal_memory_v1c.py": "175362406d3598331ec72c42084030248910e0033ea17d87d0810e221c8d7617",
+    "spk_architecture_v1/pe_execution_v1b.py": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9"
+  },
+  "original_v0e_learning": false,
+  "restart_cuts": [
+    {
+      "cut": 1,
+      "journal_sha256": "80645b50a1d5eb93230bb2be01fd86cbf7eea3ec160a7e5800dc4021e1246225"
+    },
+    {
+      "cut": 9,
+      "journal_sha256": "80645b50a1d5eb93230bb2be01fd86cbf7eea3ec160a7e5800dc4021e1246225"
+    },
+    {
+      "cut": 13,
+      "journal_sha256": "80645b50a1d5eb93230bb2be01fd86cbf7eea3ec160a7e5800dc4021e1246225"
+    },
+    {
+      "cut": 14,
+      "journal_sha256": "80645b50a1d5eb93230bb2be01fd86cbf7eea3ec160a7e5800dc4021e1246225"
+    },
+    {
+      "cut": 15,
+      "journal_sha256": "80645b50a1d5eb93230bb2be01fd86cbf7eea3ec160a7e5800dc4021e1246225"
+    },
+    {
+      "cut": 22,
+      "journal_sha256": "80645b50a1d5eb93230bb2be01fd86cbf7eea3ec160a7e5800dc4021e1246225"
+    },
+    {
+      "cut": 24,
+      "journal_sha256": "80645b50a1d5eb93230bb2be01fd86cbf7eea3ec160a7e5800dc4021e1246225"
+    }
+  ],
+  "reverse_learning_PE_reads": [
+    [
+      10,
+      0,
+      11,
+      [
+        11
+      ]
+    ],
+    [
+      30,
+      1,
+      12,
+      [
+        12
+      ]
+    ]
+  ],
+  "schema": "spk-native-learning-v1s-cooperative-serialized-conformance/v1",
+  "second_execution_new_rows": 0,
+  "security_scope": "COOPERATIVE_WRITERS_ONLY",
+  "status": "NATIVE_V1S_COOPERATIVE_SERIAL_DURABLE_CHAIN_PASS",
+  "versioned_v1s_learning": true
+}

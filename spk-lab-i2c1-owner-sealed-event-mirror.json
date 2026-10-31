@@ -1,0 +1,69 @@
+{
+  "BV_to_P_live_authorization": false,
+  "P_transfer": false,
+  "P_writes": 0,
+  "architecture_promotion_allowed": false,
+  "in_process_sealed_source_projection_verified": true,
+  "limitations": [
+    "Frozen Network shadow replay uses owner-sealed event inputs and owner C2, but is NOT an event trace emitted by 24j host.",
+    "The original I2c0 sidecar BV ran on a DIFFERENT 2-edge topology; no BV recipient feedback is bound to this owner occurrence.",
+    "Seal identifiers and digest checks are local consistency, NOT independently authenticated source identity.",
+    "No P writes or state transfer; no write authorization can be derived from these observations."
+  ],
+  "next_acceptance": "I2c.2: need BV feedback from the SAME owned C2 topology, an owner-to-recipient event identity bridge and separately authenticated write authority before any P write.",
+  "original_BV_sidecar_is_distinct_network": true,
+  "original_BV_to_P_attested_handoff": false,
+  "owner_event_mirror": {
+    "BV_recipient_feedback_bound_to_owned_occurrence": false,
+    "BV_to_P_authorized": false,
+    "P_writes": 0,
+    "frozen_network_observation_sha256": "593d20c7eb2ccf89770faf0f0400d6d9331b36bf8f9d111da70dbf9baba3bfeb",
+    "frozen_route_records_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "network_edge_count": 3,
+    "network_node_count": 3,
+    "network_shadow_reexecution_only": true,
+    "observation": {
+      "all_routes_from_frozen_batches": true,
+      "ambiguous_parallel_edge_identity": false,
+      "frozen_emissions": 0,
+      "frozen_processed_batches": 1,
+      "frozen_processed_events": 1,
+      "frozen_route_occurrences": 0,
+      "frozen_terminal_outputs": 0,
+      "multiplicity_conserved": true,
+      "route_delays_valid": true,
+      "sealed_initial_occurrences": 1
+    },
+    "owned_host_event_id_link_authenticated": false,
+    "owner_c2_sha256": "393d52d31b7e5cd3c35e765bfda2c2bdd25d6d824fc10125e5c317ff87f7dc4c",
+    "owner_epoch_id": "E0",
+    "placement": {
+      "A": "PE0",
+      "B": "PE1",
+      "C": "PE0"
+    },
+    "sealed_input_records": [
+      {
+        "arrival_boundary": 4,
+        "consume_request_id": 2,
+        "event": [
+          3,
+          "C",
+          0
+        ],
+        "input_index": 0,
+        "target_pe_id": "PE0"
+      }
+    ],
+    "sealed_input_records_sha256": "9037145bb07c17402673fa2d6278658ea44ea553d043339cc9842226942454ac",
+    "source_of_input": "original-in-process-owned-external-ingress-seal",
+    "source_of_routes": "original-frozen-Network-v0-learning-observer"
+  },
+  "owner_network_shadow_reexecution_performed": true,
+  "parent_i2b4b_sha256": "095bd6ece683d99379175be15f15ddb5a66595d26449a3e91f856506947d7479",
+  "parent_i2c0_sha256": "774994df3334fcee368cc5dca0c4f60f5585a4a005342ac805bf9568240b45f4",
+  "production_release": false,
+  "research_only": true,
+  "schema": "spk-lab-i2c1-original-owner-sealed-event-mirror/v1",
+  "status": "SPK_LAB_I2C1_ORIGINAL_OWNER_SEALED_EVENT_MIRROR_RESEARCH_PASS"
+}

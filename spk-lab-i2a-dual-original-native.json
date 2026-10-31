@@ -1,0 +1,232 @@
+{
+  "BV_to_P_live_host_authorization_proven": false,
+  "I1_read_only_boundary_unchanged": true,
+  "I2_remaining": [
+    "I2b: original Compiler/Network/Runtime dispatch to the native PE/BV/P path",
+    "I2c: independently authorized BV-to-P learning intent in the live host",
+    "I2d: two configurable networks with actual causal feedback rather than replay-only fixtures"
+  ],
+  "P_credit_transfer": false,
+  "P_transfer": false,
+  "architecture_promotion_allowed": false,
+  "compiler_network_runtime_full_cycle": false,
+  "crash_replay_byte_equal": true,
+  "dual_original_native_replay": true,
+  "independent_sweeps_byte_equal": true,
+  "limitations": [
+    "Two named isolated original native PE/BV/P replays are not concurrent neural network execution",
+    "BV chain hashes attest replay provenance but not BV-to-P causal authorization",
+    "Authored finite four-payload inputs, not new or authenticated physical sensors",
+    "P changes are confined to scratch DBs; no new host learn authority",
+    "No Compiler->Network dispatch, production execution or frozen contract edits"
+  ],
+  "native_counterexamples": [],
+  "native_execution_performed": true,
+  "native_predecessor_banks_written": false,
+  "native_predictive_matches": 2,
+  "native_results": [
+    {
+      "BV_chain_sha256": "7e0537d3b74ff3516e791224afb0f66b5de2b28f7d0ceae18274646b469ab176",
+      "P_final_version": 7,
+      "P_initial_version": 3,
+      "matching_projection": true,
+      "native_ticks": 585,
+      "network_id": "LAB-A",
+      "observed_trace": [
+        {
+          "P_grants": 2,
+          "P_to_version": 5,
+          "probe_id": "p0-e0",
+          "transition_sha256": "68e2a6e82a90ab36f1883e83a9bdb5dd6ad9a1793b92924b31b2cc7702fda4f7"
+        },
+        {
+          "P_grants": 1,
+          "P_to_version": 6,
+          "probe_id": "p0-e2",
+          "transition_sha256": "7166711d28dbf21e9eba2c04e579231c2c76ea5953789ca2bc2e056a59e20231"
+        },
+        {
+          "P_grants": 1,
+          "P_to_version": 7,
+          "probe_id": "p1-e0",
+          "transition_sha256": "7ad5ccec6755b973e3fc614ba600eeae78cea0d31db399f7f355670050aba01c"
+        }
+      ],
+      "predicted_trace": [
+        {
+          "P_grants": 2,
+          "P_to_version": 5,
+          "probe_id": "p0-e0",
+          "transition_sha256": "68e2a6e82a90ab36f1883e83a9bdb5dd6ad9a1793b92924b31b2cc7702fda4f7"
+        },
+        {
+          "P_grants": 1,
+          "P_to_version": 6,
+          "probe_id": "p0-e2",
+          "transition_sha256": "7166711d28dbf21e9eba2c04e579231c2c76ea5953789ca2bc2e056a59e20231"
+        },
+        {
+          "P_grants": 1,
+          "P_to_version": 7,
+          "probe_id": "p1-e0",
+          "transition_sha256": "7ad5ccec6755b973e3fc614ba600eeae78cea0d31db399f7f355670050aba01c"
+        }
+      ],
+      "source_order_preserved": true,
+      "writes_only_to_network_private_scratch": true
+    },
+    {
+      "BV_chain_sha256": "0ac0fe24000f7c530f2b72ab0dc63c19d9b7bc7ed410ff0aed690f2a97c2df70",
+      "P_final_version": 8,
+      "P_initial_version": 7,
+      "matching_projection": true,
+      "native_ticks": 585,
+      "network_id": "LAB-B",
+      "observed_trace": [
+        {
+          "P_grants": 0,
+          "P_to_version": 7,
+          "probe_id": "p1-e0",
+          "transition_sha256": "7c66f5738826c739ee3003f542294214dc1e8f45781cad6c74752cf8d0ab9b84"
+        },
+        {
+          "P_grants": 1,
+          "P_to_version": 8,
+          "probe_id": "p0-e2",
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        },
+        {
+          "P_grants": 0,
+          "P_to_version": 8,
+          "probe_id": "p0-e0",
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "predicted_trace": [
+        {
+          "P_grants": 0,
+          "P_to_version": 7,
+          "probe_id": "p1-e0",
+          "transition_sha256": "7c66f5738826c739ee3003f542294214dc1e8f45781cad6c74752cf8d0ab9b84"
+        },
+        {
+          "P_grants": 1,
+          "P_to_version": 8,
+          "probe_id": "p0-e2",
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        },
+        {
+          "P_grants": 0,
+          "P_to_version": 8,
+          "probe_id": "p0-e0",
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "source_order_preserved": true,
+      "writes_only_to_network_private_scratch": true
+    }
+  ],
+  "native_ticks_total": 3510,
+  "negative_controls": [
+    "learn",
+    "P_transfer",
+    "P_credit_transfer",
+    "migrate_P",
+    "grant_authority",
+    "promote_architecture",
+    "unverified_sensor",
+    "inject_foreign_BV",
+    "write_predecessor_P",
+    "execute_host"
+  ],
+  "network_count": 2,
+  "network_private_scratch_db_count_per_sweep": 2,
+  "parent_i1_sha256": "c6893e3de40638715fd021f2b32485a2809885040e3cebec81c8fe41574e0628",
+  "per_network_epochs": 9,
+  "permission_to_migrate_P": false,
+  "physical_sensor_authenticated": false,
+  "plan": [
+    {
+      "P_expected_final_version": 7,
+      "P_initial_version": 3,
+      "network_id": "LAB-A",
+      "original_source_schedule": [
+        "p1",
+        "p1",
+        "p1",
+        "p0",
+        "p0",
+        "p0"
+      ],
+      "predicted_trace": [
+        {
+          "P_grants": 2,
+          "P_to_version": 5,
+          "probe_id": "p0-e0",
+          "transition_sha256": "68e2a6e82a90ab36f1883e83a9bdb5dd6ad9a1793b92924b31b2cc7702fda4f7"
+        },
+        {
+          "P_grants": 1,
+          "P_to_version": 6,
+          "probe_id": "p0-e2",
+          "transition_sha256": "7166711d28dbf21e9eba2c04e579231c2c76ea5953789ca2bc2e056a59e20231"
+        },
+        {
+          "P_grants": 1,
+          "P_to_version": 7,
+          "probe_id": "p1-e0",
+          "transition_sha256": "7ad5ccec6755b973e3fc614ba600eeae78cea0d31db399f7f355670050aba01c"
+        }
+      ],
+      "prefix": "111000",
+      "probe_ids": [
+        "p0-e0",
+        "p0-e2",
+        "p1-e0"
+      ]
+    },
+    {
+      "P_expected_final_version": 8,
+      "P_initial_version": 7,
+      "network_id": "LAB-B",
+      "original_source_schedule": [
+        "p0",
+        "p0",
+        "p1",
+        "p0",
+        "p1",
+        "p1"
+      ],
+      "predicted_trace": [
+        {
+          "P_grants": 0,
+          "P_to_version": 7,
+          "probe_id": "p1-e0",
+          "transition_sha256": "7c66f5738826c739ee3003f542294214dc1e8f45781cad6c74752cf8d0ab9b84"
+        },
+        {
+          "P_grants": 1,
+          "P_to_version": 8,
+          "probe_id": "p0-e2",
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        },
+        {
+          "P_grants": 0,
+          "P_to_version": 8,
+          "probe_id": "p0-e0",
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "prefix": "001011",
+      "probe_ids": [
+        "p1-e0",
+        "p0-e2",
+        "p0-e0"
+      ]
+    }
+  ],
+  "production_release": false,
+  "research_only": true,
+  "schema": "spk-lab-i2a-dual-original-native-network/v1",
+  "status": "SPK_LAB_I2A_BOUNDED_DUAL_NATIVE_NETWORK_RESEARCH_PASS"
+}

@@ -1,0 +1,52 @@
+{
+  "BV_to_P_live_authorization": false,
+  "P_transfer": false,
+  "P_writes": 0,
+  "architecture_promotion_allowed": false,
+  "limitations": [
+    "Original sidecar BV runs on a 2-edge chain; owned C2 fixture uses 3 edges: topology is not identical.",
+    "Replay and hash checks are integrity evidence, not independent authentication or causal binding.",
+    "No event-id link joins 24j owned execution to this BV trace.",
+    "P bank is not opened or modified; no P write is ever authorized."
+  ],
+  "next_acceptance": "I2c requires source-attested mapping from owned C2 EVENT occurrence to BV recipient and independent write authority before any P write.",
+  "observed_causal_path": [
+    "A",
+    "B",
+    "C"
+  ],
+  "operator_authentication_proven": false,
+  "original_BV_boundary": {
+    "BV_assessments": 1,
+    "BV_can_authorize_P_write": false,
+    "BV_context_nodes": [
+      "A",
+      "B",
+      "C"
+    ],
+    "BV_edge_count": 2,
+    "BV_initial_event_count": 1,
+    "BV_route_occurrences": 2,
+    "BV_topology_equals_owner": false,
+    "BV_trace_sha256": "203e9b02901639ba74712ed9fd6bf1c5e6c7a9a6b9d380b2973a4abd63891936",
+    "BV_transport_sha256": "b13bd142225694f1aac3c97c49cdb2b4b2a457d984b0c32eaedbf657d4be356d",
+    "P_writes": 0,
+    "feedback_is_sidecar_not_owned_host_event": true,
+    "owner_edges": 3,
+    "owner_nodes": 3,
+    "owner_placement": {
+      "A": "PE0",
+      "B": "PE1",
+      "C": "PE0"
+    },
+    "owner_source_authenticated": false,
+    "source_attested_cross_host_causal_mapping": false
+  },
+  "original_budgeted_BV_sidecar_executed": true,
+  "original_frozen_BV_executed": true,
+  "parent_i2b4b_sha256": "095bd6ece683d99379175be15f15ddb5a66595d26449a3e91f856506947d7479",
+  "production_release": false,
+  "research_only": true,
+  "schema": "spk-lab-i2c0-original-bv-owned-causal-intake/v1",
+  "status": "SPK_LAB_I2C0_ORIGINAL_BV_TO_OWNED_EPOCH_CAUSAL_INTAKE_RESEARCH_PASS"
+}

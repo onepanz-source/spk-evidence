@@ -1,0 +1,3223 @@
+{
+  "P_credit_transfer": false,
+  "architecture_promotion_allowed": false,
+  "bounded_suffix_P_observational_sufficiency": true,
+  "crash_replay_byte_equal": true,
+  "distinct_suffix_responses_by_suffix": {
+    "01": 5,
+    "10": 5
+  },
+  "future_suffix_count": 2,
+  "limitations": [
+    "Only 20 pinned six-event prefixes and two repeated two-event suffixes",
+    "Suffix events are replay probes reused from signed-policy-bound authored fixture, not new signed sensor observations",
+    "Same bounded suffix response cannot prove equivalence for arbitrary future events",
+    "Observed response is P/BV/PE projection, not all internal or external process state",
+    "Report preserves distinct causal histories despite possible future P-policy equivalence",
+    "Native writes confined to disposable scratch SQLite; historical P banks remain untouched",
+    "No P transfer, signed physical producer identity, or architecture promotion"
+  ],
+  "native_histories_per_sweep": 40,
+  "native_independent_sweeps_byte_equal": true,
+  "native_predecessor_banks_written": false,
+  "native_ticks_total": 42640,
+  "parent_v1x_h_report_sha256": "8de159bf25edca7887792408c44be54f3951f546fc1ec6a5ee84244b54284f9b",
+  "parent_v1x_i_report_sha256": "a3356dfdb8dfeddde40bf437d9e3c4dc3b8de19f623a896ed84006ac49b618b6",
+  "permission_to_migrate_P": false,
+  "prefix_count": 20,
+  "research_only": true,
+  "results": [
+    {
+      "P_after": {
+        "choice": 12,
+        "domain": "P",
+        "grants": 7,
+        "owner": "C",
+        "version": 7
+      },
+      "P_initial": {
+        "choice": 12,
+        "domain": "P",
+        "grants": 4,
+        "owner": "C",
+        "version": 4
+      },
+      "native_ticks": 520,
+      "prefix": "000111",
+      "suffix": "01",
+      "suffix_response_sha256": "84cbc66e5e872d7ebb2d3b9c3f78ef9cff26ad417e38a10ee8c4e647eee79ba7",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 4,
+            "owner": "C",
+            "version": 4
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 5,
+            "owner": "C",
+            "version": 5
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            4,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 5,
+            "owner": "C",
+            "version": 5
+          },
+          "P_grants": 2,
+          "P_to": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            5,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 5,
+        "owner": "C",
+        "version": 5
+      },
+      "P_initial": {
+        "choice": 12,
+        "domain": "P",
+        "grants": 4,
+        "owner": "C",
+        "version": 4
+      },
+      "native_ticks": 520,
+      "prefix": "000111",
+      "suffix": "10",
+      "suffix_response_sha256": "00967b4c4177faf93abf378e66e886a0247c9ed9f9dfd8ae1110fdf89377e7cc",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 4,
+            "owner": "C",
+            "version": 4
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 4,
+            "owner": "C",
+            "version": 4
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            4,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 4,
+            "owner": "C",
+            "version": 4
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 5,
+            "owner": "C",
+            "version": 5
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            4,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 12,
+        "domain": "P",
+        "grants": 7,
+        "owner": "C",
+        "version": 7
+      },
+      "native_ticks": 520,
+      "prefix": "001011",
+      "suffix": "01",
+      "suffix_response_sha256": "7fea8d5a2f91ca71d0399a54bdc95ac978c4b0c286239084ae4686e3f1086aed",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            7,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            8,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 12,
+        "domain": "P",
+        "grants": 7,
+        "owner": "C",
+        "version": 7
+      },
+      "native_ticks": 520,
+      "prefix": "001011",
+      "suffix": "10",
+      "suffix_response_sha256": "1996c2b5450cda405f45d134a710c7cf8d49e4ef3b17ab87e9ca86ef2c002234",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            7,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            7,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 12,
+        "domain": "P",
+        "grants": 7,
+        "owner": "C",
+        "version": 7
+      },
+      "native_ticks": 520,
+      "prefix": "001101",
+      "suffix": "01",
+      "suffix_response_sha256": "7fea8d5a2f91ca71d0399a54bdc95ac978c4b0c286239084ae4686e3f1086aed",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            7,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            8,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 12,
+        "domain": "P",
+        "grants": 7,
+        "owner": "C",
+        "version": 7
+      },
+      "native_ticks": 520,
+      "prefix": "001101",
+      "suffix": "10",
+      "suffix_response_sha256": "1996c2b5450cda405f45d134a710c7cf8d49e4ef3b17ab87e9ca86ef2c002234",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            7,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            7,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 11,
+        "domain": "P",
+        "grants": 6,
+        "owner": "C",
+        "version": 6
+      },
+      "native_ticks": 520,
+      "prefix": "001110",
+      "suffix": "01",
+      "suffix_response_sha256": "9d1395d7e8ace3426323ef663ac68abda6d96834e356329425720a436f41f947",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 11,
+            "domain": "P",
+            "grants": 6,
+            "owner": "C",
+            "version": 6
+          },
+          "P_grants": 2,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            6,
+            11,
+            [
+              11
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            8,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 11,
+        "domain": "P",
+        "grants": 6,
+        "owner": "C",
+        "version": 6
+      },
+      "native_ticks": 520,
+      "prefix": "001110",
+      "suffix": "10",
+      "suffix_response_sha256": "c2382919e9f521e0cdd97db57bf10d43bd957e957819f2beb1f65d4cb3a291ee",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 11,
+            "domain": "P",
+            "grants": 6,
+            "owner": "C",
+            "version": 6
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            6,
+            11,
+            [
+              11
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            7,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 12,
+        "domain": "P",
+        "grants": 7,
+        "owner": "C",
+        "version": 7
+      },
+      "native_ticks": 520,
+      "prefix": "010011",
+      "suffix": "01",
+      "suffix_response_sha256": "7fea8d5a2f91ca71d0399a54bdc95ac978c4b0c286239084ae4686e3f1086aed",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            7,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            8,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 12,
+        "domain": "P",
+        "grants": 7,
+        "owner": "C",
+        "version": 7
+      },
+      "native_ticks": 520,
+      "prefix": "010011",
+      "suffix": "10",
+      "suffix_response_sha256": "1996c2b5450cda405f45d134a710c7cf8d49e4ef3b17ab87e9ca86ef2c002234",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            7,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            7,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "native_ticks": 520,
+      "prefix": "010101",
+      "suffix": "01",
+      "suffix_response_sha256": "0de33e5352055325b7d99d50a99d4add7bea29b487fdf8f2a755ab1b3b6d750d",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            8,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            8,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "native_ticks": 520,
+      "prefix": "010101",
+      "suffix": "10",
+      "suffix_response_sha256": "0de33e5352055325b7d99d50a99d4add7bea29b487fdf8f2a755ab1b3b6d750d",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            8,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            8,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "native_ticks": 520,
+      "prefix": "010110",
+      "suffix": "01",
+      "suffix_response_sha256": "0de33e5352055325b7d99d50a99d4add7bea29b487fdf8f2a755ab1b3b6d750d",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            8,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            8,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "native_ticks": 520,
+      "prefix": "010110",
+      "suffix": "10",
+      "suffix_response_sha256": "0de33e5352055325b7d99d50a99d4add7bea29b487fdf8f2a755ab1b3b6d750d",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            8,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            8,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 12,
+        "domain": "P",
+        "grants": 7,
+        "owner": "C",
+        "version": 7
+      },
+      "native_ticks": 520,
+      "prefix": "011001",
+      "suffix": "01",
+      "suffix_response_sha256": "7fea8d5a2f91ca71d0399a54bdc95ac978c4b0c286239084ae4686e3f1086aed",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            7,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            8,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 12,
+        "domain": "P",
+        "grants": 7,
+        "owner": "C",
+        "version": 7
+      },
+      "native_ticks": 520,
+      "prefix": "011001",
+      "suffix": "10",
+      "suffix_response_sha256": "1996c2b5450cda405f45d134a710c7cf8d49e4ef3b17ab87e9ca86ef2c002234",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            7,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            7,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "native_ticks": 520,
+      "prefix": "011010",
+      "suffix": "01",
+      "suffix_response_sha256": "0de33e5352055325b7d99d50a99d4add7bea29b487fdf8f2a755ab1b3b6d750d",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            8,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            8,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "native_ticks": 520,
+      "prefix": "011010",
+      "suffix": "10",
+      "suffix_response_sha256": "0de33e5352055325b7d99d50a99d4add7bea29b487fdf8f2a755ab1b3b6d750d",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            8,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            8,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 11,
+        "domain": "P",
+        "grants": 6,
+        "owner": "C",
+        "version": 6
+      },
+      "native_ticks": 520,
+      "prefix": "011100",
+      "suffix": "01",
+      "suffix_response_sha256": "9d1395d7e8ace3426323ef663ac68abda6d96834e356329425720a436f41f947",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 11,
+            "domain": "P",
+            "grants": 6,
+            "owner": "C",
+            "version": 6
+          },
+          "P_grants": 2,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            6,
+            11,
+            [
+              11
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            8,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 11,
+        "domain": "P",
+        "grants": 6,
+        "owner": "C",
+        "version": 6
+      },
+      "native_ticks": 520,
+      "prefix": "011100",
+      "suffix": "10",
+      "suffix_response_sha256": "c2382919e9f521e0cdd97db57bf10d43bd957e957819f2beb1f65d4cb3a291ee",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 11,
+            "domain": "P",
+            "grants": 6,
+            "owner": "C",
+            "version": 6
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            6,
+            11,
+            [
+              11
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            7,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 12,
+        "domain": "P",
+        "grants": 7,
+        "owner": "C",
+        "version": 7
+      },
+      "P_initial": {
+        "choice": 12,
+        "domain": "P",
+        "grants": 4,
+        "owner": "C",
+        "version": 4
+      },
+      "native_ticks": 520,
+      "prefix": "100011",
+      "suffix": "01",
+      "suffix_response_sha256": "84cbc66e5e872d7ebb2d3b9c3f78ef9cff26ad417e38a10ee8c4e647eee79ba7",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 4,
+            "owner": "C",
+            "version": 4
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 5,
+            "owner": "C",
+            "version": 5
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            4,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 5,
+            "owner": "C",
+            "version": 5
+          },
+          "P_grants": 2,
+          "P_to": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            5,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 5,
+        "owner": "C",
+        "version": 5
+      },
+      "P_initial": {
+        "choice": 12,
+        "domain": "P",
+        "grants": 4,
+        "owner": "C",
+        "version": 4
+      },
+      "native_ticks": 520,
+      "prefix": "100011",
+      "suffix": "10",
+      "suffix_response_sha256": "00967b4c4177faf93abf378e66e886a0247c9ed9f9dfd8ae1110fdf89377e7cc",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 4,
+            "owner": "C",
+            "version": 4
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 4,
+            "owner": "C",
+            "version": 4
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            4,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 4,
+            "owner": "C",
+            "version": 4
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 5,
+            "owner": "C",
+            "version": 5
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            4,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 12,
+        "domain": "P",
+        "grants": 7,
+        "owner": "C",
+        "version": 7
+      },
+      "native_ticks": 520,
+      "prefix": "100101",
+      "suffix": "01",
+      "suffix_response_sha256": "7fea8d5a2f91ca71d0399a54bdc95ac978c4b0c286239084ae4686e3f1086aed",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            7,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            8,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 12,
+        "domain": "P",
+        "grants": 7,
+        "owner": "C",
+        "version": 7
+      },
+      "native_ticks": 520,
+      "prefix": "100101",
+      "suffix": "10",
+      "suffix_response_sha256": "1996c2b5450cda405f45d134a710c7cf8d49e4ef3b17ab87e9ca86ef2c002234",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            7,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            7,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 11,
+        "domain": "P",
+        "grants": 6,
+        "owner": "C",
+        "version": 6
+      },
+      "native_ticks": 520,
+      "prefix": "100110",
+      "suffix": "01",
+      "suffix_response_sha256": "9d1395d7e8ace3426323ef663ac68abda6d96834e356329425720a436f41f947",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 11,
+            "domain": "P",
+            "grants": 6,
+            "owner": "C",
+            "version": 6
+          },
+          "P_grants": 2,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            6,
+            11,
+            [
+              11
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            8,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 11,
+        "domain": "P",
+        "grants": 6,
+        "owner": "C",
+        "version": 6
+      },
+      "native_ticks": 520,
+      "prefix": "100110",
+      "suffix": "10",
+      "suffix_response_sha256": "c2382919e9f521e0cdd97db57bf10d43bd957e957819f2beb1f65d4cb3a291ee",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 11,
+            "domain": "P",
+            "grants": 6,
+            "owner": "C",
+            "version": 6
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            6,
+            11,
+            [
+              11
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            7,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 12,
+        "domain": "P",
+        "grants": 7,
+        "owner": "C",
+        "version": 7
+      },
+      "native_ticks": 520,
+      "prefix": "101001",
+      "suffix": "01",
+      "suffix_response_sha256": "7fea8d5a2f91ca71d0399a54bdc95ac978c4b0c286239084ae4686e3f1086aed",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            7,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            8,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 12,
+        "domain": "P",
+        "grants": 7,
+        "owner": "C",
+        "version": 7
+      },
+      "native_ticks": 520,
+      "prefix": "101001",
+      "suffix": "10",
+      "suffix_response_sha256": "1996c2b5450cda405f45d134a710c7cf8d49e4ef3b17ab87e9ca86ef2c002234",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            7,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            7,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "native_ticks": 520,
+      "prefix": "101010",
+      "suffix": "01",
+      "suffix_response_sha256": "0de33e5352055325b7d99d50a99d4add7bea29b487fdf8f2a755ab1b3b6d750d",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            8,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            8,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "native_ticks": 520,
+      "prefix": "101010",
+      "suffix": "10",
+      "suffix_response_sha256": "0de33e5352055325b7d99d50a99d4add7bea29b487fdf8f2a755ab1b3b6d750d",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            8,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            8,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 11,
+        "domain": "P",
+        "grants": 6,
+        "owner": "C",
+        "version": 6
+      },
+      "native_ticks": 520,
+      "prefix": "101100",
+      "suffix": "01",
+      "suffix_response_sha256": "9d1395d7e8ace3426323ef663ac68abda6d96834e356329425720a436f41f947",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 11,
+            "domain": "P",
+            "grants": 6,
+            "owner": "C",
+            "version": 6
+          },
+          "P_grants": 2,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            6,
+            11,
+            [
+              11
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            8,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 11,
+        "domain": "P",
+        "grants": 6,
+        "owner": "C",
+        "version": 6
+      },
+      "native_ticks": 520,
+      "prefix": "101100",
+      "suffix": "10",
+      "suffix_response_sha256": "c2382919e9f521e0cdd97db57bf10d43bd957e957819f2beb1f65d4cb3a291ee",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 11,
+            "domain": "P",
+            "grants": 6,
+            "owner": "C",
+            "version": 6
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            6,
+            11,
+            [
+              11
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            7,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 12,
+        "domain": "P",
+        "grants": 7,
+        "owner": "C",
+        "version": 7
+      },
+      "P_initial": {
+        "choice": 12,
+        "domain": "P",
+        "grants": 4,
+        "owner": "C",
+        "version": 4
+      },
+      "native_ticks": 520,
+      "prefix": "110001",
+      "suffix": "01",
+      "suffix_response_sha256": "84cbc66e5e872d7ebb2d3b9c3f78ef9cff26ad417e38a10ee8c4e647eee79ba7",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 4,
+            "owner": "C",
+            "version": 4
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 5,
+            "owner": "C",
+            "version": 5
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            4,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 5,
+            "owner": "C",
+            "version": 5
+          },
+          "P_grants": 2,
+          "P_to": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            5,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 5,
+        "owner": "C",
+        "version": 5
+      },
+      "P_initial": {
+        "choice": 12,
+        "domain": "P",
+        "grants": 4,
+        "owner": "C",
+        "version": 4
+      },
+      "native_ticks": 520,
+      "prefix": "110001",
+      "suffix": "10",
+      "suffix_response_sha256": "00967b4c4177faf93abf378e66e886a0247c9ed9f9dfd8ae1110fdf89377e7cc",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 4,
+            "owner": "C",
+            "version": 4
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 4,
+            "owner": "C",
+            "version": 4
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            4,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 4,
+            "owner": "C",
+            "version": 4
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 5,
+            "owner": "C",
+            "version": 5
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            4,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 11,
+        "domain": "P",
+        "grants": 6,
+        "owner": "C",
+        "version": 6
+      },
+      "native_ticks": 520,
+      "prefix": "110010",
+      "suffix": "01",
+      "suffix_response_sha256": "9d1395d7e8ace3426323ef663ac68abda6d96834e356329425720a436f41f947",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 11,
+            "domain": "P",
+            "grants": 6,
+            "owner": "C",
+            "version": 6
+          },
+          "P_grants": 2,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            6,
+            11,
+            [
+              11
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            8,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 11,
+        "domain": "P",
+        "grants": 6,
+        "owner": "C",
+        "version": 6
+      },
+      "native_ticks": 520,
+      "prefix": "110010",
+      "suffix": "10",
+      "suffix_response_sha256": "c2382919e9f521e0cdd97db57bf10d43bd957e957819f2beb1f65d4cb3a291ee",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 11,
+            "domain": "P",
+            "grants": 6,
+            "owner": "C",
+            "version": 6
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            6,
+            11,
+            [
+              11
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            7,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 11,
+        "domain": "P",
+        "grants": 6,
+        "owner": "C",
+        "version": 6
+      },
+      "native_ticks": 520,
+      "prefix": "110100",
+      "suffix": "01",
+      "suffix_response_sha256": "9d1395d7e8ace3426323ef663ac68abda6d96834e356329425720a436f41f947",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 11,
+            "domain": "P",
+            "grants": 6,
+            "owner": "C",
+            "version": 6
+          },
+          "P_grants": 2,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            6,
+            11,
+            [
+              11
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "P_grants": 0,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            8,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 8,
+        "owner": "C",
+        "version": 8
+      },
+      "P_initial": {
+        "choice": 11,
+        "domain": "P",
+        "grants": 6,
+        "owner": "C",
+        "version": 6
+      },
+      "native_ticks": 520,
+      "prefix": "110100",
+      "suffix": "10",
+      "suffix_response_sha256": "c2382919e9f521e0cdd97db57bf10d43bd957e957819f2beb1f65d4cb3a291ee",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 11,
+            "domain": "P",
+            "grants": 6,
+            "owner": "C",
+            "version": 6
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            6,
+            11,
+            [
+              11
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 8,
+            "owner": "C",
+            "version": 8
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            7,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 12,
+        "domain": "P",
+        "grants": 7,
+        "owner": "C",
+        "version": 7
+      },
+      "P_initial": {
+        "choice": 11,
+        "domain": "P",
+        "grants": 3,
+        "owner": "C",
+        "version": 3
+      },
+      "native_ticks": 520,
+      "prefix": "111000",
+      "suffix": "01",
+      "suffix_response_sha256": "fe7ace8874003c5b8a7bd6c20ed20d78bcc29dcbf8e191b0961264c62425900f",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 11,
+            "domain": "P",
+            "grants": 3,
+            "owner": "C",
+            "version": 3
+          },
+          "P_grants": 2,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 5,
+            "owner": "C",
+            "version": 5
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            3,
+            11,
+            [
+              11
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 5,
+            "owner": "C",
+            "version": 5
+          },
+          "P_grants": 2,
+          "P_to": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 7,
+            "owner": "C",
+            "version": 7
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            5,
+            15,
+            [
+              15
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    },
+    {
+      "P_after": {
+        "choice": 15,
+        "domain": "P",
+        "grants": 5,
+        "owner": "C",
+        "version": 5
+      },
+      "P_initial": {
+        "choice": 11,
+        "domain": "P",
+        "grants": 3,
+        "owner": "C",
+        "version": 3
+      },
+      "native_ticks": 520,
+      "prefix": "111000",
+      "suffix": "10",
+      "suffix_response_sha256": "95eed92c6de1d4043f40c364dd570cf1f70eb414bc583acfec9aa1c4097984c9",
+      "suffix_transitions": [
+        {
+          "P_from": {
+            "choice": 11,
+            "domain": "P",
+            "grants": 3,
+            "owner": "C",
+            "version": 3
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 4,
+            "owner": "C",
+            "version": 4
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            3,
+            11,
+            [
+              11
+            ]
+          ],
+          "signature": "s71"
+        },
+        {
+          "P_from": {
+            "choice": 12,
+            "domain": "P",
+            "grants": 4,
+            "owner": "C",
+            "version": 4
+          },
+          "P_grants": 1,
+          "P_to": {
+            "choice": 15,
+            "domain": "P",
+            "grants": 5,
+            "owner": "C",
+            "version": 5
+          },
+          "derived_context": "ctx0",
+          "first_C_PE_read": [
+            10,
+            4,
+            12,
+            [
+              12
+            ]
+          ],
+          "signature": "s71"
+        }
+      ]
+    }
+  ],
+  "same_parent_P_not_full_causal_equivalence": true,
+  "schema": "spk-native-learning-v1x-j-future-suffix-probe/v1",
+  "source_identity_authenticated": false,
+  "status": "V1X_J_ORIGINAL_PE_BV_P_BOUNDED_FUTURE_SUFFIX_RESEARCH_PASS",
+  "suffix_classes": {
+    "01": [
+      {
+        "distinct_bounded_suffix_responses": 1,
+        "initial_P_choice": 11,
+        "initial_P_version": 3,
+        "prefixes": [
+          "111000"
+        ],
+        "response_digest_set": [
+          "fe7ace8874003c5b8a7bd6c20ed20d78bcc29dcbf8e191b0961264c62425900f"
+        ]
+      },
+      {
+        "distinct_bounded_suffix_responses": 1,
+        "initial_P_choice": 12,
+        "initial_P_version": 4,
+        "prefixes": [
+          "000111",
+          "100011",
+          "110001"
+        ],
+        "response_digest_set": [
+          "84cbc66e5e872d7ebb2d3b9c3f78ef9cff26ad417e38a10ee8c4e647eee79ba7"
+        ]
+      },
+      {
+        "distinct_bounded_suffix_responses": 1,
+        "initial_P_choice": 11,
+        "initial_P_version": 6,
+        "prefixes": [
+          "001110",
+          "011100",
+          "100110",
+          "101100",
+          "110010",
+          "110100"
+        ],
+        "response_digest_set": [
+          "9d1395d7e8ace3426323ef663ac68abda6d96834e356329425720a436f41f947"
+        ]
+      },
+      {
+        "distinct_bounded_suffix_responses": 1,
+        "initial_P_choice": 12,
+        "initial_P_version": 7,
+        "prefixes": [
+          "001011",
+          "001101",
+          "010011",
+          "011001",
+          "100101",
+          "101001"
+        ],
+        "response_digest_set": [
+          "7fea8d5a2f91ca71d0399a54bdc95ac978c4b0c286239084ae4686e3f1086aed"
+        ]
+      },
+      {
+        "distinct_bounded_suffix_responses": 1,
+        "initial_P_choice": 15,
+        "initial_P_version": 8,
+        "prefixes": [
+          "010101",
+          "010110",
+          "011010",
+          "101010"
+        ],
+        "response_digest_set": [
+          "0de33e5352055325b7d99d50a99d4add7bea29b487fdf8f2a755ab1b3b6d750d"
+        ]
+      }
+    ],
+    "10": [
+      {
+        "distinct_bounded_suffix_responses": 1,
+        "initial_P_choice": 11,
+        "initial_P_version": 3,
+        "prefixes": [
+          "111000"
+        ],
+        "response_digest_set": [
+          "95eed92c6de1d4043f40c364dd570cf1f70eb414bc583acfec9aa1c4097984c9"
+        ]
+      },
+      {
+        "distinct_bounded_suffix_responses": 1,
+        "initial_P_choice": 12,
+        "initial_P_version": 4,
+        "prefixes": [
+          "000111",
+          "100011",
+          "110001"
+        ],
+        "response_digest_set": [
+          "00967b4c4177faf93abf378e66e886a0247c9ed9f9dfd8ae1110fdf89377e7cc"
+        ]
+      },
+      {
+        "distinct_bounded_suffix_responses": 1,
+        "initial_P_choice": 11,
+        "initial_P_version": 6,
+        "prefixes": [
+          "001110",
+          "011100",
+          "100110",
+          "101100",
+          "110010",
+          "110100"
+        ],
+        "response_digest_set": [
+          "c2382919e9f521e0cdd97db57bf10d43bd957e957819f2beb1f65d4cb3a291ee"
+        ]
+      },
+      {
+        "distinct_bounded_suffix_responses": 1,
+        "initial_P_choice": 12,
+        "initial_P_version": 7,
+        "prefixes": [
+          "001011",
+          "001101",
+          "010011",
+          "011001",
+          "100101",
+          "101001"
+        ],
+        "response_digest_set": [
+          "1996c2b5450cda405f45d134a710c7cf8d49e4ef3b17ab87e9ca86ef2c002234"
+        ]
+      },
+      {
+        "distinct_bounded_suffix_responses": 1,
+        "initial_P_choice": 15,
+        "initial_P_version": 8,
+        "prefixes": [
+          "010101",
+          "010110",
+          "011010",
+          "101010"
+        ],
+        "response_digest_set": [
+          "0de33e5352055325b7d99d50a99d4add7bea29b487fdf8f2a755ab1b3b6d750d"
+        ]
+      }
+    ]
+  },
+  "suffix_probes_are_repeated_pinned_requests": true,
+  "within_same_final_P_behavioral_split_groups": 0
+}

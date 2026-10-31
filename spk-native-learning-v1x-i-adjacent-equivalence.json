@@ -1,0 +1,643 @@
+{
+  "P_credit_transfer": false,
+  "adjacent_swap_edges": 30,
+  "architecture_promotion_allowed": false,
+  "counts": {
+    "edges_final_P_changed": 20,
+    "edges_final_P_same_traces_changed": 10,
+    "edges_full_local_trace_same": 0,
+    "edges_p0_trace_same": 6,
+    "edges_p1_trace_same": 3
+  },
+  "distinct_final_P_states": 5,
+  "distinct_source_local_trajectories": 20,
+  "edges": [
+    {
+      "from_P_choice": 12,
+      "from_P_version": 4,
+      "from_schedule": "000111",
+      "same_final_P_bank": false,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": false,
+        "p1": false
+      },
+      "swap_index": 2,
+      "to_P_choice": 12,
+      "to_P_version": 7,
+      "to_schedule": "001011"
+    },
+    {
+      "from_P_choice": 12,
+      "from_P_version": 7,
+      "from_schedule": "001011",
+      "same_final_P_bank": true,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": true,
+        "p1": false
+      },
+      "swap_index": 3,
+      "to_P_choice": 12,
+      "to_P_version": 7,
+      "to_schedule": "001101"
+    },
+    {
+      "from_P_choice": 12,
+      "from_P_version": 7,
+      "from_schedule": "001011",
+      "same_final_P_bank": true,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": false,
+        "p1": true
+      },
+      "swap_index": 1,
+      "to_P_choice": 12,
+      "to_P_version": 7,
+      "to_schedule": "010011"
+    },
+    {
+      "from_P_choice": 12,
+      "from_P_version": 7,
+      "from_schedule": "001101",
+      "same_final_P_bank": false,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": true,
+        "p1": false
+      },
+      "swap_index": 4,
+      "to_P_choice": 11,
+      "to_P_version": 6,
+      "to_schedule": "001110"
+    },
+    {
+      "from_P_choice": 12,
+      "from_P_version": 7,
+      "from_schedule": "001101",
+      "same_final_P_bank": false,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": false,
+        "p1": false
+      },
+      "swap_index": 1,
+      "to_P_choice": 15,
+      "to_P_version": 8,
+      "to_schedule": "010101"
+    },
+    {
+      "from_P_choice": 11,
+      "from_P_version": 6,
+      "from_schedule": "001110",
+      "same_final_P_bank": false,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": false,
+        "p1": false
+      },
+      "swap_index": 1,
+      "to_P_choice": 15,
+      "to_P_version": 8,
+      "to_schedule": "010110"
+    },
+    {
+      "from_P_choice": 12,
+      "from_P_version": 7,
+      "from_schedule": "010011",
+      "same_final_P_bank": false,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": false,
+        "p1": false
+      },
+      "swap_index": 3,
+      "to_P_choice": 15,
+      "to_P_version": 8,
+      "to_schedule": "010101"
+    },
+    {
+      "from_P_choice": 12,
+      "from_P_version": 7,
+      "from_schedule": "010011",
+      "same_final_P_bank": false,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": false,
+        "p1": false
+      },
+      "swap_index": 0,
+      "to_P_choice": 12,
+      "to_P_version": 4,
+      "to_schedule": "100011"
+    },
+    {
+      "from_P_choice": 15,
+      "from_P_version": 8,
+      "from_schedule": "010101",
+      "same_final_P_bank": true,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": true,
+        "p1": false
+      },
+      "swap_index": 4,
+      "to_P_choice": 15,
+      "to_P_version": 8,
+      "to_schedule": "010110"
+    },
+    {
+      "from_P_choice": 15,
+      "from_P_version": 8,
+      "from_schedule": "010101",
+      "same_final_P_bank": false,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": false,
+        "p1": false
+      },
+      "swap_index": 2,
+      "to_P_choice": 12,
+      "to_P_version": 7,
+      "to_schedule": "011001"
+    },
+    {
+      "from_P_choice": 15,
+      "from_P_version": 8,
+      "from_schedule": "010101",
+      "same_final_P_bank": false,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": false,
+        "p1": false
+      },
+      "swap_index": 0,
+      "to_P_choice": 12,
+      "to_P_version": 7,
+      "to_schedule": "100101"
+    },
+    {
+      "from_P_choice": 15,
+      "from_P_version": 8,
+      "from_schedule": "010110",
+      "same_final_P_bank": true,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": true,
+        "p1": false
+      },
+      "swap_index": 2,
+      "to_P_choice": 15,
+      "to_P_version": 8,
+      "to_schedule": "011010"
+    },
+    {
+      "from_P_choice": 15,
+      "from_P_version": 8,
+      "from_schedule": "010110",
+      "same_final_P_bank": false,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": false,
+        "p1": false
+      },
+      "swap_index": 0,
+      "to_P_choice": 11,
+      "to_P_version": 6,
+      "to_schedule": "100110"
+    },
+    {
+      "from_P_choice": 12,
+      "from_P_version": 7,
+      "from_schedule": "011001",
+      "same_final_P_bank": false,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": false,
+        "p1": false
+      },
+      "swap_index": 4,
+      "to_P_choice": 15,
+      "to_P_version": 8,
+      "to_schedule": "011010"
+    },
+    {
+      "from_P_choice": 12,
+      "from_P_version": 7,
+      "from_schedule": "011001",
+      "same_final_P_bank": true,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": false,
+        "p1": false
+      },
+      "swap_index": 0,
+      "to_P_choice": 12,
+      "to_P_version": 7,
+      "to_schedule": "101001"
+    },
+    {
+      "from_P_choice": 15,
+      "from_P_version": 8,
+      "from_schedule": "011010",
+      "same_final_P_bank": false,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": false,
+        "p1": false
+      },
+      "swap_index": 3,
+      "to_P_choice": 11,
+      "to_P_version": 6,
+      "to_schedule": "011100"
+    },
+    {
+      "from_P_choice": 15,
+      "from_P_version": 8,
+      "from_schedule": "011010",
+      "same_final_P_bank": true,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": false,
+        "p1": false
+      },
+      "swap_index": 0,
+      "to_P_choice": 15,
+      "to_P_version": 8,
+      "to_schedule": "101010"
+    },
+    {
+      "from_P_choice": 11,
+      "from_P_version": 6,
+      "from_schedule": "011100",
+      "same_final_P_bank": true,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": false,
+        "p1": false
+      },
+      "swap_index": 0,
+      "to_P_choice": 11,
+      "to_P_version": 6,
+      "to_schedule": "101100"
+    },
+    {
+      "from_P_choice": 12,
+      "from_P_version": 4,
+      "from_schedule": "100011",
+      "same_final_P_bank": false,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": false,
+        "p1": false
+      },
+      "swap_index": 3,
+      "to_P_choice": 12,
+      "to_P_version": 7,
+      "to_schedule": "100101"
+    },
+    {
+      "from_P_choice": 12,
+      "from_P_version": 7,
+      "from_schedule": "100101",
+      "same_final_P_bank": false,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": true,
+        "p1": false
+      },
+      "swap_index": 4,
+      "to_P_choice": 11,
+      "to_P_version": 6,
+      "to_schedule": "100110"
+    },
+    {
+      "from_P_choice": 12,
+      "from_P_version": 7,
+      "from_schedule": "100101",
+      "same_final_P_bank": true,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": false,
+        "p1": true
+      },
+      "swap_index": 2,
+      "to_P_choice": 12,
+      "to_P_version": 7,
+      "to_schedule": "101001"
+    },
+    {
+      "from_P_choice": 11,
+      "from_P_version": 6,
+      "from_schedule": "100110",
+      "same_final_P_bank": false,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": false,
+        "p1": false
+      },
+      "swap_index": 2,
+      "to_P_choice": 15,
+      "to_P_version": 8,
+      "to_schedule": "101010"
+    },
+    {
+      "from_P_choice": 12,
+      "from_P_version": 7,
+      "from_schedule": "101001",
+      "same_final_P_bank": false,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": false,
+        "p1": false
+      },
+      "swap_index": 4,
+      "to_P_choice": 15,
+      "to_P_version": 8,
+      "to_schedule": "101010"
+    },
+    {
+      "from_P_choice": 12,
+      "from_P_version": 7,
+      "from_schedule": "101001",
+      "same_final_P_bank": false,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": false,
+        "p1": false
+      },
+      "swap_index": 1,
+      "to_P_choice": 12,
+      "to_P_version": 4,
+      "to_schedule": "110001"
+    },
+    {
+      "from_P_choice": 15,
+      "from_P_version": 8,
+      "from_schedule": "101010",
+      "same_final_P_bank": false,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": false,
+        "p1": false
+      },
+      "swap_index": 3,
+      "to_P_choice": 11,
+      "to_P_version": 6,
+      "to_schedule": "101100"
+    },
+    {
+      "from_P_choice": 15,
+      "from_P_version": 8,
+      "from_schedule": "101010",
+      "same_final_P_bank": false,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": false,
+        "p1": false
+      },
+      "swap_index": 1,
+      "to_P_choice": 11,
+      "to_P_version": 6,
+      "to_schedule": "110010"
+    },
+    {
+      "from_P_choice": 11,
+      "from_P_version": 6,
+      "from_schedule": "101100",
+      "same_final_P_bank": true,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": true,
+        "p1": false
+      },
+      "swap_index": 1,
+      "to_P_choice": 11,
+      "to_P_version": 6,
+      "to_schedule": "110100"
+    },
+    {
+      "from_P_choice": 12,
+      "from_P_version": 4,
+      "from_schedule": "110001",
+      "same_final_P_bank": false,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": false,
+        "p1": false
+      },
+      "swap_index": 4,
+      "to_P_choice": 11,
+      "to_P_version": 6,
+      "to_schedule": "110010"
+    },
+    {
+      "from_P_choice": 11,
+      "from_P_version": 6,
+      "from_schedule": "110010",
+      "same_final_P_bank": true,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": false,
+        "p1": true
+      },
+      "swap_index": 3,
+      "to_P_choice": 11,
+      "to_P_version": 6,
+      "to_schedule": "110100"
+    },
+    {
+      "from_P_choice": 11,
+      "from_P_version": 6,
+      "from_schedule": "110100",
+      "same_final_P_bank": false,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": false,
+        "p1": false
+      },
+      "swap_index": 2,
+      "to_P_choice": 11,
+      "to_P_version": 3,
+      "to_schedule": "111000"
+    }
+  ],
+  "final_P_equivalence_classes": [
+    {
+      "P_choice": 11,
+      "P_version": 3,
+      "count": 1,
+      "schedules": [
+        "111000"
+      ]
+    },
+    {
+      "P_choice": 12,
+      "P_version": 4,
+      "count": 3,
+      "schedules": [
+        "000111",
+        "100011",
+        "110001"
+      ]
+    },
+    {
+      "P_choice": 11,
+      "P_version": 6,
+      "count": 6,
+      "schedules": [
+        "001110",
+        "011100",
+        "100110",
+        "101100",
+        "110010",
+        "110100"
+      ]
+    },
+    {
+      "P_choice": 12,
+      "P_version": 7,
+      "count": 6,
+      "schedules": [
+        "001011",
+        "001101",
+        "010011",
+        "011001",
+        "100101",
+        "101001"
+      ]
+    },
+    {
+      "P_choice": 15,
+      "P_version": 8,
+      "count": 4,
+      "schedules": [
+        "010101",
+        "010110",
+        "011010",
+        "101010"
+      ]
+    }
+  ],
+  "limitations": [
+    "30 adjacent swaps of 20 bounded order-preserving two-source histories only",
+    "Final state equality is an observational projection, not native causal equivalence",
+    "Source local traces are host-declared provenance, not authenticated sensor identities",
+    "Selected native witnesses independently replayed from genesis, not all 30 edges again",
+    "P version is not utility or transferable independently owned knowledge",
+    "No historical P write, no P migration, no architecture promotion"
+  ],
+  "native_original_PE_BV_P_confirmed": true,
+  "native_predecessor_banks_written": false,
+  "native_schedule_count_per_sweep": 6,
+  "native_total_ticks": 4680,
+  "native_two_sweeps_byte_equal": true,
+  "orders": 20,
+  "parent_v1x_h_report_sha256": "8de159bf25edca7887792408c44be54f3951f546fc1ec6a5ee84244b54284f9b",
+  "permission_to_migrate_P": false,
+  "research_only": true,
+  "schema": "spk-native-learning-v1x-i-adjacent-swap-equivalence/v1",
+  "source_identity_authenticated": false,
+  "status": "V1X_I_ADJACENT_SWAP_CAUSAL_EQUIVALENCE_RESEARCH_PASS",
+  "validated_schedules": [
+    {
+      "BV_sha256": "c370118b60e37e48d8ef1ac7887ba7ce80153de4c073d41bd927bf435ca48cd6",
+      "bank_sha256": "7f53ec865756b9bab7f603ca42bea6f036e560a933b68377b2e0c39a4f0cb500",
+      "schedule": "000111",
+      "trace_sha256": "6c9853e467591ba47d8f1fe1b8805234878bfeed8a5a72c51d92fa05f4ad8340"
+    },
+    {
+      "BV_sha256": "71a27023048bd7f30645e9dbd49ce9adf40fe5bbdfcd764a8d1b5d4da55522f8",
+      "bank_sha256": "d4eca9c608ff3f6007119dac33e00596f1c1fdea4a0e8d6e9ec351b1241449aa",
+      "schedule": "001011",
+      "trace_sha256": "bfb1fe6a683b3f37434d76296ad828b8cd1abbc7a7de6a58b77e5b8dbd4cdc1e"
+    },
+    {
+      "BV_sha256": "e00bd57ecc1b4d123fbfb0b8acd6bf02abe9d69f95ed5b7da8b39ecb76052796",
+      "bank_sha256": "d4eca9c608ff3f6007119dac33e00596f1c1fdea4a0e8d6e9ec351b1241449aa",
+      "schedule": "001101",
+      "trace_sha256": "6b16ae9929885e1d18ff19cda561a1577fcbc36529048c36cc81d8960bcbd049"
+    },
+    {
+      "BV_sha256": "38a4ebfbfc31fb0d24204c380e26a785aee9b0bd88dce6b5c409edcc93db5560",
+      "bank_sha256": "d4eca9c608ff3f6007119dac33e00596f1c1fdea4a0e8d6e9ec351b1241449aa",
+      "schedule": "010011",
+      "trace_sha256": "755dea65cd991f8772003b55836d988e31849b7cd950ea3756697b6e3a457f1d"
+    },
+    {
+      "BV_sha256": "0b175eeaf83738611e8fa13c4bf2631629639a0a7e2a14e0a2428ea41d683980",
+      "bank_sha256": "d4eca9c608ff3f6007119dac33e00596f1c1fdea4a0e8d6e9ec351b1241449aa",
+      "schedule": "011001",
+      "trace_sha256": "fcca319022247a38f569b9b50044c72d198107c5c631345d4503b7349d20f4b3"
+    },
+    {
+      "BV_sha256": "1ea410f7dc66fd82678b9aa55b087208eb17ce414387e23fc1948caba80f91f8",
+      "bank_sha256": "d4eca9c608ff3f6007119dac33e00596f1c1fdea4a0e8d6e9ec351b1241449aa",
+      "schedule": "101001",
+      "trace_sha256": "a49ebf92efb5802ca54668be1241287a98ecf5b127df1193c2d5976bc7453129"
+    }
+  ],
+  "witness_edges": {
+    "noncommuting_final_P": {
+      "from_P_choice": 12,
+      "from_P_version": 4,
+      "from_schedule": "000111",
+      "same_final_P_bank": false,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": false,
+        "p1": false
+      },
+      "swap_index": 2,
+      "to_P_choice": 12,
+      "to_P_version": 7,
+      "to_schedule": "001011"
+    },
+    "same_final_both_source_traces_changed": {
+      "from_P_choice": 12,
+      "from_P_version": 7,
+      "from_schedule": "011001",
+      "same_final_P_bank": true,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": false,
+        "p1": false
+      },
+      "swap_index": 0,
+      "to_P_choice": 12,
+      "to_P_version": 7,
+      "to_schedule": "101001"
+    },
+    "same_final_only_p0_trace_changed": {
+      "from_P_choice": 12,
+      "from_P_version": 7,
+      "from_schedule": "001011",
+      "same_final_P_bank": true,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": false,
+        "p1": true
+      },
+      "swap_index": 1,
+      "to_P_choice": 12,
+      "to_P_version": 7,
+      "to_schedule": "010011"
+    },
+    "same_final_only_p1_trace_changed": {
+      "from_P_choice": 12,
+      "from_P_version": 7,
+      "from_schedule": "001011",
+      "same_final_P_bank": true,
+      "same_source_local_trajectory": false,
+      "source_trajectory_equal": {
+        "p0": true,
+        "p1": false
+      },
+      "swap_index": 3,
+      "to_P_choice": 12,
+      "to_P_version": 7,
+      "to_schedule": "001101"
+    }
+  }
+}

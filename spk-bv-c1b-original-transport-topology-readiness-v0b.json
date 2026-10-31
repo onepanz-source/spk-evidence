@@ -1,0 +1,101 @@
+{
+  "P_state_mutated": false,
+  "architecture_promotion_allowed": false,
+  "design_contract_sha256": "6ce13f2a602e5dd0f2ae711eb92ae65885dc0afc2933314e55ed6690ac06020a",
+  "external_pre_treatment_targets_attested": false,
+  "grant_authorized": false,
+  "independent_trial_pairs_registered": 0,
+  "metric_policies_signed": false,
+  "native_BV_verdict_proven": false,
+  "network_contexts": 2,
+  "note": "Graph identities computed from frozen original typed fixtures, NOT approved BV topology policies. No metric scores inferred from route counts.",
+  "parent_c1a_sha256": "1ce9e2307008c3c6595e42e8ec07d86105978e50de8da303950d36bfa8c06f83",
+  "parent_v0k_sha256": "4049fab3c3e41af552c694edb91642d7d3f5707f58234373e5d5686572201330",
+  "production_release": false,
+  "receiver_preference_authenticated": false,
+  "research_only": true,
+  "schema": "spk-bv-c1b-original-transport-topology-design-readiness/v0b",
+  "staged_model_binding": "EXACT_PINNED_TEMP_FILE_NOT_COMPILER_SEARCH_NAMESPACE",
+  "staged_model_source_sha256": "66c13dd5af1fb553a8a5d9eb9a1677edd760df32d9e1fb9ca4bff8826ea03095",
+  "status": "C1B_ORIGINAL_TRANSPORT_GRAPH_PROPOSALS_READY_METRICS_AND_TRIALS_HOLD",
+  "topology_sha256_for_original_BV_documents_promoted": false,
+  "transport_graph_proposals": [
+    {
+      "BV_trial_pair_proven": false,
+      "BV_verdict_proven": false,
+      "P_state_mutated": false,
+      "edges_with_multiplicity": 2,
+      "fixture_kind": "pipeline_inputs",
+      "grant_authorized": false,
+      "native_BV_topology_policy_signed": false,
+      "original_frozen_fixture_invoked": true,
+      "program_cmp_1_vs_2_topology_invariant": true,
+      "topology_projection": {
+        "edges": [
+          {
+            "delay_ticks": 2,
+            "source_channel": 7,
+            "source_node": "A",
+            "target_channel": 0,
+            "target_node": "B"
+          },
+          {
+            "delay_ticks": 2,
+            "source_channel": 7,
+            "source_node": "A",
+            "target_channel": 0,
+            "target_node": "B"
+          }
+        ],
+        "nodes": [
+          "A",
+          "B"
+        ],
+        "schema": "spk-bv-c1b-transport-graph-proposal/v0a"
+      },
+      "transport_topology_proposal_sha256": "ff99b00b7da5a9a6ba99a30a36fc5b32cc56a8f2e9a8c3a563b1606844b113a3"
+    },
+    {
+      "BV_trial_pair_proven": false,
+      "BV_verdict_proven": false,
+      "P_state_mutated": false,
+      "edges_with_multiplicity": 3,
+      "fixture_kind": "pe_admission_authored",
+      "grant_authorized": false,
+      "native_BV_topology_policy_signed": false,
+      "original_frozen_fixture_invoked": true,
+      "program_cmp_1_vs_2_topology_invariant": true,
+      "topology_projection": {
+        "edges": [
+          {
+            "delay_ticks": 2,
+            "source_channel": 7,
+            "source_node": "A",
+            "target_channel": 0,
+            "target_node": "B"
+          },
+          {
+            "delay_ticks": 2,
+            "source_channel": 7,
+            "source_node": "A",
+            "target_channel": 0,
+            "target_node": "B"
+          },
+          {
+            "delay_ticks": 3,
+            "source_channel": 7,
+            "source_node": "A",
+            "target_channel": 0,
+            "target_node": "B"
+          }
+        ],
+        "nodes": [
+          "A",
+          "B"
+        ],
+        "schema": "spk-bv-c1b-transport-graph-proposal/v0a"
+      },
+      "transport_topology_proposal_sha256": "f7cef3c7fff80ce2fb5ddaf8ea0b3efd3276fc6afa60f693811d9fa48f56d761"
+    }
+  ]
+}

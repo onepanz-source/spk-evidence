@@ -1,0 +1,92 @@
+{
+  "P_credit_transfer": false,
+  "P_writes_by_i2b3": 0,
+  "architecture_promotion_allowed": false,
+  "compiler_manifest_to_owned_epoch_conversion_proven": false,
+  "compiler_reference": {
+    "manifest_sha256": "41eb6f71784670312e945944502d43adaa52dcfed886a1be494703214385ccdc",
+    "reference_receipt_sha256": "44150fa199a989d63f6a19885870ee988b2e64d2c9ab5c1829a848fefdd2dc5b",
+    "status": "CLOSED"
+  },
+  "cross_host_custody_handoff_performed": false,
+  "direct_compiled_artifact_admission_rejected": true,
+  "limitations": [
+    "Compiler manifest C2 is NOT a sealed OwnedSharedEventCycleStateV0; direct admission is rejected",
+    "Owned host demonstration uses original test fixture, not compiler-derived network ownership",
+    "24p reference network and 24j application host are separate state machines with no authenticated causal mapping",
+    "Finite offline one-epoch launcher; no restart/durability, general streaming or cross-process authority guarantee",
+    "No live BV-to-P authorization, P transfer, authentication or promotion"
+  ],
+  "live_BV_to_P_authorization_proven": false,
+  "next_acceptance": "I2b.4: specify and test an explicit compiler-to-owned-epoch custody construction (or preserve unsupported mapping); only then I2c causal BV-to-P authorization",
+  "original_application_runtime_host_custody_executed": true,
+  "original_launcher_used": true,
+  "original_owned_app_host_cases": [
+    {
+      "chunk_size": 1,
+      "max_actions": 100,
+      "result": {
+        "actions": 6,
+        "completed": true,
+        "epoch_id": "E0",
+        "handoffs": 1,
+        "initial_service_tick": 4,
+        "new_version": 1,
+        "next_service_tick": 9,
+        "old_version": 0,
+        "phase": "CLOSED",
+        "provider_id": "I2B3-TEST-FIXTURE-NOT-AUTH",
+        "revision": 6,
+        "service_ticks_spent": 5
+      }
+    },
+    {
+      "chunk_size": 5,
+      "max_actions": 100,
+      "result": {
+        "actions": 6,
+        "completed": true,
+        "epoch_id": "E0",
+        "handoffs": 1,
+        "initial_service_tick": 4,
+        "new_version": 1,
+        "next_service_tick": 9,
+        "old_version": 0,
+        "phase": "CLOSED",
+        "provider_id": "I2B3-TEST-FIXTURE-NOT-AUTH",
+        "revision": 6,
+        "service_ticks_spent": 5
+      }
+    },
+    {
+      "chunk_size": 1,
+      "max_actions": 1,
+      "result": {
+        "actions": 1,
+        "completed": false,
+        "epoch_id": "E0",
+        "handoffs": 0,
+        "initial_service_tick": 4,
+        "new_version": null,
+        "next_service_tick": 5,
+        "old_version": null,
+        "phase": "INCOMPLETE",
+        "provider_id": "I2B3-TEST-FIXTURE-NOT-AUTH",
+        "revision": 1,
+        "service_ticks_spent": 1
+      }
+    }
+  ],
+  "original_suite_report_sha256": "439e69d1551487457f0d6743198e53dc23937708e18966155d4550c62cc5d560",
+  "original_suite_sweeps_identical": true,
+  "original_test_cases_per_sweep": 133,
+  "original_test_fixture_only": true,
+  "parent_i2b2_sha256": "8db0ee63b7c5a6905b5a6e50ca2c0bfa4f66d873148e119660cdc9443b0eb676",
+  "permission_to_migrate_P": false,
+  "physical_sensor_authenticated": false,
+  "production_release": false,
+  "rejected_artifact_types": 2,
+  "research_only": true,
+  "schema": "spk-lab-i2b3-original-owned-host-boundary/v1",
+  "status": "SPK_LAB_I2B3_OWNED_APPLICATION_HOST_BOUNDARY_RESEARCH_PASS"
+}

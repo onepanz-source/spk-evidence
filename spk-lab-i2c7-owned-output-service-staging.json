@@ -1,0 +1,94 @@
+{
+  "BV_to_P_live_authorization": false,
+  "P_transfer": false,
+  "P_writes": 0,
+  "architecture_promotion_allowed": false,
+  "external_owner_authenticated": false,
+  "limitations": [
+    "Native original EMISSION_RECORD/ROUTE_ENQUEUE registration is an isolated staged snapshot, NOT service execution or a live output transaction.",
+    "Simultaneous OUTPUT/EVENT resource preflight is conservative and pure; no physical reservation is installed.",
+    "Original 24d still rejects output-bearing terminal handoff; source state and output publication are uncommitted.",
+    "Staged native request IDs are NOT published EVENT identities; no recipient ACK, BV assessment or P write authority."
+  ],
+  "native_event_publication": false,
+  "native_output_commit": false,
+  "native_recipient_ACK": false,
+  "native_service_progress": false,
+  "native_staging_probe": {
+    "frozen_owned_root_unchanged": true,
+    "native_event_admitted": false,
+    "native_generated_emission_service_request_id": 4,
+    "native_generated_request_count": 3,
+    "native_generated_route_request_ids": [
+      5,
+      6
+    ],
+    "native_output_candidate_count": 1,
+    "native_physical_output_reserved": false,
+    "native_route_count": 2,
+    "original_core_state_committed": false,
+    "original_native_staged_service_registration": true,
+    "original_owner_24d_refusal_retained": true,
+    "preflight": {
+      "BV_to_P_authorized": false,
+      "P_writes": 0,
+      "all_or_nothing": true,
+      "candidate_ids": [
+        "a836fc46a8ced9442500767bd584200409d85563a48ee227fd6ab08399517bf5"
+      ],
+      "deficits": [],
+      "native_output_events_minted": 0,
+      "native_reservations_created": 0,
+      "output_committed": false,
+      "plan_digest": "c39dec72b71d1f2171f4a746f8f7164df7216ddf9d59cdac751394ef812d9381",
+      "resource_capacity": {
+        "PE0": {
+          "EVENT": 3,
+          "OUTPUT": 2
+        },
+        "PE1": {
+          "EVENT": 3,
+          "OUTPUT": 2
+        }
+      },
+      "resource_demand": {
+        "PE0": {
+          "EVENT": 0,
+          "OUTPUT": 2
+        },
+        "PE1": {
+          "EVENT": 2,
+          "OUTPUT": 0
+        }
+      },
+      "resource_occupied": {
+        "PE0": {
+          "EVENT": 0,
+          "OUTPUT": 0
+        },
+        "PE1": {
+          "EVENT": 0,
+          "OUTPUT": 0
+        }
+      },
+      "route_request_ids": [
+        5,
+        6
+      ],
+      "schema": "spk-lab-i2c7-private-preflight/v1",
+      "scope": "IN_PROCESS_PURE_PREFLIGHT_NOT_NATIVE_ADMISSION",
+      "source_pe": "PE0",
+      "status": "PREFLIGHT_ELIGIBLE_NOT_RESERVED"
+    },
+    "private_staged_registry_not_installed": true
+  },
+  "next_acceptance": "I2c.8: owned controller must atomically reserve actual OUTPUT/EVENT and finish source STATE_COMMIT with fail-closed rollback; only then bind native receiver ACK and BV/P.",
+  "original_24d_output_refusal_retained": true,
+  "original_native_service_request_staging_executed": true,
+  "parent_i2c6_sha256": "746a7db5b7fc402a0022b52e4f2f33ca380e27960d3f4e3a3b668d6ceb1d8418",
+  "private_atomic_preflight_only": true,
+  "production_release": false,
+  "research_only": true,
+  "schema": "spk-lab-i2c7-native-staging-output-preflight/v1",
+  "status": "SPK_LAB_I2C7_ORIGINAL_OWNED_OUTPUT_SERVICE_STAGING_RESEARCH_PASS"
+}

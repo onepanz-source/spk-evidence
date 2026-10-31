@@ -1,0 +1,54 @@
+{
+  "BV_recipient_feedback_bound_to_owner_emission": false,
+  "BV_to_P_live_authorization": false,
+  "P_transfer": false,
+  "P_writes": 0,
+  "architecture_promotion_allowed": false,
+  "emitting_owner_shadow": {
+    "P_write_authorized": false,
+    "P_writes": 0,
+    "frozen_network_limit_reason": null,
+    "frozen_network_run_completed": true,
+    "independent_operator_authenticated": false,
+    "observed_network_sha256": "fe51f7971aa54a843ea07ab2d3b4618351736269499003ca22de84e499cb662c",
+    "original_frozen_emissions": 3,
+    "original_frozen_observer_checked": true,
+    "original_frozen_routes": 2,
+    "original_owner_placement": {
+      "A": "PE0",
+      "B": "PE1",
+      "C": "PE0"
+    },
+    "original_terminal_outputs": 2,
+    "owner_emitting_c2_sha256": "49864d238f5d80c7b1f778fdf67a429de68d2f339f21879a2e17ebf9c00d9831",
+    "owner_sealed_input_count": 1,
+    "processed_batches": 3,
+    "processed_events": 3,
+    "recipient_BV_feedback_authenticated": false,
+    "runtime_owned_emitted_event_identity": false,
+    "shadow_emissions_sha256": "c6dfb940776f25be263be3cb2bcc9f3027bf1f44a16edffe5a48ee9adefe8388"
+  },
+  "external_owner_authenticated": false,
+  "limitations": [
+    "Original emitting owner fixture is distinct from prior quiet output-free owner C2.",
+    "The Network observation is a replay shadow, not outbound evidence emitted by 24j/24g.",
+    "Original 24d terminal handoff refuses output-bearing transitions; no owned output dispatch exists in this fixture.",
+    "No BV recipient is causally bound to an owned output; no authenticated operator or P grant."
+  ],
+  "next_acceptance": "A native ownership-preserving output route/ACK contract and per-occurrence BV recipient binding are required; do not replace with posthoc shadow or digest.",
+  "original_owned_terminal_handoff": {
+    "original_root_candidate_output_count": 1,
+    "original_terminal_handoff_reason": "OUTPUT_BEARING_TRANSITION",
+    "original_terminal_handoff_refused": true,
+    "output_commit_performed": false,
+    "owner_application_host_outbound_dispatch_proven": false
+  },
+  "original_owner_emitting_network_shadow_executed": true,
+  "original_root_output_bearing_handoff_refused": true,
+  "parent_i2b4b_sha256": "095bd6ece683d99379175be15f15ddb5a66595d26449a3e91f856506947d7479",
+  "parent_i2c2_sha256": "d2acddc9c19f4fe215aef697c052f60b032a4055d019b32f58016e208ae70cd4",
+  "production_release": false,
+  "research_only": true,
+  "schema": "spk-lab-i2c3-original-emitting-owner-custody-blocker/v1",
+  "status": "SPK_LAB_I2C3_ORIGINAL_EMITTING_OWNER_OUTPUT_CUSTODY_BLOCKER_RESEARCH_PASS"
+}

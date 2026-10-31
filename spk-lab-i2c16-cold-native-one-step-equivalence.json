@@ -1,0 +1,113 @@
+{
+  "P_writes": 0,
+  "ambiguous_intent_reconciled": false,
+  "architecture_promotion_allowed": false,
+  "bv_to_p_authorized": false,
+  "cases": [
+    {
+      "P_writes": 0,
+      "confirmed_routes": [
+        13
+      ],
+      "fanout": 1,
+      "native_owner_storage_unchanged_on_disk": true,
+      "native_service_continuation_installed": false,
+      "preview": {
+        "BV_to_P_authorized": false,
+        "P_writes": 0,
+        "initial_service_tick": 7,
+        "namespace": "i2c16-case-1",
+        "native_24j_dispatch": false,
+        "native_commit_replayed": false,
+        "old_snapshot_unchanged": true,
+        "original_history_audit_passed": true,
+        "original_native_transition_executed": true,
+        "prior_output_ids": [
+          11,
+          12,
+          13
+        ],
+        "recipient_ACK_authenticated": false,
+        "schema": "spk-lab-i2c16-one-step-private-preview/v1",
+        "successor_capsule_bytes": 87480,
+        "successor_capsule_sha256": "2a1d180e8c1994ec0161e81e0a9c707bd3ca4263694fa898bff86f9bc72e3eb9",
+        "successor_installed": false,
+        "successor_output_ids": [
+          11,
+          12,
+          13
+        ],
+        "successor_service_tick": 8
+      },
+      "same_native_step_immediate_and_cold": true,
+      "two_processes_separate": true
+    },
+    {
+      "P_writes": 0,
+      "confirmed_routes": [
+        13,
+        14
+      ],
+      "fanout": 2,
+      "native_owner_storage_unchanged_on_disk": true,
+      "native_service_continuation_installed": false,
+      "preview": {
+        "BV_to_P_authorized": false,
+        "P_writes": 0,
+        "initial_service_tick": 7,
+        "namespace": "i2c16-case-2",
+        "native_24j_dispatch": false,
+        "native_commit_replayed": false,
+        "old_snapshot_unchanged": true,
+        "original_history_audit_passed": true,
+        "original_native_transition_executed": true,
+        "prior_output_ids": [
+          11,
+          12,
+          13,
+          14
+        ],
+        "recipient_ACK_authenticated": false,
+        "schema": "spk-lab-i2c16-one-step-private-preview/v1",
+        "successor_capsule_bytes": 91989,
+        "successor_capsule_sha256": "51a6a22a84319e03faa300392ba7fbe1741c773f270ef7b7025c6a434c017437",
+        "successor_installed": false,
+        "successor_output_ids": [
+          11,
+          12,
+          13,
+          14
+        ],
+        "successor_service_tick": 8
+      },
+      "same_native_step_immediate_and_cold": true,
+      "two_processes_separate": true
+    }
+  ],
+  "cross_machine_fencing": false,
+  "external_principal_authenticated": false,
+  "limitations": [
+    "One original frozen service step runs on a private rehydrated typed snapshot. The returned successor is never installed or persisted.",
+    "Only RECEIPT_RECORDED input is accepted; INTENT_UNRESOLVED remains blocked and un-reconcilable.",
+    "The original 24d/24j application host remains unchanged, and this internal-read fixture is not recipient-owned ACK.",
+    "No BV assessment, P write, external principal authentication or distributed fencing."
+  ],
+  "live_service_resumed_after_restart": false,
+  "native_24j_dispatch": false,
+  "next_acceptance": "Specify durable post-restart successor installation with one native authority and crash-safe atomic decision. Keep unresolved intent veto and no BV/P.",
+  "original_native_one_service_step_replayed_in_cold_process": true,
+  "parent_i2c15_sha256": "9498995527b5a755f12a1afeee6ff2951f48fff809e0f722bc29821bdebe82c1",
+  "persisted_successor_state": false,
+  "production_release": false,
+  "recipient_native_ACK_authenticated": false,
+  "research_only": true,
+  "schema": "spk-lab-i2c16-cold-continuation-equivalence/v1",
+  "status": "SPK_LAB_I2C16_ORIGINAL_COLD_ONE_STEP_EQUIVALENCE_RESEARCH_PASS",
+  "uncertain": {
+    "P_writes": 0,
+    "cold_service_step_denied": true,
+    "native_commit_replayed": false,
+    "native_returned_before_failure": true,
+    "phase": "INTENT_UNRESOLVED"
+  }
+}

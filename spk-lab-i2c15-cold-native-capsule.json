@@ -1,0 +1,64 @@
+{
+  "P_writes": 0,
+  "ambiguous_intent_reconciled": false,
+  "architecture_promotion_allowed": false,
+  "bv_to_p_authorized": false,
+  "cases": [
+    {
+      "P_writes": 0,
+      "capsule_bytes": 86384,
+      "capsule_sha256": "58bc6bacf6aaa8fc14b6fb8c6c1d59ea279ebdca16022747828226e62e76929c",
+      "cold_process_audit_passed": true,
+      "evidence_sha256": "deeb607bd98895ccfd719c044b66803d2877744cf523b8491f8808e82bf31ba3",
+      "fanout": 1,
+      "native_service_resumed": false,
+      "original_native_output_ids": [
+        13
+      ],
+      "phase": "RECEIPT_RECORDED",
+      "receipt_sha256": "58980b8ee1fc7fcd11b5228606c97ea6302455a606ac7c1598e7c4269a12d536",
+      "typed_catalog_entries": 43
+    },
+    {
+      "P_writes": 0,
+      "capsule_bytes": 90787,
+      "capsule_sha256": "73a02b999e831449e61e2e09c55dc396391b12fd0902069847d802d67797ad84",
+      "cold_process_audit_passed": true,
+      "evidence_sha256": "9b97c7afa00f2b85cd44cbc631a68bcba62b438adc91f4d93cf6309dc6ec81ee",
+      "fanout": 2,
+      "native_service_resumed": false,
+      "original_native_output_ids": [
+        13,
+        14
+      ],
+      "phase": "RECEIPT_RECORDED",
+      "receipt_sha256": "571dbfaf0cbfaec096d18dd2c79b9dfe6b99fccdaae4bfd8daa435f69b046054",
+      "typed_catalog_entries": 43
+    }
+  ],
+  "cold_process_native_history_audited": true,
+  "cross_machine_fencing": false,
+  "external_owner_authenticated": false,
+  "limitations": [
+    "Restores the full bounded original atomic fixture state and context as typed immutable data and reaudits in a second process; does NOT resume scheduler/services.",
+    "Checkpoint is atomically durable with the receipt/evidence only AFTER native commit returned; gap remains irreconcilable.",
+    "A local source-digest pinned module catalog is not a cryptographic identity of an external principal.",
+    "No recipient-owned ACK, 24j output dispatch, BV assessment or P write authority."
+  ],
+  "native_24j_dispatch": false,
+  "native_owner_execution_resumed_after_restart": false,
+  "native_owner_state_serialized_as_typed_data": true,
+  "next_acceptance": "Bind an authoritative durable native commit decision and safe post-restart service lifecycle, preserving unresolved-intent veto and separate recipient BV/P.",
+  "parent_i2c14_sha256": "b148f8d61a37564f348d73d742735ca729702f20b91913bc7e868cdb60cba359",
+  "production_release": false,
+  "recipient_native_ack_authenticated": false,
+  "research_only": true,
+  "schema": "spk-lab-i2c15-typed-native-capsule/v1",
+  "status": "SPK_LAB_I2C15_COLD_NATIVE_CAPSULE_AUDIT_RESEARCH_PASS",
+  "uncertain": {
+    "P_writes": 0,
+    "phase": "INTENT_UNRESOLVED",
+    "recovery_denied": true,
+    "replay_count": 0
+  }
+}

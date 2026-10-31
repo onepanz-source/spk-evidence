@@ -1,0 +1,89 @@
+{
+  "BV_to_P_live_authorization": false,
+  "P_transfer": false,
+  "P_writes": 0,
+  "architecture_promotion_allowed": false,
+  "cases": [
+    {
+      "BV_to_P_authorized": false,
+      "P_writes": 0,
+      "audit_passed": true,
+      "commit_request_id": 80,
+      "confirmed_request_ids": [
+        3,
+        80
+      ],
+      "emission_event_time": 4,
+      "emission_request_id": 3,
+      "emitting_node": "B",
+      "fanout": 1,
+      "native_24j_dispatch": false,
+      "new_state_version": 1,
+      "old_core_image_modified": false,
+      "old_output_occurrences_modified": false,
+      "old_state_version": 0,
+      "publication_route_ids": [
+        13
+      ],
+      "published_route_ids": [
+        13
+      ],
+      "scope": "FROZEN_OWNED_INTERNAL_READS_NOT_24J",
+      "second_call_rejected": true,
+      "source_pe": "PE1"
+    },
+    {
+      "BV_to_P_authorized": false,
+      "P_writes": 0,
+      "audit_passed": true,
+      "commit_request_id": 80,
+      "confirmed_request_ids": [
+        3,
+        80
+      ],
+      "emission_event_time": 4,
+      "emission_request_id": 3,
+      "emitting_node": "B",
+      "fanout": 2,
+      "native_24j_dispatch": false,
+      "new_state_version": 1,
+      "old_core_image_modified": false,
+      "old_output_occurrences_modified": false,
+      "old_state_version": 0,
+      "publication_route_ids": [
+        13,
+        14
+      ],
+      "published_route_ids": [
+        13,
+        14
+      ],
+      "scope": "FROZEN_OWNED_INTERNAL_READS_NOT_24J",
+      "second_call_rejected": true,
+      "source_pe": "PE1"
+    }
+  ],
+  "limitations": [
+    "Original owned-internal-reads owner is a different state machine from 24j ApplicationRuntimeHostV0.",
+    "Original pytest fixture provides the inputs; this is not a fresh C2->24j emitting owner.",
+    "Immutable state+OUTPUT successor and actual routed OUTPUT storage are in-process simulated physical resources, not hardware.",
+    "Publication is not recipient processing/ACK, external owner authentication, BV feedback, or P write authority."
+  ],
+  "native_24j_application_host_dispatch_proven": false,
+  "native_owned_internal_atomic_commit_executed": true,
+  "native_recipient_ACK_authenticated": false,
+  "native_state_and_output_publication_in_single_successor": true,
+  "negative_cases": {
+    "forged_preparation": true,
+    "historical_publication_forgery": true,
+    "missing_output_reservation": true,
+    "wrong_commit_id": true
+  },
+  "next_acceptance": "Reconcile frozen atomic internal-read owner with 24j custody through a separately specified authorized source adapter, preserving 24d veto; only later recipient-owned BV/P.",
+  "original_24d_veto_unchanged": true,
+  "parent_i2c9_sha256": "bcb4f517ce0271348b947930a8df90f9b2d2e1140f82449fb04faba7c24a1803",
+  "production_release": false,
+  "research_only": true,
+  "schema": "spk-lab-i2c10-owned-internal-atomic-output-witness/v1",
+  "status": "SPK_LAB_I2C10_ORIGINAL_OWNED_INTERNAL_ATOMIC_OUTPUT_RESEARCH_PASS"
+}

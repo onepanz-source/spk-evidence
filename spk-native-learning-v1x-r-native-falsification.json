@@ -1,0 +1,1232 @@
+{
+  "P_credit_transfer": false,
+  "architecture_promotion_allowed": false,
+  "challenge_length": 4,
+  "challenge_word_count": 3,
+  "crash_replay_byte_equal": true,
+  "native_counterexamples": [],
+  "native_independent_sweeps_byte_equal": true,
+  "native_predecessor_banks_written": false,
+  "native_predicted_matches": 18,
+  "native_scenarios": 18,
+  "native_ticks_total": 25090,
+  "negative_control_count": 4,
+  "negative_controls": [
+    "altered_old_receipt",
+    "forged_transfer_authorization",
+    "unrecognized_probe",
+    "altered_o_report"
+  ],
+  "nonabsorbing_start_scenarios": 15,
+  "original_prefix_count": 6,
+  "parent_v1x_p_report_sha256": "dcba7a9c75251be115f805ad158b59a9cd79fd4911d5aa29cb0d02bce68ed4b6",
+  "permission_to_migrate_P": false,
+  "planned_scenarios": 18,
+  "research_only": true,
+  "results": [
+    {
+      "BV_chain_sha256": "be9cefeb9c16591ea5df261472a34832c026e68ca276cc00032e2e2302de34a9",
+      "challenge_word": [
+        "p0-e2",
+        "p1-e0",
+        "p0-e0",
+        "p1-e0"
+      ],
+      "initial_P_version": 3,
+      "matching_projection": true,
+      "native_ticks": 650,
+      "observed_trace": [
+        {
+          "action": "p0-e2",
+          "grants": 0,
+          "to_version": 3,
+          "transition_sha256": "bffff0d98ef78de8aa44778d63b0dfe34b76550e4d6c437c396357b5dbddc8e0"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 1,
+          "to_version": 4,
+          "transition_sha256": "130e3b4e7087f6931ede4bf78b18d95697dfe13bd6941a48a8543491aa8ac525"
+        },
+        {
+          "action": "p0-e0",
+          "grants": 1,
+          "to_version": 5,
+          "transition_sha256": "7ac94616a082104237e9bf0f3a4ecef0c3f09c9ae5119673eadfad3d49d56f6c"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 2,
+          "to_version": 7,
+          "transition_sha256": "cee7765720c57874483f7e8ad90603ef5bee840e0b1e370ebdb0fa99b4edb49e"
+        }
+      ],
+      "predicted_trace": [
+        {
+          "action": "p0-e2",
+          "grants": 0,
+          "to_version": 3,
+          "transition_sha256": "bffff0d98ef78de8aa44778d63b0dfe34b76550e4d6c437c396357b5dbddc8e0"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 1,
+          "to_version": 4,
+          "transition_sha256": "130e3b4e7087f6931ede4bf78b18d95697dfe13bd6941a48a8543491aa8ac525"
+        },
+        {
+          "action": "p0-e0",
+          "grants": 1,
+          "to_version": 5,
+          "transition_sha256": "7ac94616a082104237e9bf0f3a4ecef0c3f09c9ae5119673eadfad3d49d56f6c"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 2,
+          "to_version": 7,
+          "transition_sha256": "cee7765720c57874483f7e8ad90603ef5bee840e0b1e370ebdb0fa99b4edb49e"
+        }
+      ],
+      "prefix": "111000",
+      "setup_probes": []
+    },
+    {
+      "BV_chain_sha256": "72f454e8b0870b2552f98b6389c2714bc14f9f2a75b59b97e6344034f0f3e31d",
+      "challenge_word": [
+        "p1-e0",
+        "p0-e2",
+        "p1-e0",
+        "p0-e2"
+      ],
+      "initial_P_version": 3,
+      "matching_projection": true,
+      "native_ticks": 650,
+      "observed_trace": [
+        {
+          "action": "p1-e0",
+          "grants": 1,
+          "to_version": 4,
+          "transition_sha256": "130e3b4e7087f6931ede4bf78b18d95697dfe13bd6941a48a8543491aa8ac525"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 2,
+          "to_version": 6,
+          "transition_sha256": "c5d0027b42de5984718432e7d4c913342e7107cbf0ace84a2c2ba8e3915af287"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 1,
+          "to_version": 7,
+          "transition_sha256": "7ad5ccec6755b973e3fc614ba600eeae78cea0d31db399f7f355670050aba01c"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 1,
+          "to_version": 8,
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        }
+      ],
+      "predicted_trace": [
+        {
+          "action": "p1-e0",
+          "grants": 1,
+          "to_version": 4,
+          "transition_sha256": "130e3b4e7087f6931ede4bf78b18d95697dfe13bd6941a48a8543491aa8ac525"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 2,
+          "to_version": 6,
+          "transition_sha256": "c5d0027b42de5984718432e7d4c913342e7107cbf0ace84a2c2ba8e3915af287"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 1,
+          "to_version": 7,
+          "transition_sha256": "7ad5ccec6755b973e3fc614ba600eeae78cea0d31db399f7f355670050aba01c"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 1,
+          "to_version": 8,
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        }
+      ],
+      "prefix": "111000",
+      "setup_probes": []
+    },
+    {
+      "BV_chain_sha256": "2ee0e67b1fca972427bff3d5ca6cec5151f590c9f130e48567b067fccd779d91",
+      "challenge_word": [
+        "p0-e0",
+        "p1-e0",
+        "p0-e2",
+        "p1-e0"
+      ],
+      "initial_P_version": 3,
+      "matching_projection": true,
+      "native_ticks": 650,
+      "observed_trace": [
+        {
+          "action": "p0-e0",
+          "grants": 2,
+          "to_version": 5,
+          "transition_sha256": "68e2a6e82a90ab36f1883e83a9bdb5dd6ad9a1793b92924b31b2cc7702fda4f7"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 2,
+          "to_version": 7,
+          "transition_sha256": "cee7765720c57874483f7e8ad90603ef5bee840e0b1e370ebdb0fa99b4edb49e"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 1,
+          "to_version": 8,
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "predicted_trace": [
+        {
+          "action": "p0-e0",
+          "grants": 2,
+          "to_version": 5,
+          "transition_sha256": "68e2a6e82a90ab36f1883e83a9bdb5dd6ad9a1793b92924b31b2cc7702fda4f7"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 2,
+          "to_version": 7,
+          "transition_sha256": "cee7765720c57874483f7e8ad90603ef5bee840e0b1e370ebdb0fa99b4edb49e"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 1,
+          "to_version": 8,
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "prefix": "111000",
+      "setup_probes": []
+    },
+    {
+      "BV_chain_sha256": "959dfe39c38c2cd1e56b81f46c435c9bbfb18105614201968256a003dc324b4c",
+      "challenge_word": [
+        "p0-e2",
+        "p1-e0",
+        "p0-e0",
+        "p1-e0"
+      ],
+      "initial_P_version": 4,
+      "matching_projection": true,
+      "native_ticks": 650,
+      "observed_trace": [
+        {
+          "action": "p0-e2",
+          "grants": 2,
+          "to_version": 6,
+          "transition_sha256": "c5d0027b42de5984718432e7d4c913342e7107cbf0ace84a2c2ba8e3915af287"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 1,
+          "to_version": 7,
+          "transition_sha256": "7ad5ccec6755b973e3fc614ba600eeae78cea0d31db399f7f355670050aba01c"
+        },
+        {
+          "action": "p0-e0",
+          "grants": 1,
+          "to_version": 8,
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "predicted_trace": [
+        {
+          "action": "p0-e2",
+          "grants": 2,
+          "to_version": 6,
+          "transition_sha256": "c5d0027b42de5984718432e7d4c913342e7107cbf0ace84a2c2ba8e3915af287"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 1,
+          "to_version": 7,
+          "transition_sha256": "7ad5ccec6755b973e3fc614ba600eeae78cea0d31db399f7f355670050aba01c"
+        },
+        {
+          "action": "p0-e0",
+          "grants": 1,
+          "to_version": 8,
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "prefix": "000111",
+      "setup_probes": []
+    },
+    {
+      "BV_chain_sha256": "43dbb05bff596fcbeda3c09fb8b2dbe2a0b414168596536f7939a38e3f596f1c",
+      "challenge_word": [
+        "p1-e0",
+        "p0-e2",
+        "p1-e0",
+        "p0-e2"
+      ],
+      "initial_P_version": 4,
+      "matching_projection": true,
+      "native_ticks": 650,
+      "observed_trace": [
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 4,
+          "transition_sha256": "2c413f5e62c374b43c3d2d10daf0b6f7cd406ba2e9e23c87c18a58f2743e001b"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 2,
+          "to_version": 6,
+          "transition_sha256": "c5d0027b42de5984718432e7d4c913342e7107cbf0ace84a2c2ba8e3915af287"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 1,
+          "to_version": 7,
+          "transition_sha256": "7ad5ccec6755b973e3fc614ba600eeae78cea0d31db399f7f355670050aba01c"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 1,
+          "to_version": 8,
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        }
+      ],
+      "predicted_trace": [
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 4,
+          "transition_sha256": "2c413f5e62c374b43c3d2d10daf0b6f7cd406ba2e9e23c87c18a58f2743e001b"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 2,
+          "to_version": 6,
+          "transition_sha256": "c5d0027b42de5984718432e7d4c913342e7107cbf0ace84a2c2ba8e3915af287"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 1,
+          "to_version": 7,
+          "transition_sha256": "7ad5ccec6755b973e3fc614ba600eeae78cea0d31db399f7f355670050aba01c"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 1,
+          "to_version": 8,
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        }
+      ],
+      "prefix": "000111",
+      "setup_probes": []
+    },
+    {
+      "BV_chain_sha256": "ee7771b7740ceac2f0233f9ebfbe1ff8f869b7d1241956637818f6b23eda4b02",
+      "challenge_word": [
+        "p0-e0",
+        "p1-e0",
+        "p0-e2",
+        "p1-e0"
+      ],
+      "initial_P_version": 4,
+      "matching_projection": true,
+      "native_ticks": 650,
+      "observed_trace": [
+        {
+          "action": "p0-e0",
+          "grants": 1,
+          "to_version": 5,
+          "transition_sha256": "7ac94616a082104237e9bf0f3a4ecef0c3f09c9ae5119673eadfad3d49d56f6c"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 2,
+          "to_version": 7,
+          "transition_sha256": "cee7765720c57874483f7e8ad90603ef5bee840e0b1e370ebdb0fa99b4edb49e"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 1,
+          "to_version": 8,
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "predicted_trace": [
+        {
+          "action": "p0-e0",
+          "grants": 1,
+          "to_version": 5,
+          "transition_sha256": "7ac94616a082104237e9bf0f3a4ecef0c3f09c9ae5119673eadfad3d49d56f6c"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 2,
+          "to_version": 7,
+          "transition_sha256": "cee7765720c57874483f7e8ad90603ef5bee840e0b1e370ebdb0fa99b4edb49e"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 1,
+          "to_version": 8,
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "prefix": "000111",
+      "setup_probes": []
+    },
+    {
+      "BV_chain_sha256": "e41801442edb47b963d9cadeb29041168af1f873365304e58aa66c2810c4b331",
+      "challenge_word": [
+        "p0-e2",
+        "p1-e0",
+        "p0-e0",
+        "p1-e0"
+      ],
+      "initial_P_version": 5,
+      "matching_projection": true,
+      "native_ticks": 715,
+      "observed_trace": [
+        {
+          "action": "p0-e2",
+          "grants": 1,
+          "to_version": 6,
+          "transition_sha256": "7166711d28dbf21e9eba2c04e579231c2c76ea5953789ca2bc2e056a59e20231"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 1,
+          "to_version": 7,
+          "transition_sha256": "7ad5ccec6755b973e3fc614ba600eeae78cea0d31db399f7f355670050aba01c"
+        },
+        {
+          "action": "p0-e0",
+          "grants": 1,
+          "to_version": 8,
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "predicted_trace": [
+        {
+          "action": "p0-e2",
+          "grants": 1,
+          "to_version": 6,
+          "transition_sha256": "7166711d28dbf21e9eba2c04e579231c2c76ea5953789ca2bc2e056a59e20231"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 1,
+          "to_version": 7,
+          "transition_sha256": "7ad5ccec6755b973e3fc614ba600eeae78cea0d31db399f7f355670050aba01c"
+        },
+        {
+          "action": "p0-e0",
+          "grants": 1,
+          "to_version": 8,
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "prefix": "000111",
+      "setup_probes": [
+        "p0-e0"
+      ]
+    },
+    {
+      "BV_chain_sha256": "45c0761bc2e1c7e2afb78e0a17372a38542f2380e21d55bfa81a210d09a6bd04",
+      "challenge_word": [
+        "p1-e0",
+        "p0-e2",
+        "p1-e0",
+        "p0-e2"
+      ],
+      "initial_P_version": 5,
+      "matching_projection": true,
+      "native_ticks": 715,
+      "observed_trace": [
+        {
+          "action": "p1-e0",
+          "grants": 2,
+          "to_version": 7,
+          "transition_sha256": "cee7765720c57874483f7e8ad90603ef5bee840e0b1e370ebdb0fa99b4edb49e"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 1,
+          "to_version": 8,
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "predicted_trace": [
+        {
+          "action": "p1-e0",
+          "grants": 2,
+          "to_version": 7,
+          "transition_sha256": "cee7765720c57874483f7e8ad90603ef5bee840e0b1e370ebdb0fa99b4edb49e"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 1,
+          "to_version": 8,
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "prefix": "000111",
+      "setup_probes": [
+        "p0-e0"
+      ]
+    },
+    {
+      "BV_chain_sha256": "51cf4aa88f70256fcde9e417e68c2bd0b5d3d8c9daf348ade7ab20dd1b98c1d5",
+      "challenge_word": [
+        "p0-e0",
+        "p1-e0",
+        "p0-e2",
+        "p1-e0"
+      ],
+      "initial_P_version": 5,
+      "matching_projection": true,
+      "native_ticks": 715,
+      "observed_trace": [
+        {
+          "action": "p0-e0",
+          "grants": 0,
+          "to_version": 5,
+          "transition_sha256": "8a479405d3950bb2a2b3f0db3a729d9f00448256495dc41387e138b47962f728"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 2,
+          "to_version": 7,
+          "transition_sha256": "cee7765720c57874483f7e8ad90603ef5bee840e0b1e370ebdb0fa99b4edb49e"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 1,
+          "to_version": 8,
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "predicted_trace": [
+        {
+          "action": "p0-e0",
+          "grants": 0,
+          "to_version": 5,
+          "transition_sha256": "8a479405d3950bb2a2b3f0db3a729d9f00448256495dc41387e138b47962f728"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 2,
+          "to_version": 7,
+          "transition_sha256": "cee7765720c57874483f7e8ad90603ef5bee840e0b1e370ebdb0fa99b4edb49e"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 1,
+          "to_version": 8,
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "prefix": "000111",
+      "setup_probes": [
+        "p0-e0"
+      ]
+    },
+    {
+      "BV_chain_sha256": "761cc40982fe0f916ede3db505a2a6dc0050d30fd2314f1983c40e5cdc404948",
+      "challenge_word": [
+        "p0-e2",
+        "p1-e0",
+        "p0-e0",
+        "p1-e0"
+      ],
+      "initial_P_version": 6,
+      "matching_projection": true,
+      "native_ticks": 650,
+      "observed_trace": [
+        {
+          "action": "p0-e2",
+          "grants": 0,
+          "to_version": 6,
+          "transition_sha256": "e3027e37939115e812addadf33c1156b6f8d6e53b59b86c74ba0679f40c6cbe8"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 1,
+          "to_version": 7,
+          "transition_sha256": "7ad5ccec6755b973e3fc614ba600eeae78cea0d31db399f7f355670050aba01c"
+        },
+        {
+          "action": "p0-e0",
+          "grants": 1,
+          "to_version": 8,
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "predicted_trace": [
+        {
+          "action": "p0-e2",
+          "grants": 0,
+          "to_version": 6,
+          "transition_sha256": "e3027e37939115e812addadf33c1156b6f8d6e53b59b86c74ba0679f40c6cbe8"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 1,
+          "to_version": 7,
+          "transition_sha256": "7ad5ccec6755b973e3fc614ba600eeae78cea0d31db399f7f355670050aba01c"
+        },
+        {
+          "action": "p0-e0",
+          "grants": 1,
+          "to_version": 8,
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "prefix": "001110",
+      "setup_probes": []
+    },
+    {
+      "BV_chain_sha256": "3940b1b69355ae6c02c922d8143cbaacab02a35c2afdc3e6451a489e928cd88a",
+      "challenge_word": [
+        "p1-e0",
+        "p0-e2",
+        "p1-e0",
+        "p0-e2"
+      ],
+      "initial_P_version": 6,
+      "matching_projection": true,
+      "native_ticks": 650,
+      "observed_trace": [
+        {
+          "action": "p1-e0",
+          "grants": 1,
+          "to_version": 7,
+          "transition_sha256": "7ad5ccec6755b973e3fc614ba600eeae78cea0d31db399f7f355670050aba01c"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 1,
+          "to_version": 8,
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "predicted_trace": [
+        {
+          "action": "p1-e0",
+          "grants": 1,
+          "to_version": 7,
+          "transition_sha256": "7ad5ccec6755b973e3fc614ba600eeae78cea0d31db399f7f355670050aba01c"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 1,
+          "to_version": 8,
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "prefix": "001110",
+      "setup_probes": []
+    },
+    {
+      "BV_chain_sha256": "e6f5e9f09f96357fb2ed7f3653164024676e7ed143db574e9f933c1b9f58b7bd",
+      "challenge_word": [
+        "p0-e0",
+        "p1-e0",
+        "p0-e2",
+        "p1-e0"
+      ],
+      "initial_P_version": 6,
+      "matching_projection": true,
+      "native_ticks": 650,
+      "observed_trace": [
+        {
+          "action": "p0-e0",
+          "grants": 2,
+          "to_version": 8,
+          "transition_sha256": "67c7bae60e3238778e9df850000925597e81782722439630c91e7960000b274a"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "predicted_trace": [
+        {
+          "action": "p0-e0",
+          "grants": 2,
+          "to_version": 8,
+          "transition_sha256": "67c7bae60e3238778e9df850000925597e81782722439630c91e7960000b274a"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "prefix": "001110",
+      "setup_probes": []
+    },
+    {
+      "BV_chain_sha256": "b9a237190a2f87d1b3dd8e009b5c1d88236fe89697d1c173ce77f73408091ed9",
+      "challenge_word": [
+        "p0-e2",
+        "p1-e0",
+        "p0-e0",
+        "p1-e0"
+      ],
+      "initial_P_version": 7,
+      "matching_projection": true,
+      "native_ticks": 650,
+      "observed_trace": [
+        {
+          "action": "p0-e2",
+          "grants": 1,
+          "to_version": 8,
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p0-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "predicted_trace": [
+        {
+          "action": "p0-e2",
+          "grants": 1,
+          "to_version": 8,
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p0-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "prefix": "001011",
+      "setup_probes": []
+    },
+    {
+      "BV_chain_sha256": "c83068df19743697e0feab4135662aa649583212d1b5edfee60671d6677058aa",
+      "challenge_word": [
+        "p1-e0",
+        "p0-e2",
+        "p1-e0",
+        "p0-e2"
+      ],
+      "initial_P_version": 7,
+      "matching_projection": true,
+      "native_ticks": 650,
+      "observed_trace": [
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 7,
+          "transition_sha256": "7c66f5738826c739ee3003f542294214dc1e8f45781cad6c74752cf8d0ab9b84"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 1,
+          "to_version": 8,
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "predicted_trace": [
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 7,
+          "transition_sha256": "7c66f5738826c739ee3003f542294214dc1e8f45781cad6c74752cf8d0ab9b84"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 1,
+          "to_version": 8,
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "prefix": "001011",
+      "setup_probes": []
+    },
+    {
+      "BV_chain_sha256": "75bee8d978c3f14861e4972d8e81a669c478a4778348d4a65565ebf6b491179d",
+      "challenge_word": [
+        "p0-e0",
+        "p1-e0",
+        "p0-e2",
+        "p1-e0"
+      ],
+      "initial_P_version": 7,
+      "matching_projection": true,
+      "native_ticks": 650,
+      "observed_trace": [
+        {
+          "action": "p0-e0",
+          "grants": 1,
+          "to_version": 8,
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "predicted_trace": [
+        {
+          "action": "p0-e0",
+          "grants": 1,
+          "to_version": 8,
+          "transition_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "prefix": "001011",
+      "setup_probes": []
+    },
+    {
+      "BV_chain_sha256": "f06e66e8de3b79292ec879b672efe4d5605d0324298d43fd73627849f96a49f9",
+      "challenge_word": [
+        "p0-e2",
+        "p1-e0",
+        "p0-e0",
+        "p1-e0"
+      ],
+      "initial_P_version": 8,
+      "matching_projection": true,
+      "native_ticks": 650,
+      "observed_trace": [
+        {
+          "action": "p0-e2",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p0-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "predicted_trace": [
+        {
+          "action": "p0-e2",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p0-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "prefix": "010101",
+      "setup_probes": []
+    },
+    {
+      "BV_chain_sha256": "9b900315de41c8c61aeffd20130af0fe23d5523ca6f7cdda448cde81ca96520f",
+      "challenge_word": [
+        "p1-e0",
+        "p0-e2",
+        "p1-e0",
+        "p0-e2"
+      ],
+      "initial_P_version": 8,
+      "matching_projection": true,
+      "native_ticks": 650,
+      "observed_trace": [
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "predicted_trace": [
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "prefix": "010101",
+      "setup_probes": []
+    },
+    {
+      "BV_chain_sha256": "026002aaa37b51753061985050960ba391d311e5c686dd566109d836e14ed6fd",
+      "challenge_word": [
+        "p0-e0",
+        "p1-e0",
+        "p0-e2",
+        "p1-e0"
+      ],
+      "initial_P_version": 8,
+      "matching_projection": true,
+      "native_ticks": 650,
+      "observed_trace": [
+        {
+          "action": "p0-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "predicted_trace": [
+        {
+          "action": "p0-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p0-e2",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        },
+        {
+          "action": "p1-e0",
+          "grants": 0,
+          "to_version": 8,
+          "transition_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+        }
+      ],
+      "prefix": "010101",
+      "setup_probes": []
+    }
+  ],
+  "schema": "spk-native-learning-v1x-r-native-falsification/v1",
+  "source_identity_authenticated": false,
+  "status": "V1X_R_BOUNDED_NATIVE_FOUR_STEP_FALSIFICATION_PASS",
+  "unverified": [
+    "Physical transport delay/drop/jitter injection",
+    "Authenticated physical sensor boundaries",
+    "Concurrent independent mutable P banks",
+    "General reinforcement learning",
+    "Non-destructive P inspection"
+  ]
+}

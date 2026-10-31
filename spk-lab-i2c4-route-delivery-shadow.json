@@ -1,0 +1,108 @@
+{
+  "BV_recipient_feedback_bound_to_owner_output": false,
+  "BV_to_P_live_authorization": false,
+  "P_transfer": false,
+  "P_writes": 0,
+  "architecture_promotion_allowed": false,
+  "bounded_route_delivery_correspondence_verified": true,
+  "cross_host_causal_identity_proven": false,
+  "limitations": [
+    "Shadow IDs are content-addressed local observer labels, not native-owned EVENT IDs.",
+    "Delivery matches the original Network batch, but no native ACK is received from a distinct recipient.",
+    "The separate original 24d root transition is rejected; its output cannot be equated with a Network shadow emission.",
+    "No authenticated outbound dispatch, BV feedback authority, P write or transfer."
+  ],
+  "native_original_emitting_owner_reexecution": true,
+  "native_recipient_ACK_authenticated": false,
+  "next_acceptance": "Native owned output dispatch must mint a per-occurrence ID, preserve it through recipient-owned ACK and independently authorize BV before P.",
+  "original_output_boundary": {
+    "journal": {
+      "BV_assessment_count": 0,
+      "BV_to_P_authorized": false,
+      "P_writes": 0,
+      "c2_sha256": "49864d238f5d80c7b1f778fdf67a429de68d2f339f21879a2e17ebf9c00d9831",
+      "emissions": [
+        {
+          "batch_index": 0,
+          "channel": 7,
+          "node_id": "C",
+          "output_index": 0,
+          "shadow_emission_id": "aa426ce623c8bd405f96fdb9af77ba9f50165e1b21743e0b8973090544d53200",
+          "timestamp": 3
+        },
+        {
+          "batch_index": 1,
+          "channel": 7,
+          "node_id": "B",
+          "output_index": 0,
+          "shadow_emission_id": "50a142592134e88888c6d4d5d9e4f2cb3ca335f08fc7a95e847a95336f1a221f",
+          "timestamp": 5
+        },
+        {
+          "batch_index": 2,
+          "channel": 7,
+          "node_id": "B",
+          "output_index": 0,
+          "shadow_emission_id": "0a9e720d2ec117b8119b00f2f1b788ea10120256b3fa75154b6b7473857076ac",
+          "timestamp": 6
+        }
+      ],
+      "native_recipient_ACK_count": 0,
+      "original_network_outputs": 2,
+      "owned_host_output_commit": false,
+      "owner_to_network_causal_identity_authenticated": false,
+      "route_deliveries": [
+        {
+          "delay_ticks": 2,
+          "delivered_at": 5,
+          "delivery_observed_in_original_network_batch": true,
+          "emission_shadow_id": "aa426ce623c8bd405f96fdb9af77ba9f50165e1b21743e0b8973090544d53200",
+          "emitted_at": 3,
+          "recipient_ACK_received": false,
+          "recipient_BV_assessment_received": false,
+          "route_index": 0,
+          "shadow_route_id": "bdef2acc8bb3de08f0fc34445486c9b8848b18ca1a7c4d7f155af60f2febc4ee",
+          "source_channel": 7,
+          "source_node": "C",
+          "target_batch_index": 1,
+          "target_channel": 0,
+          "target_node": "B",
+          "target_pe_id": "PE1"
+        },
+        {
+          "delay_ticks": 3,
+          "delivered_at": 6,
+          "delivery_observed_in_original_network_batch": true,
+          "emission_shadow_id": "aa426ce623c8bd405f96fdb9af77ba9f50165e1b21743e0b8973090544d53200",
+          "emitted_at": 3,
+          "recipient_ACK_received": false,
+          "recipient_BV_assessment_received": false,
+          "route_index": 1,
+          "shadow_route_id": "e0e9d64e6aa2dafce40187869901e95a28856e6c97bd438b7dc5b3cf0611dd60",
+          "source_channel": 7,
+          "source_node": "C",
+          "target_batch_index": 2,
+          "target_channel": 0,
+          "target_node": "B",
+          "target_pe_id": "PE1"
+        }
+      ],
+      "schema": "spk-lab-i2c4-shadow-route-journal/v1",
+      "sealed_input_count": 1,
+      "source": "original-frozen-network-observer-in-process-reexecution"
+    },
+    "no_cross_host_authenticated_event_id": true,
+    "original_24d_handoff_refused": true,
+    "original_24d_output_committed": false,
+    "original_network_emission_count": 3,
+    "original_network_route_count": 2,
+    "original_network_terminal_outputs": 2,
+    "owner_root_candidate_output_count": 1
+  },
+  "owner_original_24d_rejection_verified": true,
+  "parent_i2c3_sha256": "4205f911ac8dde7ea2a82e068405c0279316134525e27b67cb76f0a9c7f87b76",
+  "production_release": false,
+  "research_only": true,
+  "schema": "spk-lab-i2c4-frozen-route-delivery-shadow/v1",
+  "status": "SPK_LAB_I2C4_ORIGINAL_ROUTE_DELIVERY_SHADOW_RESEARCH_PASS"
+}

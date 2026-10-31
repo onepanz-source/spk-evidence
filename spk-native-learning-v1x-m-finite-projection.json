@@ -1,0 +1,2622 @@
+{
+  "P_credit_transfer": false,
+  "architecture_promotion_allowed": false,
+  "bounded_graph_observational_not_native_theorem": true,
+  "crash_replay_byte_equal": true,
+  "graph": {
+    "alphabet": [
+      "p0-e0",
+      "p0-e1",
+      "p0-e2",
+      "p1-e0"
+    ],
+    "ambiguous_edges": [],
+    "edges": [
+      {
+        "from": [
+          "P",
+          "C",
+          3,
+          11,
+          3
+        ],
+        "probe_id": "p0-e0",
+        "response_sha256": "68e2a6e82a90ab36f1883e83a9bdb5dd6ad9a1793b92924b31b2cc7702fda4f7",
+        "to": [
+          "P",
+          "C",
+          5,
+          15,
+          5
+        ],
+        "witness_count": 5
+      },
+      {
+        "from": [
+          "P",
+          "C",
+          3,
+          11,
+          3
+        ],
+        "probe_id": "p0-e1",
+        "response_sha256": "68e2a6e82a90ab36f1883e83a9bdb5dd6ad9a1793b92924b31b2cc7702fda4f7",
+        "to": [
+          "P",
+          "C",
+          5,
+          15,
+          5
+        ],
+        "witness_count": 5
+      },
+      {
+        "from": [
+          "P",
+          "C",
+          3,
+          11,
+          3
+        ],
+        "probe_id": "p0-e2",
+        "response_sha256": "bffff0d98ef78de8aa44778d63b0dfe34b76550e4d6c437c396357b5dbddc8e0",
+        "to": [
+          "P",
+          "C",
+          3,
+          11,
+          3
+        ],
+        "witness_count": 5
+      },
+      {
+        "from": [
+          "P",
+          "C",
+          3,
+          11,
+          3
+        ],
+        "probe_id": "p1-e0",
+        "response_sha256": "130e3b4e7087f6931ede4bf78b18d95697dfe13bd6941a48a8543491aa8ac525",
+        "to": [
+          "P",
+          "C",
+          4,
+          12,
+          4
+        ],
+        "witness_count": 5
+      },
+      {
+        "from": [
+          "P",
+          "C",
+          4,
+          12,
+          4
+        ],
+        "probe_id": "p0-e0",
+        "response_sha256": "7ac94616a082104237e9bf0f3a4ecef0c3f09c9ae5119673eadfad3d49d56f6c",
+        "to": [
+          "P",
+          "C",
+          5,
+          15,
+          5
+        ],
+        "witness_count": 16
+      },
+      {
+        "from": [
+          "P",
+          "C",
+          4,
+          12,
+          4
+        ],
+        "probe_id": "p0-e1",
+        "response_sha256": "7ac94616a082104237e9bf0f3a4ecef0c3f09c9ae5119673eadfad3d49d56f6c",
+        "to": [
+          "P",
+          "C",
+          5,
+          15,
+          5
+        ],
+        "witness_count": 16
+      },
+      {
+        "from": [
+          "P",
+          "C",
+          4,
+          12,
+          4
+        ],
+        "probe_id": "p0-e2",
+        "response_sha256": "c5d0027b42de5984718432e7d4c913342e7107cbf0ace84a2c2ba8e3915af287",
+        "to": [
+          "P",
+          "C",
+          6,
+          11,
+          6
+        ],
+        "witness_count": 16
+      },
+      {
+        "from": [
+          "P",
+          "C",
+          4,
+          12,
+          4
+        ],
+        "probe_id": "p1-e0",
+        "response_sha256": "2c413f5e62c374b43c3d2d10daf0b6f7cd406ba2e9e23c87c18a58f2743e001b",
+        "to": [
+          "P",
+          "C",
+          4,
+          12,
+          4
+        ],
+        "witness_count": 16
+      },
+      {
+        "from": [
+          "P",
+          "C",
+          5,
+          15,
+          5
+        ],
+        "probe_id": "p0-e0",
+        "response_sha256": "8a479405d3950bb2a2b3f0db3a729d9f00448256495dc41387e138b47962f728",
+        "to": [
+          "P",
+          "C",
+          5,
+          15,
+          5
+        ],
+        "witness_count": 8
+      },
+      {
+        "from": [
+          "P",
+          "C",
+          5,
+          15,
+          5
+        ],
+        "probe_id": "p0-e1",
+        "response_sha256": "8a479405d3950bb2a2b3f0db3a729d9f00448256495dc41387e138b47962f728",
+        "to": [
+          "P",
+          "C",
+          5,
+          15,
+          5
+        ],
+        "witness_count": 8
+      },
+      {
+        "from": [
+          "P",
+          "C",
+          5,
+          15,
+          5
+        ],
+        "probe_id": "p0-e2",
+        "response_sha256": "7166711d28dbf21e9eba2c04e579231c2c76ea5953789ca2bc2e056a59e20231",
+        "to": [
+          "P",
+          "C",
+          6,
+          11,
+          6
+        ],
+        "witness_count": 8
+      },
+      {
+        "from": [
+          "P",
+          "C",
+          5,
+          15,
+          5
+        ],
+        "probe_id": "p1-e0",
+        "response_sha256": "cee7765720c57874483f7e8ad90603ef5bee840e0b1e370ebdb0fa99b4edb49e",
+        "to": [
+          "P",
+          "C",
+          7,
+          12,
+          7
+        ],
+        "witness_count": 8
+      },
+      {
+        "from": [
+          "P",
+          "C",
+          6,
+          11,
+          6
+        ],
+        "probe_id": "p0-e0",
+        "response_sha256": "67c7bae60e3238778e9df850000925597e81782722439630c91e7960000b274a",
+        "to": [
+          "P",
+          "C",
+          8,
+          15,
+          8
+        ],
+        "witness_count": 33
+      },
+      {
+        "from": [
+          "P",
+          "C",
+          6,
+          11,
+          6
+        ],
+        "probe_id": "p0-e1",
+        "response_sha256": "67c7bae60e3238778e9df850000925597e81782722439630c91e7960000b274a",
+        "to": [
+          "P",
+          "C",
+          8,
+          15,
+          8
+        ],
+        "witness_count": 33
+      },
+      {
+        "from": [
+          "P",
+          "C",
+          6,
+          11,
+          6
+        ],
+        "probe_id": "p0-e2",
+        "response_sha256": "e3027e37939115e812addadf33c1156b6f8d6e53b59b86c74ba0679f40c6cbe8",
+        "to": [
+          "P",
+          "C",
+          6,
+          11,
+          6
+        ],
+        "witness_count": 33
+      },
+      {
+        "from": [
+          "P",
+          "C",
+          6,
+          11,
+          6
+        ],
+        "probe_id": "p1-e0",
+        "response_sha256": "7ad5ccec6755b973e3fc614ba600eeae78cea0d31db399f7f355670050aba01c",
+        "to": [
+          "P",
+          "C",
+          7,
+          12,
+          7
+        ],
+        "witness_count": 33
+      },
+      {
+        "from": [
+          "P",
+          "C",
+          7,
+          12,
+          7
+        ],
+        "probe_id": "p0-e0",
+        "response_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a",
+        "to": [
+          "P",
+          "C",
+          8,
+          15,
+          8
+        ],
+        "witness_count": 36
+      },
+      {
+        "from": [
+          "P",
+          "C",
+          7,
+          12,
+          7
+        ],
+        "probe_id": "p0-e1",
+        "response_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a",
+        "to": [
+          "P",
+          "C",
+          8,
+          15,
+          8
+        ],
+        "witness_count": 36
+      },
+      {
+        "from": [
+          "P",
+          "C",
+          7,
+          12,
+          7
+        ],
+        "probe_id": "p0-e2",
+        "response_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a",
+        "to": [
+          "P",
+          "C",
+          8,
+          15,
+          8
+        ],
+        "witness_count": 36
+      },
+      {
+        "from": [
+          "P",
+          "C",
+          7,
+          12,
+          7
+        ],
+        "probe_id": "p1-e0",
+        "response_sha256": "7c66f5738826c739ee3003f542294214dc1e8f45781cad6c74752cf8d0ab9b84",
+        "to": [
+          "P",
+          "C",
+          7,
+          12,
+          7
+        ],
+        "witness_count": 36
+      },
+      {
+        "from": [
+          "P",
+          "C",
+          8,
+          15,
+          8
+        ],
+        "probe_id": "p0-e0",
+        "response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa",
+        "to": [
+          "P",
+          "C",
+          8,
+          15,
+          8
+        ],
+        "witness_count": 62
+      },
+      {
+        "from": [
+          "P",
+          "C",
+          8,
+          15,
+          8
+        ],
+        "probe_id": "p0-e1",
+        "response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa",
+        "to": [
+          "P",
+          "C",
+          8,
+          15,
+          8
+        ],
+        "witness_count": 62
+      },
+      {
+        "from": [
+          "P",
+          "C",
+          8,
+          15,
+          8
+        ],
+        "probe_id": "p0-e2",
+        "response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa",
+        "to": [
+          "P",
+          "C",
+          8,
+          15,
+          8
+        ],
+        "witness_count": 62
+      },
+      {
+        "from": [
+          "P",
+          "C",
+          8,
+          15,
+          8
+        ],
+        "probe_id": "p1-e0",
+        "response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa",
+        "to": [
+          "P",
+          "C",
+          8,
+          15,
+          8
+        ],
+        "witness_count": 62
+      }
+    ],
+    "induced_graph_closed": true,
+    "missing_edges": [],
+    "observed_edges": 24,
+    "states": [
+      [
+        "P",
+        "C",
+        3,
+        11,
+        3
+      ],
+      [
+        "P",
+        "C",
+        4,
+        12,
+        4
+      ],
+      [
+        "P",
+        "C",
+        5,
+        15,
+        5
+      ],
+      [
+        "P",
+        "C",
+        6,
+        11,
+        6
+      ],
+      [
+        "P",
+        "C",
+        7,
+        12,
+        7
+      ],
+      [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ]
+    ]
+  },
+  "limitations": [
+    "Six P states and 24 edges are an induced finite graph from pinned two-step native observations, not a global native semantics",
+    "Only 20 original histories and four authored payloads, plus 80 selected native three-step continuations",
+    "Native third-step agreement does not prove arbitrary-length future behavioral equivalence",
+    "No complete hidden state or external effects verified, no authenticated physical producer",
+    "No shared P transfer, no architecture promotion, no historical SQLite writes"
+  ],
+  "native_independent_sweeps_byte_equal": true,
+  "native_predecessor_banks_written": false,
+  "native_ticks_total": 94770,
+  "parent_v1x_k_report_sha256": "7d6ba4b2d2090d50233a045f7a38ff272dcc37e1966c1567ef3a55301db1fa5f",
+  "parent_v1x_l_report_sha256": "31496a66d6568e7e2f6e1faf32811f795304a3d747190693e5180f59a6b82dd3",
+  "permission_to_migrate_P": false,
+  "research_only": true,
+  "results": [
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        6,
+        11,
+        6
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        5,
+        15,
+        5
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "000111",
+      "probes": [
+        "p0-e0",
+        "p0-e1",
+        "p0-e2"
+      ],
+      "third_response_sha256": "7166711d28dbf21e9eba2c04e579231c2c76ea5953789ca2bc2e056a59e20231"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        7,
+        12,
+        7
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        6,
+        11,
+        6
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "000111",
+      "probes": [
+        "p0-e1",
+        "p0-e2",
+        "p1-e0"
+      ],
+      "third_response_sha256": "7ad5ccec6755b973e3fc614ba600eeae78cea0d31db399f7f355670050aba01c"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        7,
+        12,
+        7
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "000111",
+      "probes": [
+        "p0-e2",
+        "p1-e0",
+        "p0-e0"
+      ],
+      "third_response_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        5,
+        15,
+        5
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        5,
+        15,
+        5
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "000111",
+      "probes": [
+        "p1-e0",
+        "p0-e0",
+        "p0-e1"
+      ],
+      "third_response_sha256": "8a479405d3950bb2a2b3f0db3a729d9f00448256495dc41387e138b47962f728"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "001011",
+      "probes": [
+        "p0-e0",
+        "p0-e1",
+        "p0-e2"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "001011",
+      "probes": [
+        "p0-e1",
+        "p0-e2",
+        "p1-e0"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "001011",
+      "probes": [
+        "p0-e2",
+        "p1-e0",
+        "p0-e0"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "001011",
+      "probes": [
+        "p1-e0",
+        "p0-e0",
+        "p0-e1"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "001101",
+      "probes": [
+        "p0-e0",
+        "p0-e1",
+        "p0-e2"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "001101",
+      "probes": [
+        "p0-e1",
+        "p0-e2",
+        "p1-e0"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "001101",
+      "probes": [
+        "p0-e2",
+        "p1-e0",
+        "p0-e0"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "001101",
+      "probes": [
+        "p1-e0",
+        "p0-e0",
+        "p0-e1"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "001110",
+      "probes": [
+        "p0-e0",
+        "p0-e1",
+        "p0-e2"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "001110",
+      "probes": [
+        "p0-e1",
+        "p0-e2",
+        "p1-e0"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        7,
+        12,
+        7
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "001110",
+      "probes": [
+        "p0-e2",
+        "p1-e0",
+        "p0-e0"
+      ],
+      "third_response_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "001110",
+      "probes": [
+        "p1-e0",
+        "p0-e0",
+        "p0-e1"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "010011",
+      "probes": [
+        "p0-e0",
+        "p0-e1",
+        "p0-e2"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "010011",
+      "probes": [
+        "p0-e1",
+        "p0-e2",
+        "p1-e0"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "010011",
+      "probes": [
+        "p0-e2",
+        "p1-e0",
+        "p0-e0"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "010011",
+      "probes": [
+        "p1-e0",
+        "p0-e0",
+        "p0-e1"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "010101",
+      "probes": [
+        "p0-e0",
+        "p0-e1",
+        "p0-e2"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "010101",
+      "probes": [
+        "p0-e1",
+        "p0-e2",
+        "p1-e0"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "010101",
+      "probes": [
+        "p0-e2",
+        "p1-e0",
+        "p0-e0"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "010101",
+      "probes": [
+        "p1-e0",
+        "p0-e0",
+        "p0-e1"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "010110",
+      "probes": [
+        "p0-e0",
+        "p0-e1",
+        "p0-e2"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "010110",
+      "probes": [
+        "p0-e1",
+        "p0-e2",
+        "p1-e0"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "010110",
+      "probes": [
+        "p0-e2",
+        "p1-e0",
+        "p0-e0"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "010110",
+      "probes": [
+        "p1-e0",
+        "p0-e0",
+        "p0-e1"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "011001",
+      "probes": [
+        "p0-e0",
+        "p0-e1",
+        "p0-e2"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "011001",
+      "probes": [
+        "p0-e1",
+        "p0-e2",
+        "p1-e0"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "011001",
+      "probes": [
+        "p0-e2",
+        "p1-e0",
+        "p0-e0"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "011001",
+      "probes": [
+        "p1-e0",
+        "p0-e0",
+        "p0-e1"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "011010",
+      "probes": [
+        "p0-e0",
+        "p0-e1",
+        "p0-e2"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "011010",
+      "probes": [
+        "p0-e1",
+        "p0-e2",
+        "p1-e0"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "011010",
+      "probes": [
+        "p0-e2",
+        "p1-e0",
+        "p0-e0"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "011010",
+      "probes": [
+        "p1-e0",
+        "p0-e0",
+        "p0-e1"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "011100",
+      "probes": [
+        "p0-e0",
+        "p0-e1",
+        "p0-e2"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "011100",
+      "probes": [
+        "p0-e1",
+        "p0-e2",
+        "p1-e0"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        7,
+        12,
+        7
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "011100",
+      "probes": [
+        "p0-e2",
+        "p1-e0",
+        "p0-e0"
+      ],
+      "third_response_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "011100",
+      "probes": [
+        "p1-e0",
+        "p0-e0",
+        "p0-e1"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        6,
+        11,
+        6
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        5,
+        15,
+        5
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "100011",
+      "probes": [
+        "p0-e0",
+        "p0-e1",
+        "p0-e2"
+      ],
+      "third_response_sha256": "7166711d28dbf21e9eba2c04e579231c2c76ea5953789ca2bc2e056a59e20231"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        7,
+        12,
+        7
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        6,
+        11,
+        6
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "100011",
+      "probes": [
+        "p0-e1",
+        "p0-e2",
+        "p1-e0"
+      ],
+      "third_response_sha256": "7ad5ccec6755b973e3fc614ba600eeae78cea0d31db399f7f355670050aba01c"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        7,
+        12,
+        7
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "100011",
+      "probes": [
+        "p0-e2",
+        "p1-e0",
+        "p0-e0"
+      ],
+      "third_response_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        5,
+        15,
+        5
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        5,
+        15,
+        5
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "100011",
+      "probes": [
+        "p1-e0",
+        "p0-e0",
+        "p0-e1"
+      ],
+      "third_response_sha256": "8a479405d3950bb2a2b3f0db3a729d9f00448256495dc41387e138b47962f728"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "100101",
+      "probes": [
+        "p0-e0",
+        "p0-e1",
+        "p0-e2"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "100101",
+      "probes": [
+        "p0-e1",
+        "p0-e2",
+        "p1-e0"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "100101",
+      "probes": [
+        "p0-e2",
+        "p1-e0",
+        "p0-e0"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "100101",
+      "probes": [
+        "p1-e0",
+        "p0-e0",
+        "p0-e1"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "100110",
+      "probes": [
+        "p0-e0",
+        "p0-e1",
+        "p0-e2"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "100110",
+      "probes": [
+        "p0-e1",
+        "p0-e2",
+        "p1-e0"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        7,
+        12,
+        7
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "100110",
+      "probes": [
+        "p0-e2",
+        "p1-e0",
+        "p0-e0"
+      ],
+      "third_response_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "100110",
+      "probes": [
+        "p1-e0",
+        "p0-e0",
+        "p0-e1"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "101001",
+      "probes": [
+        "p0-e0",
+        "p0-e1",
+        "p0-e2"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "101001",
+      "probes": [
+        "p0-e1",
+        "p0-e2",
+        "p1-e0"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "101001",
+      "probes": [
+        "p0-e2",
+        "p1-e0",
+        "p0-e0"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "101001",
+      "probes": [
+        "p1-e0",
+        "p0-e0",
+        "p0-e1"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "101010",
+      "probes": [
+        "p0-e0",
+        "p0-e1",
+        "p0-e2"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "101010",
+      "probes": [
+        "p0-e1",
+        "p0-e2",
+        "p1-e0"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "101010",
+      "probes": [
+        "p0-e2",
+        "p1-e0",
+        "p0-e0"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "101010",
+      "probes": [
+        "p1-e0",
+        "p0-e0",
+        "p0-e1"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "101100",
+      "probes": [
+        "p0-e0",
+        "p0-e1",
+        "p0-e2"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "101100",
+      "probes": [
+        "p0-e1",
+        "p0-e2",
+        "p1-e0"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        7,
+        12,
+        7
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "101100",
+      "probes": [
+        "p0-e2",
+        "p1-e0",
+        "p0-e0"
+      ],
+      "third_response_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "101100",
+      "probes": [
+        "p1-e0",
+        "p0-e0",
+        "p0-e1"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        6,
+        11,
+        6
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        5,
+        15,
+        5
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "110001",
+      "probes": [
+        "p0-e0",
+        "p0-e1",
+        "p0-e2"
+      ],
+      "third_response_sha256": "7166711d28dbf21e9eba2c04e579231c2c76ea5953789ca2bc2e056a59e20231"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        7,
+        12,
+        7
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        6,
+        11,
+        6
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "110001",
+      "probes": [
+        "p0-e1",
+        "p0-e2",
+        "p1-e0"
+      ],
+      "third_response_sha256": "7ad5ccec6755b973e3fc614ba600eeae78cea0d31db399f7f355670050aba01c"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        7,
+        12,
+        7
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "110001",
+      "probes": [
+        "p0-e2",
+        "p1-e0",
+        "p0-e0"
+      ],
+      "third_response_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        5,
+        15,
+        5
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        5,
+        15,
+        5
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "110001",
+      "probes": [
+        "p1-e0",
+        "p0-e0",
+        "p0-e1"
+      ],
+      "third_response_sha256": "8a479405d3950bb2a2b3f0db3a729d9f00448256495dc41387e138b47962f728"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "110010",
+      "probes": [
+        "p0-e0",
+        "p0-e1",
+        "p0-e2"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "110010",
+      "probes": [
+        "p0-e1",
+        "p0-e2",
+        "p1-e0"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        7,
+        12,
+        7
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "110010",
+      "probes": [
+        "p0-e2",
+        "p1-e0",
+        "p0-e0"
+      ],
+      "third_response_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "110010",
+      "probes": [
+        "p1-e0",
+        "p0-e0",
+        "p0-e1"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "110100",
+      "probes": [
+        "p0-e0",
+        "p0-e1",
+        "p0-e2"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "110100",
+      "probes": [
+        "p0-e1",
+        "p0-e2",
+        "p1-e0"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        7,
+        12,
+        7
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "110100",
+      "probes": [
+        "p0-e2",
+        "p1-e0",
+        "p0-e0"
+      ],
+      "third_response_sha256": "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        8,
+        15,
+        8
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "110100",
+      "probes": [
+        "p1-e0",
+        "p0-e0",
+        "p0-e1"
+      ],
+      "third_response_sha256": "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        6,
+        11,
+        6
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        5,
+        15,
+        5
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "111000",
+      "probes": [
+        "p0-e0",
+        "p0-e1",
+        "p0-e2"
+      ],
+      "third_response_sha256": "7166711d28dbf21e9eba2c04e579231c2c76ea5953789ca2bc2e056a59e20231"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        7,
+        12,
+        7
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        6,
+        11,
+        6
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "111000",
+      "probes": [
+        "p0-e1",
+        "p0-e2",
+        "p1-e0"
+      ],
+      "third_response_sha256": "7ad5ccec6755b973e3fc614ba600eeae78cea0d31db399f7f355670050aba01c"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        5,
+        15,
+        5
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        4,
+        12,
+        4
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "111000",
+      "probes": [
+        "p0-e2",
+        "p1-e0",
+        "p0-e0"
+      ],
+      "third_response_sha256": "7ac94616a082104237e9bf0f3a4ecef0c3f09c9ae5119673eadfad3d49d56f6c"
+    },
+    {
+      "P_after_third": [
+        "P",
+        "C",
+        5,
+        15,
+        5
+      ],
+      "P_before_third": [
+        "P",
+        "C",
+        5,
+        15,
+        5
+      ],
+      "counterexample": null,
+      "native_ticks": 585,
+      "predicted": true,
+      "prefix": "111000",
+      "probes": [
+        "p1-e0",
+        "p0-e0",
+        "p0-e1"
+      ],
+      "third_response_sha256": "8a479405d3950bb2a2b3f0db3a729d9f00448256495dc41387e138b47962f728"
+    }
+  ],
+  "schema": "spk-native-learning-v1x-m-finite-projection-holdout/v1",
+  "source_identity_authenticated": false,
+  "status": "V1X_M_BOUNDED_NATIVE_THIRD_STEP_RESEARCH_PASS",
+  "third_step_counterexamples": [],
+  "third_step_holdout_count": 80,
+  "third_step_predictive_matches": 80
+}

@@ -1,0 +1,55 @@
+{
+  "BV_verdict_proven": false,
+  "P_state_mutated": false,
+  "actually_observed_eligible_pairs_per_context": 0,
+  "architecture_promotion_allowed": false,
+  "baseline_commit": "8afde0cd2c7888ea7e26b70cad52ac232bb8e1da",
+  "cohorts": [
+    {
+      "eligible_BV_pairs": 0,
+      "fixture_kind": "pipeline_inputs",
+      "id": "c1a-pipeline",
+      "independence_attested": false,
+      "local_global_utility_signed": false,
+      "original_network_ir_sha256": "493ae8242dead99ce065c7f444c5945e4b63a66bfd8aca60df56ed82a7e855b6",
+      "planned_pairs": 16,
+      "topology_sha256": null
+    },
+    {
+      "eligible_BV_pairs": 0,
+      "fixture_kind": "pe_admission_authored",
+      "id": "c1a-pe-admission",
+      "independence_attested": false,
+      "local_global_utility_signed": false,
+      "original_network_ir_sha256": "4b82fcfd4f053290acbf1834dc48ddb3ce93b58e2f5289feffa9b02a5da5412a",
+      "planned_pairs": 16,
+      "topology_sha256": null
+    }
+  ],
+  "grant_authorized": false,
+  "missing_prerequisites": [
+    "canonical_topology_extractor_sha256",
+    "cost_policy_sha256",
+    "frozen_trial_registry_sha256",
+    "global_metric_policy_sha256",
+    "local_metric_policy_sha256",
+    "pre_treatment_distribution_sha256",
+    "receiver_authority_evidence_sha256",
+    "reset_and_execution_capture_contract_sha256",
+    "sampling_generator_source_sha256",
+    "signed_preregistration_sha256"
+  ],
+  "note": "No registered or executed new cohort trials. No 18 historical factorial cells counted as independent trials.",
+  "original_BV": {
+    "BV_excludes_independence_attestation": true,
+    "doc_topology_scope": "ONE_TOPOLOGY_PER_BV_DOCUMENT",
+    "function": "evaluate_credit(doc)",
+    "sha256": "34f3c52d5e36109e0fec8705e4c0c93780a24056df6cfdde789706cafe676f80"
+  },
+  "parent_v0l_sha256": "a6f4dde2a05dfc190e22ab10fa48aa5928445ca7c96891ec05edfdb7045573de",
+  "planned_pairs_per_context": 16,
+  "preregistration_sha256": "80063bedc5999cfcd84c318f4231d64c1562df3e9173ee9fe454cf03058a31d1",
+  "production_release": false,
+  "schema": "spk-bv-c1a-preregistration-readiness/v0a",
+  "status": "C1A_DESIGN_GUARDS_PASS_PRE_REGISTRATION_AND_TRIALS_HOLD"
+}

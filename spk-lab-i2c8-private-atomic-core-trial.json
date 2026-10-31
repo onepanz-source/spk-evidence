@@ -1,0 +1,69 @@
+{
+  "BV_to_P_live_authorization": false,
+  "P_transfer": false,
+  "P_writes": 0,
+  "architecture_promotion_allowed": false,
+  "external_owner_authenticated": false,
+  "limitations": [
+    "The versioned Core image is committed by ORIGINAL commit_core_transition_v0, but only into an isolated immutable local result.",
+    "A private additive capacity ledger claims OUTPUT/EVENT simultaneously; no physical native reservation or native STATE_COMMIT service confirmation.",
+    "The original 24d terminal handoff still rejects output-bearing transitions; 24j does not dispatch any emitted EVENT.",
+    "No native recipient ACK, authenticated BV assessment, P write, transfer or architecture promotion."
+  ],
+  "native_EVENT_published": false,
+  "native_OUTPUT_or_EVENT_reservations": 0,
+  "native_core_immutable_commit_only": true,
+  "native_owned_24j_dispatch": false,
+  "native_recipient_ACK": false,
+  "native_state_commit_service_confirmed": false,
+  "next_acceptance": "Native authoritative service owner must integrate actual OUTPUT/EVENT reservation and STATE_COMMIT with rollback; isolated Core commit + lab ledger is necessary but insufficient.",
+  "parent_i2c7_sha256": "e496edfcb457285d4b90df0b02781fe56277b2ccd604f1687c60616cebd8cc81",
+  "private_atomic_trial": {
+    "BV_to_P_authorized": false,
+    "P_writes": 0,
+    "native_core_candidate_output_count": 1,
+    "native_core_image_version_after": 1,
+    "native_core_image_version_before": 0,
+    "native_event_published": false,
+    "native_event_slot_reserved": false,
+    "native_output_slot_reserved": false,
+    "native_service_state_commit_confirmed": false,
+    "original_24d_veto_retained": true,
+    "original_core_immutable_commit_executed": true,
+    "original_root_unchanged": true,
+    "private_capacity_refusal_no_successor": true,
+    "private_claimed_route_ids": [
+      5,
+      6
+    ],
+    "private_generation_after": 1,
+    "private_generation_before": 0,
+    "private_lab_joint_snapshot_returned": true,
+    "private_occupied_after": {
+      "PE0": {
+        "EVENT": 0,
+        "OUTPUT": 2
+      },
+      "PE1": {
+        "EVENT": 2,
+        "OUTPUT": 0
+      }
+    },
+    "private_resource_demand": {
+      "PE0": {
+        "EVENT": 0,
+        "OUTPUT": 2
+      },
+      "PE1": {
+        "EVENT": 2,
+        "OUTPUT": 0
+      }
+    },
+    "private_stale_generation_rejected": true,
+    "recipient_native_ACK": false
+  },
+  "production_release": false,
+  "research_only": true,
+  "schema": "spk-lab-i2c8-private-atomic-commit-trial/v1",
+  "status": "SPK_LAB_I2C8_ORIGINAL_CORE_PRIVATE_ATOMIC_RESOURCE_TRIAL_RESEARCH_PASS"
+}

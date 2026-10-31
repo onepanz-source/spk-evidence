@@ -1,0 +1,85 @@
+{
+  "BV_to_P_live_authorization": false,
+  "P_transfer": false,
+  "P_writes": 0,
+  "architecture_promotion_allowed": false,
+  "cases": [
+    {
+      "BV_to_P_authorized": false,
+      "P_writes": 0,
+      "event_time": 4,
+      "external_owner_authenticated": false,
+      "fanout": 1,
+      "foreign_receipt_24j_committed": false,
+      "foreign_receipt_24j_completed": false,
+      "native_24j_output_dispatch": false,
+      "native_history_audited": true,
+      "native_output_published": true,
+      "new_version": 1,
+      "old_version": 0,
+      "original_24j_completion_refused": true,
+      "output_authority_transferred": false,
+      "owner_kind": "ORIGINAL_OWNED_INTERNAL_READS",
+      "recipient_native_ACK": false,
+      "routed_event_ids": [
+        13
+      ],
+      "schema": "spk-lab-i2c11-atomic-vs-application-owner-boundary/v1",
+      "scope": "FROZEN_NATIVE_ATOMIC_OWNER_READ_ONLY_NOT_24J",
+      "service_confirmed_ids": [
+        3,
+        80
+      ],
+      "source_node": "B",
+      "source_pe": "PE1"
+    },
+    {
+      "BV_to_P_authorized": false,
+      "P_writes": 0,
+      "event_time": 4,
+      "external_owner_authenticated": false,
+      "fanout": 2,
+      "foreign_receipt_24j_committed": false,
+      "foreign_receipt_24j_completed": false,
+      "native_24j_output_dispatch": false,
+      "native_history_audited": true,
+      "native_output_published": true,
+      "new_version": 1,
+      "old_version": 0,
+      "original_24j_completion_refused": true,
+      "output_authority_transferred": false,
+      "owner_kind": "ORIGINAL_OWNED_INTERNAL_READS",
+      "recipient_native_ACK": false,
+      "routed_event_ids": [
+        13,
+        14
+      ],
+      "schema": "spk-lab-i2c11-atomic-vs-application-owner-boundary/v1",
+      "scope": "FROZEN_NATIVE_ATOMIC_OWNER_READ_ONLY_NOT_24J",
+      "service_confirmed_ids": [
+        3,
+        80
+      ],
+      "source_node": "B",
+      "source_pe": "PE1"
+    }
+  ],
+  "cross_owner_output_authority_transfer": false,
+  "limitations": [
+    "Foreign output-bearing atomic receipt is from a distinct original owner and cannot complete original 24j.",
+    "A read-only in-process audit does not transfer OUTPUT/EVENT custody, authenticate an external principal or migrate epoch ownership.",
+    "No new emitting 24j application host, native recipient ACK, BV assessment or P grant exists."
+  ],
+  "native_application_host_24j_emitting_dispatch": false,
+  "native_atomically_published_case_count": 2,
+  "native_original_atomic_commit_exercised": true,
+  "next_acceptance": "Specify and independently gate a new explicit versioned emitting host/owned-epoch handoff authority; frozen output-free 24d must never silently accept foreign receipts.",
+  "original_application_host_24j_rejects_foreign_output_receipt": true,
+  "parent_i2c10_sha256": "afa4707880127281ac50684a5aa4b9ddc32c93275257cdaec8e7ac100a3801f6",
+  "production_release": false,
+  "read_only_native_evidence_projection": true,
+  "recipient_native_ACK_authenticated": false,
+  "research_only": true,
+  "schema": "spk-lab-i2c11-atomic-vs-application-owner-boundary/v1",
+  "status": "SPK_LAB_I2C11_NATIVE_ATOMIC_FOREIGN_RECEIPT_QUARANTINE_RESEARCH_PASS"
+}

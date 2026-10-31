@@ -1,0 +1,109 @@
+{
+  "BV_grant_authorized": false,
+  "P_state_mutated": false,
+  "architecture_promotion_allowed": false,
+  "cohorts": [
+    {
+      "approved_BV_topology_sha256": null,
+      "fixture_kind": "pipeline_inputs",
+      "planned_pairs": 16,
+      "registered_pairs": 0,
+      "topology_proposal_sha256": "ff99b00b7da5a9a6ba99a30a36fc5b32cc56a8f2e9a8c3a563b1606844b113a3"
+    },
+    {
+      "approved_BV_topology_sha256": null,
+      "fixture_kind": "pe_admission_authored",
+      "planned_pairs": 16,
+      "registered_pairs": 0,
+      "topology_proposal_sha256": "f7cef3c7fff80ce2fb5ddaf8ea0b3efd3276fc6afa60f693811d9fa48f56d761"
+    }
+  ],
+  "digest_not_external_signature": true,
+  "external_authority_blockers": [
+    "receiver_witness_authority_sha256",
+    "signed_cost_policy_sha256",
+    "signed_global_metric_policy_sha256",
+    "signed_local_metric_policy_sha256",
+    "signed_sampling_and_reset_policy_sha256",
+    "signed_topology_policy_sha256",
+    "signed_trial_preregistration_sha256"
+  ],
+  "feedback_ABSTAIN_is_not_numeric_zero": true,
+  "global_score_not_derived_from_spike_counts": true,
+  "intake_preregistration_sha256": "b408297eb20db91101055aabf962819c075146fe4147ab0fefc4d6c0e244e473",
+  "native_BV_evaluate_credit_called_on_cohort": false,
+  "native_BV_exact_field_contract": {
+    "baseline": [
+      "program_sha256",
+      "trace_sha256",
+      "global_score",
+      "feedback",
+      "cost"
+    ],
+    "context": [
+      "id",
+      "pre_treatment_features_sha256",
+      "extractor_sha256"
+    ],
+    "cost": [
+      "operations",
+      "memory_accesses",
+      "spike_messages",
+      "feedback_messages",
+      "candidate_eval_operations"
+    ],
+    "feedback record": [
+      "observer",
+      "status",
+      "score",
+      "reason"
+    ],
+    "policy": [
+      "global_metric_id",
+      "global_metric_policy_sha256",
+      "local_metric_id",
+      "local_metric_policy_sha256",
+      "minimum_pairs",
+      "alpha_ppm",
+      "minimum_mean_gain",
+      "max_mean_extra_cost",
+      "max_pairs",
+      "max_receivers",
+      "max_cost_per_arm",
+      "cost_weights"
+    ],
+    "program": [
+      "node_id",
+      "baseline_sha256",
+      "candidate_sha256"
+    ],
+    "report": [
+      "schema",
+      "baseline_tag",
+      "baseline_commit",
+      "topology_sha256",
+      "policy",
+      "program",
+      "contexts",
+      "trial_pairs"
+    ],
+    "trial pair": [
+      "id",
+      "context_id",
+      "seed",
+      "initial_state_sha256",
+      "input_sha256",
+      "baseline",
+      "candidate"
+    ]
+  },
+  "native_BV_verdict_proven": false,
+  "original_BV_source_sha256": "34f3c52d5e36109e0fec8705e4c0c93780a24056df6cfdde789706cafe676f80",
+  "parent_c1a_sha256": "1ce9e2307008c3c6595e42e8ec07d86105978e50de8da303950d36bfa8c06f83",
+  "parent_c1b_v0b_sha256": "d42c770f8f9f5f0a32d4c6a93ac7f9641363d34c6fe7bb732f877a9a1daaacf5",
+  "production_release": false,
+  "research_only": true,
+  "schema": "spk-bv-c1b-metric-intake-original-bv-crosswalk/v0c",
+  "status": "C1B_V0C_ORIGINAL_BV_POLICY_SCHEMA_CROSSWALK_PASS_AUTHORITY_HOLD",
+  "unique_seed_not_independence_proof": true
+}

@@ -1,0 +1,386 @@
+{
+  "R2_sha256": "80ef5f4df97aa6991cfe60f0640b1fc71e5adba68903616b2470010e0acd8c73",
+  "compatible_dispatch_fixture_proven": false,
+  "frozen_test_abi_hints": [
+    {
+      "file": "tests/test_compilation_manifest_v0.py",
+      "sha256": "f2de08d3a91cb7e747e65da46a0a1e3a44e9b845f9c045cb3a99d3986c356ea2",
+      "tests": [
+        {
+          "calls": [
+            "compile_network_ir_v0"
+          ],
+          "excerpt_is_static_not_executed": true,
+          "line": 50,
+          "source_excerpt": "def compile_case(inputs, **changes):\n    network, initial, resources, architecture, placements = inputs\n    kwargs = dict(\n        network_ir_json=dumps_network_ir_v0(network),\n        initial_events=initial,\n        resource_profile=resources,\n        architecture=architecture,\n        placements=placements,\n    )\n    kwargs.update(changes)\n    return compile_network_ir_v0(**kwargs)",
+          "test": "compile_case"
+        },
+        {
+          "calls": [
+            "run_network_v0"
+          ],
+          "excerpt_is_static_not_executed": true,
+          "line": 80,
+          "source_excerpt": "def test_unchanged_network_functional_result(inputs):\n    replayed = loads_compilation_manifest_v0(make_doc(inputs))\n    original = compile_case(inputs)\n    assert run_network_v0(replayed.network, replayed.initial_events) == run_network_v0(\n        original.network, original.initial_events\n    )",
+          "test": "test_unchanged_network_functional_result"
+        }
+      ]
+    },
+    {
+      "file": "tests/test_compile_pipeline_v0.py",
+      "sha256": "d85fd43f7d57dd790e38db89bad230b07dd2224391aabe2ede868d3ec4a2f96a",
+      "tests": [
+        {
+          "calls": [
+            "compile_network_ir_v0"
+          ],
+          "excerpt_is_static_not_executed": true,
+          "line": 53,
+          "source_excerpt": "def compile_case(inputs, **changes):\n    ir, _, events, resources, machine, placements = inputs\n    args = dict(network_ir_json=ir, initial_events=events,\n                resource_profile=resources, architecture=machine,\n                placements=placements)\n    args.update(changes)\n    return compile_network_ir_v0(**args)",
+          "test": "compile_case"
+        },
+        {
+          "calls": [
+            "run_network_v0"
+          ],
+          "excerpt_is_static_not_executed": true,
+          "line": 77,
+          "source_excerpt": "def test_pipeline_does_not_change_functional_execution(inputs):\n    compiled = compile_case(inputs)\n    assert run_network_v0(compiled.network, compiled.initial_events) == run_network_v0(\n        inputs[1], inputs[2]\n    )",
+          "test": "test_pipeline_does_not_change_functional_execution"
+        }
+      ]
+    },
+    {
+      "file": "tests/test_compiler_conformance_v0.py",
+      "sha256": "1e6b4f47f4f8f31636bae4574d27686fa82b67addef42444c56651ef2da8d813",
+      "tests": [
+        {
+          "calls": [
+            "compile_network_ir_v0"
+          ],
+          "excerpt_is_static_not_executed": true,
+          "line": 68,
+          "source_excerpt": "def compile_case(scenario, **overrides):\n    network, events, resources, architecture, placements = scenario\n    arguments = {\n        \"network_ir_json\": dumps_network_ir_v0(network),\n        \"initial_events\": events,\n        \"resource_profile\": resources,\n        \"architecture\": architecture,\n        \"placements\": placements,\n    }\n    arguments.update(overrides)\n    return compile_network_ir_v0(**arguments)",
+          "test": "compile_case"
+        },
+        {
+          "calls": [
+            "run_network_v0"
+          ],
+          "excerpt_is_static_not_executed": true,
+          "line": 147,
+          "source_excerpt": "def test_functional_behavior_is_unchanged(scenario):\n    network, events, *_ = scenario\n    reconstructed = loads_compilation_manifest_v0(document(scenario))\n    assert run_network_v0(network, events) == run_network_v0(\n        reconstructed.network, reconstructed.initial_events)",
+          "test": "test_functional_behavior_is_unchanged"
+        }
+      ]
+    },
+    {
+      "file": "tests/test_functional_trace_v0.py",
+      "sha256": "cc9070a1b34324fb14e47785a2e52fc704bde3622f60c6941e0926ac5546f70f",
+      "tests": [
+        {
+          "calls": [
+            "run_network_v0"
+          ],
+          "excerpt_is_static_not_executed": true,
+          "line": 53,
+          "source_excerpt": "def test_observation_does_not_change_result(network):\n    events = (NetworkEventV0(2, \"A\", 0),)\n\n    reference = run_network_v0(network, events)\n    observed = run_network_observed_v0(network, events)\n\n    assert observed.result == reference",
+          "test": "test_observation_does_not_change_result"
+        },
+        {
+          "calls": [
+            "run_network_v0"
+          ],
+          "excerpt_is_static_not_executed": true,
+          "line": 100,
+          "source_excerpt": "def test_empty_execution_trace(network):\n    observed = run_network_observed_v0(network, ())\n\n    assert observed.batches == ()\n    assert observed.routes == ()\n    assert observed.result == run_network_v0(network, ())",
+          "test": "test_empty_execution_trace"
+        }
+      ]
+    },
+    {
+      "file": "tests/test_network_ir_v0.py",
+      "sha256": "6514f0b722b2a5369f146d8a394f3d2997535c03c8d0935bcb62938c2706185e",
+      "tests": [
+        {
+          "calls": [
+            "run_network_v0"
+          ],
+          "excerpt_is_static_not_executed": true,
+          "line": 97,
+          "source_excerpt": "def test_network_ir_execution_equivalence(network):\n    events = (\n        NetworkEventV0(\n            timestamp=2,\n            node_id=\"A\",\n            channel=0,\n        ),\n    )\n\n    restored = loads_network_ir_v0(\n        dumps_network_ir_v0(network)\n    )\n\n    before = run_network_v0(network, events)\n    after = run_network_v0(restored, events)\n\n    assert before == after\n\n    assert before.processed_events == 4\n    assert before.processed_batches == 3\n\n    assert before.terminal_outputs == (\n        NetworkEventV0(4, \"B\", 7),\n        NetworkEventV0(5, \"B\", 7),\n    )",
+          "test": "test_network_ir_execution_equivalence"
+        }
+      ]
+    },
+    {
+      "file": "tests/test_network_learning_interface_v0.py",
+      "sha256": "1e052aa2b960759534630a6076a8d05b58be3c47dcfdd0e2204514a002319007",
+      "tests": [
+        {
+          "calls": [
+            "run_network_v0"
+          ],
+          "excerpt_is_static_not_executed": true,
+          "line": 118,
+          "source_excerpt": "def test_observer_does_not_change_runtime_result():\n    n = network()\n\n    events = (\n        NetworkEventV0(\n            1,\n            \"a\",\n            0,\n        ),\n    )\n\n    recorder = Recorder()\n\n    observed = run_network_v0(\n        n,\n        events,\n        learning_observer=recorder,\n    )\n\n    unobserved = run_network_v0(\n        n,\n        events,\n    )\n\n    assert observed == unobserved",
+          "test": "test_observer_does_not_change_runtime_result"
+        },
+        {
+          "calls": [
+            "run_network_v0"
+          ],
+          "excerpt_is_static_not_executed": true,
+          "line": 145,
+          "source_excerpt": "def test_route_observation_preserves_causal_provenance():\n    recorder = Recorder()\n\n    run_network_v0(\n        network(),\n        (\n            NetworkEventV0(\n                1,\n                \"a\",\n                0,\n            ),\n        ),\n        learning_observer=recorder,\n    )\n\n    assert recorder.routes == [\n        NetworkRouteObservationV0(\n            emission_timestamp=1,\n            source_node=\"a\",\n            source_channel=7,\n            delivery_timestamp=3,\n            target_node=\"b\",\n            target_channel=0,\n            delay_ticks=2,\n        )\n    ]",
+          "test": "test_route_observation_preserves_causal_provenance"
+        },
+        {
+          "calls": [
+            "run_network_v0"
+          ],
+          "excerpt_is_static_not_executed": true,
+          "line": 173,
+          "source_excerpt": "def test_batch_observation_exposes_recipient_outcome():\n    recorder = Recorder()\n\n    run_network_v0(\n        network(),\n        (\n            NetworkEventV0(\n                1,\n                \"a\",\n                0,\n            ),\n        ),\n        learning_observer=recorder,\n    )\n\n    assert recorder.batches == [\n        NetworkBatchObservationV0(\n            timestamp=1,\n            node_id=\"a\",\n            channels=(0,),\n            final_raw=0,\n            final_guard=True,\n            output_channels=(7,),\n        ),\n        NetworkBatchObservationV0(\n            timestamp=3,\n            node_id=\"b\",\n            channels=(0,),\n            final_raw=1,\n            final_guard=False,\n            output_channels=(),\n        ),\n    ]",
+          "test": "test_batch_observation_exposes_recipient_outcome"
+        }
+      ]
+    },
+    {
+      "file": "tests/test_network_runtime_v0.py",
+      "sha256": "3ca5fa1e6b4fbc0de785ff0fa9f937de653db022434028e0b599ff71e69fe755",
+      "tests": [
+        {
+          "calls": [
+            "run_network_v0"
+          ],
+          "excerpt_is_static_not_executed": true,
+          "line": 86,
+          "source_excerpt": "def test_empty_execution_preserves_initial_state():\n    network = NetworkV0(\n        nodes=(\n            node(\n                \"a\",\n                initial_raw=17,\n            ),\n        ),\n    )\n\n    result = run_network_v0(\n        network,\n        (),\n    )\n\n    states = state_map(\n        result\n    )\n\n    assert result.emissions == ()\n    assert result.terminal_outputs == ()\n    assert result.processed_batches == 0\n    assert result.processed_events == 0\n\n    assert states[\"a\"].raw == 17\n    assert (\n        states[\"a\"].last_timestamp\n        == 0\n    )",
+          "test": "test_empty_execution_preserves_initial_state"
+        },
+        {
+          "calls": [
+            "run_network_v0"
+          ],
+          "excerpt_is_static_not_executed": true,
+          "line": 117,
+          "source_excerpt": "def test_node_state_persists_between_batches():\n    network = NetworkV0(\n        nodes=(\n            node(\"a\"),\n        ),\n    )\n\n    result = run_network_v0(\n        network,\n        (\n            NetworkEventV0(\n                1,\n                \"a\",\n                0,\n            ),\n            NetworkEventV0(\n                3,\n                \"a\",\n                0,\n            ),\n        ),\n    )\n\n    state = state_map(\n        result\n    )[\"a\"]\n\n    assert state.raw == 2\n    assert state.last_timestamp == 3\n    assert result.processed_batches == 2\n    assert result.processed_events == 2",
+          "test": "test_node_state_persists_between_batches"
+        },
+        {
+          "calls": [
+            "run_network_v0"
+          ],
+          "excerpt_is_static_not_executed": true,
+          "line": 150,
+          "source_excerpt": "def test_batch_multiplicity_reaches_core_unchanged():\n    network = NetworkV0(\n        nodes=(\n            node(\"a\"),\n        ),\n    )\n\n    result = run_network_v0(\n        network,\n        (\n            NetworkEventV0(\n                1,\n                \"a\",\n                0,\n            ),\n            NetworkEventV0(\n                1,\n                \"a\",\n                0,\n            ),\n            NetworkEventV0(\n                1,\n                \"a\",\n                0,\n            ),\n        ),\n    )\n\n    state = state_map(\n        result\n    )[\"a\"]\n\n    assert state.raw == 3\n    assert result.processed_batches == 1\n    assert result.processed_events == 3",
+          "test": "test_batch_multiplicity_reaches_core_unchanged"
+        }
+      ]
+    },
+    {
+      "file": "tests/test_owned_internal_state_commit_v0.py",
+      "sha256": "5eb12415e349acd96cac14f591d758fffe84d5e36c2c83317a78d90d9c79699a",
+      "tests": [
+        {
+          "calls": [
+            "run_network_v0"
+          ],
+          "excerpt_is_static_not_executed": true,
+          "line": 304,
+          "source_excerpt": "def test_output_free_core_state_matches_independent_network_reference():\n    from spk_network.events_v0 import NetworkEventV0\n    from spk_network.runtime_v0 import run_network_v0\n    c, _ = all_three()\n    events = tuple(NetworkEventV0(ts, 'B', 0) for ts in (4, 5, 6))\n    functional = run_network_v0(c[1], events)\n    expected = next(n for n in functional.states if n.node_id == 'B')\n    assert (neuron(c).raw, neuron(c).last_timestamp) == (expected.raw, expected.last_timestamp)\n    assert not functional.emissions",
+          "test": "test_output_free_core_state_matches_independent_network_reference"
+        }
+      ]
+    },
+    {
+      "file": "tests/test_pe_admission_v0.py",
+      "sha256": "1975675e62d74bdf91c3fcc278789ef7addfcb683109d3a49a4677e1f5bf98ee",
+      "tests": [
+        {
+          "calls": [
+            "run_network_v0"
+          ],
+          "excerpt_is_static_not_executed": true,
+          "line": 212,
+          "source_excerpt": "def test_mapping_does_not_change_execution():\n    network = make_network()\n    events = (NetworkEventV0(2, \"A\", 0),)\n\n    before = run_network_v0(network, events)\n\n    admit_pe_mapping_v0(\n        network,\n        make_architecture(),\n        PLACEMENTS,\n    )\n\n    after = run_network_v0(network, events)\n\n    assert before == after",
+          "test": "test_mapping_does_not_change_execution"
+        }
+      ]
+    },
+    {
+      "file": "tests/test_resource_admission_v0.py",
+      "sha256": "32a12a1a2fb32e34c1340aa8f31e980530fb06ba575e78a3c7ab21b63d2926fe",
+      "tests": [
+        {
+          "calls": [
+            "run_network_v0"
+          ],
+          "excerpt_is_static_not_executed": true,
+          "line": 124,
+          "source_excerpt": "def test_admission_does_not_change_execution(sample):\n    network, events = sample\n\n    before = run_network_v0(network, events)\n\n    manifest = admit_network_v0(\n        network,\n        events,\n        ResourceProfileV0(),\n    )\n\n    after = run_network_v0(\n        network,\n        events,\n        max_batches=manifest.runtime_max_batches,\n        max_events=manifest.runtime_max_events,\n    )\n\n    assert before == after",
+          "test": "test_admission_does_not_change_execution"
+        }
+      ]
+    },
+    {
+      "file": "tests/test_spk_24m_compiler_network_evidence_v0.py",
+      "sha256": "8194deb7dac93ee2870478b3fd9773cecbd5b3ac9ef9c3fbe250928cb075daf8",
+      "tests": [
+        {
+          "calls": [
+            "run_network_v0"
+          ],
+          "excerpt_is_static_not_executed": true,
+          "line": 110,
+          "source_excerpt": "def test_full_source_result_equals_reconstructed_result():\n    p = verify_and_replay_v0(sample())\n    scenario = reference_scenario_v0()\n    from spk_compiler.network_ir_v0 import loads_network_ir_v0\n    raw = run_network_v0(\n        loads_network_ir_v0(scenario[\"network_ir_json\"]),\n        scenario[\"initial_events\"], max_batches=32, max_events=128,\n    )\n    from dataclasses import asdict\n    assert _json_tree(asdict(raw)) == p[\"result\"]",
+          "test": "test_full_source_result_equals_reconstructed_result"
+        }
+      ]
+    },
+    {
+      "file": "tests/test_spk_24n_frozen_differential_v0.py",
+      "sha256": "1e42f4db67ad5a461e64d39aa0ad42c666bcab35fe2d363564bb5be6d6a53570",
+      "tests": [
+        {
+          "calls": [
+            "run_network_v0"
+          ],
+          "excerpt_is_static_not_executed": true,
+          "line": 40,
+          "source_excerpt": "def check(network, events, *, max_batches=128, max_events=4096):\n    observer = Recorder()\n    actual = run_network_v0(network, events, max_batches=max_batches,\n                            max_events=max_events, learning_observer=observer)\n    expected = compare_actual_v0(network, events, actual,\n                                 observer.batches, observer.routes,\n                                 max_batches=max_batches, max_events=max_events)\n    assert expected['status'] == 'PASS'\n    return actual, observer",
+          "test": "check"
+        },
+        {
+          "calls": [
+            "run_network_v0"
+          ],
+          "excerpt_is_static_not_executed": true,
+          "line": 154,
+          "source_excerpt": "def test_finite_execution_limit_classification():\n    n = NetworkV0((node('A'),node('B')),\n                  (NetworkEdgeV0('A',7,'B',0,1),\n                   NetworkEdgeV0('B',7,'A',0,1)))\n    es = (NetworkEventV0(0,'A',0),)\n    for limit in (2,5,10):\n        with pytest.raises(NetworkExecutionLimitV0, match='max_events'):\n            run_network_v0(n, es, max_events=limit, max_batches=128)\n        from search.spk_24n_independent_oracle_v0 import execute_v0\n        with pytest.raises(OracleLimitV0, match='max_events'):\n            execute_v0(adapt_frozen_v0(n,es), max_events=limit, max_batches=128)",
+          "test": "test_finite_execution_limit_classification"
+        }
+      ]
+    },
+    {
+      "file": "tests/test_spk_24o_frozen_extended_v0.py",
+      "sha256": "d6283f89c2dc3e638b12732d5d5c229f6a0c1b9fb899f953c6a3a1d1979bcfec",
+      "tests": [
+        {
+          "calls": [
+            "run_network_v0"
+          ],
+          "excerpt_is_static_not_executed": true,
+          "line": 90,
+          "source_excerpt": "def test_declarative_network_ir_codec_roundtrip_on_expanded_profiles(profile):\n    seen = 0\n    for name, case in CASES:\n        if name.split('/')[0] != profile or not name.endswith('/duplicate'):\n            continue\n        network, events = to_frozen_v0(case)\n        source = dumps_network_ir_v0(network)\n        decoded = loads_network_ir_v0(source)\n        assert decoded == network, name\n        assert run_network_v0(decoded, events) == run_network_v0(network, events), name\n        seen += 1\n    assert seen == 6",
+          "test": "test_declarative_network_ir_codec_roundtrip_on_expanded_profiles"
+        },
+        {
+          "calls": [
+            "run_network_v0"
+          ],
+          "excerpt_is_static_not_executed": true,
+          "line": 104,
+          "source_excerpt": "def test_execution_budget_success_boundary_and_fail_closed():\n    case = dict(CASES)['relays/parallel/at_zero']\n    net, events = to_frozen_v0(case)\n    finished = run_network_v0(net, events, max_events=4, max_batches=3)\n    assert finished.processed_events == 4\n    assert finished.processed_batches == 3\n    for name, opts in (\n        ('max_events', dict(max_events=3, max_batches=128)),\n        ('max_batches', dict(max_events=4096, max_batches=2)),\n    ):\n        with pytest.raises(NetworkExecutionLimitV0, match=name):\n            run_network_v0(net, events, **opts)",
+          "test": "test_execution_budget_success_boundary_and_fail_closed"
+        },
+        {
+          "calls": [
+            "run_network_v0"
+          ],
+          "excerpt_is_static_not_executed": true,
+          "line": 118,
+          "source_excerpt": "def test_observer_route_mutation_rejected_against_independent_oracle():\n    case = dict(CASES)['relays/parallel/at_zero']\n    net, events = to_frozen_v0(case)\n    from search.spk_24o_extended_differential_v0 import Recorder\n    recorder = Recorder([], [])\n    actual = run_network_v0(net, events, learning_observer=recorder)\n    assert len(recorder.routes) == 3\n    with pytest.raises(DifferentialMismatchV0, match='routes'):\n        compare_actual_v0(net, events, actual, recorder.batches, recorder.routes[:-1])\n    with pytest.raises(DifferentialMismatchV0, match='batches'):\n        compare_actual_v0(net, events, actual, recorder.batches[:-1], recorder.routes)",
+          "test": "test_observer_route_mutation_rejected_against_independent_oracle"
+        }
+      ]
+    },
+    {
+      "file": "tests/test_versioned_core_transition_v0.py",
+      "sha256": "26933183d612a30133cfb4784e4436c8718f8e5b8dc99e95c067ca9ac0fc8c40",
+      "tests": [
+        {
+          "calls": [
+            "run_network_v0"
+          ],
+          "excerpt_is_static_not_executed": true,
+          "line": 59,
+          "source_excerpt": "def test_single_batch_matches_frozen_network_oracle():\n    network = case()\n    initial = initialize_neuron_image_v0(network)\n    step = apply(network, initial)\n    oracle = run_network_v0(network, (NetworkEventV0(2, 'A', 0),))\n    assert step.state.neurons[0].raw == next(s.raw for s in oracle.states if s.node_id == 'A')\n    assert step.state.neurons[0].last_timestamp == next(s.last_timestamp for s in oracle.states if s.node_id == 'A')\n    assert step.receipt.candidate_outputs == tuple(\n        (e.timestamp, e.channel) for e in oracle.emissions\n    )\n    assert initial.neurons[0].version == 0",
+          "test": "test_single_batch_matches_frozen_network_oracle"
+        },
+        {
+          "calls": [
+            "run_network_v0"
+          ],
+          "excerpt_is_static_not_executed": true,
+          "line": 80,
+          "source_excerpt": "def test_two_batches_sequential_match_oracle():\n    network = case()\n    img = initialize_neuron_image_v0(network)\n    emissions = []\n    for t in (2, 5):\n        tick = apply(network, img, timestamp=t)\n        img = tick.state\n        emissions.extend(tick.receipt.candidate_outputs)\n    oracle = run_network_v0(network, (\n        NetworkEventV0(2, 'A', 0), NetworkEventV0(5, 'A', 0),\n    ))\n    assert img.neurons[0].raw == next(s.raw for s in oracle.states if s.node_id == 'A')\n    assert img.neurons[0].version == 2\n    assert tuple(emissions) == tuple((e.timestamp, e.channel) for e in oracle.emissions)",
+          "test": "test_two_batches_sequential_match_oracle"
+        },
+        {
+          "calls": [
+            "run_network_v0"
+          ],
+          "excerpt_is_static_not_executed": true,
+          "line": 96,
+          "source_excerpt": "def test_two_neurons_independently_match_oracle():\n    network = case()\n    img = initialize_neuron_image_v0(network)\n    x = apply(network, img, 'A', 3)\n    y = apply(network, x.state, 'B', 2)\n    oracle = run_network_v0(network, (\n        NetworkEventV0(3, 'A', 0), NetworkEventV0(2, 'B', 0),\n    ))\n    assert {n.node_id: (n.raw, n.last_timestamp) for n in y.state.neurons} == {\n        n.node_id: (n.raw, n.last_timestamp) for n in oracle.states\n    }\n    assert sorted(x.receipt.candidate_outputs + y.receipt.candidate_outputs) == sorted(\n        (e.timestamp, e.channel) for e in oracle.emissions\n    )",
+          "test": "test_two_neurons_independently_match_oracle"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Native network input ABI requires pinned valid fixtures from frozen source",
+    "No invented compiled artifact shape",
+    "No BV-to-P authorization or P migration"
+  ],
+  "native_dispatch_executed": false,
+  "original_functions": [
+    {
+      "args": [
+        "network_ir_json",
+        "initial_events",
+        "resource_profile",
+        "architecture",
+        "placements"
+      ],
+      "file": "spk_compiler/compile_pipeline_v0.py",
+      "function": "compile_network_ir_v0",
+      "kwargs": [],
+      "line": 46,
+      "sha256": "81aebc3b08776b7a5e4d1cd42257298048533d08eaf898cc436c9dc974479366"
+    },
+    {
+      "args": [
+        "network",
+        "events"
+      ],
+      "file": "spk_network/runtime_v0.py",
+      "function": "run_network_v0",
+      "kwargs": [
+        "max_batches",
+        "max_events",
+        "learning_observer"
+      ],
+      "line": 88,
+      "sha256": "4e393a2fdb17e833f3b424f6a5938946d8f6f83ff1cf1ad0da61b3520bb820ce"
+    },
+    {
+      "args": [
+        "network",
+        "events"
+      ],
+      "file": "spk_network/events_v0.py",
+      "function": "validate_network_events_v0",
+      "kwargs": [],
+      "line": 114,
+      "sha256": "f632ad1f49e8c88a11aa42537f9085dc12232751395ca79586992b4c2cd71eee"
+    }
+  ],
+  "research_only": true,
+  "schema": "spk-lab-i2b-compiled-dispatch-abi-inspection/v1",
+  "source_authentication": "frozen_git_tags_plus_compiler_manifest_only_core_semantic_reference",
+  "status": "SPK_LAB_I2B_SOURCE_ABI_INSPECTION_ONLY",
+  "tests_are_not_executed": true
+}

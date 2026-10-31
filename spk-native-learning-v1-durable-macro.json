@@ -1,0 +1,232 @@
+{
+  "clean": {
+    "C_PE_reads": [
+      [
+        10,
+        0,
+        12,
+        [
+          12
+        ]
+      ],
+      [
+        30,
+        1,
+        11,
+        [
+          11
+        ]
+      ]
+    ],
+    "P_grants": 1,
+    "output_sha256": "994c41ddd1ec416c4228b3aad1a6bbab5974acfbdbe365a03e21520000f855ff"
+  },
+  "crash_cut_recovery": [
+    {
+      "P_version": 1,
+      "completed_ticks": 25,
+      "cut": 1,
+      "output_sha256": "994c41ddd1ec416c4228b3aad1a6bbab5974acfbdbe365a03e21520000f855ff",
+      "verified_prefix_ticks": 1
+    },
+    {
+      "P_version": 1,
+      "completed_ticks": 25,
+      "cut": 9,
+      "output_sha256": "994c41ddd1ec416c4228b3aad1a6bbab5974acfbdbe365a03e21520000f855ff",
+      "verified_prefix_ticks": 9
+    },
+    {
+      "P_version": 1,
+      "completed_ticks": 25,
+      "cut": 13,
+      "output_sha256": "994c41ddd1ec416c4228b3aad1a6bbab5974acfbdbe365a03e21520000f855ff",
+      "verified_prefix_ticks": 13
+    },
+    {
+      "P_version": 1,
+      "completed_ticks": 25,
+      "cut": 14,
+      "output_sha256": "994c41ddd1ec416c4228b3aad1a6bbab5974acfbdbe365a03e21520000f855ff",
+      "verified_prefix_ticks": 14
+    },
+    {
+      "P_version": 1,
+      "completed_ticks": 25,
+      "cut": 15,
+      "output_sha256": "994c41ddd1ec416c4228b3aad1a6bbab5974acfbdbe365a03e21520000f855ff",
+      "verified_prefix_ticks": 15
+    },
+    {
+      "P_version": 1,
+      "completed_ticks": 25,
+      "cut": 22,
+      "output_sha256": "994c41ddd1ec416c4228b3aad1a6bbab5974acfbdbe365a03e21520000f855ff",
+      "verified_prefix_ticks": 22
+    },
+    {
+      "P_version": 1,
+      "completed_ticks": 25,
+      "cut": 24,
+      "output_sha256": "994c41ddd1ec416c4228b3aad1a6bbab5974acfbdbe365a03e21520000f855ff",
+      "verified_prefix_ticks": 24
+    }
+  ],
+  "cross_epoch_P": {
+    "epochs": [
+      {
+        "C_PE_reads": [
+          [
+            10,
+            0,
+            12,
+            [
+              12
+            ]
+          ],
+          [
+            30,
+            1,
+            11,
+            [
+              11
+            ]
+          ]
+        ],
+        "P_grants": 1,
+        "final_P": {
+          "choice": 11,
+          "domain": "P",
+          "grants": 1,
+          "owner": "C",
+          "version": 1
+        },
+        "id": 0,
+        "initial_P": {
+          "choice": 12,
+          "domain": "P",
+          "grants": 0,
+          "owner": "C",
+          "version": 0
+        }
+      },
+      {
+        "C_PE_reads": [
+          [
+            10,
+            1,
+            11,
+            [
+              11
+            ]
+          ],
+          [
+            30,
+            1,
+            11,
+            [
+              11
+            ]
+          ]
+        ],
+        "P_grants": 0,
+        "final_P": {
+          "choice": 11,
+          "domain": "P",
+          "grants": 1,
+          "owner": "C",
+          "version": 1
+        },
+        "id": 1,
+        "initial_P": {
+          "choice": 11,
+          "domain": "P",
+          "grants": 1,
+          "owner": "C",
+          "version": 1
+        }
+      },
+      {
+        "C_PE_reads": [
+          [
+            10,
+            1,
+            11,
+            [
+              11
+            ]
+          ],
+          [
+            30,
+            2,
+            12,
+            [
+              12
+            ]
+          ]
+        ],
+        "P_grants": 1,
+        "final_P": {
+          "choice": 12,
+          "domain": "P",
+          "grants": 2,
+          "owner": "C",
+          "version": 2
+        },
+        "id": 2,
+        "initial_P": {
+          "choice": 11,
+          "domain": "P",
+          "grants": 1,
+          "owner": "C",
+          "version": 1
+        }
+      }
+    ],
+    "total_committed_ticks": 75
+  },
+  "durability": "SQLITE_TICK_WAL_PLUS_VERIFIED_GENESIS_REPLAY",
+  "frozen_original_BV_unchanged": true,
+  "frozen_source_pins": {
+    "spk_architecture_v1/causal_memory_v1c.py": "175362406d3598331ec72c42084030248910e0033ea17d87d0810e221c8d7617",
+    "spk_architecture_v1/pe_execution_v1b.py": "8e9d08ddc165e0c6e307ca16cc849feb7eabad33c148c26f4faa436c890d752c",
+    "spk_backvalidation_v0/live_dual_scheduler_v0e.py": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9"
+  },
+  "frozen_v0e_disabled_learning_parity": {
+    "frozen_PE_forward_and_BV_resource_parity": true,
+    "old_BV_deliveries": 4,
+    "old_batches": 6
+  },
+  "limitations": [
+    "Experimental three-neuron binary v1 scheduler, not original frozen BV-v0e",
+    "Recovery reexecutes the bounded episode from genesis, verifying committed ticks; NOT instantaneous heap restore",
+    "No independent IO effects occur during replay; NOT safe to replay external irreversible effects",
+    "SQLite evidence is not tamper-proof against a privileged host that can alter code and ledger",
+    "A program encodes a host-authored target; no generalizable credit assignment",
+    "No hardware sensor, arbitrary topology, remote consensus or signed BV source",
+    "Original frozen BV-v0e remains unchanged and does not natively learn"
+  ],
+  "native_v1_intrinsic_learning": true,
+  "old_frozen_original_native_learning": false,
+  "parent_first_runtime_sha256": "b3ed1b68bacd15643523a89d65777369ed4cce7ab61e48132d90d9dde0d3de4e",
+  "reverse_choice_PE_reads": [
+    [
+      10,
+      0,
+      11,
+      [
+        11
+      ]
+    ],
+    [
+      30,
+      1,
+      12,
+      [
+        12
+      ]
+    ]
+  ],
+  "schema": "spk-native-learning-v1-durable-macro-proof/v1",
+  "status": "NATIVE_V1_DURABLE_P_INHERITANCE_AND_CAUSAL_REPLAY_PASS"
+}

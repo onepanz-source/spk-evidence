@@ -1,0 +1,66 @@
+{
+  "BV_to_P_live_authorization": false,
+  "P_transfer": false,
+  "P_writes": 0,
+  "architecture_promotion_allowed": false,
+  "authenticated_BV_assessment_count": 0,
+  "external_owner_authenticated": false,
+  "limitations": [
+    "Candidate IDs are local content digests of original owned-root PREPARED outputs; NOT native EVENT custody IDs.",
+    "Core transition is recomputed against original uncommitted image and sealed root input, but 24d still refuses output-bearing handoff.",
+    "No OUTPUT admission, atomic state+output commit, routing, recipient-owned ACK or BV feedback authorized.",
+    "Prior I2c5 observer actor remains unrelated to 24j/24g outbound ownership."
+  ],
+  "native_owned_output_event_minted": false,
+  "native_recipient_ACK_count": 0,
+  "next_acceptance": "Implement a separate additive atomic owned output-commit/admission controller with exact service reservations; never bypass original 24d refusal or issue BV-to-P write grants.",
+  "original_24d_output_handoff_refused": true,
+  "original_frozen_core_recomputed": true,
+  "original_owned_root_core_preparation_executed": true,
+  "original_sealed_consumption_witness_checked": true,
+  "output_commit_performed": false,
+  "parent_i2c5_sha256": "5d542c17a02170c4ab5f119f08a8395b55e07bb15af0b52f3f36b4e5dfac039e",
+  "prepared_root_precommit_candidate_witness": {
+    "input_consumed_indices": [
+      0
+    ],
+    "native_24j_dispatch": false,
+    "offers": [
+      {
+        "BV_assessment_authenticated": false,
+        "P_write_authorized": false,
+        "candidate": {
+          "base_version": 0,
+          "candidate_channel": 7,
+          "candidate_timestamp": 3,
+          "consume_request_id": 2,
+          "consumed_channels": [
+            0
+          ],
+          "epoch_id": "E0",
+          "event_time": 3,
+          "output_index": 0,
+          "source_node": "C"
+        },
+        "candidate_local_id": "a836fc46a8ced9442500767bd584200409d85563a48ee227fd6ab08399517bf5",
+        "native_recipient_ACK": false,
+        "output_admitted": false,
+        "output_committed": false,
+        "schema": "spk-lab-i2c6-precommit-candidate/v1",
+        "scope": "OWNED_ROOT_PREPARED_NOT_DISPATCHED"
+      }
+    ],
+    "original_24d_refused": true,
+    "original_owner_epoch_id": "E0",
+    "output_admitted": false,
+    "output_committed": false,
+    "owner_image_uncommitted": true,
+    "recipient_ack_authenticated": false,
+    "root_prepared_count": 1,
+    "root_witness_count": 1
+  },
+  "production_release": false,
+  "research_only": true,
+  "schema": "spk-lab-i2c6-owned-root-precommit-output-candidate/v1",
+  "status": "SPK_LAB_I2C6_ORIGINAL_OWNED_ROOT_PRECOMMIT_OUTPUT_CANDIDATE_RESEARCH_PASS"
+}

@@ -1,0 +1,70 @@
+{
+  "BV_to_P_live_authorization": false,
+  "P_writes": 0,
+  "ambiguous_intent_reconciled": false,
+  "architecture_promotion_allowed": false,
+  "audited_native_output_evidence_persisted": true,
+  "full_native_owner_state_serialized": false,
+  "interrupted_after_native_return": {
+    "P_writes": 0,
+    "native_original_returned": true,
+    "native_replay_performed": false,
+    "phase": "INTENT_UNRESOLVED",
+    "recovery_refused": true
+  },
+  "limitations": [
+    "Persisted checkpoint is a strict data-only native OUTPUT evidence projection, not the full owner image, pending queues or executable native state.",
+    "SQLite atomically writes receipt and audited projection only AFTER original native commit returns; it cannot atomically transact with the native function itself.",
+    "An interruption between native return and SQLite durability stays INTENT_UNRESOLVED, no recovery or retry is authorized.",
+    "All trust local to one SQLite database and original in-process fixture; no external authentication, native recipient ACK, BV or P grant."
+  ],
+  "native_24j_dispatch": false,
+  "native_owner_process_restart_supported": false,
+  "next_acceptance": "Specify a safe full native snapshot serializer/restorer with original audit and commit-to-durable authority; no ambiguous intent may be unlocked by replay.",
+  "parent_i2c13_sha256": "f4492a983ef297bca314f959cc4462695b5a2faefd30fad32558a4a7c2241ae7",
+  "positive_cases": [
+    {
+      "P_writes": 0,
+      "audited_checkpoint_reopened_as_data": true,
+      "duplicate_claim_refused": true,
+      "evidence_sha256": "77b8c667aefbc969f653776f95b97adae795d038c72df828ff3b57ea726d7285",
+      "fanout": 1,
+      "native_24j_dispatch": false,
+      "native_output_event_count": 1,
+      "native_owner_runtime_restored": false,
+      "native_receipt_and_evidence_same_sqlite_transaction": true,
+      "phase": "RECEIPT_RECORDED",
+      "published_route_ids": [
+        13
+      ],
+      "receipt_sha256": "58980b8ee1fc7fcd11b5228606c97ea6302455a606ac7c1598e7c4269a12d536",
+      "recipient_native_ack": false,
+      "verified_native_original_history": true
+    },
+    {
+      "P_writes": 0,
+      "audited_checkpoint_reopened_as_data": true,
+      "duplicate_claim_refused": true,
+      "evidence_sha256": "ab96ccd718651855fde98bd2c1eb75dd09d63099e15073913a6228cd4644f9d3",
+      "fanout": 2,
+      "native_24j_dispatch": false,
+      "native_output_event_count": 2,
+      "native_owner_runtime_restored": false,
+      "native_receipt_and_evidence_same_sqlite_transaction": true,
+      "phase": "RECEIPT_RECORDED",
+      "published_route_ids": [
+        13,
+        14
+      ],
+      "receipt_sha256": "571dbfaf0cbfaec096d18dd2c79b9dfe6b99fccdaae4bfd8daa435f69b046054",
+      "recipient_native_ack": false,
+      "verified_native_original_history": true
+    }
+  ],
+  "production_release": false,
+  "read_only_checkpoint_reopen_verified": true,
+  "recipient_native_ACK_authenticated": false,
+  "research_only": true,
+  "schema": "spk-lab-i2c14-original-native-evidence-checkpoint/v1",
+  "status": "SPK_LAB_I2C14_DURABLE_NATIVE_OUTPUT_EVIDENCE_RESEARCH_PASS"
+}

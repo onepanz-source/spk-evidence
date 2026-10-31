@@ -1,0 +1,310 @@
+{
+  "P5_requires_seventh_native_setup": true,
+  "P_credit_transfer": false,
+  "all_original_P_states_restored": false,
+  "alphabet": [
+    "p0-e0",
+    "p0-e1",
+    "p0-e2",
+    "p1-e0"
+  ],
+  "architecture_promotion_allowed": false,
+  "crash_replay_byte_equal": true,
+  "destructive_diagnostic": true,
+  "distinct_initial_grant_fingerprints": 6,
+  "fixed_word": [
+    "p0-e0",
+    "p0-e2"
+  ],
+  "grant_fingerprint_table": [
+    {
+      "P_after_first_version": 5,
+      "P_after_second_version": 6,
+      "fingerprint": [
+        2,
+        1
+      ],
+      "initial_P_version": 3
+    },
+    {
+      "P_after_first_version": 5,
+      "P_after_second_version": 6,
+      "fingerprint": [
+        1,
+        1
+      ],
+      "initial_P_version": 4
+    },
+    {
+      "P_after_first_version": 5,
+      "P_after_second_version": 6,
+      "fingerprint": [
+        0,
+        1
+      ],
+      "initial_P_version": 5
+    },
+    {
+      "P_after_first_version": 8,
+      "P_after_second_version": 8,
+      "fingerprint": [
+        2,
+        0
+      ],
+      "initial_P_version": 6
+    },
+    {
+      "P_after_first_version": 8,
+      "P_after_second_version": 8,
+      "fingerprint": [
+        1,
+        0
+      ],
+      "initial_P_version": 7
+    },
+    {
+      "P_after_first_version": 8,
+      "P_after_second_version": 8,
+      "fingerprint": [
+        0,
+        0
+      ],
+      "initial_P_version": 8
+    }
+  ],
+  "grants_only_observer": true,
+  "limitations": [
+    "Finite six-state four-payload authored observational projection only",
+    "Grant-only active identification changes P, and collapses six pre-states to two post-states",
+    "Reexecuted native transitions overlap existing pinned two-step and third-step evidence; not an independent new native alphabet",
+    "P=5 requires an original native preparatory event, never a copied or restored P bank",
+    "No global P sufficiency, non-destructive state reading, physical provenance authentication or P migration"
+  ],
+  "minimum_fixed_word_length": 2,
+  "native_counterexamples": [],
+  "native_independent_sweeps_byte_equal": true,
+  "native_plan": [
+    {
+      "diagnostic_probes": [
+        "p0-e0",
+        "p0-e2"
+      ],
+      "initial_P_version": 3,
+      "prefix": "111000",
+      "setup_probes": []
+    },
+    {
+      "diagnostic_probes": [
+        "p0-e0",
+        "p0-e2"
+      ],
+      "initial_P_version": 4,
+      "prefix": "000111",
+      "setup_probes": []
+    },
+    {
+      "diagnostic_probes": [
+        "p0-e0",
+        "p0-e2"
+      ],
+      "initial_P_version": 5,
+      "prefix": "000111",
+      "setup_probes": [
+        "p0-e0"
+      ]
+    },
+    {
+      "diagnostic_probes": [
+        "p0-e0",
+        "p0-e2"
+      ],
+      "initial_P_version": 6,
+      "prefix": "001110",
+      "setup_probes": []
+    },
+    {
+      "diagnostic_probes": [
+        "p0-e0",
+        "p0-e2"
+      ],
+      "initial_P_version": 7,
+      "prefix": "001011",
+      "setup_probes": []
+    },
+    {
+      "diagnostic_probes": [
+        "p0-e0",
+        "p0-e2"
+      ],
+      "initial_P_version": 8,
+      "prefix": "010101",
+      "setup_probes": []
+    }
+  ],
+  "native_predecessor_banks_written": false,
+  "native_prediction_matches": 6,
+  "native_ticks_total": 9555,
+  "native_witness_count": 6,
+  "native_witnesses": [
+    {
+      "P_after_diagnostic_version": 6,
+      "diagnostic_probes": [
+        "p0-e0",
+        "p0-e2"
+      ],
+      "initial_P_version": 3,
+      "matches_projection": true,
+      "native_ticks": 520,
+      "observed_grants": [
+        2,
+        1
+      ],
+      "predicted_grants": [
+        2,
+        1
+      ],
+      "prefix": "111000",
+      "response_sha256": [
+        "68e2a6e82a90ab36f1883e83a9bdb5dd6ad9a1793b92924b31b2cc7702fda4f7",
+        "7166711d28dbf21e9eba2c04e579231c2c76ea5953789ca2bc2e056a59e20231"
+      ],
+      "setup_probes": []
+    },
+    {
+      "P_after_diagnostic_version": 6,
+      "diagnostic_probes": [
+        "p0-e0",
+        "p0-e2"
+      ],
+      "initial_P_version": 4,
+      "matches_projection": true,
+      "native_ticks": 520,
+      "observed_grants": [
+        1,
+        1
+      ],
+      "predicted_grants": [
+        1,
+        1
+      ],
+      "prefix": "000111",
+      "response_sha256": [
+        "7ac94616a082104237e9bf0f3a4ecef0c3f09c9ae5119673eadfad3d49d56f6c",
+        "7166711d28dbf21e9eba2c04e579231c2c76ea5953789ca2bc2e056a59e20231"
+      ],
+      "setup_probes": []
+    },
+    {
+      "P_after_diagnostic_version": 6,
+      "diagnostic_probes": [
+        "p0-e0",
+        "p0-e2"
+      ],
+      "initial_P_version": 5,
+      "matches_projection": true,
+      "native_ticks": 585,
+      "observed_grants": [
+        0,
+        1
+      ],
+      "predicted_grants": [
+        0,
+        1
+      ],
+      "prefix": "000111",
+      "response_sha256": [
+        "8a479405d3950bb2a2b3f0db3a729d9f00448256495dc41387e138b47962f728",
+        "7166711d28dbf21e9eba2c04e579231c2c76ea5953789ca2bc2e056a59e20231"
+      ],
+      "setup_probes": [
+        "p0-e0"
+      ]
+    },
+    {
+      "P_after_diagnostic_version": 8,
+      "diagnostic_probes": [
+        "p0-e0",
+        "p0-e2"
+      ],
+      "initial_P_version": 6,
+      "matches_projection": true,
+      "native_ticks": 520,
+      "observed_grants": [
+        2,
+        0
+      ],
+      "predicted_grants": [
+        2,
+        0
+      ],
+      "prefix": "001110",
+      "response_sha256": [
+        "67c7bae60e3238778e9df850000925597e81782722439630c91e7960000b274a",
+        "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+      ],
+      "setup_probes": []
+    },
+    {
+      "P_after_diagnostic_version": 8,
+      "diagnostic_probes": [
+        "p0-e0",
+        "p0-e2"
+      ],
+      "initial_P_version": 7,
+      "matches_projection": true,
+      "native_ticks": 520,
+      "observed_grants": [
+        1,
+        0
+      ],
+      "predicted_grants": [
+        1,
+        0
+      ],
+      "prefix": "001011",
+      "response_sha256": [
+        "c52b034eecbf21c687ed4b5d3f3586ef08947c84cca55c254a64a082d1a44c3a",
+        "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+      ],
+      "setup_probes": []
+    },
+    {
+      "P_after_diagnostic_version": 8,
+      "diagnostic_probes": [
+        "p0-e0",
+        "p0-e2"
+      ],
+      "initial_P_version": 8,
+      "matches_projection": true,
+      "native_ticks": 520,
+      "observed_grants": [
+        0,
+        0
+      ],
+      "predicted_grants": [
+        0,
+        0
+      ],
+      "prefix": "010101",
+      "response_sha256": [
+        "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa",
+        "4c33a1933f779f265fce98abeb93f112bdab4b069ff9360e747f4c1024a594aa"
+      ],
+      "setup_probes": []
+    }
+  ],
+  "number_of_minimal_fixed_words": 5,
+  "observed_graph_only": true,
+  "observed_states": 6,
+  "parent_v1x_o_report_sha256": "27172e15b543b57d5de8c744df6c9eee323503b475ac248ff7fe2f80c898f97a",
+  "permission_to_migrate_P": false,
+  "post_probe_distinct_P_states": 2,
+  "post_probe_versions": [
+    6,
+    8
+  ],
+  "research_only": true,
+  "schema": "spk-native-learning-v1x-p-active-grant-fingerprint/v1",
+  "source_identity_authenticated": false,
+  "status": "V1X_P_BOUNDED_NATIVE_ACTIVE_GRANT_FINGERPRINT_RESEARCH_PASS"
+}

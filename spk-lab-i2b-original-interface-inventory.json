@@ -1,0 +1,4402 @@
+{
+  "BV_to_P_live_host_authorization_proven": false,
+  "P_transfer_authorized": false,
+  "architecture_promotion_allowed": false,
+  "candidate_api_function_count": 162,
+  "detected_packages": [
+    "spk_backvalidation_v0",
+    "spk_compiler",
+    "spk_core",
+    "spk_native_learning_v1",
+    "spk_network",
+    "spk_simulator"
+  ],
+  "interface_inventory_only": true,
+  "native_multi_neuron_network_executed": false,
+  "next_acceptance": [
+    "Bind exact frozen compiler and network IR signatures from this inventory.",
+    "Execute real compiled-network events through the original runtime in two configurations.",
+    "Verify source-owned spike delivery and BV causal receipts with independent test witnesses.",
+    "Maintain I1 deny-by-default boundary and do not grant live P mutation in I2b."
+  ],
+  "open_gaps": [
+    "No original compiled-network-to-native-execution handoff has been exercised.",
+    "No source-owned BV-to-P authorization in a live host has been exercised.",
+    "Source API discovery cannot certify compatible execution semantics or hardware identity."
+  ],
+  "original_compiler_dispatch_executed": false,
+  "parent_i2a_report_sha256": "c29f634d94172bf5138b4a2b819166fd942c031909643a96325a7d28d29cfb60",
+  "research_only": true,
+  "roots": [
+    {
+      "api_candidates": [
+        {
+          "callables": [
+            {
+              "line": 761,
+              "name": "_normalize_shift_decay_runs",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "instructions"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 829,
+              "name": "_normalize_acc_runs",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "instructions"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 909,
+              "name": "_sort_emit_runs",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "instructions"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 969,
+              "name": "_remove_redundant_repeated_compares",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "instructions"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 1774,
+              "name": "canonicalize_core_program_runtime",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "program",
+                  "config"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_core/canonicalize.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 146,
+              "name": "_compile_decay",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "operator"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 196,
+              "name": "compile_spk_program",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "program",
+                  "config"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_core/compiler.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 274,
+              "name": "_domain_rule_spec",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "rule_id"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_core/domain.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 223,
+              "name": "run_core_network",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "max_batches",
+                  "max_events"
+                ],
+                "positional": [
+                  "network",
+                  "events"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_core/network.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 15,
+              "name": "lower_packed_core",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "packed"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_core/packed.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 259,
+              "name": "rule_specs",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "validity",
+                  "layer"
+                ],
+                "positional": [],
+                "varargs": null
+              }
+            },
+            {
+              "line": 278,
+              "name": "helper_names",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "validity",
+                  "layer"
+                ],
+                "positional": [],
+                "varargs": null
+              }
+            },
+            {
+              "line": 340,
+              "name": "_verified_domain_authorizer",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "authorizer"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 360,
+              "name": "_domain_spec_for_helper",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "helper"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_core/rules.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 86,
+              "name": "run_core_batch",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "timestamp",
+                  "channels",
+                  "initial_raw",
+                  "previous_timestamp"
+                ],
+                "positional": [
+                  "config",
+                  "program"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 228,
+              "name": "run_core_program",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "initial_raw"
+                ],
+                "positional": [
+                  "config",
+                  "program",
+                  "train"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_core/runtime.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 974,
+              "name": "_normalize_cmp_emit_runs",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "program"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 1525,
+              "name": "canonicalize_core_program_semantic_runtime",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "config"
+                ],
+                "positional": [
+                  "program"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_core/semantic_canonicalize.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 114,
+              "name": "validate_network_events_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "network",
+                  "events"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 138,
+              "name": "batch_network_events_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "network",
+                  "events"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_network/events_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 18,
+              "name": "build_network_v0_manifest",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_network/network_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 88,
+              "name": "run_network_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "max_batches",
+                  "max_events",
+                  "learning_observer"
+                ],
+                "positional": [
+                  "network",
+                  "events"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_network/runtime_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 46,
+              "name": "compile_network_ir_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "network_ir_json",
+                  "initial_events",
+                  "resource_profile",
+                  "architecture",
+                  "placements"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_compiler/compile_pipeline_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 34,
+              "name": "build_network_ir_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "network"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 67,
+              "name": "parse_network_ir_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "data"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 133,
+              "name": "dumps_network_ir_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "network"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 160,
+              "name": "loads_network_ir_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "text"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_compiler/network_ir_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 77,
+              "name": "admit_pe_mapping_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "network",
+                  "architecture",
+                  "placements"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_compiler/pe_admission_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 108,
+              "name": "admit_network_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "network",
+                  "events",
+                  "profile"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_compiler/resource_admission_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 126,
+              "name": "build_access_dependencies_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "network",
+                  "observed",
+                  "placement",
+                  "plan",
+                  "provenance",
+                  "initial_events"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/access_dependencies_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 91,
+              "name": "ApplicationRuntimeHostV0._committed",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "view"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 173,
+              "name": "ApplicationRuntimeHostV0.dispatch",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "self",
+                  "request"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/application_runtime_host_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 44,
+              "name": "commit_atomic_neuronal_output_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "commit_request_id",
+                  "emission_request_id",
+                  "ingress"
+                ],
+                "positional": [
+                  "architecture",
+                  "network",
+                  "manifest",
+                  "admission",
+                  "requests",
+                  "graph",
+                  "state"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/atomic_neuronal_commit_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 38,
+              "name": "AutonomousStorageRunV0.service_ticks",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "self"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 73,
+              "name": "run_autonomous_storage_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "ingress",
+                  "max_service_ticks"
+                ],
+                "positional": [
+                  "architecture",
+                  "manifest",
+                  "admission",
+                  "requests",
+                  "graph",
+                  "initial_state"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/autonomous_storage_run_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 176,
+              "name": "run_bounded_backpressure_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "max_frames"
+                ],
+                "positional": [
+                  "architecture",
+                  "manifest",
+                  "admission",
+                  "state",
+                  "frames"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/bounded_backpressure_driver_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 166,
+              "name": "schedule_causal_services_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "max_service_ticks",
+                  "ingress"
+                ],
+                "positional": [
+                  "architecture",
+                  "requests",
+                  "graph",
+                  "policy"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/causal_scheduler_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 195,
+              "name": "commit_routed_event_slot_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "architecture",
+                  "storage",
+                  "manifest",
+                  "ledger",
+                  "route_id"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/event_reservation_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 82,
+              "name": "run_network_observed_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "max_batches",
+                  "max_events"
+                ],
+                "positional": [
+                  "network",
+                  "events"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/functional_trace_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 111,
+              "name": "audit_committed_internal_history_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "architecture",
+                  "manifest",
+                  "admission"
+                ],
+                "positional": [
+                  "network",
+                  "state",
+                  "requests",
+                  "graph"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/owned_internal_reads_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 29,
+              "name": "commit_owned_internal_state_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "commit_request_id"
+                ],
+                "positional": [
+                  "network",
+                  "manifest",
+                  "requests",
+                  "graph",
+                  "state"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/owned_internal_state_commit_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 63,
+              "name": "CustodyViewV0.next_service_tick",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "self"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 76,
+              "name": "_root_tick",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "root"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 204,
+              "name": "OwnedRootAuthorityRegistryV0.handoff",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "expected_revision"
+                ],
+                "positional": [
+                  "self"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/owned_root_authority_custody_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 94,
+              "name": "advance_owned_root_core_handoff_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "state"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/owned_root_core_handoff_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 138,
+              "name": "OwnedRootCustodyExecutionV0.run",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "expected_revision",
+                  "max_actions"
+                ],
+                "positional": [
+                  "self"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/owned_root_custody_execution_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 127,
+              "name": "OwnedRootExecutionDispatcherV0.dispatch",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "self",
+                  "request"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/owned_root_execution_dispatch_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 36,
+              "name": "_handoff_contract",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "root"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 146,
+              "name": "OwnedRootTerminalCommitStateV0.committed",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "self"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 156,
+              "name": "handoff_owned_root_terminal_commit_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "root"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 169,
+              "name": "advance_owned_root_terminal_commit_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "state"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/owned_root_terminal_commit_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 187,
+              "name": "advance_autoframed_owned_tick_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "ingress",
+                  "allow_owned_internal_awaiting",
+                  "deferred_emission_ids"
+                ],
+                "positional": [
+                  "architecture",
+                  "manifest",
+                  "admission",
+                  "requests",
+                  "graph",
+                  "state"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/owned_service_autoframe_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 50,
+              "name": "advance_owned_service_tick_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "ingress"
+                ],
+                "positional": [
+                  "architecture",
+                  "manifest",
+                  "admission",
+                  "requests",
+                  "graph",
+                  "state",
+                  "frame"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/owned_service_tick_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 81,
+              "name": "bind_network_routes_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "network",
+                  "observed",
+                  "placement",
+                  "plan",
+                  "provenance",
+                  "initial_events",
+                  "architecture"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/routing_binding_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 49,
+              "name": "verify_schedule_boundaries_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "max_boundaries"
+                ],
+                "positional": [
+                  "architecture",
+                  "manifest",
+                  "plan",
+                  "requests",
+                  "schedule",
+                  "ingress"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/schedule_boundary_bridge_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 160,
+              "name": "commit_core_transition_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "network",
+                  "image",
+                  "prepared"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/versioned_core_transition_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 46,
+              "name": "advance_witnessed_core_input_tick_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "ingress",
+                  "allow_owned_internal_awaiting",
+                  "deferred_emission_ids"
+                ],
+                "positional": [
+                  "architecture",
+                  "network",
+                  "manifest",
+                  "admission",
+                  "requests",
+                  "graph",
+                  "state"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 200,
+              "name": "advance_and_stage_witnessed_core_tick_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "ingress"
+                ],
+                "positional": [
+                  "architecture",
+                  "network",
+                  "image",
+                  "manifest",
+                  "admission",
+                  "requests",
+                  "graph",
+                  "state"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/witnessed_core_input_v0.py"
+        }
+      ],
+      "file_digests": [
+        {
+          "bytes": 363,
+          "file": "spk_core/__init__.py",
+          "sha256": "6031ea840ed7e436c86be280652c57b28bb7ae056e7f61a83d9148bb4472f860"
+        },
+        {
+          "bytes": 13465,
+          "file": "spk_core/abstract.py",
+          "sha256": "90607946bd32d4b56d5409d3ab3905c1ff34d78ccb164192877381810e3d3f37"
+        },
+        {
+          "bytes": 36042,
+          "file": "spk_core/canonicalize.py",
+          "sha256": "d98017a668bb56ae719fd37b33622dcfe483fa16530d8d377ca780753a7ead66"
+        },
+        {
+          "bytes": 6834,
+          "file": "spk_core/compiler.py",
+          "sha256": "66f92545b5f55fd6570d67ca3054cf7a3fd2bd4e13cb41ad3b413bc9a2df608f"
+        },
+        {
+          "bytes": 4753,
+          "file": "spk_core/core_v0.py",
+          "sha256": "75fad3aac0b5ec0b22bfde2eee27f7782d70eb399a725721660b24067b1636b4"
+        },
+        {
+          "bytes": 9564,
+          "file": "spk_core/domain.py",
+          "sha256": "9d782352c553297ac2a1053019a4ac1511dbe4685d6bf34a0832d8bebb4c3e79"
+        },
+        {
+          "bytes": 5999,
+          "file": "spk_core/ir_v0.py",
+          "sha256": "ca6b601e9d38d738edac29323b537fabc246ed800ec06da0e3d8dff39ad1d8e9"
+        },
+        {
+          "bytes": 1999,
+          "file": "spk_core/isa.py",
+          "sha256": "7c64e0eb8f98080d97bfa3f0de1d2c5ea044c04dcfcfedc1c0f6491891ce9cb6"
+        },
+        {
+          "bytes": 10769,
+          "file": "spk_core/network.py",
+          "sha256": "e6cea43b0142e98cb68bb5498e40c7ff2c0683d1a66de44441f35d1cc562f1b3"
+        },
+        {
+          "bytes": 1069,
+          "file": "spk_core/packed.py",
+          "sha256": "eb18a036cfd375f6f113cd229574dc7e26d32c29d04151884dc494d72d1e9d54"
+        },
+        {
+          "bytes": 13567,
+          "file": "spk_core/rules.py",
+          "sha256": "ab76081ff6277d272c46a83b3e2d6a1db7a36da101385b07bd1c924c55261c05"
+        },
+        {
+          "bytes": 5349,
+          "file": "spk_core/runtime.py",
+          "sha256": "25b78b476c052c73b9e67687d8b9da24e043613bd8c732520a1a338799f403c8"
+        },
+        {
+          "bytes": 32738,
+          "file": "spk_core/semantic_canonicalize.py",
+          "sha256": "11973ebd7fd2c27212aa5d8db1b317a8a7c1e39228c586b2fb8232daef006414"
+        },
+        {
+          "bytes": 141,
+          "file": "spk_network/__init__.py",
+          "sha256": "81abe6e46848ed0ef0dfc3403ca75f38622d334f2610dbc7ba781944e1b600f5"
+        },
+        {
+          "bytes": 3909,
+          "file": "spk_network/events_v0.py",
+          "sha256": "f632ad1f49e8c88a11aa42537f9085dc12232751395ca79586992b4c2cd71eee"
+        },
+        {
+          "bytes": 4523,
+          "file": "spk_network/learning_v0.py",
+          "sha256": "0bca9125630b77b0bdf9c57c363f22fed93b23f817562eb9d191e0c2aede33e4"
+        },
+        {
+          "bytes": 4048,
+          "file": "spk_network/model_v0.py",
+          "sha256": "44462bddf14ac2c9d3e483474b25842abfa875f55c235610e91b15529db40615"
+        },
+        {
+          "bytes": 2797,
+          "file": "spk_network/network_v0.py",
+          "sha256": "aeacc50807066cec45da947d53f8b3e420e38c73b25d1e8345f2a44d49a524ea"
+        },
+        {
+          "bytes": 9072,
+          "file": "spk_network/runtime_v0.py",
+          "sha256": "4e393a2fdb17e833f3b424f6a5938946d8f6f83ff1cf1ad0da61b3520bb820ce"
+        },
+        {
+          "bytes": 0,
+          "file": "spk_compiler/__init__.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 6173,
+          "file": "spk_compiler/compilation_manifest_v0.py",
+          "sha256": "921d321d243dea8802001d52198fd234113d49a1f2ebac759c65abed1b62f88a"
+        },
+        {
+          "bytes": 3787,
+          "file": "spk_compiler/compile_pipeline_v0.py",
+          "sha256": "81aebc3b08776b7a5e4d1cd42257298048533d08eaf898cc436c9dc974479366"
+        },
+        {
+          "bytes": 4187,
+          "file": "spk_compiler/network_ir_v0.py",
+          "sha256": "0425a191cc3ecc3df76fe13dac99009cdceccdbc389789bf1967f567b5309460"
+        },
+        {
+          "bytes": 5107,
+          "file": "spk_compiler/pe_admission_v0.py",
+          "sha256": "ccc76a35f908bd9fbdc8d3dfc23966b4e4109db838e05143b4383a23e437933c"
+        },
+        {
+          "bytes": 5670,
+          "file": "spk_compiler/resource_admission_v0.py",
+          "sha256": "864673d321b3da0b36d49cb669322808e617fb85657034b5df544aad48281420"
+        },
+        {
+          "bytes": 0,
+          "file": "spk_simulator/__init__.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 7475,
+          "file": "spk_simulator/access_dependencies_v0.py",
+          "sha256": "d8e55e6630fc7c861a95497cab19c053b8ca69d1ef65fee6dd6bdea440ea37d8"
+        },
+        {
+          "bytes": 1875,
+          "file": "spk_simulator/application_epoch_provider_v0.py",
+          "sha256": "7551292587859a011d8c059994e3cbc54c19d57cd6d6caa20c924fb12c598bc1"
+        },
+        {
+          "bytes": 10482,
+          "file": "spk_simulator/application_runtime_host_v0.py",
+          "sha256": "9499365c4d1314f58509c790bae9cc507598906751060c929881409bd0416e98"
+        },
+        {
+          "bytes": 7226,
+          "file": "spk_simulator/application_trust_boundary_v0.py",
+          "sha256": "bccb2f01b748316d46c41a92ee130b3da742bab818ae62cb0a00972e236260a9"
+        },
+        {
+          "bytes": 6620,
+          "file": "spk_simulator/atomic_emission_admission_v0.py",
+          "sha256": "1fb9611e6d40d16f9e9ec91b83d177c4d825d3d1402c329123b72fbbe1e2439e"
+        },
+        {
+          "bytes": 6851,
+          "file": "spk_simulator/atomic_emission_offer_plan_v0.py",
+          "sha256": "4183c85006640049a7bd07396ae2c50fa4a331254af263109e641e6edcb749a3"
+        },
+        {
+          "bytes": 13608,
+          "file": "spk_simulator/atomic_neuronal_commit_v0.py",
+          "sha256": "929e9527e1f780bf429881ca15e22412ddc9517afbc6e243f9ff542214f2bdcc"
+        },
+        {
+          "bytes": 5144,
+          "file": "spk_simulator/atomic_offer_boundary_v0.py",
+          "sha256": "c75a61f72305825213a0d981582131ea6c4cb8b696d292ddeaab76d7093edc9d"
+        },
+        {
+          "bytes": 5491,
+          "file": "spk_simulator/authenticated_service_bridge_v0.py",
+          "sha256": "98c2b0e24d370b3268fb622462c07917fea6803d35071faad79f8cb6e89a766b"
+        },
+        {
+          "bytes": 7211,
+          "file": "spk_simulator/autonomous_storage_run_v0.py",
+          "sha256": "30a8685b96772659594d27b415a1495a31e84bedcf36a5f52510d90e4b84d1c1"
+        },
+        {
+          "bytes": 6172,
+          "file": "spk_simulator/backpressure_arbiter_v0.py",
+          "sha256": "d2cb0f6421424b56d902dfb0baa7296268005a68503ba9a109047fa240b5e48b"
+        },
+        {
+          "bytes": 11234,
+          "file": "spk_simulator/backpressure_boundary_v0.py",
+          "sha256": "6dbfe889c4c171d8b6cd81307231c5d02cb62288a09e03e7b83cbd2af9772ec9"
+        },
+        {
+          "bytes": 9169,
+          "file": "spk_simulator/bounded_backpressure_driver_v0.py",
+          "sha256": "81179b353931ac606f7350bf7419ecb9122a53bcd307ebeb012e49ff96040102"
+        },
+        {
+          "bytes": 13790,
+          "file": "spk_simulator/causal_scheduler_v0.py",
+          "sha256": "e7919d01bfc0e3d085207320e9bb945c5363cbb7d8e76a81d5b5f08557cd60cd"
+        },
+        {
+          "bytes": 8296,
+          "file": "spk_simulator/causal_service_frontier_v0.py",
+          "sha256": "752ae3f487e54bddbf360aad7bab5a332a357a863bd06b17cb4abe57e40b90ec"
+        },
+        {
+          "bytes": 11137,
+          "file": "spk_simulator/causal_service_quantum_v0.py",
+          "sha256": "6391b9532a04ba8d9d9cb8bea48f7a05a7034ace17ceae37cd9a2cfd075b7bbb"
+        },
+        {
+          "bytes": 7302,
+          "file": "spk_simulator/computed_emission_binding_v0.py",
+          "sha256": "254cd24c6a17cba7ec22d4ba0657030c72b3cdb693f8e8c00bfd09bb162b7a5a"
+        },
+        {
+          "bytes": 6668,
+          "file": "spk_simulator/computed_topology_routing_v0.py",
+          "sha256": "530b4058d3a662629ca65ee74453d8bc2ab9bf2db3cdbf16745087389f8db786"
+        },
+        {
+          "bytes": 7663,
+          "file": "spk_simulator/dynamic_batch_closure_obligations_v0.py",
+          "sha256": "17de2e3494e670c8e590ad075a16ef768a054513e3a1f80818db2f852720eb41"
+        },
+        {
+          "bytes": 5783,
+          "file": "spk_simulator/dynamic_destination_inventory_v0.py",
+          "sha256": "cd4eb5e070a055bc30fd3afce985bd86d155c5c25099840f614bbe76055186f8"
+        },
+        {
+          "bytes": 12148,
+          "file": "spk_simulator/event_buffer_audit_v0.py",
+          "sha256": "0b5683d506bcf9170496a17068a4fbf24a0021d5658c48e33419cb536d57de5d"
+        },
+        {
+          "bytes": 6501,
+          "file": "spk_simulator/event_provenance_v0.py",
+          "sha256": "e37d56963658a1afcfe4576031dc54c5d5225c17c844b83fe33c966b2897d554"
+        },
+        {
+          "bytes": 10941,
+          "file": "spk_simulator/event_reservation_v0.py",
+          "sha256": "2e455b8faa9ad8ba3cc34b64e00804577373a7b394af9ba01bc18391f5a2104e"
+        },
+        {
+          "bytes": 8375,
+          "file": "spk_simulator/event_storage_v0.py",
+          "sha256": "183468b3765502ad098c2cb05a0e170bd472b81345a9faac27cc4619135270b4"
+        },
+        {
+          "bytes": 6469,
+          "file": "spk_simulator/external_ingress_v0.py",
+          "sha256": "f25aeecbf91889c7c5b1ab25f424194b8e9e7bd1bd395ed7a1361cac78a72cf6"
+        },
+        {
+          "bytes": 2728,
+          "file": "spk_simulator/functional_trace_v0.py",
+          "sha256": "6e934af2e634bc8605416b70b46fd41cec97d352c21dfe8309c41fb16c022140"
+        },
+        {
+          "bytes": 6969,
+          "file": "spk_simulator/internal_effect_obligations_v0.py",
+          "sha256": "4da9ea563bf1a615c0f3d0a327da0f327c5388266b87a1d81e7b7c9af0a1fa6c"
+        },
+        {
+          "bytes": 6454,
+          "file": "spk_simulator/logical_access_v0.py",
+          "sha256": "0ab31bd4ba0d653fa0766ff740db1ed1987851d9e6cffdcd091824f73db9daa2"
+        },
+        {
+          "bytes": 10676,
+          "file": "spk_simulator/one_hop_root_frontier_v0.py",
+          "sha256": "60f14099a89cd7c60c56473642778a08eafde8c3e89719e6ef1f2996ea112fd0"
+        },
+        {
+          "bytes": 12247,
+          "file": "spk_simulator/output_start_reservation_v0.py",
+          "sha256": "1c74704196ae516e3da0b8c209697b1589dc9c57161a29687e617fe1dafa65f5"
+        },
+        {
+          "bytes": 9803,
+          "file": "spk_simulator/owned_computed_emission_allocation_v0.py",
+          "sha256": "2394bc4719d550755c18c281fe8d1b257472ce9cb2a59943243a465c0315ab88"
+        },
+        {
+          "bytes": 7447,
+          "file": "spk_simulator/owned_dynamic_route_service_cycle_v0.py",
+          "sha256": "403017259a61ea31d58332372625869c710d159956bf6bdd9e9f3dd576a65ec5"
+        },
+        {
+          "bytes": 8550,
+          "file": "spk_simulator/owned_dynamic_route_transit_v0.py",
+          "sha256": "fbeface9fb0936ab5b909444e970f22cea10bfc37269f67b2546449f05e83ae9"
+        },
+        {
+          "bytes": 14514,
+          "file": "spk_simulator/owned_dynamic_service_registration_v0.py",
+          "sha256": "c502a40dd0dd00c378cc31bc814d202f76ef1c92d318bb25d5fb675547eeb3f2"
+        },
+        {
+          "bytes": 9554,
+          "file": "spk_simulator/owned_external_ingress_prefix_v0.py",
+          "sha256": "cbb8720634905ef4bad5bd4215bfe5b23e385f1d590621bec4ddcf89cb217307"
+        },
+        {
+          "bytes": 26288,
+          "file": "spk_simulator/owned_internal_reads_v0.py",
+          "sha256": "0aeda5c5a0b139bc169e3bf4d89995a2b38df446ffa24a393ac8079988558cfb"
+        },
+        {
+          "bytes": 9208,
+          "file": "spk_simulator/owned_internal_state_commit_v0.py",
+          "sha256": "6c1a7d546b59641345c4c0e1a1648ff5c0021bf33179f9beab80aefc26191a16"
+        },
+        {
+          "bytes": 10115,
+          "file": "spk_simulator/owned_root_authority_custody_v0.py",
+          "sha256": "0a661a9590d9ecc80c57c6f483a39dc833ff4db057be1cd8dac3061188dd1ec0"
+        },
+        {
+          "bytes": 7841,
+          "file": "spk_simulator/owned_root_batch_consumption_v0.py",
+          "sha256": "59297d3c609c9f1db7f9ea0613eaf70486eee1e632a0bdd09b7b8e0514722cf7"
+        },
+        {
+          "bytes": 7136,
+          "file": "spk_simulator/owned_root_core_handoff_v0.py",
+          "sha256": "ac144251b0c4c7c7a35de8b9f7634f21ac05811303ef4bf120cf40fb2f69862a"
+        },
+        {
+          "bytes": 7111,
+          "file": "spk_simulator/owned_root_custody_execution_v0.py",
+          "sha256": "6c0d86eb1211bc944881645c6ea0fcf3ed6cff32d0317116ebc0618cfcdf59f2"
+        },
+        {
+          "bytes": 10044,
+          "file": "spk_simulator/owned_root_emission_frontier_v0.py",
+          "sha256": "0bfa418d43ab7fa0e6bb5027f80a370371a58f4a3d08c1e8a2bbef7e4454f6a7"
+        },
+        {
+          "bytes": 7107,
+          "file": "spk_simulator/owned_root_execution_dispatch_v0.py",
+          "sha256": "6d7f2a767c6c00ce5d7fe56afff00d13e521a0be576fcd154978f14a57f30ebd"
+        },
+        {
+          "bytes": 17465,
+          "file": "spk_simulator/owned_root_single_clock_v0.py",
+          "sha256": "262f0b162160af1f2bcb2670a479daa82b5d13ea9e16a8acea538f9e129397dd"
+        },
+        {
+          "bytes": 8696,
+          "file": "spk_simulator/owned_root_terminal_commit_v0.py",
+          "sha256": "8d006c4a2d7aa1cde5bd051aa5cc2bff9d3312e168449aba9eb9dc153ca7f80a"
+        },
+        {
+          "bytes": 5288,
+          "file": "spk_simulator/owned_sealed_root_batch_v0.py",
+          "sha256": "c24c22f5249d8bdebf0d7e6e608a6f64a679b7758eee4d3d57feda01ab8bdaf3"
+        },
+        {
+          "bytes": 11081,
+          "file": "spk_simulator/owned_service_autoframe_v0.py",
+          "sha256": "77d47397586fbf4c0591a9ac166ad6302441e2815c90bd0b003d28c039d8d3c9"
+        },
+        {
+          "bytes": 9209,
+          "file": "spk_simulator/owned_service_tick_v0.py",
+          "sha256": "fd3dc015d0adf1d234bdd6f236ef5add493abc157ac1940e93d432a331b29222"
+        },
+        {
+          "bytes": 12527,
+          "file": "spk_simulator/owned_shared_event_cycle_v0.py",
+          "sha256": "d293dbe8a2b6528f64a5ef02324763bc0b2558e387c262ebd738ec2036c38a30"
+        },
+        {
+          "bytes": 8642,
+          "file": "spk_simulator/ownership_consistency_v0.py",
+          "sha256": "456baa21b7044fa13bc9937b39080c7c33a3540968468c69014c71cacbbfd645"
+        },
+        {
+          "bytes": 9392,
+          "file": "spk_simulator/routed_service_replay_v0.py",
+          "sha256": "c446e9370bc3158623b069c320a4d6b09a577b15f0b26a37c0f8093dcbd9e847"
+        },
+        {
+          "bytes": 12387,
+          "file": "spk_simulator/routing_binding_v0.py",
+          "sha256": "a809d785fc8ea4ae5d0d2f562ee377e944be17e35f6817f719c2da7723ad3a13"
+        },
+        {
+          "bytes": 6900,
+          "file": "spk_simulator/schedule_boundary_bridge_v0.py",
+          "sha256": "ebb7a1132094cee2afae1ae3547676b88d6db18b591524cd4bdafd2e6d031422"
+        },
+        {
+          "bytes": 7746,
+          "file": "spk_simulator/serialized_internal_graph_v0.py",
+          "sha256": "b3eaa8359e7703a9a44a3ccc108b1ebbfaa49d105eeeb7ec9790d124978233b0"
+        },
+        {
+          "bytes": 9983,
+          "file": "spk_simulator/service_effect_authority_v0.py",
+          "sha256": "fe71a1cff685ca3c1916a62f27676856c29742741e1dd46c9b19ecf96e7dd39f"
+        },
+        {
+          "bytes": 10935,
+          "file": "spk_simulator/service_reservation_gate_v0.py",
+          "sha256": "733bcef0efce1953abe2bc5e816e284c8931ecf4ad877fefc37261b0a31c5a61"
+        },
+        {
+          "bytes": 8276,
+          "file": "spk_simulator/versioned_core_transition_v0.py",
+          "sha256": "1e3140631d4cbc7a42b397aeeb9050f3effa866c265cc3f35446782bf6b5f84a"
+        },
+        {
+          "bytes": 12389,
+          "file": "spk_simulator/witnessed_core_input_v0.py",
+          "sha256": "3650d74588d92bd6a90f41520b4db6cb23e384ed82068987bf847fe79035e0cd"
+        }
+      ],
+      "git": {
+        "git_worktree_clean": false,
+        "head": "a76ebaae49373a4c6b66f94465d78dbf1cf19f80",
+        "tag_commits": {
+          "spk-architecture-bounded-reference-v1": "5af99cd1f4d603bf0c8e1557a6561c107765fdb5",
+          "spk-compiler-v0": "24b15156aa31967bd0079debcc97ccb6e3ac4325",
+          "spk-core-network-v0": "01b6728355a60bd6095fb48d7a9c4c6aa1e09790"
+        }
+      },
+      "parse_errors": [],
+      "present_packages": [
+        "spk_core",
+        "spk_network",
+        "spk_compiler",
+        "spk_simulator"
+      ],
+      "root": "/home/ste/workspace/spk-algebra",
+      "scanned_python_files": 84
+    },
+    {
+      "api_candidates": [
+        {
+          "callables": [
+            {
+              "line": 761,
+              "name": "_normalize_shift_decay_runs",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "instructions"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 829,
+              "name": "_normalize_acc_runs",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "instructions"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 909,
+              "name": "_sort_emit_runs",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "instructions"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 969,
+              "name": "_remove_redundant_repeated_compares",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "instructions"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 1774,
+              "name": "canonicalize_core_program_runtime",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "program",
+                  "config"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_core/canonicalize.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 146,
+              "name": "_compile_decay",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "operator"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 196,
+              "name": "compile_spk_program",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "program",
+                  "config"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_core/compiler.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 274,
+              "name": "_domain_rule_spec",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "rule_id"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_core/domain.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 223,
+              "name": "run_core_network",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "max_batches",
+                  "max_events"
+                ],
+                "positional": [
+                  "network",
+                  "events"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_core/network.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 15,
+              "name": "lower_packed_core",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "packed"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_core/packed.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 259,
+              "name": "rule_specs",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "validity",
+                  "layer"
+                ],
+                "positional": [],
+                "varargs": null
+              }
+            },
+            {
+              "line": 278,
+              "name": "helper_names",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "validity",
+                  "layer"
+                ],
+                "positional": [],
+                "varargs": null
+              }
+            },
+            {
+              "line": 340,
+              "name": "_verified_domain_authorizer",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "authorizer"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 360,
+              "name": "_domain_spec_for_helper",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "helper"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_core/rules.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 86,
+              "name": "run_core_batch",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "timestamp",
+                  "channels",
+                  "initial_raw",
+                  "previous_timestamp"
+                ],
+                "positional": [
+                  "config",
+                  "program"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 228,
+              "name": "run_core_program",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "initial_raw"
+                ],
+                "positional": [
+                  "config",
+                  "program",
+                  "train"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_core/runtime.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 974,
+              "name": "_normalize_cmp_emit_runs",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "program"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 1525,
+              "name": "canonicalize_core_program_semantic_runtime",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "config"
+                ],
+                "positional": [
+                  "program"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_core/semantic_canonicalize.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 114,
+              "name": "validate_network_events_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "network",
+                  "events"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 138,
+              "name": "batch_network_events_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "network",
+                  "events"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_network/events_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 18,
+              "name": "build_network_v0_manifest",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_network/network_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 88,
+              "name": "run_network_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "max_batches",
+                  "max_events",
+                  "learning_observer"
+                ],
+                "positional": [
+                  "network",
+                  "events"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_network/runtime_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 46,
+              "name": "compile_network_ir_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "network_ir_json",
+                  "initial_events",
+                  "resource_profile",
+                  "architecture",
+                  "placements"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_compiler/compile_pipeline_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 34,
+              "name": "build_network_ir_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "network"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 67,
+              "name": "parse_network_ir_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "data"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 133,
+              "name": "dumps_network_ir_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "network"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 160,
+              "name": "loads_network_ir_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "text"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_compiler/network_ir_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 77,
+              "name": "admit_pe_mapping_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "network",
+                  "architecture",
+                  "placements"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_compiler/pe_admission_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 108,
+              "name": "admit_network_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "network",
+                  "events",
+                  "profile"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_compiler/resource_admission_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 126,
+              "name": "build_access_dependencies_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "network",
+                  "observed",
+                  "placement",
+                  "plan",
+                  "provenance",
+                  "initial_events"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/access_dependencies_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 91,
+              "name": "ApplicationRuntimeHostV0._committed",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "view"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 173,
+              "name": "ApplicationRuntimeHostV0.dispatch",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "self",
+                  "request"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/application_runtime_host_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 44,
+              "name": "commit_atomic_neuronal_output_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "commit_request_id",
+                  "emission_request_id",
+                  "ingress"
+                ],
+                "positional": [
+                  "architecture",
+                  "network",
+                  "manifest",
+                  "admission",
+                  "requests",
+                  "graph",
+                  "state"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/atomic_neuronal_commit_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 38,
+              "name": "AutonomousStorageRunV0.service_ticks",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "self"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 73,
+              "name": "run_autonomous_storage_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "ingress",
+                  "max_service_ticks"
+                ],
+                "positional": [
+                  "architecture",
+                  "manifest",
+                  "admission",
+                  "requests",
+                  "graph",
+                  "initial_state"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/autonomous_storage_run_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 176,
+              "name": "run_bounded_backpressure_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "max_frames"
+                ],
+                "positional": [
+                  "architecture",
+                  "manifest",
+                  "admission",
+                  "state",
+                  "frames"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/bounded_backpressure_driver_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 166,
+              "name": "schedule_causal_services_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "max_service_ticks",
+                  "ingress"
+                ],
+                "positional": [
+                  "architecture",
+                  "requests",
+                  "graph",
+                  "policy"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/causal_scheduler_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 195,
+              "name": "commit_routed_event_slot_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "architecture",
+                  "storage",
+                  "manifest",
+                  "ledger",
+                  "route_id"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/event_reservation_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 82,
+              "name": "run_network_observed_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "max_batches",
+                  "max_events"
+                ],
+                "positional": [
+                  "network",
+                  "events"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/functional_trace_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 111,
+              "name": "audit_committed_internal_history_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "architecture",
+                  "manifest",
+                  "admission"
+                ],
+                "positional": [
+                  "network",
+                  "state",
+                  "requests",
+                  "graph"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/owned_internal_reads_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 29,
+              "name": "commit_owned_internal_state_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "commit_request_id"
+                ],
+                "positional": [
+                  "network",
+                  "manifest",
+                  "requests",
+                  "graph",
+                  "state"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/owned_internal_state_commit_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 63,
+              "name": "CustodyViewV0.next_service_tick",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "self"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 76,
+              "name": "_root_tick",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "root"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 204,
+              "name": "OwnedRootAuthorityRegistryV0.handoff",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "expected_revision"
+                ],
+                "positional": [
+                  "self"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/owned_root_authority_custody_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 94,
+              "name": "advance_owned_root_core_handoff_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "state"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/owned_root_core_handoff_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 138,
+              "name": "OwnedRootCustodyExecutionV0.run",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "expected_revision",
+                  "max_actions"
+                ],
+                "positional": [
+                  "self"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/owned_root_custody_execution_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 127,
+              "name": "OwnedRootExecutionDispatcherV0.dispatch",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "self",
+                  "request"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/owned_root_execution_dispatch_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 36,
+              "name": "_handoff_contract",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "root"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 146,
+              "name": "OwnedRootTerminalCommitStateV0.committed",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "self"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 156,
+              "name": "handoff_owned_root_terminal_commit_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "root"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 169,
+              "name": "advance_owned_root_terminal_commit_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "state"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/owned_root_terminal_commit_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 187,
+              "name": "advance_autoframed_owned_tick_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "ingress",
+                  "allow_owned_internal_awaiting",
+                  "deferred_emission_ids"
+                ],
+                "positional": [
+                  "architecture",
+                  "manifest",
+                  "admission",
+                  "requests",
+                  "graph",
+                  "state"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/owned_service_autoframe_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 50,
+              "name": "advance_owned_service_tick_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "ingress"
+                ],
+                "positional": [
+                  "architecture",
+                  "manifest",
+                  "admission",
+                  "requests",
+                  "graph",
+                  "state",
+                  "frame"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/owned_service_tick_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 81,
+              "name": "bind_network_routes_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "network",
+                  "observed",
+                  "placement",
+                  "plan",
+                  "provenance",
+                  "initial_events",
+                  "architecture"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/routing_binding_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 49,
+              "name": "verify_schedule_boundaries_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "max_boundaries"
+                ],
+                "positional": [
+                  "architecture",
+                  "manifest",
+                  "plan",
+                  "requests",
+                  "schedule",
+                  "ingress"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/schedule_boundary_bridge_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 160,
+              "name": "commit_core_transition_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "network",
+                  "image",
+                  "prepared"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/versioned_core_transition_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 46,
+              "name": "advance_witnessed_core_input_tick_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "ingress",
+                  "allow_owned_internal_awaiting",
+                  "deferred_emission_ids"
+                ],
+                "positional": [
+                  "architecture",
+                  "network",
+                  "manifest",
+                  "admission",
+                  "requests",
+                  "graph",
+                  "state"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 200,
+              "name": "advance_and_stage_witnessed_core_tick_v0",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "ingress"
+                ],
+                "positional": [
+                  "architecture",
+                  "network",
+                  "image",
+                  "manifest",
+                  "admission",
+                  "requests",
+                  "graph",
+                  "state"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_simulator/witnessed_core_input_v0.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 85,
+              "name": "validate_feedback",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "items",
+                  "max_receivers"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 139,
+              "name": "evaluate_credit",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "doc"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_backvalidation_v0/contextual_credit_v0a.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 170,
+              "name": "execute_identified_v0h",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "case",
+                  "fabric",
+                  "tplan",
+                  "pplan",
+                  "mplan",
+                  "lplan",
+                  "bv"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_backvalidation_v0/identified_scheduler_v0h.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 41,
+              "name": "execute_live_v0e",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "case",
+                  "fabric",
+                  "tplan",
+                  "pplan",
+                  "mplan",
+                  "lplan",
+                  "bv"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_backvalidation_v0/live_dual_scheduler_v0e.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 170,
+              "name": "execute_n_v0f",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "case",
+                  "fabric",
+                  "tplan",
+                  "pplan",
+                  "mplan",
+                  "lplan",
+                  "bv"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_backvalidation_v0/n_node_scheduler_v0f.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 73,
+              "name": "_network",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "case"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 106,
+              "name": "_run",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "case"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 131,
+              "name": "_feedback",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "projection"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_backvalidation_v0/simulator_evidence_v0b.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 151,
+              "name": "_experiment",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "crash"
+                ],
+                "positional": [
+                  "tmp",
+                  "root",
+                  "old",
+                  "inputs",
+                  "backend"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_native_learning_v1/causal_replay_shadow_v1x_g.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 62,
+              "name": "run",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "later",
+                  "bv_on",
+                  "learning",
+                  "mode",
+                  "budget",
+                  "drop_forward",
+                  "second_tick"
+                ],
+                "positional": [
+                  "choice",
+                  "goal"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_native_learning_v1/conformance_v1.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 23,
+              "name": "open_db",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "path"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 124,
+              "name": "run_epoch",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "second_tick",
+                  "pause_after",
+                  "root"
+                ],
+                "positional": [
+                  "path",
+                  "epoch",
+                  "context",
+                  "choice",
+                  "goal"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_native_learning_v1/contextual_durable_v1u.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 8,
+              "name": "run_epoch",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "second_tick",
+                  "pause_after",
+                  "root",
+                  "wait_seconds"
+                ],
+                "positional": [
+                  "path",
+                  "epoch",
+                  "context",
+                  "choice",
+                  "goal"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 18,
+              "name": "run_sequence",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "root",
+                  "wait_seconds",
+                  "stop_after"
+                ],
+                "positional": [
+                  "path",
+                  "cases"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_native_learning_v1/contextual_serial_v1u.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 35,
+              "name": "_open",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "path"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 56,
+              "name": "run_epoch",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "second_tick",
+                  "pause_after",
+                  "root"
+                ],
+                "positional": [
+                  "db_path",
+                  "epoch",
+                  "choice",
+                  "goal"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_native_learning_v1/durable_runtime_v1.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 31,
+              "name": "run_case",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "reverse",
+                  "cut"
+                ],
+                "positional": [
+                  "path",
+                  "root",
+                  "p1_seq"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_native_learning_v1/explicit_cohort_conformance_v1x_c.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 121,
+              "name": "expected_native",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "edge_map",
+                  "before",
+                  "probe",
+                  "actual"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 132,
+              "name": "native_experiment",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "root",
+                  "evidence",
+                  "reference",
+                  "two",
+                  "graph",
+                  "ids"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_native_learning_v1/finite_projection_v1x_m.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 147,
+              "name": "native_experiment",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "root",
+                  "evidence",
+                  "h_report",
+                  "rows"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_native_learning_v1/future_suffix_v1x_j.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 35,
+              "name": "_open",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "path"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 56,
+              "name": "run_epoch",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "second_tick",
+                  "pause_after",
+                  "root"
+                ],
+                "positional": [
+                  "db_path",
+                  "epoch",
+                  "choice",
+                  "goal"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_native_learning_v1/generalized_durable_v1t.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 66,
+              "name": "_credit_decision",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "verdict",
+                  "original_version",
+                  "current_version",
+                  "assessment_id",
+                  "consumed",
+                  "learn"
+                ],
+                "positional": [],
+                "varargs": null
+              }
+            },
+            {
+              "line": 82,
+              "name": "execute_resume_learning_v1r",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "case",
+                  "fabric",
+                  "tplan",
+                  "pplan",
+                  "mplan",
+                  "lplan",
+                  "bv",
+                  "learn",
+                  "initial_P",
+                  "tick_sink"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_native_learning_v1/generalized_scheduler_v1t.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 111,
+              "name": "run_epoch",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "second_tick",
+                  "pause_after",
+                  "root",
+                  "wait_seconds"
+                ],
+                "positional": [
+                  "db_path",
+                  "epoch",
+                  "choice",
+                  "goal"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 120,
+              "name": "run_sequence",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "root",
+                  "wait_seconds",
+                  "interrupt_after_epoch"
+                ],
+                "positional": [
+                  "db_path",
+                  "cases"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_native_learning_v1/generalized_serial_v1t.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 118,
+              "name": "_pe_evidence",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "raw"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 275,
+              "name": "run_epoch",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "second_tick",
+                  "pause_after",
+                  "crash_after_stage",
+                  "root",
+                  "wait_seconds"
+                ],
+                "positional": [
+                  "path",
+                  "epoch",
+                  "observations",
+                  "choice",
+                  "goal"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_native_learning_v1/ingress_scheduler_v1w.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 63,
+              "name": "_credit_decision",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "verdict",
+                  "original_version",
+                  "current_version",
+                  "assessment_id",
+                  "consumed",
+                  "learn"
+                ],
+                "positional": [],
+                "varargs": null
+              }
+            },
+            {
+              "line": 79,
+              "name": "execute_native_learning_v1",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "case",
+                  "fabric",
+                  "tplan",
+                  "pplan",
+                  "mplan",
+                  "lplan",
+                  "bv",
+                  "learn"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_native_learning_v1/live_learning_scheduler_v1.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 63,
+              "name": "_credit_decision",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "verdict",
+                  "original_version",
+                  "current_version",
+                  "assessment_id",
+                  "consumed",
+                  "learn"
+                ],
+                "positional": [],
+                "varargs": null
+              }
+            },
+            {
+              "line": 79,
+              "name": "execute_resume_learning_v1r",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "case",
+                  "fabric",
+                  "tplan",
+                  "pplan",
+                  "mplan",
+                  "lplan",
+                  "bv",
+                  "learn",
+                  "initial_P",
+                  "tick_sink"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_native_learning_v1/live_learning_scheduler_v1r.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 163,
+              "name": "_dispatch_lock",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "queue",
+                  "timeout"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_native_learning_v1/multi_ingress_v1x.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 76,
+              "name": "host_intent",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "intent"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_native_learning_v1/native_dual_network_i2a.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 151,
+              "name": "native_runs",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "root",
+                  "evidence",
+                  "reference"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_native_learning_v1/one_step_alphabet_v1x_k.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 89,
+              "name": "bit_schedule",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "seq"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_native_learning_v1/order_equivalence_v1x_i.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 50,
+              "name": "check_s_shape",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "s"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_native_learning_v1/research_host_boundary_i1.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 166,
+              "name": "_pending_selector_check",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "db",
+                  "source_sha"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 173,
+              "name": "run_epoch",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "second_tick",
+                  "pause_after",
+                  "root",
+                  "wait_seconds"
+                ],
+                "positional": [
+                  "path",
+                  "epoch",
+                  "observations",
+                  "choice",
+                  "goal"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 207,
+              "name": "run_sequence",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "root",
+                  "wait_seconds",
+                  "stop_after"
+                ],
+                "positional": [
+                  "path",
+                  "cases"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_native_learning_v1/sensed_context_v1v.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 17,
+              "name": "run",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "root",
+                  "parent_report"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_native_learning_v1/serialized_conformance_v1s.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 111,
+              "name": "run_epoch",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "second_tick",
+                  "pause_after",
+                  "root",
+                  "wait_seconds"
+                ],
+                "positional": [
+                  "db_path",
+                  "epoch",
+                  "choice",
+                  "goal"
+                ],
+                "varargs": null
+              }
+            },
+            {
+              "line": 120,
+              "name": "run_sequence",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "root",
+                  "wait_seconds",
+                  "interrupt_after_epoch"
+                ],
+                "positional": [
+                  "db_path",
+                  "cases"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_native_learning_v1/serialized_runtime_v1s.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 15,
+              "name": "run_case",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "reverse",
+                  "cut"
+                ],
+                "positional": [
+                  "path",
+                  "root",
+                  "policy",
+                  "signature",
+                  "p1_seq"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_native_learning_v1/signed_cohort_conformance_v1x_d.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 18,
+              "name": "run_case",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [
+                  "reverse",
+                  "crash",
+                  "cutover_cut"
+                ],
+                "positional": [
+                  "path",
+                  "root",
+                  "oldpolicy",
+                  "oldsig",
+                  "oldreport",
+                  "newpolicy",
+                  "newsig",
+                  "p1_seq"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_native_learning_v1/signed_epoch_cutover_conformance_v1x_e.py"
+        },
+        {
+          "callables": [
+            {
+              "line": 144,
+              "name": "native_experiment",
+              "signature": {
+                "async": false,
+                "kwargs": null,
+                "kwonly": [],
+                "positional": [
+                  "root",
+                  "evidence",
+                  "reference",
+                  "first_step"
+                ],
+                "varargs": null
+              }
+            }
+          ],
+          "file": "spk_native_learning_v1/two_step_closure_v1x_l.py"
+        }
+      ],
+      "file_digests": [
+        {
+          "bytes": 363,
+          "file": "spk_core/__init__.py",
+          "sha256": "6031ea840ed7e436c86be280652c57b28bb7ae056e7f61a83d9148bb4472f860"
+        },
+        {
+          "bytes": 13465,
+          "file": "spk_core/abstract.py",
+          "sha256": "90607946bd32d4b56d5409d3ab3905c1ff34d78ccb164192877381810e3d3f37"
+        },
+        {
+          "bytes": 36042,
+          "file": "spk_core/canonicalize.py",
+          "sha256": "d98017a668bb56ae719fd37b33622dcfe483fa16530d8d377ca780753a7ead66"
+        },
+        {
+          "bytes": 6834,
+          "file": "spk_core/compiler.py",
+          "sha256": "66f92545b5f55fd6570d67ca3054cf7a3fd2bd4e13cb41ad3b413bc9a2df608f"
+        },
+        {
+          "bytes": 4753,
+          "file": "spk_core/core_v0.py",
+          "sha256": "75fad3aac0b5ec0b22bfde2eee27f7782d70eb399a725721660b24067b1636b4"
+        },
+        {
+          "bytes": 9564,
+          "file": "spk_core/domain.py",
+          "sha256": "9d782352c553297ac2a1053019a4ac1511dbe4685d6bf34a0832d8bebb4c3e79"
+        },
+        {
+          "bytes": 5999,
+          "file": "spk_core/ir_v0.py",
+          "sha256": "ca6b601e9d38d738edac29323b537fabc246ed800ec06da0e3d8dff39ad1d8e9"
+        },
+        {
+          "bytes": 1999,
+          "file": "spk_core/isa.py",
+          "sha256": "7c64e0eb8f98080d97bfa3f0de1d2c5ea044c04dcfcfedc1c0f6491891ce9cb6"
+        },
+        {
+          "bytes": 10769,
+          "file": "spk_core/network.py",
+          "sha256": "e6cea43b0142e98cb68bb5498e40c7ff2c0683d1a66de44441f35d1cc562f1b3"
+        },
+        {
+          "bytes": 1069,
+          "file": "spk_core/packed.py",
+          "sha256": "eb18a036cfd375f6f113cd229574dc7e26d32c29d04151884dc494d72d1e9d54"
+        },
+        {
+          "bytes": 13567,
+          "file": "spk_core/rules.py",
+          "sha256": "ab76081ff6277d272c46a83b3e2d6a1db7a36da101385b07bd1c924c55261c05"
+        },
+        {
+          "bytes": 5349,
+          "file": "spk_core/runtime.py",
+          "sha256": "25b78b476c052c73b9e67687d8b9da24e043613bd8c732520a1a338799f403c8"
+        },
+        {
+          "bytes": 32738,
+          "file": "spk_core/semantic_canonicalize.py",
+          "sha256": "11973ebd7fd2c27212aa5d8db1b317a8a7c1e39228c586b2fb8232daef006414"
+        },
+        {
+          "bytes": 141,
+          "file": "spk_network/__init__.py",
+          "sha256": "81abe6e46848ed0ef0dfc3403ca75f38622d334f2610dbc7ba781944e1b600f5"
+        },
+        {
+          "bytes": 3909,
+          "file": "spk_network/events_v0.py",
+          "sha256": "f632ad1f49e8c88a11aa42537f9085dc12232751395ca79586992b4c2cd71eee"
+        },
+        {
+          "bytes": 4523,
+          "file": "spk_network/learning_v0.py",
+          "sha256": "0bca9125630b77b0bdf9c57c363f22fed93b23f817562eb9d191e0c2aede33e4"
+        },
+        {
+          "bytes": 4048,
+          "file": "spk_network/model_v0.py",
+          "sha256": "44462bddf14ac2c9d3e483474b25842abfa875f55c235610e91b15529db40615"
+        },
+        {
+          "bytes": 2797,
+          "file": "spk_network/network_v0.py",
+          "sha256": "aeacc50807066cec45da947d53f8b3e420e38c73b25d1e8345f2a44d49a524ea"
+        },
+        {
+          "bytes": 9072,
+          "file": "spk_network/runtime_v0.py",
+          "sha256": "4e393a2fdb17e833f3b424f6a5938946d8f6f83ff1cf1ad0da61b3520bb820ce"
+        },
+        {
+          "bytes": 0,
+          "file": "spk_compiler/__init__.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 6173,
+          "file": "spk_compiler/compilation_manifest_v0.py",
+          "sha256": "921d321d243dea8802001d52198fd234113d49a1f2ebac759c65abed1b62f88a"
+        },
+        {
+          "bytes": 3787,
+          "file": "spk_compiler/compile_pipeline_v0.py",
+          "sha256": "81aebc3b08776b7a5e4d1cd42257298048533d08eaf898cc436c9dc974479366"
+        },
+        {
+          "bytes": 4187,
+          "file": "spk_compiler/network_ir_v0.py",
+          "sha256": "0425a191cc3ecc3df76fe13dac99009cdceccdbc389789bf1967f567b5309460"
+        },
+        {
+          "bytes": 5107,
+          "file": "spk_compiler/pe_admission_v0.py",
+          "sha256": "ccc76a35f908bd9fbdc8d3dfc23966b4e4109db838e05143b4383a23e437933c"
+        },
+        {
+          "bytes": 5670,
+          "file": "spk_compiler/resource_admission_v0.py",
+          "sha256": "864673d321b3da0b36d49cb669322808e617fb85657034b5df544aad48281420"
+        },
+        {
+          "bytes": 0,
+          "file": "spk_simulator/__init__.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 7475,
+          "file": "spk_simulator/access_dependencies_v0.py",
+          "sha256": "d8e55e6630fc7c861a95497cab19c053b8ca69d1ef65fee6dd6bdea440ea37d8"
+        },
+        {
+          "bytes": 1875,
+          "file": "spk_simulator/application_epoch_provider_v0.py",
+          "sha256": "7551292587859a011d8c059994e3cbc54c19d57cd6d6caa20c924fb12c598bc1"
+        },
+        {
+          "bytes": 10482,
+          "file": "spk_simulator/application_runtime_host_v0.py",
+          "sha256": "9499365c4d1314f58509c790bae9cc507598906751060c929881409bd0416e98"
+        },
+        {
+          "bytes": 7226,
+          "file": "spk_simulator/application_trust_boundary_v0.py",
+          "sha256": "bccb2f01b748316d46c41a92ee130b3da742bab818ae62cb0a00972e236260a9"
+        },
+        {
+          "bytes": 6620,
+          "file": "spk_simulator/atomic_emission_admission_v0.py",
+          "sha256": "1fb9611e6d40d16f9e9ec91b83d177c4d825d3d1402c329123b72fbbe1e2439e"
+        },
+        {
+          "bytes": 6851,
+          "file": "spk_simulator/atomic_emission_offer_plan_v0.py",
+          "sha256": "4183c85006640049a7bd07396ae2c50fa4a331254af263109e641e6edcb749a3"
+        },
+        {
+          "bytes": 13608,
+          "file": "spk_simulator/atomic_neuronal_commit_v0.py",
+          "sha256": "929e9527e1f780bf429881ca15e22412ddc9517afbc6e243f9ff542214f2bdcc"
+        },
+        {
+          "bytes": 5144,
+          "file": "spk_simulator/atomic_offer_boundary_v0.py",
+          "sha256": "c75a61f72305825213a0d981582131ea6c4cb8b696d292ddeaab76d7093edc9d"
+        },
+        {
+          "bytes": 5491,
+          "file": "spk_simulator/authenticated_service_bridge_v0.py",
+          "sha256": "98c2b0e24d370b3268fb622462c07917fea6803d35071faad79f8cb6e89a766b"
+        },
+        {
+          "bytes": 7211,
+          "file": "spk_simulator/autonomous_storage_run_v0.py",
+          "sha256": "30a8685b96772659594d27b415a1495a31e84bedcf36a5f52510d90e4b84d1c1"
+        },
+        {
+          "bytes": 6172,
+          "file": "spk_simulator/backpressure_arbiter_v0.py",
+          "sha256": "d2cb0f6421424b56d902dfb0baa7296268005a68503ba9a109047fa240b5e48b"
+        },
+        {
+          "bytes": 11234,
+          "file": "spk_simulator/backpressure_boundary_v0.py",
+          "sha256": "6dbfe889c4c171d8b6cd81307231c5d02cb62288a09e03e7b83cbd2af9772ec9"
+        },
+        {
+          "bytes": 9169,
+          "file": "spk_simulator/bounded_backpressure_driver_v0.py",
+          "sha256": "81179b353931ac606f7350bf7419ecb9122a53bcd307ebeb012e49ff96040102"
+        },
+        {
+          "bytes": 13790,
+          "file": "spk_simulator/causal_scheduler_v0.py",
+          "sha256": "e7919d01bfc0e3d085207320e9bb945c5363cbb7d8e76a81d5b5f08557cd60cd"
+        },
+        {
+          "bytes": 8296,
+          "file": "spk_simulator/causal_service_frontier_v0.py",
+          "sha256": "752ae3f487e54bddbf360aad7bab5a332a357a863bd06b17cb4abe57e40b90ec"
+        },
+        {
+          "bytes": 11137,
+          "file": "spk_simulator/causal_service_quantum_v0.py",
+          "sha256": "6391b9532a04ba8d9d9cb8bea48f7a05a7034ace17ceae37cd9a2cfd075b7bbb"
+        },
+        {
+          "bytes": 7302,
+          "file": "spk_simulator/computed_emission_binding_v0.py",
+          "sha256": "254cd24c6a17cba7ec22d4ba0657030c72b3cdb693f8e8c00bfd09bb162b7a5a"
+        },
+        {
+          "bytes": 6668,
+          "file": "spk_simulator/computed_topology_routing_v0.py",
+          "sha256": "530b4058d3a662629ca65ee74453d8bc2ab9bf2db3cdbf16745087389f8db786"
+        },
+        {
+          "bytes": 7663,
+          "file": "spk_simulator/dynamic_batch_closure_obligations_v0.py",
+          "sha256": "17de2e3494e670c8e590ad075a16ef768a054513e3a1f80818db2f852720eb41"
+        },
+        {
+          "bytes": 5783,
+          "file": "spk_simulator/dynamic_destination_inventory_v0.py",
+          "sha256": "cd4eb5e070a055bc30fd3afce985bd86d155c5c25099840f614bbe76055186f8"
+        },
+        {
+          "bytes": 12148,
+          "file": "spk_simulator/event_buffer_audit_v0.py",
+          "sha256": "0b5683d506bcf9170496a17068a4fbf24a0021d5658c48e33419cb536d57de5d"
+        },
+        {
+          "bytes": 6501,
+          "file": "spk_simulator/event_provenance_v0.py",
+          "sha256": "e37d56963658a1afcfe4576031dc54c5d5225c17c844b83fe33c966b2897d554"
+        },
+        {
+          "bytes": 10941,
+          "file": "spk_simulator/event_reservation_v0.py",
+          "sha256": "2e455b8faa9ad8ba3cc34b64e00804577373a7b394af9ba01bc18391f5a2104e"
+        },
+        {
+          "bytes": 8375,
+          "file": "spk_simulator/event_storage_v0.py",
+          "sha256": "183468b3765502ad098c2cb05a0e170bd472b81345a9faac27cc4619135270b4"
+        },
+        {
+          "bytes": 6469,
+          "file": "spk_simulator/external_ingress_v0.py",
+          "sha256": "f25aeecbf91889c7c5b1ab25f424194b8e9e7bd1bd395ed7a1361cac78a72cf6"
+        },
+        {
+          "bytes": 2728,
+          "file": "spk_simulator/functional_trace_v0.py",
+          "sha256": "6e934af2e634bc8605416b70b46fd41cec97d352c21dfe8309c41fb16c022140"
+        },
+        {
+          "bytes": 6969,
+          "file": "spk_simulator/internal_effect_obligations_v0.py",
+          "sha256": "4da9ea563bf1a615c0f3d0a327da0f327c5388266b87a1d81e7b7c9af0a1fa6c"
+        },
+        {
+          "bytes": 6454,
+          "file": "spk_simulator/logical_access_v0.py",
+          "sha256": "0ab31bd4ba0d653fa0766ff740db1ed1987851d9e6cffdcd091824f73db9daa2"
+        },
+        {
+          "bytes": 10676,
+          "file": "spk_simulator/one_hop_root_frontier_v0.py",
+          "sha256": "60f14099a89cd7c60c56473642778a08eafde8c3e89719e6ef1f2996ea112fd0"
+        },
+        {
+          "bytes": 12247,
+          "file": "spk_simulator/output_start_reservation_v0.py",
+          "sha256": "1c74704196ae516e3da0b8c209697b1589dc9c57161a29687e617fe1dafa65f5"
+        },
+        {
+          "bytes": 9803,
+          "file": "spk_simulator/owned_computed_emission_allocation_v0.py",
+          "sha256": "2394bc4719d550755c18c281fe8d1b257472ce9cb2a59943243a465c0315ab88"
+        },
+        {
+          "bytes": 7447,
+          "file": "spk_simulator/owned_dynamic_route_service_cycle_v0.py",
+          "sha256": "403017259a61ea31d58332372625869c710d159956bf6bdd9e9f3dd576a65ec5"
+        },
+        {
+          "bytes": 8550,
+          "file": "spk_simulator/owned_dynamic_route_transit_v0.py",
+          "sha256": "fbeface9fb0936ab5b909444e970f22cea10bfc37269f67b2546449f05e83ae9"
+        },
+        {
+          "bytes": 14514,
+          "file": "spk_simulator/owned_dynamic_service_registration_v0.py",
+          "sha256": "c502a40dd0dd00c378cc31bc814d202f76ef1c92d318bb25d5fb675547eeb3f2"
+        },
+        {
+          "bytes": 9554,
+          "file": "spk_simulator/owned_external_ingress_prefix_v0.py",
+          "sha256": "cbb8720634905ef4bad5bd4215bfe5b23e385f1d590621bec4ddcf89cb217307"
+        },
+        {
+          "bytes": 26288,
+          "file": "spk_simulator/owned_internal_reads_v0.py",
+          "sha256": "0aeda5c5a0b139bc169e3bf4d89995a2b38df446ffa24a393ac8079988558cfb"
+        },
+        {
+          "bytes": 9208,
+          "file": "spk_simulator/owned_internal_state_commit_v0.py",
+          "sha256": "6c1a7d546b59641345c4c0e1a1648ff5c0021bf33179f9beab80aefc26191a16"
+        },
+        {
+          "bytes": 10115,
+          "file": "spk_simulator/owned_root_authority_custody_v0.py",
+          "sha256": "0a661a9590d9ecc80c57c6f483a39dc833ff4db057be1cd8dac3061188dd1ec0"
+        },
+        {
+          "bytes": 7841,
+          "file": "spk_simulator/owned_root_batch_consumption_v0.py",
+          "sha256": "59297d3c609c9f1db7f9ea0613eaf70486eee1e632a0bdd09b7b8e0514722cf7"
+        },
+        {
+          "bytes": 7136,
+          "file": "spk_simulator/owned_root_core_handoff_v0.py",
+          "sha256": "ac144251b0c4c7c7a35de8b9f7634f21ac05811303ef4bf120cf40fb2f69862a"
+        },
+        {
+          "bytes": 7111,
+          "file": "spk_simulator/owned_root_custody_execution_v0.py",
+          "sha256": "6c0d86eb1211bc944881645c6ea0fcf3ed6cff32d0317116ebc0618cfcdf59f2"
+        },
+        {
+          "bytes": 10044,
+          "file": "spk_simulator/owned_root_emission_frontier_v0.py",
+          "sha256": "0bfa418d43ab7fa0e6bb5027f80a370371a58f4a3d08c1e8a2bbef7e4454f6a7"
+        },
+        {
+          "bytes": 7107,
+          "file": "spk_simulator/owned_root_execution_dispatch_v0.py",
+          "sha256": "6d7f2a767c6c00ce5d7fe56afff00d13e521a0be576fcd154978f14a57f30ebd"
+        },
+        {
+          "bytes": 17465,
+          "file": "spk_simulator/owned_root_single_clock_v0.py",
+          "sha256": "262f0b162160af1f2bcb2670a479daa82b5d13ea9e16a8acea538f9e129397dd"
+        },
+        {
+          "bytes": 8696,
+          "file": "spk_simulator/owned_root_terminal_commit_v0.py",
+          "sha256": "8d006c4a2d7aa1cde5bd051aa5cc2bff9d3312e168449aba9eb9dc153ca7f80a"
+        },
+        {
+          "bytes": 5288,
+          "file": "spk_simulator/owned_sealed_root_batch_v0.py",
+          "sha256": "c24c22f5249d8bdebf0d7e6e608a6f64a679b7758eee4d3d57feda01ab8bdaf3"
+        },
+        {
+          "bytes": 11081,
+          "file": "spk_simulator/owned_service_autoframe_v0.py",
+          "sha256": "77d47397586fbf4c0591a9ac166ad6302441e2815c90bd0b003d28c039d8d3c9"
+        },
+        {
+          "bytes": 9209,
+          "file": "spk_simulator/owned_service_tick_v0.py",
+          "sha256": "fd3dc015d0adf1d234bdd6f236ef5add493abc157ac1940e93d432a331b29222"
+        },
+        {
+          "bytes": 12527,
+          "file": "spk_simulator/owned_shared_event_cycle_v0.py",
+          "sha256": "d293dbe8a2b6528f64a5ef02324763bc0b2558e387c262ebd738ec2036c38a30"
+        },
+        {
+          "bytes": 8642,
+          "file": "spk_simulator/ownership_consistency_v0.py",
+          "sha256": "456baa21b7044fa13bc9937b39080c7c33a3540968468c69014c71cacbbfd645"
+        },
+        {
+          "bytes": 9392,
+          "file": "spk_simulator/routed_service_replay_v0.py",
+          "sha256": "c446e9370bc3158623b069c320a4d6b09a577b15f0b26a37c0f8093dcbd9e847"
+        },
+        {
+          "bytes": 12387,
+          "file": "spk_simulator/routing_binding_v0.py",
+          "sha256": "a809d785fc8ea4ae5d0d2f562ee377e944be17e35f6817f719c2da7723ad3a13"
+        },
+        {
+          "bytes": 6900,
+          "file": "spk_simulator/schedule_boundary_bridge_v0.py",
+          "sha256": "ebb7a1132094cee2afae1ae3547676b88d6db18b591524cd4bdafd2e6d031422"
+        },
+        {
+          "bytes": 7746,
+          "file": "spk_simulator/serialized_internal_graph_v0.py",
+          "sha256": "b3eaa8359e7703a9a44a3ccc108b1ebbfaa49d105eeeb7ec9790d124978233b0"
+        },
+        {
+          "bytes": 9983,
+          "file": "spk_simulator/service_effect_authority_v0.py",
+          "sha256": "fe71a1cff685ca3c1916a62f27676856c29742741e1dd46c9b19ecf96e7dd39f"
+        },
+        {
+          "bytes": 10935,
+          "file": "spk_simulator/service_reservation_gate_v0.py",
+          "sha256": "733bcef0efce1953abe2bc5e816e284c8931ecf4ad877fefc37261b0a31c5a61"
+        },
+        {
+          "bytes": 8276,
+          "file": "spk_simulator/versioned_core_transition_v0.py",
+          "sha256": "1e3140631d4cbc7a42b397aeeb9050f3effa866c265cc3f35446782bf6b5f84a"
+        },
+        {
+          "bytes": 12389,
+          "file": "spk_simulator/witnessed_core_input_v0.py",
+          "sha256": "3650d74588d92bd6a90f41520b4db6cb23e384ed82068987bf847fe79035e0cd"
+        },
+        {
+          "bytes": 73,
+          "file": "spk_backvalidation_v0/__init__.py",
+          "sha256": "4dec4ca70773a82bf08636c0397c8c515e4d3d0f6848c31b9b1ea0b6aca23fcb"
+        },
+        {
+          "bytes": 18536,
+          "file": "spk_backvalidation_v0/a3d_shared_grants_v0d.py",
+          "sha256": "8ff31e82dbc865f1fe7c1b4b751abaf2132b513cd193fb2b942a4a823449d792"
+        },
+        {
+          "bytes": 6300,
+          "file": "spk_backvalidation_v0/budgeted_feedback_v0c.py",
+          "sha256": "a4ba13095c0a1e94625b044351e294dbb3ffc7c98f0e405e8b9dc60ccc60126e"
+        },
+        {
+          "bytes": 14173,
+          "file": "spk_backvalidation_v0/causal_audit_v0g.py",
+          "sha256": "864e4bbc8fdfbd73f9ea17e346eb48c2eb09c1d05cf2494feaa9c70883d5b4f5"
+        },
+        {
+          "bytes": 2193,
+          "file": "spk_backvalidation_v0/context_aggregation_v0h.py",
+          "sha256": "de7976275ceb054f1ee9e58e27fbe6ae5d4fd70721fb3f221122f0d8cf5ee905"
+        },
+        {
+          "bytes": 11933,
+          "file": "spk_backvalidation_v0/contextual_credit_v0a.py",
+          "sha256": "34f3c52d5e36109e0fec8705e4c0c93780a24056df6cfdde789706cafe676f80"
+        },
+        {
+          "bytes": 14623,
+          "file": "spk_backvalidation_v0/contract_v0.py",
+          "sha256": "39b859b3ac072ee189bcce5707cccac8030eb51e6ce3a9071082759f741a8e5a"
+        },
+        {
+          "bytes": 15412,
+          "file": "spk_backvalidation_v0/identified_audit_v0h.py",
+          "sha256": "5e0e2711f312ce1f6061277e21266dc9c5255ae9c92ebe70aacaffa64b066eab"
+        },
+        {
+          "bytes": 25311,
+          "file": "spk_backvalidation_v0/identified_scheduler_v0h.py",
+          "sha256": "d4510c92ed7b1b705f378f66da1e227a0612913d01b62b517ef8652abaa037a9"
+        },
+        {
+          "bytes": 17330,
+          "file": "spk_backvalidation_v0/live_dual_scheduler_v0e.py",
+          "sha256": "2fc273f16f685d85ec0492637728fc835884a11741615912d2a7ea4d8c0c7ee9"
+        },
+        {
+          "bytes": 24929,
+          "file": "spk_backvalidation_v0/n_node_scheduler_v0f.py",
+          "sha256": "dd850199d3077e59b189cd04adaeda6f3dd42c8bc90e9c6b34f666ae54f8cf03"
+        },
+        {
+          "bytes": 11024,
+          "file": "spk_backvalidation_v0/simulator_evidence_v0b.py",
+          "sha256": "e69859fb89ec00c51f6eb6f51cdde9628d2e5c05c4c4d73bf0bf389270890453"
+        },
+        {
+          "bytes": 9194,
+          "file": "spk_backvalidation_v0/simulator_feedback_v0c.py",
+          "sha256": "89bf5eb571ae464c97eabc15c952f612ddf2cd1a9e6fecd96a668de46bb3e452"
+        },
+        {
+          "bytes": 70,
+          "file": "spk_native_learning_v1/__init__.py",
+          "sha256": "d8b13286cb6d7af52c4ff743488af521c0e7447a0690482776239b9c8f3c887e"
+        },
+        {
+          "bytes": 3058,
+          "file": "spk_native_learning_v1/active_state_fingerprint_source_guard_v1x_p.py",
+          "sha256": "f77f2c2c28c188566eed8885522fce857a06c891fba56eb65f5b210ecd07925e"
+        },
+        {
+          "bytes": 13809,
+          "file": "spk_native_learning_v1/active_state_fingerprint_v1x_p.py",
+          "sha256": "cc856ab355167ff0b53f389aa249b981e66d9a029181a65e12239dc19668900c"
+        },
+        {
+          "bytes": 1272,
+          "file": "spk_native_learning_v1/causal_replay_conformance_v1x_g.py",
+          "sha256": "fe656a1c815413801d37858432a5161f58ff4631e96b6486fa985dbb466cc2f3"
+        },
+        {
+          "bytes": 12154,
+          "file": "spk_native_learning_v1/causal_replay_shadow_v1x_g.py",
+          "sha256": "568d6776fc4694f4ba550a38d3834bfa03ea541949ddf2316ae72640f0cf9f5e"
+        },
+        {
+          "bytes": 3157,
+          "file": "spk_native_learning_v1/closure_qrs_source_guard_v1.py",
+          "sha256": "3c8ae73400ea81816d5cf388dda7dc2a470497aac464128cc1a11ec0ba102260"
+        },
+        {
+          "bytes": 28297,
+          "file": "spk_native_learning_v1/closure_qrs_v1.py",
+          "sha256": "243e7d09301cbcd62d7133d82c1ed811cd1fdb9ce94bac7a56458d34a0922c8b"
+        },
+        {
+          "bytes": 11248,
+          "file": "spk_native_learning_v1/conformance_v1.py",
+          "sha256": "045f40f839e2625dea23f15cd7fb4a38c3c77e464d8467dc6532ca799d10f2d3"
+        },
+        {
+          "bytes": 5187,
+          "file": "spk_native_learning_v1/contextual_conformance_v1u.py",
+          "sha256": "c3f350da9e3304f69f37f94937da8385c66eb90f86ff6a2ee6b7e751259cfb98"
+        },
+        {
+          "bytes": 9026,
+          "file": "spk_native_learning_v1/contextual_durable_v1u.py",
+          "sha256": "d7590c2208faf4eb78835c56eaf823c5df9e83d9abfbaa264b16982bff3b3452"
+        },
+        {
+          "bytes": 1999,
+          "file": "spk_native_learning_v1/contextual_serial_v1u.py",
+          "sha256": "72636e6d3538977eee4fe8c513124e3dcc3328b83730e6d1a1b07c92ecf67157"
+        },
+        {
+          "bytes": 5586,
+          "file": "spk_native_learning_v1/durable_conformance_v1.py",
+          "sha256": "fc72447aca0eee0e282b8ba0858e371e505ce437de9b31f0866c19c8b64dce8b"
+        },
+        {
+          "bytes": 10002,
+          "file": "spk_native_learning_v1/durable_runtime_v1.py",
+          "sha256": "70c64ce29530f77d631952b9117288f8879df64618c28e0e3678555838e59e70"
+        },
+        {
+          "bytes": 6071,
+          "file": "spk_native_learning_v1/explicit_cohort_conformance_v1x_c.py",
+          "sha256": "7b3546bd4d1a74ead611575c10812b69e7d9a9ec5645aaf00ba9396f71d8a60a"
+        },
+        {
+          "bytes": 14374,
+          "file": "spk_native_learning_v1/explicit_cohort_v1x_c.py",
+          "sha256": "6335c3d885a8f2d47c6b62cc4a088ebad5efaabe3f279bb6063a4460e52eea18"
+        },
+        {
+          "bytes": 2849,
+          "file": "spk_native_learning_v1/finite_projection_source_guard_v1x_m.py",
+          "sha256": "d377c35f38bb3ebfa32b5968a18c28f5b7574ceb23f48ee653300e24df6a61db"
+        },
+        {
+          "bytes": 15574,
+          "file": "spk_native_learning_v1/finite_projection_v1x_m.py",
+          "sha256": "b410466871f0726f350cf7ca6883450097e06d7d593c0fa5e4227f3ef75ee94f"
+        },
+        {
+          "bytes": 2340,
+          "file": "spk_native_learning_v1/future_suffix_source_guard_v1x_j.py",
+          "sha256": "6d08520991af08c7f8993edd3a6e2acea28f96c8d393cd8cc8f63bb4409e20ba"
+        },
+        {
+          "bytes": 12895,
+          "file": "spk_native_learning_v1/future_suffix_v1x_j.py",
+          "sha256": "88c3c4c185af5e5740413ea95149a1d1bbe7cb35279bc9a8769b8a6a2a048ea6"
+        },
+        {
+          "bytes": 3567,
+          "file": "spk_native_learning_v1/generalized_case_v1t.py",
+          "sha256": "b3c6af38013f60b4d958793d44ffdbe7274845631a3627f0ceee88566fd95cd6"
+        },
+        {
+          "bytes": 8653,
+          "file": "spk_native_learning_v1/generalized_conformance_v1t.py",
+          "sha256": "ddb24bba6463361f4c9684f22952beb5995f2a5069d05d13a7eae7199aaf1c45"
+        },
+        {
+          "bytes": 10017,
+          "file": "spk_native_learning_v1/generalized_durable_v1t.py",
+          "sha256": "9fdb335437d9d266baf178af69dae0d7b689f563990a278adb019e5a8ddda827"
+        },
+        {
+          "bytes": 27753,
+          "file": "spk_native_learning_v1/generalized_scheduler_v1t.py",
+          "sha256": "2cfe10403d8058f6c2b8f71cb34ef2c87195ab89d31edbd4547062aa46b4bbab"
+        },
+        {
+          "bytes": 7340,
+          "file": "spk_native_learning_v1/generalized_serial_v1t.py",
+          "sha256": "c27d3cd7d8743450037aaffecca1dc2507fcc06f29a52954af0e89cfb1ddea1c"
+        },
+        {
+          "bytes": 8579,
+          "file": "spk_native_learning_v1/ingress_conformance_v1w.py",
+          "sha256": "d81de5ecc5831828a2a36dddf37ee9205929feee41c5922f963919dd001f5558"
+        },
+        {
+          "bytes": 17695,
+          "file": "spk_native_learning_v1/ingress_scheduler_v1w.py",
+          "sha256": "e66a5039435bffb9d285358c741c1ee3328c859ad6241d180f9e96c07308ec41"
+        },
+        {
+          "bytes": 25720,
+          "file": "spk_native_learning_v1/live_learning_scheduler_v1.py",
+          "sha256": "ed105a8c70922df9409543d2cb4b349dded9ca72040099756634572a7018b012"
+        },
+        {
+          "bytes": 27626,
+          "file": "spk_native_learning_v1/live_learning_scheduler_v1r.py",
+          "sha256": "54864f8e95d9ad1b57f022e8cc0e24509f7066af0f11bdb4453a8f544a49feb2"
+        },
+        {
+          "bytes": 5883,
+          "file": "spk_native_learning_v1/multi_ingress_conformance_v1x.py",
+          "sha256": "32d009426bf4832b43f9e03090594f55a7a7b42c4d6e83302064e684fd49e8cf"
+        },
+        {
+          "bytes": 17903,
+          "file": "spk_native_learning_v1/multi_ingress_v1x.py",
+          "sha256": "3a28b64c5dbe3c223d3fb0a4a0dc3b269d9f9cd87695dd191ba23af394e001bf"
+        },
+        {
+          "bytes": 13566,
+          "file": "spk_native_learning_v1/native_dual_network_i2a.py",
+          "sha256": "4311b0f153b39ffe0652b26fe6ca68f749651dec3ecdd498dc4ac9568ea5c94f"
+        },
+        {
+          "bytes": 2727,
+          "file": "spk_native_learning_v1/native_dual_network_source_guard_i2a.py",
+          "sha256": "4df11fe42da71540e60b945c7a8fc2b9c0433889028092b5bb78f8911d206a31"
+        },
+        {
+          "bytes": 2777,
+          "file": "spk_native_learning_v1/nonabsorbing_frontier_source_guard_v1x_n.py",
+          "sha256": "499591dd5522a856de2d20d0d28612163abda90ca2219bbbc1c37b467b654db3"
+        },
+        {
+          "bytes": 13852,
+          "file": "spk_native_learning_v1/nonabsorbing_frontier_v1x_n.py",
+          "sha256": "b87e4d9a9587938f3bdcc45fe348562987d287456b439b57ed339f4245147772"
+        },
+        {
+          "bytes": 2816,
+          "file": "spk_native_learning_v1/observational_minimization_source_guard_v1x_o.py",
+          "sha256": "39c31037fab237a3a27e2a516464a54c9f1ccf96a6a3f5978b2c9b0617563c1a"
+        },
+        {
+          "bytes": 13079,
+          "file": "spk_native_learning_v1/observational_minimization_v1x_o.py",
+          "sha256": "0a847c01db509eb52625379188b3366cb171fc6f6aad0d6a0ece0679486791a8"
+        },
+        {
+          "bytes": 12836,
+          "file": "spk_native_learning_v1/one_step_alphabet_v1x_k.py",
+          "sha256": "4240de804195272c4b5ef646c576974ae25a2ed8aa48c5ea01781ec5cbc52d88"
+        },
+        {
+          "bytes": 2474,
+          "file": "spk_native_learning_v1/one_step_source_guard_v1x_k.py",
+          "sha256": "610dfd9fc27f36db9fb6b21b531fb89e90d9838720849fe73bdc649a20052950"
+        },
+        {
+          "bytes": 2307,
+          "file": "spk_native_learning_v1/order_equivalence_source_guard_v1x_i.py",
+          "sha256": "2771abb0e6aa9f92bde375e4f139e8497d4694c8142a084b295a3c688bc24aff"
+        },
+        {
+          "bytes": 13144,
+          "file": "spk_native_learning_v1/order_equivalence_v1x_i.py",
+          "sha256": "efc36716738e8b904a920d1fcdb44d346d09be167f7c2dad34d2bb3d1f99f298"
+        },
+        {
+          "bytes": 1182,
+          "file": "spk_native_learning_v1/order_intervention_conformance_v1x_h.py",
+          "sha256": "f42f8f2563ab25d464d57488474cf5cec3fe9be50b064bfee325aeb58b9ae56d"
+        },
+        {
+          "bytes": 5780,
+          "file": "spk_native_learning_v1/order_intervention_source_guard_v1x_h.py",
+          "sha256": "a30f32b92f4473fc3d4d8e1709ec08ba175a0841d1eaf43b2b20d74641039484"
+        },
+        {
+          "bytes": 10084,
+          "file": "spk_native_learning_v1/order_intervention_v1x_h.py",
+          "sha256": "58e276e5f3276248d9c48720d65e26a6e3fc145efb11d780f0359f239efd490b"
+        },
+        {
+          "bytes": 7278,
+          "file": "spk_native_learning_v1/research_host_boundary_i1.py",
+          "sha256": "a40e9b1b12c2bc33822eab2e4355de08300fabd57898c51cc3a315a842bb4a44"
+        },
+        {
+          "bytes": 2499,
+          "file": "spk_native_learning_v1/research_host_boundary_source_guard_i1.py",
+          "sha256": "9c1dd1140776d6114fa9493eb7dc36590984212ce5267d5a5836845a6c32b603"
+        },
+        {
+          "bytes": 6691,
+          "file": "spk_native_learning_v1/sensed_context_conformance_v1v.py",
+          "sha256": "976d854a16a3090ffbbd89fc5ca8a7ef315cb65819367212cbb315fe57bbe457"
+        },
+        {
+          "bytes": 12090,
+          "file": "spk_native_learning_v1/sensed_context_v1v.py",
+          "sha256": "0c57ea48429b1449b0ca5257c99979cef51397f2e6f82bbb70362e19a976ac9a"
+        },
+        {
+          "bytes": 5084,
+          "file": "spk_native_learning_v1/serialized_conformance_v1s.py",
+          "sha256": "3314353a8e93794952117d7c4d561228b5c98dadda145d17a95e8053237c675a"
+        },
+        {
+          "bytes": 7335,
+          "file": "spk_native_learning_v1/serialized_runtime_v1s.py",
+          "sha256": "ffe142c444715e3d70d8498fc44a6f1499983f3befb569d071639dca0091ff84"
+        },
+        {
+          "bytes": 5270,
+          "file": "spk_native_learning_v1/signed_cohort_conformance_v1x_d.py",
+          "sha256": "e9f22142e055cbed747528085c23f13a268edcddc4427a76aa703b2ebd4beec9"
+        },
+        {
+          "bytes": 6900,
+          "file": "spk_native_learning_v1/signed_cohort_v1x_d.py",
+          "sha256": "eb8762137a469cc278a1b2f347794ec171b16c528398c99444f228a4adae3063"
+        },
+        {
+          "bytes": 7153,
+          "file": "spk_native_learning_v1/signed_epoch_cutover_conformance_v1x_e.py",
+          "sha256": "f5b462f4fc9c4ad5a11c51293df589e8a877b9c83bbbbdc7142fb527dc1a06c6"
+        },
+        {
+          "bytes": 11916,
+          "file": "spk_native_learning_v1/signed_epoch_cutover_v1x_e.py",
+          "sha256": "b3eff885a25078a7b52433ed38421fdad4685c602fd3beedafce56ee9a3aa97a"
+        },
+        {
+          "bytes": 5801,
+          "file": "spk_native_learning_v1/source_partition_conformance_v1x_b.py",
+          "sha256": "5864c57f76e17f8947381dc41135e556566970daeeb3551d41515edf6d334867"
+        },
+        {
+          "bytes": 6744,
+          "file": "spk_native_learning_v1/source_partition_conformance_v1x_b_r1.py",
+          "sha256": "fc03ceef49f0f49a1758ae3d4ab6704ced72a26b401b28c814beeee75a1e3d46"
+        },
+        {
+          "bytes": 14180,
+          "file": "spk_native_learning_v1/source_partition_v1x_b.py",
+          "sha256": "44acd3071c9430ad3fbf0ec8dab668b13c34ca2174fd8c7499fe7d130c33b19b"
+        },
+        {
+          "bytes": 905,
+          "file": "spk_native_learning_v1/transfer_review_conformance_v1x_f.py",
+          "sha256": "018e042cf5dc51f8c6fa3fc0821dca16dd190d3a8f0314c3b6e5f7375f1382f8"
+        },
+        {
+          "bytes": 9340,
+          "file": "spk_native_learning_v1/transfer_review_v1x_f.py",
+          "sha256": "416ea8a7ac4e172d26c0a24db53894779c203d9bb0d94700d8548be7fcbe8e70"
+        },
+        {
+          "bytes": 13843,
+          "file": "spk_native_learning_v1/two_step_closure_v1x_l.py",
+          "sha256": "43e477a1149bc0b616c7dfa46a1a8bf2d20554bf00d81c296c1ee5a253a2baa7"
+        },
+        {
+          "bytes": 3172,
+          "file": "spk_native_learning_v1/two_step_source_guard_v1x_l.py",
+          "sha256": "6a9a9d70aaaee472a5c90d05b729627a6648e230584945ca6397b509f62e224b"
+        }
+      ],
+      "git": {
+        "git_worktree_clean": false,
+        "head": "5af99cd1f4d603bf0c8e1557a6561c107765fdb5",
+        "tag_commits": {
+          "spk-architecture-bounded-reference-v1": "5af99cd1f4d603bf0c8e1557a6561c107765fdb5",
+          "spk-compiler-v0": "24b15156aa31967bd0079debcc97ccb6e3ac4325",
+          "spk-core-network-v0": "01b6728355a60bd6095fb48d7a9c4c6aa1e09790"
+        }
+      },
+      "parse_errors": [],
+      "present_packages": [
+        "spk_core",
+        "spk_network",
+        "spk_compiler",
+        "spk_simulator",
+        "spk_backvalidation_v0",
+        "spk_native_learning_v1"
+      ],
+      "root": "/home/ste/workspace/spk-backvalidation-v0",
+      "scanned_python_files": 157
+    }
+  ],
+  "schema": "spk-lab-i2b-original-interface-inventory/v1",
+  "sensor_identity_authenticated": false,
+  "status": "I2B_ORIGINAL_API_DISCOVERY_ONLY_NOT_NATIVE_DISPATCH"
+}

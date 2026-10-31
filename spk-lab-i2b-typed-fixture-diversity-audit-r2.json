@@ -1,0 +1,461 @@
+{
+  "P_credit_transfer": false,
+  "architecture_promotion_allowed": false,
+  "distinct_input_signatures": 1,
+  "distinct_routed_input_signatures": 1,
+  "distinct_routed_network_ir_signatures": 1,
+  "native_compiler_dispatch_pass": false,
+  "next_step": "Select another already source-authored, compiler-compatible frozen scenario only after validating its provenance",
+  "observed_fixture_cases": [
+    {
+      "fixture": "pipeline_inputs",
+      "input_sha256": "6accafd8419e911ee21b70c1724b431ab5fab4f222f2dda2f70e1b5afb9ebf97",
+      "network_ir_sha256": "493ae8242dead99ce065c7f444c5945e4b63a66bfd8aca60df56ed82a7e855b6",
+      "observed_routes": 2,
+      "outcome_sha256": "43c7ae535bfa284208398975b0a37739a10381dd33a5bb064e636374f42d005f",
+      "processed_batches": 2,
+      "processed_events": 4,
+      "test_nodeid": "tests/test_compile_pipeline_v0.py::test_pipeline_does_not_change_functional_execution"
+    },
+    {
+      "fixture": "compiler_scenario",
+      "input_sha256": "6accafd8419e911ee21b70c1724b431ab5fab4f222f2dda2f70e1b5afb9ebf97",
+      "network_ir_sha256": "493ae8242dead99ce065c7f444c5945e4b63a66bfd8aca60df56ed82a7e855b6",
+      "observed_routes": 2,
+      "outcome_sha256": "43c7ae535bfa284208398975b0a37739a10381dd33a5bb064e636374f42d005f",
+      "processed_batches": 2,
+      "processed_events": 4,
+      "test_nodeid": "tests/test_compiler_conformance_v0.py::test_functional_behavior_is_unchanged"
+    },
+    {
+      "fixture": "manifest_inputs",
+      "input_sha256": "6accafd8419e911ee21b70c1724b431ab5fab4f222f2dda2f70e1b5afb9ebf97",
+      "network_ir_sha256": "493ae8242dead99ce065c7f444c5945e4b63a66bfd8aca60df56ed82a7e855b6",
+      "observed_routes": 2,
+      "outcome_sha256": "43c7ae535bfa284208398975b0a37739a10381dd33a5bb064e636374f42d005f",
+      "processed_batches": 2,
+      "processed_events": 4,
+      "test_nodeid": "tests/test_compilation_manifest_v0.py::test_unchanged_network_functional_result"
+    }
+  ],
+  "original_source_test_receipts": [
+    {
+      "fixture_kind": "pipeline_inputs",
+      "git_commit": "24b15156aa31967bd0079debcc97ccb6e3ac4325",
+      "git_tag": "spk-compiler-v0",
+      "sha256": "d85fd43f7d57dd790e38db89bad230b07dd2224391aabe2ede868d3ec4a2f96a",
+      "source_file": "tests/test_compile_pipeline_v0.py",
+      "test": "test_pipeline_does_not_change_functional_execution"
+    },
+    {
+      "fixture_kind": "compiler_scenario",
+      "git_commit": "24b15156aa31967bd0079debcc97ccb6e3ac4325",
+      "git_tag": "spk-compiler-v0",
+      "sha256": "1e6b4f47f4f8f31636bae4574d27686fa82b67addef42444c56651ef2da8d813",
+      "source_file": "tests/test_compiler_conformance_v0.py",
+      "test": "test_functional_behavior_is_unchanged"
+    },
+    {
+      "fixture_kind": "manifest_inputs",
+      "git_commit": "24b15156aa31967bd0079debcc97ccb6e3ac4325",
+      "git_tag": "spk-compiler-v0",
+      "sha256": "f2de08d3a91cb7e747e65da46a0a1e3a44e9b845f9c045cb3a99d3986c356ea2",
+      "source_file": "tests/test_compilation_manifest_v0.py",
+      "test": "test_unchanged_network_functional_result"
+    }
+  ],
+  "parent_ABI_sha256": "87ab40d1f8345a7a59182e636897fd8841e4de7dcead3e20332149840f3656f0",
+  "parent_R2_sha256": "80ef5f4df97aa6991cfe60f0640b1fc71e5adba68903616b2470010e0acd8c73",
+  "parent_typed_manifest_sha256": "30becbd0e44a4430edfca773fafeda1dcec61e1272a7796975559ffd11dcd655",
+  "requirements": [
+    "Two genuinely distinct source-authored typed compiler inputs",
+    "Two distinct inputs with observed route deliveries",
+    "No synthetic resource/placement assembly or new Core manifest"
+  ],
+  "research_only": true,
+  "schema": "spk-lab-i2b-frozen-typed-fixture-diversity-audit/r2",
+  "status": "I2B_TYPED_FIXTURE_DIVERSITY_HOLD",
+  "unexecuted_source_candidate_survey": [
+    {
+      "candidate_factories": [
+        {
+          "decorators": [
+            "pytest.fixture"
+          ],
+          "line": 24,
+          "name": "inputs"
+        },
+        {
+          "decorators": [],
+          "line": 80,
+          "name": "test_unchanged_network_functional_result"
+        }
+      ],
+      "classification": "STATIC_DISCOVERY_NOT_COMPILED_NETWORK_WITNESS",
+      "file": "tests/test_compilation_manifest_v0.py",
+      "source_sha256": "f2de08d3a91cb7e747e65da46a0a1e3a44e9b845f9c045cb3a99d3986c356ea2"
+    },
+    {
+      "candidate_factories": [
+        {
+          "decorators": [
+            "pytest.fixture"
+          ],
+          "line": 20,
+          "name": "inputs"
+        },
+        {
+          "decorators": [],
+          "line": 62,
+          "name": "test_pipeline_preserves_network_and_events"
+        },
+        {
+          "decorators": [
+            "pytest.mark.parametrize('keyword,value', [('network_ir_json', None), ('initial_events', []), ('initial_events', ('not-an-event',)), ('resource_profile', None), ('architecture', None), ('placements', [NodePlacementV0('A', 'PE0')])])"
+          ],
+          "line": 138,
+          "name": "test_invalid_api_input_rejected"
+        }
+      ],
+      "classification": "STATIC_DISCOVERY_NOT_COMPILED_NETWORK_WITNESS",
+      "file": "tests/test_compile_pipeline_v0.py",
+      "source_sha256": "d85fd43f7d57dd790e38db89bad230b07dd2224391aabe2ede868d3ec4a2f96a"
+    },
+    {
+      "candidate_factories": [
+        {
+          "decorators": [
+            "pytest.fixture"
+          ],
+          "line": 44,
+          "name": "scenario"
+        },
+        {
+          "decorators": [],
+          "line": 129,
+          "name": "test_network_ir_oracle"
+        },
+        {
+          "decorators": [],
+          "line": 224,
+          "name": "test_rehash_cannot_bypass_network_ir_schema"
+        }
+      ],
+      "classification": "STATIC_DISCOVERY_NOT_COMPILED_NETWORK_WITNESS",
+      "file": "tests/test_compiler_conformance_v0.py",
+      "source_sha256": "1e6b4f47f4f8f31636bae4574d27686fa82b67addef42444c56651ef2da8d813"
+    },
+    {
+      "candidate_factories": [
+        {
+          "decorators": [
+            "pytest.fixture"
+          ],
+          "line": 27,
+          "name": "network"
+        }
+      ],
+      "classification": "STATIC_DISCOVERY_NOT_COMPILED_NETWORK_WITNESS",
+      "file": "tests/test_functional_trace_v0.py",
+      "source_sha256": "cc9070a1b34324fb14e47785a2e52fc704bde3622f60c6941e0926ac5546f70f"
+    },
+    {
+      "candidate_factories": [
+        {
+          "decorators": [
+            "pytest.fixture"
+          ],
+          "line": 32,
+          "name": "network"
+        },
+        {
+          "decorators": [],
+          "line": 58,
+          "name": "test_network_ir_identity"
+        },
+        {
+          "decorators": [],
+          "line": 68,
+          "name": "test_network_ir_roundtrip"
+        },
+        {
+          "decorators": [],
+          "line": 78,
+          "name": "test_network_ir_preserves_parallel_edges"
+        },
+        {
+          "decorators": [],
+          "line": 88,
+          "name": "test_network_ir_deterministic_serialization"
+        },
+        {
+          "decorators": [],
+          "line": 97,
+          "name": "test_network_ir_execution_equivalence"
+        },
+        {
+          "decorators": [
+            "pytest.mark.parametrize('mutation', ['schema', 'version', 'extra', 'missing', 'empty_nodes', 'nodes_type', 'edges_type', 'duplicate_node', 'bad_delay', 'unknown_target', 'bad_core_op'])"
+          ],
+          "line": 137,
+          "name": "test_network_ir_rejects_invalid_documents"
+        },
+        {
+          "decorators": [
+            "pytest.mark.parametrize('text', ['{\"schema\":\"x\",\"schema\":\"y\"}', '{\"value\":NaN}', '{\"value\":Infinity}'])"
+          ],
+          "line": 189,
+          "name": "test_network_ir_rejects_invalid_json"
+        },
+        {
+          "decorators": [],
+          "line": 194,
+          "name": "test_network_ir_json_is_valid"
+        }
+      ],
+      "classification": "STATIC_DISCOVERY_NOT_COMPILED_NETWORK_WITNESS",
+      "file": "tests/test_network_ir_v0.py",
+      "source_sha256": "6514f0b722b2a5369f146d8a394f3d2997535c03c8d0935bcb62938c2706185e"
+    },
+    {
+      "candidate_factories": [
+        {
+          "decorators": [],
+          "line": 80,
+          "name": "network"
+        }
+      ],
+      "classification": "STATIC_DISCOVERY_NOT_COMPILED_NETWORK_WITNESS",
+      "file": "tests/test_network_learning_interface_v0.py",
+      "source_sha256": "1e052aa2b960759534630a6076a8d05b58be3c47dcfdd0e2204514a002319007"
+    },
+    {
+      "candidate_factories": [],
+      "classification": "STATIC_DISCOVERY_NOT_COMPILED_NETWORK_WITNESS",
+      "file": "tests/test_network_runtime_v0.py",
+      "source_sha256": "3ca5fa1e6b4fbc0de785ff0fa9f937de653db022434028e0b599ff71e69fe755"
+    },
+    {
+      "candidate_factories": [
+        {
+          "decorators": [],
+          "line": 304,
+          "name": "test_output_free_core_state_matches_independent_network_reference"
+        }
+      ],
+      "classification": "STATIC_DISCOVERY_NOT_COMPILED_NETWORK_WITNESS",
+      "file": "tests/test_owned_internal_state_commit_v0.py",
+      "source_sha256": "5eb12415e349acd96cac14f591d758fffe84d5e36c2c83317a78d90d9c79699a"
+    },
+    {
+      "candidate_factories": [
+        {
+          "decorators": [],
+          "line": 26,
+          "name": "make_network"
+        },
+        {
+          "decorators": [],
+          "line": 97,
+          "name": "test_same_network_rejected_on_smaller_machine"
+        },
+        {
+          "decorators": [
+            "pytest.mark.parametrize('placements', [(NodePlacementV0('A', 'PE0'),), (NodePlacementV0('A', 'PE0'), NodePlacementV0('A', 'PE1')), (NodePlacementV0('A', 'PE0'), NodePlacementV0('B', 'UNKNOWN')), (NodePlacementV0('A', 'PE0'), NodePlacementV0('MISSING', 'PE1'))])"
+          ],
+          "line": 194,
+          "name": "test_invalid_placements_rejected"
+        },
+        {
+          "decorators": [
+            "pytest.mark.parametrize('node_id,pe_id', [('', 'PE0'), ('A', '')])"
+          ],
+          "line": 207,
+          "name": "test_invalid_placement_ids"
+        }
+      ],
+      "classification": "STATIC_DISCOVERY_NOT_COMPILED_NETWORK_WITNESS",
+      "file": "tests/test_pe_admission_v0.py",
+      "source_sha256": "1975675e62d74bdf91c3fcc278789ef7addfcb683109d3a49a4677e1f5bf98ee"
+    },
+    {
+      "candidate_factories": [
+        {
+          "decorators": [
+            "pytest.fixture"
+          ],
+          "line": 29,
+          "name": "sample"
+        },
+        {
+          "decorators": [
+            "pytest.mark.parametrize('limit, value, metric', [('max_instructions_per_node', 3, 'instructions_per_node'), ('max_nodes', 1, 'nodes'), ('max_edges', 2, 'edges'), ('max_fanout_per_channel', 2, 'fanout_per_channel'), ('max_emissions', 4999, 'conservative_emissions')])"
+          ],
+          "line": 91,
+          "name": "test_admission_rejects_resource_limits"
+        }
+      ],
+      "classification": "STATIC_DISCOVERY_NOT_COMPILED_NETWORK_WITNESS",
+      "file": "tests/test_resource_admission_v0.py",
+      "source_sha256": "32a12a1a2fb32e34c1340aa8f31e980530fb06ba575e78a3c7ab21b63d2926fe"
+    },
+    {
+      "candidate_factories": [
+        {
+          "decorators": [],
+          "line": 165,
+          "name": "test_non_emitting_network_supported"
+        },
+        {
+          "decorators": [
+            "pytest.mark.parametrize('name,invalid', [('max_batches', 0), ('max_batches', True), ('max_events', -1), ('max_events', 1.5), ('max_events', None)])"
+          ],
+          "line": 183,
+          "name": "test_invalid_budgets_fail_closed"
+        },
+        {
+          "decorators": [
+            "pytest.mark.parametrize('name,limit', [('max_events', 3), ('max_batches', 2)])"
+          ],
+          "line": 189,
+          "name": "test_finite_limits_enforced"
+        },
+        {
+          "decorators": [
+            "pytest.mark.parametrize('key,value', [('schema', 'other'), ('version', '1')])"
+          ],
+          "line": 206,
+          "name": "test_wrong_evidence_header_rejected"
+        },
+        {
+          "decorators": [
+            "pytest.mark.parametrize('field,mutator', [('result', lambda p: p['result'].update(processed_events=99)), ('emission', lambda p: p['result']['emissions'].pop()), ('state', lambda p: p['result']['states'].clear()), ('batch', lambda p: p['observations']['batches'].pop()), ('route', lambda p: p['observations']['routes'].pop()), ('route_delay', lambda p: p['observations']['routes'][0].update(delay_ticks=99))])"
+          ],
+          "line": 251,
+          "name": "test_rehashed_forged_receipts_rejected_by_real_replay"
+        },
+        {
+          "decorators": [
+            "pytest.mark.parametrize('where', ['top', 'payload'])"
+          ],
+          "line": 259,
+          "name": "test_unknown_fields_rejected"
+        }
+      ],
+      "classification": "STATIC_DISCOVERY_NOT_COMPILED_NETWORK_WITNESS",
+      "file": "tests/test_spk_24m_compiler_network_evidence_v0.py",
+      "source_sha256": "8194deb7dac93ee2870478b3fd9773cecbd5b3ac9ef9c3fbe250928cb075daf8"
+    },
+    {
+      "candidate_factories": [
+        {
+          "decorators": [
+            "pytest.mark.parametrize('seed,program', [(0, R), (1, T2), (2, ACC)])"
+          ],
+          "line": 117,
+          "name": "test_persistent_state_and_duplicate_initial_inputs"
+        },
+        {
+          "decorators": [
+            "pytest.mark.parametrize('initial,delay', [(8, 2), (31, 1), (5, 3), (0, 1)])"
+          ],
+          "line": 125,
+          "name": "test_shift_decay_differential"
+        },
+        {
+          "decorators": [],
+          "line": 212,
+          "name": "test_729_relay_dag_networks_against_frozen_runtime"
+        }
+      ],
+      "classification": "STATIC_DISCOVERY_NOT_COMPILED_NETWORK_WITNESS",
+      "file": "tests/test_spk_24n_frozen_differential_v0.py",
+      "source_sha256": "1e42f4db67ad5a461e64d39aa0ad42c666bcab35fe2d363564bb5be6d6a53570"
+    },
+    {
+      "candidate_factories": [
+        {
+          "decorators": [
+            "pytest.mark.parametrize('profile', sorted({name.split('/')[0] for name, _ in CASES}))"
+          ],
+          "line": 63,
+          "name": "test_full_corpus_differential_and_observer_noninterference"
+        },
+        {
+          "decorators": [
+            "pytest.mark.parametrize('graph', sorted({name.split('/')[1] for name, _ in CASES}))"
+          ],
+          "line": 77,
+          "name": "test_frozen_input_order_permutation_on_every_profile"
+        },
+        {
+          "decorators": [
+            "pytest.mark.parametrize('profile', sorted({name.split('/')[0] for name, _ in CASES}))"
+          ],
+          "line": 90,
+          "name": "test_declarative_network_ir_codec_roundtrip_on_expanded_profiles"
+        }
+      ],
+      "classification": "STATIC_DISCOVERY_NOT_COMPILED_NETWORK_WITNESS",
+      "file": "tests/test_spk_24o_frozen_extended_v0.py",
+      "source_sha256": "d6283f89c2dc3e638b12732d5d5c229f6a0c1b9fb899f953c6a3a1d1979bcfec"
+    },
+    {
+      "candidate_factories": [
+        {
+          "decorators": [],
+          "line": 45,
+          "name": "test_image_canonical_even_if_network_inverted"
+        },
+        {
+          "decorators": [],
+          "line": 59,
+          "name": "test_single_batch_matches_frozen_network_oracle"
+        },
+        {
+          "decorators": [
+            "pytest.mark.parametrize('field,new_value', [('after_raw', 3), ('after_timestamp', 999), ('candidate_outputs', ((2, 127),)), ('final_guard', 'false'), ('before_raw', 7), ('before_timestamp', 99), ('base_version', 8), ('event_time', 9)])"
+          ],
+          "line": 164,
+          "name": "test_forged_transition_rejected"
+        },
+        {
+          "decorators": [
+            "pytest.mark.parametrize('channels', [(), (1, 0), [-1], (-1,), (False,), (0, True)])"
+          ],
+          "line": 173,
+          "name": "test_malformed_channels_rejected"
+        },
+        {
+          "decorators": [
+            "pytest.mark.parametrize('timestamp', [-1, 1.5, True])"
+          ],
+          "line": 180,
+          "name": "test_invalid_timestamp_rejected"
+        },
+        {
+          "decorators": [],
+          "line": 222,
+          "name": "test_other_network_rejected"
+        },
+        {
+          "decorators": [
+            "pytest.mark.parametrize('epoch', ['', ' bad', 'bad ', None])"
+          ],
+          "line": 230,
+          "name": "test_invalid_epoch_rejected"
+        },
+        {
+          "decorators": [
+            "pytest.mark.parametrize('neurons', [(), (NeuronVersionV0('A', 0, 0, 0),), (NeuronVersionV0('B', 0, 0, 0), NeuronVersionV0('A', 0, 0, 0)), (NeuronVersionV0('A', 0, 0, 0), NeuronVersionV0('A', 0, 0, 0)), (NeuronVersionV0('A', 9999, 0, 1), NeuronVersionV0('B', 0, 0, 0)), (NeuronVersionV0('A', 0, 1, 0), NeuronVersionV0('B', 0, 0, 0)), (NeuronVersionV0('A', 0, 0, -1), NeuronVersionV0('B', 0, 0, 0))])"
+          ],
+          "line": 244,
+          "name": "test_malformed_memory_image_rejected"
+        }
+      ],
+      "classification": "STATIC_DISCOVERY_NOT_COMPILED_NETWORK_WITNESS",
+      "file": "tests/test_versioned_core_transition_v0.py",
+      "source_sha256": "26933183d612a30133cfb4784e4436c8718f8e5b8dc99e95c067ca9ac0fc8c40"
+    }
+  ]
+}
