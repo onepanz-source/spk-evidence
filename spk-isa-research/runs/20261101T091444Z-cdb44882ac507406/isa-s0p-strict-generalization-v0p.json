@@ -1,0 +1,80 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0
+ },
+ "base_branch": "research/isa-s0o-compiler-lowering-boundary-v0o",
+ "branch": "research/isa-s0p-generalization-adversarial-v0p",
+ "compiler_tag_commit": "24b15156aa31967bd0079debcc97ccb6e3ac4325",
+ "corpus": {
+  "derived_validated": 5,
+  "original_pinned_c3": 1,
+  "per_fixture_descriptor_sha256": {
+   "derived_event_multiplicity_3": "4a75c649a8d5692e1a93c49e5993c713c11ab328de9ccb58f96a2dd109fa477e",
+   "derived_parallel_distinct_delays": "f05066396f287067888e208d7b161a5caa93f7f80c82f6acd7d8af87b4426274",
+   "derived_same_len_program_variant": "d22586f0c9713788d846a72a462116a762148fd1a00170df5eca6f5f3c98b119",
+   "derived_single_edge": "fb299d2d1d8a0ef46fafa783ff3fa77f3e6280c315ae5fb48f0afb1f755fe166",
+   "derived_three_node_chain": "95b7790a95c17e66eb9b99f73ca7bd08f9e5607f74be51e83671149b466da94b",
+   "original_pinned_c3": "b9e70b22c932b85428deb2f6150d42edd25e242708458e3e5b5357bd113c0989"
+  },
+  "rejected": 0
+ },
+ "decision": "HOLD",
+ "exit_code": 4,
+ "fresh_processes": {
+  "canonical_output_identical": true,
+  "count": 4,
+  "seeds": [
+   17,
+   631
+  ],
+  "units": [
+   1,
+   7
+  ]
+ },
+ "limitations": [
+  "Determinism proved within the tested 6-fixture corpus only, across 4 fresh processes.",
+  "Descriptor remains a static research artefact, not an executable command stream.",
+  "Manifest SHA-256 is integrity only, not authentication; strict path re-proves admission by recompilation.",
+  "All native claims NOT_PROVEN; every native gap remains formal HOLD."
+ ],
+ "native_tests_executed": 0,
+ "owned_modules_imported": false,
+ "p1_audit": {
+  "flag_validator_not_semantic": "GAP_CONFIRMED",
+  "strict_path_fixes": "strict_validate recompiles via frozen gates and binds full semantic identity",
+  "untrusted_lowerer_accepts_caller_digest": "GAP_CONFIRMED",
+  "v0o_instruction_count_only": "GAP_CONFIRMED"
+ },
+ "parent_o_branch_head": "1e0d6b358f33668ce0cc89976a53c226d20e8faa",
+ "parent_o_witness_sha256": "2c6097d24ca14270fad019bddaf31dade269c1b6ea4b2ebd4455fdf39f9d107a",
+ "pr": 28,
+ "pure_tests": {
+  "failed": 0,
+  "passed": 13,
+  "returncode": 0
+ },
+ "research_only": true,
+ "run_id": "20261101T091444Z-cdb44882ac507406",
+ "schema": "spk-isa-s0p-strict-generalization-witness/v0p",
+ "source_pins": {
+  "spk_compiler/compilation_manifest_v0.py": "921d321d243dea8802001d52198fd234113d49a1f2ebac759c65abed1b62f88a",
+  "spk_compiler/compile_pipeline_v0.py": "81aebc3b08776b7a5e4d1cd42257298048533d08eaf898cc436c9dc974479366",
+  "spk_compiler/network_ir_v0.py": "0425a191cc3ecc3df76fe13dac99009cdceccdbc389789bf1967f567b5309460",
+  "spk_compiler/pe_admission_v0.py": "ccc76a35f908bd9fbdc8d3dfc23966b4e4109db838e05143b4383a23e437933c",
+  "spk_compiler/resource_admission_v0.py": "864673d321b3da0b36d49cb669322808e617fb85657034b5df544aad48281420",
+  "tests/test_compiler_conformance_v0.py": "1e6b4f47f4f8f31636bae4574d27686fa82b67addef42444c56651ef2da8d813"
+ },
+ "spec": {
+  "git_blob_sha1": "19aabaf12499343ba3af84945031e9e9d1df70bc",
+  "path": "docs/spk-isa-s0p-generalization-and-attestation-boundary-v0p.md",
+  "sha256": "e02e210fbf3aff25e396313022b892e83e315427c11ae37805501c376be5906e",
+  "verified": true
+ },
+ "status": "GENERALIZATION_READY_STRICT_SOURCE_BOUND_MULTI_FIXTURE_NATIVE_HOLD",
+ "task_issue": 29
+}
