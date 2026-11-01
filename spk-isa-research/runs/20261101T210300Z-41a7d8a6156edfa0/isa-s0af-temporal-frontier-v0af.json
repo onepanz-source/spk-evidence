@@ -1,0 +1,125 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0
+ },
+ "base_branch": "research/isa-s0ae-feedback-prefix-budget-continuation-v0ae",
+ "branch": "research/isa-s0af-feedback-temporal-frontier-v0af",
+ "controls": {
+  "finite_tail_no_false_recurrence": {
+   "classification": "AF_QUIESCENT_OBSERVED",
+   "count_only_repeats": false,
+   "full_provenance_recurrence": false,
+   "manifest": "b6bb3e7a759f7fc5",
+   "not_labeled_infinite": true
+  },
+  "raw_heap_vs_multiset": [
+   {
+    "frontier_multisets_agree": true,
+    "manifest": "0beed794c8088198",
+    "raw_rows_differ": true
+   },
+   {
+    "frontier_multisets_agree": true,
+    "manifest": "901a36b469c075cd",
+    "raw_rows_differ": true
+   }
+  ]
+ },
+ "corpus": {
+  "ad_pool": 24,
+  "ae_novel": 8,
+  "excluded": 111,
+  "extra_admitted": 8,
+  "extra_attempts": 21
+ },
+ "decision": "HOLD",
+ "exit_code": 4,
+ "fresh_processes": {
+  "canonical_output_identical": true,
+  "count": 4,
+  "seeds": [
+   17,
+   631
+  ],
+  "units": [
+   1,
+   7
+  ]
+ },
+ "limitations": [
+  "No category is a proof of infinite liveness: AF_RECURRENCE_CANDIDATE_BOUNDED requires >=3 translation-invariant committed frontiers and is empirical only; finite cutoffs are never read as nontermination.",
+  "Frontier signatures are provenance-aware (edge occurrence, parent count, pending multiset shifted by ts) but exclude raw generated row IDs.",
+  "Bounded to the declared corpus (24 AD cutoff seeds + 8 AE novel + 8 new) at budgets 12/24/48; zero-delay remains out of frozen domain.",
+  "All native claims NOT_PROVEN; HOLD preserved; C0-C5 reserved to independent human peer review."
+ ],
+ "native_tests_executed": 0,
+ "negatives": {
+  "all_rejected": true,
+  "codes": {
+   "altered_node_state": "STATE_DIVERGENCE_DETECTED",
+   "changed_source_root": "INITIAL_EVENT_MISMATCH",
+   "dropped_pending_occurrence": "BATCH_PARENT_UNKNOWN",
+   "duplicated_pending_occurrence": "DUP_ROW_ID",
+   "false_recurrence_equal_counts": "FALSE_RECURRENCE_REJECTED",
+   "forged_budget": "BUDGET_PROVENANCE_MISMATCH",
+   "forged_source_pin": "MANIFEST_SHA_MISMATCH",
+   "swapped_scc_membership": "SCC_MEMBERSHIP_MISMATCH",
+   "timestamp_off_by_one": "BATCH_EVENT_TS_NODE_MISMATCH",
+   "wrong_edge_id": "ROUTE_BIJECTION_MISMATCH"
+  },
+  "count": 10
+ },
+ "owned_modules_imported": false,
+ "parent_ae_branch_head": "00dd0daf6863a729f22ec8b575410527f8011da0",
+ "parent_ae_witness_sha256": "423971c8cdf7a34770e9a5d42fc96a6b5d613b91707302d34617168f8683e582",
+ "pr": 60,
+ "pure_tests": {
+  "failed": 0,
+  "passed": 8,
+  "returncode": 0
+ },
+ "research_only": true,
+ "run_id": "20261101T210300Z-41a7d8a6156edfa0",
+ "runs": {
+  "all_parity_and_prefix": true,
+  "cases": 24,
+  "classifications": {
+   "AF_ACTIVE_AT_CUTOFF": 28,
+   "AF_QUIESCENT_OBSERVED": 20
+  },
+  "frontier_cases_ge3": 28,
+  "multihop_active_cases": 20,
+  "quiescent_cases": 20,
+  "runs": 144,
+  "unreachable_scc_cases": 2
+ },
+ "schema": "spk-isa-s0af-temporal-frontier-witness/v0af",
+ "seed": 20261106,
+ "source_pins": {
+  "spk/event.py": "614b14a494e66b784991a2abf002764fb6b69800208b0bf569ca4426c826c934",
+  "spk_compiler/compilation_manifest_v0.py": "921d321d243dea8802001d52198fd234113d49a1f2ebac759c65abed1b62f88a",
+  "spk_compiler/compile_pipeline_v0.py": "81aebc3b08776b7a5e4d1cd42257298048533d08eaf898cc436c9dc974479366",
+  "spk_compiler/network_ir_v0.py": "0425a191cc3ecc3df76fe13dac99009cdceccdbc389789bf1967f567b5309460",
+  "spk_compiler/pe_admission_v0.py": "ccc76a35f908bd9fbdc8d3dfc23966b4e4109db838e05143b4383a23e437933c",
+  "spk_compiler/resource_admission_v0.py": "864673d321b3da0b36d49cb669322808e617fb85657034b5df544aad48281420",
+  "spk_core/core_v0.py": "75fad3aac0b5ec0b22bfde2eee27f7782d70eb399a725721660b24067b1636b4",
+  "spk_core/ir_v0.py": "ca6b601e9d38d738edac29323b537fabc246ed800ec06da0e3d8dff39ad1d8e9",
+  "spk_core/isa.py": "7c64e0eb8f98080d97bfa3f0de1d2c5ea044c04dcfcfedc1c0f6491891ce9cb6",
+  "spk_core/runtime.py": "25b78b476c052c73b9e67687d8b9da24e043613bd8c732520a1a338799f403c8",
+  "spk_network/events_v0.py": "f632ad1f49e8c88a11aa42537f9085dc12232751395ca79586992b4c2cd71eee",
+  "spk_network/model_v0.py": "44462bddf14ac2c9d3e483474b25842abfa875f55c235610e91b15529db40615",
+  "spk_network/runtime_v0.py": "4e393a2fdb17e833f3b424f6a5938946d8f6f83ff1cf1ad0da61b3520bb820ce"
+ },
+ "spec": {
+  "git_blob_sha1": "42945d23a3814dfc5398c925668f0f3283880abe",
+  "path": "docs/spk-isa-s0af-feedback-temporal-frontier-v0af.md",
+  "sha256": "7f8a5f6e84d563554c3d6f861eda06501416641bdb5c764f5c989022a33bcaeb",
+  "verified": true
+ },
+ "status": "FEEDBACK_TEMPORAL_FRONTIER_READY_RESEARCH_ONLY_NATIVE_HOLD",
+ "task_issue": 61
+}
