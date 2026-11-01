@@ -1,0 +1,111 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0
+ },
+ "base_branch": "research/isa-s0w-resumable-image-network-session-v0w",
+ "branch": "research/isa-s0x-session-custody-admission-v0x",
+ "custody_mutants": {
+  "count": 9,
+  "killed": 9,
+  "survivors": []
+ },
+ "custody_negatives": {
+  "all_rejected_before_step": true,
+  "forgeries": 5,
+  "hand_built_code": "UNTRUSTED_SESSION",
+  "valid_session_still_accepted": true
+ },
+ "decision": "HOLD",
+ "exit_code": 4,
+ "fresh_processes": {
+  "canonical_output_identical": true,
+  "count": 4,
+  "seeds": [
+   17,
+   631
+  ],
+  "units": [
+   1,
+   7
+  ]
+ },
+ "limitations": [
+  "In-process custody is an integrity contract for the public API against hostile/accidental inputs, NOT cryptographic authentication or process isolation (same-interpreter tampering is out of scope).",
+  "Restore keeps replay-from-genesis attestation, intentionally O(prefix); measured perf table in report.",
+  "RESEARCH_SNAPSHOT_LIMIT / RESEARCH_REPLAY_LIMIT are research coverage exclusions, never frozen NetworkExecutionLimitV0.",
+  "W certificate/snapshot bytes unchanged for the valid corpus (token never serialized).",
+  "All native claims NOT_PROVEN; HOLD preserved; C0-C5 reserved to independent human peer review."
+ ],
+ "native_tests_executed": 0,
+ "owned_modules_imported": false,
+ "parent_w_branch_head": "a7607f362065ebc50dc4a7baa79ef4f37ded017a",
+ "parent_w_witness_sha256": "7076a717e5d99fd184458679ee1cb7ea8c0757619f2a5af107a0c37f5887029d",
+ "perf": {
+  "note": "restore replay is intentionally O(processed_batches); measured here",
+  "oversized_reject_vm_steps": 0,
+  "oversized_rejected": true,
+  "schema": "spk-isa-s0x-custody-differential/v0x/perf",
+  "snapshot_bytes": 3510
+ },
+ "pr": 44,
+ "pure_tests": {
+  "failed": 0,
+  "passed": 9,
+  "returncode": 0
+ },
+ "research_only": true,
+ "restore_bounds": {
+  "all_hostile_rejected_zero_steps": true,
+  "controls": 10,
+  "max_snapshot_bytes": 1048576,
+  "valid_snapshot_still_restores": true
+ },
+ "run_id": "20261101T142931Z-e01f05188f96d2f2",
+ "schema": "spk-isa-s0x-session-custody-witness/v0x",
+ "source_pins": {
+  "spk/event.py": "614b14a494e66b784991a2abf002764fb6b69800208b0bf569ca4426c826c934",
+  "spk_compiler/compilation_manifest_v0.py": "921d321d243dea8802001d52198fd234113d49a1f2ebac759c65abed1b62f88a",
+  "spk_compiler/compile_pipeline_v0.py": "81aebc3b08776b7a5e4d1cd42257298048533d08eaf898cc436c9dc974479366",
+  "spk_compiler/network_ir_v0.py": "0425a191cc3ecc3df76fe13dac99009cdceccdbc389789bf1967f567b5309460",
+  "spk_compiler/pe_admission_v0.py": "ccc76a35f908bd9fbdc8d3dfc23966b4e4109db838e05143b4383a23e437933c",
+  "spk_compiler/resource_admission_v0.py": "864673d321b3da0b36d49cb669322808e617fb85657034b5df544aad48281420",
+  "spk_core/core_v0.py": "75fad3aac0b5ec0b22bfde2eee27f7782d70eb399a725721660b24067b1636b4",
+  "spk_core/ir_v0.py": "ca6b601e9d38d738edac29323b537fabc246ed800ec06da0e3d8dff39ad1d8e9",
+  "spk_core/isa.py": "7c64e0eb8f98080d97bfa3f0de1d2c5ea044c04dcfcfedc1c0f6491891ce9cb6",
+  "spk_core/runtime.py": "25b78b476c052c73b9e67687d8b9da24e043613bd8c732520a1a338799f403c8",
+  "spk_network/events_v0.py": "f632ad1f49e8c88a11aa42537f9085dc12232751395ca79586992b4c2cd71eee",
+  "spk_network/model_v0.py": "44462bddf14ac2c9d3e483474b25842abfa875f55c235610e91b15529db40615",
+  "spk_network/runtime_v0.py": "4e393a2fdb17e833f3b424f6a5938946d8f6f83ff1cf1ad0da61b3520bb820ce"
+ },
+ "spec": {
+  "git_blob_sha1": "a07030f2b3a89fe512fa87ccf144e38f7d5002c3",
+  "path": "docs/spk-isa-s0x-session-custody-admission-v0x.md",
+  "sha256": "82983067601db8530b6e7beeb2f4c9bb04b00020764eb6af29fef1089cb4398f",
+  "verified": true
+ },
+ "status": "SESSION_CUSTODY_READY_RESEARCH_ONLY_NATIVE_HOLD",
+ "task_issue": 45,
+ "w_gap_reproduction": {
+  "accepted_by_original_w": 5,
+  "fixture": "derived_single_edge",
+  "forgeries": 5,
+  "w_parent_commit": "f5bc27f"
+ },
+ "w_parity_on_hardened_code": {
+  "boundary_all_match": true,
+  "cut_resume_match": true,
+  "fixtures": 17,
+  "fresh_process_restore_ok": true,
+  "negative_controls": true,
+  "oracle_match": true,
+  "t_cert_accept": 16,
+  "t_cert_total": 16,
+  "transition_mutants_killed": 8,
+  "transitions": 47,
+  "v_cert_match": true
+ }
+}
