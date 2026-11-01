@@ -1,0 +1,110 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0
+ },
+ "base_branch": "research/isa-s0ac-causal-trace-slicing-v0ac",
+ "branch": "research/isa-s0ad-bounded-feedback-temporal-causality-v0ad",
+ "compiler_feedback": {
+  "admitted": 24,
+  "candidates_attempted": 44,
+  "rejects": 20,
+  "supported": true,
+  "zero_delay": "UNSUPPORTED_AT_FROZEN_MODEL (delay_ticks must be a positive integer); 4 verbatim model rejects recorded; same-timestamp churn only via same-ts event multiplicity"
+ },
+ "decision": "HOLD",
+ "exit_code": 4,
+ "fresh_processes": {
+  "canonical_output_identical": true,
+  "count": 4,
+  "seeds": [
+   17,
+   631
+  ],
+  "units": [
+   1,
+   7
+  ]
+ },
+ "limitations": [
+  "Frozen C3 admits directed feedback cycles with positive delay; zero-delay edges are rejected at the frozen model level (verbatim rejects recorded), so zero-delay churn is out of domain — not a candidate gap.",
+  "Unbounded feedback loops are classified AD_BOUNDED_CUTOFF at explicit caps, never 'terminated' or oracle-matched; only complete runs are compared to the frozen oracle on the five observables.",
+  "T requires >=1 ledger row: unstimulated quiescent runs (0 rows) are T ROWS_SHAPE — recorded, parity decided on frozen observables.",
+  "All native claims NOT_PROVEN; HOLD preserved; C0-C5 reserved to independent human peer review."
+ ],
+ "native_tests_executed": 0,
+ "negatives": {
+  "all_rejected_or_cutoff": true,
+  "codes": {
+   "duplicate_edge_occurrence": "DUP_ROW_ID",
+   "forged_edge_provenance": "ROUTE_BIJECTION_MISMATCH",
+   "microstep_cap": "max_batches=1",
+   "missing_feedback_parent": "BATCH_PARENT_UNKNOWN",
+   "parent_occurrence_cycle": "PARENT_OCCURRENCE_CYCLE",
+   "pending_queue_cap": "max_events=1",
+   "rank_regression_same_ts": "RANK_REGRESSION",
+   "timestamp_regression": "BATCH_EVENT_TS_NODE_MISMATCH"
+  },
+  "count": 8,
+  "no_false_terminal": true
+ },
+ "owned_modules_imported": false,
+ "parent_ac_branch_head": "5bf71524599ea0f02148c140ba0d848e069942e2",
+ "parent_ac_witness_sha256": "73a93bedcf21a2e9fd023553e01e1d93d24911900923f78aee6bc3d1901c02ac",
+ "pr": 56,
+ "pure_tests": {
+  "failed": 0,
+  "passed": 8,
+  "returncode": 0
+ },
+ "research_only": true,
+ "restores": {
+  "all_byte_exact": true,
+  "all_resume_equal": true,
+  "all_slice_equal": true,
+  "count": 4,
+  "slices_compared": 1
+ },
+ "run_id": "20261101T183545Z-7198b4d64c2dddd2",
+ "runs": {
+  "all_parity": true,
+  "cutoff_cases": 10,
+  "cutoff_parity_runs": 20,
+  "runs": 48,
+  "schedules": [
+   "rr",
+   "perm"
+  ],
+  "slices": 36,
+  "terminal_parity_runs": 28,
+  "terminating_cases": 14
+ },
+ "schema": "spk-isa-s0ad-bounded-feedback-witness/v0ad",
+ "seed": 20261104,
+ "source_pins": {
+  "spk/event.py": "614b14a494e66b784991a2abf002764fb6b69800208b0bf569ca4426c826c934",
+  "spk_compiler/compilation_manifest_v0.py": "921d321d243dea8802001d52198fd234113d49a1f2ebac759c65abed1b62f88a",
+  "spk_compiler/compile_pipeline_v0.py": "81aebc3b08776b7a5e4d1cd42257298048533d08eaf898cc436c9dc974479366",
+  "spk_compiler/network_ir_v0.py": "0425a191cc3ecc3df76fe13dac99009cdceccdbc389789bf1967f567b5309460",
+  "spk_compiler/pe_admission_v0.py": "ccc76a35f908bd9fbdc8d3dfc23966b4e4109db838e05143b4383a23e437933c",
+  "spk_compiler/resource_admission_v0.py": "864673d321b3da0b36d49cb669322808e617fb85657034b5df544aad48281420",
+  "spk_core/core_v0.py": "75fad3aac0b5ec0b22bfde2eee27f7782d70eb399a725721660b24067b1636b4",
+  "spk_core/ir_v0.py": "ca6b601e9d38d738edac29323b537fabc246ed800ec06da0e3d8dff39ad1d8e9",
+  "spk_core/isa.py": "7c64e0eb8f98080d97bfa3f0de1d2c5ea044c04dcfcfedc1c0f6491891ce9cb6",
+  "spk_core/runtime.py": "25b78b476c052c73b9e67687d8b9da24e043613bd8c732520a1a338799f403c8",
+  "spk_network/events_v0.py": "f632ad1f49e8c88a11aa42537f9085dc12232751395ca79586992b4c2cd71eee",
+  "spk_network/model_v0.py": "44462bddf14ac2c9d3e483474b25842abfa875f55c235610e91b15529db40615",
+  "spk_network/runtime_v0.py": "4e393a2fdb17e833f3b424f6a5938946d8f6f83ff1cf1ad0da61b3520bb820ce"
+ },
+ "spec": {
+  "git_blob_sha1": "0c05922b0249437ac953b3c56a5e82d1655862a9",
+  "path": "docs/spk-isa-s0ad-bounded-feedback-temporal-causality-v0ad.md",
+  "sha256": "4211f098f963e9709686e5b43a9d7e03cc891604f61bb6f9db17571db2205baf",
+  "verified": true
+ },
+ "status": "BOUNDED_FEEDBACK_FRONTIER_READY_RESEARCH_ONLY_NATIVE_HOLD",
+ "task_issue": 57
+}
