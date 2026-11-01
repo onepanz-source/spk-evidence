@@ -1,0 +1,572 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0
+ },
+ "base_branch": "research/isa-s0x-session-custody-admission-v0x",
+ "branch": "research/isa-s0y-admitted-differential-counterexample-v0y",
+ "corpus": {
+  "admitted": 48,
+  "attempts": 48,
+  "distinct_image_shas": 11,
+  "distinct_manifests": 48,
+  "instruction_shapes": 4,
+  "rejects": 0,
+  "topology_signatures": 33
+ },
+ "decision": "HOLD",
+ "differential": {
+  "all_match": true,
+  "mismatches": 0,
+  "t_accept": 48,
+  "t_total": 48
+ },
+ "exit_code": 4,
+ "fault_matrix": {
+  "faults": 6,
+  "faults_with_divergence": 6
+ },
+ "fresh_processes": {
+  "canonical_output_identical": true,
+  "count": 4,
+  "seeds": [
+   17,
+   631
+  ],
+  "units": [
+   1,
+   7
+  ]
+ },
+ "fresh_reproducers": {
+  "all_reproduce": true,
+  "count": 5,
+  "results": [
+   {
+    "fault": "dedup_edges",
+    "fresh_process_diverges": true,
+    "manifest_sha256": "7733522a819f5e49"
+   },
+   {
+    "fault": "collapse_dup_channels",
+    "fresh_process_diverges": true,
+    "manifest_sha256": "7733522a819f5e49"
+   },
+   {
+    "fault": "delay_off_by_one",
+    "fresh_process_diverges": true,
+    "manifest_sha256": "a13384be276ba092"
+   },
+   {
+    "fault": "event_per_batch",
+    "fresh_process_diverges": true,
+    "manifest_sha256": "7733522a819f5e49"
+   },
+   {
+    "fault": "drop_terminal",
+    "fresh_process_diverges": true,
+    "manifest_sha256": "3855c44d83f1c50b"
+   }
+  ]
+ },
+ "limitations": [
+  "Diagnostic corpus is bounded (<=256 attempts, seed-fixed); coverage is finite, not exhaustive over all Compiler-admitted scenarios.",
+  "Zero candidate/oracle divergences on the admitted corpus; divergences were produced only by test-only injected faults and minimized there.",
+  "Minimizer is Compiler-preserving (frozen C3 recompile per step, <=500 recompiles/case) and never edits manifests by text.",
+  "All native claims NOT_PROVEN; HOLD preserved; C0-C5 reserved to independent human peer review."
+ ],
+ "minimizer": {
+  "faults_minimized": 5,
+  "strictly_shrunk": 5,
+  "trace": [
+   {
+    "fault": "dedup_edges",
+    "final_descriptor": null,
+    "final_manifest_sha256": "7733522a819f5e49f409c70eba4b6a01466fbe2ac261c728fbfafc5da1e86ac4",
+    "final_metric": [
+     1,
+     1,
+     1,
+     4,
+     9,
+     0
+    ],
+    "initial_metric": null,
+    "original_manifest_sha256": "464e3ef4ba0ca44afe4b79757d02e448b6bfb1a0feaa85f98cc23a6a93e2488b",
+    "recompiles": 21,
+    "shrunk": true,
+    "status": "MINIMIZED",
+    "trace": [
+     {
+      "key": "1",
+      "manifest_sha256": "7b311a40cd4d6a67",
+      "metric": [
+       1,
+       2,
+       1,
+       4,
+       9,
+       3
+      ],
+      "pass": "drop_edge"
+     },
+     {
+      "key": "1",
+      "manifest_sha256": "f2baacfad177f40f",
+      "metric": [
+       1,
+       1,
+       1,
+       4,
+       9,
+       3
+      ],
+      "pass": "drop_edge"
+     },
+     {
+      "key": "0",
+      "manifest_sha256": "3b8c72fd0056e09d",
+      "metric": [
+       1,
+       1,
+       1,
+       4,
+       9,
+       2
+      ],
+      "pass": "ts-1"
+     },
+     {
+      "key": "0",
+      "manifest_sha256": "6c6ad1a2c491dd23",
+      "metric": [
+       1,
+       1,
+       1,
+       4,
+       9,
+       1
+      ],
+      "pass": "ts-1"
+     },
+     {
+      "key": "0",
+      "manifest_sha256": "7733522a819f5e49",
+      "metric": [
+       1,
+       1,
+       1,
+       4,
+       9,
+       0
+      ],
+      "pass": "ts-1"
+     }
+    ]
+   },
+   {
+    "fault": "collapse_dup_channels",
+    "final_descriptor": null,
+    "final_manifest_sha256": "7733522a819f5e49f409c70eba4b6a01466fbe2ac261c728fbfafc5da1e86ac4",
+    "final_metric": [
+     1,
+     1,
+     1,
+     4,
+     9,
+     0
+    ],
+    "initial_metric": null,
+    "original_manifest_sha256": "464e3ef4ba0ca44afe4b79757d02e448b6bfb1a0feaa85f98cc23a6a93e2488b",
+    "recompiles": 21,
+    "shrunk": true,
+    "status": "MINIMIZED",
+    "trace": [
+     {
+      "key": "1",
+      "manifest_sha256": "7b311a40cd4d6a67",
+      "metric": [
+       1,
+       2,
+       1,
+       4,
+       9,
+       3
+      ],
+      "pass": "drop_edge"
+     },
+     {
+      "key": "1",
+      "manifest_sha256": "f2baacfad177f40f",
+      "metric": [
+       1,
+       1,
+       1,
+       4,
+       9,
+       3
+      ],
+      "pass": "drop_edge"
+     },
+     {
+      "key": "0",
+      "manifest_sha256": "3b8c72fd0056e09d",
+      "metric": [
+       1,
+       1,
+       1,
+       4,
+       9,
+       2
+      ],
+      "pass": "ts-1"
+     },
+     {
+      "key": "0",
+      "manifest_sha256": "6c6ad1a2c491dd23",
+      "metric": [
+       1,
+       1,
+       1,
+       4,
+       9,
+       1
+      ],
+      "pass": "ts-1"
+     },
+     {
+      "key": "0",
+      "manifest_sha256": "7733522a819f5e49",
+      "metric": [
+       1,
+       1,
+       1,
+       4,
+       9,
+       0
+      ],
+      "pass": "ts-1"
+     }
+    ]
+   },
+   {
+    "fault": "delay_off_by_one",
+    "final_descriptor": null,
+    "final_manifest_sha256": "a13384be276ba092ea2e125e51c994f24c0d4c7c30e3e89b1d1e3c4b890b121d",
+    "final_metric": [
+     1,
+     1,
+     1,
+     4,
+     9,
+     0
+    ],
+    "initial_metric": null,
+    "original_manifest_sha256": "464e3ef4ba0ca44afe4b79757d02e448b6bfb1a0feaa85f98cc23a6a93e2488b",
+    "recompiles": 20,
+    "shrunk": true,
+    "status": "MINIMIZED",
+    "trace": [
+     {
+      "key": "0",
+      "manifest_sha256": "88a10377594a8542",
+      "metric": [
+       1,
+       2,
+       1,
+       4,
+       9,
+       3
+      ],
+      "pass": "drop_edge"
+     },
+     {
+      "key": "1",
+      "manifest_sha256": "538ebe514b47ef54",
+      "metric": [
+       1,
+       1,
+       1,
+       4,
+       9,
+       3
+      ],
+      "pass": "drop_edge"
+     },
+     {
+      "key": "0",
+      "manifest_sha256": "55cca3ff5c41f558",
+      "metric": [
+       1,
+       1,
+       1,
+       4,
+       9,
+       2
+      ],
+      "pass": "ts-1"
+     },
+     {
+      "key": "0",
+      "manifest_sha256": "1d630c0a4dd98236",
+      "metric": [
+       1,
+       1,
+       1,
+       4,
+       9,
+       1
+      ],
+      "pass": "ts-1"
+     },
+     {
+      "key": "0",
+      "manifest_sha256": "a13384be276ba092",
+      "metric": [
+       1,
+       1,
+       1,
+       4,
+       9,
+       0
+      ],
+      "pass": "ts-1"
+     }
+    ]
+   },
+   {
+    "fault": "event_per_batch",
+    "final_descriptor": null,
+    "final_manifest_sha256": "7733522a819f5e49f409c70eba4b6a01466fbe2ac261c728fbfafc5da1e86ac4",
+    "final_metric": [
+     1,
+     1,
+     1,
+     4,
+     9,
+     0
+    ],
+    "initial_metric": null,
+    "original_manifest_sha256": "464e3ef4ba0ca44afe4b79757d02e448b6bfb1a0feaa85f98cc23a6a93e2488b",
+    "recompiles": 21,
+    "shrunk": true,
+    "status": "MINIMIZED",
+    "trace": [
+     {
+      "key": "1",
+      "manifest_sha256": "7b311a40cd4d6a67",
+      "metric": [
+       1,
+       2,
+       1,
+       4,
+       9,
+       3
+      ],
+      "pass": "drop_edge"
+     },
+     {
+      "key": "1",
+      "manifest_sha256": "f2baacfad177f40f",
+      "metric": [
+       1,
+       1,
+       1,
+       4,
+       9,
+       3
+      ],
+      "pass": "drop_edge"
+     },
+     {
+      "key": "0",
+      "manifest_sha256": "3b8c72fd0056e09d",
+      "metric": [
+       1,
+       1,
+       1,
+       4,
+       9,
+       2
+      ],
+      "pass": "ts-1"
+     },
+     {
+      "key": "0",
+      "manifest_sha256": "6c6ad1a2c491dd23",
+      "metric": [
+       1,
+       1,
+       1,
+       4,
+       9,
+       1
+      ],
+      "pass": "ts-1"
+     },
+     {
+      "key": "0",
+      "manifest_sha256": "7733522a819f5e49",
+      "metric": [
+       1,
+       1,
+       1,
+       4,
+       9,
+       0
+      ],
+      "pass": "ts-1"
+     }
+    ]
+   },
+   {
+    "fault": "drop_terminal",
+    "final_descriptor": null,
+    "final_manifest_sha256": "3855c44d83f1c50b2dea1b8a78c5d7a62373316d2ca6cf9476674a431a4200a4",
+    "final_metric": [
+     1,
+     0,
+     1,
+     4,
+     9,
+     0
+    ],
+    "initial_metric": null,
+    "original_manifest_sha256": "464e3ef4ba0ca44afe4b79757d02e448b6bfb1a0feaa85f98cc23a6a93e2488b",
+    "recompiles": 14,
+    "shrunk": true,
+    "status": "MINIMIZED",
+    "trace": [
+     {
+      "key": "1",
+      "manifest_sha256": "7b311a40cd4d6a67",
+      "metric": [
+       1,
+       2,
+       1,
+       4,
+       9,
+       3
+      ],
+      "pass": "drop_edge"
+     },
+     {
+      "key": "0",
+      "manifest_sha256": "8f4aff6755f17e1f",
+      "metric": [
+       1,
+       1,
+       1,
+       4,
+       9,
+       3
+      ],
+      "pass": "drop_edge"
+     },
+     {
+      "key": "0",
+      "manifest_sha256": "6a7c27e10ac7885c",
+      "metric": [
+       1,
+       0,
+       1,
+       4,
+       9,
+       3
+      ],
+      "pass": "drop_edge"
+     },
+     {
+      "key": "0",
+      "manifest_sha256": "4c57ca1b765dcfac",
+      "metric": [
+       1,
+       0,
+       1,
+       4,
+       9,
+       2
+      ],
+      "pass": "ts-1"
+     },
+     {
+      "key": "0",
+      "manifest_sha256": "9aaf3c6c687096ef",
+      "metric": [
+       1,
+       0,
+       1,
+       4,
+       9,
+       1
+      ],
+      "pass": "ts-1"
+     },
+     {
+      "key": "0",
+      "manifest_sha256": "3855c44d83f1c50b",
+      "metric": [
+       1,
+       0,
+       1,
+       4,
+       9,
+       0
+      ],
+      "pass": "ts-1"
+     }
+    ]
+   }
+  ]
+ },
+ "native_tests_executed": 0,
+ "negatives": {
+  "compiler_rejected_smaller_excluded": true,
+  "forged_descriptor_code": "StrictBoundaryVeto",
+  "forged_descriptor_rejected_pre_step": true,
+  "schema": "spk-isa-s0y-diagnostic/v0y/negatives"
+ },
+ "owned_modules_imported": false,
+ "parent_x_branch_head": "447114244c4a029caaf69677a8bea83e20209143",
+ "parent_x_witness_sha256": "894f2ce8628ebfbe16947ace6198bc6f1427b8f7a0d96ead9f86d2f9643a0e3f",
+ "pr": 46,
+ "pure_tests": {
+  "failed": 0,
+  "passed": 9,
+  "returncode": 0
+ },
+ "research_only": true,
+ "restore_lane": {
+  "all_ok": true,
+  "cases": 8
+ },
+ "run_id": "20261101T151940Z-131cc2e9c45da2d2",
+ "schema": "spk-isa-s0y-admitted-diagnostic-witness/v0y",
+ "seed": 20261101,
+ "source_pins": {
+  "spk/event.py": "614b14a494e66b784991a2abf002764fb6b69800208b0bf569ca4426c826c934",
+  "spk_compiler/compilation_manifest_v0.py": "921d321d243dea8802001d52198fd234113d49a1f2ebac759c65abed1b62f88a",
+  "spk_compiler/compile_pipeline_v0.py": "81aebc3b08776b7a5e4d1cd42257298048533d08eaf898cc436c9dc974479366",
+  "spk_compiler/network_ir_v0.py": "0425a191cc3ecc3df76fe13dac99009cdceccdbc389789bf1967f567b5309460",
+  "spk_compiler/pe_admission_v0.py": "ccc76a35f908bd9fbdc8d3dfc23966b4e4109db838e05143b4383a23e437933c",
+  "spk_compiler/resource_admission_v0.py": "864673d321b3da0b36d49cb669322808e617fb85657034b5df544aad48281420",
+  "spk_core/core_v0.py": "75fad3aac0b5ec0b22bfde2eee27f7782d70eb399a725721660b24067b1636b4",
+  "spk_core/ir_v0.py": "ca6b601e9d38d738edac29323b537fabc246ed800ec06da0e3d8dff39ad1d8e9",
+  "spk_core/isa.py": "7c64e0eb8f98080d97bfa3f0de1d2c5ea044c04dcfcfedc1c0f6491891ce9cb6",
+  "spk_core/runtime.py": "25b78b476c052c73b9e67687d8b9da24e043613bd8c732520a1a338799f403c8",
+  "spk_network/events_v0.py": "f632ad1f49e8c88a11aa42537f9085dc12232751395ca79586992b4c2cd71eee",
+  "spk_network/model_v0.py": "44462bddf14ac2c9d3e483474b25842abfa875f55c235610e91b15529db40615",
+  "spk_network/runtime_v0.py": "4e393a2fdb17e833f3b424f6a5938946d8f6f83ff1cf1ad0da61b3520bb820ce"
+ },
+ "spec": {
+  "git_blob_sha1": "d94d8ef8ec72f01f4b770af671dfa99520b5fc3e",
+  "path": "docs/spk-isa-s0y-admitted-differential-counterexample-v0y.md",
+  "sha256": "a880bd36cbbe5d2aae2f2c3c9912d43bf4dce8df2ec49f5488b28f5ac15d19e1",
+  "verified": true
+ },
+ "status": "ADMITTED_DIAGNOSTIC_READY_RESEARCH_ONLY_NATIVE_HOLD",
+ "task_issue": 47
+}
