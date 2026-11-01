@@ -1,0 +1,112 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0
+ },
+ "base_branch": "research/isa-s0t-independent-proof-ledger-verifier-v0t",
+ "branch": "research/isa-s0u-portable-core-image-bytecode-v0u",
+ "corpus": {
+  "all_match": true,
+  "batch_cases": 16,
+  "cases_total": 36,
+  "distinct_image_sha256": [
+   "80aa9a9c975d748e3beb92eca05be7c02d25bd27dabe8b5d9d04e143d4c3f67c",
+   "b15f0e82ccb52937627b698b2ae73490c9421e2d3c83e58cffa8c9276315ad1d"
+  ],
+  "distinct_node_images": 2,
+  "fixtures": 10,
+  "mismatches": [],
+  "program_cases": 4,
+  "q_core_only_cases": 16
+ },
+ "decision": "HOLD",
+ "exit_code": 4,
+ "fresh_processes": {
+  "canonical_output_identical": true,
+  "count": 4,
+  "seeds": [
+   17,
+   631
+  ],
+  "units": [
+   1,
+   7
+  ]
+ },
+ "image_grammar": {
+  "fail_closed": "UNSUPPORTED_IMAGE_RANGE",
+  "flags": 0,
+  "magic": "SPKU",
+  "opcodes": {
+   "0x10": "DECAY",
+   "0x20": "ACC",
+   "0x30": "CMP",
+   "0x40": "EMIT",
+   "0x50": "RESET"
+  },
+  "subdomain": {
+   "fractional_bits": "0..state_bits-1",
+   "image_bytes": "<=65536",
+   "instruction_count": "0..1024",
+   "signed": "int64 zigzag",
+   "state_bits": "1..64",
+   "unsigned": "uint64 LEB128"
+  },
+  "version": 1
+ },
+ "limitations": [
+  "Candidate research transport encoding only; NOT an executable hardware ISA, chip opcode encoding or binary ABI.",
+  "Assurance on the declared finite corpus (10 compiler-admitted R fixtures -> 2 distinct node images, 16 Q CORE_ONLY contrasts, fixed batch battery).",
+  "Image hashes are integrity, not cryptographic signer authentication.",
+  "Values outside the candidate subdomain fail closed UNSUPPORTED_IMAGE_RANGE; this does not constrain Core v0's full semantic domain.",
+  "guard_persist_across_batches is semantically equivalent on the admissible normalized domain (CMP recomputes the guard before any observable use).",
+  "All native claims NOT_PROVEN; HOLD preserved; C0-C5 reserved to independent human peer review."
+ ],
+ "mutants": {
+  "count": 10,
+  "equivalent": [
+   "guard_persist_across_batches"
+  ],
+  "killed": 9,
+  "survivors": []
+ },
+ "native_tests_executed": 0,
+ "owned_modules_imported": false,
+ "parent_t_branch_head": "f8172074577e3b14e3ace16e9ffc612829ae959f",
+ "parent_t_witness_sha256": "bc337b541c4e67b352764fe9b040d42888bfa31eb2e9fd4e73d2c7744831eb27",
+ "pr": 38,
+ "pure_tests": {
+  "failed": 0,
+  "passed": 15,
+  "returncode": 0
+ },
+ "research_only": true,
+ "run_id": "20261101T111129Z-a3109004e420c377",
+ "schema": "spk-isa-s0u-portable-image-witness/v0u",
+ "source_pins": {
+  "spk/event.py": "614b14a494e66b784991a2abf002764fb6b69800208b0bf569ca4426c826c934",
+  "spk_compiler/compilation_manifest_v0.py": "921d321d243dea8802001d52198fd234113d49a1f2ebac759c65abed1b62f88a",
+  "spk_compiler/compile_pipeline_v0.py": "81aebc3b08776b7a5e4d1cd42257298048533d08eaf898cc436c9dc974479366",
+  "spk_compiler/network_ir_v0.py": "0425a191cc3ecc3df76fe13dac99009cdceccdbc389789bf1967f567b5309460",
+  "spk_compiler/pe_admission_v0.py": "ccc76a35f908bd9fbdc8d3dfc23966b4e4109db838e05143b4383a23e437933c",
+  "spk_compiler/resource_admission_v0.py": "864673d321b3da0b36d49cb669322808e617fb85657034b5df544aad48281420",
+  "spk_core/core_v0.py": "75fad3aac0b5ec0b22bfde2eee27f7782d70eb399a725721660b24067b1636b4",
+  "spk_core/ir_v0.py": "ca6b601e9d38d738edac29323b537fabc246ed800ec06da0e3d8dff39ad1d8e9",
+  "spk_core/isa.py": "7c64e0eb8f98080d97bfa3f0de1d2c5ea044c04dcfcfedc1c0f6491891ce9cb6",
+  "spk_core/runtime.py": "25b78b476c052c73b9e67687d8b9da24e043613bd8c732520a1a338799f403c8",
+  "spk_network/events_v0.py": "f632ad1f49e8c88a11aa42537f9085dc12232751395ca79586992b4c2cd71eee",
+  "spk_network/model_v0.py": "44462bddf14ac2c9d3e483474b25842abfa875f55c235610e91b15529db40615",
+  "spk_network/runtime_v0.py": "4e393a2fdb17e833f3b424f6a5938946d8f6f83ff1cf1ad0da61b3520bb820ce"
+ },
+ "spec": {
+  "git_blob_sha1": "9aa7ab1c65c681f23b731b5b29cd35d284befd5f",
+  "path": "docs/spk-isa-s0u-portable-core-image-bytecode-v0u.md",
+  "sha256": "1b232453ac6ff1dd20b89bc9271bfc0de68735ea8efd1a316ffe202f69672d51",
+  "verified": true
+ },
+ "status": "PORTABLE_IMAGE_READY_RESEARCH_TRANSPORT_ONLY_NATIVE_HOLD",
+ "task_issue": 39
+}
