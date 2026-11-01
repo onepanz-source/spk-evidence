@@ -1,0 +1,119 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0
+ },
+ "base_branch": "research/isa-s0aa-interleaved-pe-causal-isolation-v0aa",
+ "boundary": {
+  "all_agree": true,
+  "contrasts": 3
+ },
+ "branch": "research/isa-s0ab-causal-route-confluence-v0ab",
+ "contrasts": {
+  "attempts": 16,
+  "class_counts": {
+   "chain": 7,
+   "collision": 4,
+   "diffdelays": 9,
+   "fanout": 8,
+   "multits": 6,
+   "parallel": 3
+  },
+  "compiler_rejects": 0,
+  "count": 16,
+  "excluded_y_manifests": 48
+ },
+ "decision": "HOLD",
+ "differential": {
+  "all_confluent": true,
+  "all_match_frozen": true,
+  "all_source_audited": true,
+  "all_t_accept": true,
+  "audit_candidate_steps": [
+   0
+  ],
+  "classification": "EDGE_REVERSAL_EQUIVALENT_ON_TESTED_DOMAIN",
+  "divergences": [],
+  "raw_ledger_identical_count": 12
+ },
+ "exit_code": 4,
+ "fresh_processes": {
+  "canonical_output_identical": true,
+  "count": 4,
+  "seeds": [
+   17,
+   631
+  ],
+  "units": [
+   1,
+   7
+  ]
+ },
+ "limitations": [
+  "EDGE_REVERSAL_EQUIVALENT_ON_TESTED_DOMAIN is bounded to the 16 declared seed-20261102 compiler-admitted contrasts x 4 enumeration variants; it is NOT a universal proof and the mutant stays explicitly classified, not killed.",
+  "The AB1 auditor is source-bound lineage audit, not a semantic re-execution; T verify_certificate remains a separate gate (T alone ACCEPTs a forged premature route parent; the auditor rejects it pre-step with 0 microsteps).",
+  "All native claims NOT_PROVEN; HOLD preserved; C0-C5 reserved to independent human peer review."
+ ],
+ "native_tests_executed": 0,
+ "negatives": {
+  "all_candidate_steps_zero": true,
+  "all_rejected_by_auditor": true,
+  "codes": {
+   "drop_parallel_route": "BATCH_PARENT_UNKNOWN",
+   "duplicate_route": "ROUTE_BIJECTION_MISMATCH",
+   "forged_emission_parent": "ROUTE_BIJECTION_MISMATCH",
+   "premature_route": "ROUTE_PARENT_NOT_EMISSION",
+   "terminal_with_outgoing": "TERMINAL_MISMATCH",
+   "wrong_delay_ts": "BATCH_EVENT_TS_NODE_MISMATCH",
+   "wrong_dst_channel": "BATCH_CHANNEL_MISMATCH",
+   "wrong_edge_index": "ROUTE_BIJECTION_MISMATCH"
+  },
+  "count": 8,
+  "t_accepts_premature_route": "ACCEPT"
+ },
+ "owned_modules_imported": false,
+ "parent_aa_branch_head": "5970fd724acd9c4f556ef70e1244122b976ee872",
+ "parent_aa_witness_sha256": "6c73d4b3c77e628eefabc295220817ffc4ce66595a9c3ee5565b05209fa87015",
+ "pr": 52,
+ "pure_tests": {
+  "failed": 0,
+  "passed": 8,
+  "returncode": 0
+ },
+ "research_only": true,
+ "resume": {
+  "all_byte_exact": true,
+  "all_resume_equal": true,
+  "all_resumed_audited": true,
+  "count": 3
+ },
+ "run_id": "20261101T171647Z-c911056154dd88ef",
+ "schema": "spk-isa-s0ab-route-confluence-witness/v0ab",
+ "seed": 20261102,
+ "source_pins": {
+  "spk/event.py": "614b14a494e66b784991a2abf002764fb6b69800208b0bf569ca4426c826c934",
+  "spk_compiler/compilation_manifest_v0.py": "921d321d243dea8802001d52198fd234113d49a1f2ebac759c65abed1b62f88a",
+  "spk_compiler/compile_pipeline_v0.py": "81aebc3b08776b7a5e4d1cd42257298048533d08eaf898cc436c9dc974479366",
+  "spk_compiler/network_ir_v0.py": "0425a191cc3ecc3df76fe13dac99009cdceccdbc389789bf1967f567b5309460",
+  "spk_compiler/pe_admission_v0.py": "ccc76a35f908bd9fbdc8d3dfc23966b4e4109db838e05143b4383a23e437933c",
+  "spk_compiler/resource_admission_v0.py": "864673d321b3da0b36d49cb669322808e617fb85657034b5df544aad48281420",
+  "spk_core/core_v0.py": "75fad3aac0b5ec0b22bfde2eee27f7782d70eb399a725721660b24067b1636b4",
+  "spk_core/ir_v0.py": "ca6b601e9d38d738edac29323b537fabc246ed800ec06da0e3d8dff39ad1d8e9",
+  "spk_core/isa.py": "7c64e0eb8f98080d97bfa3f0de1d2c5ea044c04dcfcfedc1c0f6491891ce9cb6",
+  "spk_core/runtime.py": "25b78b476c052c73b9e67687d8b9da24e043613bd8c732520a1a338799f403c8",
+  "spk_network/events_v0.py": "f632ad1f49e8c88a11aa42537f9085dc12232751395ca79586992b4c2cd71eee",
+  "spk_network/model_v0.py": "44462bddf14ac2c9d3e483474b25842abfa875f55c235610e91b15529db40615",
+  "spk_network/runtime_v0.py": "4e393a2fdb17e833f3b424f6a5938946d8f6f83ff1cf1ad0da61b3520bb820ce"
+ },
+ "spec": {
+  "git_blob_sha1": "5bb9c34e2a99bf633f3edd3c2fb1b6c3eba444b9",
+  "path": "docs/spk-isa-s0ab-causal-route-confluence-v0ab.md",
+  "sha256": "4983218e55eb6386c9b2a1b3922f25c5f57e5384afb3952cae6681e8bbf03987",
+  "verified": true
+ },
+ "status": "ROUTE_OCCURRENCE_CONFLUENCE_AUDITED_RESEARCH_ONLY_NATIVE_HOLD",
+ "task_issue": 53
+}
