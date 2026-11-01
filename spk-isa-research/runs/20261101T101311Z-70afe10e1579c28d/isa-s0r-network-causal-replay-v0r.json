@@ -1,0 +1,145 @@
+{
+ "admission_forgeries_rejected_pre_microstep": true,
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0
+ },
+ "base_branch": "research/isa-s0q-core-instruction-semantics-v0q",
+ "branch": "research/isa-s0r-compiler-network-causal-replay-v0r",
+ "compiler_tag_commit": "24b15156aa31967bd0079debcc97ccb6e3ac4325",
+ "corpus": {
+  "exception_matches": 1,
+  "fixtures": 10,
+  "per_fixture": {
+   "derived_event_multiplicity_3": {
+    "error": null,
+    "match": true,
+    "provenance": "DERIVED_VALIDATED",
+    "trace_len": 21
+   },
+   "derived_parallel_distinct_delays": {
+    "error": null,
+    "match": true,
+    "provenance": "DERIVED_VALIDATED",
+    "trace_len": 10
+   },
+   "derived_same_len_program_variant": {
+    "error": null,
+    "match": true,
+    "provenance": "DERIVED_VALIDATED",
+    "trace_len": 6
+   },
+   "derived_single_edge": {
+    "error": null,
+    "match": true,
+    "provenance": "DERIVED_VALIDATED",
+    "trace_len": 6
+   },
+   "derived_three_node_chain": {
+    "error": null,
+    "match": true,
+    "provenance": "DERIVED_VALIDATED",
+    "trace_len": 9
+   },
+   "original_pinned_c3": {
+    "error": null,
+    "match": true,
+    "provenance": "ORIGINAL_PINNED_C3",
+    "trace_len": 7
+   },
+   "r_fanin_two_sources": {
+    "error": null,
+    "match": true,
+    "provenance": "DERIVED_COMPILER_ACCEPTED",
+    "trace_len": 9
+   },
+   "r_fanout_terminal": {
+    "error": null,
+    "match": true,
+    "provenance": "DERIVED_COMPILER_ACCEPTED",
+    "trace_len": 10
+   },
+   "r_feedback_loop": {
+    "error": "NetworkExecutionLimitV0",
+    "match": true,
+    "provenance": "DERIVED_COMPILER_ACCEPTED",
+    "trace_len": 0
+   },
+   "r_parallel_triple": {
+    "error": null,
+    "match": true,
+    "provenance": "DERIVED_COMPILER_ACCEPTED",
+    "trace_len": 8
+   }
+  },
+  "value_matches": 9
+ },
+ "decision": "HOLD",
+ "exit_code": 4,
+ "fresh_processes": {
+  "canonical_output_identical": true,
+  "count": 4,
+  "seeds": [
+   17,
+   631
+  ],
+  "units": [
+   1,
+   7
+  ]
+ },
+ "limitations": [
+  "Replay correspondence proved on the declared 10-fixture corpus only.",
+  "Trace hop IDs are local synthetic, not native receipts or source identity.",
+  "Feedback fixture is limit-bounded (NetworkExecutionLimitV0), not a termination proof.",
+  "All native claims NOT_PROVEN; HOLD preserved."
+ ],
+ "mutant_survivors": [],
+ "native_tests_executed": 0,
+ "owned_modules_imported": false,
+ "parent_q_branch_head": "cc0baefeb540d441c89da104716e795cb748826e",
+ "parent_q_witness_sha256": "eae541069be169cd9a44317f1b4f1f0f154022d56700130ef9566cc7f2f9b253",
+ "pr": 32,
+ "pure_tests": {
+  "failed": 0,
+  "passed": 14,
+  "returncode": 0
+ },
+ "research_only": true,
+ "run_id": "20261101T101311Z-70afe10e1579c28d",
+ "scheduler_mutants_killed": [
+  "dedup_parallel_edges",
+  "dedup_batch_channels",
+  "routed_as_terminal",
+  "ignore_delay",
+  "zero_delay",
+  "drop_fanout"
+ ],
+ "schema": "spk-isa-s0r-network-causal-replay-witness/v0r",
+ "source_pins": {
+  "spk/event.py": "614b14a494e66b784991a2abf002764fb6b69800208b0bf569ca4426c826c934",
+  "spk_compiler/compilation_manifest_v0.py": "921d321d243dea8802001d52198fd234113d49a1f2ebac759c65abed1b62f88a",
+  "spk_compiler/compile_pipeline_v0.py": "81aebc3b08776b7a5e4d1cd42257298048533d08eaf898cc436c9dc974479366",
+  "spk_compiler/network_ir_v0.py": "0425a191cc3ecc3df76fe13dac99009cdceccdbc389789bf1967f567b5309460",
+  "spk_compiler/pe_admission_v0.py": "ccc76a35f908bd9fbdc8d3dfc23966b4e4109db838e05143b4383a23e437933c",
+  "spk_compiler/resource_admission_v0.py": "864673d321b3da0b36d49cb669322808e617fb85657034b5df544aad48281420",
+  "spk_core/core_v0.py": "75fad3aac0b5ec0b22bfde2eee27f7782d70eb399a725721660b24067b1636b4",
+  "spk_core/ir_v0.py": "ca6b601e9d38d738edac29323b537fabc246ed800ec06da0e3d8dff39ad1d8e9",
+  "spk_core/isa.py": "7c64e0eb8f98080d97bfa3f0de1d2c5ea044c04dcfcfedc1c0f6491891ce9cb6",
+  "spk_core/runtime.py": "25b78b476c052c73b9e67687d8b9da24e043613bd8c732520a1a338799f403c8",
+  "spk_network/events_v0.py": "f632ad1f49e8c88a11aa42537f9085dc12232751395ca79586992b4c2cd71eee",
+  "spk_network/model_v0.py": "44462bddf14ac2c9d3e483474b25842abfa875f55c235610e91b15529db40615",
+  "spk_network/runtime_v0.py": "4e393a2fdb17e833f3b424f6a5938946d8f6f83ff1cf1ad0da61b3520bb820ce"
+ },
+ "spec": {
+  "git_blob_sha1": "5e8521fd9550e3bd7baeb33e06f529706f484302",
+  "path": "docs/spk-isa-s0r-compiler-network-causal-replay-v0r.md",
+  "sha256": "2c758154a90bf732f796102427b126a6db741d617c8eb2a54343958bf9a3f114",
+  "verified": true
+ },
+ "status": "CAUSAL_REPLAY_READY_ATTESTED_DIFFERENTIAL_NATIVE_HOLD",
+ "task_issue": 33
+}
