@@ -1,0 +1,158 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0
+ },
+ "base_branch": "research/isa-s0s-causal-ledger-admission-limit-errata-v0s",
+ "branch": "research/isa-s0t-independent-proof-ledger-verifier-v0t",
+ "corpus": {
+  "certificates_accepted": 10,
+  "fixtures": 10,
+  "per_fixture": {
+   "derived_event_multiplicity_3": {
+    "code": null,
+    "ledger_sha256": "090e2f9d048b31dd5ddb235525fbb9dae5cdb271bfc1fd699d8b0f3363f77394",
+    "provenance": "DERIVED_VALIDATED",
+    "verdict": "ACCEPT"
+   },
+   "derived_parallel_distinct_delays": {
+    "code": null,
+    "ledger_sha256": "b59015dc7f80e918210c276f430f8cda541253d7095e5288e5ea54f751293d33",
+    "provenance": "DERIVED_VALIDATED",
+    "verdict": "ACCEPT"
+   },
+   "derived_same_len_program_variant": {
+    "code": null,
+    "ledger_sha256": "aa4f626eb85ec0c571709924af56c6ceb198eeb85499f203fcb57a4954c754f7",
+    "provenance": "DERIVED_VALIDATED",
+    "verdict": "ACCEPT"
+   },
+   "derived_single_edge": {
+    "code": null,
+    "ledger_sha256": "2d3658d9eaa10040e77c611c36a444e9d8e8dbd0cc2bb90af39d46541bc4aa7f",
+    "provenance": "DERIVED_VALIDATED",
+    "verdict": "ACCEPT"
+   },
+   "derived_three_node_chain": {
+    "code": null,
+    "ledger_sha256": "54135699d0515746b038d67ae83edc570752c0e2abec348f39a3ce79e3a9e5e8",
+    "provenance": "DERIVED_VALIDATED",
+    "verdict": "ACCEPT"
+   },
+   "original_pinned_c3": {
+    "code": null,
+    "ledger_sha256": "93b63b0fadd70e79008d02a57a316f143e3ff4106f443745dfce9c823f860d24",
+    "provenance": "ORIGINAL_PINNED_C3",
+    "verdict": "ACCEPT"
+   },
+   "r_fanin_two_sources": {
+    "code": null,
+    "ledger_sha256": "4658fd6a6cfd731d0ae418fbaa69be99f8493b9346b7e52f6de2411fdd3cbea2",
+    "provenance": "DERIVED_COMPILER_ACCEPTED",
+    "verdict": "ACCEPT"
+   },
+   "r_fanout_terminal": {
+    "code": null,
+    "ledger_sha256": "a5dee0d63e69e95901af496ae8730c5d68e736f2a8c03c4d4adbbf5f592e25df",
+    "provenance": "DERIVED_COMPILER_ACCEPTED",
+    "verdict": "ACCEPT"
+   },
+   "r_feedback_loop": {
+    "code": null,
+    "ledger_sha256": "788675c29a41e7a56974468c7e666402560468cff928e28589a2d768a9136e63",
+    "provenance": "DERIVED_COMPILER_ACCEPTED",
+    "verdict": "ACCEPT"
+   },
+   "r_parallel_triple": {
+    "code": null,
+    "ledger_sha256": "e14217ced1792871127e39f37cb8c6e8e8f7339c4383e558a401ac3b854c10b6",
+    "provenance": "DERIVED_COMPILER_ACCEPTED",
+    "verdict": "ACCEPT"
+   }
+  }
+ },
+ "decision": "HOLD",
+ "exit_code": 4,
+ "fresh_processes": {
+  "canonical_output_identical": true,
+  "count": 4,
+  "seeds": [
+   17,
+   631
+  ],
+  "units": [
+   1,
+   7
+  ]
+ },
+ "limitations": [
+  "Verifier assurance on the declared 10-fixture corpus only.",
+  "Certificates are research lineage, not signed/native receipts.",
+  "S audit_ledger gaps are documented errata; S witness/history unchanged.",
+  "All native claims NOT_PROVEN; HOLD preserved."
+ ],
+ "native_tests_executed": 0,
+ "owned_modules_imported": false,
+ "parent_s_branch_head": "b152ecd8e3317ae576a3f4a943486ad43488e9f9",
+ "parent_s_witness_sha256": "76193b5275e11b3d3c476b0848cb7a0127421b07d5fad7d8f4d513e2fd82d0de",
+ "pr": 36,
+ "pure_tests": {
+  "failed": 0,
+  "passed": 17,
+  "returncode": 0
+ },
+ "research_only": true,
+ "run_id": "20261101T104026Z-1bbb0fba5feb00c6",
+ "schema": "spk-isa-s0t-ledger-verifier-witness/v0t",
+ "source_pins": {
+  "spk/event.py": "614b14a494e66b784991a2abf002764fb6b69800208b0bf569ca4426c826c934",
+  "spk_compiler/compilation_manifest_v0.py": "921d321d243dea8802001d52198fd234113d49a1f2ebac759c65abed1b62f88a",
+  "spk_compiler/compile_pipeline_v0.py": "81aebc3b08776b7a5e4d1cd42257298048533d08eaf898cc436c9dc974479366",
+  "spk_compiler/network_ir_v0.py": "0425a191cc3ecc3df76fe13dac99009cdceccdbc389789bf1967f567b5309460",
+  "spk_compiler/pe_admission_v0.py": "ccc76a35f908bd9fbdc8d3dfc23966b4e4109db838e05143b4383a23e437933c",
+  "spk_compiler/resource_admission_v0.py": "864673d321b3da0b36d49cb669322808e617fb85657034b5df544aad48281420",
+  "spk_core/core_v0.py": "75fad3aac0b5ec0b22bfde2eee27f7782d70eb399a725721660b24067b1636b4",
+  "spk_core/ir_v0.py": "ca6b601e9d38d738edac29323b537fabc246ed800ec06da0e3d8dff39ad1d8e9",
+  "spk_core/isa.py": "7c64e0eb8f98080d97bfa3f0de1d2c5ea044c04dcfcfedc1c0f6491891ce9cb6",
+  "spk_core/runtime.py": "25b78b476c052c73b9e67687d8b9da24e043613bd8c732520a1a338799f403c8",
+  "spk_network/events_v0.py": "f632ad1f49e8c88a11aa42537f9085dc12232751395ca79586992b4c2cd71eee",
+  "spk_network/model_v0.py": "44462bddf14ac2c9d3e483474b25842abfa875f55c235610e91b15529db40615",
+  "spk_network/runtime_v0.py": "4e393a2fdb17e833f3b424f6a5938946d8f6f83ff1cf1ad0da61b3520bb820ce"
+ },
+ "spec": {
+  "git_blob_sha1": "b02577b3359e9c61224772eeac7e0374f3646cbb",
+  "path": "docs/spk-isa-s0t-independent-ledger-verification-v0t.md",
+  "sha256": "0be9b6516cf859a2e270367d3254bafd32a18b4502398c4d4c933739ab35abef",
+  "verified": true
+ },
+ "status": "LEDGER_VERIFIER_READY_INDEPENDENT_CLOSED_SCHEMA_NATIVE_HOLD",
+ "t1_errata": {
+  "counters_states_not_checked": "GAP_CONFIRMED",
+  "manifest_digest_not_bound": "GAP_CONFIRMED",
+  "parent_kind_chain_not_checked": "GAP_CONFIRMED",
+  "route_edge_content_not_compared": "GAP_CONFIRMED (S audit_ledger accepts content-forged routes)",
+  "s_history_unchanged": true,
+  "terminal_multiset_not_audited": "GAP_CONFIRMED"
+ },
+ "task_issue": 37,
+ "verifier_negatives": [
+  "wrong_valid_edge",
+  "drop_parallel_route",
+  "forged_terminal",
+  "forged_manifest",
+  "forged_counters",
+  "forged_states",
+  "orphan_route_child",
+  "emission_parent_wrong",
+  "batch_channel_swap",
+  "duplicate_json_key",
+  "extra_field",
+  "noncanonical",
+  "complete_with_error",
+  "emissions_aggregate"
+ ],
+ "verifier_survivors": []
+}
