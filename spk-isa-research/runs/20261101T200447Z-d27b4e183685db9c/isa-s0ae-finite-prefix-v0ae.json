@@ -1,0 +1,187 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0
+ },
+ "base_branch": "research/isa-s0ad-bounded-feedback-temporal-causality-v0ad",
+ "branch": "research/isa-s0ae-feedback-prefix-budget-continuation-v0ae",
+ "budgets": [
+  [
+   12,
+   120
+  ],
+  [
+   24,
+   240
+  ],
+  [
+   48,
+   480
+  ]
+ ],
+ "cap_rebind": "AE_RESUME_CAP_REBIND_UNSUPPORTED — AA session API stores caps in the attested snapshot; continuation proven via fresh original-source reruns with increasing budgets and prefix conformance, never by reviving a cutoff session",
+ "controls": {
+  "boundary": {
+   "detail": [
+    {
+     "complete": false,
+     "error": "NetworkExecutionLimitV0: network exceeded max_batches=1",
+     "max_batches": 1
+    },
+    {
+     "complete": true,
+     "error": null,
+     "max_batches": 2
+    },
+    {
+     "complete": true,
+     "error": null,
+     "max_batches": 3
+    }
+   ],
+   "exact_boundary": true,
+   "full_pb": 2,
+   "manifest": "b6bb3e7a759f7fc5"
+  },
+  "empty_ledger": {
+   "complete": true,
+   "manifest": "3b01d77f048e163f",
+   "pb": 0,
+   "rows": 0,
+   "t_code": "ROWS_SHAPE",
+   "t_verdict": "REJECT"
+  },
+  "raw_differ_causal_agree": [
+   {
+    "budget_mb": 12,
+    "manifest": "0beed794c8088198",
+    "normalized_identical": true,
+    "raw_identical": false
+   },
+   {
+    "budget_mb": 12,
+    "manifest": "901a36b469c075cd",
+    "normalized_identical": true,
+    "raw_identical": false
+   }
+  ],
+  "same_observables_different_pending": [
+   {
+    "manifest": "0beed794c8088198",
+    "observables_equal": true,
+    "pending_count": {
+     "perm": 2,
+     "rr": 2
+    },
+    "pending_hash_equal_across_schedules": true,
+    "swap_detected": true
+   },
+   {
+    "manifest": "ffcbad4d15bdf297",
+    "observables_equal": true,
+    "pending_count": {
+     "perm": 2,
+     "rr": 2
+    },
+    "pending_hash_equal_across_schedules": true,
+    "swap_detected": true
+   }
+  ]
+ },
+ "corpus": {
+  "ad_cutoff_seeds": 10,
+  "ad_regression_pool": 24,
+  "new_admitted": 8,
+  "new_attempts": 13,
+  "new_cutoff": 3,
+  "new_rejects": 5
+ },
+ "decision": "HOLD",
+ "exit_code": 4,
+ "faults": {
+  "all_detected": true,
+  "codes": {
+   "altered_consumed_counter": "CONSUMED_COUNTER_MISMATCH",
+   "cap_reset_on_resume": "SNAP_DIGEST_MISMATCH",
+   "changed_node_state": "STATE_DIVERGENCE_DETECTED",
+   "drop_pending_route": "BATCH_PARENT_UNKNOWN",
+   "duplicate_pending_route": "ROUTE_BIJECTION_MISMATCH",
+   "early_delivery": "BATCH_EVENT_TS_NODE_MISMATCH",
+   "forged_snapshot_pin": "SNAP_DIGEST_MISMATCH",
+   "late_delivery": "BATCH_EVENT_TS_NODE_MISMATCH",
+   "wrong_parent": "DUPLICATE_ROUTED_EVENT",
+   "wrong_source_edge": "ROUTE_BIJECTION_MISMATCH"
+  },
+  "count": 10
+ },
+ "fresh_processes": {
+  "canonical_output_identical": true,
+  "count": 4,
+  "seeds": [
+   17,
+   631
+  ],
+  "units": [
+   1,
+   7
+  ]
+ },
+ "limitations": [
+  "Prefix conformance is proven only for the declared bounded corpus (10 AD cutoff seeds + 8 new feedback manifests) under budgets 12/24/48 batches; a cutoff is AE_CUTOFF_NO_TERMINATION_CLAIM, never termination.",
+  "Cap rebinding on a live session is unsupported by the existing session API; continuation is shown by fresh reruns + exact committed-row prefix checks.",
+  "Zero-delay edges remain out of domain (frozen model rejects them).",
+  "All native claims NOT_PROVEN; HOLD preserved; C0-C5 reserved to independent human peer review."
+ ],
+ "native_tests_executed": 0,
+ "owned_modules_imported": false,
+ "parent_ad_branch_head": "fc0778a3158065b6eb5153d608f2ed96aa855cd9",
+ "parent_ad_witness_sha256": "a073d4f9bfa1af3b2756b7170886568bc90afb5f893d125acf9cdff70f67b0ee",
+ "pr": 58,
+ "prefix": {
+  "all_prefix_conformant": true,
+  "cases": 12,
+  "checkpoint_pairs_audited": 72,
+  "nonempty_cutoff_prefixes": 24,
+  "strict_extensions": 24
+ },
+ "pure_tests": {
+  "failed": 0,
+  "passed": 9,
+  "returncode": 0
+ },
+ "research_only": true,
+ "resumes": {
+  "all_fresh_resume_equal": true,
+  "count": 8,
+  "nonempty_slices": 8
+ },
+ "run_id": "20261101T200447Z-d27b4e183685db9c",
+ "schema": "spk-isa-s0ae-finite-prefix-witness/v0ae",
+ "seed": 20261105,
+ "source_pins": {
+  "spk/event.py": "614b14a494e66b784991a2abf002764fb6b69800208b0bf569ca4426c826c934",
+  "spk_compiler/compilation_manifest_v0.py": "921d321d243dea8802001d52198fd234113d49a1f2ebac759c65abed1b62f88a",
+  "spk_compiler/compile_pipeline_v0.py": "81aebc3b08776b7a5e4d1cd42257298048533d08eaf898cc436c9dc974479366",
+  "spk_compiler/network_ir_v0.py": "0425a191cc3ecc3df76fe13dac99009cdceccdbc389789bf1967f567b5309460",
+  "spk_compiler/pe_admission_v0.py": "ccc76a35f908bd9fbdc8d3dfc23966b4e4109db838e05143b4383a23e437933c",
+  "spk_compiler/resource_admission_v0.py": "864673d321b3da0b36d49cb669322808e617fb85657034b5df544aad48281420",
+  "spk_core/core_v0.py": "75fad3aac0b5ec0b22bfde2eee27f7782d70eb399a725721660b24067b1636b4",
+  "spk_core/ir_v0.py": "ca6b601e9d38d738edac29323b537fabc246ed800ec06da0e3d8dff39ad1d8e9",
+  "spk_core/isa.py": "7c64e0eb8f98080d97bfa3f0de1d2c5ea044c04dcfcfedc1c0f6491891ce9cb6",
+  "spk_core/runtime.py": "25b78b476c052c73b9e67687d8b9da24e043613bd8c732520a1a338799f403c8",
+  "spk_network/events_v0.py": "f632ad1f49e8c88a11aa42537f9085dc12232751395ca79586992b4c2cd71eee",
+  "spk_network/model_v0.py": "44462bddf14ac2c9d3e483474b25842abfa875f55c235610e91b15529db40615",
+  "spk_network/runtime_v0.py": "4e393a2fdb17e833f3b424f6a5938946d8f6f83ff1cf1ad0da61b3520bb820ce"
+ },
+ "spec": {
+  "git_blob_sha1": "dcd52e8c269bd9a7a6bdeeeca4ff8732ef7a774d",
+  "path": "docs/spk-isa-s0ae-feedback-prefix-budget-continuation-v0ae.md",
+  "sha256": "0cf54fdd4f17bf5e118b0d277fd232240d5f20fbcbd715c58eabfb5175b0391b",
+  "verified": true
+ },
+ "status": "FEEDBACK_PREFIX_CONFORMANCE_READY_RESEARCH_ONLY_NATIVE_HOLD",
+ "task_issue": 59
+}
