@@ -1,0 +1,106 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0
+ },
+ "base_branch": "research/isa-s0v-image-network-causal-replay-v0v",
+ "boundary": {
+  "all_match": true,
+  "cases": 7
+ },
+ "branch": "research/isa-s0w-resumable-image-network-session-v0w",
+ "corpus": {
+  "cut_resume_match": true,
+  "distinct_node_image_shas": [
+   "21da0c543899ce27ac36cfa34f0be247adedff10888dd33f9e324d5168a65c7a",
+   "80aa9a9c975d748e3beb92eca05be7c02d25bd27dabe8b5d9d04e143d4c3f67c",
+   "b0536377132efc184f91c02967cc9172fe6e79d0e53c5ca5b898961ca05d8dd9",
+   "b15f0e82ccb52937627b698b2ae73490c9421e2d3c83e58cffa8c9276315ad1d",
+   "dc1c1951586f932e8c57b46622d191ee236541fee73b64e630b61383fa062bd8"
+  ],
+  "error_parity_cases": 1,
+  "fixtures_total": 17,
+  "limit_prefix_cases": 2,
+  "oracle_match": true,
+  "pause_resume_transitions": 47,
+  "r_fixtures": 10,
+  "t_certificates_accept": 16,
+  "t_certificates_total": 16,
+  "v_cert_match": true,
+  "v_contrasts": 7,
+  "w_decay_contrast": 1
+ },
+ "decision": "HOLD",
+ "exit_code": 4,
+ "fresh_process_restore": {
+  "all_ok": true,
+  "count": 3
+ },
+ "fresh_processes": {
+  "canonical_output_identical": true,
+  "count": 4,
+  "seeds": [
+   17,
+   631
+  ],
+  "units": [
+   1,
+   7
+  ]
+ },
+ "limitations": [
+  "Pure research offline resumability on the declared finite corpus (10 R + 6 V + 1 W contrasts); not production persistence or native execution.",
+  "Restore uses replay-from-genesis attestation, intentionally O(prefix); digest check is corruption detection, NOT authentication — forged self-rehashed snapshots fail replay attestation.",
+  "v_single_node_overflow remains an explicit nonresumable OverflowError parity case, not a certificate.",
+  "No partial failed batch is ever checkpointed (NOT_AT_BATCH_BOUNDARY).",
+  "All native claims NOT_PROVEN; HOLD preserved; C0-C5 reserved to independent human peer review."
+ ],
+ "native_tests_executed": 0,
+ "negative_controls": {
+  "all_rejected": true,
+  "count": 15
+ },
+ "owned_modules_imported": false,
+ "parent_v_branch_head": "0babc84a3dafe550f38f9ecd255b0f5f174a88f7",
+ "parent_v_witness_sha256": "a0e6ac4312e22c7d245682b5f42bcdfbeb4ee0f638ba2205fc176aa32c12bd4f",
+ "pr": 42,
+ "pure_tests": {
+  "failed": 0,
+  "passed": 10,
+  "returncode": 0
+ },
+ "research_only": true,
+ "run_id": "20261101T131543Z-cd24cdd7d32fdaf2",
+ "schema": "spk-isa-s0w-resumable-session-witness/v0w",
+ "source_pins": {
+  "spk/event.py": "614b14a494e66b784991a2abf002764fb6b69800208b0bf569ca4426c826c934",
+  "spk_compiler/compilation_manifest_v0.py": "921d321d243dea8802001d52198fd234113d49a1f2ebac759c65abed1b62f88a",
+  "spk_compiler/compile_pipeline_v0.py": "81aebc3b08776b7a5e4d1cd42257298048533d08eaf898cc436c9dc974479366",
+  "spk_compiler/network_ir_v0.py": "0425a191cc3ecc3df76fe13dac99009cdceccdbc389789bf1967f567b5309460",
+  "spk_compiler/pe_admission_v0.py": "ccc76a35f908bd9fbdc8d3dfc23966b4e4109db838e05143b4383a23e437933c",
+  "spk_compiler/resource_admission_v0.py": "864673d321b3da0b36d49cb669322808e617fb85657034b5df544aad48281420",
+  "spk_core/core_v0.py": "75fad3aac0b5ec0b22bfde2eee27f7782d70eb399a725721660b24067b1636b4",
+  "spk_core/ir_v0.py": "ca6b601e9d38d738edac29323b537fabc246ed800ec06da0e3d8dff39ad1d8e9",
+  "spk_core/isa.py": "7c64e0eb8f98080d97bfa3f0de1d2c5ea044c04dcfcfedc1c0f6491891ce9cb6",
+  "spk_core/runtime.py": "25b78b476c052c73b9e67687d8b9da24e043613bd8c732520a1a338799f403c8",
+  "spk_network/events_v0.py": "f632ad1f49e8c88a11aa42537f9085dc12232751395ca79586992b4c2cd71eee",
+  "spk_network/model_v0.py": "44462bddf14ac2c9d3e483474b25842abfa875f55c235610e91b15529db40615",
+  "spk_network/runtime_v0.py": "4e393a2fdb17e833f3b424f6a5938946d8f6f83ff1cf1ad0da61b3520bb820ce"
+ },
+ "spec": {
+  "git_blob_sha1": "b165a15f276d48faa30aae00bf0cf65689501069",
+  "path": "docs/spk-isa-s0w-resumable-image-network-session-v0w.md",
+  "sha256": "6d30a9f78e8110df1d4d916cac2dcad846950dadcabef56a27d4e2b500b243e5",
+  "verified": true
+ },
+ "status": "RESUMABLE_IMAGE_NETWORK_READY_RESEARCH_ONLY_NATIVE_HOLD",
+ "task_issue": 43,
+ "transition_mutants": {
+  "count": 8,
+  "killed": 8,
+  "survivors": []
+ }
+}
