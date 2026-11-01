@@ -1,0 +1,100 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0
+ },
+ "base_branch": "research/isa-s0z-pe-microstep-reference-machine-v0z",
+ "boundary": {
+  "all_match": true,
+  "pairs": 3
+ },
+ "branch": "research/isa-s0aa-interleaved-pe-causal-isolation-v0aa",
+ "decision": "HOLD",
+ "differential": {
+  "all_match": true,
+  "all_schedules_equivalent": true,
+  "cases": 24,
+  "distinct_trace_digests": 47,
+  "max_active_overall": 3,
+  "multi_pe_cases": 14,
+  "same_ts_cases": 14,
+  "t_accept": 72,
+  "t_total": 72
+ },
+ "exit_code": 4,
+ "fresh_processes": {
+  "canonical_output_identical": true,
+  "count": 4,
+  "seeds": [
+   17,
+   631
+  ],
+  "units": [
+   1,
+   7
+  ]
+ },
+ "limitations": [
+  "Interleaving is a pure research schedule over ONE abstract PE microstep machine per node; NOT physical parallelism, hardware threads, clocks or timing.",
+  "Conformance is on the declared bounded corpus (24 seed-fixed admitted Y scenarios x 3 schedules); not universal.",
+  "edge_reversal mutant survived: route order within one emission is not observable in the compared surface (witnessed, not hidden).",
+  "All native claims NOT_PROVEN; HOLD preserved; C0-C5 reserved to independent human peer review."
+ ],
+ "mutants": {
+  "count": 8,
+  "killed": 7,
+  "survivors": [
+   "edge_reversal"
+  ]
+ },
+ "native_tests_executed": 0,
+ "negatives": {
+  "all_rejected_pre_step": true,
+  "count": 7
+ },
+ "owned_modules_imported": false,
+ "parent_z_branch_head": "8663d3a6e64ebfe04b2f148d73243826670a0709",
+ "parent_z_witness_sha256": "97dfc19d0def6a21c5e34c8f593a792e5da0b130e1167fa98eaab782c2df7db6",
+ "pr": 50,
+ "pure_tests": {
+  "failed": 0,
+  "passed": 9,
+  "returncode": 0
+ },
+ "research_only": true,
+ "resume": {
+  "all_byte_exact": true,
+  "all_resume_equal": true,
+  "count": 6,
+  "multi_active_snapshots": 6
+ },
+ "run_id": "20261101T162648Z-e97667e35913d502",
+ "schema": "spk-isa-s0aa-interleaved-pe-witness/v0aa",
+ "seed": 20261101,
+ "source_pins": {
+  "spk/event.py": "614b14a494e66b784991a2abf002764fb6b69800208b0bf569ca4426c826c934",
+  "spk_compiler/compilation_manifest_v0.py": "921d321d243dea8802001d52198fd234113d49a1f2ebac759c65abed1b62f88a",
+  "spk_compiler/compile_pipeline_v0.py": "81aebc3b08776b7a5e4d1cd42257298048533d08eaf898cc436c9dc974479366",
+  "spk_compiler/network_ir_v0.py": "0425a191cc3ecc3df76fe13dac99009cdceccdbc389789bf1967f567b5309460",
+  "spk_compiler/pe_admission_v0.py": "ccc76a35f908bd9fbdc8d3dfc23966b4e4109db838e05143b4383a23e437933c",
+  "spk_compiler/resource_admission_v0.py": "864673d321b3da0b36d49cb669322808e617fb85657034b5df544aad48281420",
+  "spk_core/core_v0.py": "75fad3aac0b5ec0b22bfde2eee27f7782d70eb399a725721660b24067b1636b4",
+  "spk_core/ir_v0.py": "ca6b601e9d38d738edac29323b537fabc246ed800ec06da0e3d8dff39ad1d8e9",
+  "spk_core/isa.py": "7c64e0eb8f98080d97bfa3f0de1d2c5ea044c04dcfcfedc1c0f6491891ce9cb6",
+  "spk_core/runtime.py": "25b78b476c052c73b9e67687d8b9da24e043613bd8c732520a1a338799f403c8",
+  "spk_network/events_v0.py": "f632ad1f49e8c88a11aa42537f9085dc12232751395ca79586992b4c2cd71eee",
+  "spk_network/model_v0.py": "44462bddf14ac2c9d3e483474b25842abfa875f55c235610e91b15529db40615",
+  "spk_network/runtime_v0.py": "4e393a2fdb17e833f3b424f6a5938946d8f6f83ff1cf1ad0da61b3520bb820ce"
+ },
+ "spec": {
+  "git_blob_sha1": "f05c859f1b76ca17c6118d03e6d9918abd321718",
+  "path": "docs/spk-isa-s0aa-interleaved-pe-causal-isolation-v0aa.md",
+  "sha256": "7d593878c236b2e238c2a75ea8d838e50147ebd9e1c581ee4209a9dc7a63674a",
+  "verified": true
+ },
+ "status": "INTERLEAVED_PE_ISOLATION_READY_RESEARCH_ONLY_NATIVE_HOLD",
+ "task_issue": 51
+}
