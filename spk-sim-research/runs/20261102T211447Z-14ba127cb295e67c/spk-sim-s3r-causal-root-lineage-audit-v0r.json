@@ -1,0 +1,75 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0
+ },
+ "branch": "research/spk-sim-s3r-causal-root-lineage-audit-v0r",
+ "causal_boundary": "root sets reconstructed from S3q JS trace frames; legacy single-origin field is lossy on merged batches; NO_NATIVE_ROOT_PROVENANCE; not a native oracle",
+ "decision": "HOLD",
+ "exit_code": 4,
+ "fedora_seed": {
+  "lineage": {
+   "admitted": 96,
+   "canonical_sha256": "bc9a433eddb63f7dda9d3eefe2bb37a6d4da861cdac2945f3eb7fc1e0271c3d2",
+   "m4_merged": 7,
+   "m4_split": 0,
+   "multi_root_routed": 4680,
+   "mutants_rejected": 29
+  },
+  "node": "v22.23.1",
+  "policy": {
+   "admitted": 96,
+   "gap_closed": 1,
+   "mutants_rejected": 22
+  }
+ },
+ "four_fresh_processes_identical_canonical_sha256": true,
+ "native_tests_executed": 0,
+ "owned_modules_imported": false,
+ "parent_s3q_head": "cbed6e1988dd5d3564b185ffe602631adedaf7b4",
+ "pins": {
+  "all_verified": true,
+  "auditor_sha256": "a6b1d70eaaf6efadc2f8e28aa154ea48ab56e9c467e9a90a8833963166601240",
+  "lab_sha256": "1fc198986cf68ff918e58ae6548c0a34adb87274abe7ae4e3dbe559b5c324905",
+  "lineage_test_sha256": "1c3d5bdf096d0dbcaeefe7579a5727f74bf467d215a7bc46c2ebeb7ee056c0c3",
+  "parent_files_unchanged": {
+   "viewer/spk-sim-s3i-sandbox-engine-v0i.js": "56a70dadcd590abeb728765ff1e27b2481837fc6de7e6ed77f97ac9aa9aaade0",
+   "viewer/spk-sim-s3o-original-ingress-engine-v0o.js": "dd0019ce6440c6ddd8f46c9958b8220a14709a0ae7262e53ff314e3473093f24",
+   "viewer/spk-sim-s3p-nscale-engine-v0p.js": "12c4fb69918a8db6496eb3b728cd63082f327d9460ecaa2b212b84a0ade9c2c2",
+   "viewer/spk-sim-s3q-burst-engine-v0q.js": "85387cb5ca3ca388133eb73226cb4cfb76eeca540f92029f7feb56705af8f4ca"
+  },
+  "s3q_witness_sha256": "c9536acb52ec6c1f24817c06cc4646129c3ae7a6a44dafd379b9dfef93689b80",
+  "spec_blob": "81d8504f62bb2b7069cabe07ecfc7e24e481d736",
+  "spec_sha256_actual": "3c8984b006de6b8e63a62bbc7c0fe16a8006e6375ad5b6b64b8a33cc18c03964",
+  "spec_sha_note": "issue cited 48bcec10...; actual GitHub bytes hash to 3c8984b006de6b8e63a62bbc7c0fe16a8006e6375ad5b6b64b8a33cc18c03964; git blob matches pin 81d8504f62bb2b7069cabe07ecfc7e24e481d736"
+ },
+ "pr": 88,
+ "research_only": true,
+ "run_id": "20261102T211447Z-14ba127cb295e67c",
+ "schema": "spk-sim-s3r-causal-root-lineage-audit-witness/v0r",
+ "scientific_authority": "HOLD",
+ "scope_limits": [
+  "pure JS trace audit of S3q candidate; no native execution, no dataset rows/labels, no S3 closure, no S4",
+  "root ordinals are synthetic occurrence indices, never dataset contents"
+ ],
+ "status": "S3R_CAUSAL_ROOT_SET_TRACE_AUDIT_READY_HOLD",
+ "task_issue": 89,
+ "tests": {
+  "gui_harness": "16 real-click checks, 4 procs byte-identical",
+  "pytest_passed": 40,
+  "smoke_firefox_png_bytes": 107856
+ },
+ "ui_source_sha256": {
+  "search/spk_sim_s3r_gate_v0r.py": "85b899aec1bee784324e2198fbdd473eae96b67c8ea3484c750fca69176be042",
+  "tests/spk_sim_s3r_causal_lineage_v0r.test.cjs": "1c3d5bdf096d0dbcaeefe7579a5727f74bf467d215a7bc46c2ebeb7ee056c0c3",
+  "tests/spk_sim_s3r_gui_v0r.harness.cjs": "23ca552038dcf263a3559f1969940d8ad4d984d73aadce6d74d86c7af4f48538",
+  "tests/spk_sim_s3r_scheduler_policy_v0r.test.cjs": "3c1c87e75c96f247cf111cd3610c7980f7e609d0ce46119380e2dfd5c91abce5",
+  "tests/test_spk_sim_s3r_v0r.py": "f7fa325ea3ccdb8b09e3ca17cc4ee40705f52d02541e882abf2670b26cc8eb57",
+  "viewer/spk-sim-s3r-causal-lineage-audit-v0r.js": "a6b1d70eaaf6efadc2f8e28aa154ea48ab56e9c467e9a90a8833963166601240",
+  "viewer/spk-sim-s3r-lineage-lab-v0r.html": "1fc198986cf68ff918e58ae6548c0a34adb87274abe7ae4e3dbe559b5c324905",
+  "viewer/spk-sim-s3r-scheduler-policy-audit-v0r.js": "135edfba77e10a8d9e6cb5741e199f4f456c2d7d6d849564ec8c6372bf1db36a"
+ }
+}
