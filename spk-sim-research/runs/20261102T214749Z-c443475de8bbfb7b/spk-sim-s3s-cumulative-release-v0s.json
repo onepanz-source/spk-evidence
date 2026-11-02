@@ -1,0 +1,199 @@
+{
+ "S4_authorized": false,
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0
+ },
+ "branch": "research/spk-sim-s3s-cumulative-benchmark-release-v0s",
+ "criteria": {
+  "A_source_provenance": {
+   "export_anchor": true,
+   "parent_files_unchanged": true,
+   "prior_witnesses_verified": true
+  },
+  "B_two_dataset_rerun": {
+   "banknote_t1_sem_matches_s3o_witness": true,
+   "fresh_process_digest_equal": true,
+   "per_cohort": {
+    "banknote/t1": {
+     "complete": true,
+     "ie": 2771,
+     "items": 1372,
+     "pe": 5425,
+     "routes": 2654,
+     "sem": "fd674663faa6b9f72bc9ae13c67ece52aabd43bb207e95c7fa8ad1ae9c6350ba",
+     "to": 1327
+    },
+    "banknote/t2": {
+     "complete": true,
+     "ie": 2771,
+     "items": 1372,
+     "pe": 4799,
+     "routes": 2028,
+     "sem": "aef15359f6b23097acdc6ef4d4e120f5d857e71f99039e60fd531b7ee368d01d",
+     "to": 1014
+    },
+    "banknote/t3": {
+     "complete": true,
+     "ie": 2771,
+     "items": 1372,
+     "pe": 3501,
+     "routes": 730,
+     "sem": "0eef622afb97e4684afc79def2527d3d16b2e73ea4069a2c5c487dc38c393957",
+     "to": 365
+    },
+    "banknote/t4": {
+     "complete": true,
+     "ie": 2771,
+     "items": 1372,
+     "pe": 2901,
+     "routes": 130,
+     "sem": "8687efa124e8734ef77492635b87e21595be7769ace92aa40cafe15baf1b2ee0",
+     "to": 65
+    },
+    "occupancy/t1": {
+     "complete": true,
+     "ie": 15140,
+     "items": 20560,
+     "pe": 30716,
+     "routes": 15576,
+     "sem": "26fa5436aed87511cb668e431d8250fe7b82f114555aa5baabf5464af3d32afe",
+     "to": 7788
+    },
+    "occupancy/t2": {
+     "complete": true,
+     "ie": 15140,
+     "items": 20560,
+     "pe": 25842,
+     "routes": 10702,
+     "sem": "6b0261717ce6ac9072e3b1cb2047b6b28d26ec4d73d4816226308039351f4c52",
+     "to": 5351
+    },
+    "occupancy/t3": {
+     "complete": true,
+     "ie": 15140,
+     "items": 20560,
+     "pe": 19142,
+     "routes": 4002,
+     "sem": "9856e4be1b9415c495a890b7bad11f000a61ce4191980af41b8b47745a76639a",
+     "to": 2001
+    },
+    "occupancy/t4": {
+     "complete": true,
+     "ie": 15140,
+     "items": 20560,
+     "pe": 15140,
+     "routes": 0,
+     "sem": "a23103f1009edf30fbe0a7bd470cb7e04e16262932ebc547077671336521953d",
+     "to": 0
+    }
+   },
+   "release_digest": "2f80481d98f87465ad38209434f880b20be38c171d3b8ae88b2549a5927808dc",
+   "s3c_historical_oracle": {
+    "bad": 0,
+    "cmp": 204,
+    "id": 51
+   },
+   "total_candidate_runs": 87728
+  },
+  "C_replay_adversarial": {
+   "all_equal_uninterrupted": true,
+   "det_4_fresh_procs": true,
+   "pytest": 40,
+   "release_digest_4procs": "2e1768a618f06412449dd0b45832707ff71f02566abe0d4f46a2cae4af9e1c46",
+   "resume_strata": 12
+  },
+  "D_scaling_measurements": {
+   "host_js": {
+    "chain64_median_ms": 0.156571,
+    "chain64_p90_ms": 0.498497,
+    "fanin64_counteronly_median_ms": 0.121365,
+    "labels": [
+     "HOST_JS_ONLY",
+     "NO_HARDWARE_INFERENCE",
+     "TRACE_ENABLED"
+    ],
+    "node": "v22.23.1",
+    "note": "HOST_JS_ONLY; never hardware/PE/energy/network-backpressure",
+    "reps": 15,
+    "warmups": 5
+   },
+   "s1b_13_of_13_readonly": 13,
+   "s3p_matrix_bad": 0,
+   "s3q_fanin16": {
+    "cap1_deferrals": 105,
+    "cap1_last_tick": 18,
+    "cap1_terminals": 15,
+    "unbounded_terminals": 1
+   },
+   "s3r_m4": {
+    "merged_multiroot": 7,
+    "merged_terminals": 1,
+    "split_multiroot": 0,
+    "split_terminals": 4
+   }
+  },
+  "E_integration_security": {
+   "firefox_smoke_png_bytes": {
+    "s3o": 148508,
+    "s3r": 107856
+   },
+   "forbidden_scan_clean": true,
+   "no_row_leakage": true
+  }
+ },
+ "decision": "HOLD",
+ "engineering_gate": "PASS",
+ "exit_code": 4,
+ "native_tests_executed_this_gate": 0,
+ "new_file_sha256": {
+  "search/spk_sim_s3s_cumulative_gate_v0s.py": "2da03cfa2b079167f801a1076a261a9c4eb277b0d5602e760844ad53c8060e0f",
+  "tests/test_spk_sim_s3s_v0s.py": "80c536669f41bbebc6f9f9d0f4104881745e663a78e41c1105773fd884450406"
+ },
+ "owned_modules_imported": false,
+ "parent_s3r_head": "d3947922c5d54b98f191cacfa1c4c31ff6ccf86d",
+ "pins": {
+  "all_verified": true,
+  "anchored_export_sha256": "bb22d2870d28c15b2f9613fa3415060d3b4363f261b7390dc854ed038bc7f63c",
+  "parent_files_unchanged": {
+   "viewer/spk-sim-s3i-sandbox-engine-v0i.js": "56a70dadcd590abeb728765ff1e27b2481837fc6de7e6ed77f97ac9aa9aaade0",
+   "viewer/spk-sim-s3l-batch-engine-v0l.js": "e96a1ce8bc86e687ad8bc393ce4a9f4823af463722a985c101ba1694701d47ab",
+   "viewer/spk-sim-s3n-resumable-sweep-v0n.js": "ba6a2eaea45e2b49dfaed70a3626be50f92a8f0f84a977c441a13968f4150d24",
+   "viewer/spk-sim-s3o-dual-sweep-v0o.js": "49999b1e289728f9293f76b2398f0993220b160f23af92d5e5656c4fd9baf482",
+   "viewer/spk-sim-s3o-original-ingress-engine-v0o.js": "dd0019ce6440c6ddd8f46c9958b8220a14709a0ae7262e53ff314e3473093f24",
+   "viewer/spk-sim-s3p-nscale-benchmark-v0p.js": "be00d49b854ea777d1dc5f0e21c2e4dba8df6f2e5654c7cfdd10b2404779fdfe",
+   "viewer/spk-sim-s3p-nscale-engine-v0p.js": "12c4fb69918a8db6496eb3b728cd63082f327d9460ecaa2b212b84a0ade9c2c2",
+   "viewer/spk-sim-s3q-burst-engine-v0q.js": "85387cb5ca3ca388133eb73226cb4cfb76eeca540f92029f7feb56705af8f4ca",
+   "viewer/spk-sim-s3r-causal-lineage-audit-v0r.js": "a6b1d70eaaf6efadc2f8e28aa154ea48ab56e9c467e9a90a8833963166601240",
+   "viewer/spk-sim-s3r-scheduler-policy-audit-v0r.js": "135edfba77e10a8d9e6cb5741e199f4f456c2d7d6d849564ec8c6372bf1db36a"
+  },
+  "prior_witness_sha256": {
+   "s3n": "78059eb9272a052474b70951bc30240a79927ebef2aa980d058ff06efd0d4faf",
+   "s3o": "320161b35ef2fb0a379d57d66feadf5b74fae1fc0c686f0eed0b5334701c6760",
+   "s3p": "23d97da3199bfdfc7d9fee61dbfac5780688b8019ca7a89fbeb8ababe5b91687",
+   "s3q": "c9536acb52ec6c1f24817c06cc4646129c3ae7a6a44dafd379b9dfef93689b80",
+   "s3r": "3703a7502dd2319045e7fff6665ee677286351becce8d2ca5e7ca9c763788f87"
+  },
+  "s1b_sha256": "98e4a95506d2cf41cbb7b55f8a3099542000a56decb66e50c436efbdd070c43a",
+  "s3c_sha256": "c786dcca24f034667911170ba4dc2fd0cac077a4c9670a416e838f1b28ed7ec5",
+  "spec_blob": "d246be2b7cdd7da315503e38f169a75a428bc2d7",
+  "spec_sha256": "21144070dd2157be44cf31baaf0c309d32452c290f6cc4f545603fe343375587"
+ },
+ "pr": 90,
+ "research_only": true,
+ "roadmap_scope": "docs/spk-sim-development-roadmap.md Linea S S3 dataset/benchmark ONLY; NOT the S1..S5 compiler-runtime S3; no native authenticity or learning validation",
+ "run_id": "20261102T214749Z-c443475de8bbfb7b",
+ "s3_phase_complete": true,
+ "schema": "spk-sim-s3s-cumulative-release-witness/v0s",
+ "scientific_authority": "HOLD",
+ "scope_limits": [
+  "87,728 are JS candidate runs on source rows, NOT new native receipts; S3c 204 are historical read-only numeric comparisons",
+  "no UCI labels/accuracy/learning; no raw rows/per-row hashes uploaded; export stays local 0600",
+  "S3 phase complete = dataset-simulator roadmap only; S4 NOT authorized"
+ ],
+ "status": "S3S_TWO_UCI_CUMULATIVE_BENCHMARK_ENGINEERING_COMPLETE_HOLD",
+ "task_issue": 91
+}
