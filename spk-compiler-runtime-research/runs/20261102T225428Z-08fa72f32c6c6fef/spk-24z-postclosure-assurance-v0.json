@@ -1,0 +1,73 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "native_owner_authority": false,
+  "native_tests_executed": 0,
+  "no_S4_S5_promotion_from_S3": true,
+  "owned_modules_imported": false,
+  "owner_C0_C5_peer_review_needed": true
+ },
+ "branch": "research/spk-24z-original-s3-postclosure-assurance-v0",
+ "decision": "HOLD",
+ "engineering_gate": "PASS",
+ "exit_code": 4,
+ "limitations": [
+  "nonterminating cycle surfaces typed OracleLimitV0 (24Y_CYCLE_NOT_ADMITTED_BASELINE_CLASSIFICATION_OVERFLOW), never a 24t LIMIT_REACHED receipt",
+  "24x historical gate not rerun on 24z HEAD per policy; attested in clean detached worktree a76ebaa"
+ ],
+ "new_file_sha256": {
+  "search/spk_24z_postclosure_gate_v0.py": "c0055ebde7cba9026cd20878d1993f423fd5fa88ae08155a56e99cac96bb790b",
+  "tests/test_spk_24z_source_bound_v0.py": "062699340213d9613a5d9db6c8cea8f4519fdae4e43432b1aa42a74d06cdcaea"
+ },
+ "original_24y_witness": {
+  "cli_status": "24Z_HISTORICAL_24Y_BOUNDED_WITNESS_ACCEPTED_ONLY",
+  "evidence_commit": "136090e741137a44292e43205254457942c8b455",
+  "git_blob": "5c1af862314ae0a093210104df352662b582da37",
+  "sha256": "92f607b62da92c770c2da88b8c6e0a974ad2315e36f9031718355339ef34f529"
+ },
+ "parent_24y_head": "3f2bb524f3f141caaea54c1cef7911c6d008a748",
+ "pins": {
+  "all_verified": true,
+  "guard_sha256": "c381d01bf0637815d1464d6ec292c59d776e69af838d8f80deeb5bbdd508e160",
+  "seedtest_sha256": "aff944b39a77d71e60232e6053aa384baca8f4e5f3640bff8ae51f4fbb4a166f",
+  "spec_sha256": "3709414cd79e1846b0fd944435dddba39a019cb5c5fb86e22c7e968df9643068"
+ },
+ "pr": 94,
+ "release_certified": false,
+ "results": {
+  "full_repo_suite": {
+   "disposition": "suite ran fully on the 24z worktree; 822 failing/erroring test IDs are byte-identical to the parent 24y run and are pre-existing environmental issues (no .git custody in the exported worktree, private v1x/v4 packages, signed predecessors); excluded collection files need SPK_V0IF_PACKAGE_DIR; recorded, not silently skipped",
+   "errors": 695,
+   "failed": 127,
+   "failure_set_identical_to_parent": true,
+   "new_failures_on_24z": [],
+   "parent_24y": {
+    "errors": 695,
+    "failed": 127,
+    "passed": 10515,
+    "skipped": 106
+   },
+   "passed": 10591,
+   "skipped": 106
+  },
+  "historical_24x": {
+   "attestation_sha256": "7fe3e8b08561ccc30509083641d344d70823a427f6fa38cd83157abf436f51e7",
+   "attestation_tests_passed": 17,
+   "tag": "spk-simulator-bounded-reference-v0",
+   "two_processes_identical": true,
+   "worktree_head": "a76ebaa"
+  },
+  "suites_24z_24y_passed": 130,
+  "verifier_cli_exit": 0
+ },
+ "run_id": "20261102T225428Z-08fa72f32c6c6fef",
+ "schema": "spk-24z-postclosure-assurance/v0",
+ "scientific_authority": "HOLD",
+ "scope": "post-closure assurance of the bounded 24y S3 reference result; historical witness admissibility + adversarial receipt verification only; does NOT re-execute Compiler/Network, certify native runtime, C0-C5, S4/S5, owner dispatch or universal cycles; does not alter the 24y result",
+ "status": "24Z_POSTCLOSURE_ASSURANCE_ENGINEERING_PASS_HOLD",
+ "task_issue": 95
+}
