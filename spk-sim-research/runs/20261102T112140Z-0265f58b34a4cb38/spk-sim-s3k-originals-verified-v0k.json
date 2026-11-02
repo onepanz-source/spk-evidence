@@ -1,0 +1,64 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0
+ },
+ "branch": "research/spk-sim-s3k-s3b-exact-source-encoder-parity-v0k",
+ "decision": "HOLD",
+ "exit_code": 4,
+ "gui_real_export": {
+  "distinct_engine_outputs": true,
+  "harness_passed": true,
+  "real_rows_loaded": 21932,
+  "reselect_deterministic": true,
+  "two_real_distinct_mask_rows_clicked": true
+ },
+ "limitations": [
+  "Raw UCI rows/labels never exported or committed; export is local 0600 metadata only.",
+  "source_feature_sha256 is an identifier, not anonymization.",
+  "S3h comparison remains aggregate derived checksum; GUI is simulation, not native."
+ ],
+ "native_tests_executed": 0,
+ "originals": {
+  "SOURCE_S3B_PARITY_PROVEN": true,
+  "export": {
+   "bytes": 9038660,
+   "committed_to_github": false,
+   "mode": "0600",
+   "out": "/home/ste/workspace/s3k-work/out/export-real-v0k-2.json",
+   "rows_total": 21932,
+   "sha256": "e3ca8492e8eb53d83340029d794e48a94275b44df735320a9e4aa7a4d5d382f0"
+  },
+  "parity_detail": "all 4 member row_event_stream_sha256 + count_histograms + occ thresholds + bank medians + split counts match pinned S3b report",
+  "s3a_report_sha256": "e7a44041af0fbc3c0a03ac363ab70029e0e6ac2dc279d80d7c42b6eab122c749",
+  "user_authorized_zip_read": true,
+  "zips": {
+   "banknote": {
+    "matches_pin": true,
+    "path": "/home/ste/Scaricati/banknote+authentication.zip",
+    "sha256": "1e2acd9a2085fadf3d8145c12d3d22af853320d52294a6590c2eaf75fdc05227"
+   },
+   "occupancy": {
+    "matches_pin": true,
+    "path": "/home/ste/Scaricati/occupancy+detection.zip",
+    "sha256": "4ae3f46aa98eedff564a9f6924d1635173e2fd2c816004342a9be93076d3a81a"
+   }
+  }
+ },
+ "owned_modules_imported": false,
+ "parent_witnesses": {
+  "s3i": "a3ae3afe24228db1c395172be9ad0d340e22c092ece2c5bc08dd2142860faceb",
+  "s3j": "f2a160b5db893aa20bc443b69681834ebbb1d6e22d75fa4f3c13cf5c32307748",
+  "s3k_pending": "9b2d4ce16f5b671e85a2a83a2d31317366726d9f800fb72bbe3701ced6d2efe9"
+ },
+ "pr": 72,
+ "research_only": true,
+ "run_id": "20261102T112140Z-0265f58b34a4cb38",
+ "schema": "spk-sim-s3k-originals-verified-witness/v0k",
+ "scientific_authority": "HOLD",
+ "status": "S3K_ORIGINAL_UCI_SOURCE_PARITY_AND_GUI_READY_RESEARCH_HOLD",
+ "task_issue": 73
+}

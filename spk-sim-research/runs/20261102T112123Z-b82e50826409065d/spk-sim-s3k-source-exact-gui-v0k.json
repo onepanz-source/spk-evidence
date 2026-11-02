@@ -1,0 +1,104 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0
+ },
+ "branch": "research/spk-sim-s3k-s3b-exact-source-encoder-parity-v0k",
+ "datasets": {
+  "operator_procedure": "search/spk_sim_s3k_operator_run_v0k.sh with explicit env/args",
+  "status": "DATASETS_NOT_AUTHORIZED_OR_AVAILABLE"
+ },
+ "decision": "HOLD",
+ "engine": {
+  "masks_16": true,
+  "node_suite": true,
+  "s3h_15_of_15": true
+ },
+ "exit_code": 4,
+ "gui": {
+  "harness": {
+   "identical": true,
+   "passed": true,
+   "processes": 4,
+   "returncode": 0
+  },
+  "mask1_NO_ORIGINAL_OBSERVATION": true,
+  "provenance_layers": [
+   "S3B_ORIGINAL_INTENTION",
+   "S3H_SOURCE_DIRECTED_SIMULATION"
+  ],
+  "security_scan": {
+   "external_refs": [],
+   "forbidden_hits": {},
+   "ok": true
+  },
+  "ui_source_sha256": {
+   "viewer/spk-sim-s3k-lab-v0k.css": "2fb22f5a90e28e1ffadc5078a858755b22f1b3d8a9746ccc11bfa9a7dcad0476",
+   "viewer/spk-sim-s3k-lab-v0k.html": "5a2b282f5964d7e07f88d460a0b937b84f6e01671410cd91226a404b2d7bde8a",
+   "viewer/spk-sim-s3k-lab-v0k.js": "e7f3bf80cd4777c88658bdd7308b8dcac649570db651778819517f4660793818"
+  }
+ },
+ "limitations": [
+  "Synthetic rows are never labeled UCI originals; SOURCE_S3B_PARITY_PROVEN requires the authorized original ZIPs.",
+  "source_feature_sha256 is an identifier, not anonymization.",
+  "Browser import is UNTRUSTED_LOCAL_FILE; attestation is the Fedora CLI gate only.",
+  "S3h match remains aggregate derived checksum, never native re-execution."
+ ],
+ "native_tests_executed": 0,
+ "owned_modules_imported": false,
+ "parent_s3j_head": "444643332b254bc7e12fa637f6e27ab444fa1a10",
+ "pins": {
+  "all_verified": true,
+  "s3a_report_sha256": "e7a44041af0fbc3c0a03ac363ab70029e0e6ac2dc279d80d7c42b6eab122c749",
+  "s3b_encoder_blob": "55f3196483149a0f6eb783e54344882a719a8957",
+  "s3b_encoder_sha256": "b9f5591fba0969329a806771b4a56f6b14dcd2f5ceca38a1c2a2e33af8c3eaad",
+  "s3b_report_blob": "39bb9736a15a3bbce891d664c69f0f50103ae872",
+  "s3h_report_sha256": "64d3a146eff6cf946124e8ee56d70a573e182d6283727754dc924e9165f8eb9c",
+  "s3i_v0i_files_unchanged": {
+   "viewer/spk-sim-s3i-lab-v0i.css": "17f782b114688c81077e7074e7e452820d4172fb2ccec39bf9c25e0e5e8e6fc7",
+   "viewer/spk-sim-s3i-lab-v0i.html": "6baa6a1ba37c95d8d9b06c10de61c5c81d87fc5314ba715f979fbcebe1367ce6",
+   "viewer/spk-sim-s3i-lab-v0i.js": "e08b0206bf7cba8d127cbfe17ee9672b77cd824ae02e93d90066678737ec8def",
+   "viewer/spk-sim-s3i-sandbox-engine-v0i.js": "56a70dadcd590abeb728765ff1e27b2481837fc6de7e6ed77f97ac9aa9aaade0"
+  },
+  "s3i_witness_sha256": "a3ae3afe24228db1c395172be9ad0d340e22c092ece2c5bc08dd2142860faceb",
+  "s3j_v0j_files_unchanged": {
+   "viewer/spk-sim-s3j-lab-v0j.css": "2fb22f5a90e28e1ffadc5078a858755b22f1b3d8a9746ccc11bfa9a7dcad0476",
+   "viewer/spk-sim-s3j-lab-v0j.html": "bc7382f3b9cc6c654f92efe45e14478f7b6cefb10b3452df4836cb4f4e8c0dfc",
+   "viewer/spk-sim-s3j-lab-v0j.js": "9ace9e711175d7dc69de9751d8fe7a8f08aa0f0146db9c45c29618a66681af49"
+  },
+  "s3j_witness_sha256": "f2a160b5db893aa20bc443b69681834ebbb1d6e22d75fa4f3c13cf5c32307748",
+  "spec_blob": "e4402fde19ff89ba4ede5d31963963a1d19db740",
+  "spec_sha256": "eacb714965f200985a7b4429ee3429d33bbf48c1e131876038403f797c33e6d1"
+ },
+ "pr": 72,
+ "research_only": true,
+ "run_id": "20261102T112123Z-b82e50826409065d",
+ "schema": "spk-sim-s3k-source-exact-gui-witness/v0k",
+ "scientific_authority": "HOLD",
+ "smoke": {
+  "ok": true,
+  "png_bytes": 60559,
+  "returncode": 0
+ },
+ "source_exact_parity": {
+  "SOURCE_S3B_PARITY_PROVEN": false,
+  "discriminating_mutants_detected": [
+   "nearest_rank_median",
+   "sorted_groups_split",
+   "missing_newline",
+   "str_vs_norm",
+   "extra_light_fields",
+   "event_shape_spoof",
+   "stream_digest_tamper",
+   "cli_rejects_synthetic"
+  ],
+  "original_vs_independent_rows": 21932,
+  "reason": "original UCI ZIPs not authorized/supplied this session",
+  "synthetic_semantic_parity_tests": 18
+ },
+ "status": "S3K_SOURCE_SEMANTICS_REPAIRED_ORIGINALS_PENDING_RESEARCH_HOLD",
+ "task_issue": 73
+}
