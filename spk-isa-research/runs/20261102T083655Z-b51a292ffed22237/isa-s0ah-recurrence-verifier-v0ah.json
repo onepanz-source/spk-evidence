@@ -1,0 +1,117 @@
+{
+ "ag_erratum": {
+  "ag_validator_code": "VALIDATOR_TypeError",
+  "note": "AG validate_frontier_claim rejects a valid recurrence claim with VALIDATOR_TypeError (len(int)); AG witness immutable, AH verifier is the corrected add-only path",
+  "reproduced_typeerror_reject": true
+ },
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0
+ },
+ "base_branch": "research/isa-s0ag-translation-invariant-frontier-audit-v0ag",
+ "boundary": {
+  "all_exact_boundary": true,
+  "count": 2
+ },
+ "branch": "research/isa-s0ah-recurrence-claim-tick-proof-v0ah",
+ "corpus": {
+  "ag_new": 12,
+  "ag_pool": 52,
+  "fresh_admitted": 3,
+  "fresh_attempts": 4
+ },
+ "decision": "HOLD",
+ "exit_code": 4,
+ "fresh_processes": {
+  "canonical_output_identical": true,
+  "count": 4,
+  "seeds": [
+   17,
+   631
+  ],
+  "units": [
+   1,
+   7
+  ]
+ },
+ "limitations": [
+  "ACCEPT means a bounded repeated phase observation on an AB-audited cutoff ledger with tick-proven period; never liveness/termination.",
+  "period_ticks is elapsed ticks only; list-index substitution is rejected (PERIOD_AS_INDEX_FORBIDDEN); repeats must be a genuine int >= 3.",
+  "All native claims NOT_PROVEN; HOLD preserved; C0-C5 reserved to independent human peer review."
+ ],
+ "native_tests_executed": 0,
+ "negatives": {
+  "all_expected_verdicts": true,
+  "all_validator_invoked": true,
+  "all_zero_microsteps": true,
+  "codes": {
+   "extra_intervening_phase_event": "CLAIM_PHASES_MISMATCH",
+   "finite_tail_false_recurrence": "VALIDATOR_ABAuditReject",
+   "forged_source_pin": "VALIDATOR_ABAuditReject",
+   "integer_repeats_happy_path": null,
+   "malformed_not_json": "CLAIM_NOT_JSON",
+   "malformed_oversized": "AG_RESOURCE_REJECT",
+   "missing_intermediate_phase": "CLAIM_PHASES_MISMATCH",
+   "noninteger_repeats": "CLAIM_TYPES",
+   "nonuniform_timestamp_shift": "NONUNIFORM_SHIFT",
+   "period_as_index_substitution": "PERIOD_AS_INDEX_FORBIDDEN",
+   "swapped_edge_occurrence": "VALIDATOR_ABAuditReject",
+   "truncated_final_phase": "REPEATS_EXCEED_EVIDENCE",
+   "wrong_period_ticks": "PHASE_CONTENT_MISMATCH"
+  },
+  "count": 13
+ },
+ "owned_modules_imported": false,
+ "parent_ag_branch_head": "f17fdc99eb056c049518b8f0d4ce83255cc72a4a",
+ "parent_ag_witness_sha256": "00b18a5bf7e1b8dd7a804496adc4ec66e2117837e5402fe9c954d887421249da",
+ "positives": {
+  "accepts": 6,
+  "all_accept": true,
+  "has_selfloop_and_multinode": true
+ },
+ "pr": 64,
+ "pure_tests": {
+  "failed": 0,
+  "passed": 10,
+  "returncode": 0
+ },
+ "research_only": true,
+ "resumes": {
+  "all_fresh_resume_equal": true,
+  "count": 4
+ },
+ "run_id": "20261102T083655Z-b51a292ffed22237",
+ "runs": {
+  "all_parity_and_prefix": true,
+  "cases": 12,
+  "runs": 72
+ },
+ "schema": "spk-isa-s0ah-recurrence-verifier-witness/v0ah",
+ "seed": 20261108,
+ "source_pins": {
+  "spk/event.py": "614b14a494e66b784991a2abf002764fb6b69800208b0bf569ca4426c826c934",
+  "spk_compiler/compilation_manifest_v0.py": "921d321d243dea8802001d52198fd234113d49a1f2ebac759c65abed1b62f88a",
+  "spk_compiler/compile_pipeline_v0.py": "81aebc3b08776b7a5e4d1cd42257298048533d08eaf898cc436c9dc974479366",
+  "spk_compiler/network_ir_v0.py": "0425a191cc3ecc3df76fe13dac99009cdceccdbc389789bf1967f567b5309460",
+  "spk_compiler/pe_admission_v0.py": "ccc76a35f908bd9fbdc8d3dfc23966b4e4109db838e05143b4383a23e437933c",
+  "spk_compiler/resource_admission_v0.py": "864673d321b3da0b36d49cb669322808e617fb85657034b5df544aad48281420",
+  "spk_core/core_v0.py": "75fad3aac0b5ec0b22bfde2eee27f7782d70eb399a725721660b24067b1636b4",
+  "spk_core/ir_v0.py": "ca6b601e9d38d738edac29323b537fabc246ed800ec06da0e3d8dff39ad1d8e9",
+  "spk_core/isa.py": "7c64e0eb8f98080d97bfa3f0de1d2c5ea044c04dcfcfedc1c0f6491891ce9cb6",
+  "spk_core/runtime.py": "25b78b476c052c73b9e67687d8b9da24e043613bd8c732520a1a338799f403c8",
+  "spk_network/events_v0.py": "f632ad1f49e8c88a11aa42537f9085dc12232751395ca79586992b4c2cd71eee",
+  "spk_network/model_v0.py": "44462bddf14ac2c9d3e483474b25842abfa875f55c235610e91b15529db40615",
+  "spk_network/runtime_v0.py": "4e393a2fdb17e833f3b424f6a5938946d8f6f83ff1cf1ad0da61b3520bb820ce"
+ },
+ "spec": {
+  "git_blob_sha1": "8cc8c7b4a9b86bb4764b10e92541bd836fcf24bf",
+  "path": "docs/spk-isa-s0ah-recurrence-claim-tick-proof-v0ah.md",
+  "sha256": "84d7c86ae374f663b19278c9c33da57798bc3611a32c8b8ee458f7311685a9ee",
+  "verified": true
+ },
+ "status": "RECURRENCE_CLAIM_TICK_PROOF_AUDITED_RESEARCH_ONLY_NATIVE_HOLD",
+ "task_issue": 65
+}
