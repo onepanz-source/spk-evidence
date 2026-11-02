@@ -1,0 +1,71 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "native_owner_authority": false,
+  "native_tests_executed": 0,
+  "owned_modules_imported": false,
+  "owner_C0_C5_peer_review_needed": true
+ },
+ "branch": "research/spk-24aa-s4-observer-noninterference-v0",
+ "decision": "HOLD",
+ "engineering_gate": "PASS",
+ "exit_code": 4,
+ "global_regression_clean": false,
+ "new_file_sha256": {
+  "search/spk_24aa_s4_final_gate_v0.py": "85a55b2cec118c698efa36bec85fb69cba03d71ee2b0ed0c98c887c43484349a",
+  "tests/test_spk_24aa_s4_cumulative_v0.py": "4d297dbecd0f7d47138f3b87047cc38f793c96c5514ce6544f534096778b649e"
+ },
+ "parent_24z_head": "8e34206c249bf3bd375ca1eb194111255e548264",
+ "pins": {
+  "all_verified": true,
+  "corpus_sha256": "cda4f44b66f208ca9f14b3c77067b4f5aa208c1a02022e1cdc36648769f19ee5",
+  "frozen_pins": {
+   "spk_core/core_v0.py": "75fad3aac0b5ec0b22bfde2eee27f7782d70eb399a725721660b24067b1636b4",
+   "spk_core/network.py": "e6cea43b0142e98cb68bb5498e40c7ff2c0683d1a66de44441f35d1cc562f1b3",
+   "spk_core/runtime.py": "25b78b476c052c73b9e67687d8b9da24e043613bd8c732520a1a338799f403c8"
+  },
+  "seed_module_sha256": "6251f302471eb712ec21f0628c4f2ac36142faf512ec63e160b30a9f3d5f272c",
+  "seed_test_note": "route-count expectation repaired 2->3 (relays/parallel/at_zero has 3 edges); only 24aa file touched",
+  "seed_test_sha256": "669a80de7e282f1b250b72c15ed47be0ad32b647f889ad22fcc2f2c6004771fb",
+  "spec_sha256": "eae43c8385321eeaecb382751ab9d6c613d54a248b1f6cbd15ec6c645ca1d018",
+  "witness_24z_sha256": "85b01ba7ad91c488b8f27eef135bccad7dff3b734fed3fface0fec58f1c2b191"
+ },
+ "pr": 96,
+ "release_certified": false,
+ "run_id": "20261102T231827Z-68771834646f3b39",
+ "s4_evidence": {
+  "admitted_successes": 218,
+  "adversarial_verifier_rejections": 22,
+  "callback_faults_injected": 12,
+  "canonical_report_sha256_2procs": "844c7cf7c76f5cc0756ce7a90e3b2b3b2dfd0b23b357f3c883bc2c0c46c953ef",
+  "independent_24n_oracle_equal": true,
+  "observer_off_on_full_result_equal": true,
+  "parallel_multiplicity_preserved": true,
+  "skipped": 0,
+  "source_cases": 218
+ },
+ "s4_phase_complete": true,
+ "schema": "spk-24aa-s4-observer-noninterference-witness/v0",
+ "scientific_authority": "HOLD",
+ "scope": "Execution Contract S4 (docs/spk-execution-contract-v0.md §6/§8) passive-observer noninterference, bounded reference profile only; NOT the S0..S4 roadmap learning S4; no 24j owner/C0-C5/G2/dispatch; observer exceptions propagate without success and without rollback/atomicity claims",
+ "status": "S4_OBSERVER_NONINTERFERENCE_BOUNDED_REFERENCE_ENGINEERING_COMPLETE_HOLD",
+ "task_issue": 97,
+ "tests": {
+  "focused_24u_24v_24w_24y_24z_passed": 159,
+  "full_repo_suite": {
+   "errors": 695,
+   "failed": 127,
+   "identical_to_24z_baseline": true,
+   "new_failing_ids": 0,
+   "note": "822 pre-existing environmental failures (no .git custody in exported worktree, private v1x/v4 packages, signed predecessors) disclosed, not resolved; release_certified stays false",
+   "passed": 10653,
+   "preexisting_failing_ids": 822,
+   "skipped": 106
+  },
+  "suites_24aa_passed": 62
+ }
+}
