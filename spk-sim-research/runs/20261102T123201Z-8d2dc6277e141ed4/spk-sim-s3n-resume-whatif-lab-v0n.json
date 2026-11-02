@@ -1,0 +1,168 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0
+ },
+ "branch": "research/spk-sim-s3n-resume-whatif-parameter-lab-v0n",
+ "decision": "HOLD",
+ "exit_code": 4,
+ "native_tests_executed": 0,
+ "owned_modules_imported": false,
+ "parent_s3m_head": "dc18dd1b7834ee7099e6d2ef31174933e3e8e740",
+ "pins": {
+  "all_verified": true,
+  "anchored_export_sha256": "bb22d2870d28c15b2f9613fa3415060d3b4363f261b7390dc854ed038bc7f63c",
+  "parent_files_unchanged": {
+   "tests/s3h-reference.json": "64d3a146eff6cf946124e8ee56d70a573e182d6283727754dc924e9165f8eb9c",
+   "viewer/spk-sim-s3i-sandbox-engine-v0i.js": "56a70dadcd590abeb728765ff1e27b2481837fc6de7e6ed77f97ac9aa9aaade0",
+   "viewer/spk-sim-s3l-batch-engine-v0l.js": "e96a1ce8bc86e687ad8bc393ce4a9f4823af463722a985c101ba1694701d47ab",
+   "viewer/spk-sim-s3m-full-sweep-v0m.css": "4d6c98bb197cfc8d08b63f727fa0ee4e9086aa6970c038f85bfc8181843dc86f",
+   "viewer/spk-sim-s3m-full-sweep-v0m.html": "3b69848c656b17fbae9ad5a51f0610935b183ae6506f81c302526d58f3b73340",
+   "viewer/spk-sim-s3m-full-sweep-v0m.js": "a6ae50225b750a07513b9c2db130a9275b9d643e6cc83c71b43664685bba7683",
+   "viewer/spk-sim-s3m-sweep-engine-v0m.js": "30762cab236d468cf77bedc02b123186a73273e846c7750e8c1b90b959c7667d"
+  },
+  "s3h_report_sha256": "64d3a146eff6cf946124e8ee56d70a573e182d6283727754dc924e9165f8eb9c",
+  "s3m_witness_sha256": "02b12d831198f00449e6cd90eb447d63518edc1cc8350d817663120e8b5e5ced",
+  "spec_blob": "2f06b01fe968bd6b33642a92db21e14b1150bf04",
+  "spec_sha256": "5e2c5640c6227cd2fb6f5bde94db0984f6cd60894b212363f0c467d3f9b53075"
+ },
+ "pr": 79,
+ "research_only": true,
+ "resume_equivalence": {
+  "all_resumed_equal_uninterrupted": true,
+  "cancel_positions": [
+   0,
+   1,
+   3,
+   5,
+   6
+  ],
+  "tamper_matrix_rejected": [
+   "forged_checkpoint_hash",
+   "altered_chunk_receipt(+recomputed hash)",
+   "dropped_chunk",
+   "modified_counters",
+   "modified_hist",
+   "dropped_item_digest",
+   "changed_params",
+   "changed_source_sha",
+   "changed_plan",
+   "next_chunk_overrun",
+   "run_id_change",
+   "duplicated_row_source",
+   "reordered_rows",
+   "escaped_unicode_dup_json_key"
+  ],
+  "uninterrupted": {
+   "chunks": 6,
+   "ie": 2771,
+   "items": 1372,
+   "pe": 5542,
+   "sem": "66ea99e27355e491c5131d96889a664d71d71be527809316789aa0bb326eae4e",
+   "to": 2771
+  }
+ },
+ "run_id": "20261102T123201Z-8d2dc6277e141ed4",
+ "s3m_defect": {
+  "repaired_in": "spk-sim-s3n-resumable-sweep-v0n.js: closed-schema checkpoint per committed chunk, replay-verified prefix against source rows, suffix never reported complete",
+  "reproduced": "original spk-sim-s3m-sweep-engine-v0m.js resumeFrom skips chunks but zeroes accumulators: cancel@3 -> resume reports 604/1372 rows with cancelled=false while old resume_completes predicate passes"
+ },
+ "schema": "spk-sim-s3n-resume-whatif-lab-witness/v0n",
+ "scientific_authority": "HOLD",
+ "scope_limits": [
+  "fixed 8-node fixture; logical counters only; host timing NOT attested; not S3 closure; not N-topology scaling",
+  "no raw rows/labels/row hashes published; export stays local 0600; what-if never claims source parity"
+ ],
+ "status": "S3N_RESUME_EQUIVALENT_AND_WHATIF_LAB_READY_SOURCE_HOLD",
+ "task_issue": 81,
+ "tests": {
+  "gui_harness": "real-click DOM checks on anchored export, 4 procs byte-identical",
+  "pytest_passed": 31,
+  "resume_suite": true,
+  "smoke_firefox_png_bytes": 143371,
+  "whatif_suite": true
+ },
+ "ui_source_sha256": {
+  "search/spk_sim_s3n_gate_v0n.py": "b853cb92edf077994a5dd9e4a2dc682eae6b2e8af35b18055fe7619ec21679e0",
+  "tests/spk_sim_s3n_gui_v0n.harness.mjs": "f7db0c83667c325c5df2d67a799a4eb1034b4c6f3cae51822b43032e7362d42b",
+  "tests/spk_sim_s3n_resume_v0n.test.mjs": "f1a1eb4dbcba430fbc4333b621cbba41dc855def8a95e3ef1c6e84032e24a8e6",
+  "tests/spk_sim_s3n_whatif_v0n.test.mjs": "5c734abd893a070dfaf7f88c7a769493d12e1cdfe607086ab5e2b2f25924b5ea",
+  "tests/test_spk_sim_s3n_v0n.py": "8e4eff8426132f548ca6ba4cae0874bd41389cf29c3f0a637f2463b75447d3f5",
+  "viewer/spk-sim-s3n-parameter-lab-v0n.css": "a9909d85dea714895fc090313afb8ffd952600377fb1d133645f003ef556e111",
+  "viewer/spk-sim-s3n-parameter-lab-v0n.html": "4f34eb66b37d9de769fd212da4a674683bd2669146fbe7cf26b8eac8e1bd93ce",
+  "viewer/spk-sim-s3n-parameter-lab-v0n.js": "5feae546b012b641c41d857a14aaf0f1d09862cadb1d81cf9a0ca8cab0d5780e",
+  "viewer/spk-sim-s3n-resumable-sweep-v0n.js": "ba6a2eaea45e2b49dfaed70a3626be50f92a8f0f84a977c441a13968f4150d24",
+  "viewer/spk-sim-s3n-whatif-engine-v0n.js": "e083deba65a4ef82fa5db312b4b5af6b75507642f99fb68453383429603dfa4a"
+ },
+ "what_if_lab": {
+  "baseline_parity_s3i": "16/16 masks byte-identical canonical observables",
+  "baseline_s3h_aggregate": "15/15 observed masks (mask 1 NO_ORIGINAL_OBSERVATION)",
+  "cohorts_1372_anchored": {
+   "1/1/8": {
+    "ie": 2771,
+    "pb": 5542,
+    "pe": 5542,
+    "r": 2771,
+    "sem": "f1131c049961ae13",
+    "to": 2771
+   },
+   "2/1/2": {
+    "ie": 2771,
+    "pb": 2771,
+    "pe": 2771,
+    "r": 0,
+    "sem": "3eb2fdc7e72791f6",
+    "to": 0
+   },
+   "2/2/2": {
+    "ie": 5542,
+    "pb": 5542,
+    "pe": 8313,
+    "r": 2771,
+    "sem": "8743dd8365aeae51",
+    "to": 0
+   },
+   "3/3/1": {
+    "ie": 8313,
+    "pb": 5542,
+    "pe": 11084,
+    "r": 2771,
+    "sem": "0a7d1f5840998ba7",
+    "to": 0
+   }
+  },
+  "matrix_27x16": {
+   "all_non_baseline_WHAT_IF_UNVERIFIED": true,
+   "oracle_failures": 0,
+   "runs": 432
+  },
+  "metamorphic_verified": {
+   "d8": true,
+   "thr2m1": true,
+   "thr2m2": true
+  },
+  "params": {
+   "baseline": [
+    1,
+    1,
+    2
+   ],
+   "delay": [
+    1,
+    8
+   ],
+   "multiplicity": [
+    1,
+    3
+   ],
+   "threshold": [
+    1,
+    3
+   ]
+  },
+  "peak_queue": "PEAK_QUEUE_CANDIDATE_ONLY"
+ }
+}
