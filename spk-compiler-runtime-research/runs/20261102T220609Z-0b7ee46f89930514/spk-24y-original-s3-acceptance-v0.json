@@ -1,0 +1,79 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "native_owner_authority": false,
+  "native_tests_executed_this_gate": 0,
+  "no_S4_S5_promotion_from_S3": true,
+  "owned_modules_imported": false,
+  "owner_C0_C5_peer_review_needed": true
+ },
+ "baseline_main": "787c8fbed87c1e2e4b703e985f68ae53c81c8444",
+ "branch": "research/spk-24y-compiler-runtime-s3-bounded-closure-v0",
+ "c1_compiler_to_runtime": {
+  "finite_cyclic_cases": [
+   "feedback_quiet",
+   "feedback_finite"
+  ],
+  "host": "24t versioned reference host (execute_manifest_v0), observer on/off parity enforced",
+  "manifest_pin_strict": true,
+  "oracle": "24n independent primitive interpreter, full-result equality"
+ },
+ "c2_reference_networks": {
+  "bounded_cycle": {
+   "admission": "24Y_CYCLE_NOT_ADMITTED_BASELINE_CLASSIFICATION_OVERFLOW",
+   "case_id": "feedback_relay_limit",
+   "manifest_sha256": "296385fc0cbac8a0ef05224f4ab2972e8e9c2778d7990516507fd271ea8588f6",
+   "scope": "BOUNDED_FAILURE_NO_SUCCESS_RECEIPT_NO_ROLLBACK_CLAIM",
+   "selected_reason": "max_batches",
+   "status": "LIMIT_REACHED"
+  },
+  "corpus_cases": 216,
+  "corpus_sha256": "cda4f44b66f208ca9f14b3c77067b4f5aa208c1a02022e1cdc36648769f19ee5",
+  "delays": true,
+  "empty_input": true,
+  "fanin_fanin_fanout": true,
+  "nonterminating_cycle": "24Y_CYCLE_NOT_ADMITTED_BASELINE_CLASSIFICATION_OVERFLOW: 24t classify_v0 requires baseline (128/4096) completion; a nonterminating cycle surfaces typed OracleLimitV0, never a success receipt; recorded, not masked",
+  "parallel_edges": true,
+  "regression_24u_24v_24w_passed": 29
+ },
+ "compiler_runtime_s3_phase_complete": true,
+ "decision": "HOLD",
+ "engineering_gate": "PASS",
+ "exit_code": 4,
+ "new_file_sha256": {
+  "search/spk_24y_compiler_runtime_s3_gate_v0.py": "2c06de3b3ab1ccca1709a6bc55978b3329470ca752a09f3c3c46e4796d125249",
+  "tests/test_spk_24y_compiler_runtime_s3_v0.py": "abf9722667db5656b0e01d1c5c3e48d18f0400296a93b557469b50ef48e08eb7"
+ },
+ "pins": {
+  "all_verified": true,
+  "corpus_sha256": "cda4f44b66f208ca9f14b3c77067b4f5aa208c1a02022e1cdc36648769f19ee5",
+  "frozen_contract_pins": {
+   "spk_core/canonicalize.py": "d98017a668bb56ae719fd37b33622dcfe483fa16530d8d377ca780753a7ead66",
+   "spk_core/core_v0.py": "75fad3aac0b5ec0b22bfde2eee27f7782d70eb399a725721660b24067b1636b4",
+   "spk_core/ir_v0.py": "ca6b601e9d38d738edac29323b537fabc246ed800ec06da0e3d8dff39ad1d8e9",
+   "spk_core/network.py": "e6cea43b0142e98cb68bb5498e40c7ff2c0683d1a66de44441f35d1cc562f1b3",
+   "spk_core/runtime.py": "25b78b476c052c73b9e67687d8b9da24e043613bd8c732520a1a338799f403c8"
+  },
+  "probe_sha256": "31a1b58b175e017c67f8f14cf8c89230ba798221b588733041f906beb4e1de1f",
+  "seedtest_sha256": "b4fa64e37edb843b55f543c09e74feeb9d04dc8b40d81af3e94ac43f3229b943",
+  "spec_blob": "a7c1712d241853422b303d14629e6daa1ce1e4cc",
+  "spec_sha256": "1480060c3f9c14931391024e4a1a656127cdbbea0c7adf027c25951ab181a012"
+ },
+ "pr": 92,
+ "run_id": "20261102T220609Z-0b7ee46f89930514",
+ "schema": "spk-24y-original-s3-acceptance/v0",
+ "scientific_authority": "HOLD",
+ "scope": "S3 of docs/spk-execution-contract-v0.md §8 (S1..S5 compiler/runtime), bounded reference profile ONLY; NOT the S0..S4 dataset roadmap; no universal graph/PE/owner claim; 24x 90% estimate not inherited as 100%",
+ "status": "S3_COMPILER_RUNTIME_BOUNDED_REFERENCE_ENGINEERING_COMPLETE_HOLD",
+ "task_issue": 93,
+ "tests": {
+  "canonical_receipt_sha256": "bb855236a360f9c232745b6d4c920d6192a093f056f0e3e149ed891ec7aa34bd",
+  "fresh_process_canonical_receipts_identical": true,
+  "regression_passed": 29,
+  "y24y_suites_passed": 54
+ }
+}
