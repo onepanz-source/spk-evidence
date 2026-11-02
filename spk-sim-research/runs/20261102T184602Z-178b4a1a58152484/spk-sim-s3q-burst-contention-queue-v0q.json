@@ -1,0 +1,94 @@
+{
+ "adversarial_matrix": {
+  "admitted": 256,
+  "congested": 96,
+  "trace_audits": 256,
+  "uncongested": 160,
+  "veto": 48
+ },
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0
+ },
+ "branch": "research/spk-sim-s3q-burst-contention-queue-v0q",
+ "closed_form_contention": {
+  "fanin16_cap1": {
+   "deferred": 105,
+   "lastTick": 18,
+   "terminals": 15
+  },
+  "m4_chain8": {
+   "cap1": 4,
+   "unbounded": 1
+  },
+  "note": "WHAT_IF scheduling, NOT observed native behavior; fanin16 unbounded = 1 terminal at tick4 (source-observed), cap1 = 15 terminals / 105 deferrals (hypothetical)"
+ },
+ "decision": "HOLD",
+ "exit_code": 4,
+ "extended_matrix": {
+  "admitted": 1719,
+  "congested": 675,
+  "det_4_procs": true,
+  "trace_counter_bad": 0,
+  "veto": 9
+ },
+ "fedora_seed": {
+  "checks": 58,
+  "cmd": "node tests/spk_sim_s3q_burst_engine_v0q.test.cjs",
+  "exit": 0,
+  "node": "v22.23.1"
+ },
+ "lossless_invariant": "processed_events == initial_events + routed_events enforced and VETO on violation; buffer/tick/event/raw-8bit caps raise explicit VETO, never silent loss",
+ "native_tests_executed": 0,
+ "owned_modules_imported": false,
+ "parent_s3p_head": "0f74990bebfba6b1cba7591503660c04affda4db",
+ "pins": {
+  "all_verified": true,
+  "anchored_export_sha256": "bb22d2870d28c15b2f9613fa3415060d3b4363f261b7390dc854ed038bc7f63c",
+  "engine_sha256": "85387cb5ca3ca388133eb73226cb4cfb76eeca540f92029f7feb56705af8f4ca",
+  "note": "issue text cited spec sha256 e5cdd52d...; actual GitHub bytes hash to 2c13888bba8feb3bc90aa73ccd8c64102ed34f18fabb07f397a87d77fcb060fc while git blob matches the pinned 030a1117bc8686183e8ebb7cfe1ebdfa53d57047",
+  "parent_files_unchanged": {
+   "viewer/spk-sim-s3i-sandbox-engine-v0i.js": "56a70dadcd590abeb728765ff1e27b2481837fc6de7e6ed77f97ac9aa9aaade0",
+   "viewer/spk-sim-s3n-resumable-sweep-v0n.js": "ba6a2eaea45e2b49dfaed70a3626be50f92a8f0f84a977c441a13968f4150d24",
+   "viewer/spk-sim-s3o-original-ingress-engine-v0o.js": "dd0019ce6440c6ddd8f46c9958b8220a14709a0ae7262e53ff314e3473093f24",
+   "viewer/spk-sim-s3p-nscale-benchmark-v0p.js": "be00d49b854ea777d1dc5f0e21c2e4dba8df6f2e5654c7cfdd10b2404779fdfe",
+   "viewer/spk-sim-s3p-nscale-engine-v0p.js": "12c4fb69918a8db6496eb3b728cd63082f327d9460ecaa2b212b84a0ade9c2c2"
+  },
+  "s1b_blob": "2fc6e4122f62b782aac44e5e006b332e3fe7498e",
+  "s1b_witness_sha256": "98e4a95506d2cf41cbb7b55f8a3099542000a56decb66e50c436efbdd070c43a",
+  "s3p_witness_sha256": "23d97da3199bfdfc7d9fee61dbfac5780688b8019ca7a89fbeb8ababe5b91687",
+  "seedtest_sha256": "f26469e577726f4f64149e19d4c998832b79b80ab2f15fcc80a71615f6f9845f",
+  "spec_blob": "030a1117bc8686183e8ebb7cfe1ebdfa53d57047",
+  "spec_sha256_actual": "2c13888bba8feb3bc90aa73ccd8c64102ed34f18fabb07f397a87d77fcb060fc"
+ },
+ "pr": 86,
+ "provenance": "S3Q_CANDIDATE_REPEATED_TRAFFIC_NOT_SOURCE_OBSERVED; unbounded mode == S3p source shapes 13/13 + 16 candidate N parity; source UCI rows reused only as SOURCE_S3B_INPUT_REUSED_WITH_HYPOTHETICAL_BURST_SERVICE",
+ "research_only": true,
+ "run_id": "20261102T184602Z-178b4a1a58152484",
+ "schema": "spk-sim-s3q-burst-contention-queue-witness/v0q",
+ "scientific_authority": "HOLD",
+ "scope_limits": [
+  "hypothetical JS service caps are NOT frozen native backpressure/PE scheduler; logical ticks only; HOST timing not measured in this gate",
+  "no raw rows/labels/per-row hashes uploaded; export stays local 0600; no S3 closure; no S4"
+ ],
+ "status": "S3Q_BURST_CONTENTION_LOSSLESS_AND_CAPACITY_VETO_READY_HOLD",
+ "task_issue": 87,
+ "tests": {
+  "gui_harness": "real-click DOM checks, 4 procs byte-identical",
+  "pytest_passed": 41,
+  "seed_checks": 58,
+  "smoke_firefox_png_bytes": 90689
+ },
+ "ui_source_sha256": {
+  "search/spk_sim_s3q_gate_v0q.py": "a1d678547d9511bc671381b367036c9d654066d9f8c2a416b0f3b453fb7d1b57",
+  "tests/spk_sim_s3q_adversarial_matrix_v0q.test.cjs": "54a1ab281ee40df16d7624c28160cac71621cf6bd686392ded5ee78e71bbc14e",
+  "tests/spk_sim_s3q_burst_engine_v0q.test.cjs": "f26469e577726f4f64149e19d4c998832b79b80ab2f15fcc80a71615f6f9845f",
+  "tests/spk_sim_s3q_gui_v0q.harness.cjs": "e737573b705c312e183e144caaf44b4e5dafb3b694be003b3092cb38380de012",
+  "tests/test_spk_sim_s3q_v0q.py": "765fb62c72b3b4d9854af0523b45af69757b0cfbc0c9200c218eaae2540907cf",
+  "viewer/spk-sim-s3q-burst-engine-v0q.js": "85387cb5ca3ca388133eb73226cb4cfb76eeca540f92029f7feb56705af8f4ca",
+  "viewer/spk-sim-s3q-burst-lab-v0q.html": "10f7d9030c1e6e1612a550b3382d3f91a9aba08eee1c75adf5f9ebc20bbfb71a"
+ }
+}
