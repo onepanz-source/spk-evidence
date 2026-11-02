@@ -1,0 +1,267 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0
+ },
+ "branch": "research/spk-sim-s3p-nscale-topology-benchmark-v0p",
+ "candidate_matrix_8_64": {
+  "chain16": {
+   "cand": "CANDIDATE_TOPOLOGY_NOT_SOURCE_OBSERVED",
+   "edges": 15,
+   "lastTick": 32,
+   "nodes": 16,
+   "pe": 16,
+   "peakQ": 1,
+   "r": 15,
+   "t": 1
+  },
+  "chain32": {
+   "cand": "CANDIDATE_TOPOLOGY_NOT_SOURCE_OBSERVED",
+   "edges": 31,
+   "lastTick": 64,
+   "nodes": 32,
+   "pe": 32,
+   "peakQ": 1,
+   "r": 31,
+   "t": 1
+  },
+  "chain64": {
+   "cand": "CANDIDATE_TOPOLOGY_NOT_SOURCE_OBSERVED",
+   "edges": 63,
+   "lastTick": 128,
+   "nodes": 64,
+   "pe": 64,
+   "peakQ": 1,
+   "r": 63,
+   "t": 1
+  },
+  "chain8": {
+   "cand": "CANDIDATE_TOPOLOGY_NOT_SOURCE_OBSERVED",
+   "edges": 7,
+   "lastTick": 16,
+   "nodes": 8,
+   "pe": 8,
+   "peakQ": 1,
+   "r": 7,
+   "t": 1
+  },
+  "fanin16": {
+   "cand": "CANDIDATE_TOPOLOGY_NOT_SOURCE_OBSERVED",
+   "edges": 15,
+   "lastTick": 4,
+   "nodes": 16,
+   "pe": 30,
+   "peakQ": 15,
+   "r": 15,
+   "t": 1
+  },
+  "fanin32": {
+   "cand": "CANDIDATE_TOPOLOGY_NOT_SOURCE_OBSERVED",
+   "edges": 31,
+   "lastTick": 4,
+   "nodes": 32,
+   "pe": 62,
+   "peakQ": 31,
+   "r": 31,
+   "t": 1
+  },
+  "fanin64": {
+   "cand": "CANDIDATE_TOPOLOGY_NOT_SOURCE_OBSERVED",
+   "edges": 63,
+   "lastTick": 4,
+   "nodes": 64,
+   "pe": 126,
+   "peakQ": 63,
+   "r": 63,
+   "t": 1
+  },
+  "fanin8": {
+   "cand": "CANDIDATE_TOPOLOGY_NOT_SOURCE_OBSERVED",
+   "edges": 7,
+   "lastTick": 4,
+   "nodes": 8,
+   "pe": 14,
+   "peakQ": 7,
+   "r": 7,
+   "t": 1
+  },
+  "fanout16": {
+   "cand": "CANDIDATE_TOPOLOGY_NOT_SOURCE_OBSERVED",
+   "edges": 15,
+   "lastTick": 4,
+   "nodes": 16,
+   "pe": 16,
+   "peakQ": 15,
+   "r": 15,
+   "t": 15
+  },
+  "fanout32": {
+   "cand": "CANDIDATE_TOPOLOGY_NOT_SOURCE_OBSERVED",
+   "edges": 31,
+   "lastTick": 4,
+   "nodes": 32,
+   "pe": 32,
+   "peakQ": 31,
+   "r": 31,
+   "t": 31
+  },
+  "fanout64": {
+   "cand": "CANDIDATE_TOPOLOGY_NOT_SOURCE_OBSERVED",
+   "edges": 63,
+   "lastTick": 4,
+   "nodes": 64,
+   "pe": 64,
+   "peakQ": 63,
+   "r": 63,
+   "t": 63
+  },
+  "fanout8": {
+   "cand": "CANDIDATE_TOPOLOGY_NOT_SOURCE_OBSERVED",
+   "edges": 7,
+   "lastTick": 4,
+   "nodes": 8,
+   "pe": 8,
+   "peakQ": 7,
+   "r": 7,
+   "t": 7
+  },
+  "parallel16": {
+   "cand": "CANDIDATE_TOPOLOGY_NOT_SOURCE_OBSERVED",
+   "edges": 16,
+   "lastTick": 32,
+   "nodes": 16,
+   "pe": 17,
+   "peakQ": 2,
+   "r": 16,
+   "t": 1
+  },
+  "parallel32": {
+   "cand": "CANDIDATE_TOPOLOGY_NOT_SOURCE_OBSERVED",
+   "edges": 32,
+   "lastTick": 64,
+   "nodes": 32,
+   "pe": 33,
+   "peakQ": 2,
+   "r": 32,
+   "t": 1
+  },
+  "parallel64": {
+   "cand": "CANDIDATE_TOPOLOGY_NOT_SOURCE_OBSERVED",
+   "edges": 64,
+   "lastTick": 128,
+   "nodes": 64,
+   "pe": 65,
+   "peakQ": 2,
+   "r": 64,
+   "t": 1
+  },
+  "parallel8": {
+   "cand": "CANDIDATE_TOPOLOGY_NOT_SOURCE_OBSERVED",
+   "edges": 8,
+   "lastTick": 16,
+   "nodes": 8,
+   "pe": 9,
+   "peakQ": 2,
+   "r": 8,
+   "t": 1
+  }
+ },
+ "decision": "HOLD",
+ "exit_code": 4,
+ "host_js_benchmark": {
+  "cases": 54,
+  "chain64_ms_median": 0.13422,
+  "chain64_ms_p90": 0.298766,
+  "det_4_procs": true,
+  "labels": [
+   "HOST_JS_ONLY",
+   "TRACE_ENABLED"
+  ],
+  "node": "v22.23.1",
+  "reps": 15,
+  "scope": "HOST_JS_ONLY, NO_HARDWARE_INFERENCE, HOST_MEMORY_EXPLORATORY; not PE/hardware speed/power/latency",
+  "trace_equality_verified": 41,
+  "units": "milliseconds hrtime.bigint",
+  "warmups": 5
+ },
+ "native_tests_executed": 0,
+ "owned_modules_imported": false,
+ "parent_s3o_head": "d1da4983e7eea1fb8f23ba9a9c7dd61e89a3c0f5",
+ "pins": {
+  "all_verified": true,
+  "anchored_export_sha256": "bb22d2870d28c15b2f9613fa3415060d3b4363f261b7390dc854ed038bc7f63c",
+  "parent_files_unchanged": {
+   "viewer/spk-sim-s3i-sandbox-engine-v0i.js": "56a70dadcd590abeb728765ff1e27b2481837fc6de7e6ed77f97ac9aa9aaade0",
+   "viewer/spk-sim-s3l-batch-engine-v0l.js": "e96a1ce8bc86e687ad8bc393ce4a9f4823af463722a985c101ba1694701d47ab",
+   "viewer/spk-sim-s3n-resumable-sweep-v0n.js": "ba6a2eaea45e2b49dfaed70a3626be50f92a8f0f84a977c441a13968f4150d24",
+   "viewer/spk-sim-s3o-dual-sweep-v0o.js": "49999b1e289728f9293f76b2398f0993220b160f23af92d5e5656c4fd9baf482",
+   "viewer/spk-sim-s3o-original-ingress-engine-v0o.js": "dd0019ce6440c6ddd8f46c9958b8220a14709a0ae7262e53ff314e3473093f24"
+  },
+  "s1b_blob": "2fc6e4122f62b782aac44e5e006b332e3fe7498e",
+  "s1b_witness_sha256": "98e4a95506d2cf41cbb7b55f8a3099542000a56decb66e50c436efbdd070c43a",
+  "s3o_witness_sha256": "320161b35ef2fb0a379d57d66feadf5b74fae1fc0c686f0eed0b5334701c6760",
+  "spec_blob": "146bdea6e3e02419356ab201c442c0ca0a6adb05",
+  "spec_sha256": "7382df7be1460a469fed8b5ef2f797922c01f35b60b325e7d351e9ceba7bdd5d"
+ },
+ "pr": 84,
+ "research_only": true,
+ "run_id": "20261102T175248Z-5493d6966cac31e9",
+ "s1b_historical_oracle": {
+  "cases": 13,
+  "native_sha": "SOURCE_SHA_NATIVE_NOT_RECOMPUTABLE_FROM_JS",
+  "parity": 13,
+  "rejections_historical": [
+   "node_budget",
+   "edge_budget",
+   "fanout_budget",
+   "initial_event_budget",
+   "program_slots",
+   "missing_placement",
+   "default_node_ceiling_129",
+   "cycle_runtime_limit_10"
+  ],
+  "scope": "count observables + geometry only, read-only"
+ },
+ "schema": "spk-sim-s3p-nscale-topology-benchmark-witness/v0p",
+ "scientific_authority": "HOLD",
+ "scope_limits": [
+  "N=64 chain/fanout/fanin real node counts are not 64 dataset rows; candidate topologies are CANDIDATE_TOPOLOGY_NOT_SOURCE_OBSERVED",
+  "no S3 phase closure, no S4; no raw rows/labels/row hashes uploaded; export stays local 0600"
+ ],
+ "source_cohorts_real_runs": {
+  "banknote_1372_chain8": {
+   "items": 1372,
+   "routes": 9289,
+   "terminals": 1327
+  },
+  "label": "SOURCE_S3B_INPUT_REUSED_IN_NEW_TOPOLOGY_WHAT_IF",
+  "occupancy_20560_chain8": {
+   "items": 20560,
+   "terminals": 7788
+  }
+ },
+ "status": "S3P_NSCALE_8_64_SOURCE_ORACLE_AND_HOST_JS_BENCHMARK_READY_HOLD",
+ "task_issue": 85,
+ "tests": {
+  "engine_suite": true,
+  "gui_harness": "real-click DOM checks, 4 procs byte-identical",
+  "pytest_passed": 40,
+  "scale_suite": true,
+  "smoke_firefox_png_bytes": 145884
+ },
+ "ui_source_sha256": {
+  "search/spk_sim_s3p_gate_v0p.py": "6f88f9a3b2d73a19b9be3f26be59698b3c36b39959982781748aa155900a57de",
+  "tests/spk_sim_s3p_engine_v0p.test.mjs": "96487df38c9c0937e0e3de2664c281241e9da6b2c28576dd8a802a660a3b4b1e",
+  "tests/spk_sim_s3p_gui_v0p.harness.mjs": "7defaacd7c246323e31859ab165c166a37613693f707c1e80434d4307068f165",
+  "tests/spk_sim_s3p_scale_v0p.test.mjs": "494994b3100aa88de4dc33f49ecfcfaa5431ac83f3d11ad7a4b9df9f8479d832",
+  "tests/test_spk_sim_s3p_v0p.py": "cfc2059e5cc16bbfaa89d00a87eb8635baad08fc67cf944c3b3d3515fd837b5f",
+  "viewer/spk-sim-s3p-nscale-benchmark-v0p.js": "be00d49b854ea777d1dc5f0e21c2e4dba8df6f2e5654c7cfdd10b2404779fdfe",
+  "viewer/spk-sim-s3p-nscale-engine-v0p.js": "12c4fb69918a8db6496eb3b728cd63082f327d9460ecaa2b212b84a0ade9c2c2",
+  "viewer/spk-sim-s3p-nscale-lab-v0p.css": "ab02707e5a09b414b15961078fd164d7687c8605f4ab713f88b9c467f0af54de",
+  "viewer/spk-sim-s3p-nscale-lab-v0p.html": "bf447592959f56310eec7767aa9778d25ee0c5ae4d0f37ac64dcce75fd5db317",
+  "viewer/spk-sim-s3p-nscale-lab-v0p.js": "a6a251321b955d6e6fff26e9716ef1a08e45e8c5abcac7fb622cfb2f6c2f6293"
+ }
+}
