@@ -1,0 +1,243 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0
+ },
+ "branch": "research/spk-sim-s3o-two-uci-original-ingress-pipeline-v0o",
+ "decision": "HOLD",
+ "exit_code": 4,
+ "fixture": {
+  "edges": "TWO PARALLEL A/7->B/0 delay2 (e0,e1)",
+  "ingress": "m identical (tick2, A, channel0) events; feature identity lost after S3b encoding",
+  "nodes": [
+   "A",
+   "B"
+  ],
+  "not_used": "S3h 4-lane Ai->Bi 8-node fixture (separate S3n representation)",
+  "program": "A: ACC(1,0) CMP(thr 1..4) EMIT(7) RESET(0); B: CMP(1)"
+ },
+ "full_source_sweep": {
+  "note": "21932 source rows x 4 thresholds, PURE JS candidate, actually executed per row (no lookup)",
+  "per_cohort": {
+   "banknote/t1": {
+    "chunks": 6,
+    "complete": true,
+    "ie": 2771,
+    "items": 1372,
+    "mh": {
+     "0": 45,
+     "1": 313,
+     "2": 649,
+     "3": 300,
+     "4": 65
+    },
+    "pb": 2654,
+    "pe": 5425,
+    "r": 2654,
+    "sem": "fd674663faa6b9f72bc9ae13c67ece52aabd43bb207e95c7fa8ad1ae9c6350ba",
+    "to": 1327
+   },
+   "banknote/t2": {
+    "chunks": 6,
+    "complete": true,
+    "ie": 2771,
+    "items": 1372,
+    "mh": {
+     "0": 45,
+     "1": 313,
+     "2": 649,
+     "3": 300,
+     "4": 65
+    },
+    "pb": 2341,
+    "pe": 4799,
+    "r": 2028,
+    "sem": "aef15359f6b23097acdc6ef4d4e120f5d857e71f99039e60fd531b7ee368d01d",
+    "to": 1014
+   },
+   "banknote/t3": {
+    "chunks": 6,
+    "complete": true,
+    "ie": 2771,
+    "items": 1372,
+    "mh": {
+     "0": 45,
+     "1": 313,
+     "2": 649,
+     "3": 300,
+     "4": 65
+    },
+    "pb": 1692,
+    "pe": 3501,
+    "r": 730,
+    "sem": "0eef622afb97e4684afc79def2527d3d16b2e73ea4069a2c5c487dc38c393957",
+    "to": 365
+   },
+   "banknote/t4": {
+    "chunks": 6,
+    "complete": true,
+    "ie": 2771,
+    "items": 1372,
+    "mh": {
+     "0": 45,
+     "1": 313,
+     "2": 649,
+     "3": 300,
+     "4": 65
+    },
+    "pb": 1392,
+    "pe": 2901,
+    "r": 130,
+    "sem": "8687efa124e8734ef77492635b87e21595be7769ace92aa40cafe15baf1b2ee0",
+    "to": 65
+   },
+   "occupancy/t1": {
+    "chunks": 81,
+    "complete": true,
+    "ie": 15140,
+    "items": 20560,
+    "mh": {
+     "0": 12772,
+     "1": 2437,
+     "2": 3350,
+     "3": 2001,
+     "4": 0
+    },
+    "pb": 15576,
+    "pe": 30716,
+    "r": 15576,
+    "sem": "26fa5436aed87511cb668e431d8250fe7b82f114555aa5baabf5464af3d32afe",
+    "to": 7788
+   },
+   "occupancy/t2": {
+    "chunks": 81,
+    "complete": true,
+    "ie": 15140,
+    "items": 20560,
+    "mh": {
+     "0": 12772,
+     "1": 2437,
+     "2": 3350,
+     "3": 2001,
+     "4": 0
+    },
+    "pb": 13139,
+    "pe": 25842,
+    "r": 10702,
+    "sem": "6b0261717ce6ac9072e3b1cb2047b6b28d26ec4d73d4816226308039351f4c52",
+    "to": 5351
+   },
+   "occupancy/t3": {
+    "chunks": 81,
+    "complete": true,
+    "ie": 15140,
+    "items": 20560,
+    "mh": {
+     "0": 12772,
+     "1": 2437,
+     "2": 3350,
+     "3": 2001,
+     "4": 0
+    },
+    "pb": 9789,
+    "pe": 19142,
+    "r": 4002,
+    "sem": "9856e4be1b9415c495a890b7bad11f000a61ce4191980af41b8b47745a76639a",
+    "to": 2001
+   },
+   "occupancy/t4": {
+    "chunks": 81,
+    "complete": true,
+    "ie": 15140,
+    "items": 20560,
+    "mh": {
+     "0": 12772,
+     "1": 2437,
+     "2": 3350,
+     "3": 2001,
+     "4": 0
+    },
+    "pb": 7788,
+    "pe": 15140,
+    "r": 0,
+    "sem": "a23103f1009edf30fbe0a7bd470cb7e04e16262932ebc547077671336521953d",
+    "to": 0
+   }
+  },
+  "total_candidate_runs": 87728
+ },
+ "native_tests_executed": 0,
+ "owned_modules_imported": false,
+ "parent_s3n_head": "742f6263b12f205b8019767fc73570a930998a2d",
+ "pins": {
+  "all_verified": true,
+  "anchored_export_sha256": "bb22d2870d28c15b2f9613fa3415060d3b4363f261b7390dc854ed038bc7f63c",
+  "parent_files_unchanged": {
+   "tests/s3h-reference.json": "64d3a146eff6cf946124e8ee56d70a573e182d6283727754dc924e9165f8eb9c",
+   "viewer/spk-sim-s3i-sandbox-engine-v0i.js": "56a70dadcd590abeb728765ff1e27b2481837fc6de7e6ed77f97ac9aa9aaade0",
+   "viewer/spk-sim-s3l-batch-engine-v0l.js": "e96a1ce8bc86e687ad8bc393ce4a9f4823af463722a985c101ba1694701d47ab",
+   "viewer/spk-sim-s3m-sweep-engine-v0m.js": "30762cab236d468cf77bedc02b123186a73273e846c7750e8c1b90b959c7667d",
+   "viewer/spk-sim-s3n-resumable-sweep-v0n.js": "ba6a2eaea45e2b49dfaed70a3626be50f92a8f0f84a977c441a13968f4150d24",
+   "viewer/spk-sim-s3n-whatif-engine-v0n.js": "e083deba65a4ef82fa5db312b4b5af6b75507642f99fb68453383429603dfa4a"
+  },
+  "s3c_blob": "1efaf844e350c67aa13f2fa2042fb1bd3311ef6f",
+  "s3c_witness_sha256": "c786dcca24f034667911170ba4dc2fd0cac077a4c9670a416e838f1b28ed7ec5",
+  "s3n_witness_sha256": "78059eb9272a052474b70951bc30240a79927ebef2aa980d058ff06efd0d4faf",
+  "spec_blob": "6b5820d8dc13f7edb39b61576e561d2cf528d278",
+  "spec_sha256": "b11ef12c796aa2c74bc740ccc4aacc3c3e6123eb4804e0e353fe2e836794e7ef"
+ },
+ "pr": 82,
+ "research_only": true,
+ "resume_equivalence": {
+  "all_byte_identical_semantic": true,
+  "positions_tested": 12,
+  "strata": "banknote/occupancy x thr 1/4, cancel after 1/mid/last chunk"
+ },
+ "run_id": "20261102T145039Z-80d3f34dd50e37c1",
+ "s3c_historical_anchor": {
+  "count_comparisons": 204,
+  "mismatches": 0,
+  "observations": 204,
+  "receipt_sha": "SOURCE_SHA_NATIVE_NOT_RECOMPUTABLE_FROM_JS",
+  "row_identity_validated": 51,
+  "scope": "HISTORICAL READ-ONLY, no new native run",
+  "source_rows": 51,
+  "thresholds": [
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ "schema": "spk-sim-s3o-two-uci-pipeline-witness/v0o",
+ "scientific_authority": "HOLD",
+ "scope_limits": [
+  "2-node source-intention fixture only; no N-topology scaling claim (S3/S4 remain OPEN)",
+  "host JS timing NOT attested; logical counters only",
+  "no raw rows/labels/feature hashes uploaded; export stays local 0600; no labels/training/accuracy"
+ ],
+ "status": "S3O_BOTH_REAL_UCI_SOURCE_INTENTION_NETWORK_SWEEPS_READY_HOLD",
+ "task_issue": 83,
+ "tests": {
+  "engine_suite": true,
+  "gui_harness": "real-click DOM checks, 4 procs byte-identical",
+  "pytest_passed": 36,
+  "smoke_firefox_png_bytes": 148508,
+  "sweep_suite": true
+ },
+ "ui_source_sha256": {
+  "search/spk_sim_s3o_gate_v0o.py": "9ce6d93137dd07e871a76a349e3920a29038a07fdcfa78070a8853c9a4d5b4ce",
+  "tests/spk_sim_s3o_engine_v0o.test.mjs": "55bd7d69dac88204e055f5d852b5a3985f2cc62917a68c3aeed12a9d73e6a860",
+  "tests/spk_sim_s3o_gui_v0o.harness.mjs": "4b7d369a2b81e6d873b93d80eaf6e167a05f5c250eb22a9ef001cc2b8ab4c453",
+  "tests/spk_sim_s3o_sweep_v0o.test.mjs": "58838f1871e3da93255dfb333637332544fed3ab2b10aa900247f6c86fdc92b8",
+  "tests/test_spk_sim_s3o_v0o.py": "1c608a717a639fbdc82c3ec7ae192ff24de20118a1c0c63ac73b01150cb647b7",
+  "viewer/spk-sim-s3o-dual-sweep-v0o.js": "49999b1e289728f9293f76b2398f0993220b160f23af92d5e5656c4fd9baf482",
+  "viewer/spk-sim-s3o-dual-uci-lab-v0o.css": "a9909d85dea714895fc090313afb8ffd952600377fb1d133645f003ef556e111",
+  "viewer/spk-sim-s3o-dual-uci-lab-v0o.html": "3e7c339ced59507004bef6ea05132301cdef7c53247fdf5e2835469b2b84f99c",
+  "viewer/spk-sim-s3o-dual-uci-lab-v0o.js": "17396e6e8671935ba1d419d8bedac1d3c38be89b1c6a65fc3eb8f520fbfedcc8",
+  "viewer/spk-sim-s3o-original-ingress-engine-v0o.js": "dd0019ce6440c6ddd8f46c9958b8220a14709a0ae7262e53ff314e3473093f24"
+ }
+}
