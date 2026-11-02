@@ -1,0 +1,97 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0
+ },
+ "branch": "research/spk-sim-s3m-full-banknote-sweep-occupancy-encoding-explorer-v0m",
+ "cohorts": [
+  16,
+  64,
+  256,
+  1372
+ ],
+ "decision": "HOLD",
+ "exit_code": 4,
+ "native_tests_executed": 0,
+ "occupancy": {
+  "mode": "INPUT_ENCODING_PREVIEW_ONLY / OCCUPANCY_NETWORK_NOT_ADMITTED",
+  "rows": 20560
+ },
+ "owned_modules_imported": false,
+ "parent_s3l_head": "9cc98e013ffe2b180d6291b61a4131008f629f53",
+ "pins": {
+  "all_verified": true,
+  "anchored_export_sha256": "bb22d2870d28c15b2f9613fa3415060d3b4363f261b7390dc854ed038bc7f63c",
+  "s3h_report_sha256": "64d3a146eff6cf946124e8ee56d70a573e182d6283727754dc924e9165f8eb9c",
+  "s3i_files_unchanged": {
+   "viewer/spk-sim-s3i-lab-v0i.css": "17f782b114688c81077e7074e7e452820d4172fb2ccec39bf9c25e0e5e8e6fc7",
+   "viewer/spk-sim-s3i-lab-v0i.html": "6baa6a1ba37c95d8d9b06c10de61c5c81d87fc5314ba715f979fbcebe1367ce6",
+   "viewer/spk-sim-s3i-lab-v0i.js": "e08b0206bf7cba8d127cbfe17ee9672b77cd824ae02e93d90066678737ec8def",
+   "viewer/spk-sim-s3i-sandbox-engine-v0i.js": "56a70dadcd590abeb728765ff1e27b2481837fc6de7e6ed77f97ac9aa9aaade0"
+  },
+  "s3l_files_unchanged": {
+   "viewer/spk-sim-s3l-batch-engine-v0l.js": "e96a1ce8bc86e687ad8bc393ce4a9f4823af463722a985c101ba1694701d47ab",
+   "viewer/spk-sim-s3l-batch-lab-v0l.js": "b4d61d6d5025fc805a2530e457f6b61f9a53029a9b7d61a9f35124dcbfcc4f0e"
+  },
+  "s3l_witness_sha256": "c445dd565ec0ad7a8ceeed21cc3c92d92db2825612d34bff50fc9d01cb2353e7",
+  "spec_blob": "954825450fcab826a94e023146743009898201e0",
+  "spec_sha256": "d4c99b9931314d4bd8a73046702afdb9797001256b04bd66f593696966d8dbc9"
+ },
+ "pr": 76,
+ "real_sweep": {
+  "banknote_rows": 1372,
+  "chunks": 6,
+  "engine": "S3i unchanged, per-row execution, no memoization",
+  "input_events": 2771,
+  "m_histogram_m0..m4": [
+   45,
+   313,
+   649,
+   300,
+   65
+  ],
+  "plan": [
+   256,
+   256,
+   256,
+   256,
+   256,
+   92
+  ],
+  "processed_batches": 5542,
+  "processed_events": 5542,
+  "routes": 2771,
+  "summary_sha256": "a0dccbfa22c75da856e95137eeedc1f02600d8e02edb3a87d8c0983a76739838",
+  "terminal_outputs": 2771
+ },
+ "research_only": true,
+ "run_id": "20261102T120027Z-198cdd11e350b8dd",
+ "s3l_defects_fixed": {
+  "self_asserted_verified": "v0m hashes ACTUAL loaded file bytes and compares to anchored bb22d287...; mismatch -> UNTRUSTED_LOCAL_EXPORT; tampered repro downgraded",
+  "silent_257_truncation": "v0m rejects S3M_RANGE_OVER_256 unless explicit FULL SWEEP (planned chunks visible)"
+ },
+ "schema": "spk-sim-s3m-full-uci-explorer-witness/v0m",
+ "scientific_authority": "HOLD",
+ "scope_limits": [
+  "fixed 8-node fixture; logical counters only; host JS timing NOT attested; not S3 closure; not N-topology scaling",
+  "no raw rows/labels/row hashes published; export stays local 0600"
+ ],
+ "status": "S3M_SOURCE_PINNED_FULL_BANKNOTE_SWEEP_OCCUPANCY_EXPLORER_READY_HOLD",
+ "task_issue": 77,
+ "tests": {
+  "engine_16": true,
+  "gui_harness": "18 real-click checks on anchored export, 4 procs byte-identical",
+  "pytest_passed": 24,
+  "s3h_15_of_15": true,
+  "smoke_firefox_png_bytes": 134992
+ },
+ "ui_source_sha256": {
+  "viewer/spk-sim-s3m-full-sweep-v0m.css": "4d6c98bb197cfc8d08b63f727fa0ee4e9086aa6970c038f85bfc8181843dc86f",
+  "viewer/spk-sim-s3m-full-sweep-v0m.html": "3b69848c656b17fbae9ad5a51f0610935b183ae6506f81c302526d58f3b73340",
+  "viewer/spk-sim-s3m-full-sweep-v0m.js": "a6ae50225b750a07513b9c2db130a9275b9d643e6cc83c71b43664685bba7683",
+  "viewer/spk-sim-s3m-sweep-engine-v0m.js": "30762cab236d468cf77bedc02b123186a73273e846c7750e8c1b90b959c7667d"
+ }
+}
