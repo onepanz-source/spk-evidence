@@ -1,0 +1,80 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0
+ },
+ "branch": "research/spk-sim-s3l-attested-ingress-batch-lab-v0l",
+ "decision": "HOLD",
+ "exit_code": 4,
+ "limitations": [
+  "Batch lab is a bounded research GUI, not S3 scalability completion.",
+  "No raw rows/labels exported; summary is derived only.",
+  "S3h compare remains aggregate derived checksum for 15 observed masks; mask 1 unobserved."
+ ],
+ "native_tests_executed": 0,
+ "originals": {
+  "SOURCE_S3B_PARITY_PROVEN": true,
+  "export_committed_to_github": false,
+  "export_mode": "0600",
+  "export_sha256": "bb22d2870d28c15b2f9613fa3415060d3b4363f261b7390dc854ed038bc7f63c",
+  "rows": 21932,
+  "user_authorized": true,
+  "zips_sha_match": true
+ },
+ "owned_modules_imported": false,
+ "parent_s3k_head": "034b38b0026a4c2eba2171772e1691815adc6fda",
+ "pins": {
+  "all_verified": true,
+  "parent_witnesses": {
+   "s3i": "a3ae3afe24228db1c395172be9ad0d340e22c092ece2c5bc08dd2142860faceb",
+   "s3j": "f2a160b5db893aa20bc443b69681834ebbb1d6e22d75fa4f3c13cf5c32307748",
+   "s3k_originals": "6969665c7aa81d8ec84cf31fde203bcaf9fe4b52fcac97573c35956051291d48",
+   "s3k_pending": "9b2d4ce16f5b671e85a2a83a2d31317366726d9f800fb72bbe3701ced6d2efe9"
+  },
+  "s3a_report_sha256": "e7a44041af0fbc3c0a03ac363ab70029e0e6ac2dc279d80d7c42b6eab122c749",
+  "s3b_encoder_sha256": "b9f5591fba0969329a806771b4a56f6b14dcd2f5ceca38a1c2a2e33af8c3eaad",
+  "s3b_report_blob": "39bb9736a15a3bbce891d664c69f0f50103ae872",
+  "s3b_report_content_sha256": "6536173145ce2a4126ebae75323528574c25fd63d2f004b7f7776a50e8832bb0",
+  "s3h_report_sha256": "64d3a146eff6cf946124e8ee56d70a573e182d6283727754dc924e9165f8eb9c",
+  "s3i_v0i_files_unchanged": {
+   "viewer/spk-sim-s3i-lab-v0i.css": "17f782b114688c81077e7074e7e452820d4172fb2ccec39bf9c25e0e5e8e6fc7",
+   "viewer/spk-sim-s3i-lab-v0i.html": "6baa6a1ba37c95d8d9b06c10de61c5c81d87fc5314ba715f979fbcebe1367ce6",
+   "viewer/spk-sim-s3i-lab-v0i.js": "e08b0206bf7cba8d127cbfe17ee9672b77cd824ae02e93d90066678737ec8def",
+   "viewer/spk-sim-s3i-sandbox-engine-v0i.js": "56a70dadcd590abeb728765ff1e27b2481837fc6de7e6ed77f97ac9aa9aaade0"
+  },
+  "spec_blob": "da291aa5eaa946a4a1fa454dbfab90d7f9a20f94",
+  "spec_sha256": "61f8d77f3309168fc345e3a46aedd68d1ac2ff9d3de89ad6f90ea37604e628a2"
+ },
+ "pr": 74,
+ "provenance_states": [
+  "SYNTHETIC_FIXTURE",
+  "UNTRUSTED_LOCAL_FILE",
+  "OPERATOR_CLI_VERIFIED"
+ ],
+ "research_only": true,
+ "run_id": "20261102T113320Z-3c9e71af34cc9917",
+ "s3k_bugs_reproduced": {
+  "A_forged_report_content_sha": "v0k accepted schema-shaped forged report; v0l rejects on pinned content SHA-256 before any output",
+  "B_nonparity_output": "v0k wrote output with parity_proven=false; v0l refuses SOURCE_PARITY_NOT_PROVEN before file creation"
+ },
+ "schema": "spk-sim-s3l-batch-lab-witness/v0l",
+ "scientific_authority": "HOLD",
+ "status": "S3L_ATTESTED_ORIGINALS_BATCH_GUI_READY_RESEARCH_HOLD",
+ "task_issue": 75,
+ "tests": {
+  "batch_harness": "21 real-click checks on real export, 4 procs byte-identical",
+  "engine_16_masks": true,
+  "pytest_passed": 27,
+  "s3h_15_of_15": true,
+  "smoke_firefox_png_bytes": 114547
+ },
+ "ui_source_sha256": {
+  "viewer/spk-sim-s3l-batch-engine-v0l.js": "e96a1ce8bc86e687ad8bc393ce4a9f4823af463722a985c101ba1694701d47ab",
+  "viewer/spk-sim-s3l-batch-lab-v0l.css": "84adf6582741bec645260434bccd5da7dbbd7aa34431c906375122580e4c198e",
+  "viewer/spk-sim-s3l-batch-lab-v0l.html": "b28a7e709d8a7ea146b0bac9190798897c0665632603ca353ee7cbab006ecd58",
+  "viewer/spk-sim-s3l-batch-lab-v0l.js": "b4d61d6d5025fc805a2530e457f6b61f9a53029a9b7d61a9f35124dcbfcc4f0e"
+ }
+}
