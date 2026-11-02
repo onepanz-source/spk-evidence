@@ -1,0 +1,93 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0
+ },
+ "branch": "research/spk-sim-s3i-offline-dataset-gui-lab-v0i",
+ "dataset_export": {
+  "reason": "original UCI ZIPs are external local operator inputs and were not provided in the authorized scope; exporter delivered and negative-validated; no fabricated rows",
+  "status": "DATASET_EXPORT_NOT_AVAILABLE"
+ },
+ "decision": "HOLD",
+ "engine": {
+  "audit_mutants_detected": [
+   "bypass_cmp",
+   "wrong_delay"
+  ],
+  "determinism_4proc": {
+   "digest": "1bd11cf2440a3f7a60a721aa25714a4e5da9def0968257f4f771be20f5aa1882",
+   "identical": true,
+   "processes": 4
+  },
+  "masks_tested": 16,
+  "node_tests": true,
+  "s3h_observed_matched": 15,
+  "unobserved_mask": 1
+ },
+ "exit_code": 4,
+ "exporter_controls": {
+  "banknote_deterministic": true,
+  "banknote_label_free": true,
+  "banknote_masks_in_range": true,
+  "occupancy_drift_detected": true,
+  "ok": true,
+  "out_exists_rejected": true,
+  "relative_path_rejected": true,
+  "symlink_rejected": true,
+  "wrong_sha_zip_rejected": true
+ },
+ "limitations": [
+  "Sandbox match to S3h is an aggregate derived checksum, never a native re-execution or observed per-tick native trace.",
+  "15 of 16 masks are source-observed; mask 1 (bit [0]) is NO_ORIGINAL_OBSERVATION, simulation only.",
+  "Occupancy is INPUT_ENCODING_PREVIEW_ONLY; no occupancy network admitted.",
+  "No labels, raw features, predictions, metrics, training, BV credit or P writes."
+ ],
+ "main_base": "787c8fbed87c1e2e4b703e985f68ae53c81c8444",
+ "native_tests_executed": 0,
+ "owned_modules_imported": false,
+ "pins": {
+  "ai_parent_witness_sha256": "d474dd9087ceb5312b55b5d9f2c276f7dc709f0c5be09e956c5f49ab2119a0ed",
+  "all_verified": true,
+  "s2b_viewer_sha256": {
+   "spk-sim-s2b-viewer-v0b.css": "9a3de6b30b44c5d7e7c7d2c36d582da2d9190d1e7843689e833f7354fd4de805",
+   "spk-sim-s2b-viewer-v0b.html": "0c1012d203a248aaf33675867e3ec6af97b8c05a0f9187e9bb1a66014570656e",
+   "spk-sim-s2b-viewer-v0b.js": "97aeeeea07f3e9826cb39668aca04e15d59f3a37dde845bc938d1642e17133e9"
+  },
+  "s3h_report_blob": "6aeaff2e713c5a17754000dabcc55f1e7ada48b9",
+  "s3h_report_sha256": "64d3a146eff6cf946124e8ee56d70a573e182d6283727754dc924e9165f8eb9c",
+  "spec_blob": "1aba95ce1c768dd7e025eb370b149ab01ff21fee",
+  "spec_sha256": "b0c236adc5c65c86b2858fad9e06d554cb55aa7db04d6ebda2ebc2aacfb8bf17"
+ },
+ "pr": 68,
+ "research_only": true,
+ "run_id": "20261102T101934Z-56489ac1307ec6bb",
+ "schema": "spk-sim-s3i-offline-lab-witness/v0i",
+ "scientific_authority": "HOLD",
+ "security_scan": {
+  "forbidden_hits": {},
+  "local_refs": [
+   "spk-sim-s3i-lab-v0i.css",
+   "spk-sim-s3i-sandbox-engine-v0i.js",
+   "spk-sim-s3i-lab-v0i.js"
+  ],
+  "nonlocal_refs": [],
+  "ok": true
+ },
+ "smoke": {
+  "ok": true,
+  "png_bytes": 116708,
+  "returncode": 0,
+  "url": "file:///home/ste/workspace/s3i-work/src/viewer/spk-sim-s3i-lab-v0i.html"
+ },
+ "status": "S3I_MANUAL_GUI_READY_DATASETS_UNAVAILABLE_HOLD",
+ "task_issue": 69,
+ "ui_source_sha256": {
+  "viewer/spk-sim-s3i-lab-v0i.css": "17f782b114688c81077e7074e7e452820d4172fb2ccec39bf9c25e0e5e8e6fc7",
+  "viewer/spk-sim-s3i-lab-v0i.html": "6baa6a1ba37c95d8d9b06c10de61c5c81d87fc5314ba715f979fbcebe1367ce6",
+  "viewer/spk-sim-s3i-lab-v0i.js": "e08b0206bf7cba8d127cbfe17ee9672b77cd824ae02e93d90066678737ec8def",
+  "viewer/spk-sim-s3i-sandbox-engine-v0i.js": "56a70dadcd590abeb728765ff1e27b2481837fc6de7e6ed77f97ac9aa9aaade0"
+ }
+}
