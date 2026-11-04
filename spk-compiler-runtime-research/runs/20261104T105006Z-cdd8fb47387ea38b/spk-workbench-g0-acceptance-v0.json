@@ -1,0 +1,71 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "native_tests_executed": 0,
+  "owned_modules_imported": false,
+  "owner_C0_C5_peer_review_needed": true
+ },
+ "base": "research/spk-learning-l0-l1-roadmap-v0 @ bf425c3db827dd39caa9e1dd9df09fefa9589772",
+ "branch": "research/spk-workbench-g0-analysis-v0",
+ "browser_firefox": {
+  "invalid_inputs": "bad JSON -> visible alert with JSON.parse error; >4MiB file -> alert G0_TRACE_HOLD:FILE_TOO_LARGE_4MIB",
+  "model_harness": "17/17 checks pass: authentic S2a validated (chain8 8/8/7/1, ticks 2..16 strictly increasing, 7 route edges with multiplicity, graph origin DERIVED_FROM_EMISSION_ROUTES_NOT_FULL_NETWORK_IR, A/B descriptive, same-scenario comparable=true, cross-scenario false); synthetic valid accepted, parallel routes count=2; rejections REPORT_SCHEMA/AUTHORITY/FRAME_TICK(invented queue state)/ROUTE_CAUSALITY/non-JSON; all performance resources file:// (no network)",
+  "ui_drive_authentic_s2a": "real <input type=file> + DataTransfer with spk-evidence/spk-sim-s2a-native-observed-traces-v0a.json (sha256 be28a6b2c6bd3001a0c587ae986fddf8d138ffb80df6cc11050acc9a07f436da): status '7 scenari - formato verificato, SHA non autenticato'; 7 case options first=chain8; chart SVG yes; graph 35 elements; records panel; final states N000-N007; A/B cards with B-A deltas",
+  "ui_render_smoke": "workbench/spk-g0-v0.html via file:// screenshot captured"
+ },
+ "decision": "HOLD",
+ "environment": {
+  "firefox": "headless --screenshot, fresh profiles, file:// only",
+  "node": "v22.23.1 (/usr/bin/node, clean env)",
+  "os": "Fedora Linux 44 (KDE Plasma Desktop Edition)",
+  "python": "3.14.8 + pytest 9.1.1 (spk-algebra/.venv)",
+  "worktree": "/home/ste/workspace/g0-work (safe isolated copy, no .git, non-destructive; scratch-g0/ harness not committed)"
+ },
+ "frozen_untouched": "S2b viewer pins 8/8 unchanged; no Core/Network/Compiler/Architecture/BV/PE/host/main edits; G1 not implemented",
+ "in_scope_repair": "workbench/tests/test-spk-g0-model-v0.cjs: route-collapse mutation now also sets budget_used_records=5 so MULTIPLICITY_routes_by_emission fires (was RECORD_TOTAL); model/UI untouched; pinned in gate and covered by gate test",
+ "initial_head": "77a22181b20ffed43c38bab5564cc7977fe76ee8",
+ "new_files": {
+  "docs/spk-workbench-g0-acceptance-v0.md": "7b871f17598fbf94187af4dde593216bc5ee2dad7dc8bff387047c26aba8fbad",
+  "search/spk_workbench_g0_gate_v0.py": "e0a19a5e9a2384cc363176c822caeb15df2204c33a5da2b47e6f94778ffb17d8",
+  "tests/test_spk_workbench_g0_gate_v0.py": "79a4a042a4b7ad8cbf9330f04b24182f6d880f7272895a418a5eefb9fb492fb4",
+  "workbench/tests/test-spk-g0-model-v0.cjs(repaired)": "7ce7bcde1297cf5c40c47ce1cdabe3012793f5b8428ab2ba38f2e00ff520c646"
+ },
+ "no_invented_states": "cross_stream_total_order/pending_queue_occupancy/per_tick_node_states are not_available and rejected if mutated; routes are emission-observed; graph is derived subgraph not Network IR; tick axis is derived index not time; A/B descriptive not statistical",
+ "pr": 103,
+ "prior_task": "S5b #102 executed first: S5B_RAW_LOG_CUSTODY_BLOCKED_HOLD witness spk-evidence@8b3741d1 run 20261104T103241Z-6522a58b56ec1f0f (documented block, not ciat-done)",
+ "provenance_independently_authenticated": false,
+ "release_certified": false,
+ "run_id": "20261104T105006Z-cdd8fb47387ea38b",
+ "schema": "spk-workbench-g0-acceptance-witness/v0",
+ "scientific_authority": "HOLD",
+ "status": "G0_WORKBENCH_OFFLINE_ANALYSIS_ENGINEERING_PASS_SCIENTIFIC_HOLD",
+ "task": "workbench G0 (PR #103)",
+ "tests": {
+  "cumulative_gate": "exit 4 = engineering PASS + mandatory HOLD; tamper control exit 2 G0_VETO PIN_MISMATCH; restored exit 4",
+  "gate_report": {
+   "canonical": {
+    "canonical_bytes": 30330,
+    "canonical_sha256": "9e699afc788a1115537487e6f0ecaf392691f493da2cb271ab5e37f0a01e624f",
+    "two_fresh_processes_identical": true
+   },
+   "frozen_s2b": {
+    "frozen_s2b_pins_ok": 8
+   },
+   "node": {
+    "node_tests_fail": 0,
+    "node_tests_pass": 10
+   },
+   "offline_scan_hits": [],
+   "python_static": {
+    "python_static_pass": 5
+   }
+  },
+  "gate_unit": "6/6 pass (pytest tests/test_spk_workbench_g0_gate_v0.py)",
+  "node_model": "10/10 pass (node --test workbench/tests/test-spk-g0-model-v0.cjs)",
+  "python_static": "5/5 pass (pytest tests/test_spk_workbench_g0_static_v0.py)"
+ }
+}
