@@ -1,0 +1,91 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "native_owner_authority": false,
+  "native_tests_executed": 0,
+  "owned_modules_imported": false,
+  "owner_C0_C5_peer_review_needed": true,
+  "release_certified": false,
+  "runtime_executed": false
+ },
+ "blocker": "W2 gate CLI check_git requires a real Git worktree with commit 545da3591e703fd0c56ca77ea21bcdf455208717 as ancestor of HEAD; fwork has no authenticated git access to the private repo, so the exact commit objects cannot be fetched. All functional/scientific checks pass; only the git-custody subcheck of the CLI gate is blocked. Issue #109 kept OPEN per task instruction.",
+ "branch": "research/spk-workbench-g1x-bounded-sweeps-v0",
+ "branch_head": "f0bb56392e476114aceba0dc6d6aef7eda28e5e0",
+ "decision": "HOLD",
+ "engineering_gate": "PARTIAL",
+ "exit_code": 4,
+ "learning_occurred": false,
+ "new_file_sha256": {
+  "search/spk_workbench_g1x_gate_v0.py": "28d50f5dc157516a538deb6a1330e068759bb217f8dbf17f65880f33ccbc9667",
+  "tests/test_spk_workbench_g1x_gate_v0.py": "4c943017ba1081e773f36a90de7d4040165bb4611b76b7fc173ffb29e7e6bf9b",
+  "tests/test_spk_workbench_g1x_sweeps_v0.py": "bb8335747d89b97ff2f5e9e770798ee8757931f38f5361ecb4a7d8e48f367b99",
+  "workbench/g1x_bounded_sweep_v0.py": "2b458ebe6e56cfbc9e5e00b390aee5aedf3236ad22bf3a340bb8539fd6c59d6d"
+ },
+ "parent_g1": "545da3591e703fd0c56ca77ea21bcdf455208717",
+ "pr": 108,
+ "release_certified": false,
+ "results": {
+  "adversarial_vetos": "18 direct CLI VETOs (schema/values/selector/budget/dup-key/NaN/trailing/output-exists/symlink/report-tamper-REPLAY_DIFFERENTIAL) + 33 pytest + 3 browser VETOs = >20 nonvacuous",
+  "firefox_e2e": {
+   "browser_vetos": [
+    "bad candidate -> Candidato rifiutato",
+    "report schema fake -> Report rifiutato",
+    "report >2MiB -> Report rifiutato"
+   ],
+   "candidate_imported": "G1 example candidate (sha256 e25934f98a668e875cd7e909cbdeac95863f0029c2e20a1a305ab005145e3666), status DRAFT_ONLY_NOT_COMPILER_ADMITTED; Compiler admission separate: COMPILER_ADMITTED_ONLY_NOT_EXECUTED (manifest 41eb6f71...)",
+   "mode": "real Firefox headless via Marionette (file://), profile /tmp/ffw2",
+   "no_network": true,
+   "non_file_resources": [],
+   "plan_exported_by_browser": "/tmp/ffw2/downloads/spk-workbench-w2-plan-draft.json sha256 d67e8b355568a3384da2e8065f37894913659f115f4dd243c4fcace25c495a16",
+   "report_reimported_rows": 3,
+   "same_exported_plan_run_by_python": "report byte-identical to CLI run (17bcd55f...)",
+   "summary": "Varianti 3 CLOSED 3 LIMIT_REACHED 0 Stato HOLD"
+  },
+  "g0_pin_sha256_verified": true,
+  "g1_pin_sha256_verified": true,
+  "gate_cli": "search/spk_workbench_g1x_gate_v0.py -> W2_VETO:GIT_COMMAND (exit 2): real Git clone of private branch f0bb5639 not available on fwork (no git credentials; repo returns 404 anonymous); all other gate sections executed manually and PASS",
+  "node_check": "PASS (env -i PATH=/usr/bin:/bin node --check workbench/spk-g1x-v0.js)",
+  "pytest_w2": "33/33 passed (tests/test_spk_workbench_g1x_sweeps_v0.py + tests/test_spk_workbench_g1x_gate_v0.py)",
+  "s2b_frozen_pins_verified": true,
+  "sweep_real": {
+   "no_fake_results_on_limit": true,
+   "plan_sha256": "491b36cb08b2e0ef33d3aeb54114e64c329d4a5347c8824f33bb3c79c0bc4bd4",
+   "report_sha256_file": "17bcd55f06ff72568a761e37299c4225f7bdaba158b47e8762dd3ce0f1491561",
+   "rows": [
+    {
+     "adjudication": "EXACT_PASS",
+     "status": "CLOSED",
+     "value": 1
+    },
+    {
+     "adjudication": "EXACT_PASS",
+     "status": "CLOSED",
+     "value": 2
+    },
+    {
+     "adjudication": "EXACT_PASS",
+     "status": "CLOSED",
+     "value": 3
+    }
+   ],
+   "selector": "core_instruction A CMP[1] threshold_raw",
+   "third_process_verify_replay": "G1X_BOUNDED_SWEEP_REPLAY_PASS_SCIENTIFIC_HOLD (report_sha256 2be8dfa01b7aee26f714c2b07d0ce8017ee4ba156f69cd1a457496b74a8d4265, exit 4)",
+   "two_fresh_processes_byte_identical": true,
+   "values": [
+    1,
+    2,
+    3
+   ]
+  }
+ },
+ "run_id": "20261104T200000Z-w2mtest",
+ "schema": "spk-workbench-w2-bounded-sweep-witness/v0",
+ "scientific_authority": "HOLD",
+ "scope": "W2 bounded parameter sweeps via original frozen Compiler + 24t bounded reference host; GUI offline file:// planner; NOT G2, NOT L0/L1 learning, no runtime promotion, no P writes",
+ "status": "W2_BOUNDED_SWEEP_INCOMPLETE_HOLD",
+ "task_issue": 109
+}
