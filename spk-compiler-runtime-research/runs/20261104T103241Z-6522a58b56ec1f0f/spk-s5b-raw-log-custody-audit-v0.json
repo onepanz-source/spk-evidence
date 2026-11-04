@@ -1,0 +1,148 @@
+{
+ "adversarial_mutations": {
+  "all_exit_2_veto": true,
+  "harness": "s5b-work/mutation_harness.py against pinned repro logs via lexical integrated CLI",
+  "table": {
+   "POSITIVE_CONTROL_unmodified": {"exit": 2, "veto": "S5B_VETO ENVELOPE_STRUCTURE"},
+   "m01_s5_zero_failure_summary_822_ids": {"exit": 2, "veto": "S5B_VETO ENVELOPE_STRUCTURE"},
+   "m02_s5_duplicate_id": {"exit": 2, "veto": "S5B_VETO ENVELOPE_STRUCTURE"},
+   "m03_s5_dropped_id": {"exit": 2, "veto": "S5B_VETO ENVELOPE_STRUCTURE"},
+   "m04_s5_changed_id": {"exit": 2, "veto": "S5B_VETO ENVELOPE_STRUCTURE"},
+   "m05_s5_type_flip": {"exit": 2, "veto": "S5B_VETO ENVELOPE_STRUCTURE"},
+   "m06_sha_tamper_pin": {"exit": 2, "veto": "S5B_VETO ENVELOPE_STRUCTURE"},
+   "m07_wrong_s4_head": {"exit": 2, "veto": "S5B_VETO ENVELOPE_STRUCTURE"},
+   "m08_s4_no_summary": {"exit": 2, "veto": "S5B_VETO ENVELOPE_STRUCTURE"},
+   "m09_s5_two_summaries": {"exit": 2, "veto": "S5B_VETO ENVELOPE_STRUCTURE"},
+   "m10_s5_trailing_failed_after_terminal": {"exit": 2, "veto": "S5B_VETO ENVELOPE_STRUCTURE"},
+   "m11_s4_duplicate_heading": {"exit": 2, "veto": "S5B_VETO ENVELOPE_STRUCTURE"},
+   "m12_s5_invalid_utf8": {"exit": 2, "veto": "S5B_VETO UTF8"},
+   "m13_s5_ansi_escape": {"exit": 2, "veto": "S5B_VETO CONTROL"},
+   "m14_s4_bare_cr": {"exit": 2, "veto": "S5B_VETO BARE_CR"},
+   "m15_same_log_twice": {"exit": 2, "veto": "S5B_VETO ENVELOPE_STRUCTURE"},
+   "m16_s5_passed_count_drift": {"exit": 2, "veto": "S5B_VETO ENVELOPE_STRUCTURE"},
+   "m17_s4_baseline_count_drift": {"exit": 2, "veto": "S5B_VETO ENVELOPE_STRUCTURE"},
+   "m18_s5_missing_short_summary": {"exit": 2, "veto": "S5B_VETO ENVELOPE_STRUCTURE"},
+   "m19_s5_id_before_heading": {"exit": 2, "veto": "S5B_VETO ENVELOPE_STRUCTURE"},
+   "m20_s5_post_terminal_text": {"exit": 2, "veto": "S5B_VETO ENVELOPE_STRUCTURE"},
+   "m21_s4_empty": {"exit": 2, "veto": "S5B_VETO RAW_BYTES"},
+   "m22_s5_nested_section": {"exit": 2, "veto": "S5B_VETO ENVELOPE_STRUCTURE"},
+   "m23_s5_new_failure_id": {"exit": 2, "veto": "S5B_VETO ENVELOPE_STRUCTURE"},
+   "m24_s5_error_id_relabel": {"exit": 2, "veto": "S5B_VETO ENVELOPE_STRUCTURE"}
+  },
+  "total": "24 mutations + 1 positive control"
+ },
+ "authority_flags": {
+  "NO_BV_TO_P": true, "NO_EXTERNAL_DISPATCH": true, "NO_G2": true, "NO_OWNER_C0_C5": true,
+  "P_writes": 0, "native_tests_executed": 0, "owned_modules_imported": false,
+  "owner_C0_C5_peer_review_needed": true
+ },
+ "blockers": [
+  "B1: original raw S4/S5 full-suite logs absent from all authorized evidence/worktrees; no independent prior raw-log SHA exists -> historical raw-log identity not auditable (guard itself: provenance_independently_authenticated=false)",
+  "B2: pinned reruns (labeled REPRODUCTIONS) do not match historical counts: S4-repro 697 errors/824 IDs vs 695/822; S5-repro 10804 passed vs 10765; S4/S5 repro ID sets not identical (3+3 drift)",
+  "B3: guard/envelope grammar rejects real pytest 9.1.1 transcript format (no trailing ====, dual time, subtests chunk, ERROR without ' - reason'): exit 2 SUMMARY_MISSING_OR_AMBIGUOUS / ENVELOPE_STRUCTURE -> fail-closed VETO on the only available real logs",
+  "B4: terminal is S5B_RAW_LOG_CUSTODY_BLOCKED_HOLD, NOT S5B_RAW_LOG_IDENTITY_AUDIT_COHERENT_HOLD; issue #102 NOT closed ciat-done; block documented in this witness"
+ ],
+ "branch": "research/spk-s5b-raw-log-custody-audit-v0",
+ "decision": "HOLD",
+ "fedora_environment": {
+  "note": "no ~/Scaricati, no unapproved paths, guards are read-only stdlib",
+  "os": "Fedora Linux 44 (KDE Plasma Desktop Edition)",
+  "pytest": "9.1.1",
+  "python": "3.14.8 (/home/ste/workspace/spk-algebra/.venv/bin/python)",
+  "worktree": "/home/ste/workspace/s5b-work (safe isolated copy; no .git, non-destructive)"
+ },
+ "fedora_tests": {
+  "command_pattern": "python -B -m unittest discover -s tests -p '<pattern>' (cwd=/home/ste/workspace/s5b-work)",
+  "suites": {
+   "test_spk_s5b_cli_subprocess_boundary_v0.py": "7/7 OK",
+   "test_spk_s5b_fullsize_integrated_differential_v0.py": "17/17 OK",
+   "test_spk_s5b_integrated_envelope_custody_v0.py": "6/6 OK",
+   "test_spk_s5b_lexical_cli_boundary_v0.py": "5/5 OK",
+   "test_spk_s5b_lexical_integrated_custody_v0.py": "8/8 OK",
+   "test_spk_s5b_log_custody_guard_v0.py": "31/31 OK",
+   "test_spk_s5b_strict_transcript_envelope_v0.py": "11/11 OK"
+  },
+  "total": "85/85 PASS on Fedora (synthetic fixtures; NOT historical original logs)"
+ },
+ "format_incompatibility_real_pytest_9_1_1": {
+  "short_summary_ids": "collection ERROR lines like 'ERROR tests/test_spk_lab_i2c17n_private_binding.py' lack ' - reason' -> guard FAIL_RE MALFORMED_FAILURE_ID path",
+  "summary_chunks": "'821 subtests passed' chunk not accepted by guard COUNT_RE -> SUMMARY_UNRECOGNIZED_FIELD path",
+  "terminal_line": "last line has NO trailing '====' and dual time 'in 498.77s (0:08:18)' -> guard SUMMARY_RE matches 0 summaries",
+  "verdict": "published guard grammar is fail-closed on real pytest 9.1.1 Fedora transcripts; compatible only with the synthetic fixture grammar used in its 85 unit tests. Recorded as BLOCKED, constants not adjusted."
+ },
+ "guard_on_repro_logs": {
+  "sha_tamper_control": "exit 2 VETO RAW_LOG_SHA_MISMATCH",
+  "spk_s5b_integrated_envelope_custody_v0.py": "exit 2 VETO ENVELOPE_STRUCTURE",
+  "spk_s5b_lexical_integrated_custody_v0.py": "exit 2 VETO ENVELOPE_STRUCTURE",
+  "spk_s5b_log_custody_guard_v0.py": "exit 2 VETO SUMMARY_MISSING_OR_AMBIGUOUS",
+  "two_fresh_processes": "byte-identical stdout sha256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 (empty) and stderr sha256 3ad2be99e0c19b94133b54a6b861a21f01165491c5ace36fe2161e4ea0a7d73a; both exit 2",
+  "wrong_s4_head_control": "exit 2 VETO SOURCE_HEAD_PIN"
+ },
+ "original_log_custody": {
+  "conclusion": "historical raw S4/S5 log bytes are NOT available under authorized custody; their identity cannot be independently re-audited; witness JSONs only are hash-verified",
+  "independent_prior_raw_log_hash_exists": false,
+  "originals_present_in_authorized_workspace": false,
+  "s4_witness_json_sha256": "506e79a19fc2d20a9b331a3fe41bf36f111438dcc7c86665ec31c5b1daf9885e (local file MATCHES pin; run 20261102T231827Z-68771834646f3b39)",
+  "s5_witness_json_sha256": "bf910b39d2a1fdf1f6ae72dc6be43bda9d9817b5ee88291d00c8765a51a9c4d9 (local file MATCHES issue pin; GitHub e8aa3891 run 20261103T001415Z-5e62bbbed5f056de)",
+  "searched": "~/workspace/spk-evidence (local + GitHub spk-evidence@main), s5-work, 24aa-work, all *-work dirs: no raw pytest full-suite logs found; only witness JSONs"
+ },
+ "parent_branch": "research/spk-s5-bounded-conformance-v0 @ 9bd6a2f5fa4ff37b5257a6f1575a6f6780cd9b01",
+ "pr": 101,
+ "pr_head": "e01228dc526898a18faefd79c4c20617eea5c016",
+ "provenance_independently_authenticated": false,
+ "release_certified": false,
+ "reproductions": {
+  "command": "python -B -m pytest -q --continue-on-collection-errors tests/ (redirected, no tty => no ANSI)",
+  "count_match": "NO: errors 697 != 695; S5 passed 10804 != 10765; IDs 824 != 822 -> per issue #102 instruction: report BLOCKED, do not fudge constants",
+  "label": "NEW PINNED NON-DESTRUCTIVE RERUNS = REPRODUCTIONS, NOT historical originals",
+  "s4_repro": {
+   "end": "2026-11-04T10:27:09Z", "exit": 1,
+   "historical_expected": "127 failed / 10653 passed / 106 skipped / 695 errors / 822 IDs",
+   "log": "rawlogs/s4-fullsuite-repro.log",
+   "sha256": "3fdcf34ca33f83793aa377e2f74f2401a882cbe04828340431f2613d85f51b5b",
+   "start": "2026-11-04T10:18:49Z",
+   "summary": "127 failed, 10653 passed, 106 skipped, 697 errors, 821 subtests passed in 498.77s (0:08:18)",
+   "unique_failure_error_ids": 824
+  },
+  "s4_vs_s5_repro_id_sets": "NOT equal (3 IDs only in S4, 3 only in S5; historical claim was byte-identical 822)",
+  "s5_repro": {
+   "end": "2026-11-04T10:30:17Z", "exit": 1,
+   "historical_expected": "127 failed / 10765 passed / 106 skipped / 695 errors / 822 IDs",
+   "log": "rawlogs/s5-fullsuite-repro.log",
+   "sha256": "a0fb9bafcc131cb758a9cf6cd34789ee9e9063cea8b285f6db340293f66a1e21",
+   "start": "2026-11-04T10:18:49Z",
+   "summary": "127 failed, 10804 passed, 106 skipped, 697 errors, 821 subtests passed in 687.09s (0:11:27)",
+   "unique_failure_error_ids": 824
+  },
+  "source_snapshots": "24aa-work (S4 head af33785e, pins 85a55b2c/4d297dbe verified) and s5-work (S5 head 9bd6a2f5, pins c099c9d3/9ac0979a/79e03327/ea5af69c verified) copied to s5b-work/repro-s4, repro-s5"
+ },
+ "run_id": "20261104T103241Z-6522a58b56ec1f0f",
+ "s4_head": "af33785eae3fbe3cb6831e914b4ce6dce55d3bae",
+ "schema": "spk-s5b-raw-log-custody-audit-witness/v0",
+ "scientific_authority": "HOLD",
+ "scope_note": "Does not invalidate historical S5 engineering PASS (witness bf910b39... hash-verified); limits independent assurance of the 822-ID baseline exactly as issue #102 stated. No merge, no new task, no native/owner execution, no P writes. C0-C5/G2/dispatch/BV-to-P HOLD unchanged.",
+ "seed_pins_verified": {
+  "docs/spk-s5b-postclosure-raw-log-custody-v0.md": "4abfa86db6905ff468a796a688464394272a54f5a1b6cae8af1fa7767bfdcbaf MATCH",
+  "search/spk_s5_final_gate_v0.py(base)": "c099c9d3faa93038bb7d4068a03e9c48153421c4c00b3796682f602ccfc541df MATCH (S5 witness pin)",
+  "search/spk_s5b_log_custody_guard_v0.py": "d53a53fb26f5286ffe6942edc877370f3781e95578146ae86962f35eeb2e1c96 MATCH",
+  "tests/test_spk_s5b_log_custody_guard_v0.py": "dc8fcb2f422c5144555a63a2b4b1968025ecedbbf1d1d5a877145c29902a1e14 MATCH"
+ },
+ "status": "S5B_RAW_LOG_CUSTODY_BLOCKED_HOLD",
+ "task_issue": 102,
+ "pr_file_sha256": {
+  "docs/spk-s5b-postclosure-raw-log-custody-v0.md": "4abfa86db6905ff468a796a688464394272a54f5a1b6cae8af1fa7767bfdcbaf",
+  "search/spk_s5_final_gate_v0.py": "c099c9d3faa93038bb7d4068a03e9c48153421c4c00b3796682f602ccfc541df",
+  "search/spk_s5b_integrated_envelope_custody_v0.py": "66536f64a86a303bbbc3ded36273d16f54dfd020f8343f9de991abf7cce10d9e",
+  "search/spk_s5b_lexical_integrated_custody_v0.py": "cd06d2028f60b44c45d6cbdaedecf97e496fb52b50275b64f7b838545c0ee8b2",
+  "search/spk_s5b_line_grammar_guard_v0.py": "57736db6b7f507163d90e70c9d276ba25c2e3457ebde584bd9e99a693a1ede29",
+  "search/spk_s5b_log_custody_guard_v0.py": "d53a53fb26f5286ffe6942edc877370f3781e95578146ae86962f35eeb2e1c96",
+  "search/spk_s5b_strict_transcript_envelope_v0.py": "4b347bcbd81821a3aa55cabd069fb1e699f452b766edebdf128dc52a9e5fd150",
+  "tests/test_spk_s5b_cli_subprocess_boundary_v0.py": "371fc313733444847f6b5b5987d2b7ad44fb089676058f06061d11e90c7175aa",
+  "tests/test_spk_s5b_fullsize_integrated_differential_v0.py": "d44f7b7f9427693c63559b056416a89b6a21540efe936c5ecd8944f029dbea95",
+  "tests/test_spk_s5b_integrated_envelope_custody_v0.py": "38fcc55f40f9e34641369535b3531371f558875d01bccd56ee70ed7e03c7e07f",
+  "tests/test_spk_s5b_lexical_cli_boundary_v0.py": "66167fade15334a1ef71876b4977807f7edab90c71e7a9ae10953bc04adcbbf6",
+  "tests/test_spk_s5b_lexical_integrated_custody_v0.py": "8b865d5a594523a68cabe43f67b570d3317cbe078b72dbfa1b4ff043c098ce87",
+  "tests/test_spk_s5b_log_custody_guard_v0.py": "dc8fcb2f422c5144555a63a2b4b1968025ecedbbf1d1d5a877145c29902a1e14",
+  "tests/test_spk_s5b_strict_transcript_envelope_v0.py": "c9535752426d5d57e5ecab96a2d554482daf5ceae6c88625a4b0f14ce9fe3374"
+ }
+}
