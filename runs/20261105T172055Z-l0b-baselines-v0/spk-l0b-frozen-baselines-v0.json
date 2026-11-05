@@ -1,0 +1,206 @@
+{
+ "adversarial_veto": {
+  "all_vetoed": true,
+  "cli_vetos": [
+   "tampered_train_sha_mismatch",
+   "holdout_path_refused",
+   "sealed_path_refused",
+   "validation_as_train_sha_mismatch",
+   "forged_report_verify_drift",
+   "output_exists_refused"
+  ],
+  "positive_control_verify_pass": true,
+  "unit_vetos_in_pytest": "wrong sha, forbidden header (slope col), non-monotonic ts, invalid label, forbidden paths, schema vetoes"
+ },
+ "attestation_mode": "GITHUB_TREE_EQUIVALENCE_NOT_COMMIT_ANCESTRY",
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "SPK_learning_demonstrated": false,
+  "exact_git_ancestry_attested": false,
+  "external_host_baselines_fitted": true,
+  "holdout_labels_read": false,
+  "holdout_scored": false,
+  "learning_demonstrated": false,
+  "native_tests_executed": 0,
+  "primary_inconclusive": true,
+  "release_certified": false
+ },
+ "branch": "research/spk-l0b-frozen-baseline-prereg-v0",
+ "decision": "HOLD",
+ "environment": {
+  "numpy": "2.3.4",
+  "platform": "Linux-7.2.15-200.fc44.x86_64-x86_64-with-glibc2.43",
+  "python": "3.14.10",
+  "sklearn": "1.7.2",
+  "venv": "/home/ste/workspace/l0b-venv (isolated, pinned scikit-learn==1.7.2 numpy==2.3.4 pytest==9.1.1)"
+ },
+ "exact_git_ancestry_attested": false,
+ "inputs": {
+  "features": "15 sensors in original order; Date/Time/S5_CO2_Slope/labels excluded from features; timestamps audit-only",
+  "holdout_read": false,
+  "holdout_scored": false,
+  "sealed_read": false,
+  "sha_verified_against_l0a_pins": true,
+  "train": {
+   "path_local_private": "spk-l0a-local/gate-run-20261105T141237Z/a/train-labeled.csv",
+   "rows": 5305,
+   "session": [
+    "2017-12-22 10:49:41",
+    "2017-12-24 09:10:50"
+   ],
+   "sha256": "a940c8445fddb3136e924340666e08908e4f4d9358d883d38d6a8502dd6e4038"
+  },
+  "validation": {
+   "path_local_private": "spk-l0a-local/gate-run-20261105T141237Z/a/validation-labeled.csv",
+   "rows": 2779,
+   "session": [
+    "2017-12-25 09:11:42",
+    "2017-12-26 09:10:01"
+   ],
+   "sha256": "8a4709c5e6be157a4457b3ee81af2c5cde4139bb65c904c287c1b09d5e2cbe88"
+  }
+ },
+ "issue": 113,
+ "parent_l0a_tree": "10d02d357dcf0b338484cb077c6e088e44e1085b",
+ "pr_draft": 112,
+ "primary_binary_results": {
+  "gbm_sklearn": {
+   "balanced_accuracy": 0.5,
+   "false_alarms": 0,
+   "false_alarms_per_hour": 0.0,
+   "macro_f1_binary": 0.5,
+   "params": {
+    "early_stopping": false,
+    "features": "raw 15 sensors",
+    "l2_regularization": 0.0,
+    "learning_rate": 0.1,
+    "max_iter": 200,
+    "max_leaf_nodes": 31,
+    "min_samples_leaf": 20,
+    "random_state": 864
+   },
+   "prediction_sha256": "4ad4987f6e2788de29d7a20d55956156a326c028a6d0542537f484298b4a5d93",
+   "primary_inconclusive": true
+  },
+  "logistic_sklearn": {
+   "balanced_accuracy": 0.5,
+   "false_alarms": 0,
+   "false_alarms_per_hour": 0.0,
+   "macro_f1_binary": 0.5,
+   "params": {
+    "C": 1.0,
+    "encoder": "train-only z-score clip [-8,8]",
+    "max_iter": 1000,
+    "random_state": 864,
+    "solver": "lbfgs"
+   },
+   "prediction_sha256": "4ad4987f6e2788de29d7a20d55956156a326c028a6d0542537f484298b4a5d93",
+   "primary_inconclusive": true
+  },
+  "majority": {
+   "balanced_accuracy": 0.5,
+   "false_alarms": 0,
+   "false_alarms_per_hour": 0.0,
+   "macro_f1_binary": 0.5,
+   "params": {
+    "class": 0
+   },
+   "prediction_sha256": "4ad4987f6e2788de29d7a20d55956156a326c028a6d0542537f484298b4a5d93",
+   "primary_inconclusive": true
+  },
+  "persistence": {
+   "balanced_accuracy": 0.5,
+   "false_alarms": 0,
+   "false_alarms_per_hour": 0.0,
+   "macro_f1_binary": 0.5,
+   "params": {
+    "initial": 0
+   },
+   "prediction_sha256": "4ad4987f6e2788de29d7a20d55956156a326c028a6d0542537f484298b4a5d93",
+   "primary_inconclusive": true
+  },
+  "pir_or": {
+   "balanced_accuracy": 0.4987405541561713,
+   "false_alarms": 7,
+   "false_alarms_per_hour": 0.29200801863289266,
+   "macro_f1_binary": 0.49936948297604034,
+   "params": {
+    "rule": "S6_PIR>=0.5 or S7_PIR>=0.5"
+   },
+   "prediction_sha256": "14b5aa831b02df56f5c9b5dacda1eb7e1141ff1adc0979b93808fcfdc9bbb1d5",
+   "primary_inconclusive": true
+  },
+  "threshold_train_only": {
+   "balanced_accuracy": 0.5,
+   "false_alarms": 0,
+   "false_alarms_per_hour": 0.0,
+   "macro_f1_binary": 0.5,
+   "params": {
+    "direction": 1,
+    "feature": "S1_Light",
+    "index": 4,
+    "threshold": 92.0
+   },
+   "prediction_sha256": "4ad4987f6e2788de29d7a20d55956156a326c028a6d0542537f484298b4a5d93",
+   "primary_inconclusive": true
+  }
+ },
+ "primary_inconclusive": true,
+ "primary_inconclusive_reason": "validation session (2017-12-25/26, 2779 rows) contains no positive occupied class; per CIAT rule the binary primary is reported PRIMARY_INCONCLUSIVE, not a fabricated score; no re-split performed (data splits unchanged)",
+ "remote_pr_head": "a9ae97de7554ce8b8a91822670585f9821836bb0",
+ "remote_pr_tree": "d0188c74acd42cebe1254ed5bd135d6eec8870eb",
+ "reproducibility": {
+  "canonical_receipt_sha256": "9ceb62de7762d9c0a8bad90a844e6ee14ba159cd8667e6a42e15e8aa18b34575",
+  "report_sha256": "0609386a716b3aedc8b653e75cbb3b2ad3aabb71527bfdd260bfbe23e79fc9d7",
+  "reports_byte_identical": true,
+  "two_fresh_processes": true,
+  "verify_mode": "exit 4 L0B_REAL_BASELINE_RECEIPT_VERIFIED_HOLD"
+ },
+ "result": "L0B_VALIDATION_BASELINE_ENGINEERING_PASS_PRIMARY_INCONCLUSIVE_SCIENTIFIC_HOLD",
+ "run_id": "20261105T172055Z-l0b-baselines-v0",
+ "runtime_diagnostics_measured": {
+  "cost": {
+   "cpu_seconds": 9.86,
+   "max_rss_bytes": 154341376,
+   "wall_note": "process totals, not hardware energy"
+  },
+  "predict_seconds": 0.015315316999476636,
+  "sklearn_fit_seconds": {
+   "gbm": 0.1390194400009932,
+   "logistic": 0.004220967999572167
+  },
+  "wall_seconds": 6.461870213999646
+ },
+ "schema": "spk-l0b-frozen-baselines-witness/v0",
+ "scientific_limits": [
+  "baseline establishment only: external_host_baselines_fitted=true, SPK_learning_demonstrated=false, no SPK-vs-baseline superiority claim",
+  "binary primary endpoint PRIMARY_INCONCLUSIVE on this validation split (no positive class in validation session); no fabricated score; splits unchanged",
+  "single validation session is one correlated episode, not IID trials; holdout never scored here (single frozen holdout scoring belongs to a later independently preregistered L0c)",
+  "no learning/L0b SPK adaptation, no BV-to-P, P_writes=0, native_tests_executed=0, owned_modules_imported=false, release_certified=false",
+  "HOLD C0-C5/G2/dispatch/owner/human review unchanged; #102 remains BLOCKED_HOLD",
+  "no source rows, labels, class counts or private paths in this public witness"
+ ],
+ "secondary_4class": {
+  "accuracy": 0.9996401583303347,
+  "macro_f1": 0.2499550116969588,
+  "n": 2779,
+  "role": "secondary diagnostic only (CIAT review); not promoted to primary"
+ },
+ "tests": {
+  "file": "tests/test_spk_l0b_frozen_baselines_v0.py (seed 12 + 17 extension tests incl. veto cases)",
+  "pytest_passed": 29
+ },
+ "timestamp_utc": "2026-11-05T17:20:55Z",
+ "worktree": {
+  "base_commit": "44ac0d25 (tree d0188c74... == PR #112 remote tree, verified via API rootmap mktree)",
+  "delta_vs_pr112": "only the 2 new L0b code files (module + tests) extended with binary primary + baselines; docs unchanged; worktree clean",
+  "head": "369817914a7b6606bf5102f8dd38283131d740fa",
+  "head_tree": "127cbc4b98494dc8380752697126ec8287a9b9cc",
+  "parent_tree": "10d02d357dcf0b338484cb077c6e088e44e1085b",
+  "path": "/home/ste/workspace/l0b-fwork"
+ }
+}
