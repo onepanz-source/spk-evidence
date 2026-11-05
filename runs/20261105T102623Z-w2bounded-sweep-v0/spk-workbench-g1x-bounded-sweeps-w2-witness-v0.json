@@ -1,0 +1,266 @@
+{
+ "adversarial_veto": {
+  "browser_vetoed": "15/15",
+  "cases": [
+   "malformed_json_plan",
+   "truncated_json_plan",
+   "duplicate_values",
+   "boolean_values",
+   "single_value",
+   "seven_values",
+   "zero_edge_delay",
+   "negative_value",
+   "value_over_65535",
+   "overcommit_batches",
+   "overcommit_events",
+   "invalid_core_op",
+   "invalid_network_field",
+   "unknown_selector_kind",
+   "field_opcode_mismatch",
+   "edge_index_out_of_range",
+   "unknown_node_id",
+   "tampered_report_verify",
+   "fake_status_report",
+   "existing_output_file",
+   "symlink_output",
+   "oversize_plan",
+   "missing_output_arg",
+   "worker_overcommit",
+   "worker_timeout_path",
+   "source_drift_detected",
+   "browser_malformed_candidate",
+   "browser_bad_candidate_schema",
+   "browser_oversize_candidate",
+   "browser_duplicate_values",
+   "browser_boolean_value",
+   "browser_single_value",
+   "browser_seven_values",
+   "browser_zero_edge_delay",
+   "browser_value_over_bounds",
+   "browser_good_export_control",
+   "browser_malformed_report",
+   "browser_tampered_report_status",
+   "browser_oversize_report",
+   "browser_good_report_control",
+   "browser_no_network_resources"
+  ],
+  "cli_vetoed": "26/26",
+  "controls": "good export and good report still accepted after vetoes (positive controls PASS)",
+  "includes": "malformed JSON, duplicate/boolean/single/seven values, zero edge delay, negative/over-bound values, invalid Core op, invalid network field, unknown selector/node/edge index, field-opcode mismatch, overcommit budgets (33 batches / 257 events), worker overcommit, timeout path, tampered report, fake status, existing/symlink output, oversize plan/report/candidate, browser bad candidate/schema/oversize, browser malformed/tampered/oversize report; each refused with exit 2 / W2_DRAFT_HOLD / G1X_VETO and no download/rows produced",
+  "total_genuine_vetos": 41
+ },
+ "authority_flags": {
+  "BV_to_P_authorized": false,
+  "G2_owner_authorized": false,
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "native_tests_executed": 0,
+  "owned_modules_imported": false,
+  "release_certified": false,
+  "research_only": true
+ },
+ "branch": "research/spk-workbench-g1x-bounded-sweeps-v0",
+ "cli_gate": {
+  "P_writes": 0,
+  "browser_firefox_verified": true,
+  "command": "python -B -m search.spk_workbench_g1x_gate_v0",
+  "exit_code": 4,
+  "git": {
+   "changed_files": [
+    "docs/spk-workbench-g1x-bounded-sweeps-v0.md",
+    "search/spk_workbench_g1x_gate_v0.py",
+    "tests/test_spk_workbench_g1x_gate_v0.py",
+    "tests/test_spk_workbench_g1x_sweeps_v0.py",
+    "workbench/g1x_bounded_sweep_v0.py",
+    "workbench/spk-g1x-v0.css",
+    "workbench/spk-g1x-v0.html",
+    "workbench/spk-g1x-v0.js"
+   ],
+   "head": "4db5eef2279234693371e8ffc6dcc02eae85559a",
+   "parent_g1": "545da3591e703fd0c56ca77ea21bcdf455208717"
+  },
+  "learning_occurred": false,
+  "release_certified": false,
+  "replay": {
+   "closed_runs": 3,
+   "fresh_processes_byte_identical": true,
+   "limit_reached_runs": 0,
+   "report_sha256": "2be8dfa01b7aee26f714c2b07d0ce8017ee4ba156f69cd1a457496b74a8d4265",
+   "row_count": 3
+  },
+  "scientific_authority": "HOLD",
+  "source_pins": {
+   "g0_original_sha256_verified": 6,
+   "g1_original_sha256_verified": 11,
+   "new_files_sha256": {
+    "docs/spk-workbench-g1x-bounded-sweeps-v0.md": "9a0fc6cf43863fc3f6022d29075afdc5d280546d9e59fda12fd73bce32c5dd34",
+    "tests/test_spk_workbench_g1x_gate_v0.py": "4c943017ba1081e773f36a90de7d4040165bb4611b76b7fc173ffb29e7e6bf9b",
+    "tests/test_spk_workbench_g1x_sweeps_v0.py": "bb8335747d89b97ff2f5e9e770798ee8757931f38f5361ecb4a7d8e48f367b99",
+    "workbench/g1x_bounded_sweep_v0.py": "2b458ebe6e56cfbc9e5e00b390aee5aedf3236ad22bf3a340bb8539fd6c59d6d",
+    "workbench/spk-g1x-v0.css": "869af05a4a0234d63147583eff354c63344d17f8d20b62ccdb11ca89631ba73d",
+    "workbench/spk-g1x-v0.html": "8f3f04bc2acb0549f20378bf57f03469fe8076e55cb0ed35b93010cf3092cd39",
+    "workbench/spk-g1x-v0.js": "7797686ee595920694f7aa1072a76fb783709dde9e6b61062b8ffa96f2a51fa6"
+   },
+   "s2b_frozen": {
+    "frozen_s2b_pins_ok": 8
+   }
+  },
+  "status": "W2_BOUNDED_SWEEP_CLI_PASS_BROWSER_PENDING_SCIENTIFIC_HOLD",
+  "tests": {
+   "js_syntax": "PASS",
+   "pytest_passed": 33
+  }
+ },
+ "decision": "HOLD",
+ "execution_worktree": {
+  "diff_vs_g1_parent": "exactly the 8 W2-owned files",
+  "g1_parent_object": "545da3591e703fd0c56ca77ea21bcdf455208717 reconstructed byte-exact (git hash-object -t commit reproduces the exact SHA; tree/parent/author/committer verified against GitHub API objects)",
+  "head": "4db5eef2279234693371e8ffc6dcc02eae85559a",
+  "note": "remote repo is private and no git credentials exist on this host, so the seed commits could not be git-fetched; objects were reconstructed via the GitHub API connector and verified by SHA equality (545da359 commit SHA match; 8 W2 blob SHAs match f0bb563 tree entries; all 54 missing blobs verified by git hash-object)",
+  "path": "/home/ste/workspace/w2-fwork (isolated clean clone; no user worktree touched)",
+  "worktree_clean_after_gate": true
+ },
+ "fedora_first_run": {
+  "gate_exit": 4,
+  "node_check": "PASS (node v22.23.1 --check workbench/spk-g1x-v0.js)",
+  "pytest": "33 passed (tests/test_spk_workbench_g1x_sweeps_v0.py + tests/test_spk_workbench_g1x_gate_v0.py, python 3.14.10, pytest 9.1.1)"
+ },
+ "firefox_e2e": {
+  "browser": "Mozilla Firefox 159.0 headless via Marionette (port 2828), page file:///home/ste/workspace/w2-fwork/workbench/spk-g1x-v0.html",
+  "candidate_import": "real G1 candidate via #input-candidate -> \"candidate.json \u00b7 2 nodi \u00b7 DRAFT, ammissione ancora da eseguire\"; selector listed 13 sweep parameters (initial_raw, ACC/CMP/EMIT/RESET fields per node, 3 edge delays)",
+  "cmp_plan_export": {
+   "file": "spk-workbench-w2-plan-draft.json",
+   "selector": {
+    "field": "threshold_raw",
+    "instruction_index": 1,
+    "kind": "core_instruction",
+    "node_id": "A"
+   },
+   "sha256": "d67e8b355568a3384da2e8065f37894913659f115f4dd243c4fcace25c495a16",
+   "values": [
+    1,
+    2,
+    3
+   ]
+  },
+  "edge_plan_execution": {
+   "exit": 4,
+   "report_sha256": "5fd9ee1797f22f40ada8e4a3007a72f326fe1df28a388bf326d38cfc939fcce8",
+   "rows": [
+    {
+     "adjudication": "EXACT_PASS",
+     "status": "CLOSED",
+     "value": 1
+    },
+    {
+     "adjudication": "EXACT_PASS",
+     "status": "CLOSED",
+     "value": 2
+    }
+   ],
+   "verify_exit": 4
+  },
+  "edge_plan_export": {
+   "selector": {
+    "edge_index": 0,
+    "kind": "edge_delay"
+   },
+   "sha256": "a8fe80baa165ab5a8d3a7951bfc390a32999ed46444954ef088410edd7c20219",
+   "values": [
+    1,
+    2
+   ]
+  },
+  "network_isolation": "firefox started with proxy blackhole (127.0.0.1:9) + telemetry/safebrowsing/OCSP/remote-settings disabled; ss showed 0 non-local ESTABLISHED connections during the whole browser session; page performance resource entries = []; gate FORBIDDEN token scan (fetch/XHR/WebSocket/sendBeacon/storage/eval/innerHTML/host APIs) = clean",
+  "no_P_writes": true,
+  "no_hidden_runtime_actions": "page JS is file-read + DOM only (gate static scan); no host execution from browser",
+  "no_telemetry": true,
+  "python_on_exported_cmp_plan": {
+   "exit": 4,
+   "report_sha256": "17bcd55f06ff72568a761e37299c4225f7bdaba158b47e8762dd3ce0f1491561 (byte-identical to CLI sweep report)",
+   "verify_exit": 4,
+   "verify_status": "G1X_BOUNDED_SWEEP_REPLAY_PASS_SCIENTIFIC_HOLD"
+  },
+  "report_reimport_browser": "rows table showed Valore/Stato/Eventi/Batch/Route/Digest: 1 CLOSED 4 3 3 ee2f4bab0fa15de8 | 2 CLOSED 1 1 0 e27db0b87b969fb5 | 3 CLOSED 1 1 0 e27db0b87b969fb5; summary Varianti 3, CLOSED 3, LIMIT_REACHED 0, Stato HOLD; status \"struttura compatibile, NON autenticato nel browser\""
+ },
+ "g1_parent_sha": "545da3591e703fd0c56ca77ea21bcdf455208717",
+ "issue": 109,
+ "pr_draft": 108,
+ "pr_head_sha": "f0bb56392e476114aceba0dc6d6aef7eda28e5e0",
+ "result": "W2_BOUNDED_SWEEP_REFERENCE_ENGINEERING_PASS_SCIENTIFIC_HOLD",
+ "run_id": "20261105T102623Z-w2bounded-sweep-v0",
+ "schema": "spk-workbench-w2-bounded-sweep-witness/v0",
+ "scientific_limits": [
+  "W2 is Workbench bounded experimentation, NOT scientific G2; no L0/L1 training, no learning (learning_occurred=false), no dispatch, no BV-to-P, P_writes=0, no native/hardware execution, no release_certified",
+  "browser report viewer is unauthenticated by design; cryptographic verify/replay happens only in the Python CLI",
+  "results are bounded reference-host observations (24t, budgets <=32 batches/<=256 events) with CLOSED/EXACT_PASS vs LIMIT_REACHED separation; not a general proof",
+  "owner C0-C5 independent qualified HUMAN review remains mandatory; #102 (S5b) remains BLOCKED_HOLD; G0/G1/S5c remain verified only within their own perimeters",
+  "previous comment claimed a witness run 20261104T200000Z-w2mtest in spk-evidence; no such file exists in $SPK_EVIDENCE_ROOT (local or remote main) at this run \u2014 this witness is new and append-only",
+  "seed git objects were reconstructed via GitHub API (private repo, no local git credentials); commit/tree/blob SHAs all verified equal, but the local worktree HEAD (4db5eef2...) is a reconstruction commit, not the remote PR head f0bb563..."
+ ],
+ "sweep_execution": {
+  "P_writes": 0,
+  "closed_runs": 3,
+  "example_plan_sha256": "491b36cb08b2e0ef33d3aeb54114e64c329d4a5347c8824f33bb3c79c0bc4bd4",
+  "gate_two_fresh_byte_identical": true,
+  "independent_processes": 3,
+  "independent_processes_byte_identical": true,
+  "limit_reached_runs": 0,
+  "mechanism": "each variant re-admitted through ORIGINAL frozen compile_network_ir_v0 + C2 manifest, then ORIGINAL 24t diagnostic host execute_manifest_v0 in a separate isolated worker subprocess (budgets <=32 batches / <=256 events, 45s timeout)",
+  "report_sha256_all_processes": "17bcd55f06ff72568a761e37299c4225f7bdaba158b47e8762dd3ce0f1491561",
+  "rows": [
+   {
+    "adjudication": "EXACT_PASS",
+    "manifest_sha256_prefix": "41eb6f7178467031",
+    "metrics": {
+     "batch_observations": 3,
+     "emission_groups": 3,
+     "processed_batches": 3,
+     "processed_events": 4,
+     "route_observations": 3,
+     "terminal_output_groups": 2
+    },
+    "projected_result_sha256_prefix": "ee2f4bab0fa15de8",
+    "status": "CLOSED",
+    "value": 1
+   },
+   {
+    "adjudication": "EXACT_PASS",
+    "manifest_sha256_prefix": "876511ae940ba6ed",
+    "metrics": {
+     "batch_observations": 1,
+     "emission_groups": 0,
+     "processed_batches": 1,
+     "processed_events": 1,
+     "route_observations": 0,
+     "terminal_output_groups": 0
+    },
+    "projected_result_sha256_prefix": "e27db0b87b969fb5",
+    "status": "CLOSED",
+    "value": 2
+   },
+   {
+    "adjudication": "EXACT_PASS",
+    "manifest_sha256_prefix": "02a437deabfbcf55",
+    "metrics": {
+     "batch_observations": 1,
+     "emission_groups": 0,
+     "processed_batches": 1,
+     "processed_events": 1,
+     "route_observations": 0,
+     "terminal_output_groups": 0
+    },
+    "projected_result_sha256_prefix": "e27db0b87b969fb5",
+    "status": "CLOSED",
+    "value": 3
+   }
+  ],
+  "runtime_kind": "ISOLATED_BOUNDED_REFERENCE_ONLY",
+  "science": "HOLD",
+  "verify": "G1X_BOUNDED_SWEEP_REPLAY_PASS_SCIENTIFIC_HOLD exit 4, report digest (canonical, no trailing newline) 2be8dfa01b7aee26f714c2b07d0ce8017ee4ba156f69cd1a457496b74a8d4265"
+ },
+ "timestamp_utc": "2026-11-05T10:26:23Z"
+}
