@@ -1,0 +1,222 @@
+{
+ "adversarial_veto": {
+  "all_exit_2": true,
+  "cli_vetos": [
+   "tampered_train_sha",
+   "holdout_path",
+   "sealed_path",
+   "validation_path",
+   "zip_path",
+   "forged_report",
+   "output_exists",
+   "wrong_protocol"
+  ],
+  "positive_control_exit_4": true,
+  "unit_tests": 33
+ },
+ "attestation_mode": "GITHUB_TREE_EQUIVALENCE_NOT_COMMIT_ANCESTRY",
+ "audit_fold_3": {
+  "class_support": [
+   0
+  ],
+  "diagnostics": {
+   "audit_sensitivity_defined": false,
+   "balanced_accuracy": null,
+   "false_alarms": 0,
+   "false_alarms_per_hour": 0.0,
+   "fn": 0,
+   "fp": 0,
+   "macro_f1": null,
+   "negative_class_brier": 1.850702196258722e-07,
+   "sensitivity": null,
+   "specificity": 1.0,
+   "tn": 530,
+   "tp": 0
+  },
+  "sensitivity_defined": false,
+  "used_for_tuning": false
+ },
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "SPK_learning_demonstrated": false,
+  "audit_sensitivity_defined": false,
+  "exact_git_ancestry_attested": false,
+  "holdout_scored": false,
+  "native_learning": false,
+  "native_tests_executed": 0,
+  "primary_validation_inconclusive": true,
+  "release_certified": false,
+  "research_only": true
+ },
+ "branch": "research/spk-l0c-train-only-temporal-calibration-v0",
+ "calibration": {
+  "candidates": [
+   {
+    "balanced_accuracy": 0.9988179669030732,
+    "confusion": {
+     "fn": 0,
+     "fp": 3,
+     "tn": 1266,
+     "tp": 321
+    },
+    "macro_f1": 0.9970827026283198,
+    "threshold": 0.25
+   },
+   {
+    "balanced_accuracy": 0.9992119779353822,
+    "confusion": {
+     "fn": 0,
+     "fp": 2,
+     "tn": 1267,
+     "tp": 321
+    },
+    "macro_f1": 0.9980528832023826,
+    "threshold": 0.5
+   },
+   {
+    "balanced_accuracy": 0.9992119779353822,
+    "confusion": {
+     "fn": 0,
+     "fp": 2,
+     "tn": 1267,
+     "tp": 321
+    },
+    "macro_f1": 0.9980528832023826,
+    "threshold": 0.75
+   }
+  ],
+  "folds": [
+   0,
+   1,
+   2
+  ],
+  "frozen_before_audit": true,
+  "frozen_threshold": 0.5,
+  "pooled_class_support": [
+   0,
+   1
+  ],
+  "pooled_rows": 1590,
+  "threshold_freeze_sha256": "3ff4534e6a5ab6484514784ed3dd866449f1314854f614019dd189f015e94f1e"
+ },
+ "controls_no_learning": {
+  "majority_train_only": {
+   "audit": {
+    "false_alarms": 530,
+    "false_alarms_per_hour": 116.19268010474393,
+    "negative_class_brier": 1.0,
+    "specificity": 0.0
+   },
+   "pooled_balanced_accuracy": 0.5,
+   "pooled_macro_f1": 0.16797488226059654
+  },
+  "pir_or_no_learning": {
+   "audit": {
+    "false_alarms": 0,
+    "false_alarms_per_hour": 0.0,
+    "negative_class_brier": 0.0,
+    "specificity": 1.0
+   },
+   "pooled_balanced_accuracy": 0.7425598197123351,
+   "pooled_macro_f1": 0.7918239836309162
+  }
+ },
+ "decision": "HOLD",
+ "env": {
+  "numpy": "2.3.4",
+  "python": "3.14.10",
+  "sklearn": "1.7.2",
+  "venv": "/home/ste/workspace/l0b-venv pinned"
+ },
+ "exact_git_ancestry_attested": false,
+ "experiment_status": "EXPLORATORY_POSTHOC_V0B_NOT_CONFIRMATORY",
+ "inputs": {
+  "holdout_read": false,
+  "holdout_scored": false,
+  "sealed_read": false,
+  "train_rows": 5305,
+  "train_sha256": "a940c8445fddb3136e924340666e08908e4f4d9358d883d38d6a8502dd6e4038",
+  "validation_read": false
+ },
+ "issue": 116,
+ "limits": [
+  "PASS only of the exploratory v0b OOF/pooling pipeline; original confirmatory v0 remains INCONCLUSIVE; no generalization or SPK advantage claim",
+  "audit fold 3 is negative-only: sensitivity/macro-F1/balanced accuracy UNDEFINED (null), never serialized as numbers",
+  "primary_validation_inconclusive=true; holdout never read/scored; external validation not used for tuning",
+  "no dataset rows/labels/class-count matrices/private paths in this public witness (local protected report only)",
+  "HOLD C0-C5/G2/dispatch/BV-to-P/P_writes=0/native/release unchanged; #102 remains BLOCKED_HOLD"
+ ],
+ "oof": {
+  "all_windows_predicted_including_single_class": true,
+  "embargo_gap_seconds_all_folds": 306,
+  "fit_only_past_embargoed": true,
+  "fold_attestation": "per-fold source sha/indices/time ranges/encoder+model+prediction digests",
+  "oof_scores_sha256": "0f39e23417aeaf2792da9f6d63d2f9b3f1e278f8642a3ad898b5c284187b5d71",
+  "per_fold_refit": true
+ },
+ "original_v0": "INCONCLUSIVE (witness spk-evidence@eb7d391e runs/20261105T200731Z-l0c-oof-v0 sha256 61f378bb...66dc8 immutable; NOT promoted)",
+ "phase_A_source_reconciliation": "spk-evidence runs/20261105T224822Z-l0c-v0-source-reconciliation (v0 tested bytes published to PR #115, blob SHAs equal local)",
+ "pr_draft": 115,
+ "protocol": "EXPLORATORY_POSTHOC_V0B",
+ "protocol_params": {
+  "boundaries_changed": false,
+  "embargo_seconds": 300,
+  "eval_rows": 530,
+  "eval_windows": [
+   [
+    1591,
+    2121
+   ],
+   [
+    2652,
+    3182
+   ],
+   [
+    3713,
+    4243
+   ],
+   [
+    4775,
+    5305
+   ]
+  ],
+  "min_fit": 1061,
+  "thresholds": [
+   0.25,
+   0.5,
+   0.75
+  ]
+ },
+ "reproducibility": {
+  "canonical_receipt_sha256": "fadf84f0758a94214cc18e145c961cfc99970a65bb6719200b969ae5780cdbca",
+  "report_sha256": "a9bd7748d1669c55de74c9e3aa90736488a3c15b43e3d33c89d47a3961c82fa8",
+  "reports_byte_identical": true,
+  "two_fresh_processes": true,
+  "verify_exit": 4
+ },
+ "result": "L0C_V0B_FIXED_FOLD_POOLED_OOF_ENGINEERING_PASS_AUDIT_SENSITIVITY_INCONCLUSIVE_SCIENTIFIC_HOLD",
+ "run_id": "20261105T225239Z-l0c-v0b-pooled-oof",
+ "schema": "spk-l0c-v0b-pooled-oof-witness/v0",
+ "tests": {
+  "files": [
+   "tests/test_spk_l0c_train_temporal_calibration_v0.py",
+   "tests/test_spk_l0c_pooled_oof_diagnostic_v0b.py"
+  ],
+  "pytest_passed": 33
+ },
+ "timestamp_utc": "2026-11-05T22:52:39Z",
+ "worktree": {
+  "base_tree": "127cbc4b... (PR #112)",
+  "clean": true,
+  "path": "/home/ste/workspace/l0c-fwork",
+  "pr115_seed_tree": "8eea6c2f...",
+  "v0b_files": [
+   "workbench/l0c_pooled_oof_diagnostic_v0b.py",
+   "tests/test_spk_l0c_pooled_oof_diagnostic_v0b.py"
+  ]
+ }
+}
