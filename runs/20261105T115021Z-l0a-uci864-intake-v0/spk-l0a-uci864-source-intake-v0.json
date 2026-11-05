@@ -1,0 +1,159 @@
+{
+ "adversarial_veto": {
+  "cases": [
+   "wrong_publisher_zip",
+   "duplicate_zip_member",
+   "wrong_member_name",
+   "malformed_header",
+   "nan_value",
+   "pir_non_binary",
+   "non_monotonic_timestamp",
+   "unexpected_session_topology",
+   "wrong_row_count",
+   "output_dir_exists",
+   "symlink_output_dir",
+   "tampered_train_bytes",
+   "tampered_sealed_labels",
+   "altered_archive_sha",
+   "holdout_unlabeled_no_label_column",
+   "features_exclude_slope_and_datetime",
+   "positive_source_case_pass"
+  ],
+  "total": 17,
+  "vetoed": 17
+ },
+ "authority_flags": {
+  "BV_to_P_authorized": false,
+  "G2_owner_authorized": false,
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "holdout_label_counts_disclosed": false,
+  "learning_demonstrated": false,
+  "model_training_started": false,
+  "native_tests_executed": 0,
+  "release_certified": false,
+  "research_only": true
+ },
+ "block": {
+  "cause": "remote repo is private and no git credentials exist locally (anonymous git/codeload 404, bearer raw-token 401); commit f0bb563 could not be reconstructed byte-exact from GitHub API metadata (its tree e86f763c... IS verified identical via subtree SHAs from git_url fields, but no author/committer/message encoding variant reproduces the commit SHA; likely an API-invisible header such as a signature)",
+  "diff_vs_w2_content": "exactly the 5 L0a OWNED files",
+  "precise": "gate python -B -m search.spk_l0a_source_intake_gate_v0 exits 2 with L0A_GATE_VETO:GIT_COMMAND at custody_gate(): git merge-base --is-ancestor f0bb56392e476114aceba0dc6d6aef7eda28e5e0 HEAD fails because the exact commit object f0bb563 is not materializable on this host",
+  "workaround_status": "worktree /home/ste/workspace/l0a-fwork is a clean real git worktree whose W2-content commit cb44ae8 has tree e86f763c... identical to f0bb563 (all 8 W2 blob SHAs verified vs remote f0bb563 tree); L0a files added with blob SHAs verified vs c91d0d54; HEAD e9794cae is a RECONSTRUCTION commit, NOT c91d0d54 (recorded per issue instructions, no equality claimed); git replace was attempted and refused by git (original object missing)"
+ },
+ "branch": "research/spk-l0a-uci864-session-intake-v0",
+ "data_validation_real_source": {
+  "distinct_dates": 7,
+  "expected_rows": 10129,
+  "features": "15 sensor columns (S1-S4 Temp/Light/Sound, S5_CO2, S6_PIR, S7_PIR); Date/Time -> timestamp only; S5_CO2_Slope excluded (possible future-window leakage)",
+  "gap_threshold_seconds": 21600,
+  "gaps": [
+   "2017-12-24 09:10:50 -> 2017-12-25 09:11:42 (24h00m52s)",
+   "2017-12-26 09:10:01 -> 2018-01-10 15:25:48 (15d06h15m47s)"
+  ],
+  "match": true,
+  "nan_rows": 0,
+  "no_silent_resplit": true,
+  "pir_binary": true,
+  "preregistration_match": true,
+  "rows": 10129,
+  "session_boundaries": {
+   "holdout": "2018-01-10 15:25:48 .. 2018-01-11 09:00:09",
+   "train": "2017-12-22 10:49:41 .. 2017-12-24 09:10:50",
+   "validation": "2017-12-25 09:11:42 .. 2017-12-26 09:10:01"
+  },
+  "session_rows": {
+   "holdout": 2045,
+   "train": 5305,
+   "validation": 2779
+  },
+  "sessions": 3,
+  "split_method": "THREE_SESSIONS_CHRONOLOGICAL_NOT_ROW_RANDOM; train=first session labeled, validation=second labeled, holdout=third UNLABELED features + sealed private label sidecar",
+  "strictly_increasing_timestamp": true
+ },
+ "decision": "HOLD",
+ "execution_worktree": {
+  "head": "e9794caecc22a486fec3c2378ec8d0d1092f72c",
+  "head_is_reconstruction_not_pr_head": true,
+  "local_defect_fix_in_new_l0a_file": "tests/test_spk_l0a_source_intake_gate_v0.py: test prefix \"docs/spk-l0a_\" corrected to \"docs/spk-l0a-\" (hyphen matches actual filename); sha256 9df1f76707ec20cc4e3e5a50a70214223d8aadb1e4b18052b1ce54ede9871d5e -> 01d427ff40a63b12d9090a2ee0e30e57379bd606f90a7e3b7b51d170188264a7; remote PR blob a04f1e08... differs accordingly; no frozen/older file touched",
+  "path": "/home/ste/workspace/l0a-fwork (isolated clean clone; user worktrees untouched)",
+  "w2_content_commit": "cb44ae8b9a0d3ed8df4fb14192903eaec3bf5f75 (tree e86f763bcd7ad3bf39fde1541e81dbb2b24521d9 == f0bb563 tree, subtree SHAs verified)",
+  "worktree_clean": true
+ },
+ "gate": {
+  "all_other_subchecks_executed_manually": "PASS (see tests, w2 pins, intake twice, verify, vetoes)",
+  "command": "python -B -m search.spk_l0a_source_intake_gate_v0 --archive ~/Scaricati/uci864.zip --out-root /home/ste/workspace/l0a-out --sealed-root /home/ste/workspace/l0a-sealed",
+  "exit_code": 2,
+  "veto": "L0A_GATE_VETO:GIT_COMMAND (merge-base --is-ancestor f0bb563 HEAD: object not materializable on this host)"
+ },
+ "intake_two_fresh_processes": {
+  "dirs_mode": "0700",
+  "file_sha256": {
+   "holdout-unlabeled.csv": null,
+   "train-labeled.csv": null,
+   "validation-labeled.csv": null
+  },
+  "holdout_label_counts_disclosed": false,
+  "intake_a_exit": 4,
+  "intake_b_exit": 4,
+  "label_custody": "PROCEDURAL_ONLY_PUBLIC_DATA; sealed sidecar local-only 0700/0600; no rows/labels/ZIP uploaded publicly",
+  "manifest_sha256_both": "a0e141d0e16bf917da8babcb7d4a4ea237d7c168e85a597dcc32e589efebb0f5",
+  "manifests_byte_identical": true,
+  "out_root": "/home/ste/workspace/l0a-out (0700)",
+  "output_files_mode": "0600",
+  "roots_did_not_exist_beforehand": true,
+  "sealed_root": "/home/ste/workspace/l0a-sealed (0700)",
+  "sealed_targets_sha256": "842cd45193e13d4a93790d648394f2a3676eecdd1588e1297731fcc94fd8dbaa",
+  "split_rows": {
+   "holdout": 2045,
+   "train": 5305,
+   "validation": 2779
+  },
+  "verify_a_exit": 4,
+  "verify_b_exit": 4,
+  "verify_receipts_equal": true,
+  "verify_status": "L0A_SOURCE_SESSION_SPLIT_BYTES_PINNED_HOLD"
+ },
+ "issue": 111,
+ "pr_draft": 110,
+ "pr_head_sha": "c91d0d545a465a1297fffe41e3de695375b2b222",
+ "result": "L0A_SOURCE_INTAKE_BLOCKED_HOLD",
+ "run_id": "20261105T115021Z-l0a-uci864-intake-v0",
+ "schema": "spk-l0a-uci864-source-intake-witness/v0",
+ "scientific_limits": [
+  "source intake only: model_training_started=false, learning_demonstrated=false, no L0b started, holdout sealed labels never opened for parameter selection",
+  "holdout separation is PROCEDURAL (public dataset labels exist); no cryptographic independent blinding claimed; source authenticity not independently attested",
+  "no class counts or holdout label aggregates in this public witness",
+  "HOLD C0-C5/G2/dispatch/BV-to-P/P_writes=0/native/hardware/release unchanged; #102 remains BLOCKED_HOLD; W2 #109 PASS within its own boundary",
+  "gate could not reach exit 4 on this host due to the git-custody blocker documented above; issue #111 stays OPEN pending a host with git credentials for the private repo (or an API-exposed exact commit encoding) so f0bb563 can be materialized and the gate re-run end-to-end"
+ ],
+ "source_acquisition": {
+  "archive_bytes": 114333,
+  "archive_sha256": "a0db79ee96ea297c22458ac77a28fba20d41246e75d24b2655ca3ab624cc08fd",
+  "downloaded_via": "verified UCI HTTPS (curl, archive.ics.uci.edu, HTTP 200)",
+  "local_path_private": "/home/ste/Scaricati/uci864.zip (not committed/uploaded)",
+  "no_preinvented_sha": true,
+  "official_url": "https://archive.ics.uci.edu/static/public/864/room+occupancy+estimation.zip (linked from https://archive.ics.uci.edu/dataset/864/room+occupancy+estimation, DOI 10.24432/C5P605, CC BY 4.0)",
+  "zip_members": [
+   {
+    "bytes": 931630,
+    "name": "Occupancy_Estimation.csv",
+    "sha256": "c090ee5c94b61762bfec9d22767864490b51030f98cca030f02822468db25d9c"
+   }
+  ]
+ },
+ "tests": {
+  "pytest": "22 passed (tests/test_spk_l0a_source_intake_v0.py + tests/test_spk_l0a_source_intake_gate_v0.py, python 3.14.10/pytest 9.1.1) after the one-char defect fix in the new gate test file",
+  "w2_check_sources_manual": {
+   "g0_pins": 6,
+   "g1_pins": 11,
+   "ok": true,
+   "s2b_frozen": 8,
+   "w2_files": 7
+  }
+ },
+ "timestamp_utc": "2026-11-05T11:50:21Z",
+ "w2_parent_sha": "f0bb56392e476114aceba0dc6d6aef7eda28e5e0"
+}
