@@ -1,0 +1,70 @@
+{
+ "attestation_mode": "GITHUB_TREE_EQUIVALENCE_NOT_COMMIT_ANCESTRY",
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "exact_git_ancestry_attested": false,
+  "learning_demonstrated": false,
+  "native_tests_executed": 0,
+  "release_certified": false,
+  "research_only": true
+ },
+ "branch": "research/spk-l0b-frozen-baseline-prereg-v0",
+ "decision": "HOLD",
+ "delta_vs_original_pr_tree": [
+  "workbench/l0b_frozen_baselines_v0.py",
+  "tests/test_spk_l0b_frozen_baselines_v0.py"
+ ],
+ "exact_git_ancestry_attested": false,
+ "frozen_components_untouched": true,
+ "independent_verification": {
+  "method": "API root listing at new remote HEAD 5ce870a2... with git_url tree shas + blob shas, recomputed via git mktree -> 127cbc4b...; subtree workbench/tests match local; file blob shas at new HEAD equal local blob shas",
+  "note": "remote HEAD commit SHA differs from local reconstruction commit; only full-tree content identity is attested, exact_git_ancestry_attested=false",
+  "remote_head": "5ce870a2be56d5f45b4fb0f2bed23a42148f3b40",
+  "remote_tree_equals_local_verified_tree": true
+ },
+ "issue": 114,
+ "limits": [
+  "source custody reconciliation only: no training, no L0c started, no dataset/split changes, holdout never consulted",
+  "tree equality proves content identity, not original commit history (exact_git_ancestry_attested=false)",
+  "no dataset rows/labels, private paths or holdout contents in this witness",
+  "HOLD C0-C5/G2/dispatch/BV-to-P/P_writes=0/native/release unchanged; #102 remains BLOCKED_HOLD"
+ ],
+ "local_source_worktree": {
+  "local_head": "369817914a7b6606bf5102f8dd38283131d740fa",
+  "local_head_tree": "127cbc4b98494dc8380752697126ec8287a9b9cc",
+  "path": "/home/ste/workspace/l0b-fwork (read-only inspection; clean, 0 changes)",
+  "tree_matches_required": true
+ },
+ "new_remote_pr_head": "5ce870a2be56d5f45b4fb0f2bed23a42148f3b40",
+ "new_remote_pr_tree": "127cbc4b98494dc8380752697126ec8287a9b9cc",
+ "only_tested_l0b_files_changed": true,
+ "original_pr_head": "a9ae97de7554ce8b8a91822670585f9821836bb0",
+ "original_pr_tree": "d0188c74acd42cebe1254ed5bd135d6eec8870eb",
+ "pr_draft": 112,
+ "prior_witness_113_reference": "spk-evidence@187a215f runs/20261105T172055Z-l0b-baselines-v0/spk-l0b-frozen-baselines-v0.json sha256 044a547c146b602817029db4af0142d7b65e7446aa8174f947b987398115a1d7 (unchanged)",
+ "publish_method": "authenticated GitHub connector create_or_update_file on existing PR branch, sequential, blob-sha preconditions (no invented credentials, no new branch/PR, no refactor)",
+ "published_files": [
+  {
+   "bytes_equal": true,
+   "git_blob_sha": "7d836bf4a2530673c4a6e4489987ece385c35377",
+   "path": "workbench/l0b_frozen_baselines_v0.py",
+   "remote_blob_after": "7d836bf4a2530673c4a6e4489987ece385c35377",
+   "sha256": "4f82350937e79e964f341f5906013c80e39f72c88295bc82dae32c5544be51fd"
+  },
+  {
+   "bytes_equal": true,
+   "git_blob_sha": "c7d0757e01d169b80fb8d492450521b9df409026",
+   "path": "tests/test_spk_l0b_frozen_baselines_v0.py",
+   "remote_blob_after": "c7d0757e01d169b80fb8d492450521b9df409026",
+   "sha256": "0faab54c002d89cd22c87146430f47479694562f7e81645ba918f15c642f9653"
+  }
+ ],
+ "result": "L0B_VERIFIED_SOURCE_TREE_RECONCILED_ENGINEERING_PASS_SCIENTIFIC_HOLD",
+ "run_id": "20261105T173951Z-l0b-source-reconciliation-v0",
+ "schema": "spk-l0b-source-reconciliation-witness/v0",
+ "timestamp_utc": "2026-11-05T17:39:51Z"
+}
