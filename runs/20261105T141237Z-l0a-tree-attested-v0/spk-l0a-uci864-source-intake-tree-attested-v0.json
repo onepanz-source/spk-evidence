@@ -1,0 +1,119 @@
+{
+ "attestation_mode": "GITHUB_TREE_EQUIVALENCE_NOT_COMMIT_ANCESTRY",
+ "authority_flags": {
+  "BV_to_P_authorized": false,
+  "G2_owner_authorized": false,
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "exact_git_ancestry_attested": false,
+  "holdout_label_counts_disclosed": false,
+  "learning_demonstrated": false,
+  "model_training_started": false,
+  "native_tests_executed": 0,
+  "release_certified": false,
+  "research_only": true
+ },
+ "branch": "research/spk-l0a-uci864-session-intake-v0",
+ "data": {
+  "csv_sha256": "c090ee5c94b61762bfec9d22767864490b51030f98cca030f02822468db25d9c",
+  "files_sha256": {
+   "holdout-unlabeled.csv": "05d759b0ad6bf6bd255cfe9bcd304ade0d678f7212ea26d6b42735604d622baf",
+   "train-labeled.csv": "a940c8445fddb3136e924340666e08908e4f4d9358d883d38d6a8502dd6e4038",
+   "validation-labeled.csv": "8a4709c5e6be157a4457b3ee81af2c5cde4139bb65c904c287c1b09d5e2cbe88"
+  },
+  "manifest_sha256": "a0e141d0e16bf917da8babcb7d4a4ea237d7c168e85a597dcc32e589efebb0f5",
+  "sealed_label_counts_disclosed": false,
+  "sealed_label_sha256": "842cd45193e13d4a93790d648394f2a3676eecdd1588e1297731fcc94fd8dbaa",
+  "source_archive_sha256": "a0db79ee96ea297c22458ac77a28fba20d41246e75d24b2655ca3ab624cc08fd",
+  "source_authenticity_independently_attested": false,
+  "split_rows": {
+   "holdout": 2045,
+   "train": 5305,
+   "validation": 2779
+  },
+  "two_fresh_intakes_identical": true
+ },
+ "data_validation": {
+  "distinct_dates": 7,
+  "features_15_sensors_slope_and_datetime_excluded": true,
+  "gaps_over_6h": 2,
+  "holdout_unlabeled": true,
+  "preregistration_match": true,
+  "rows": 10129,
+  "sealed_labels_local_only": true,
+  "session_rows": {
+   "holdout": 2045,
+   "train": 5305,
+   "validation": 2779
+  },
+  "sessions": 3,
+  "strictly_increasing_timestamp": true
+ },
+ "decision": "HOLD",
+ "exact_git_ancestry_attested": false,
+ "execution_worktree": {
+  "delta_vs_w2": "exactly the 5 L0a OWNED files (all blob SHAs verified vs remote 3fe882ec tree)",
+  "local_head": "f650d6929ec58249f7d7c0144331b81829118cae",
+  "local_head_tree": "10d02d357dcf0b338484cb077c6e088e44e1085b",
+  "local_w2_ref": "HEAD~1 = ed84b0a41aa69c4b8a6f3bcfa294b329b15cff09",
+  "local_w2_tree": "e86f763bcd7ad3bf39fde1541e81dbb2b24521d9",
+  "path": "/home/ste/workspace/l0a2-fwork (isolated clean clone; user worktrees untouched)",
+  "worktree_clean_after_gate": true
+ },
+ "gate": {
+  "P_writes": 0,
+  "attestation_mode": "GITHUB_TREE_EQUIVALENCE_NOT_COMMIT_ANCESTRY",
+  "command": "python -B -m search.spk_l0a_source_intake_gate_v0 --archive ~/Scaricati/uci864.zip --out-root ~/workspace/spk-l0a-local/gate-run-20261105T141237Z --sealed-root ~/workspace/spk-l0a-private/gate-run-20261105T141237Z --remote-pr-head 3fe882ec5c63a5e895a489099abed3462e45de17 --remote-pr-tree 10d02d357dcf0b338484cb077c6e088e44e1085b --local-w2-ref HEAD~1",
+  "exact_git_ancestry_attested": false,
+  "exit_code": 4,
+  "l0a_file_sha256": {
+   "docs/spk-l0a-uci864-source-intake-preregistration-v0.md": "60081144cf1dc43e55b67e8f1456425d8a6734d4d002bfb69f43c494dc9b52a6",
+   "search/spk_l0a_source_intake_gate_v0.py": "9c5d1892bba05fc4139bd7f34acc9de4f4528fc687f19bcc95362eb190c44815",
+   "tests/test_spk_l0a_source_intake_gate_v0.py": "2097f2a336c76dc6ff7c8f59ae9b4024d2b92949b709fbfdad2762785e791d6c",
+   "tests/test_spk_l0a_source_intake_v0.py": "4fe8fa4f0ac234a2a32306f6bf6c0c740b9fb722f79b4194debcb0d4c2440649",
+   "workbench/l0a_source_intake_v0.py": "1be9cfebbb8e0a2324ec782691d50439b43c6c00b8cbde390f955ca825c49046"
+  },
+  "learning_occurred": false,
+  "pytest_passed": 27,
+  "release_certified": false,
+  "runtime_executed": false,
+  "scientific_authority": "HOLD",
+  "status": "L0A_UCI864_SOURCE_TREE_ATTESTED_INTAKE_ENGINEERING_PASS_SCIENTIFIC_HOLD",
+  "w2_g1_g0_s2b_pins_verified": true
+ },
+ "issue": 111,
+ "pr_draft": 110,
+ "prior_blocked_witness_immutable": "spk-evidence@1a65f7a6 runs/20261105T115021Z-l0a-uci864-intake-v0 (L0A_SOURCE_INTAKE_BLOCKED_HOLD) remains untouched",
+ "remote_commit_tree_mapping": {
+  "confirmed": true,
+  "git_authentication_available_on_fedora": false,
+  "github_commit_api_path": "repos/onepanz-source/spk-backvalidation-v0/git/commits/3fe882ec5c63a5e895a489099abed3462e45de17",
+  "method": "independent authenticated GitHub API check by M: root tree recomputed via git mktree from the contents API listing served at ref=3fe882ec5c63a5e895a489099abed3462e45de17 (dir entries carry /git/trees/<sha> in git_url, file entries carry blob sha) equals 10d02d357dcf0b338484cb077c6e088e44e1085b; commit 3fe882ec resolves via API and is PR #110 head; affected subtrees docs/search/tests/workbench match local HEAD subtrees exactly",
+  "note": "tree attestation proves full content identity, NOT original commit history; local HEAD is a reconstruction commit, not the remote PR commit"
+ },
+ "remote_pr_head": "3fe882ec5c63a5e895a489099abed3462e45de17",
+ "remote_pr_tree": "10d02d357dcf0b338484cb077c6e088e44e1085b",
+ "result": "L0A_UCI864_SOURCE_TREE_ATTESTED_INTAKE_ENGINEERING_PASS_SCIENTIFIC_HOLD",
+ "run_id": "20261105T141237Z-l0a-tree-attested-v0",
+ "schema": "spk-l0a-uci864-source-intake-tree-attested-witness/v0",
+ "scientific_limits": [
+  "source intake only: model_training_started=false, learning_demonstrated=false, no L0b started, holdout sealed labels never opened",
+  "attestation_mode=GITHUB_TREE_EQUIVALENCE_NOT_COMMIT_ANCESTRY with exact_git_ancestry_attested=false: content identity proven, original commit ancestry NOT proven",
+  "holdout separation PROCEDURAL_ONLY_PUBLIC_DATA; no cryptographic blinding; no class counts or holdout aggregates published",
+  "HOLD C0-C5/G2/dispatch/BV-to-P/P_writes=0/native/hardware/release unchanged; #102 remains BLOCKED_HOLD"
+ ],
+ "source_acquisition": {
+  "archive_sha256": "a0db79ee96ea297c22458ac77a28fba20d41246e75d24b2655ca3ab624cc08fd",
+  "csv_member_sha256": "c090ee5c94b61762bfec9d22767864490b51030f98cca030f02822468db25d9c",
+  "no_redownload": true,
+  "no_resplit": true,
+  "official_url": "https://archive.ics.uci.edu/static/public/864/room+occupancy+estimation.zip (DOI 10.24432/C5P605, CC BY 4.0)",
+  "reused_from_prior_custody": true
+ },
+ "timestamp_utc": "2026-11-05T14:12:37Z",
+ "w2_parent_commit": "f0bb56392e476114aceba0dc6d6aef7eda28e5e0",
+ "w2_parent_tree": "e86f763bcd7ad3bf39fde1541e81dbb2b24521d9"
+}
