@@ -1,0 +1,66 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "SPK_learning_demonstrated": false,
+  "exact_git_ancestry_attested": false,
+  "holdout_scored": false,
+  "release_certified": false,
+  "research_only": true
+ },
+ "branch": "research/spk-l0c-train-only-temporal-calibration-v0",
+ "issue": 116,
+ "limits": [
+  "source custody only; no v0b execution yet; no training/holdout/validation reads",
+  "no rows/labels/private paths in this witness",
+  "HOLD unchanged"
+ ],
+ "local_worktree": {
+  "clean": true,
+  "diff_vs_seed": [
+   "workbench/l0c_train_temporal_calibration_v0.py",
+   "tests/test_spk_l0c_train_temporal_calibration_v0.py"
+  ],
+  "head": "23c198cb68a781e8cf612afe17d26fadfba1cc98",
+  "head_tree": "dfca0d3f86b7bd39d5e5c65ca216063c4a6681fb",
+  "path": "/home/ste/workspace/l0c-fwork"
+ },
+ "note": "remote PR tree differs from local v0-tested tree ONLY by the add-only v0b spec doc (separately pinned tree e9dc900e... at 700d6a22); no HEAD equality with local commit claimed; exact_git_ancestry_attested=false",
+ "phase": "A_source_custody_before_v0b",
+ "pr_draft": 115,
+ "prior_v0_inconclusive_witness_immutable": "spk-evidence@eb7d391e runs/20261105T200731Z-l0c-oof-v0 sha256 61f378bb014c729d7bcf28b8cc178109b32a777130b4a6239776e8b407f66dc8",
+ "publish_method": "authenticated connector create_or_update_file on existing PR branch, sequential, blob-sha preconditions; no new branch/PR; no refactor",
+ "published_files": [
+  {
+   "bytes_equal": true,
+   "git_blob_local": "488f6480033b5076c307c57fb9a4cdb3eff6f61a",
+   "git_blob_remote_after": "488f6480033b5076c307c57fb9a4cdb3eff6f61a",
+   "path": "workbench/l0c_train_temporal_calibration_v0.py",
+   "sha256": "da02936c52553916e387d7f70e7b4b9cdea42a8ebe982bc8fb00ac7a56187e5e"
+  },
+  {
+   "bytes_equal": true,
+   "git_blob_local": "bed3e943333ec973cad1d2c198133ce380b92fe3",
+   "git_blob_remote_after": "bed3e943333ec973cad1d2c198133ce380b92fe3",
+   "path": "tests/test_spk_l0c_train_temporal_calibration_v0.py",
+   "sha256": "c841b0864b2229ecd79ea8af041fc03c0b30ad663b9e188866d39ce3540009f4"
+  }
+ ],
+ "remote_pr_head_after_publish": "6de813cba571257fe572b779c5b5cb16137a9dd0",
+ "remote_pr_tree_after_publish": "a5f8f457c7b06274fc841b2ba09b3fb659a36bce",
+ "result": "L0C_V0_TESTED_SOURCE_PUBLISHED_TO_PR115_BYTES_VERIFIED",
+ "run_id": "20261105T224822Z-l0c-v0-source-reconciliation",
+ "schema": "spk-l0c-v0-source-reconciliation-witness/v0",
+ "seed_remote": {
+  "head": "9647b8f8b1c9d1355d0bc4a6ef416613d33cd9f3",
+  "tree": "8eea6c2f1967ad6145ccee334e0d494e2c90724e"
+ },
+ "timestamp_utc": "2026-11-05T22:48:22Z",
+ "v0b_doc_remote": {
+  "head": "700d6a22ade41189050197ea7a6a161baa82e9ff",
+  "tree": "e9dc900eb51886c7dfa7fbf90b6e0c909435674b"
+ }
+}
