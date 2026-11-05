@@ -1,0 +1,129 @@
+{
+ "adversarial_veto": {
+  "all_vetoed_exit_2": true,
+  "cli_vetos": [
+   "tampered_train_sha",
+   "holdout_path",
+   "sealed_path",
+   "validation_path",
+   "forged_report",
+   "output_exists",
+   "verify_without_train",
+   "missing_args"
+  ],
+  "positive_control_exit_4": true,
+  "unit_veto_tests": "single-class fold inconclusive, forbidden paths, embargo leakage, overlapping windows, schema vetoes"
+ },
+ "attestation_mode": "GITHUB_TREE_EQUIVALENCE_NOT_COMMIT_ANCESTRY",
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "SPK_learning_demonstrated": false,
+  "exact_git_ancestry_attested": false,
+  "external_validation_primary_inconclusive": true,
+  "holdout_labels_read": false,
+  "holdout_scored": false,
+  "native_learning": false,
+  "native_tests_executed": 0,
+  "release_certified": false,
+  "validation_scored": false
+ },
+ "branch": "research/spk-l0c-train-only-temporal-calibration-v0",
+ "decision": "HOLD",
+ "env": {
+  "numpy": "2.3.4",
+  "python": "3.14.10",
+  "sklearn": "1.7.2",
+  "venv": "/home/ste/workspace/l0b-venv (pinned)"
+ },
+ "exact_blocker": "real preregistered folds 0 and 3 (eval [1591,2121) and [4775,5305)) contain ZERO occupied=1 rows -> chronological_folds raises FOLD_CLASS_SUPPORT_INCONCLUSIVE_NO_RESELECTION; per protocol declared INCONCLUSIVE with boundaries unchanged (no reselection, no threshold rescue); a PASS claim is not admissible without CIAT repreregistration of fold boundaries or a both-class-presence amendment",
+ "exact_git_ancestry_attested": false,
+ "fold_class_support_real_data": {
+  "embargo_gap_seconds_all_folds": 306,
+  "fold0_eval": "single-class (0 positives)",
+  "fold1_eval": "both classes",
+  "fold2_eval": "both classes",
+  "fold3_eval": "single-class (0 positives)"
+ },
+ "inputs": {
+  "features": "15 sensors, timestamps audit-only",
+  "holdout_read": false,
+  "sealed_read": false,
+  "train_rows": 5305,
+  "train_sha256": "a940c8445fddb3136e924340666e08908e4f4d9358d883d38d6a8502dd6e4038",
+  "validation_scored": false
+ },
+ "issue": 116,
+ "issue_116_kept_open": true,
+ "limits": [
+  "train-internal calibration only; no holdout scoring, no external validation tuning (it stays PRIMARY_INCONCLUSIVE from L0b), no SPK native learning claim",
+  "INCONCLUSIVE declared per protocol; fold boundaries frozen; no reselection performed",
+  "no dataset rows/labels/private paths in this witness",
+  "HOLD C0-C5/G2/dispatch/BV-to-P/P_writes=0/native/release unchanged; #102 remains BLOCKED_HOLD",
+  "next step requires CIAT repreregistration of fold intervals (or class-presence amendment) before any PASS claim"
+ ],
+ "oof_machinery": {
+  "implemented": true,
+  "per_fold_refit": "encoder z-score + sklearn LogisticRegression(C=1.0,max_iter=1000,lbfgs,random_state=864) fit only on [0,fit_stop)",
+  "predict_only": "[eval_start,eval_stop)",
+  "provenance": "per-fold source_sha256 + fit/eval indices + time ranges + embargo gap + encoder/model/prediction digests",
+  "real_data_status": "NOT_PRODUCED_FOLD_CLASS_SUPPORT (fail closed before scoring)",
+  "synthetic_proof": "test_oof_scores_attested_and_embargoed: per-fold model digests differ, embargo>300s, deterministic"
+ },
+ "pr_draft": 115,
+ "protocol": {
+  "audit_fold": 4,
+  "audit_used_for_tuning": false,
+  "embargo_seconds": 300,
+  "eval_intervals": [
+   [
+    1591,
+    2121
+   ],
+   [
+    2652,
+    3182
+   ],
+   [
+    3713,
+    4243
+   ],
+   [
+    4775,
+    5305
+   ]
+  ],
+  "eval_rows": 530,
+  "fold_selection": "INDEX_PREDECLARED_NO_LABEL_FILTER",
+  "max_folds": 4,
+  "min_fit": 1061
+ },
+ "remote_pr_head": "9647b8f8b1c9d1355d0bc4a6ef416613d33cd9f3",
+ "remote_pr_tree": "8eea6c2f1967ad6145ccee334e0d494e2c90724e",
+ "reproducibility": {
+  "canonical_receipt_sha256": "12c6140feeffead6d0f917b8ac701b260ccb72aac0d206bff63a11b1af167f4a",
+  "report_sha256": "650e19373c44315eb6866310c4c920061f9f117c8808fbd8aee58eb0a8a7c3f6",
+  "reports_byte_identical": true,
+  "two_fresh_processes": true,
+  "verify_exit": 4
+ },
+ "result": "L0C_TRAIN_ONLY_OOF_CALIBRATION_INCONCLUSIVE_SCIENTIFIC_HOLD",
+ "run_id": "20261105T200731Z-l0c-oof-v0",
+ "schema": "spk-l0c-train-oof-calibration-witness/v0",
+ "tests": {
+  "extension_tests": 5,
+  "pytest_passed": 22,
+  "seed_tests": 17
+ },
+ "timestamp_utc": "2026-11-05T20:07:31Z",
+ "worktree": {
+  "base_tree": "127cbc4b98494dc8380752697126ec8287a9b9cc (PR #112 remote, reconciled in #114)",
+  "clean": true,
+  "head_after_extension": "extension commit on the 2 new L0c code files only",
+  "path": "/home/ste/workspace/l0c-fwork",
+  "seed_tree": "8eea6c2f1967ad6145ccee334e0d494e2c90724e == PR #115 remote tree (verified via API rootmap mktree)"
+ }
+}
