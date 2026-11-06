@@ -1,0 +1,133 @@
+{
+ "SPK_learning_demonstrated": false,
+ "accuracy_or_f1_computed": false,
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "external_validation_primary_inconclusive": true,
+  "holdout_labels_read": false,
+  "holdout_scored": false,
+  "native_learning": false,
+  "native_tests_executed": 0,
+  "release_certified": false,
+  "research_only": true,
+  "scientific_authority": "HOLD",
+  "validation_scored": false
+ },
+ "classification_scored": false,
+ "decision": "HOLD",
+ "decoder": "purely structural emissions/terminal_outputs/states; no labels",
+ "external_validation_primary_inconclusive": true,
+ "gate": {
+  "adversarial_count": 10,
+  "adversarial_vetoes": [
+   "wrong_protocol",
+   "missing_args",
+   "verify_without_train",
+   "forbidden_path_holdout",
+   "forbidden_path_validation",
+   "forbidden_path_sealed",
+   "forbidden_path_private",
+   "forbidden_path_zip",
+   "wrong_train_sha",
+   "output_exists"
+  ],
+  "base": "4e91dfa",
+  "changed_file_allowlist": [
+   "workbench/l0d_uci864_sensor_spike_adapter_v0.py",
+   "tests/test_spk_l0d_uci864_sensor_spike_v0.py",
+   "docs/spk-l0d-uci864-sensor-spikes-original-reference-v0.md",
+   "search/l0d_uci864_sensor_spike_gate_v0.sh"
+  ],
+  "determinism_two_fresh_processes_core_sha256": "646b62e5d1f7efa39d158cb0f7b59255979abdef540e842c34b02b6ea9c4b4f9",
+  "env_python": "3.14.10",
+  "frozen_manifest_entries": 38,
+  "frozen_pin_verified": true,
+  "pytest": "34 passed in 26.83s",
+  "report_path": "runs/20261106T092946Z-l0d-uci864-sensor-spike-v0/spk-l0d-uci864-sensor-spike-report-v0.json",
+  "report_sha256": "4a5e6122060fb83d813a4f97b833c1cf7d9605e849ed67c423f0817882ac0581",
+  "verify_mode": "L0D_REPORT_VERIFIED_SCIENTIFIC_HOLD"
+ },
+ "goal": "REAL_SENSOR_INPUT_REACHES_ORIGINAL_SPK_ENGINE",
+ "inputs": {
+  "analog_quantiles_sha256": "a9d929b3bea0e8bc3a1609babd81a4df360f0b84cee3675b216ccbd675a29b67",
+  "features": [
+   "S1_Temp",
+   "S2_Temp",
+   "S3_Temp",
+   "S4_Temp",
+   "S1_Light",
+   "S2_Light",
+   "S3_Light",
+   "S4_Light",
+   "S1_Sound",
+   "S2_Sound",
+   "S3_Sound",
+   "S4_Sound",
+   "S5_CO2",
+   "S6_PIR",
+   "S7_PIR"
+  ],
+  "holdout_read": false,
+  "holdout_scored": false,
+  "pilot_indices": [
+   1024,
+   1056
+  ],
+  "quantile_window": [
+   0,
+   1024
+  ],
+  "sealed_read": false,
+  "sensor_rows_used": 32,
+  "source_zip_pin_sha256": "a0db79ee96ea297c22458ac77a28fba20d41246e75d24b2655ca3ab624cc08fd",
+  "target_used": false,
+  "timestamps_as_features": false,
+  "train_rows": 5305,
+  "train_sha256": "a940c8445fddb3136e924340666e08908e4f4d9358d883d38d6a8502dd6e4038",
+  "validation_read": false
+ },
+ "issue": 117,
+ "limits": [
+  "feasibility only: not an L0 learning result; no SPK training/plasticity; no accuracy/F1; no generalization",
+  "public evidence metadata/SHA/harmless aggregates only: no raw sensor rows, no label counts, no private paths",
+  "HOLD unchanged: C0-C5, G2, dispatch, BV->P, P_writes=0, hardware/native/release, #102 BLOCKED_HOLD, independent human review"
+ ],
+ "native_learning": false,
+ "phase": "B_l0d_real_15_sensor_to_original_spk_reference",
+ "pr": {
+  "base_branch": "research/spk-l0c-train-only-temporal-calibration-v0",
+  "draft": "new stacked on PR #115"
+ },
+ "result": "L0D_REAL_15_SENSOR_TO_ORIGINAL_SPK_REFERENCE_FEASIBILITY_ENGINEERING_PASS_SCIENTIFIC_HOLD",
+ "run_id": "20261106T092946Z-l0d-uci864-sensor-spike-v0",
+ "runtime": {
+  "all_rows_closed_exact_pass": true,
+  "c2_manifest_roundtrip": true,
+  "compiler": "original workbench.g1_candidate_admission_v0.admission_v0 -> spk_compiler.compile_pipeline_v0.compile_network_ir_v0 (frozen pin verified)",
+  "controls": {
+   "parallel_edge_route_multiplicity": true,
+   "single_sensor_perturbation_changes_output": true,
+   "spike_count_ladder_exact": true,
+   "zero_vs_nonzero_input_differ": true
+  },
+  "distinct_row_result_digests": 11,
+  "host": "original search.spk_24t_diagnostic_manifest_host_v0.execute_manifest_v0 in isolated bounded subprocess",
+  "host_max_cpu_seconds": 0.121011,
+  "host_max_rss_kb": 28672,
+  "host_max_wall_seconds": 0.013504,
+  "host_measurements_note": "wall/CPU/RSS host aggregates in report; CPU time is not energy",
+  "limits": {
+   "max_batches": 32,
+   "max_events": 256
+  },
+  "max_batches_observed": 8,
+  "max_events_observed": 18
+ },
+ "schema": "spk-l0d-uci864-sensor-spike-witness/v0",
+ "timestamp_utc": "2026-11-06T09:30:35Z",
+ "training_performed": false
+}
