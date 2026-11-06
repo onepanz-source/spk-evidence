@@ -1,0 +1,219 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "SPK_learning_demonstrated": false,
+  "computational_advantage_demonstrated": false,
+  "flow_estimated": false,
+  "generalization_demonstrated": false,
+  "ground_truth_pixels_read_this_task": false,
+  "native_calculation_demonstrated": true,
+  "native_calculation_scope": "BOUNDED_TEMPORAL_ORDER_AB_BA_SYNC_NONE_ONLY",
+  "native_learning": false,
+  "optical_flow_scored": false,
+  "release_certified": false,
+  "research_only": true,
+  "reserved_sequences_read": false,
+  "scientific_authority": "HOLD",
+  "uci_holdout_read": false
+ },
+ "decision": "HOLD",
+ "execution_summary": {
+  "criterion_met": false,
+  "historical_encoder_baseline_categories": {
+   "AB": 0,
+   "BA": 0,
+   "NONE": 101,
+   "SYNC": 59
+  },
+  "host_new_src_upstep_hist": {
+   "1": 5,
+   "2": 10,
+   "3": 10,
+   "None": 135
+  },
+  "host_new_tgt_upstep_hist": {
+   "1": 5,
+   "2": 6,
+   "3": 16,
+   "None": 133
+  },
+  "native_time_reversed_category_counts": {
+   "AB": 0,
+   "BA": 1,
+   "NONE": 151,
+   "SYNC": 8
+  },
+  "native_unreversed_category_counts": {
+   "AB": 1,
+   "BA": 0,
+   "NONE": 151,
+   "SYNC": 8
+  },
+  "new_encoder": "FIRST_STRICT_UPSTEP q in {1,2,3} with L[q]>L[q-1], else None",
+  "nonvacuity_criterion": "unreversed real DEV AB>=1 and BA>=1 and (SYNC+NONE)>=1",
+  "nonvacuity_failure_cause": "FIRST_STRICT_UPSTEP yields AB=1 but BA=0 in the 160 unreversed real DEV trials (the single AB in pair 2 mirrors to a single BA only in the reversed counterfactual set, which does not count)",
+  "oracle_mismatches": 0,
+  "per_pair_new_counts": [
+   {
+    "historical": {
+     "AB": 0,
+     "BA": 0,
+     "NONE": 20,
+     "SYNC": 20
+    },
+    "native_unreversed_categories": {
+     "AB": 0,
+     "BA": 0,
+     "NONE": 39,
+     "SYNC": 1
+    },
+    "pair_index": 0
+   },
+   {
+    "historical": {
+     "AB": 0,
+     "BA": 0,
+     "NONE": 23,
+     "SYNC": 17
+    },
+    "native_unreversed_categories": {
+     "AB": 0,
+     "BA": 0,
+     "NONE": 38,
+     "SYNC": 2
+    },
+    "pair_index": 1
+   },
+   {
+    "historical": {
+     "AB": 0,
+     "BA": 0,
+     "NONE": 29,
+     "SYNC": 11
+    },
+    "native_unreversed_categories": {
+     "AB": 1,
+     "BA": 0,
+     "NONE": 36,
+     "SYNC": 3
+    },
+    "pair_index": 2
+   },
+   {
+    "historical": {
+     "AB": 0,
+     "BA": 0,
+     "NONE": 29,
+     "SYNC": 11
+    },
+    "native_unreversed_categories": {
+     "AB": 0,
+     "BA": 0,
+     "NONE": 38,
+     "SYNC": 2
+    },
+    "pair_index": 3
+   }
+  ],
+  "real_dev_original_trials": 160,
+  "reversal_mismatches": 0,
+  "synthetic_identical_to_parent": true,
+  "synthetic_original_host_cases": 13,
+  "time_reversed_trials": 160,
+  "total_original_native_trials": 320,
+  "worker_status": "all CLOSED+EXACT_PASS, P_writes=0"
+ },
+ "gate": {
+  "adversarial_count": 14,
+  "base": "7ea5e5700361d2e44d2800ae6bcfc981389e2aa1 (PR #132 head)",
+  "changed_file_allowlist": [
+   "docs/spk-dsec-d2f-first-upstep-native-temporal-order-prereg-v0.md",
+   "workbench/dsec_d2f_first_upstep_original_native_v0.py",
+   "tests/test_spk_dsec_d2f_first_upstep_original_native_v0.py"
+  ],
+  "cli_adversarial_vetoes": [
+   "wrong_protocol",
+   "no_mode",
+   "both_modes",
+   "wrong_parent_sha",
+   "reserved_intake",
+   "parent_missing",
+   "parent_sha_drift",
+   "parent_gt_path",
+   "out_gt_png",
+   "out_reserved",
+   "out_exists",
+   "verify_missing",
+   "bad_intake",
+   "verify_tampered_report"
+  ],
+  "cli_veto_exit_code": 2,
+  "d2f_tested_blobs": {
+   "docs/spk-dsec-d2f-first-upstep-native-temporal-order-prereg-v0.md": "b81d1d0896dedb87dab42da60d7a9bd124c5984f",
+   "tests/test_spk_dsec_d2f_first_upstep_original_native_v0.py": "060004553f9053453278825c54a4df1a4a501c24",
+   "workbench/dsec_d2f_first_upstep_original_native_v0.py": "b5ae28c83c315932b3dd1750138bea044fc99e16"
+  },
+  "determinism_two_fresh_processes": {
+   "byte_identical": true,
+   "report_A_sha256": "6fe8efa20020662eb02d43c14c6178d9102476b2870abb3dadbb4892a7579ded",
+   "report_B_sha256": "6fe8efa20020662eb02d43c14c6178d9102476b2870abb3dadbb4892a7579ded"
+  },
+  "env": {
+   "h5py": "3.16.0",
+   "numpy": "2.5.4",
+   "python": "3.14.10"
+  },
+  "frozen_manifest_entries": 38,
+  "pr_head_after_m_publish": "77e7431f12c0f7649fc7fe3e7b0cd3cdae16c3a1",
+  "pr_head_at_seed": "a0d0bef1f80b326afde1d0bc069a0d33af07535f",
+  "pytest": "193 passed in 72.75s (D2f 61 + D2e 70 + D2d v0 30 + v0r 32)",
+  "repair": "only D2f-owned test file: two parametrized 'spatial tamper' cases used LEGAL coords (0,1,0),(2,4,0); replaced with illegal (15,19,0),(0,1,2); no other change",
+  "report_core_sha256": "baf51a2e37c773a53af37639b51c054ab28f896a0b4f024db25be055735ff3ce",
+  "report_path": "runs/20261106T204553Z-dsec-d2f-v0/spk-dsec-d2f-v0-report.json",
+  "report_sha256": "6fe8efa20020662eb02d43c14c6178d9102476b2870abb3dadbb4892a7579ded",
+  "source_drift_checks": "16 quarter-level SHA == parent per-pair; quarter edges == parent; historical encoder categories == frozen baseline; synthetic controls == parent report",
+  "verify_mode": "third fresh process --verify on report A -> DSEC_D2F_NATIVE_REPORT_VERIFIED_SCIENTIFIC_HOLD core baf51a2e...; tampered report (BA=1 forged) -> D2F_VETO:REPORT_FORGED_OR_DRIFT"
+ },
+ "issue": 133,
+ "issue_133_state": "OPEN (preregistered nonvacuity AB>=1 AND BA>=1 NOT met: new encoder gives AB=1, BA=0; not closed ciat-done)",
+ "limits": [
+  "INCONCLUSIVE per locked protocol: BA=0 with new encoder; no post-data tuning of encoder/threshold/anchors/quarters; #133 remains OPEN; #131 untouched OPEN",
+  "bounded native AB/BA/SYNC/NONE relation only; upstep onset is a host-side quantization artifact, not motion/flow/direction; synthetic 13/13 EXACT proves detector function, not real-data direction accuracy",
+  "aggregates+digests only: no per-trial vectors, raw events, GT pixels or private paths; leak scan clean",
+  "HOLD unchanged: C0-C5, G2, dispatch, BV->P, P_writes=0, #102, #120, #126, #131, human independent review; no merge"
+ ],
+ "parent_evidence_immutable": {
+  "issue131_state": "OPEN INCONCLUSIVE, untouched",
+  "not_overwritten": true,
+  "parent_d2e_head": "7ea5e5700361d2e44d2800ae6bcfc981389e2aa1",
+  "parent_d2e_report_path": "runs/20261106T194300Z-dsec-d2e-v0/spk-dsec-d2e-v0-report.json",
+  "parent_d2e_report_sha256": "76836b781c957fd49c55c13261057c3cfec26027475a8376049159b6b71e1035",
+  "parent_d2e_witness_sha256": "18b04382c03f0b3d251be49cb5f01268aa10cfa72b0b530464b918cf32fbb298"
+ },
+ "pr_draft": 134,
+ "result": "DSEC_D2F_UPSTEP_ENCODING_REAL_DEV_ORDER_INCONCLUSIVE_HOLD",
+ "run_id": "20261106T204553Z-dsec-d2f-v0",
+ "schema": "spk-dsec-d2f-first-strict-upstep-witness/v0",
+ "scientific_outcome": "Posthoc-motivated exploratory DEV comparison of two HOST-side encodings on the SAME unchanged original 7-node/8-edge SPK temporal-order detector (genuine G1/C2/24t). All engineering gates PASS: 13/13 synthetic + reversals byte-identical to parent D2e report, 320/320 original worker trials (160 FIRST_STRICT_UPSTEP + 160 time-reversed) CLOSED+EXACT_PASS with 0 oracle and 0 reversal mismatches, 16 quarter-grid SHA and quarter edges identical to parent (no source drift), historical FIRST_GE_2 encoder reproduced the frozen D2e baseline exactly (AB0/BA0/SYNC59/NONE101, per-pair SYNC 20/17/11/11). NEW encoder native unreversed categories: AB=1, BA=0, SYNC=8, NONE=151 -> BA=0, so the predeclared nonvacuity threshold (AB>=1, BA>=1, SYNC+NONE>=1) is NOT met -> INCONCLUSIVE_HOLD per locked protocol; no post-hoc tuning. Onset histograms (metadata only): src {1:5,2:10,3:10,None:135}, tgt {1:5,2:6,3:16,None:133}. Upward transitions are quantization-level artifacts, not motion/direction; no flow/EPE/learning/advantage claims.",
+ "scope": {
+  "exploratory_dev_only": true,
+  "flow_estimated": false,
+  "ground_truth_pixels_read_this_task": false,
+  "optical_flow_scored": false,
+  "pairs": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "posthoc_motivated": true,
+  "reserved_sequences_read": false,
+  "sequence": "thun_00_a",
+  "uci_holdout_read": false
+ },
+ "timestamp_utc": "2026-11-06T20:45:53Z"
+}
