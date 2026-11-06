@@ -1,0 +1,192 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "SPK_learning_demonstrated": false,
+  "computational_advantage_demonstrated": false,
+  "flow_estimated": false,
+  "generalization_demonstrated": false,
+  "ground_truth_pixels_read_this_task": false,
+  "native_calculation_demonstrated": true,
+  "native_calculation_scope": "BOUNDED_TEMPORAL_ORDER_ONLY_EXTERNAL_RAW_ENCODING",
+  "native_learning": false,
+  "optical_flow_scored": false,
+  "release_certified": false,
+  "research_only": true,
+  "reserved_sequences_read": false,
+  "scientific_authority": "HOLD",
+  "uci_holdout_read": false
+ },
+ "decision": "HOLD",
+ "execution_summary": {
+  "criterion_met": true,
+  "encoder": "EXTERNAL_RAW_FIRST_STRICT_UPSTEP (host only; classification purely native)",
+  "native_original_category_counts": {
+   "AB": 51,
+   "BA": 66,
+   "NONE": 298,
+   "SYNC": 225
+  },
+  "native_reversed_category_counts": {
+   "AB": 66,
+   "BA": 51,
+   "NONE": 298,
+   "SYNC": 225
+  },
+  "nonvacuity_criterion": "unreversed real DEV AB>=1 AND BA>=1 AND (SYNC+NONE)>=1",
+  "oracle_mismatches": 0,
+  "original_native_trials": 640,
+  "per_pair_native_original": [
+   {
+    "pair_index": 0,
+    "real_native_categories": {
+     "AB": 11,
+     "BA": 12,
+     "NONE": 104,
+     "SYNC": 33
+    }
+   },
+   {
+    "pair_index": 1,
+    "real_native_categories": {
+     "AB": 10,
+     "BA": 20,
+     "NONE": 76,
+     "SYNC": 54
+    }
+   },
+   {
+    "pair_index": 2,
+    "real_native_categories": {
+     "AB": 17,
+     "BA": 22,
+     "NONE": 56,
+     "SYNC": 65
+    }
+   },
+   {
+    "pair_index": 3,
+    "real_native_categories": {
+     "AB": 13,
+     "BA": 12,
+     "NONE": 62,
+     "SYNC": 73
+    }
+   }
+  ],
+  "reversal_mismatches": 0,
+  "reversed_native_trials": 640,
+  "source_first_upstep_hist": {
+   "1": 260,
+   "2": 160,
+   "3": 50,
+   "None": 170
+  },
+  "synthetic_identical_to_d2e": true,
+  "synthetic_original_host_cases": 13,
+  "target_first_upstep_hist": {
+   "1": 270,
+   "2": 125,
+   "3": 59,
+   "None": 186
+  },
+  "total_original_native_trials": 1280,
+  "worker_status": "all CLOSED+EXACT_PASS via original G1/C2/24t, P_writes=0"
+ },
+ "gate": {
+  "adversarial_count": 17,
+  "base": "f9f507d22e330fcee4d3e7e7ca89217d73e55473 (PR #136 head)",
+  "changed_file_allowlist": [
+   "docs/spk-dsec-d2h-systematic-lattice-native-order-prereg-v0.md",
+   "workbench/dsec_d2h_systematic_lattice_original_native_order_v0.py",
+   "tests/test_spk_dsec_d2h_systematic_lattice_original_native_order_v0.py"
+  ],
+  "cli_adversarial_vetoes": [
+   "wrong_protocol",
+   "no_mode",
+   "both_modes",
+   "wrong_parent_sha",
+   "reserved_intake",
+   "holdout_intake",
+   "d2e_sha_drift",
+   "d2f_sha_drift",
+   "d2g_sha_drift",
+   "parent_gt_png",
+   "out_gt_png",
+   "out_reserved",
+   "out_exists",
+   "verify_missing",
+   "bad_intake",
+   "d2g_missing",
+   "verify_tampered_report"
+  ],
+  "cli_veto_exit_code": 2,
+  "d2h_tested_blobs": {
+   "docs/spk-dsec-d2h-systematic-lattice-native-order-prereg-v0.md": "93f25b51043b51f903d4133cd18bacf8d9fe726c",
+   "tests/test_spk_dsec_d2h_systematic_lattice_original_native_order_v0.py": "e4939ed6ec1b9cd65a59195b431da3062d38c8c2",
+   "workbench/dsec_d2h_systematic_lattice_original_native_order_v0.py": "e564099dacc41800866d15ef119f6cdee84ef291"
+  },
+  "determinism_two_fresh_processes": {
+   "byte_identical": true,
+   "report_A_sha256": "d4ea955b9a23d69a84b15345fcfdb918bc04600c8652627bbf7a6c6c8f930e2f",
+   "report_B_sha256": "d4ea955b9a23d69a84b15345fcfdb918bc04600c8652627bbf7a6c6c8f930e2f"
+  },
+  "env": {
+   "h5py": "3.16.0",
+   "numpy": "2.5.4",
+   "python": "3.14.10"
+  },
+  "frozen_manifest_entries": 38,
+  "pr_head_after_m_publish": "c0b2e2c1522f9745b7f7aa63517a5a43aee7a14f",
+  "pr_head_at_seed": "ef5abfebd550c92825491b053ecf8170f74381ed",
+  "pytest": "174 passed in 0.27s (D2h 58 + D2g 55 + D2f 61)",
+  "repair": "only D2h-owned test file: RESULT_INCONCLUSIVE suffix assertion _SCIENTIFIC_HOLD -> _INCONCLUSIVE_HOLD to match the mandated INCONCLUSIVE string; no other change",
+  "report_core_sha256": "463a3b327bbdf989fedeae457ddcfcdb349f5e448261a487b232c71d5a77661e",
+  "report_path": "runs/20261106T231145Z-dsec-d2h-v0/spk-dsec-d2h-v0-report.json",
+  "report_sha256": "d4ea955b9a23d69a84b15345fcfdb918bc04600c8652627bbf7a6c6c8f930e2f",
+  "source_drift_checks": "16 rank + 16 raw-count quarter SHA == D2g per pair; quarter edges == D2g; D2g 9360 host census re-derived == parent per pair; D2e/D2f 4-anchor historical categories == parent per pair; 13 synthetic == D2e receipts",
+  "verify_mode": "third fresh process --verify (full 1280-worker re-execution) -> DSEC_D2H_REPORT_VERIFIED_SCIENTIFIC_HOLD core 463a3b32...; tampered report (AB=0 forged) -> D2H_VETO:REPORT_REEXECUTION_MISMATCH"
+ },
+ "issue": 137,
+ "limits": [
+  "bounded native AB/BA/SYNC/NONE temporal-order relation only; host raw upstep onset and spatial pairing are external; already-seen DEV data, not independent samples",
+  "no optical flow/EPE, physical direction correctness, native learning, generalization or computational advantage",
+  "aggregates+digests only: no per-trial vectors, event coordinates, raw arrays, GT pixels or private paths; leak scan clean",
+  "HOLD unchanged: C0-C5, G2, dispatch, BV->P, P_writes=0, #102, #120, #126, #131, #133, human independent review; no merge"
+ ],
+ "parent_evidence_immutable": {
+  "d2e_report_sha256": "76836b781c957fd49c55c13261057c3cfec26027475a8376049159b6b71e1035",
+  "d2f_report_sha256": "6fe8efa20020662eb02d43c14c6178d9102476b2870abb3dadbb4892a7579ded",
+  "d2g_report_sha256": "a9b905219b82645ebb06c353c2004976e22d3b62db3bc96e3d20af53250bef87",
+  "d2g_witness_sha256": "10de083db41cf5f2af87e65f1f3efe99b05cc04f9249acf119bc0585ab3dcee7",
+  "issues_131_133": "OPEN INCONCLUSIVE, untouched",
+  "not_overwritten": true,
+  "parent_d2g_git_head": "f9f507d22e330fcee4d3e7e7ca89217d73e55473"
+ },
+ "pr_draft": 138,
+ "result": "DSEC_D2H_SYSTEMATIC_LATTICE_ORIGINAL_NATIVE_ORDER_ENGINEERING_PASS_SCIENTIFIC_HOLD",
+ "run_id": "20261106T231145Z-dsec-d2h-v0",
+ "schema": "spk-dsec-d2h-systematic-lattice-native-order-witness/v0",
+ "scientific_outcome": "On the predeclared systematic lattice (Y=(2,5,8,11) x X=(2,7,12,17), 16 anchors, 5 offsets, 2 polarities, 4 DEV pairs, HOST RAW_FIRST_STRICT_UPSTEP onset encoder), the UNCHANGED original D2e 7-node/8-edge G1/C2/24t runtime produced genuine native terminal categories on 640 unreversed real DEV trials: AB=51, BA=66, SYNC=225, NONE=298 (0 oracle mismatches), with 640 time-reversed counterfactuals mirroring exactly (AB=66, BA=51) and 13/13 synthetic controls + reversals identical to pinned D2e receipts. Predeclared nonvacuity AB>=1 AND BA>=1 AND (SYNC+NONE)>=1 is MET. This is posthoc-motivated exploration on ALREADY-SEEN DSEC DEV: not independent validation, not physical direction/motion/flow, not learning/generalization/advantage. D2g host census and D2e/D2f historical anchors were re-derived with zero drift before the native run (16 rank SHA + 16 count SHA + quarter edges + 9360 host census per pair).",
+ "scope": {
+  "data_not_independent_or_unseen": true,
+  "exploratory_dev_only": true,
+  "flow_estimated": false,
+  "ground_truth_pixels_read_this_task": false,
+  "optical_flow_scored": false,
+  "pairs": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "posthoc_motivated_already_seen_dev": true,
+  "reserved_sequences_read": false,
+  "sequence": "thun_00_a",
+  "uci_holdout_read": false
+ },
+ "timestamp_utc": "2026-11-06T23:11:45Z"
+}
