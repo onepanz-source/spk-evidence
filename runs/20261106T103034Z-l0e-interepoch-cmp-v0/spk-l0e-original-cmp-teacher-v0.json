@@ -1,0 +1,207 @@
+{
+ "SPK_native_learning_demonstrated": false,
+ "accuracy_or_f1_claimed": false,
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "SPK_native_learning_demonstrated": false,
+  "generalization_demonstrated": false,
+  "holdout_labels_read": false,
+  "holdout_scored": false,
+  "native_learning": false,
+  "release_certified": false,
+  "research_only": true,
+  "scientific_authority": "HOLD",
+  "validation_scored": false
+ },
+ "classification_scored": false,
+ "decision": "HOLD",
+ "gate": {
+  "adversarial_count": 11,
+  "adversarial_vetoes": [
+   "wrong_protocol",
+   "wrong_parent_pin",
+   "missing_args",
+   "verify_without_train",
+   "forbidden_holdout",
+   "forbidden_sealed",
+   "forbidden_validation",
+   "forbidden_private",
+   "forbidden_zip",
+   "wrong_train_sha",
+   "output_exists"
+  ],
+  "base": "92fd5d2",
+  "changed_file_allowlist": [
+   "workbench/l0e_interepoch_cmp_teacher_v0.py",
+   "tests/test_spk_l0e_interepoch_cmp_teacher_v0.py",
+   "docs/spk-l0e-external-interepoch-cmp-prereg-v0.md",
+   "search/l0e_interepoch_cmp_gate_v0.sh"
+  ],
+  "determinism_two_fresh_processes_core_sha256": "15e1e823482e267727a019d06bcda583ac0966e10a9f65c15a14a5becb23b643",
+  "env_python": "3.14.10",
+  "frozen_manifest_entries": 38,
+  "pytest": "40 passed in 21.28s",
+  "report_path": "runs/20261106T103034Z-l0e-interepoch-cmp-v0/spk-l0e-interepoch-cmp-teacher-report-v0.json",
+  "report_sha256": "7e2b5caaee755e75a2a090f63d7a0e5116f96959d40b105dd398b289a8673a83",
+  "verify_mode": "L0E_REPORT_VERIFIED_* (fail-closed recompute compare)"
+ },
+ "generalization_demonstrated": false,
+ "inputs": {
+  "class_support": {
+   "probe": {
+    "classes": [
+     0
+    ],
+    "positive_rows": 0,
+    "rows": 32,
+    "window": [
+     2048,
+     2080
+    ]
+   },
+   "quantiles": {
+    "classes": [
+     0,
+     1
+    ],
+    "positive_rows": 825,
+    "rows": 1024,
+    "window": [
+     0,
+     1024
+    ]
+   },
+   "teacher": {
+    "classes": [
+     0
+    ],
+    "positive_rows": 0,
+    "rows": 1024,
+    "window": [
+     1024,
+     2048
+    ]
+   }
+  },
+  "holdout_labels_read": false,
+  "holdout_read": false,
+  "holdout_scored": false,
+  "quantiles_sha256": "a9d929b3bea0e8bc3a1609babd81a4df360f0b84cee3675b216ccbd675a29b67",
+  "sealed_read": false,
+  "target_used_by_encoder_or_topology": false,
+  "timestamp_used_as_feature": false,
+  "train_rows": 5305,
+  "train_sha256": "a940c8445fddb3136e924340666e08908e4f4d9358d883d38d6a8502dd6e4038",
+  "validation_read": false,
+  "windows": {
+   "probe": [
+    2048,
+    2080
+   ],
+   "quantiles": [
+    0,
+    1024
+   ],
+   "teacher": [
+    1024,
+    2048
+   ]
+  }
+ },
+ "issue": 120,
+ "limits": [
+  "metadata-only public evidence: no raw sensor rows, no per-row labels/predictions, no private paths, no holdout class stats",
+  "teacher update is HOST-side and recompiled through the original Compiler; it is NOT native SPK learning and NOT BV-to-P",
+  "probe is train-internal exploratory; no independent generalization claim; windows preregistered and unmoved",
+  "HOLD unchanged: C0-C5, G2, dispatch, BV->P, P_writes=0, hardware/native/release, #102 BLOCKED_HOLD, independent human review"
+ ],
+ "native_learning": false,
+ "parent_pr118_sha": "9efffc7ba8712d971f3a040ec7fd133c3eb32482",
+ "pr_draft": 119,
+ "probe_metrics_final_theta": null,
+ "probe_single_class": true,
+ "result": "L0E_TEACHER_CLASS_SUPPORT_INCONCLUSIVE_HOLD",
+ "run_id": "20261106T103034Z-l0e-interepoch-cmp-v0",
+ "schema": "spk-l0e-original-cmp-teacher-witness/v0",
+ "scientific_outcome": "INCONCLUSIVE: teacher window [1024,2048) single-class; no window moved; no threshold update attempted",
+ "spk_execution": {
+  "compiler": "original workbench.g1_candidate_admission_v0.admission_v0 -> spk_compiler.compile_pipeline_v0.compile_network_ir_v0 (C2 roundtrip)",
+  "frozen_pin_verified": true,
+  "host": "original search.spk_24t_diagnostic_manifest_host_v0.execute_manifest_v0 via l0d.isolated_trial bounded subprocesses",
+  "native_output_contrast": null,
+  "primary_decoder": "native AGG/ch9 terminal emission of the original 24t result (not a Python threshold)",
+  "probe_snapshots": [
+   {
+    "all_closed": true,
+    "all_exact_pass": true,
+    "manifests_digest": "4ac26ccb2ca943296b101474c0d3e53b92513696a87f3052a5021191607c4e84",
+    "native_pred_ones": 0,
+    "results_digest": "58526750281e752aabe22fc32df608fc158236c4dabf30f9543fa6b4527202f3",
+    "rows": 32,
+    "theta": 21
+   }
+  ],
+  "static_only_because_teacher_inconclusive": true,
+  "synthetic_host_contrast": {
+   "P_writes": 0,
+   "adjudication_a": "EXACT_PASS",
+   "adjudication_b": "EXACT_PASS",
+   "both_closed_exact_pass": true,
+   "input_spikes": 20,
+   "manifest_a": "33e31b65ad1115e65ac73e1797bc7f8241b8fa7627da609e456053e2f66cd715",
+   "manifest_b": "e42e92589f4f898cf04639dbae7f7402ec8cfa46e2a36a2a9bfecb03ad4d6d8c",
+   "manifests_differ": true,
+   "native_contrast": true,
+   "pred_a": 1,
+   "pred_b": 0,
+   "status_a": "CLOSED",
+   "status_b": "CLOSED",
+   "theta_a": 10,
+   "theta_b": 30
+  }
+ },
+ "synthetic_teacher_controls": {
+  "inverted_theta_by_epoch": [
+   21,
+   21,
+   21,
+   21
+  ],
+  "label_dependent": true,
+  "main_theta_by_epoch": [
+   21,
+   20,
+   20,
+   20
+  ],
+  "step0_theta_by_epoch": [
+   21,
+   21,
+   21,
+   21
+  ]
+ },
+ "teacher": {
+  "class_support": {
+   "classes": [
+    0
+   ],
+   "positive_rows": 0,
+   "rows": 1024,
+   "window": [
+    1024,
+    2048
+   ]
+  },
+  "note": "no threshold update attempted; windows frozen",
+  "veto": "L0E_TEACHER_CLASS_SUPPORT_INCONCLUSIVE_HOLD",
+  "windows_changed": false
+ },
+ "teacher_is_host_side_only": true,
+ "timestamp_utc": "2026-11-06T10:31:13Z",
+ "training_of_spk_network_performed": false
+}
