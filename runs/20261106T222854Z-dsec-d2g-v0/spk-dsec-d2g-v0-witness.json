@@ -1,0 +1,228 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "SPK_learning_demonstrated": false,
+  "computational_advantage_demonstrated": false,
+  "flow_estimated": false,
+  "generalization_demonstrated": false,
+  "ground_truth_pixels_read_this_task": false,
+  "native_calculation_newly_demonstrated": false,
+  "native_learning": false,
+  "optical_flow_scored": false,
+  "release_certified": false,
+  "research_only": true,
+  "reserved_sequences_read": false,
+  "scientific_authority": "HOLD",
+  "uci_holdout_read": false
+ },
+ "census_summary": {
+  "comparisons_per_encoder": 9360,
+  "global_categories_per_encoder": {
+   "RANK_FIRST_GE2": {
+    "AB": 43,
+    "BA": 34,
+    "NONE": 5071,
+    "SYNC": 4212
+   },
+   "RANK_FIRST_STRICT_UPSTEP": {
+    "AB": 86,
+    "BA": 88,
+    "NONE": 8742,
+    "SYNC": 444
+   },
+   "RAW_FIRST_NONZERO": {
+    "AB": 190,
+    "BA": 182,
+    "NONE": 2274,
+    "SYNC": 6714
+   },
+   "RAW_FIRST_STRICT_UPSTEP": {
+    "AB": 812,
+    "BA": 797,
+    "NONE": 4633,
+    "SYNC": 3118
+   }
+  },
+  "global_src_onset_hist_per_encoder": {
+   "RANK_FIRST_GE2": {
+    "0": 4925,
+    "1": 75,
+    "2": 120,
+    "3": 160,
+    "None": 4080
+   },
+   "RANK_FIRST_STRICT_UPSTEP": {
+    "0": 0,
+    "1": 500,
+    "2": 550,
+    "3": 585,
+    "None": 7725
+   },
+   "RAW_FIRST_NONZERO": {
+    "0": 7255,
+    "1": 310,
+    "2": 155,
+    "3": 150,
+    "None": 1490
+   },
+   "RAW_FIRST_STRICT_UPSTEP": {
+    "0": 0,
+    "1": 3620,
+    "2": 1860,
+    "3": 1020,
+    "None": 2860
+   }
+  },
+  "global_support_per_encoder": {
+   "RANK_FIRST_GE2": {
+    "both_absent": 3303,
+    "both_present": 4479,
+    "both_present_nonadjacent": 190,
+    "one_absent": 1578
+   },
+   "RANK_FIRST_STRICT_UPSTEP": {
+    "both_absent": 6763,
+    "both_present": 691,
+    "both_present_nonadjacent": 73,
+    "one_absent": 1906
+   },
+   "RAW_FIRST_NONZERO": {
+    "both_absent": 1026,
+    "both_present": 7414,
+    "both_present_nonadjacent": 328,
+    "one_absent": 920
+   },
+   "RAW_FIRST_STRICT_UPSTEP": {
+    "both_absent": 1728,
+    "both_present": 5356,
+    "both_present_nonadjacent": 629,
+    "one_absent": 2276
+   }
+  },
+  "unique_site_support_by_quarter": {
+   "quarter_rank_ge2_site_counts": [
+    985,
+    976,
+    983,
+    990
+   ],
+   "quarter_rank_strict_upstep_site_counts": [
+    0,
+    100,
+    115,
+    139
+   ],
+   "quarter_raw_positive_site_counts": [
+    1451,
+    1456,
+    1449,
+    1460
+   ],
+   "quarter_raw_strict_upstep_site_counts": [
+    0,
+    724,
+    774,
+    806
+   ]
+  },
+  "unique_source_sites": 1872
+ },
+ "decision": "HOLD",
+ "gate": {
+  "adversarial_count": 16,
+  "base": "77e7431f12c0f7649fc7fe3e7b0cd3cdae16c3a1 (PR #134 head)",
+  "changed_file_allowlist": [
+   "docs/spk-dsec-d2g-fullgrid-source-support-prereg-v0.md",
+   "workbench/dsec_d2g_fullgrid_temporal_support_census_v0.py",
+   "tests/test_spk_dsec_d2g_fullgrid_temporal_support_census_v0.py"
+  ],
+  "cli_adversarial_vetoes": [
+   "wrong_protocol",
+   "no_mode",
+   "both_modes",
+   "wrong_parent_sha",
+   "reserved_intake",
+   "holdout_intake",
+   "d2e_missing",
+   "d2e_sha_drift",
+   "d2f_sha_drift",
+   "parent_gt_png",
+   "out_gt_png",
+   "out_reserved",
+   "out_exists",
+   "verify_missing",
+   "bad_intake",
+   "verify_tampered_report"
+  ],
+  "cli_veto_exit_code": 2,
+  "d2g_tested_blobs": {
+   "docs/spk-dsec-d2g-fullgrid-source-support-prereg-v0.md": "f18df230c4852c7e560306fb791cfc4d3a283e22",
+   "tests/test_spk_dsec_d2g_fullgrid_temporal_support_census_v0.py": "6a31ee9fa24906e7e24eced9b73b3058a8a5da36",
+   "workbench/dsec_d2g_fullgrid_temporal_support_census_v0.py": "fcbbe314b35b06250b3037fcd27962d4a1c1fe11"
+  },
+  "determinism_two_fresh_processes": {
+   "byte_identical": true,
+   "report_A_sha256": "a9b905219b82645ebb06c353c2004976e22d3b62db3bc96e3d20af53250bef87",
+   "report_B_sha256": "a9b905219b82645ebb06c353c2004976e22d3b62db3bc96e3d20af53250bef87"
+  },
+  "env": {
+   "h5py": "3.16.0",
+   "numpy": "2.5.4",
+   "python": "3.14.10"
+  },
+  "frozen_manifest_entries": 38,
+  "pr_head_after_m_publish": "f9f507d22e330fcee4d3e7e7ca89217d73e55473",
+  "pr_head_at_seed": "70f9d94b657f71884e42f0d316140c52ca31b39e",
+  "pytest": "116 passed in 0.20s (D2g 55 + D2f 61; D2e/D2d suites previously 132)",
+  "repair": "only D2g-owned test file: assertion substring SOURCE_SUPPORT_CENSUS -> TEMPORAL_SUPPORT_CENSUS to match the mandated RESULT constant; no other change",
+  "report_core_sha256": "3357aace4aa9f621f4780fae45e4d5ecc0b412ea0c60891ef010eed968c34925",
+  "report_path": "runs/20261106T222854Z-dsec-d2g-v0/spk-dsec-d2g-v0-report.json",
+  "report_sha256": "a9b905219b82645ebb06c353c2004976e22d3b62db3bc96e3d20af53250bef87",
+  "source_drift_checks": "16 quarter levels_sha256 == D2e == D2f per pair; quarter edges == parents; historical 4-anchor RANK_FIRST_GE2 == D2e native_counts per pair; RANK_FIRST_STRICT_UPSTEP == D2f per pair; parent report SHA/provenance pins",
+  "verify_mode": "third fresh process --verify (full source re-read) -> DSEC_D2G_FULLGRID_SOURCE_REPORT_VERIFIED_SCIENTIFIC_HOLD core 3357aace...; tampered report (AB=999 forged) -> D2G_VETO:REPORT_FORGED_OR_DRIFT"
+ },
+ "issue": 135,
+ "limits": [
+  "HOST oracle categories only; the census did NOT re-execute the native 7-node SPK graph on the 9360 grid (native function already evidenced by D2e 13/13 synthetic EXACT + 320 worker trials)",
+  "comparisons overlap spatially and derive from the same 4 DEV windows: not independent samples; no flow/EPE/motion/direction-accuracy, learning, generalization or advantage claim",
+  "aggregates only: no per-tile raw arrays, event coordinates, per-trial vectors, GT pixels or private paths; leak scan clean",
+  "HOLD unchanged: C0-C5, G2, dispatch, BV->P, P_writes=0, #102, #120, #126, #131, #133, human independent review; no merge"
+ ],
+ "parent_evidence_immutable": {
+  "d2e_report_sha256": "76836b781c957fd49c55c13261057c3cfec26027475a8376049159b6b71e1035",
+  "d2e_witness_sha256": "18b04382c03f0b3d251be49cb5f01268aa10cfa72b0b530464b918cf32fbb298",
+  "d2f_report_sha256": "6fe8efa20020662eb02d43c14c6178d9102476b2870abb3dadbb4892a7579ded",
+  "d2f_witness_sha256": "25e240ff51e78c517f66eb44974e07a13acb3d4010c7d9fc85769299bf46fc03",
+  "issues_131_133": "OPEN INCONCLUSIVE, untouched",
+  "not_overwritten": true,
+  "parent_d2f_git_head": "77e7431f12c0f7649fc7fe3e7b0cd3cdae16c3a1"
+ },
+ "pr_draft": 136,
+ "result": "DSEC_D2G_EXHAUSTIVE_DEV_TEMPORAL_SUPPORT_CENSUS_ENGINEERING_PASS_SCIENTIFIC_HOLD",
+ "run_id": "20261106T222854Z-dsec-d2g-v0",
+ "schema": "spk-dsec-d2g-fullgrid-source-support-census-witness/v0",
+ "scientific_outcome": "HOST-ONLY exhaustive DEV temporal support census (no new native SPK computation): full interior grid y=1..13, x=1..18, 5 offsets, 2 polarities, 4 pairs = 9360 paired comparisons per encoder and 1872 unique source sites, over the same 4x4 quarter grids (16 levels_sha256 + edges byte-matched to immutable D2e/D2f reports; historical 4-anchor encoder totals reproduced exactly: D2e AB0/BA0/SYNC59/NONE101, D2f AB1/BA0/SYNC8/NONE151, per-pair hist included). Census shows abundant AB/BA temporal adjacency across the full interior grid for every encoder (RANK_FIRST_GE2 AB43/BA34; RANK_FIRST_STRICT_UPSTEP AB86/BA88; RAW_FIRST_NONZERO AB190/BA182; RAW_FIRST_STRICT_UPSTEP AB812/BA797 of 9360), while D2e/D2f's fixed 4 anchors saw almost none: the earlier INCONCLUSIVE outcomes trace to anchor-sample coverage, not to the original 7-node detector (already proven 13/13 EXACT synthetically in D2e). Counts overlap spatially and come from the SAME 4 DEV windows: NOT independent samples, NOT flow/motion/direction accuracy, NOT native SPK outputs on the census grid.",
+ "scope": {
+  "exploratory_dev_only": true,
+  "flow_estimated": false,
+  "ground_truth_pixels_read_this_task": false,
+  "host_only_diagnostic": true,
+  "new_native_spk_calculation": false,
+  "optical_flow_scored": false,
+  "pairs": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "posthoc_motivated": true,
+  "reserved_sequences_read": false,
+  "sequence": "thun_00_a",
+  "uci_holdout_read": false
+ },
+ "timestamp_utc": "2026-11-06T22:28:54Z"
+}
