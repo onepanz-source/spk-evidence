@@ -1,0 +1,228 @@
+{
+ "SPK_native_optical_flow": false,
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "SPK_learning_demonstrated": false,
+  "SPK_native_optical_flow": false,
+  "blind_test_gt_read": false,
+  "generalization_demonstrated": false,
+  "ground_truth_pixels_read": true,
+  "holdout_procedural_only": true,
+  "native_learning": false,
+  "optical_flow_scored": true,
+  "release_certified": false,
+  "research_only": true,
+  "scientific_authority": "HOLD",
+  "validation_gt_read": false
+ },
+ "blind_test_gt_read": false,
+ "flow_estimated_by": "EXTERNAL_BLOCK_MATCHER",
+ "gate": {
+  "adversarial_vetoes": [
+   "wrong_protocol",
+   "reserved_gt",
+   "output_exists"
+  ],
+  "base": "a64ddb9",
+  "changed_file_allowlist": [
+   "workbench/dsec_d2c0_external_flow_dev_v0.py",
+   "tests/test_spk_dsec_d2c0_external_flow_dev_v0.py",
+   "docs/spk-dsec-d2c0-development-optical-flow-prereg-v0.md",
+   "search/dsec_d2c0_gate_v0.sh"
+  ],
+  "determinism_core_sha256": "945afac45b5772bb3f6aceddf57d01ff331835e1924d1cba459f8195eec49951",
+  "env": {
+   "h5py": "3.16.0",
+   "hdf5plugin": "7.1.0",
+   "numpy": "2.5.4",
+   "pypng": "0.20220715.0",
+   "python": "3.14.10"
+  },
+  "pytest": "19 passed in 117.20s (0:01:57)",
+  "verify": "D2C_REPORT_VERIFIED_*"
+ },
+ "ground_truth_pixels_read": true,
+ "gt_scope": "DEV_ONLY thun_00_a forward pair indices 0..3",
+ "holdout_procedural_only": true,
+ "issue": 128,
+ "limits": [
+  "DEVELOPMENT_SCORING_ONLY_NOT_INDEPENDENT; SPK==host-quantized by design (sanity, not advantage)",
+  "metrics are aggregates only: no raw events, no GT pixels/frames, no prediction arrays, no private paths",
+  "HOLD unchanged: C0-C5, G2, dispatch, BV->P, P_writes=0, #102/#120/#126, human review"
+ ],
+ "optical_flow_scored": true,
+ "parent_d2b_head_sha": "b149c0c96c453cabe21e6ec454f233a02f64a893",
+ "pooled_valid_pixel_weighted": {
+  "log": {
+   "EPE": 13.023205086873691,
+   "valid_pixels": 214102
+  },
+  "quant": {
+   "EPE": 16.43642111160175,
+   "valid_pixels": 214102
+  },
+  "spk": {
+   "EPE": 16.43642111160175,
+   "valid_pixels": 214102
+  },
+  "zero": {
+   "EPE": 11.18756784992306,
+   "valid_pixels": 214102
+  }
+ },
+ "pr_draft": 127,
+ "report_core_sha256": "945afac45b5772bb3f6aceddf57d01ff331835e1924d1cba459f8195eec49951",
+ "report_sha256": "945afac45b5772bb3f6aceddf57d01ff331835e1924d1cba459f8195eec49951",
+ "result": "DSEC_D2C0_ORIGINAL_SPK_FEATURES_EXTERNAL_FLOW_DEVELOPMENT_EPE_ENGINEERING_PASS_SCIENTIFIC_HOLD",
+ "results": [
+  {
+   "metrics": {
+    "log": {
+     "EPE": 17.991081394953774,
+     "PE1_pct": 99.06838338260464,
+     "PE2_pct": 96.18990197603858,
+     "PE3_pct": 90.03812042943831,
+     "valid_pixels": 51416
+    },
+    "quant": {
+     "EPE": 20.041725577901246,
+     "PE1_pct": 99.06838338260464,
+     "PE2_pct": 96.18990197603858,
+     "PE3_pct": 90.04006534930761,
+     "valid_pixels": 51416
+    },
+    "spk": {
+     "EPE": 20.041725577901246,
+     "PE1_pct": 99.06838338260464,
+     "PE2_pct": 96.18990197603858,
+     "PE3_pct": 90.04006534930761,
+     "valid_pixels": 51416
+    },
+    "zero": {
+     "EPE": 11.319967789922764,
+     "PE1_pct": 99.06838338260464,
+     "PE2_pct": 96.18990197603858,
+     "PE3_pct": 90.03812042943831,
+     "valid_pixels": 51416
+    }
+   },
+   "pair_index": 0,
+   "png_name": "000002.png",
+   "png_sha256": "353b1774e76acbf06bf33ef4066a7a5ec3c99001cfb7f5e06cf6bcc1953f4a67"
+  },
+  {
+   "metrics": {
+    "log": {
+     "EPE": 11.37452468807194,
+     "PE1_pct": 99.42875457184871,
+     "PE2_pct": 95.1057652426379,
+     "PE3_pct": 88.15089928735719,
+     "valid_pixels": 53042
+    },
+    "quant": {
+     "EPE": 16.078605232773306,
+     "PE1_pct": 99.42875457184871,
+     "PE2_pct": 95.1057652426379,
+     "PE3_pct": 88.15089928735719,
+     "valid_pixels": 53042
+    },
+    "spk": {
+     "EPE": 16.078605232773306,
+     "PE1_pct": 99.42875457184871,
+     "PE2_pct": 95.1057652426379,
+     "PE3_pct": 88.15089928735719,
+     "valid_pixels": 53042
+    },
+    "zero": {
+     "EPE": 11.302549127682127,
+     "PE1_pct": 99.42875457184871,
+     "PE2_pct": 95.1057652426379,
+     "PE3_pct": 88.15089928735719,
+     "valid_pixels": 53042
+    }
+   },
+   "pair_index": 1,
+   "png_name": "000004.png",
+   "png_sha256": "a61f058c78f6d97d9dca9b7cb50ec4207dfa86a66b4812f18ce55c86d76cc097"
+  },
+  {
+   "metrics": {
+    "log": {
+     "EPE": 11.300491576053638,
+     "PE1_pct": 99.22472034555322,
+     "PE2_pct": 93.3492081072101,
+     "PE3_pct": 85.28814560490272,
+     "valid_pixels": 54174
+    },
+    "quant": {
+     "EPE": 15.244892856409528,
+     "PE1_pct": 99.22472034555322,
+     "PE2_pct": 93.3492081072101,
+     "PE3_pct": 85.80315280392809,
+     "valid_pixels": 54174
+    },
+    "spk": {
+     "EPE": 15.244892856409528,
+     "PE1_pct": 99.22472034555322,
+     "PE2_pct": 93.3492081072101,
+     "PE3_pct": 85.80315280392809,
+     "valid_pixels": 54174
+    },
+    "zero": {
+     "EPE": 11.260456208400777,
+     "PE1_pct": 99.22472034555322,
+     "PE2_pct": 93.3492081072101,
+     "PE3_pct": 85.28814560490272,
+     "valid_pixels": 54174
+    }
+   },
+   "pair_index": 2,
+   "png_name": "000006.png",
+   "png_sha256": "88bd207b441e17798e067f51ce91574d0d4f383c643e5e93f75555ea5291b859"
+  },
+  {
+   "metrics": {
+    "log": {
+     "EPE": 11.677383186606209,
+     "PE1_pct": 99.18514512349017,
+     "PE2_pct": 91.01676581936182,
+     "PE3_pct": 82.68253109789076,
+     "valid_pixels": 55470
+    },
+    "quant": {
+     "EPE": 14.600451886837854,
+     "PE1_pct": 99.18514512349017,
+     "PE2_pct": 91.01676581936182,
+     "PE3_pct": 82.70776996574725,
+     "valid_pixels": 55470
+    },
+    "spk": {
+     "EPE": 14.600451886837854,
+     "PE1_pct": 99.18514512349017,
+     "PE2_pct": 91.01676581936182,
+     "PE3_pct": 82.70776996574725,
+     "valid_pixels": 55470
+    },
+    "zero": {
+     "EPE": 10.883710518354771,
+     "PE1_pct": 99.18514512349017,
+     "PE2_pct": 91.01676581936182,
+     "PE3_pct": 82.68253109789076,
+     "valid_pixels": 55470
+    }
+   },
+   "pair_index": 3,
+   "png_name": "000008.png",
+   "png_sha256": "636856983938d82cca4c43b38ecfd08c211e3a8814e1864a8444b2a01b63d59c"
+  }
+ ],
+ "run_id": "20261106T165825Z-dsec-d2c0-stageB-v0",
+ "schema": "spk-dsec-d2c0-dev-flow-scored-witness/v0",
+ "stage": "B_DEV_FLOW_SCORED",
+ "stage_a_freeze_sha256": "aaa2f4567d6e805864d1f3f7bde2785b52362de780f8e41cf98d41ed161c4e1a",
+ "validation_gt_read": false
+}
