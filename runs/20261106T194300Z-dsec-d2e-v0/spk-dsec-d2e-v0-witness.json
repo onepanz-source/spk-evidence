@@ -1,0 +1,192 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "SPK_learning_demonstrated": false,
+  "computational_advantage_demonstrated": false,
+  "flow_estimated": false,
+  "generalization_demonstrated": false,
+  "ground_truth_pixels_read_this_task": false,
+  "native_calculation_demonstrated": true,
+  "native_calculation_scope": "BOUNDED_TEMPORAL_ORDER_AB_BA_SYNC_NONE_ONLY",
+  "native_learning": false,
+  "optical_flow_scored": false,
+  "release_certified": false,
+  "research_only": true,
+  "reserved_sequences_read": false,
+  "scientific_authority": "HOLD",
+  "uci_holdout_read": false
+ },
+ "decision": "HOLD",
+ "execution_summary": {
+  "criterion_met": false,
+  "nonvacuity_criterion": "original DEV AB>=1 and BA>=1 and (SYNC+NONE)>=1",
+  "nonvacuity_failure_cause": "AB=0 and BA=0 in the 160 unreversed real DEV trials: host-extracted earliest-onset quarters at the locked anchors/tile pairs are either equal (SYNC, 59) or absent/differing by >=2 quarters (NONE, 101); no +-1 quarter onset pair occurs in this DEV sample",
+  "oracle_mismatches": 0,
+  "original_native_category_counts": {
+   "AB": 0,
+   "BA": 0,
+   "NONE": 101,
+   "SYNC": 59
+  },
+  "per_pair_original_counts": [
+   {
+    "native_counts": {
+     "AB": 0,
+     "BA": 0,
+     "NONE": 20,
+     "SYNC": 20
+    },
+    "pair_index": 0
+   },
+   {
+    "native_counts": {
+     "AB": 0,
+     "BA": 0,
+     "NONE": 23,
+     "SYNC": 17
+    },
+    "pair_index": 1
+   },
+   {
+    "native_counts": {
+     "AB": 0,
+     "BA": 0,
+     "NONE": 29,
+     "SYNC": 11
+    },
+    "pair_index": 2
+   },
+   {
+    "native_counts": {
+     "AB": 0,
+     "BA": 0,
+     "NONE": 29,
+     "SYNC": 11
+    },
+    "pair_index": 3
+   }
+  ],
+  "real_dev_original_trials": 160,
+  "reversal_mismatches": 0,
+  "reversed_native_category_counts": {
+   "AB": 0,
+   "BA": 0,
+   "NONE": 101,
+   "SYNC": 59
+  },
+  "synthetic_exact": 13,
+  "synthetic_original_host_cases": 13,
+  "synthetic_reversal_exact": 13,
+  "time_reversed_counterfactual_trials": 160,
+  "total_original_worker_trials": 320,
+  "worker_status": "all CLOSED+EXACT_PASS, P_writes=0"
+ },
+ "gate": {
+  "adversarial_count": 11,
+  "base": "7f28664fdf5f74dc71ac9790d3e3ade00fe5eef4 (PR #129 head)",
+  "changed_file_allowlist": [
+   "docs/spk-dsec-d2e-original-native-temporal-order-prereg-v0.md",
+   "workbench/dsec_d2e_native_temporal_order_v0.py",
+   "tests/test_spk_dsec_d2e_native_temporal_order_v0.py"
+  ],
+  "cli_adversarial_vetoes": [
+   "wrong_protocol",
+   "no_mode",
+   "both_modes",
+   "wrong_parent_pin",
+   "reserved_intake",
+   "out_gt_png",
+   "out_reserved_seq",
+   "out_exists",
+   "verify_missing",
+   "bad_intake",
+   "verify_tampered_report"
+  ],
+  "cli_veto_exit_code": 2,
+  "d2e_tested_blobs": {
+   "docs/spk-dsec-d2e-original-native-temporal-order-prereg-v0.md": "8d4ebdfcf84329f3d04d07eb1fecfbb4336bc316",
+   "tests/test_spk_dsec_d2e_native_temporal_order_v0.py": "7d225331453715f08ae3c02ea544bd2d820dc2ad",
+   "workbench/dsec_d2e_native_temporal_order_v0.py": "df339ea8159fe338f1e9b96b6082a3cad7ad45e3"
+  },
+  "determinism_two_fresh_processes": {
+   "byte_identical": true,
+   "report_A_sha256": "76836b781c957fd49c55c13261057c3cfec26027475a8376049159b6b71e1035",
+   "report_B_sha256": "76836b781c957fd49c55c13261057c3cfec26027475a8376049159b6b71e1035"
+  },
+  "env": {
+   "h5py": "3.16.0",
+   "numpy": "2.5.4",
+   "python": "3.14.10"
+  },
+  "frozen_manifest_entries": 38,
+  "pr_head_at_seed": "7ea5e5700361d2e44d2800ae6bcfc981389e2aa1",
+  "pytest": "D2e 70 passed in 0.12s; inherited D2d v0+v0r 62 passed in 73.10s (132/132)",
+  "pytest_adversarial": "forged terminal node/channel/tick (11 mutators), duplicate/missing/malformed terminals (7), illegal onsets (10), aggregation invariants (6), quarter edges (4+4), level grid, schedule drift",
+  "repair_needed": false,
+  "report_core_sha256": "7af6125ce047067b53c3c3ec7966f45c966508e3b7fc151fa97d7fbd32745afd",
+  "report_path": "runs/20261106T194300Z-dsec-d2e-v0/spk-dsec-d2e-v0-report.json",
+  "report_sha256": "76836b781c957fd49c55c13261057c3cfec26027475a8376049159b6b71e1035",
+  "verify_mode": "third fresh process --verify on report A -> DSEC_D2E_REPORT_VERIFIED_SCIENTIFIC_HOLD core 7af6125c...; tampered report (AB=1 forged) -> D2E_VETO:REPORT_FORGED_OR_DRIFT"
+ },
+ "issue": 131,
+ "issue_131_state": "OPEN (preregistered real nonvacuity criterion NOT met; not closed ciat-done)",
+ "limits": [
+  "INCONCLUSIVE per locked protocol: real nonvacuity not met; no parameter/schedule/threshold change after data; issue #131 remains OPEN",
+  "synthetic 13/13 EXACT proves the bounded native order detector works on the original runtime; it does NOT prove real-data direction accuracy, flow, motion or velocity",
+  "host-side earliest-quarter onset extraction is external and deliberately not a native feature; only the relational category is native",
+  "aggregates+digests only: no per-trial vectors, no raw events, no GT pixels, no private paths; leak scan clean",
+  "HOLD unchanged: C0-C5, G2, dispatch, BV->P, P_writes=0, #102, #120, #126, human independent review; no merge; reserved DSEC GT and sealed UCI holdout untouched"
+ ],
+ "native_circuit": {
+  "edge_count": 8,
+  "native_relation_only": "AB_VS_BA_VS_SYNC_VS_NONE",
+  "native_terminal_channels": {
+   "AB": 11,
+   "BA": 12,
+   "SYNC": 10
+  },
+  "node_count": 7,
+  "nodes": [
+   "SRC",
+   "TGT",
+   "AB",
+   "BA",
+   "SYNC",
+   "OUT_AB",
+   "OUT_BA"
+  ]
+ },
+ "parent_evidence_immutable": {
+  "not_overwritten": true,
+  "parent_d2d_v0r_head_sha": "7f28664fdf5f74dc71ac9790d3e3ade00fe5eef4",
+  "parent_d2d_v0r_report_path": "runs/20261106T182014Z-dsec-d2d-v0r/spk-dsec-d2d-v0r-report.json",
+  "parent_d2d_v0r_report_sha256": "f338a1f271f1e90a7181ca80503e3efc1ab69a1eec3724f6b6e1738b29574f02",
+  "parent_d2d_v0r_witness_sha256": "80141ed1c60ec739a5e5a1fed17ef395eaafa853b7c4ca85b5a9c33252a610ea",
+  "parent_v0_report_sha256": "3dedf5e9425352c778b8421acf7d716af914f1e5fa4ccd867d1544afeb8d701b"
+ },
+ "pr_draft": 132,
+ "result": "DSEC_D2E_NATIVE_TEMPORAL_ORDER_REAL_DATA_INCONCLUSIVE_HOLD",
+ "run_id": "20261106T194300Z-dsec-d2e-v0",
+ "schema": "spk-dsec-d2e-native-temporal-order-witness/v0",
+ "scientific_outcome": "Original 7-node/8-edge SPK temporal-order detector is genuinely computed by original G1/C2/24t: all 13 synthetic truth-table cases EXACT with exact node/channel/tick terminals plus deterministic time-reversal, and all 320 real DEV trials (160 original + 160 time-reversed counterfactuals) ran CLOSED+EXACT_PASS with 0 oracle and 0 reversal mismatches and all conservation invariants. HOWEVER the preregistered real-data nonvacuity threshold failed: original DEV native categories are AB=0, BA=0, SYNC=59, NONE=101 (earliest-onset quarters at the locked anchors never differ by exactly +-1), so no AB and no BA occur in the 160 unreversed real trials. Per the locked protocol this is INCONCLUSIVE_HOLD, not PASS; no schedule/threshold/quarter/anchor change was made after seeing results. Engineering gate fully passed; scientific claim remains HOLD.",
+ "scope": {
+  "exploratory_dev_only": true,
+  "flow_estimated": false,
+  "ground_truth_pixels_read_this_task": false,
+  "optical_flow_scored": false,
+  "pairs": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "reserved_sequences_read": false,
+  "sequence": "thun_00_a",
+  "uci_holdout_read": false
+ },
+ "timestamp_utc": "2026-11-06T19:43:00Z"
+}
