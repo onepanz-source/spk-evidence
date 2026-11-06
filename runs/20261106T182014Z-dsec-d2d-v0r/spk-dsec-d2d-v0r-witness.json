@@ -1,0 +1,208 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "SPK_learning_demonstrated": false,
+  "blind_test_gt_read": false,
+  "computational_advantage_demonstrated": false,
+  "flow_estimated": false,
+  "generalization_demonstrated": false,
+  "ground_truth_pixels_read_this_task": false,
+  "native_calculation_demonstrated": true,
+  "native_calculation_scope": "BOUNDED_CAUSAL_COINCIDENCE_ONLY",
+  "native_learning": false,
+  "optical_flow_scored": false,
+  "release_certified": false,
+  "research_only": true,
+  "scientific_authority": "HOLD",
+  "validation_gt_read": false
+ },
+ "corrected_real_trials": {
+  "distinct_direction_vote_totals": 4,
+  "native_coincidences": 53,
+  "native_noncoincidences": 107,
+  "oracle_mismatches": 0,
+  "original_preregistered_criterion_met": true,
+  "per_direction_native_votes": {
+   "-1,0": 8,
+   "0,-1": 8,
+   "0,0": 12,
+   "0,1": 11,
+   "1,0": 14
+  },
+  "per_pair": [
+   {
+    "direction_votes": {
+     "-1,0": 2,
+     "0,-1": 2,
+     "0,0": 5,
+     "0,1": 3,
+     "1,0": 5
+    },
+    "levels_a_sha256": "269a99e9cfed49dad1bf42c473eaebad04a1cd9fe2f1c26f2684497b5764c915",
+    "levels_b_sha256": "948ad0eae41f381ab531d06c8b96e045663f9943f99dc030cf6b7f4c38e167cb",
+    "native_coincidences": 17,
+    "native_noncoincidences": 23,
+    "pair_index": 0,
+    "trials_digest": "2aba641958ec2efd3e8500930b7577f9191c78ce5ecac068dda4e176f733d086"
+   },
+   {
+    "direction_votes": {
+     "-1,0": 2,
+     "0,-1": 2,
+     "0,0": 3,
+     "0,1": 4,
+     "1,0": 4
+    },
+    "levels_a_sha256": "779a88441765dfe1855ba9061f3355e3b88b2146d56bb6c9e970ca4ced4d599a",
+    "levels_b_sha256": "e9567ba52a26acae35dabca85b6d051e3a28f76d3cf7c468d0e1c42cbc49e173",
+    "native_coincidences": 15,
+    "native_noncoincidences": 25,
+    "pair_index": 1,
+    "trials_digest": "04d29e080da58d29e8db90464c5c9dee58498f3e1859b788464d1826dfd5af59"
+   },
+   {
+    "direction_votes": {
+     "-1,0": 2,
+     "0,-1": 2,
+     "0,0": 2,
+     "0,1": 2,
+     "1,0": 2
+    },
+    "levels_a_sha256": "bac09abd4fb149014a660e0924ef003c924f373efa5e732b051034b06718c34d",
+    "levels_b_sha256": "61e2746b5080b53d344b03298afaab2e3879a8b4e4a4862d4f5662a3bddb7212",
+    "native_coincidences": 10,
+    "native_noncoincidences": 30,
+    "pair_index": 2,
+    "trials_digest": "4bd2156ce980ff701fb06fdc131c30b90eb77c6260ddc6ba7aaf1ee723be086e"
+   },
+   {
+    "direction_votes": {
+     "-1,0": 2,
+     "0,-1": 2,
+     "0,0": 2,
+     "0,1": 2,
+     "1,0": 3
+    },
+    "levels_a_sha256": "9d0096dc8800b1b922989081eb3035c156e72a6cbfd624a5e6d90bae5acf33cf",
+    "levels_b_sha256": "22c1428fcb3ccb9c32420a0856c948525a27aa9ca3ccfbbef7ddf3da2102d4bb",
+    "native_coincidences": 11,
+    "native_noncoincidences": 29,
+    "pair_index": 3,
+    "trials_digest": "c2008673e2197545516692c36d8a15f66902e133534166929f6d799dfb975170"
+   }
+  ],
+  "trials": 160
+ },
+ "decision": "HOLD",
+ "gate": {
+  "adversarial_count": 11,
+  "base": "b5a6c05",
+  "changed_file_allowlist": [
+   "workbench/dsec_d2d_native_temporal_coincidence_v0.py",
+   "tests/test_spk_dsec_d2d_native_temporal_coincidence_v0.py",
+   "docs/spk-dsec-d2d-native-coincidence-prereg-v0.md",
+   "search/dsec_d2d_gate_v0.sh",
+   "docs/spk-dsec-d2d-posthoc-aggregation-erratum-v0r.md",
+   "workbench/dsec_d2d_native_temporal_coincidence_reconciliation_v0r.py",
+   "tests/test_spk_dsec_d2d_native_temporal_coincidence_reconciliation_v0r.py"
+  ],
+  "cli_adversarial_vetoes": [
+   "wrong_protocol",
+   "no_mode",
+   "both_modes",
+   "missing_legacy",
+   "legacy_sha_drift",
+   "legacy_gt_path",
+   "out_gt_png",
+   "out_reserved_seq",
+   "out_exists",
+   "bad_intake",
+   "verify_tampered_report"
+  ],
+  "cli_veto_exit_code": 2,
+  "determinism_two_fresh_processes": {
+   "byte_identical": true,
+   "report_A_sha256": "f338a1f271f1e90a7181ca80503e3efc1ab69a1eec3724f6b6e1738b29574f02",
+   "report_B_sha256": "f338a1f271f1e90a7181ca80503e3efc1ab69a1eec3724f6b6e1738b29574f02"
+  },
+  "env": {
+   "h5py": "3.16.0",
+   "numpy": "2.5.4",
+   "python": "3.14.10"
+  },
+  "frozen_manifest_entries": 38,
+  "pr_head_at_seed": "7f28664fdf5f74dc71ac9790d3e3ade00fe5eef4",
+  "pytest": "v0r 32 passed in 0.05s; inherited v0 30 passed in 58.03s",
+  "pytest_adversarial": "24 parametrized invariant mutators + 5 invalid-schema vetoes + root-cause rec[5]-vs-rec[6] regression + legacy SHA pin test",
+  "report_core_sha256": "71e7e0050d6b1cac9e9fdbd07f1ff61079833f6fb37ca1e8ceeaa7dfcfaa16ab",
+  "report_path": "runs/20261106T182014Z-dsec-d2d-v0r/spk-dsec-d2d-v0r-report.json",
+  "report_sha256": "f338a1f271f1e90a7181ca80503e3efc1ab69a1eec3724f6b6e1738b29574f02",
+  "v0r_repair_needed": false,
+  "v0r_tested_blobs": {
+   "docs/spk-dsec-d2d-posthoc-aggregation-erratum-v0r.md": "97e54b37b0f5c9f6783d715ac246abbc7d475d20",
+   "tests/test_spk_dsec_d2d_native_temporal_coincidence_reconciliation_v0r.py": "5ffa04bb5cd0fb6af9665fea32af024477c58b43",
+   "workbench/dsec_d2d_native_temporal_coincidence_reconciliation_v0r.py": "2985eb08bb42c8724482441a15613202f6a30cb3"
+  },
+  "verify_mode": "fresh process --verify on report A -> D2D_V0R_REPORT_VERIFIED_SCIENTIFIC_HOLD, core 71e7e0050d6b1cac9e9fdbd07f1ff61079833f6fb37ca1e8ceeaa7dfcfaa16ab; tampered report -> D2D_V0R_VETO:REPORT_REEXECUTION_MISMATCH"
+ },
+ "issue": 130,
+ "legacy_evidence_immutable": {
+  "bug": "run_all overall aggregation used rec[5] (polarity) for total_true and overall direction votes instead of rec[6] (native terminal coincidence); per-pair loop was correct",
+  "legacy_bug_signature_confirmed": {
+   "coincidences": 80,
+   "distinct_direction_vote_totals": 1,
+   "noncoincidences": 80,
+   "overall_direction_votes_all": 16
+  },
+  "legacy_result": "DSEC_D2D_REAL_COINCIDENCE_DISCRIMINATION_INCONCLUSIVE_HOLD",
+  "legacy_result_invalid_due_to_polarity_index": true,
+  "not_overwritten": true,
+  "report_path": "runs/20261106T174737Z-dsec-d2d-v0/spk-dsec-d2d-native-coincidence-report-v0.json",
+  "report_sha256": "3dedf5e9425352c778b8421acf7d716af914f1e5fa4ccd867d1544afeb8d701b",
+  "source_head": "46a4bdc7c98f73099c10edbc197723602b6f3dd6",
+  "witness_path": "runs/20261106T174737Z-dsec-d2d-v0/spk-dsec-d2d-native-coincidence-v0.json",
+  "witness_sha256": "d8482a83434c2470aa69ee07ef3ec0ee532651cba3e21c2506bd468327a42121"
+ },
+ "limits": [
+  "post-hoc aggregation erratum only; original v0 report/witness preserved immutable, never overwritten",
+  "only same-batch coincidence computed inside original SPK; spatial pairing host-side; no flow/EPE, no native learning, no advantage over host AND, no generalization",
+  "aggregates+digests only: no per-trial vectors, no raw events, no GT pixels, no private paths; leak scan clean",
+  "HOLD unchanged: C0-C5, G2, dispatch, BV->P, P_writes=0, #102, #120, #126, human independent review; no merge; reserved DSEC GT and sealed UCI holdout untouched"
+ ],
+ "native_circuit": {
+  "coi": "DECAY bits_per_tick8; ACC ch0 w1; CMP threshold_raw=2; EMIT ch9",
+  "decoder": "authentic COI/ch9 terminal emission only",
+  "edges": "SRC.ch7->COI.ch0 delay1; TGT.ch7->COI.ch0 delay1 (2 original frozen edges)",
+  "nodes": [
+   "SRC",
+   "TGT",
+   "COI"
+  ],
+  "src_tgt": "ACC ch0 w1; CMP1; EMIT ch7"
+ },
+ "pr_draft": 129,
+ "replay_reconciliation": {
+  "canonical_replay_equals_pinned_legacy_report": true,
+  "oracle_mismatches": 0,
+  "original_160_trial_replay_drift": false,
+  "synthetic_truth_table_drift": false,
+  "synthetic_truth_table_real_host_cases": 5
+ },
+ "result": "DSEC_D2D_V0R_ORIGINAL_PREREG_CRITERION_ENGINEERING_PASS_SCIENTIFIC_HOLD",
+ "run_id": "20261106T182014Z-dsec-d2d-v0r",
+ "schema": "spk-dsec-d2d-aggregation-erratum-witness/v0r",
+ "scientific_outcome": "POSTHOC CODE-DEFECT RECONCILIATION (not a new experiment, not retrospective preregistration): the immutable v0 report's overall aggregation read tuple field rec[5]=polarity instead of rec[6]=native COI/ch9 terminal emission; per-pair counts were correct. Full original re-execution (5 synthetic truth-table cases + all 160 fixed real thun_00_a dev trials through original G1/C2/24t) replayed byte-canonically identical to the pinned v0 report and independently reaggregated from per-pair native results: 53 native coincidences / 107 non-coincidences, 0 oracle mismatches, direction votes {-1,0:8, 0,-1:8, 0,0:12, 0,1:11, 1,0:14}, 4 distinct totals -> original preregistered criterion met. Engineering PASS only; bounded same-batch causal coincidence on previously seen development data; no flow/EPE, no learning, no generalization, no advantage.",
+ "scope": {
+  "exploratory_dev_only": true,
+  "flow_estimated": false,
+  "ground_truth_pixels_read_this_task": false,
+  "optical_flow_scored": false,
+  "reserved_sequences_read": false,
+  "sequence": "thun_00_a"
+ },
+ "timestamp_utc": "2026-11-06T18:20:14Z"
+}
