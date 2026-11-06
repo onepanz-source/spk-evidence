@@ -1,0 +1,210 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "SPK_learning_demonstrated": false,
+  "ground_truth_pixels_read": false,
+  "native_learning": false,
+  "optical_flow_scored": false,
+  "release_certified": false,
+  "research_only": true,
+  "scientific_authority": "HOLD"
+ },
+ "decision": "HOLD",
+ "discrimination": {
+  "criterion": "unique(D2a)>unique(D1) and unique(D2a)>=2 on 8 identical real probes, authentic host emissions",
+  "criterion_met": true,
+  "d1_distinct_signatures": 1,
+  "d2a_distinct_signatures": 8,
+  "decoder": "authentic afferent emissions (timestamp,node,ch7) reconstructed per cell; AGG raw==total verified per trial",
+  "full_signature_vectors_published": false,
+  "probe_aggregates": [
+   {
+    "adjudication": "EXACT_PASS",
+    "d1_agg_raw": 24,
+    "d1_signature_sha256": "5e4dbbf2b3110522c40261ca284b73d503f59061fdd3eb974cbc6dd5a2ab69ce",
+    "d2a_agg_raw": 43,
+    "d2a_batches": 25,
+    "d2a_events": 86,
+    "d2a_manifest_sha256": "a8261da7b7a977a503ab7ba531cdcb10cd1bdaa048ded35dcf623302fcb00211",
+    "d2a_result_sha256": "10f0b411e8a6aba473e4eb785b858bf3b922b27aa15035b1470101459e543244",
+    "d2a_signature_sha256": "c0f0b98cc1b312df5895bbf8355a2ed4a961dcd2cde0b14349060114d0af7792",
+    "d2a_total_spikes": 43,
+    "status": "CLOSED",
+    "total_events": 183408,
+    "window_index": 16
+   },
+   {
+    "adjudication": "EXACT_PASS",
+    "d1_agg_raw": 24,
+    "d1_signature_sha256": "5e4dbbf2b3110522c40261ca284b73d503f59061fdd3eb974cbc6dd5a2ab69ce",
+    "d2a_agg_raw": 49,
+    "d2a_batches": 26,
+    "d2a_events": 98,
+    "d2a_manifest_sha256": "02d7ae63d278b69cc1238244b641b2c0f0a8db5058d345c54d16fdcd7748c1ba",
+    "d2a_result_sha256": "8e46302b43999797078c3c8c3af4639df9d2bbd2ba5243ca3528b613fcf508bb",
+    "d2a_signature_sha256": "07680f62a706605744d74479f8356f0ad91bc1327e85fe9a34debefda205037d",
+    "d2a_total_spikes": 49,
+    "status": "CLOSED",
+    "total_events": 193187,
+    "window_index": 17
+   },
+   {
+    "adjudication": "EXACT_PASS",
+    "d1_agg_raw": 24,
+    "d1_signature_sha256": "5e4dbbf2b3110522c40261ca284b73d503f59061fdd3eb974cbc6dd5a2ab69ce",
+    "d2a_agg_raw": 45,
+    "d2a_batches": 24,
+    "d2a_events": 90,
+    "d2a_manifest_sha256": "56cf452ab302466dd85beac69816ed806b7b3ab8553b511f6c8251ffb9151c89",
+    "d2a_result_sha256": "c47cdeaf74d1dd297c84491f760846b701791c9d6f1ed68c89fbef613ce4abc1",
+    "d2a_signature_sha256": "42699dda5b4cd2db877ea6cfdc8d6247a7ca15774caa42eed5a60cd3ae604cf5",
+    "d2a_total_spikes": 45,
+    "status": "CLOSED",
+    "total_events": 200164,
+    "window_index": 18
+   },
+   {
+    "adjudication": "EXACT_PASS",
+    "d1_agg_raw": 24,
+    "d1_signature_sha256": "5e4dbbf2b3110522c40261ca284b73d503f59061fdd3eb974cbc6dd5a2ab69ce",
+    "d2a_agg_raw": 47,
+    "d2a_batches": 24,
+    "d2a_events": 94,
+    "d2a_manifest_sha256": "54faad653b35f6cb2a6f08222f99dc3ceca5edc8ed02bd8e192665f7a5463860",
+    "d2a_result_sha256": "1aefff7cc1f38d18a14c56677f03867336294eb75cf76477825b2a2b8d9aa265",
+    "d2a_signature_sha256": "393019e0d35f50a9dbea1695cb7de70419a14015bb08cdd963fd4fd148238173",
+    "d2a_total_spikes": 47,
+    "status": "CLOSED",
+    "total_events": 201192,
+    "window_index": 19
+   },
+   {
+    "adjudication": "EXACT_PASS",
+    "d1_agg_raw": 24,
+    "d1_signature_sha256": "5e4dbbf2b3110522c40261ca284b73d503f59061fdd3eb974cbc6dd5a2ab69ce",
+    "d2a_agg_raw": 46,
+    "d2a_batches": 24,
+    "d2a_events": 92,
+    "d2a_manifest_sha256": "afd96cea0da9986917de8ba6f98f08c9bdc4bd344c6b15f306607e5176fc4b15",
+    "d2a_result_sha256": "4419e8c4584895588556d4ad36cc50b4427cb3131dd79eac32085d801c7710a7",
+    "d2a_signature_sha256": "5eeba0b8b50fafefe23f06ed9c0dc8b83c77833f333c50d73f9f37d2bcbc58f6",
+    "d2a_total_spikes": 46,
+    "status": "CLOSED",
+    "total_events": 200903,
+    "window_index": 20
+   },
+   {
+    "adjudication": "EXACT_PASS",
+    "d1_agg_raw": 24,
+    "d1_signature_sha256": "5e4dbbf2b3110522c40261ca284b73d503f59061fdd3eb974cbc6dd5a2ab69ce",
+    "d2a_agg_raw": 42,
+    "d2a_batches": 24,
+    "d2a_events": 84,
+    "d2a_manifest_sha256": "7dd6a9bacb2c6ad254c6365adc045404e649d7a715bbf54e99fe03d6ecde5824",
+    "d2a_result_sha256": "89eb2e97e0d0e781837e4fc51e8c5010cf3434c3499cf87c135348fd77a375a7",
+    "d2a_signature_sha256": "089e82bc796d409a011de69a24fbd782ac05cc35e65a7802229bcc263891ad38",
+    "d2a_total_spikes": 42,
+    "status": "CLOSED",
+    "total_events": 198466,
+    "window_index": 21
+   },
+   {
+    "adjudication": "EXACT_PASS",
+    "d1_agg_raw": 24,
+    "d1_signature_sha256": "5e4dbbf2b3110522c40261ca284b73d503f59061fdd3eb974cbc6dd5a2ab69ce",
+    "d2a_agg_raw": 44,
+    "d2a_batches": 24,
+    "d2a_events": 88,
+    "d2a_manifest_sha256": "e693260d17538f6fb1b4d505c9cc6c4b5b33e8ad56a00f1a61f30da9b826370c",
+    "d2a_result_sha256": "bce0d095432cf118e4129cce153303cef6751c763b033f8a26c3fa7a200a5017",
+    "d2a_signature_sha256": "a468ea45b8a0d0a3b879aac111b35159d9a0e12b8b05dfe3c6a2c4ec59fb0988",
+    "d2a_total_spikes": 44,
+    "status": "CLOSED",
+    "total_events": 196313,
+    "window_index": 22
+   },
+   {
+    "adjudication": "EXACT_PASS",
+    "d1_agg_raw": 24,
+    "d1_signature_sha256": "5e4dbbf2b3110522c40261ca284b73d503f59061fdd3eb974cbc6dd5a2ab69ce",
+    "d2a_agg_raw": 43,
+    "d2a_batches": 25,
+    "d2a_events": 86,
+    "d2a_manifest_sha256": "a87fcaf43369491fa0b34c5480c9a276183b8c741e129bcc3ff44a39d7079edf",
+    "d2a_result_sha256": "320d292edd59fb26e76cceae1f544e7c28c9273375954c8935cc48686d331163",
+    "d2a_signature_sha256": "de749bdae057e9571483e2eb49a2fabc12abab6c1a112d48bad19e079e75d65d",
+    "d2a_total_spikes": 43,
+    "status": "CLOSED",
+    "total_events": 194761,
+    "window_index": 23
+   }
+  ]
+ },
+ "gate": {
+  "adversarial_count": 8,
+  "adversarial_vetoes": [
+   "wrong_protocol",
+   "wrong_parent_pin",
+   "missing_inputs",
+   "verify_without_h5",
+   "forbidden_out",
+   "h5_not_regular",
+   "wrong_h5_sha",
+   "output_exists"
+  ],
+  "base": "f10e596",
+  "changed_file_allowlist": [
+   "workbench/dsec_d2a_fixed_rate_temporal_spikes_v0.py",
+   "tests/test_spk_dsec_d2a_fixed_rate_temporal_spikes_v0.py",
+   "docs/spk-dsec-d2a-fixed-rate-temporal-spikes-prereg-v0.md",
+   "search/dsec_d2a_gate_v0.sh"
+  ],
+  "determinism_two_fresh_processes_core_sha256": "88469d40f2c3895877bef5604d4c9462fb5718b82373345f1d206a14d737244d",
+  "env": {
+   "h5py": "3.16.0",
+   "hdf5plugin": "7.1.0",
+   "numpy": "2.5.4",
+   "python": "3.14.10"
+  },
+  "frozen_manifest_entries": 38,
+  "pytest": "30 passed in 10.53s",
+  "report_path": "runs/20261106T142447Z-dsec-d2a-v0/spk-dsec-d2a-real-rate-spike-report-v0.json",
+  "report_sha256": "b46908f0b2e4c3691e6d979361e51e0dc27a63c8e917401c0bf268cd3cc3a365",
+  "verify_mode": "D2A_REPORT_VERIFIED_* (fail-closed recompute)"
+ },
+ "issue": 124,
+ "limits": [
+  "engineering representation fidelity only; NOT optical flow, movement inference, learning, generalization or efficiency",
+  "metadata-only public evidence: no full signature vectors, no raw events, no GT pixels, no private paths",
+  "HOLD unchanged: C0-C5, G2, dispatch, BV->P, P_writes=0, #102 BLOCKED_HOLD, independent human review"
+ ],
+ "parent_pr122_sha": "6a3315bb70545376bb0245e91d7b84a0882d991a",
+ "pr_draft": 123,
+ "result": "DSEC_D2A_REAL_RATE_CODE_DISCRIMINATION_ENGINEERING_PASS_SCIENTIFIC_HOLD",
+ "run_id": "20261106T142447Z-dsec-d2a-v0",
+ "runtime": "original G1 admission -> compile_network_ir_v0 (C2 roundtrip) -> original 24t execute_manifest_v0 via l0d.isolated_trial bounded workers",
+ "schema": "spk-dsec-d2a-real-rate-spike-witness/v0",
+ "source": {
+  "calibration_windows_us": [
+   0,
+   320000
+  ],
+  "events_h5_sha256": "ba2802de00445580c99f392dcc7e58708b97d5f91810343e3cfeb1686dabf066",
+  "ground_truth_pixels_read": false,
+  "n_events": 134133270,
+  "optical_flow_scored": false,
+  "probe_windows_us": [
+   320000,
+   480000
+  ],
+  "quantile_sha256_frozen_before_probe": "b9104656f5ee86953d6a693f638b326c2cc2de2782a9921638f7c7bf9c8d92f2",
+  "sequence": "thun_00_a",
+  "t0_us": 0,
+  "window_us": 20000
+ },
+ "timestamp_utc": "2026-11-06T14:25:06Z"
+}
