@@ -1,0 +1,131 @@
+{
+ "attestation_mode": "GITHUB_TREE_EQUIVALENCE_NOT_COMMIT_ANCESTRY",
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "SPK_learning_demonstrated": false,
+  "external_validation_primary_inconclusive": true,
+  "holdout_labels_read": false,
+  "holdout_scored": false,
+  "native_learning": false,
+  "native_tests_executed": 0,
+  "release_certified": false,
+  "research_only": true,
+  "scientific_authority": "HOLD",
+  "validation_scored": false
+ },
+ "branch": "research/spk-l0c-train-only-temporal-calibration-v0",
+ "decision": "HOLD",
+ "exact_git_ancestry_attested": false,
+ "issue": 117,
+ "limits": [
+  "source custody only in this witness; L0d execution is a separate phase/witness",
+  "metadata only: no dataset rows, no labels, no private dataset paths",
+  "no HEAD equality with local commit claimed; tree-content equivalence attested, not commit ancestry",
+  "HOLD unchanged: C0-C5, G2, dispatch, BV->P, P_writes=0, hardware/native/release, #102 BLOCKED_HOLD, independent human review required"
+ ],
+ "live_verification_before_publish": {
+  "collision_check": "both v0b paths ABSENT on PR #115 branch before publish (404 via contents API)",
+  "issue_1": "open coordination channel",
+  "issue_116": "closed ciat-done (L0C_V0B_FIXED_FOLD_POOLED_OOF_ENGINEERING_PASS_AUDIT_SENSITIVITY_INCONCLUSIVE_SCIENTIFIC_HOLD)",
+  "pr115_head_before": "6de813cba571257fe572b779c5b5cb16137a9dd0",
+  "pr115_tree_before": "a5f8f457c7b06274fc841b2ba09b3fb659a36bce",
+  "tree_comparison_local_vs_pr115_before": {
+   "entries_compared_workbench_plus_tests": 476,
+   "local_only": [
+    "workbench/l0c_pooled_oof_diagnostic_v0b.py",
+    "tests/test_spk_l0c_pooled_oof_diagnostic_v0b.py"
+   ],
+   "mismatches": 0
+  },
+  "witnesses_verified_on_spk_evidence": [
+   {
+    "commit": "eb7d391e",
+    "path": "runs/20261105T200731Z-l0c-oof-v0/spk-l0c-train-oof-calibration-v0.json",
+    "role": "v0 INCONCLUSIVE immutable",
+    "sha256": "61f378bb014c729d7bcf28b8cc178109b32a777130b4a6239776e8b407f66dc8"
+   },
+   {
+    "commit": "4e545624",
+    "path": "runs/20261105T224822Z-l0c-v0-source-reconciliation/spk-l0c-v0-source-reconciliation-v0.json",
+    "role": "v0 tested-source reconciliation immutable",
+    "sha256": "41ee9a6ae586a6e0da486160e67e4777e6499e308908b68459694c1f735f5922"
+   },
+   {
+    "commit": "9b62010a",
+    "path": "runs/20261105T225239Z-l0c-v0b-pooled-oof/spk-l0c-v0b-pooled-oof-v0.json",
+    "role": "v0b EXPLORATORY_POSTHOC_V0B PASS original tested witness immutable",
+    "sha256": "f9d2d8265fbc893846e042692163af597bc80739c1fa09121e5cdc970a74466d"
+   }
+  ]
+ },
+ "local_worktree": {
+  "clean": true,
+  "head": "4e91dfa",
+  "head_tree": "346a135489ede54bf1b263796ca0273526211c7f",
+  "path": "/home/ste/workspace/l0c-fwork",
+  "tests_tree": "90a99b6f2f64c5a9784481d25655d4415da3f3b6",
+  "workbench_tree": "e1b776bf63cab584e8b7b38386b54800067549a8"
+ },
+ "original_v0b_witness_immutable": "spk-evidence@9b62010a runs/20261105T225239Z-l0c-v0b-pooled-oof sha256 f9d2d8265fbc893846e042692163af597bc80739c1fa09121e5cdc970a74466d",
+ "parent_files_untouched": [
+  {
+   "git_blob_after": "488f6480033b5076c307c57fb9a4cdb3eff6f61a",
+   "git_blob_before": "488f6480033b5076c307c57fb9a4cdb3eff6f61a",
+   "path": "workbench/l0c_train_temporal_calibration_v0.py"
+  },
+  {
+   "git_blob_after": "bed3e943333ec973cad1d2c198133ce380b92fe3",
+   "git_blob_before": "bed3e943333ec973cad1d2c198133ce380b92fe3",
+   "path": "tests/test_spk_l0c_train_temporal_calibration_v0.py"
+  }
+ ],
+ "phase": "A_v0b_tested_source_custody_into_PR115",
+ "pr_draft": 115,
+ "publish_method": "authenticated connector create_or_update_file on existing PR #115 branch, sequential uploads, blob-sha pre/post checks, no new branch, no rewrite of parent files, no overwrite of pre-existing paths, no historical witness modified",
+ "published_files": [
+  {
+   "bytes_equal": true,
+   "git_blob_local": "49bb563fcc233298834d3a2c09bba07f7bf9a30d",
+   "git_blob_remote_after": "49bb563fcc233298834d3a2c09bba07f7bf9a30d",
+   "path": "workbench/l0c_pooled_oof_diagnostic_v0b.py",
+   "publish_commit_final": "b1d859b4f353bbe6b46887261eec31b2dabd1de8",
+   "sha256": "eafbb3a55237823c195e685dff7b9df0d2560ce34bac28e11ac6e8b41c39aba5",
+   "size": 14961,
+   "transport_note": "first upload attempt (commit 6c6ea546) carried a 3-byte transport truncation of literal backslash-n Python sequences, detected immediately by blob-sha/size mismatch (14958 vs 14961); corrected in the following commit before the second upload; final blob verified equal to local"
+  },
+  {
+   "bytes_equal": true,
+   "git_blob_local": "9a591ccb6ce145d7e7b0e47aa9b5006baa1b6aea",
+   "git_blob_remote_after": "9a591ccb6ce145d7e7b0e47aa9b5006baa1b6aea",
+   "path": "tests/test_spk_l0c_pooled_oof_diagnostic_v0b.py",
+   "publish_commit_final": "2a279956c7891b0a52959b47efe2dd0a5a11af33",
+   "sha256": "872e94df26df049742da3c0d334abf62186593551a2319018538e108e16f76c3",
+   "size": 5511
+  }
+ ],
+ "remote_pr_after": {
+  "changed_files_vs_base": 6,
+  "deletions_vs_base": 0,
+  "diff_status": "all 6 files status 'added' (add-only v0b; the 4 pre-existing PR files unchanged)",
+  "files_vs_base": [
+   "docs/spk-l0c-posthoc-fixed-fold-pooled-oof-v0b.md",
+   "docs/spk-l0c-train-temporal-calibration-v0.md",
+   "tests/test_spk_l0c_pooled_oof_diagnostic_v0b.py",
+   "tests/test_spk_l0c_train_temporal_calibration_v0.py",
+   "workbench/l0c_pooled_oof_diagnostic_v0b.py",
+   "workbench/l0c_train_temporal_calibration_v0.py"
+  ],
+  "head": "2a279956c7891b0a52959b47efe2dd0a5a11af33",
+  "tree": "482a345a40e4b42ae38548240acf3288422e19c1",
+  "tree_derivation": "content-addressed reconstruction from base tree a5f8f457 with workbench e1b776bf and tests 90a99b6f (equal to local worktree HEAD:workbench and HEAD:tests); blob SHAs re-read via contents API at HEAD sha 2a279956"
+ },
+ "result": "L0D_PHASE_A_V0B_SOURCE_CUSTODY_PASS_BYTES_VERIFIED",
+ "run_id": "20261106T085834Z-l0c-v0b-source-reconciliation",
+ "schema": "spk-l0c-v0b-tested-source-reconciliation-witness/v0",
+ "timestamp_utc": "2026-11-06T08:58:34Z",
+ "verify_readback": true
+}
