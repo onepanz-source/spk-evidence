@@ -1,0 +1,65 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "historical_evidence_overwritten": false,
+  "original_24t_P_writes": 0,
+  "release_certified": false,
+  "scientific_authority": "HOLD"
+ },
+ "branch": "research/spk-l1f-two-context-v1-source-bv-transport-v2b",
+ "core_sha256": "e980c4dbb7d0968bc5984eb95c4261ea12e053571de5d9e8478585ea6da60c80",
+ "counts": {
+  "controls_zero_grants": 600,
+  "grant_buckets": [
+   "bright",
+   "dark"
+  ],
+  "l1f_owned": 16,
+  "main_runs": 1200,
+  "per_grant_ledger_verified": 574,
+  "probe_receipts": 40,
+  "source_bound": 24,
+  "tests": "43/43 passed",
+  "total_grants": 574
+ },
+ "decision": "HOLD",
+ "historical_v0_immutable": {
+  "lock_sha256": "89daf5b0a3f7914a66b9a3f15580ea31d6b8c394353ede47fcd292b394600264",
+  "report_sha256": "42080ca064bba6c236b24869db3899ee63b145e094cd9b4e9a743ed0b60cb21f"
+ },
+ "holds_preserved": [
+  "C0-C5",
+  "G2",
+  "dispatch",
+  "BV->P",
+  "#102",
+  "#120",
+  "#126",
+  "#131",
+  "#133",
+  "human peer review"
+ ],
+ "issue": 151,
+ "parent_pr152_head": "a881a59e421750b4fa3737f27bec405df403da97",
+ "per_grant_proof": "every grant: same assessment_id chain A->B->C (distinct packet ids), linked evidence ancestry, origin C occurrence, sensor bucket, P_from version, grant after C delivery, P_to=P_from+1, later C PE batch reads changed bank; no direct A->C",
+ "pr_draft": 152,
+ "prospective_matrix_lock": "55480404359fe415453f02bb832c6747056bc7296fecd5a2d02c6cf5cdc8e42e",
+ "report_AB_byte_identical": true,
+ "report_sha256": "34cbb2aa57049f3b48a6e2466de09b47937f1c06986df60fb0cbef1e495b24d5",
+ "result": "L1F_V0R_PER_GRANT_TWO_HOP_CAUSAL_ASSURANCE_ENGINEERING_PASS_SCIENTIFIC_HOLD",
+ "run_id": "20261107T162000Z-spk-l1f-v0r",
+ "schema": "spk-l1f-v0r-per-grant-causal-witness/v0r",
+ "stage0_lock": "89daf5b0a3f7914a66b9a3f15580ea31d6b8c394353ede47fcd292b394600264",
+ "tamper_veto": "L1F_V0R_VETO:REPORT_REEXECUTION_MISMATCH",
+ "tested_files": {
+  "docs/spk-l1f-adversarial-prereg-erratum-and-prospective-matrix-v0r.md": "634042689d98773d13beb50abdbf0ae500e738b23429065fd44cc49a5e4a458b",
+  "tests/test_spk_l1f_v0r_per_grant_causal_assurance.py": "1bfa135d2aca99c5cf0a629311e79742221177975370ac66fffdacb0677f4ea5",
+  "workbench/spk_l1f_v0r_per_grant_causal_assurance.py": "58141ed18522ee47775031bfed90eb7eca4b974784491753b9a12bec53fd1b64"
+ },
+ "timestamp_utc_observed": "2026-11-07T16:19:49Z",
+ "verify_process": "L1F_V0R_REPORT_VERIFIED_SCIENTIFIC_HOLD"
+}
