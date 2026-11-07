@@ -1,0 +1,51 @@
+{
+ "P_writes": 0,
+ "arms": [
+  "full_now(+2)",
+  "full_late(+22, attempted via unchanged execute_v2b -> source-rejected EVENT_TICK_ORDER, recorded not faked)",
+  "sparse_now(25% i%4==0, +2)",
+  "sparse_late(+22)",
+  "none(zero teacher, BV on, zero grants)",
+  "inverted_now"
+ ],
+ "ciat_audit_comment": 6713787183,
+ "files_sha256": {
+  "docs/spk-l2a-v0r-metric-control-erratum-v0r.md": "605e1be50e16e8402add34d32494d829a501f39dc2f7c13e89aa5dfd29b2053f",
+  "tests/test_spk_l2a_v0r_metric_control_custody_v0r.py": "acfd12d59bdb35d7410bd2defaee4b88f45b32cc00138a0f1a7fd92f7bc49589",
+  "workbench/spk_l2a_v0r_metric_control_custody_v0r.py": "740e5819e7f91bd683a727f4158db3a021751da3b1e9290e251666717948348d"
+ },
+ "fixes": [
+  "F1 own-pair full_now control per bootstrap",
+  "F2 late arms N/A not scored, attempted/admitted separated",
+  "F3 none arm BV+learning ON, teacher removed, BLOCKED flag if source grants",
+  "F4 arm-specific teacher-limited baselines + per-row hash receipts + delay0-corrected v0r scorer"
+ ],
+ "hold": true,
+ "issue": 157,
+ "lock_sha256": "8137e9cacfddec6b0e73275c28324ed25f5e9b41d23320c7e79ea46010cc6bcc",
+ "parent_pr158_head": "8af39476a51de06ec4f7c50a77344ad4828949dc",
+ "probes": {
+  "n": 40,
+  "new_E01_E08": true,
+  "original_32": true,
+  "source_bound_min": 24
+ },
+ "protocol": "L2A_V0R_METRIC_CONTROL_AND_CUSTODY_LOCK",
+ "run_id": "20261107T213000Z-spk-l2a-v0r",
+ "segments": {
+  "n": 8,
+  "rows": 128,
+  "source_file": "datatraining.txt N=8143",
+  "start_j": "floor(j*(8143-128)/7)",
+  "unique_rows": 1024
+ },
+ "uci357": {
+  "datatraining": "b2c4d0ce2b9e4e453c476f7125ef31aeec2d1f5c7f5572d0e80de3df6521ab56",
+  "zip": "4ae3f46aa98eedff564a9f6924d1635173e2fd2c816004342a9be93076d3a81a"
+ },
+ "v0_immutable": {
+  "prelock_v0": "499dfc65aaedf9bd46b270c67c6eef76543debf37f7b3c96a0301392635677c6",
+  "prelock_v2": "94eb279eb19bb1744e446d697eba50234521cdb9c0ddc373a3acd602363dda2d",
+  "v0_report_sha256": "4fcc97db4273ce7b7fdb4b93913b20e7113b90147d703888ce62dad9c7a2a09e"
+ }
+}
