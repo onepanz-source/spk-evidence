@@ -1,0 +1,116 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "external_truth_owner": false,
+  "ground_truth_pixels_read_this_task": false,
+  "historical_evidence_overwritten": false,
+  "independent_task_success_demonstrated": false,
+  "objective_is_synthetic": true,
+  "original_24t_P_writes": 0,
+  "original_BV_to_original_P_authorized": false,
+  "release_certified": false,
+  "research_only": true,
+  "reserved_sequences_read": false,
+  "scientific_authority": "HOLD",
+  "uci_holdout_read": false
+ },
+ "counts": {
+  "ack_probes": 3,
+  "genuine_preexisting_source_vetos": 24,
+  "l1c_owned_integrity_vetos": 8,
+  "probe_receipts": 32,
+  "read_only_projections": 324,
+  "v0e_objective_rows": 21,
+  "v1_runs": 108
+ },
+ "decision": "HOLD",
+ "decision_table": {
+  "H0_execution_integrity": "supported",
+  "H1_misalignment": "supported",
+  "H2_ack_boundary": "supported",
+  "H3_objective_provenance": "supported",
+  "detail": {
+   "ack_fp_templates": 3,
+   "goal_aligned_improvements": 18,
+   "non_goal_labels_unchanged_loss1": 18,
+   "normal_changed_cases": 18,
+   "overfire_rows_all_worse_no_adoption": true
+  },
+  "external_truth_owner": false,
+  "independent_task_success_demonstrated": false,
+  "objective_is_synthetic": true
+ },
+ "gate": {
+  "add_only_vs_parent": "3 new L1c files only (registry doc, module, tests); CIAT prereg doc unchanged; all predecessors byte-identical",
+  "counts": {
+   "ack_probes": 3,
+   "genuine_preexisting_source_vetos": 24,
+   "l1c_owned_integrity_vetos": 8,
+   "probe_receipts": 32,
+   "read_only_projections": 324,
+   "v0e_objective_rows": 21,
+   "v1_runs": 108
+  },
+  "determinism_two_fresh_processes": {
+   "byte_identical": true,
+   "report_A_sha256": "4e2486b2045a0d4b5b094f54c50d28b8261ca22c78e97071913b2e6b2b1757de",
+   "report_B_sha256": "4e2486b2045a0d4b5b094f54c50d28b8261ca22c78e97071913b2e6b2b1757de"
+  },
+  "env": {
+   "h5py": "3.16.0",
+   "numpy": "2.5.4",
+   "python": "3.14.10"
+  },
+  "frozen_manifest_entries": 38,
+  "l1c_tested_blobs": {
+   "docs/spk-l1c-adversarial-registry-v0.md": "f5f3d771b93cfda2083911e4983ed3596e7e6d1a",
+   "docs/spk-l1c-objective-provenance-actor-ack-prereg-v0.md": "f8cc7092b61fff6de103012f43b20d6aa2424f8d",
+   "tests/test_spk_l1c_objective_provenance_v0.py": "86c78555feba4a5f2baedd9452c093619da0637e",
+   "workbench/spk_l1c_objective_provenance_v0.py": "e3f9f7f334533b04ebad3e1ddb2e57054173c69b"
+  },
+  "pytest": "38 passed in 0.24s (32 parametrized real-source probes + 6 structural)",
+  "report_core_sha256": "08b0e83bbb7668c5c52660d15ea2f0a64ce76f073da75f349335fa3b2511b4f6",
+  "report_path": "runs/20261107T100000Z-spk-l1c-v0/spk-l1c-v0-report.json",
+  "report_sha256": "4e2486b2045a0d4b5b094f54c50d28b8261ca22c78e97071913b2e6b2b1757de",
+  "verify_mode": "third fresh process --verify (full 108+21+324+32 reexecution) -> L1C_REPORT_VERIFIED_SCIENTIFIC_HOLD core 08b0e83b...; tampered report (H2 flipped) -> L1C_VETO:REPORT_REEXECUTION_MISMATCH"
+ },
+ "issue": 145,
+ "limits": [
+  "E labels are public synthetic constants; no external truth owner, no independent task success, no generalization; always HOLD",
+  "V1 research runtime and historical v0e actor circuit kept strictly separate; no shared causal trace, no program adoption, original_24t_P_writes=0, original_BV_to_original_P_authorized=false",
+  "metadata-only evidence: run digests/aggregates/probe receipts; no raw events, no ledger bytes, no GT, no private paths; leak scan clean",
+  "HOLD unchanged: C0-C5, G2, dispatch, BV->P, P_writes=0, #102, #120, #126, #131, #133, human independent review; no merge"
+ ],
+ "objective_lock": {
+  "before_outcome_scoring": true,
+  "lock_sha256": "1634e4aea7bf715e5aca57d6dbd0a5e07467406157027f5701f1f5eb3b20b15f",
+  "posted_on": [
+   "#145 comment 6705026108",
+   "#1 comment 6705027157"
+  ]
+ },
+ "parent_evidence_immutable": {
+  "l1a_report_sha256": "9c00d668e678684fe984f7306f72dccb364defc98db89b5028c10ca3bca0fc97",
+  "l1b_v0_report_sha256": "e11ee5d093740c8a1ddaeeb0c29d156310859ca205fee8e1ede855209ddb2ac3",
+  "l1b_v0r_report_sha256": "2778c11fe286b1d84585cc6aed71dbc5e8c7090e64bb84a4944ef4382cbdcabb",
+  "not_overwritten": true,
+  "pr_head": "1f63fdf46f8aa14c6d48fc6d3a375dd20d657c2d",
+  "pr_head_after_m_publish": "5a5bc43c61667fd83326c54b54c58724f06fea96"
+ },
+ "pr_draft": 146,
+ "result": "L1C_SYNTHETIC_OBJECTIVE_PROVENANCE_AND_ACK_DISAGREEMENT_ENGINEERING_PASS_SCIENTIFIC_HOLD",
+ "run_id": "20261107T100000Z-spk-l1c-v0",
+ "schema": "spk-l1c-objective-provenance-actor-ack-witness/v0",
+ "scientific_outcome": "Part A: 108 genuine research-V1 runs (3x3x3 ticks x 4 arms); all 108 run_digests pinned EXACT to the immutable L1b v0 report cells (H0: external label never touches source). 81 control arms zero P grants. 324 read-only projections over public synthetic labels E in (11,12,15): 18 goal-aligned improvements, 18 non-goal labels unchanged at loss 1, 18 worsening -> local feedback correct for its own HOST goal is NOT a certificate for a distinct external label (H1 supported). Part B: 21 genuine v0e actor-objective evaluations (3 templates x 7 variants), zero adoptions, overfire rows all VETO_NO_OBJECTIVE_IMPROVEMENT with cost 0->4; 3 paid-ACK probes show positive actor ACK (response=1) coexisting with task-wrong false positive (fp=1) in ALL 3 templates (H2 supported). H3: prereg+source pins authenticate only WHICH synthetic rule was evaluated; external_truth_owner=false, objective_is_synthetic=true, independent_task_success_demonstrated=false.",
+ "scope": {
+  "cross_runtime_splicing": false,
+  "gt_or_reserved_data_read": false,
+  "historical_evidence_overwritten": false,
+  "uci_holdout_read": false
+ },
+ "timestamp_utc": "2026-11-07T10:00:00Z"
+}
