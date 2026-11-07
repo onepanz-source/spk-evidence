@@ -1,0 +1,112 @@
+{
+ "arm_errors_match_v0": {
+  "((11, 12), 32, 'bv_off')": [
+   870,
+   1024
+  ],
+  "((11, 12), 32, 'inverted_teacher')": [
+   1012,
+   1024
+  ],
+  "((11, 12), 32, 'true_bv')": [
+   30,
+   1024
+  ],
+  "((11, 12), 8, 'bv_off')": [
+   870,
+   1024
+  ],
+  "((11, 12), 8, 'inverted_teacher')": [
+   1012,
+   1024
+  ],
+  "((11, 12), 8, 'true_bv')": [
+   30,
+   1024
+  ],
+  "((12, 11), 32, 'bv_off')": [
+   154,
+   1024
+  ],
+  "((12, 11), 32, 'inverted_teacher')": [
+   1004,
+   1024
+  ],
+  "((12, 11), 32, 'true_bv')": [
+   19,
+   1024
+  ],
+  "((12, 11), 8, 'bv_off')": [
+   154,
+   1024
+  ],
+  "((12, 11), 8, 'inverted_teacher')": [
+   1004,
+   1024
+  ],
+  "((12, 11), 8, 'true_bv')": [
+   19,
+   1024
+  ]
+ },
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "blind_validation": false,
+  "historical_evidence_overwritten": false,
+  "original_24t_P_writes": 0,
+  "release_certified": false,
+  "scientific_authority": "HOLD"
+ },
+ "branch": "research/spk-l1g-prequential-online-two-bank-utility-v2c",
+ "core_sha256": "8ef5ecfac22660d6ddc494fb77192bab4b33894eeecd6d475e933e65c522ae90",
+ "counts": {
+  "episodes": 3072,
+  "episodes_with_PE_snapshot_read": 3072,
+  "l1g_owned": 8,
+  "predictions": 12288,
+  "probe_receipts": 32,
+  "source_bound": 24,
+  "unique_rows": 1024
+ },
+ "decision": "HOLD",
+ "holds_preserved": [
+  "C0-C5",
+  "G2",
+  "dispatch",
+  "BV->P",
+  "#102",
+  "#120",
+  "#126",
+  "#131",
+  "#133",
+  "human peer review"
+ ],
+ "issue": 153,
+ "parent_pr154_head": "c1a566fba365b55ae50772cdbb217de8d6e2f42d",
+ "pr_draft": 154,
+ "report_AB_byte_identical": true,
+ "report_sha256": "65a1b74daa11e88bd08f45628eaa81c0afcfbfba0565cb073d38f9d4471f67ba",
+ "result": "L1G_V0R_SOURCE_BOUND_ADMISSION_AND_PERSISTENCE_ENGINEERING_PASS_SCIENTIFIC_HOLD",
+ "run_id": "20261107T181000Z-spk-l1g-v0r",
+ "schema": "spk-l1g-v0r-source-bound-witness/v0r",
+ "tamper_veto": "L1G_V0R_VETO:REPORT_REEXECUTION_MISMATCH",
+ "tested_files": {
+  "docs/spk-l1g-source-bound-admission-and-persistence-erratum-v0r.md": "8b3cd3f4030b172810fe2c4cf8f524eea1beb48cb88cb3a8fc8e651558638239",
+  "spk_native_learning_v2/online_source_admission_v2d.py": "135c35da714c39fd826450ff40dd307abc44c6a86385860964f1570fcdee5564",
+  "tests/test_spk_l1g_v0r_source_bound_admission_v0.py": "04bab3afeb78d6db6f82db25fb20b365c8f28831a70e0fd8afa4484dc04b956f",
+  "workbench/spk_l1g_v0r_source_bound_admission_v0.py": "262a127bf9d8c52317af87b42b69c0e83a997226cc6a14c90eceb8123ee67a33"
+ },
+ "timestamp_utc_observed": "2026-11-07T18:21:29Z",
+ "v0_immutable": {
+  "lock_corrected": "42d7dafea8451b37bd96e809852ffedafd8a527dacc2d79980d881e7cced57dc",
+  "report_sha256": "ac22b016112f8c687564c56bbb3a3fe3f8233c36f4b9e32a3eaa6be563405905"
+ },
+ "v0r_lock_corrected": "f9a410cca6b7613619e6966c52cfac9c6c3e8c8dae1328a5505e7bd4abb217ab",
+ "v2b_v2c_unchanged": true,
+ "v2d_admission": "all 3072 episodes: 4 contiguous row ids, teacher only current window at +2, snapshot continuity, first C PE batch reads imported P snapshot",
+ "verify_process": "L1G_V0R_REPORT_VERIFIED_SCIENTIFIC_HOLD"
+}
