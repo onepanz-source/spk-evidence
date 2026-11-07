@@ -1,0 +1,72 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "historical_evidence_overwritten": false,
+  "original_24t_P_writes": 0,
+  "release_certified": false,
+  "scientific_authority": "HOLD"
+ },
+ "branch": "research/spk-l1f-two-context-v1-source-bv-transport-v2b",
+ "core_sha256": "7e01da83969d34fda49dc2436e51b93a5d9b495914624861705680db5c9a807e",
+ "counts": {
+  "a_judgments": 2400,
+  "controls_zero_grants": 600,
+  "grant_buckets": [
+   "bright",
+   "dark"
+  ],
+  "grant_runs": 362,
+  "l1f_owned": 16,
+  "main_runs": 1200,
+  "probe_receipts": 40,
+  "source_bound": 24,
+  "tests": "43/43 passed"
+ },
+ "decision": "HOLD",
+ "holds_preserved": [
+  "C0-C5",
+  "G2",
+  "dispatch",
+  "BV->P",
+  "#102",
+  "#120",
+  "#126",
+  "#131",
+  "#133",
+  "human peer review"
+ ],
+ "issue": 151,
+ "parent_pr150_head": "2f4ddd8c985f275d1faf33fc9e39652aba8e58d3",
+ "pr_draft": 152,
+ "report_AB_byte_identical": true,
+ "report_sha256": "42080ca064bba6c236b24869db3899ee63b145e094cd9b4e9a743ed0b60cb21f",
+ "result": "L1F_TWO_CONTEXT_SOURCE_DERIVED_BV_TRANSPORT_ENGINEERING_PASS_SCIENTIFIC_HOLD",
+ "run_id": "20261107T155000Z-spk-l1f-v0",
+ "schema": "spk-l1f-native-transport-boundary-witness/v0",
+ "stage0": {
+  "stage0_sha256": "6c1110699083b9d4134d08b44ae45ce982e9abe73d05781079c9c8b6dc798260b",
+  "v1t_12_onebank_cases": "6 per priority policy, 8 grants",
+  "v1t_negative_12op_2bank": "INADMISSIBLE_C_PROGRAM_TEMPLATE reproduced"
+ },
+ "stage0_lock": "89daf5b0a3f7914a66b9a3f15580ea31d6b8c394353ede47fcd292b394600264",
+ "tamper_veto": "L1F_VETO:REPORT_REEXECUTION_MISMATCH",
+ "tested_files": {
+  "docs/spk-l1f-adversarial-registry-v0.md": "0b385d96258bc1ac0a6539eaefae2eeed3fd2195b7e06e556849d566ef637892",
+  "spk_native_learning_v2/feature_conditioned_transport_v2b.py": "59f19e8725cc10e8fd82e7e00219f9bb03024bc4afaf26e77fca8fe6af717c69",
+  "tests/test_spk_l1f_native_transport_boundary_v0.py": "dfd9f1690baeab6b728e372eb872fc87763b6261e4608933d0d494e731d77d5b",
+  "workbench/spk_l1f_native_transport_boundary_v0.py": "b304ccf23ef5acdb42a38c7a032073419841d572fa12302274395cc8015e8ef6"
+ },
+ "timestamp_utc_observed": "2026-11-07T15:55:29Z",
+ "v2b_lineage": {
+  "base": "spk_native_learning_v1/generalized_scheduler_v1t.py (V1t)",
+  "reverse_path": "A->B->C real V1t-derived hops with packet provenance",
+  "source_v1t_reused_as_unchanged_execution": false,
+  "synthetic_direct_AC": false,
+  "two_private_P_banks": true
+ },
+ "verify_process": "L1F_REPORT_VERIFIED_SCIENTIFIC_HOLD"
+}
