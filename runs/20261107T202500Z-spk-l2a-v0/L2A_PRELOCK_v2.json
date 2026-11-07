@@ -1,0 +1,97 @@
+{
+ "arms": [
+  "full_now(+2)",
+  "full_late(+22, attempted via unchanged execute_v2b -> source-rejected EVENT_TICK_ORDER, recorded not faked)",
+  "sparse_now(25% i%4==0, +2)",
+  "sparse_late(+22)",
+  "none(zero teacher, BV on, zero grants)",
+  "inverted_now"
+ ],
+ "erratum_v2": "ADD-ONLY v2 BEFORE any evidence publication: (a) probe polarity bugfixes B02/B04/B05/B08/B10/B11 (defective probes returned NO_REJECTION/wrong prefix; fixed to genuinely veto the mutation \u2014 strengthens, never weakens); (b) B10 detector reclassified SELF -> pre-existing workbench/spk_l1f_v0r_per_grant_causal_assurance.py zero-grant control (CONTROL_GRANT_LEAK), restoring the published 24 source-bound / 8 owned split (was 23/9 in pinned v0 code); (c) late-arm source finding recorded, not faked: unchanged execute_v2b rejects last-row +22 (92 -> EVENT_TICK_ORDER) and silently re-admits rows 0-2 +22 (32/52/72, since t-2 in C_TICKS) as next-row +2 = provenance misattribution; late arms SOURCE-BLOCKED for genuine-late claim, never executed as valid. v2g/docs SHAs unchanged from v0.",
+ "factorial": {
+  "bv_hop_latency": 1,
+  "episodes": 3072,
+  "max_grants": 32,
+  "p_persists_within_segment": true,
+  "pairs": [
+   [
+    11,
+    12
+   ],
+   [
+    12,
+    11
+   ]
+  ],
+  "predictions": 12288,
+  "priority": "forward-first"
+ },
+ "files_sha256": {
+  "docs/spk-l2a-adversarial-registry-v0.md": "f15cabc40f0ef5f660f12694f0f15eec3f24442f9e2c4d4518bfd0dade1a28e4",
+  "spk_native_learning_v2/teacher_timing_admission_v2g.py": "31960eff49e8e20fe7037730b4abdc9453a402fcf3179e9f8b83cefd7d6b022a",
+  "tests/test_spk_l2a_teacher_timing_provenance_v0.py": "e4c6c2c08d234717c5171437ea205e86987ae117db6d41f84f3675994f6d061c",
+  "workbench/spk_l2a_teacher_timing_provenance_v0.py": "d8f1b082cbfc793446d9b8746c45d4d0b093f0a35c3838e4f7bf42806911e68b"
+ },
+ "frozen_38_pins": true,
+ "gate": "2 fresh byte-identical + third --verify + tamper; canonical <=48KB + sharded detail manifest; append-only runs/<unique>-spk-l2a-v0/; PR #158 on 15e2766b",
+ "hold": "SCIENTIFIC_HOLD; teacher=trusted-host public CSV, NOT authenticated third-party; P_writes=0; no merge",
+ "issue": 157,
+ "l1h_v0r_lock": "499650af4a0ba521b040786c3cd9616438779a139521e0117af8d0f4d434977d",
+ "lock_sha256": "94eb279eb19bb1744e446d697eba50234521cdb9c0ddc373a3acd602363dda2d",
+ "parent_pr156_head": "15e2766b710e57c2628655118bed87a5dc46738e",
+ "pe_identity": "spk_architecture_v1.pe_execution_v1b._compute_local",
+ "probes": {
+  "ids": [
+   "A01",
+   "A02",
+   "A03",
+   "A04",
+   "A05",
+   "A06",
+   "A07",
+   "A08",
+   "B01",
+   "B02",
+   "B03",
+   "B04",
+   "B05",
+   "B06",
+   "B07",
+   "B08",
+   "B09",
+   "B10",
+   "B11",
+   "B12",
+   "C01",
+   "C02",
+   "C03",
+   "C04",
+   "C05",
+   "C06",
+   "C07",
+   "C08",
+   "D01",
+   "D02",
+   "D03",
+   "D04"
+  ],
+  "n": 32,
+  "source_bound_min": 24
+ },
+ "protocol": "L2A_TRUE_TEACHER_TIMING_AND_PROVENANCE_PRELOCK",
+ "run_id": "20261107T202500Z-spk-l2a-v0",
+ "scoring": "pre-feedback; corrected L1h-v0r metrics (unique transitions, full confusion, per-segment baselines, delay0 local); baselines incl teacher-limited legal-history; bootstrap seed 20261107 10k over 8 segments",
+ "segments": {
+  "n": 8,
+  "rows": 128,
+  "source_file": "datatraining.txt N=8143",
+  "start_j": "floor(j*(8143-128)/7)",
+  "unique_rows": 1024
+ },
+ "supersedes_lock_sha256": "499dfc65aaedf9bd46b270c67c6eef76543debf37f7b3c96a0301392635677c6",
+ "uci357": {
+  "datatraining": "b2c4d0ce2b9e4e453c476f7125ef31aeec2d1f5c7f5572d0e80de3df6521ab56",
+  "zip": "4ae3f46aa98eedff564a9f6924d1635173e2fd2c816004342a9be93076d3a81a"
+ },
+ "v1t_manifest": true
+}
