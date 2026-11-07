@@ -1,0 +1,82 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "ground_truth_pixels_read_this_task": false,
+  "historical_evidence_overwritten": false,
+  "original_24t_P_writes": 0,
+  "original_BV_to_original_P_authorized": false,
+  "release_certified": false,
+  "reserved_sequences_read": false,
+  "scientific_authority": "HOLD",
+  "uci_holdout_read": false
+ },
+ "branch": "research/spk-l1d-event-conditioned-neuron-teacher-feedback-v0",
+ "commit_local_lineage_note": "local fwork clone lineage (d34ec24 for v0); v0r files published via GitHub API; commit-SHA equality with remote is NOT claimed, only file-blob SHA equality",
+ "commit_remote_tested_v0": "3b6cc98fa304e3673ee9c980183b5e4623b6dcf1",
+ "core_sha256": "b3a7615ca85e1b91b506a41cba570ca68841b2e7c43b69bd9909c2d55e161894",
+ "counts": {
+  "fresh_processes": 2,
+  "l1d_owned": 8,
+  "pe_anchors": 9,
+  "preexisting_source_verifiers": 24,
+  "probe_receipts": 32,
+  "tests": "37/37 passed",
+  "verify_processes": 1
+ },
+ "decision": "HOLD",
+ "erratum": {
+  "doc": "docs/spk-l1d-adversarial-registry-erratum-v0r.md",
+  "maps": [
+   "B06-B10 prereg/actual mutation drift",
+   "B11 UNREGISTERED_SUPPLEMENTAL_ONLY",
+   "D02 reclassified to pre-existing l1b-v0r write_new",
+   "witness timestamp_utc nominal vs observed",
+   "local vs remote commit lineage"
+  ]
+ },
+ "holds_preserved": [
+  "C0-C5",
+  "G2",
+  "dispatch",
+  "BV->P",
+  "#102",
+  "#120",
+  "#126",
+  "#131",
+  "#133",
+  "human peer review"
+ ],
+ "issue": 147,
+ "lock_sha256": "5df1ae9cd4fa53a751637c3c13361c43b266d0a9cbfb9b45f139f8e71aa54e57",
+ "matrix_enforcement": "exact ID-set equality + expected-substring mutation binding + ownership by detector module; never >=32 proxy",
+ "note": "timestamp_utc_observed is real wall-clock; v0 witness timestamp_utc was nominal run ID (erratum section 2)",
+ "original_l1d_v0_immutable": {
+  "positive_corpus_rerun": false,
+  "report_sha256": "e14774b1fd1c17067f2cf924b8b00b769cf04bb2c56731c93039018a0a2af0ee",
+  "witness_sha256": "eb4f8a34baa7442c1b668b8800fbfe6a6a657cbde40aa88577cb3ac74bdc6ccd"
+ },
+ "parent_head": "5a5bc43c61667fd83326c54b54c58724f06fea96",
+ "pr_draft": 148,
+ "report_AB_byte_identical": true,
+ "report_sha256": "75982a8efb44067e4a1ac58dc1bd83ceca85f54e390a41f96b29e117a9fae778",
+ "result": "L1D_V0R_SOURCE_ASSURANCE_ENGINEERING_PASS_SCIENTIFIC_HOLD",
+ "run_id": "20261107T115000Z-spk-l1d-v0r",
+ "schema": "spk-l1d-v0r-assurance-witness/v0r",
+ "tamper_veto": "L1D_V0R_VETO:REPORT_REEXECUTION_MISMATCH",
+ "teacher_flags": {
+  "teacher_external_identity_authenticated": false,
+  "teacher_labels_synthetic_public": true,
+  "teaching_origin_independent": false
+ },
+ "tested_files_v0r": {
+  "docs/spk-l1d-adversarial-registry-erratum-v0r.md": "db33d20bf5667967b7465399588e32e42e4c3da60a5a123cd9c6175c87e68897",
+  "tests/test_spk_l1d_v0r_assurance.py": "050859c1d502acc4e2e7326f3ffc231fbc34cadb05d089a1176646e2ae0c3bf4",
+  "workbench/spk_l1d_v0r_assurance.py": "509a79743dfecc8d2f4fa4287880b58a3e4798b97f1f310e0e4ab1785a278e00"
+ },
+ "timestamp_utc_observed": "2026-11-07T11:50:17Z",
+ "verify_process": "L1D_V0R_REPORT_VERIFIED_SCIENTIFIC_HOLD"
+}
