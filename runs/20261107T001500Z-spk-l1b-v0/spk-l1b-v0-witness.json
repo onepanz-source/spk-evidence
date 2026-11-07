@@ -1,0 +1,171 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_transfer_to_original": false,
+  "P_writes": 0,
+  "SPK_learning_demonstrated": false,
+  "computational_advantage_demonstrated": false,
+  "generalization_demonstrated": false,
+  "ground_truth_pixels_read_this_task": false,
+  "native_learning_in_original": false,
+  "original_24t_P_writes": 0,
+  "original_BV_to_original_P_authorized": false,
+  "private_ledger_bytes_published": false,
+  "release_certified": false,
+  "research_only": true,
+  "research_v1_private_P_revisions_allowed": true,
+  "reserved_sequences_read": false,
+  "scientific_authority": "HOLD",
+  "uci_holdout_read": false
+ },
+ "decision": "HOLD",
+ "durable_summary": {
+  "chain_sha256_clean": "73354b052fd3ee9da71f03389a76c17781d379dcb1ac1ff0c798aca41bb3eead",
+  "chain_sha256_crash_recovered": "73354b052fd3ee9da71f03389a76c17781d379dcb1ac1ff0c798aca41bb3eead",
+  "contexts": [
+   "alpha",
+   "beta"
+  ],
+  "crash_after_epoch": 5,
+  "crash_replay_equal": true,
+  "episodes": 12,
+  "final_bank": {
+   "alpha": {
+    "choice": 15,
+    "version": 8
+   },
+   "beta": {
+    "choice": 15,
+    "version": 6
+   }
+  },
+  "ledger_bytes_published": false,
+  "p_grants_by_epoch": [
+   2,
+   1,
+   2,
+   1,
+   2,
+   1,
+   2,
+   1,
+   0,
+   1,
+   0,
+   1
+  ]
+ },
+ "execution_summary": {
+  "control_arms_pure": 135,
+  "matrix_v1_runs": 180,
+  "min_tick_contrasts_required": 2,
+  "mismatch_contrast_counts_by_tick": {
+   "145": 6,
+   "20": 6,
+   "30": 6,
+   "65": 6,
+   "95": 6
+  },
+  "normal_cases": 45,
+  "original_24t_P_writes": 0,
+  "original_BV_to_P_authorized": false,
+  "research_v1_private_P_revisions": 45,
+  "static_original_trials": 90,
+  "stress_runs": 27,
+  "ticks_with_min_contrasts": [
+   20,
+   30,
+   65,
+   95,
+   145
+  ]
+ },
+ "gate": {
+  "adversarial_count": 12,
+  "base": "d2ddf332695426a38f728667bc93c5b58db67466 (PR #142 head)",
+  "changed_file_allowlist": [
+   "docs/spk-l1b-native-temporal-context-robustness-prereg-v0.md",
+   "workbench/spk_l1b_temporal_context_robustness_v0.py",
+   "tests/test_spk_l1b_temporal_context_robustness_v0.py"
+  ],
+  "cli_veto_exit_code": 2,
+  "cli_vetoes": [
+   "wrong_protocol",
+   "wrong_parent_sha",
+   "no_mode",
+   "both_modes",
+   "parent_missing",
+   "parent_sha_drift",
+   "parent_gt_path",
+   "verify_missing",
+   "out_gt_png",
+   "out_reserved",
+   "out_exists",
+   "verify_tampered_report"
+  ],
+  "determinism_two_fresh_processes": {
+   "byte_identical": true,
+   "report_A_sha256": "e11ee5d093740c8a1ddaeeb0c29d156310859ca205fee8e1ede855209ddb2ac3",
+   "report_B_sha256": "e11ee5d093740c8a1ddaeeb0c29d156310859ca205fee8e1ede855209ddb2ac3"
+  },
+  "durable_chain_sha256": "73354b052fd3ee9da71f03389a76c17781d379dcb1ac1ff0c798aca41bb3eead",
+  "durable_crash_replay_equal": true,
+  "env": {
+   "h5py": "3.16.0",
+   "numpy": "2.5.4",
+   "python": "3.14.10"
+  },
+  "frozen_manifest_entries": 38,
+  "implementation_note": "PR seed contained only the CIAT prereg doc; M implemented module+tests as new L1b-owned files; L1a/V1/frozen files read-only",
+  "l1b_tested_blobs": {
+   "docs/spk-l1b-native-temporal-context-robustness-prereg-v0.md": "3520878b57320a3996835aea02d636539c8178c1",
+   "tests/test_spk_l1b_temporal_context_robustness_v0.py": "c9a80dc39c2f70eb9707e39e48752376dd600468",
+   "workbench/spk_l1b_temporal_context_robustness_v0.py": "b5e61fc4cc78793769a8545515d3635639f6c969"
+  },
+  "pr_head_after_m_publish": "38ad81a224dfe8fbe155556880dd29af4c5f39e3",
+  "pr_head_at_seed": "e89331f6a5dd0d07afce3350be5c6c709c72c9df",
+  "pytest": "76 passed in 0.50s (L1b 35 + L1a 41)",
+  "pytest_adversarial": "record mutators, terminal/schema vetoes, durable forged-gap veto, crash-replay equality, quota0 purity, control purity (real V1 runs in tests)",
+  "report_core_sha256": "917b3298841c28def799070eaf7e22f9662fad338044d2b323dd5feb9153629d",
+  "report_path": "runs/20261107T001500Z-spk-l1b-v0/spk-l1b-v0-report.json",
+  "report_sha256": "e11ee5d093740c8a1ddaeeb0c29d156310859ca205fee8e1ede855209ddb2ac3",
+  "source_custody": "38 frozen pins + v1 manifests + frozen PE identity + L1a parent report SHA pin",
+  "verify_mode": "third fresh process --verify (full 180+90+27+durable reexecution) -> L1B_REPORT_VERIFIED_SCIENTIFIC_HOLD core 917b3298...; tampered report -> L1B_VETO:REPORT_REEXECUTION_MISMATCH"
+ },
+ "issue": 143,
+ "limits": [
+  "causal/semantic continuity of the versioned research V1 only; no learning-in-original, no P transfer/promotion, no bitwise scheduler equivalence claim",
+  "original_24t_P_writes=0 and original_BV_to_original_P_authorized=false throughout; research V1 private P revisions stay in the research sandbox",
+  "metadata/digests only: no ledger bytes, no private snapshots, no per-tick raw events, no GT; leak scan clean",
+  "HOLD unchanged: C0-C5, G2, dispatch, BV->P, P_writes=0, #102, #120, #126, #131, #133, human independent review; no merge"
+ ],
+ "parent_evidence_immutable": {
+  "l1a_report_sha256": "9c00d668e678684fe984f7306f72dccb364defc98db89b5028c10ca3bca0fc97",
+  "l1a_witness_sha256": "a788a3b30214a9dd54211dc9b68fd92427ac3490d1a276739a5a5da299738ba5",
+  "not_overwritten": true,
+  "parent_l1a_head": "d2ddf332695426a38f728667bc93c5b58db67466"
+ },
+ "pr_draft": 144,
+ "result": "L1B_RESEARCH_BV_P_TEMPORAL_CONTEXT_CAUSAL_CONTINUITY_ENGINEERING_PASS_SCIENTIFIC_HOLD",
+ "run_id": "20261107T001500Z-spk-l1b-v0",
+ "schema": "spk-l1b-temporal-context-robustness-witness/v0",
+ "scientific_outcome": "Long-form bounded research integration stress. Part A: 180 genuine research-v1 runs (9 choice/goal pairs x 5 ticks 20/30/65/95/145 x 4 arms); 135 control arms (bv_off/learn_off/verify_only) produced ZERO P changes; 45 normal arms produced 45 private P revisions with 6/6 mismatch cases showing genuine before/after C-channel contrasts on EVERY tick (>=2 ticks required). Part B: 90/90 original G1/C2/24t static single-node trials CLOSED+EXACT_PASS with P_writes=0, terminal channel exactly equal to the v1 native C first/last emission channel per case. Part D: 27 stress arms (quota0 -> 0 grants everywhere; hop_latency 2/4 recorded). Part C: 12 dual-context episodes (alpha/beta) on private 0700/0600 SQLite ledger; uninterrupted vs crash(stop_after=5)+replay chains byte-equal (chain_sha256 73354b05...), final banks equal, no ledger bytes published. Conclusion: bounded causal/semantic continuity of the versioned research V1 across timing, controls and persistent contexts, with exact static original-compiler channel parity. NOT learning in frozen original, NOT BV->P owner integration, NOT P transfer (original P_writes=0, BV_to_original_P_authorized=false), NOT generalization or real-task improvement.",
+ "scope": {
+  "gt_or_reserved_data_read": false,
+  "original_runtime": "G1/C2/24t static snapshots",
+  "private_ledger_bytes_published": false,
+  "ticks": [
+   "145",
+   "20",
+   "30",
+   "65",
+   "95"
+  ],
+  "uci_holdout_read": false,
+  "v1_runtime": "spk_native_learning_v1 (research private P)"
+ },
+ "timestamp_utc": "2026-11-07T00:15:00Z"
+}
