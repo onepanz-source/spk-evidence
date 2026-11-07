@@ -1,0 +1,139 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "blind_validation": false,
+  "historical_evidence_overwritten": false,
+  "original_24t_P_writes": 0,
+  "release_certified": false,
+  "scientific_authority": "HOLD"
+ },
+ "branch": "research/spk-l1g-prequential-online-two-bank-utility-v2c",
+ "core_sha256": "6aa262e1c758a7f89b4609038a8e0c94277bba4eb3df0621d0434ce050abcbcc",
+ "counts": {
+  "controls_zero_grant": true,
+  "episodes": 3072,
+  "l1g_owned": 8,
+  "predictions": 12288,
+  "probe_receipts": 32,
+  "source_bound": 24,
+  "unique_rows": 1024
+ },
+ "decision": "HOLD",
+ "holds_preserved": [
+  "C0-C5",
+  "G2",
+  "dispatch",
+  "BV->P",
+  "#102",
+  "#120",
+  "#126",
+  "#131",
+  "#133",
+  "human peer review"
+ ],
+ "issue": 153,
+ "lock_sha256_corrected": "42d7dafea8451b37bd96e809852ffedafd8a527dacc2d79980d881e7cced57dc",
+ "lock_sha256_original_superseded": "0fe449a7c25d2d4efee3625fa7ea0cf533a3b0cf311879720bfcfffdc86152e9",
+ "parent_pr152_head": "cc6764e40781e71d0a5cf7f68836edbb2d58f76f",
+ "pr_draft": 154,
+ "report_AB_byte_identical": true,
+ "report_bytes": 23220,
+ "report_sha256": "ac22b016112f8c687564c56bbb3a3fe3f8233c36f4b9e32a3eaa6be563405905",
+ "result": "L1G_PREQUENTIAL_TWO_BANK_ONLINE_SOURCE_TRANSPORT_ENGINEERING_PASS_SCIENTIFIC_HOLD",
+ "run_id": "20261107T171500Z-spk-l1g-v0",
+ "schema": "spk-l1g-prequential-online-witness/v0",
+ "tamper_veto": "L1G_VETO:REPORT_REEXECUTION_MISMATCH",
+ "task_utility": "MEASURED, not assumed: see metrics.utility in report; exploratory n_blocks=8; improvement only where CI lower>0 (pair (11,12)); (12,11) CI crosses 0",
+ "tested_files": {
+  "docs/spk-l1g-adversarial-registry-v0.md": "968b5430a5f3c3932da3155dcb37a0b1c80438419ac649dceef2d843d473616c",
+  "spk_native_learning_v2/online_persistence_v2c.py": "25e8e0ba8ee23677c1a2b814f801d23fea2caa2eb182ce2062dd867e2ce2f733",
+  "tests/test_spk_l1g_prequential_online_utility_v0.py": "8cc8cfef2edd36d8d99e5e95c20e62ea6dd709fc1ce0f7ac326c244a9411f7e8",
+  "workbench/spk_l1g_prequential_online_utility_v0.py": "372a4fc8caf7d2a62eab0127f0ae220b713637d5112e8bad6e276f8a70d429a0"
+ },
+ "timestamp_utc_observed": "2026-11-07T17:39:55Z",
+ "utility_summary": {
+  "inverted_vs_true": {
+   "(11, 12)/32": {
+    "ci95": [
+     0.94140625,
+     0.9755859375
+    ],
+    "mean": 0.958984375,
+    "n_blocks": 8,
+    "wins": 8
+   },
+   "(11, 12)/8": {
+    "ci95": [
+     0.94140625,
+     0.9755859375
+    ],
+    "mean": 0.958984375,
+    "n_blocks": 8,
+    "wins": 8
+   },
+   "(12, 11)/32": {
+    "ci95": [
+     0.9443359375,
+     0.9775390625
+    ],
+    "mean": 0.9619140625,
+    "n_blocks": 8,
+    "wins": 8
+   },
+   "(12, 11)/8": {
+    "ci95": [
+     0.9443359375,
+     0.9775390625
+    ],
+    "mean": 0.9619140625,
+    "n_blocks": 8,
+    "wins": 8
+   }
+  },
+  "note": "exploratory, n_blocks=8, not independent replication",
+  "paired_diffs_true_vs_off": {
+   "(11, 12)/32": {
+    "ci95": [
+     0.6376953125,
+     0.958984375
+    ],
+    "mean": 0.8203125,
+    "n_blocks": 8,
+    "wins": 8
+   },
+   "(11, 12)/8": {
+    "ci95": [
+     0.6376953125,
+     0.958984375
+    ],
+    "mean": 0.8203125,
+    "n_blocks": 8,
+    "wins": 8
+   },
+   "(12, 11)/32": {
+    "ci95": [
+     -0.001953125,
+     0.3125
+    ],
+    "mean": 0.1318359375,
+    "n_blocks": 8,
+    "wins": 3
+   },
+   "(12, 11)/8": {
+    "ci95": [
+     -0.001953125,
+     0.3125
+    ],
+    "mean": 0.1318359375,
+    "n_blocks": 8,
+    "wins": 3
+   }
+  }
+ },
+ "v2b_unchanged_sha256": "59f19e8725cc10e8fd82e7e00219f9bb03024bc4afaf26e77fca8fe6af717c69",
+ "verify_process": "L1G_REPORT_VERIFIED_SCIENTIFIC_HOLD"
+}
