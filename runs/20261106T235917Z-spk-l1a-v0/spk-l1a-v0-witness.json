@@ -1,0 +1,120 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_transfer_to_original": false,
+  "P_writes": 0,
+  "SPK_learning_demonstrated": false,
+  "computational_advantage_demonstrated": false,
+  "generalization_demonstrated": false,
+  "ground_truth_pixels_read_this_task": false,
+  "native_learning_in_original": false,
+  "original_24t_P_writes": 0,
+  "original_BV_to_original_P_authorized": false,
+  "release_certified": false,
+  "research_only": true,
+  "research_v1_private_P_revisions_allowed": true,
+  "reserved_sequences_read": false,
+  "scientific_authority": "HOLD",
+  "uci_holdout_read": false
+ },
+ "decision": "HOLD",
+ "execution_summary": {
+  "control_arms": 27,
+  "min_required_contrasts": 2,
+  "mismatch_cases_with_genuine_P_change": 6,
+  "normal_cases": 9,
+  "original_24t_P_writes": 0,
+  "original_BV_to_P_authorized": false,
+  "research_v1_private_P_revisions": 9,
+  "static_original_trials": 18,
+  "v1_arms_total": 36
+ },
+ "gate": {
+  "adversarial_count": 12,
+  "base": "0b8ecb61b6cb5966794faae187b67901e4a29eb2 (PR #140 head)",
+  "changed_file_allowlist": [
+   "docs/spk-l1a-native-v1-original-static-semantic-bridge-prereg-v0.md",
+   "workbench/spk_l1a_native_v1_original_static_bridge_v0.py",
+   "tests/test_spk_l1a_native_v1_original_static_bridge_v0.py"
+  ],
+  "cli_veto_exit_code": 2,
+  "cli_vetoes": [
+   "wrong_protocol",
+   "wrong_parent_sha",
+   "no_mode",
+   "both_modes",
+   "parent_missing",
+   "parent_sha_drift",
+   "parent_gt_path",
+   "verify_missing",
+   "out_gt_png",
+   "out_reserved",
+   "out_exists",
+   "verify_tampered_report"
+  ],
+  "determinism_two_fresh_processes": {
+   "byte_identical": true,
+   "report_A_sha256": "9c00d668e678684fe984f7306f72dccb364defc98db89b5028c10ca3bca0fc97",
+   "report_B_sha256": "9c00d668e678684fe984f7306f72dccb364defc98db89b5028c10ca3bca0fc97"
+  },
+  "env": {
+   "h5py": "3.16.0",
+   "numpy": "2.5.4",
+   "python": "3.14.10"
+  },
+  "frozen_manifest_entries": 38,
+  "implementation_note": "PR seed contained only the CIAT prereg doc; M implemented module+tests as new L1a-owned files; no predecessor or frozen file modified",
+  "l1a_tested_blobs": {
+   "docs/spk-l1a-native-v1-original-static-semantic-bridge-prereg-v0.md": "d320028dc217a650755d89c36ab8cf730f467cd4",
+   "tests/test_spk_l1a_native_v1_original_static_bridge_v0.py": "8f321e765d5548c7d5b4770c0c6a7cc1d865ef4e",
+   "workbench/spk_l1a_native_v1_original_static_bridge_v0.py": "b8f40fcf63acc78b4c26863e9cdb35c30493ca70"
+  },
+  "pr_head_after_m_publish": "d2ddf332695426a38f728667bc93c5b58db67466",
+  "pr_head_at_seed": "73228d3afbfbe938ce550866411827f2cc98d8e5",
+  "pytest": "41 passed in 0.15s",
+  "report_core_sha256": "d2a1195ed8862bf9b3254ab2bc381b1a26f0c9f7e390cbdb4adb222afcd3d33a",
+  "report_path": "runs/20261106T235917Z-spk-l1a-v0/spk-l1a-v0-report.json",
+  "report_sha256": "9c00d668e678684fe984f7306f72dccb364defc98db89b5028c10ca3bca0fc97",
+  "source_custody": "38 frozen pins + v1 generalized_manifest_v1t.json and closure_qrs_manifest_v1.json file SHA pins + frozen PE identity (_compute_local/_admit) verified via gc.pin_sources",
+  "verify_mode": "third fresh process --verify (full 36-arm + 18-trial reexecution) -> L1A_REPORT_VERIFIED_SCIENTIFIC_HOLD core d2a1195e...; tampered report (contrasts=0) -> L1A_VETO:REPORT_REEXECUTION_MISMATCH"
+ },
+ "issue": 141,
+ "limits": [
+  "semantic channel-level compatibility only; no bitwise scheduler equality, no learning in original, no P transfer/promotion, no generalization or real-task improvement",
+  "research_v1_private_P_revisions (9) are legal ONLY inside the versioned research runtime; original_24t_P_writes=0 and original_BV_to_original_P_authorized=false",
+  "metadata-only evidence: run records carry digests, not full v1 traces; leak scan clean",
+  "HOLD unchanged: C0-C5, G2, dispatch, BV->P, P_writes=0, #102, #120, #126, #131, #133, human independent review; no merge"
+ ],
+ "parent_evidence_immutable": {
+  "d2i_report_sha256": "cff9ffecddbddb10020c35754d77c07174ee4703f41776ebc99d5bbc3d9f47d9",
+  "d2i_witness_sha256": "e25fe3ac319e5d176125cdf06f02d88fa4e0d0722e70b45d375036018c089368",
+  "not_overwritten": true,
+  "parent_d2i_head": "0b8ecb61b6cb5966794faae187b67901e4a29eb2"
+ },
+ "pr_draft": 142,
+ "result": "L1A_RESEARCH_NATIVE_P_TO_ORIGINAL_G1_C2_24T_SEMANTIC_BRIDGE_ENGINEERING_PASS_SCIENTIFIC_HOLD",
+ "run_id": "20261106T235917Z-spk-l1a-v0",
+ "schema": "spk-l1a-native-v1-original-static-semantic-bridge-witness/v0",
+ "scientific_outcome": "Two-runtime comparative bridge. Runtime A (versioned research fork spk_native_learning_v1, genuine frozen PE _compute_local, simulated live BV): 36 real arms over the locked 3x3 choice/goal grid x 4 arms; 27 control arms (bv_off/learn_off/verify_only) produced ZERO P changes; 9 normal arms produced 9 private P revisions concentrated on the 6 mismatch cases (e.g. 11->15 two grants, final=goal), 3 baseline choice==goal cases 0 grants. Runtime B (original frozen G1 admission -> C2 manifest roundtrip -> 24t host, static single-node C snapshots, NO P install/transfer): 18/18 trials CLOSED+EXACT_PASS with P_writes=0, and the emitted terminal CHANNEL exactly equals the corresponding research-v1 native C first/last emission channel for every case (6 mismatch cases show a genuine before/after channel contrast, >= 2 required). Conclusion: bounded STATIC SEMANTIC COMPATIBILITY between v1 before/after P choices and the original compiler/host on identical one-spike input. NOT learning in original 24t, NOT BV->P owner integration, NOT promotion; original P_writes=0 and BV_to_original_P_authorized=false throughout.",
+ "scope": {
+  "arms": [
+   "normal",
+   "bv_off",
+   "learn_off",
+   "verify_only"
+  ],
+  "choices": [
+   11,
+   12,
+   15
+  ],
+  "gt_or_reserved_data_read": false,
+  "original_runtime": "G1/C2/24t static single-node C snapshots",
+  "uci_holdout_read": false,
+  "v1_runtime": "spk_native_learning_v1 generalized_scheduler_v1t (research private P)"
+ },
+ "timestamp_utc": "2026-11-06T23:59:17Z"
+}
