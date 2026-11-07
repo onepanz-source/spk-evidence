@@ -1,0 +1,90 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "blind_validation": false,
+  "historical_evidence_overwritten": false,
+  "original_24t_P_writes": 0,
+  "release_certified": false,
+  "scientific_authority": "HOLD"
+ },
+ "baselines_per_segment_reset": {
+  "always0": 473,
+  "always1": 1063,
+  "light_to0": 1526,
+  "light_to1": 10,
+  "prev_label": 16,
+  "prev_light": 12
+ },
+ "branch": "research/spk-l1h-bv-latency-blackout-transitions-v2e",
+ "canonical_report_bytes": 15061,
+ "canonical_report_sha256": "62374472ac2393af0478c2dd112c66ce46f9d6b4cd7a4b91d262b5d85ef5aef2",
+ "core_sha256": "b6e5fd377365afea61cf7db26654a91815944006bf788765fcbbae316eece094",
+ "corrections_vs_v0": [
+  "unique transitions 12 (not 96)",
+  "full confusion + denom check",
+  "baselines reset per segment (prev_label 16, prev_light 12 vs v0 19/18 \u2014 drift exposed)",
+  "local-index first-correct delay",
+  "per-episode v2f guards in positive path",
+  "canonical <=48KB + sharded detail with manifest"
+ ],
+ "counts": {
+  "episodes": 3072,
+  "l1h_owned": 8,
+  "predictions": 12288,
+  "probe_receipts": 32,
+  "source_bound": 24,
+  "unique_rows": 1536,
+  "unique_transitions": 12
+ },
+ "decision": "HOLD",
+ "holds_preserved": [
+  "C0-C5",
+  "G2",
+  "dispatch",
+  "BV->P",
+  "#102",
+  "#120",
+  "#126",
+  "#131",
+  "#133",
+  "human peer review"
+ ],
+ "issue": 155,
+ "parent_pr156_head": "4c06054fff641e314783d99cc4059db0a7092f95",
+ "pr_draft": 156,
+ "report_AB_byte_identical": true,
+ "result": "L1H_V0R_TRANSITION_LATENCY_AND_REMOTE_CUSTODY_ENGINEERING_PASS_SCIENTIFIC_HOLD",
+ "run_id": "20261107T191500Z-spk-l1h-v0r",
+ "schema": "spk-l1h-v0r-transition-custody-witness/v0r",
+ "shard_manifest": {
+  "chunks": [
+   {
+    "bytes": 30798,
+    "file": "spk-l1h-v0r-report.json.detail.000",
+    "sha256": "bcc3554958e40950cdf12d51a68c7dbfd92aa8c5926dc102249c474dfc283053"
+   }
+  ],
+  "file": "spk-l1h-v0r-report.json.detail",
+  "recomposed_sha256": "bcc3554958e40950cdf12d51a68c7dbfd92aa8c5926dc102249c474dfc283053",
+  "total_bytes": 30798
+ },
+ "tamper_veto": "L1H_V0R_VETO:REPORT_REEXECUTION_MISMATCH",
+ "tested_files": {
+  "docs/spk-l1h-transition-custody-metrics-erratum-v0r.md": "cf664d7ada46e64290743041cba261a051388e21201d70fb475ee8ca7162d18b",
+  "spk_native_learning_v2/latency_blackout_assurance_v2f.py": "623533003d630dedd47a9d906ce268a30db55b58d76cdfe8e2ef8ba20df36229",
+  "tests/test_spk_l1h_v0r_transition_custody_v0.py": "511a9b262559ec106582e7dec1967fffc30d66640a431df0e4155bf814f3a8ee",
+  "workbench/spk_l1h_v0r_transition_custody_v0.py": "4dc24d81902781aeb186bab8f3b939de1e580e37341a63f34d2e344cf9cee58f"
+ },
+ "timestamp_utc_observed": "2026-11-07T19:20:11Z",
+ "v0_immutable": {
+  "prelock": "a9bedd00617951e0dc3a5d5c68b5f265748b0690c551bb5332bec387c263e6ad",
+  "remote_blob_truncated_at_64000": true,
+  "report_sha256_claimed": "44f90fc0ccdd614c62bd8db9c492caf36ac60ad2314aa6fcfac1bfdca1240bcf"
+ },
+ "v0r_lock": "499650af4a0ba521b040786c3cd9616438779a139521e0117af8d0f4d434977d",
+ "verify_process": "L1H_V0R_REPORT_VERIFIED_SCIENTIFIC_HOLD"
+}
