@@ -1,0 +1,74 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "force_push": false,
+  "historical_evidence_overwritten": false,
+  "merge": false,
+  "original_24t_P_writes": 0,
+  "release_certified": false,
+  "scientific_authority": "HOLD"
+ },
+ "base_parent": "94bf31d432f9cf9e2f2bada54c9a3afa6b630172",
+ "branch": "research/spk-l1e-public-uci357-sensor-conditioned-P-v2a",
+ "core_sha256": "74275991c4948126183802407e5a8115399e1706b5ac344ede6fc168afac4f54",
+ "corrected_pr_head": "2f4ddd8c985f275d1faf33fc9e39652aba8e58d3",
+ "counts": {
+  "ablation_runs": 75,
+  "controls_zero_grants": 300,
+  "l1e_owned": 8,
+  "main_runs": 600,
+  "probe_receipts": 32,
+  "source_bound": 24,
+  "tests": "38/38 passed"
+ },
+ "decision": "HOLD",
+ "divergent_commit_preserved_untouched": "f2aac61fe97d7b665da154813bf474539773044d",
+ "drift_vs_historical_v0": "none: v0r report byte-identical to v0 report c0ce3dee... except run_id field",
+ "holds_preserved": [
+  "C0-C5",
+  "G2",
+  "dispatch",
+  "BV->P",
+  "#102",
+  "#120",
+  "#126",
+  "#131",
+  "#133",
+  "human peer review"
+ ],
+ "issue": 149,
+ "original_v0_immutable": {
+  "lock_sha256": "f4f45d1e094b0648edc11b7f1ee6863883ddffef45b05fb338da549472e065a6",
+  "report_sha256": "c0ce3dee85eb0afa60e1332d1843cade065f661c6fbc7d0668baf44bbd584153",
+  "witness_sha256": "306839865445a3981931aa61ce0e9792959e0053a73b75109de1ff4da802e5db"
+ },
+ "pr_draft": 150,
+ "pr_head_parent": "adf1096c135ac8bfb69a46a822cf9b93e7a3d4c1",
+ "report_AB_byte_identical": true,
+ "report_sha256": "6819ccd7e1416c4dc0e9ca8b8072aeacff3197ef48c5a0b9f6690760a90f0ae0",
+ "result": "L1E_V0R_SOURCE_STACK_RECONCILED_ENGINEERING_PASS_SCIENTIFIC_HOLD",
+ "run_id": "20261107T153000Z-spk-l1e-v0r",
+ "schema": "spk-l1e-v0r-source-stack-witness/v0r",
+ "source": {
+  "datatest2_sha256": "d026d1bd5aeccd4aff4f3b3710d48e40613bd5fc370db7e61bbdcaa50d985095",
+  "datatraining_sha256": "b2c4d0ce2b9e4e453c476f7125ef31aeec2d1f5c7f5572d0e80de3df6521ab56",
+  "zip_sha256": "4ae3f46aa98eedff564a9f6924d1635173e2fd2c816004342a9be93076d3a81a"
+ },
+ "source_stack_lock": "d1d92bbdf01f653cfb3ddb118354ac860b133d18c9020cdc6a10c0df9790f443",
+ "tamper_veto": "L1E_VETO:REPORT_REEXECUTION_MISMATCH",
+ "tested_files_sha256": {
+  "docs/spk-l1e-adversarial-registry-v0.md": "6d5e7ac1af1ac98633f06613b41117be91ca7e19fb3d6e7f152aa3d19416f092",
+  "docs/spk-l1e-source-tree-and-bv-boundary-erratum-v0r.md": "7dd56cd936e79200af4f917b987ff2ca81b2f070f22cd46429f95dc138e71653",
+  "spk_native_learning_v2/__init__.py": "ed3f075940467f44db281671cae1397a7910c1170db84cbf81cc0396fe7baa8a",
+  "spk_native_learning_v2/feature_conditioned_scheduler_v2a.py": "2dfb6ac9c1debf4d8c86da33c4904f2f8e1ca427b2404181a4b4812c97e71c2e",
+  "tests/test_spk_l1e_public_sensor_teacher_v0.py": "99fdd437bacb6616df86a4481c13a18d8e2dc3f1b11c0df2fe3ecb220699c66a",
+  "workbench/spk_l1e_public_sensor_teacher_v0.py": "d6bb6915c988782f4d809ea35a6d179ef88473124dfd61a7f0b9aaafb0dbb68e"
+ },
+ "timestamp_utc_observed": "2026-11-07T15:31:20Z",
+ "v2_bv_scope": "V2 BV is research/reference-only (own tick loop + synthesized A->C +1 delivery); original V1/BV-v0e transport and production owner NOT claimed",
+ "verify_process": "L1E_REPORT_VERIFIED_SCIENTIFIC_HOLD"
+}
