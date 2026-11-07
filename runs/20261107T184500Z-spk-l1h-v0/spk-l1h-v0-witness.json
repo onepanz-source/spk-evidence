@@ -1,0 +1,71 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "blind_validation": false,
+  "historical_evidence_overwritten": false,
+  "original_24t_P_writes": 0,
+  "release_certified": false,
+  "scientific_authority": "HOLD"
+ },
+ "baselines": {
+  "always0": 473,
+  "always1": 1063,
+  "light_to0": 1526,
+  "light_to1": 10,
+  "prev_label": 19,
+  "prev_light": 18
+ },
+ "branch": "research/spk-l1h-bv-latency-blackout-transitions-v2e",
+ "core_sha256": "9249aeb523dc8a828696f13b714c88fbdceffaf387cf3a9a0df9c13e595f243c",
+ "counts": {
+  "blackout_episodes": 384,
+  "bv_off_episodes": 768,
+  "bv_off_grants": 0,
+  "episodes": 3072,
+  "l1h_owned": 8,
+  "predictions": 12288,
+  "probe_receipts": 32,
+  "source_bound": 24,
+  "transitions": 96,
+  "unique_rows": 1536
+ },
+ "decision": "HOLD",
+ "holds_preserved": [
+  "C0-C5",
+  "G2",
+  "dispatch",
+  "BV->P",
+  "#102",
+  "#120",
+  "#126",
+  "#131",
+  "#133",
+  "human peer review"
+ ],
+ "issue": 155,
+ "parent_pr154_head": "309dd5061f3e6f7a94e6d0a9aec070429a8e705f",
+ "pr_draft": 156,
+ "prelock_corrected": "a9bedd00617951e0dc3a5d5c68b5f265748b0690c551bb5332bec387c263e6ad",
+ "prelock_v1_superseded": "279e408bf879e011d45af4ddb8bb21fcacde39c4f95d122a3d4eec90ca7f09eb",
+ "report_AB_byte_identical": true,
+ "report_bytes": 64657,
+ "report_sha256": "44f90fc0ccdd614c62bd8db9c492caf36ac60ad2314aa6fcfac1bfdca1240bcf",
+ "result": "L1H_LATENCY_BLACKOUT_TRANSITION_SOURCE_ENGINEERING_PASS_SCIENTIFIC_HOLD",
+ "run_id": "20261107T184500Z-spk-l1h-v0",
+ "schema": "spk-l1h-latency-blackout-witness/v0",
+ "tamper_veto": "L1H_VETO:REPORT_REEXECUTION_MISMATCH",
+ "task_science": "TRANSITION_UTILITY measured only (paired_diffs per bucket in report); 96 transitions (>=10, not auto-INCONCLUSIVE); prev-label 19 and prev-light 18 errors/1536 remain strong baselines; latency degrades (slow_bv worse, CI>0 for pair (11,12)); no global accuracy claim",
+ "tested_files": {
+  "docs/spk-l1h-adversarial-registry-v0.md": "da739b7774bfd4053fc115c61dd0bd6c4a4cdecbdfb6717929ece40b21817482",
+  "spk_native_learning_v2/latency_blackout_adapter_v2e.py": "a4c1fa0b83689849ad508e8bb3f02de8e1df901fd0e3900ee50519c51811ebbb",
+  "tests/test_spk_l1h_latency_blackout_transitions_v0.py": "9ac7fdc82495b00149c0e18d3f06b2c6ffd1e8126293b0586ae8898ef6b87016",
+  "workbench/spk_l1h_latency_blackout_transitions_v0.py": "b6f0f212475f218bd71430d1e40cc7037461d3f632e2b6f84adf0528dd6a7fd0"
+ },
+ "timestamp_utc_observed": "2026-11-07T18:46:56Z",
+ "v2b_v2c_v2d_unchanged": true,
+ "verify_process": "L1H_REPORT_VERIFIED_SCIENTIFIC_HOLD"
+}
