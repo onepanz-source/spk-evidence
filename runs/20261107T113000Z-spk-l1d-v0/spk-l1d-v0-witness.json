@@ -1,0 +1,79 @@
+{
+ "authority_flags": {
+  "NO_BV_TO_P": true,
+  "NO_EXTERNAL_DISPATCH": true,
+  "NO_G2": true,
+  "NO_OWNER_C0_C5": true,
+  "P_writes": 0,
+  "ground_truth_pixels_read_this_task": false,
+  "historical_evidence_overwritten": false,
+  "original_24t_P_writes": 0,
+  "original_BV_to_original_P_authorized": false,
+  "release_certified": false,
+  "research_v1_private_P_revisions_allowed": true,
+  "reserved_sequences_read": false,
+  "scientific_authority": "HOLD",
+  "uci_holdout_read": false
+ },
+ "branch": "research/spk-l1d-event-conditioned-neuron-teacher-feedback-v0",
+ "commit_local": "d34ec24",
+ "commit_remote": "3b6cc98fa304e3673ee9c980183b5e4623b6dcf1",
+ "counts": {
+  "control_arms_zero_grants": 135,
+  "genuine_preexisting_source_vetos": 24,
+  "l1d_owned_integrity_vetos": 9,
+  "main_v1_runs": 180,
+  "min_o2_assessments": 9,
+  "min_o2_causal": 2,
+  "negative_v1_runs": 24,
+  "o2_causal_negative_grant_change_cases": 10,
+  "o2_matched_assessments": 60,
+  "pe_anchors": 9,
+  "probe_receipts": 33
+ },
+ "decision": "HOLD",
+ "issue": 147,
+ "limits": [
+  "No modification of frozen Core/Network/Compiler/Architecture/G1/C2/24t or spk_native_learning_v1; no merge.",
+  "No GT pixels, no reserved DSEC sequences, no UCI holdout reads this task.",
+  "Teacher labels synthetic HOST ingress events; teacher_external_identity_authenticated=false; teaching_origin_independent=false.",
+  "Original runtime P_writes=0; original_BV_to_original_P_authorized=false; research-V1 private P revisions only.",
+  "HOLD preserved: C0-C5, G2, dispatch, BV->P, #102, #120, #126, #131, #133, human peer review."
+ ],
+ "parent_evidence_immutable": {
+  "L1A": "9c00d668e678684fe984f7306f72dccb364defc98db89b5028c10ca3bca0fc97",
+  "L1B_v0": "e11ee5d093740c8a1ddaeeb0c29d156310859ca205fee8e1ede855209ddb2ac3",
+  "L1B_v0r": "2778c11fe286b1d84585cc6aed71dbc5e8c7090e64bb84a4944ef4382cbdcabb",
+  "L1C": "4e2486b2045a0d4b5b094f54c50d28b8261ca22c78e97071913b2e6b2b1757de"
+ },
+ "parent_head": "5a5bc43c61667fd83326c54b54c58724f06fea96",
+ "pe_anchors": 9,
+ "pr_draft": 148,
+ "report_AB_byte_identical": true,
+ "report_sha256": "e14774b1fd1c17067f2cf924b8b00b769cf04bb2c56731c93039018a0a2af0ee",
+ "result": "L1D_EVENT_CONDITIONED_NEURON_ASSESSMENT_AND_CAUSAL_RESEARCH_P_ADAPTATION_ENGINEERING_PASS_SCIENTIFIC_HOLD",
+ "run_id": "20261107T113000Z-spk-l1d-v0",
+ "schema": "spk-l1d-event-conditioned-teacher-witness/v0",
+ "tamper_veto": "L1D_VETO:REPORT_REEXECUTION_MISMATCH",
+ "teacher_flags": {
+  "teacher_external_identity_authenticated": false,
+  "teacher_labels_synthetic_public": true,
+  "teaching_origin_independent": false
+ },
+ "tested_files": {
+  "docs/spk-l1d-teacher-input-adversarial-registry-v0.md": {
+   "git_blob": "f4da89288c8cc23585d42297219e13bf6ab88aab",
+   "sha256": "4243f75b7543c7ca3a3325e562b34ec0a9d7870ab30a2edb3f026aa95704c7d2"
+  },
+  "tests/test_spk_l1d_teacher_event_feedback_v0.py": {
+   "git_blob": "87d36bf7981048b82109d3a58d7c91922a003496",
+   "sha256": "3aea78b72db2c439561f0932cc496839c1c6b4889d56b0fb6b0e2f1bf9ca24fc"
+  },
+  "workbench/spk_l1d_teacher_event_feedback_v0.py": {
+   "git_blob": "0bcdad419fd14edcaafff83c4a4b3d6fcd50a4e9",
+   "sha256": "8e79aab8875d2973e6ff56d2d09bca5dc8b5fd07fff68b83b773b81924875b8c"
+  }
+ },
+ "timestamp_utc": "2026-11-07T11:30:00Z",
+ "verify_process": "L1D_REPORT_VERIFIED_SCIENTIFIC_HOLD"
+}
