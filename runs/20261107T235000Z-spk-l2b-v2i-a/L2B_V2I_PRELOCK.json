@@ -1,0 +1,23 @@
+{
+ "P_writes_original": 0,
+ "ciat_audit_comment": 6714631731,
+ "files_sha256": {
+  "docs/spk-l2b-v2i-same-origin-join-erratum-v0.md": "519470599b42fa1d934df99e0a17d8650f946d36f1ff64511a58c9d025b64776",
+  "spk_native_learning_v2/teacher_forward_alignment_v2i.py": "e445aecad94173ca522f8f0c6bf753bcdab3c2d380ad87a3f8ed8afbc93f3513",
+  "tests/test_spk_l2b_v2i_same_origin_join_v0.py": "add682ee320563161ea03ff86fca426cbdaa292aa60c21d9c94acf890b15e766",
+  "workbench/spk_l2b_v2i_same_origin_join_v0.py": "b8cd6ae1aa26323b520ec542de8d503d0ec4caacae76e6746febe560b4c5590e"
+ },
+ "fixes": [
+  "H1: forward origin_row propagated C->B->A; A verdict requires forward origin == teacher origin else MISPAIRED_FORWARD_TEACHER veto; declared forward alignment C->B=1 (original) + B->A=21 for +22 / 1 for +2",
+  "H2: origin_hash recomputed sha256(row:<row_id>) and bound at admission; forged 64-hex rejected",
+  "A32=[3,30] POSITIVE no bright grant (CIAT counterexample); last row A172 assessed same-origin"
+ ],
+ "hold": true,
+ "issue": 159,
+ "lock_sha256": "d99ea3c57eca167f82232b8ce7538fea2e9f96b87f75abdb136b625db6facac3",
+ "parent_pr160_head": "2575d21b31dbb173a343a1c58cd8d1e3804e7a1d",
+ "phase": "A corrective synthetic-only",
+ "phase_B_gate": "CIAT acceptance of this corrective + SECOND lock before any UCI357 label",
+ "protocol": "L2B_V2I_FORWARD_TEACHER_SAME_ORIGIN_PRELOCK",
+ "run_id": "20261107T235000Z-spk-l2b-v2i-a"
+}
