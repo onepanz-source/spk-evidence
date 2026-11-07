@@ -1,0 +1,50 @@
+{
+ "P_writes": 0,
+ "arms": [
+  "full_now(+2)",
+  "full_late(+22, attempted via unchanged execute_v2b -> source-rejected EVENT_TICK_ORDER, recorded not faked)",
+  "sparse_now(25% i%4==0, +2)",
+  "sparse_late(+22)",
+  "none(zero teacher, BV on, zero grants)",
+  "inverted_now"
+ ],
+ "ciat_audit_comment": 6714086213,
+ "files_sha256": {
+  "docs/spk-l2a-v0s-teacher-history-receipt-erratum-v0s.md": "eab251029b12e2408cb9c58fbd2942695162a3f1a287aac10a829da1b8b94bb2",
+  "tests/test_spk_l2a_v0s_teacher_history_receipt_custody_v0s.py": "f41d5fb4b5eb2b6e0a22b5b87c33f85e512dff9a8f1f5e1c1ef682bc04306c1a",
+  "workbench/spk_l2a_v0s_teacher_history_receipt_custody_v0s.py": "1fea077aaf4d8f4cef41ffab700d742468939295862b75042ae5000c59b5cccf"
+ },
+ "fixes": [
+  "F4d monotonic global-tick baseline g(i)=10+20*i, arrival<g(i) strictly, reset only at segment boundary; full_now==prev_label==16 enforced; synthetic 8-row leak witness 1/8",
+  "F4e full per-event receipt set published in sharded detail (4608 receipts) with row CSV-line SHA + cross-validation vs case.events, sparse mask, no dup/lookahead"
+ ],
+ "hold": true,
+ "issue": 157,
+ "lock_sha256": "edbaa68dd71bf77e2a4f45a7594d08f2bc8f0d14f10414ddb537f6c2d6da0970",
+ "parent_pr158_head": "12e5d93601f70e2720f0c9ba5281624a60dc9663",
+ "prior_immutable": {
+  "v0_prelock": "499dfc65aaedf9bd46b270c67c6eef76543debf37f7b3c96a0301392635677c6",
+  "v0_prelock_v2": "94eb279eb19bb1744e446d697eba50234521cdb9c0ddc373a3acd602363dda2d",
+  "v0_report": "4fcc97db4273ce7b7fdb4b93913b20e7113b90147d703888ce62dad9c7a2a09e",
+  "v0r_lock": "8137e9cacfddec6b0e73275c28324ed25f5e9b41d23320c7e79ea46010cc6bcc",
+  "v0r_report": "237c790e94d28db59a1c5ec6f90063cd2dc19f7eeb3b2d659df74615071f025b"
+ },
+ "probes": {
+  "n": 44,
+  "original_32_plus_E01_E08_plus_F01_F04": true,
+  "source_bound_min": 24
+ },
+ "protocol": "L2A_V0S_TEACHER_HISTORY_AND_RECEIPT_CUSTODY_LOCK",
+ "run_id": "20261107T224500Z-spk-l2a-v0s",
+ "segments": {
+  "n": 8,
+  "rows": 128,
+  "source_file": "datatraining.txt N=8143",
+  "start_j": "floor(j*(8143-128)/7)",
+  "unique_rows": 1024
+ },
+ "uci357": {
+  "datatraining": "b2c4d0ce2b9e4e453c476f7125ef31aeec2d1f5c7f5572d0e80de3df6521ab56",
+  "zip": "4ae3f46aa98eedff564a9f6924d1635173e2fd2c816004342a9be93076d3a81a"
+ }
+}
