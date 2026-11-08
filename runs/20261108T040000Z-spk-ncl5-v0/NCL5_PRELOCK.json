@@ -1,0 +1,26 @@
+{
+ "P_writes_original": 0,
+ "ciat_audit_comment": 6716791723,
+ "erratum": "gate file import-only fix (Ncl2Veto import for clean tamper exit) after first prelock; report bytes unchanged (verified A==A2); re-issued BEFORE evidence publication",
+ "files_sha256": {
+  "spk_native_causal_learning_ncl5/__init__.py": "6b384c4ef573718981f7d4ef478da100cedf2da739328056f28b82b728ca1929",
+  "spk_native_causal_learning_ncl5/envelope_v1.py": "4bbe81359a25c9323596236ad53f0c94c17d72a755e480e009ac06310b3f55fc",
+  "spk_native_causal_learning_ncl5/node_v2.py": "c3b7c47f08c3fa39dc6caba1b736ed2c99ca4f1cb304a18fe38469a4ff3fd2cc",
+  "tests/test_spk_ncl5_positional_free_gate_v0.py": "d48d6820230980a5ffa4495bc8030a907c0fde259ad60c30e642677f49b68ba8",
+  "workbench/spk_ncl5_positional_free_gate_v0.py": "616c9ee32d1cfe3ce48cc4d4e6133e4f1adf3beacd4092938b5de97210c6b560"
+ },
+ "fixes": [
+  "H1: teacher events from public output port envelope ids only (no positional index)",
+  "H2: envelope carries source-owned bank; credit uses env.bank",
+  "H3: post-grant C emission recorded/compared",
+  "H4: per-channel envelope pairing",
+  "real consumer VETOs R01/R02; controls C01/C02"
+ ],
+ "hold": true,
+ "issue": 165,
+ "lock_sha256": "d2709e0b5cb759ceddee0e330549743f1c0f2a92cc4ca56f3037f2f78f3daa5a",
+ "no_uci_data": true,
+ "parent_commit": "0faf69ad2a3d82b3b9840700cdc90ae55fc491b2 (PR168)",
+ "protocol": "NCL5_POSITIONAL_FREE_PRELOCK",
+ "run_id": "20261108T040000Z-spk-ncl5-v0"
+}
