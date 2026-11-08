@@ -1,0 +1,34 @@
+{
+ "P_writes_original": 0,
+ "candidate": "(i) A-local node-owned causal trace (domain T) + RECALL into PE batch; original _compute_local and 63-op A truth table unchanged; no transport shim",
+ "files_sha256": {
+  "docs/spk-ncl0-architecture-rfc-v0.md": "9f2543d6b15479454d3c97e9379fdf45b80689ecfdd4c093508c0e30914dc8f2",
+  "spk_native_causal_learning_ncl0/__init__.py": "bbebbe2f365adec542a2636f2489c5bffbbcdf7e5df05a55149e0fe54a55a287",
+  "spk_native_causal_learning_ncl0/trace_memory_v0.py": "0d63c92759257d8595b4226f8da6be6ff37fe4d3f020ed101a7563e988f241b4",
+  "tests/test_spk_ncl0_falsification_gate_v0.py": "5cbeaa47d729055aec21ef28bd5d51e2c3f576290c19808db34aa823ebca4741",
+  "workbench/spk_ncl0_falsification_gate_v0.py": "7342dc0ae0517bc47a3e9b06f1e2ab767e6ef7c6ddbadfa18be3d0125f57b42c"
+ },
+ "fixture": {
+  "C_ticks": [
+   10,
+   30,
+   50,
+   70
+  ],
+  "expected": "A32 PE [3,30]->POSITIVE no grant; A52 [4,30]->NEGATIVE; BV A->B->C origin r1; dark P 12->15 at ~t54; C t70 outputs 15",
+  "forward": "original C->B->A delay 1+1 (A receives r0 at 12, r1 at 32)",
+  "teachers": {
+   "r0": "A32 (+22 after C row0, +20 after forward consumed)",
+   "r1": "A52"
+  }
+ },
+ "hold": true,
+ "issue": 161,
+ "lock_sha256": "728fafddcdae4d0444f7f4af11ac7084c76ad10c755d30ffd3193e4d7d702365",
+ "negative_matrix": "N01 forged origin RECALL_MISS; N02 duplicate TRACE_ALREADY_CONSUMED; N03 TTL expired; N04 deterministic overflow; N05 stale P version; N06 epoch replay miss; N07 BV-off control; N08 wrong-BV row",
+ "no_uci_data": true,
+ "parent_pr162_head": "ddcff52aa0fda8723dc7b960b6d4ba25f0e0c0bb",
+ "protocol": "NCL0_PRELOCK",
+ "run_id": "20261108T004500Z-spk-ncl0-v0",
+ "stage": "B original-timing falsification (synthetic)"
+}
