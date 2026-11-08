@@ -1,0 +1,38 @@
+{
+ "P_writes_original": 0,
+ "anti_onion": "exactly ONE corrective for G1/G2/G3; if same gaps recur -> NCL1B_..._BLOCKED_HOLD",
+ "ciat_audit_comment": 6715367774,
+ "files_sha256": {
+  "docs/spk-ncl1b-source-owned-contract-v0.md": "e3c13cf017db1fad74a5d3650686edcb886456ad2931c5ec961ddac9e34a88c0",
+  "spk_native_causal_learning_ncl1b/__init__.py": "c80c1d50e4143b80e2ecf6468fc0227025fda0a9df0de4a681d05304a0b56919",
+  "spk_native_causal_learning_ncl1b/contract_v0.py": "95485ea162d0a7468e33b2c8d0563b6ae946103ea2f5ed54de98e36fb69c4877",
+  "tests/test_spk_ncl1b_contract_gate_v0.py": "4eadb65336f261bfa0464658a5705c894e98385a8a2b4412c85af03f94346ce6",
+  "workbench/spk_ncl1b_contract_gate_v0.py": "caaab5da0a233deb4316464df9bfeffac96060d2bfcc52accad05acc4b0e6fb9"
+ },
+ "fixes": [
+  "G1: C mints EmissionReceipt(causal_id, p_version) at actual emission commit, carried C->B->A and BV->C grant validator (stale -> STALE_P_VERSION_DENIAL); row3 C70 v1 + late teacher A92; stale-inflight B05",
+  "G2: AtomicTraceMemory (denied store = no mutation), inclusive TTL (19 reject, 20/21 admit), explicit evict only",
+  "G3: admit_research_program (fixed trace-op order/operands + T quota + frozen _admit on original subprogram); exact class+code oracle with meta self-tests"
+ ],
+ "fixture": {
+  "C_ticks": [
+   10,
+   30,
+   50,
+   70
+  ],
+  "expected": "A32 POSITIVE recalled[3] no grant; A52 NEGATIVE recalled[4] dark 12->15 @54; C70 minted v1; A92 recalled[6] grant @94 minted v1",
+  "teachers": {
+   "r0": "A32",
+   "r1": "A52",
+   "r3": "A92"
+  }
+ },
+ "hold": true,
+ "issue": 161,
+ "lock_sha256": "783b936c36c02f2e47551ba1c5888499a282db138a7d5a86091920aa8d61b7af",
+ "no_uci_data": true,
+ "parent_commit": "811eaa30c09407aea122a97fa924e02e71cf3263 (PR163 NCL1 accepted scoped)",
+ "protocol": "NCL1B_SOURCE_OWNED_CAUSAL_CONTRACT_PRELOCK",
+ "run_id": "20261108T020000Z-spk-ncl1b-v0"
+}
