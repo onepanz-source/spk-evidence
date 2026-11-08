@@ -1,0 +1,52 @@
+TAP version 13
+# Subtest: structured chain found by exact public id, six steps
+ok 1 - structured chain found by exact public id, six steps
+  ---
+  duration_ms: 0.98904
+  type: 'test'
+  ...
+# Subtest: exact id filter selects only events carrying that id (no substring)
+ok 2 - exact id filter selects only events carrying that id (no substring)
+  ---
+  duration_ms: 0.181017
+  type: 'test'
+  ...
+# Subtest: eventIds covers C envs, B binding, BV, grant
+ok 3 - eventIds covers C envs, B binding, BV, grant
+  ---
+  duration_ms: 0.867784
+  type: 'test'
+  ...
+# Subtest: audit summary distinguishes type vs mapping mismatch
+ok 4 - audit summary distinguishes type vs mapping mismatch
+  ---
+  duration_ms: 0.185765
+  type: 'test'
+  ...
+# Subtest: provenance shows CLI trust + browser display-only note
+ok 5 - provenance shows CLI trust + browser display-only note
+  ---
+  duration_ms: 0.127748
+  type: 'test'
+  ...
+# Subtest: loadNormalizedText validates schema, events, chains
+ok 6 - loadNormalizedText validates schema, events, chains
+  ---
+  duration_ms: 0.379867
+  type: 'test'
+  ...
+# Subtest: render escapes hostile JSON as text only
+ok 7 - render escapes hostile JSON as text only
+  ---
+  duration_ms: 0.575961
+  type: 'test'
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 102.722125
