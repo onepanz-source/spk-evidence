@@ -1,0 +1,59 @@
+{
+ "expected_negatives": [
+  "cross-pair swap detected (-0.125 vs +0.125)",
+  "segment relabel changes known result",
+  "historical v0 F1 verbatim AST repro NEGATIVE control",
+  "prelock validator exact rejections",
+  "live API fail-closed"
+ ],
+ "expected_synthetic_paired_counts": {
+  "(11,12)/full_now": "1/8",
+  "(11,12)/none": "4/8",
+  "(11,12)/sparse_now": "3/8",
+  "(12,11)/full_now": "3/8",
+  "(12,11)/none": "5/8",
+  "(12,11)/sparse_now": "2/8",
+  "diffs_vs_own_full_now": {
+   "(11,12)/none": 0.375,
+   "(11,12)/sparse_now": 0.25,
+   "(12,11)/none": 0.25,
+   "(12,11)/sparse_now": -0.125
+  }
+ },
+ "issue": 186,
+ "issue_comments": {
+  "1": "6727165475",
+  "186": "6727164097"
+ },
+ "null_arms": {
+  "late+22_t92": "SOURCE_BLOCKED_NA via real pinned v2a.validate_schedule EVENT_TICK_ORDER",
+  "none": "NONE_CONTROL_SOURCE_NOT_EXECUTED_HOLD"
+ },
+ "parent_main_head": "787c8fbed87c1e2e4b703e985f68ae53c81c8444",
+ "pr_head": "de273f9584c8e6f221569cd0e737b905caa54886",
+ "pr_number": 187,
+ "protocol": "SCI_MQ0_SOURCE_AND_METRIC_PRELOCK",
+ "published_at": "2026-11-08T21:08:47Z",
+ "read_only_pinned_blob_sha1": {
+  "pr158_head": "c43b1330f9db3673dc4961691a43ca378399a903",
+  "spk_native_learning_v1/generalized_case_v1t.py": "dd3909ca7cf6d352ca944086edb267da6e7d659c",
+  "spk_native_learning_v2/feature_conditioned_scheduler_v2a.py": "687b76137543ede571be83cfbd0c7e46e4d7c4c4",
+  "spk_native_learning_v2/feature_conditioned_transport_v2b.py": "76ab8f68587b0fbe472fcd3ddc70b4cb34134978",
+  "workbench/spk_l1h_v0r_transition_custody_v0.py": "a1ed48b5eb523eeea916fdda8d25b1d10eda2c6f",
+  "workbench/spk_l2a_teacher_timing_provenance_v0.py": "f65476f9ff624f7d8eb77b2a7a37b51e303c84fb",
+  "workbench/spk_l2a_v0r_metric_control_custody_v0r.py": "7a3915b3b958e12c8d180d2b0b5db231bdbb5709",
+  "workbench/spk_l2a_v0s_teacher_history_receipt_custody_v0s.py": "c6d6dff5c183571071bad418852755de23072624"
+ },
+ "run_id": "20261108T210847Z-spk-sci-mq0-v0",
+ "source_files_sha256": {
+  "docs/spk-sci-mq0-measurement-gate-v0.md": "c0848237fd4a4d03343ab5afaa98e0ac6250eecef2557c421a49223d9327c20a",
+  "docs/spk-sci-p2-prereg-decision-v0.md": "2fcd87abf022658c20cbf9d12c63ae2e02b6eb3b5e6a5e116585f25bc8f7d618",
+  "research/spk_sci_mq0_assumptions_v0.json": "00c7a4017a5e48b0e310048cb0bb690a9120d4f0b6e4b1af5e9cd1a2aac8b1d4",
+  "research/spk_sci_mq0_controls_v0.py": "089aa67a6c0f1eebeb74af0c15b9ef209cbdd67363626ef16a770edcf8b0036e",
+  "research/spk_sci_mq0_gate_v0.py": "f3e5d0a26ad32b20f71dc32cc584aa2c4569eadb6fded0bcc85b38c02603401c",
+  "research/spk_sci_mq0_paired_oracle_v0.py": "ec05e17cc08c97fcf343e0b997a9a6e5bbcdb4ea51714dc6f6baced480e7464d",
+  "research/spk_sci_mq0_prelock_validator_v0.py": "0b927e7989bebc8e44600fa8a9afaa88ed2d5ebdc0cb2dd651658f1853d90d35",
+  "tests/test_spk_sci_mq0_v0.py": "3a8d19988c5d3e7da6d560845acf4841f971310a7951c225db1659139bf2bcd8"
+ },
+ "verdict_target": "SCI_MQ0_MEASUREMENT_HARNESS_SCOPED_PASS_SCIENTIFIC_HOLD"
+}

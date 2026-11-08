@@ -1,0 +1,17 @@
+{
+ "P_writes": 0,
+ "canonical_bytes": 6016,
+ "canonical_sha256": "7f96554f8852962c775065e47da34ba03948b33d4ea66c1e601cfa80e27a9a6f",
+ "decision": "HOLD",
+ "issue": 186,
+ "merges": 0,
+ "native_tests_executed": 0,
+ "parent_main_head": "787c8fbed87c1e2e4b703e985f68ae53c81c8444",
+ "pr_head": "de273f9584c8e6f221569cd0e737b905caa54886",
+ "pr_number": 187,
+ "pytest": "16 passed in 0.30s",
+ "run_id": "20261108T210847Z-spk-sci-mq0-v0",
+ "tamper": "byte-flip at 2665 detected: 7f96554f... -> 35349281...",
+ "verdict": "SCI_MQ0_MEASUREMENT_HARNESS_SCOPED_PASS_SCIENTIFIC_HOLD",
+ "verify": "FULL_STATE_MATCH_FINITE (run1=run2=fresh 3rd process)"
+}
