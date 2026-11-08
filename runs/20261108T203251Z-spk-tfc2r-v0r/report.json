@@ -1,0 +1,18 @@
+{
+ "P_writes": 0,
+ "decision": "HOLD",
+ "issue": 184,
+ "merges": 0,
+ "native_tests_executed": 0,
+ "parent_main_head": "787c8fbed87c1e2e4b703e985f68ae53c81c8444",
+ "pr_head": "ab98d19b59afc9c601fbbcf0d6eb454645337067",
+ "pr_number": 185,
+ "pytest": "24 passed in 0.16s",
+ "run1_sha256": "2cdd1e8abea1247d46df8cdc9bc842403237eeb0009ea26f36fa94ae1334db45",
+ "run2_sha256": "2cdd1e8abea1247d46df8cdc9bc842403237eeb0009ea26f36fa94ae1334db45",
+ "run_id": "20261108T203251Z-spk-tfc2r-v0r",
+ "scenario": "P1(11==11 POSITIVE no_change) + P2(11!=12 NEGATIVE rotate commit p_version=1) + P3(12==12 POSITIVE after rotate) + KILLER CONTRADICTORY_VALENCE with bit-for-bit rollback + negatives NO_PRIOR_A_JUDGMENT/NO_PENDING_PROPOSAL/CREDENTIAL_INVALID/TRANSPORT_MUTATION via single Model.apply",
+ "tamper": "byte-flip at 1932 detected: 2cdd1e8a... -> 30ca2f25...",
+ "verdict": "SCI_TFC2R_CONTRACT_CONFORMANCE_SCOPED_PASS_SCIENTIFIC_HOLD",
+ "verify": "FULL_STATE_MATCH_FINITE (3rd fresh process, events+full snapshot identical)"
+}

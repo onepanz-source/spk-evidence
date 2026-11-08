@@ -1,0 +1,513 @@
+{
+ "assertions": [
+  "P1 POSITIVE no_change",
+  "P2 NEGATIVE rotate commit p_version=1",
+  "P3 POSITIVE after rotate",
+  "KILLER CONTRADICTORY_VALENCE + bit-for-bit rollback",
+  "NEG NO_PRIOR_A_JUDGMENT / NO_PENDING_PROPOSAL / CREDENTIAL_INVALID / TRANSPORT_MUTATION"
+ ],
+ "events": [
+  {
+   "actor": "C",
+   "kind": "PredictionEmission",
+   "out": {
+    "envelope": {
+     "bank": "dark",
+     "commitment": "07563fc1ebb3fdcddff91b7380a1d8a013299fb8b8a4f09b8875ee26f591329c",
+     "emit_tick": 10,
+     "kind": "PredictionEmission",
+     "p_version": 0,
+     "pclass": 11,
+     "prediction_id": "C/e0/s1"
+    },
+    "prediction_id": "C/e0/s1"
+   },
+   "payload": {
+    "bank": "dark",
+    "p_version": 0,
+    "pclass": 11
+   },
+   "tick": 10
+  },
+  {
+   "actor": "host",
+   "kind": "ForwardEmission",
+   "out": {
+    "delivered": "C/e0/s1"
+   },
+   "payload": {
+    "envelope": {
+     "bank": "dark",
+     "commitment": "07563fc1ebb3fdcddff91b7380a1d8a013299fb8b8a4f09b8875ee26f591329c",
+     "emit_tick": 10,
+     "kind": "PredictionEmission",
+     "p_version": 0,
+     "pclass": 11,
+     "prediction_id": "C/e0/s1"
+    }
+   },
+   "tick": 11
+  },
+  {
+   "actor": "teacher",
+   "kind": "TargetObservation",
+   "out": {
+    "observation_id": "obs-10"
+   },
+   "payload": {
+    "observation_id": "obs-10",
+    "target_class": 11
+   },
+   "tick": 12
+  },
+  {
+   "actor": "A",
+   "kind": "StoreJoin",
+   "out": {
+    "joined": "C/e0/s1"
+   },
+   "payload": {
+    "commitment": "07563fc1ebb3fdcddff91b7380a1d8a013299fb8b8a4f09b8875ee26f591329c",
+    "observation_id": "obs-10",
+    "prediction_id": "C/e0/s1"
+   },
+   "tick": 13
+  },
+  {
+   "actor": "A",
+   "kind": "AJudgment",
+   "out": {
+    "digest": "6d59b1325af9b89156a68c2aa4b198118829853a3fa93c6102eb617301fcb61e",
+    "judgment_id": "A/j1",
+    "judgment_tick": 14,
+    "observation_id": "obs-10",
+    "prediction_id": "C/e0/s1",
+    "valence": "POSITIVE"
+   },
+   "payload": {
+    "prediction_id": "C/e0/s1"
+   },
+   "tick": 14
+  },
+  {
+   "actor": "host",
+   "kind": "ForwardJudgment",
+   "out": {
+    "relayed": "A/j1"
+   },
+   "payload": {
+    "digest": "6d59b1325af9b89156a68c2aa4b198118829853a3fa93c6102eb617301fcb61e",
+    "judgment_id": "A/j1"
+   },
+   "tick": 15
+  },
+  {
+   "actor": "C",
+   "kind": "Credit",
+   "out": {
+    "credited": "C/e0/s1",
+    "judgment_id": "A/j1"
+   },
+   "payload": {
+    "digest": "6d59b1325af9b89156a68c2aa4b198118829853a3fa93c6102eb617301fcb61e",
+    "epoch": 0,
+    "judgment_id": "A/j1",
+    "p_version": 0
+   },
+   "tick": 16
+  },
+  {
+   "actor": "C",
+   "kind": "Decide",
+   "out": {
+    "proposal": {
+     "bank": "dark",
+     "choice_from": 11,
+     "choice_to": 11,
+     "no_change": true,
+     "p_from": 0,
+     "prediction_id": "C/e0/s1"
+    }
+   },
+   "payload": {
+    "prediction_id": "C/e0/s1"
+   },
+   "tick": 17
+  },
+  {
+   "actor": "C",
+   "kind": "PredictionEmission",
+   "out": {
+    "envelope": {
+     "bank": "dark",
+     "commitment": "f3384d6ce73d3a80ea3344494c2ff16c089e888c54ff85edd6fcb2df048f52af",
+     "emit_tick": 20,
+     "kind": "PredictionEmission",
+     "p_version": 0,
+     "pclass": 11,
+     "prediction_id": "C/e0/s2"
+    },
+    "prediction_id": "C/e0/s2"
+   },
+   "payload": {
+    "bank": "dark",
+    "p_version": 0,
+    "pclass": 11
+   },
+   "tick": 20
+  },
+  {
+   "actor": "host",
+   "kind": "ForwardEmission",
+   "out": {
+    "delivered": "C/e0/s2"
+   },
+   "payload": {
+    "envelope": {
+     "bank": "dark",
+     "commitment": "f3384d6ce73d3a80ea3344494c2ff16c089e888c54ff85edd6fcb2df048f52af",
+     "emit_tick": 20,
+     "kind": "PredictionEmission",
+     "p_version": 0,
+     "pclass": 11,
+     "prediction_id": "C/e0/s2"
+    }
+   },
+   "tick": 21
+  },
+  {
+   "actor": "teacher",
+   "kind": "TargetObservation",
+   "out": {
+    "observation_id": "obs-20"
+   },
+   "payload": {
+    "observation_id": "obs-20",
+    "target_class": 12
+   },
+   "tick": 22
+  },
+  {
+   "actor": "A",
+   "kind": "StoreJoin",
+   "out": {
+    "joined": "C/e0/s2"
+   },
+   "payload": {
+    "commitment": "f3384d6ce73d3a80ea3344494c2ff16c089e888c54ff85edd6fcb2df048f52af",
+    "observation_id": "obs-20",
+    "prediction_id": "C/e0/s2"
+   },
+   "tick": 23
+  },
+  {
+   "actor": "A",
+   "kind": "AJudgment",
+   "out": {
+    "digest": "cf2a7b38ad670376a6c0209967fa8632680c0e9e4f6e3bf8a83277c4934f1cb0",
+    "judgment_id": "A/j2",
+    "judgment_tick": 24,
+    "observation_id": "obs-20",
+    "prediction_id": "C/e0/s2",
+    "valence": "NEGATIVE"
+   },
+   "payload": {
+    "prediction_id": "C/e0/s2"
+   },
+   "tick": 24
+  },
+  {
+   "actor": "host",
+   "kind": "ForwardJudgment",
+   "out": {
+    "relayed": "A/j2"
+   },
+   "payload": {
+    "digest": "cf2a7b38ad670376a6c0209967fa8632680c0e9e4f6e3bf8a83277c4934f1cb0",
+    "judgment_id": "A/j2"
+   },
+   "tick": 25
+  },
+  {
+   "actor": "C",
+   "kind": "Credit",
+   "out": {
+    "credited": "C/e0/s2",
+    "judgment_id": "A/j2"
+   },
+   "payload": {
+    "digest": "cf2a7b38ad670376a6c0209967fa8632680c0e9e4f6e3bf8a83277c4934f1cb0",
+    "epoch": 0,
+    "judgment_id": "A/j2",
+    "p_version": 0
+   },
+   "tick": 26
+  },
+  {
+   "actor": "C",
+   "kind": "Decide",
+   "out": {
+    "proposal": {
+     "bank": "dark",
+     "choice_from": 11,
+     "choice_to": 12,
+     "no_change": false,
+     "p_from": 0,
+     "prediction_id": "C/e0/s2"
+    }
+   },
+   "payload": {
+    "prediction_id": "C/e0/s2"
+   },
+   "tick": 27
+  },
+  {
+   "actor": "C",
+   "kind": "Commit",
+   "out": {
+    "choice": 12,
+    "committed": "dark",
+    "p_version": 1
+   },
+   "payload": {
+    "choice_to": 12,
+    "p_from": 0,
+    "prediction_id": "C/e0/s2"
+   },
+   "tick": 28
+  },
+  {
+   "actor": "C",
+   "kind": "PredictionEmission",
+   "out": {
+    "envelope": {
+     "bank": "dark",
+     "commitment": "fcd7bfe10e592ef19b0ab71f85421f78864a8e330c3256e59625c1025ec9e77b",
+     "emit_tick": 30,
+     "kind": "PredictionEmission",
+     "p_version": 1,
+     "pclass": 12,
+     "prediction_id": "C/e0/s3"
+    },
+    "prediction_id": "C/e0/s3"
+   },
+   "payload": {
+    "bank": "dark",
+    "p_version": 1,
+    "pclass": 12
+   },
+   "tick": 30
+  },
+  {
+   "actor": "host",
+   "kind": "ForwardEmission",
+   "out": {
+    "delivered": "C/e0/s3"
+   },
+   "payload": {
+    "envelope": {
+     "bank": "dark",
+     "commitment": "fcd7bfe10e592ef19b0ab71f85421f78864a8e330c3256e59625c1025ec9e77b",
+     "emit_tick": 30,
+     "kind": "PredictionEmission",
+     "p_version": 1,
+     "pclass": 12,
+     "prediction_id": "C/e0/s3"
+    }
+   },
+   "tick": 31
+  },
+  {
+   "actor": "teacher",
+   "kind": "TargetObservation",
+   "out": {
+    "observation_id": "obs-30"
+   },
+   "payload": {
+    "observation_id": "obs-30",
+    "target_class": 12
+   },
+   "tick": 32
+  },
+  {
+   "actor": "A",
+   "kind": "StoreJoin",
+   "out": {
+    "joined": "C/e0/s3"
+   },
+   "payload": {
+    "commitment": "fcd7bfe10e592ef19b0ab71f85421f78864a8e330c3256e59625c1025ec9e77b",
+    "observation_id": "obs-30",
+    "prediction_id": "C/e0/s3"
+   },
+   "tick": 33
+  },
+  {
+   "actor": "A",
+   "kind": "AJudgment",
+   "out": {
+    "digest": "4ca25e4559c7819e921eddd62b8a0d7cff40fe474657f7065cd56dd8539b1313",
+    "judgment_id": "A/j3",
+    "judgment_tick": 34,
+    "observation_id": "obs-30",
+    "prediction_id": "C/e0/s3",
+    "valence": "POSITIVE"
+   },
+   "payload": {
+    "prediction_id": "C/e0/s3"
+   },
+   "tick": 34
+  },
+  {
+   "actor": "host",
+   "kind": "ForwardJudgment",
+   "out": {
+    "relayed": "A/j3"
+   },
+   "payload": {
+    "digest": "4ca25e4559c7819e921eddd62b8a0d7cff40fe474657f7065cd56dd8539b1313",
+    "judgment_id": "A/j3"
+   },
+   "tick": 35
+  },
+  {
+   "actor": "C",
+   "kind": "Credit",
+   "out": {
+    "credited": "C/e0/s3",
+    "judgment_id": "A/j3"
+   },
+   "payload": {
+    "digest": "4ca25e4559c7819e921eddd62b8a0d7cff40fe474657f7065cd56dd8539b1313",
+    "epoch": 0,
+    "judgment_id": "A/j3",
+    "p_version": 1
+   },
+   "tick": 36
+  },
+  {
+   "actor": "C",
+   "kind": "PredictionEmission",
+   "out": {
+    "prediction_id": "C/e0/s4"
+   },
+   "payload": {
+    "bank": "dark",
+    "p_version": 1,
+    "pclass": 12
+   },
+   "tick": 40
+  },
+  {
+   "actor": "host",
+   "kind": "ForwardEmission",
+   "out": {
+    "delivered": "C/e0/s4"
+   },
+   "payload": {
+    "envelope": {
+     "bank": "dark",
+     "commitment": "503db0ad0dcc12bfb38b5be1b2755c49c1dcd2d09e44c7d01bd09e5c4ea59b64",
+     "emit_tick": 40,
+     "kind": "PredictionEmission",
+     "p_version": 1,
+     "pclass": 12,
+     "prediction_id": "C/e0/s4"
+    }
+   },
+   "tick": 41
+  },
+  {
+   "actor": "teacher",
+   "kind": "TargetObservation",
+   "out": {
+    "observation_id": "obs-40"
+   },
+   "payload": {
+    "observation_id": "obs-40",
+    "target_class": 12
+   },
+   "tick": 42
+  },
+  {
+   "actor": "A",
+   "kind": "StoreJoin",
+   "out": {
+    "joined": "C/e0/s4"
+   },
+   "payload": {
+    "observation_id": "obs-40",
+    "prediction_id": "C/e0/s4"
+   },
+   "tick": 43
+  },
+  {
+   "actor": "A",
+   "kind": "AJudgment",
+   "payload": {
+    "prediction_id": "C/e0/s4",
+    "valence": "NEGATIVE"
+   },
+   "tick": 44,
+   "veto": "CONTRADICTORY_VALENCE"
+  },
+  {
+   "actor": "C",
+   "kind": "Credit",
+   "payload": {
+    "digest": "x",
+    "epoch": 0,
+    "judgment_id": "A/j99",
+    "p_version": 0
+   },
+   "tick": 50,
+   "veto": "NO_PRIOR_A_JUDGMENT"
+  },
+  {
+   "actor": "C",
+   "kind": "Commit",
+   "payload": {
+    "choice_to": 12,
+    "p_from": 1,
+    "prediction_id": "C/e0/s3"
+   },
+   "tick": 51,
+   "veto": "NO_PENDING_PROPOSAL"
+  },
+  {
+   "actor": "host",
+   "kind": "Decide",
+   "payload": {
+    "prediction_id": "C/e0/s1"
+   },
+   "tick": 52,
+   "veto": "CREDENTIAL_INVALID"
+  },
+  {
+   "actor": "C",
+   "kind": "PredictionEmission",
+   "out": {
+    "prediction_id": "C/e0/s5"
+   },
+   "payload": {
+    "bank": "dark",
+    "p_version": 1,
+    "pclass": 12
+   },
+   "tick": 60
+  },
+  {
+   "actor": "host",
+   "kind": "ForwardEmission",
+   "payload": {
+    "envelope_mutated": true
+   },
+   "tick": 61,
+   "veto": "TRANSPORT_MUTATION"
+  }
+ ],
+ "final_snapshot_canonical": "{\"a_inbox\":{\"C/e0/s1\":{\"bank\":\"dark\",\"commitment\":\"07563fc1ebb3fdcddff91b7380a1d8a013299fb8b8a4f09b8875ee26f591329c\",\"emit_tick\":10,\"kind\":\"PredictionEmission\",\"p_version\":0,\"pclass\":11,\"prediction_id\":\"C/e0/s1\"},\"C/e0/s2\":{\"bank\":\"dark\",\"commitment\":\"f3384d6ce73d3a80ea3344494c2ff16c089e888c54ff85edd6fcb2df048f52af\",\"emit_tick\":20,\"kind\":\"PredictionEmission\",\"p_version\":0,\"pclass\":11,\"prediction_id\":\"C/e0/s2\"},\"C/e0/s3\":{\"bank\":\"dark\",\"commitment\":\"fcd7bfe10e592ef19b0ab71f85421f78864a8e330c3256e59625c1025ec9e77b\",\"emit_tick\":30,\"kind\":\"PredictionEmission\",\"p_version\":1,\"pclass\":12,\"prediction_id\":\"C/e0/s3\"},\"C/e0/s4\":{\"bank\":\"dark\",\"commitment\":\"503db0ad0dcc12bfb38b5be1b2755c49c1dcd2d09e44c7d01bd09e5c4ea59b64\",\"emit_tick\":40,\"kind\":\"PredictionEmission\",\"p_version\":1,\"pclass\":12,\"prediction_id\":\"C/e0/s4\"}},\"a_judgments\":{\"A/j1\":{\"digest\":\"6d59b1325af9b89156a68c2aa4b198118829853a3fa93c6102eb617301fcb61e\",\"judgment_id\":\"A/j1\",\"judgment_tick\":14,\"observation_id\":\"obs-10\",\"prediction_id\":\"C/e0/s1\",\"valence\":\"POSITIVE\"},\"A/j2\":{\"digest\":\"cf2a7b38ad670376a6c0209967fa8632680c0e9e4f6e3bf8a83277c4934f1cb0\",\"judgment_id\":\"A/j2\",\"judgment_tick\":24,\"observation_id\":\"obs-20\",\"prediction_id\":\"C/e0/s2\",\"valence\":\"NEGATIVE\"},\"A/j3\":{\"digest\":\"4ca25e4559c7819e921eddd62b8a0d7cff40fe474657f7065cd56dd8539b1313\",\"judgment_id\":\"A/j3\",\"judgment_tick\":34,\"observation_id\":\"obs-30\",\"prediction_id\":\"C/e0/s3\",\"valence\":\"POSITIVE\"}},\"a_obs\":{\"obs-10\":{\"available_tick\":12,\"target_class\":11},\"obs-20\":{\"available_tick\":22,\"target_class\":12},\"obs-30\":{\"available_tick\":32,\"target_class\":12},\"obs-40\":{\"available_tick\":42,\"target_class\":12}},\"a_trace\":{\"C/e0/s1\":{\"available_tick\":12,\"join_tick\":13,\"observation_id\":\"obs-10\",\"pclass\":11,\"target_class\":11},\"C/e0/s2\":{\"available_tick\":22,\"join_tick\":23,\"observation_id\":\"obs-20\",\"pclass\":11,\"target_class\":12},\"C/e0/s3\":{\"available_tick\":32,\"join_tick\":33,\"observation_id\":\"obs-30\",\"pclass\":12,\"target_class\":12},\"C/e0/s4\":{\"available_tick\":42,\"join_tick\":43,\"observation_id\":\"obs-40\",\"pclass\":12,\"target_class\":12}},\"c_credits\":[\"C/e0/s1\",\"C/e0/s2\",\"C/e0/s3\"],\"c_epoch\":0,\"c_ledger\":{\"C/e0/s1\":{\"bank\":\"dark\",\"commitment\":\"07563fc1ebb3fdcddff91b7380a1d8a013299fb8b8a4f09b8875ee26f591329c\",\"emit_tick\":10,\"epoch\":0,\"p_version\":0,\"pclass\":11,\"prediction_id\":\"C/e0/s1\"},\"C/e0/s2\":{\"bank\":\"dark\",\"commitment\":\"f3384d6ce73d3a80ea3344494c2ff16c089e888c54ff85edd6fcb2df048f52af\",\"emit_tick\":20,\"epoch\":0,\"p_version\":0,\"pclass\":11,\"prediction_id\":\"C/e0/s2\"},\"C/e0/s3\":{\"bank\":\"dark\",\"commitment\":\"fcd7bfe10e592ef19b0ab71f85421f78864a8e330c3256e59625c1025ec9e77b\",\"emit_tick\":30,\"epoch\":0,\"p_version\":1,\"pclass\":12,\"prediction_id\":\"C/e0/s3\"},\"C/e0/s4\":{\"bank\":\"dark\",\"commitment\":\"503db0ad0dcc12bfb38b5be1b2755c49c1dcd2d09e44c7d01bd09e5c4ea59b64\",\"emit_tick\":40,\"epoch\":0,\"p_version\":1,\"pclass\":12,\"prediction_id\":\"C/e0/s4\"},\"C/e0/s5\":{\"bank\":\"dark\",\"commitment\":\"ba482c429d932c782c4a6d5dfc202ebdccc2eb58c53e0f199bc90cbc43227f17\",\"emit_tick\":60,\"epoch\":0,\"p_version\":1,\"pclass\":12,\"prediction_id\":\"C/e0/s5\"}},\"c_receipts\":{\"A/j1\":{\"digest\":\"6d59b1325af9b89156a68c2aa4b198118829853a3fa93c6102eb617301fcb61e\",\"judgment_id\":\"A/j1\",\"judgment_tick\":14,\"observation_id\":\"obs-10\",\"prediction_id\":\"C/e0/s1\",\"valence\":\"POSITIVE\"},\"A/j2\":{\"digest\":\"cf2a7b38ad670376a6c0209967fa8632680c0e9e4f6e3bf8a83277c4934f1cb0\",\"judgment_id\":\"A/j2\",\"judgment_tick\":24,\"observation_id\":\"obs-20\",\"prediction_id\":\"C/e0/s2\",\"valence\":\"NEGATIVE\"},\"A/j3\":{\"digest\":\"4ca25e4559c7819e921eddd62b8a0d7cff40fe474657f7065cd56dd8539b1313\",\"judgment_id\":\"A/j3\",\"judgment_tick\":34,\"observation_id\":\"obs-30\",\"prediction_id\":\"C/e0/s3\",\"valence\":\"POSITIVE\"}},\"c_seq\":5,\"clock\":60,\"ledger_cap\":64,\"p_bank\":{\"dark\":{\"choice\":12,\"version\":1}},\"pending\":{\"C/e0/s1\":{\"bank\":\"dark\",\"choice_from\":11,\"choice_to\":11,\"no_change\":true,\"p_from\":0,\"prediction_id\":\"C/e0/s1\"}},\"ttl\":32}",
+ "final_snapshot_sha256": "2cdd1e8abea1247d46df8cdc9bc842403237eeb0009ea26f36fa94ae1334db45",
+ "run": "SCI-TFC2R-v0r-deterministic-scenario",
+ "schema": "spk-sci-tfc2r-contract-model/v0r"
+}

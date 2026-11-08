@@ -1,0 +1,6 @@
+{
+ "byte_flipped_at": 1932,
+ "original_sha256": "2cdd1e8abea1247d46df8cdc9bc842403237eeb0009ea26f36fa94ae1334db45",
+ "tamper_detected": true,
+ "tampered_sha256": "30ca2f2531d366bbd61a0b5068d1d228ab52f4651e84cc16eee0315b6fde52b8"
+}
