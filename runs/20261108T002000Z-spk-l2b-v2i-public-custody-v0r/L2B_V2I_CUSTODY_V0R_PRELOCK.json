@@ -1,0 +1,21 @@
+{
+ "P_writes_original": 0,
+ "ciat_audit_comment": 6714923793,
+ "erratum": "prelock re-issued BEFORE any evidence publication because the gate file was adjusted (NEGATIVE verdict may carry an explicit denial instead of a grant) after the first comment; first comment 6714974646/6714975523 retained immutable",
+ "files_sha256": {
+  "docs/spk-l2b-v2i-public-custody-export-erratum-v0r.md": "ff369dfdd34490fae5d2ef6c3289445abb6ae06a02236f6cab9ebc0f5d40df0e",
+  "tests/test_spk_l2b_v2i_public_custody_export_v0r.py": "b837f9132444514906d2ec2d307db52ba9a212dd0b495ab635bc077d77f8b405",
+  "workbench/spk_l2b_v2i_public_custody_export_v0r.py": "f99b403f6f90020daab2d9b93ff15eaa56e326aa4c55b648d71e1ff82f004997"
+ },
+ "fixes": [
+  "B1: per-assessment causal witness exported (C choice/P versions at decision, forward/teacher origin+SHA, A PE inputs+verdict recomputed via frozen _compute_local, BV B/C ticks, grant/deny P before/after) + cumulative counts",
+  "B2: probes Q01-Q08 real mutated records through production validators"
+ ],
+ "hold": true,
+ "issue": 159,
+ "lock_sha256": "9182b71df46c459e3cff173953f06d55d83a68f1504105b9deb072b852dccf5f",
+ "mode": "evidence-only; no model/metric/threshold/data change",
+ "parent_pr160_head": "12b75e3195af17f446752671c4eb3756b7f11ec4",
+ "protocol": "L2B_V2I_PUBLIC_CUSTODY_EXPORT_V0R_PRELOCK",
+ "run_id": "20261108T002000Z-spk-l2b-v2i-public-custody-v0r"
+}
