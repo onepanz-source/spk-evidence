@@ -1,0 +1,34 @@
+{
+ "P_writes_original": 0,
+ "ciat_audit_comment": 6716126732,
+ "files_sha256": {
+  "spk_native_causal_learning_ncl4/__init__.py": "8f0a2a3b6aa30a6cc040e311041827529931cce8106dce60738ebe34a0cdb926",
+  "spk_native_causal_learning_ncl4/node_v1.py": "2734458ee5e77ef79f965b6276ac2d579f991f3637977b96322ae475ee146c92",
+  "tests/test_spk_ncl4_end_to_end_gate_v0.py": "0c67c0cc0aee5b877b2975bab64ff7c9fc88e69a0544ee712b12eabc98ce0890",
+  "workbench/spk_ncl4_end_to_end_gate_v0.py": "abcf276867bd2e016297f2ed652f0b6b5f8fe89f239175a68e6582397883473c"
+ },
+ "fixes": [
+  "teacher ids derived only from public output port (no host row/tick/id maps)",
+  "TRACE_STORE/RECALL read from instruction operands, interpreted in order, frozen _compute_local for original subprogram",
+  "NEGATIVE-only one-shot credit (POSITIVE never consumes); C program REBUILT from new banks on grant (reaches subsequent PE)",
+  "probes propagate actual consumer exceptions (R01/R02 exact), controls C01/C02 separate"
+ ],
+ "fixture": {
+  "C_ticks": [
+   10,
+   30,
+   50,
+   70
+  ],
+  "expected": "r0 POSITIVE no grant; r1/r2 NEGATIVE grants; r3 trace v1, grant v1->v2 @94, C program changed",
+  "forward_1+1": true,
+  "teachers": "+22 from public port ids"
+ },
+ "hold": true,
+ "issue": 165,
+ "lock_sha256": "8fa01b30fff90cbd5253d4019a7442947ef4afe3a1a00c78928f889414db1f94",
+ "no_uci_data": true,
+ "parent_commit": "0d0c044d62cfb47adcf0c59a27e3c98585cf4722 (PR167)",
+ "protocol": "NCL4_END_TO_END_PRELOCK",
+ "run_id": "20261108T033000Z-spk-ncl4-v0"
+}
