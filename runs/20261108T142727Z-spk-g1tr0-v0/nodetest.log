@@ -1,0 +1,52 @@
+TAP version 13
+# Subtest: stable event ordering by tick then actor
+ok 1 - stable event ordering by tick then actor
+  ---
+  duration_ms: 1.63511
+  type: 'test'
+  ...
+# Subtest: node and id filters
+ok 2 - node and id filters
+  ---
+  duration_ms: 0.23175
+  type: 'test'
+  ...
+# Subtest: causal chain links emission->binding->grant for one id
+ok 3 - causal chain links emission->binding->grant for one id
+  ---
+  duration_ms: 0.180095
+  type: 'test'
+  ...
+# Subtest: mismatch summary is reported, never silently remapped
+ok 4 - mismatch summary is reported, never silently remapped
+  ---
+  duration_ms: 0.143026
+  type: 'test'
+  ...
+# Subtest: loadNormalizedText rejects wrong schema and non-array events
+ok 5 - loadNormalizedText rejects wrong schema and non-array events
+  ---
+  duration_ms: 0.348438
+  type: 'test'
+  ...
+# Subtest: unknown/missing observations are explicit, not fabricated
+ok 6 - unknown/missing observations are explicit, not fabricated
+  ---
+  duration_ms: 0.103783
+  type: 'test'
+  ...
+# Subtest: render uses textContent only (no markup execution from JSON)
+ok 7 - render uses textContent only (no markup execution from JSON)
+  ---
+  duration_ms: 0.41435
+  type: 'test'
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 96.910929
