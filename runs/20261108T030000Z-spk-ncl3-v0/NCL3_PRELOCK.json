@@ -1,0 +1,33 @@
+{
+ "P_writes_original": 0,
+ "ciat_audit_comment": 6715570380,
+ "design": {
+  "envelope": "CausalEnvelope minted by C at emission (randomized seq per run, killer T02), carried verbatim; donor wrong-version rejected at A recall (T01)",
+  "node_owned": "ResearchNeuronA.execute_batch owns trace store/recall, PE verdict (frozen _compute_local on internal recall), and BV packet emission; ResearchNeuronC owns ledger mint + credit validation; scheduler only routes occurrences/packets verbatim; NO host trace calls, channel assembly, row maps, or host-built packets",
+  "oracle": "exact class+code equality with normal-return/wrong-code meta self-tests (T04)"
+ },
+ "files_sha256": {
+  "spk_native_causal_learning_ncl3/__init__.py": "9533680b1aec65b08b7107f2c6f809a4ec9e7b492c147a51b3f9813a73836a21",
+  "spk_native_causal_learning_ncl3/node_v0.py": "28e7061d18b35b8aaa7f491624b3f5f612c478f853f8556bc2d82d1a4986510f",
+  "tests/test_spk_ncl3_node_owned_gate_v0.py": "4b4699b75b70fca04d4dddff78e18402edebace0bf0e5a26af087c024b307854",
+  "workbench/spk_ncl3_node_owned_gate_v0.py": "d1ef2984cca845f8c2b3674a6b685810cd8d2718100a35297c1786aadfb3044b"
+ },
+ "fixture": {
+  "C_ticks": [
+   10,
+   30,
+   50,
+   70
+  ],
+  "expected": "r0 POSITIVE no grant; r1/r2 NEGATIVE grants; r3 A-trace p_version=1, grant v1->v2",
+  "forward_1+1": true,
+  "teachers": "+22 (A32/A52/A72/A92)"
+ },
+ "hold": true,
+ "issue": 165,
+ "lock_sha256": "259fdb402ba5619425236cd4181f57c8b73f23fc44362b11f05843dc02bf73ad",
+ "no_uci_data": true,
+ "parent_commit": "d9f6a0ce654e954853fabe4c5acbb3123220b883 (PR166)",
+ "protocol": "NCL3_NODE_OWNED_REDESIGN_PRELOCK",
+ "run_id": "20261108T030000Z-spk-ncl3-v0"
+}
