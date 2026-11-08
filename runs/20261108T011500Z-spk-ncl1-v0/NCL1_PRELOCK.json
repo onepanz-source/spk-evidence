@@ -1,0 +1,43 @@
+{
+ "P_writes_original": 0,
+ "ciat_audit_comment": 6715264162,
+ "design": {
+  "T_memory": "node-owned, capacity 4, ttl 64, one-shot, deterministic overflow/expire",
+  "causal_id": "(source_node, epoch, local_sequence) minted at C emission, carried on spike occurrence; teacher carries origin id only",
+  "executor": "spk_native_causal_learning_ncl1/pe_research_v0.py; frozen _compute_local runs original 63-op subprogram; recalled channel supplied internally",
+  "stale_guard": "C grant requires current bank version == emission P version, else STALE_P_VERSION_DENIAL",
+  "trace_ops_in_node_instructions": [
+   "TRACE_STORE(3,4,6)",
+   "TRACE_RECALL(30,31)"
+  ]
+ },
+ "files_sha256": {
+  "docs/spk-ncl1-native-isa-mem-v0.md": "c7d7170db8488529e36d019c7cd9f2ec5d18a17a84f6bb628448063ed9547154",
+  "spk_native_causal_learning_ncl1/__init__.py": "726159eb0dac8abea9c2edb9e0fb57a93fb028e8d3241d1c0a117d2c386d0562",
+  "spk_native_causal_learning_ncl1/pe_research_v0.py": "f81a4b7165622f1f8499a8c88fb6692bd5147496b5e44482df34ae9b3605923d",
+  "tests/test_spk_ncl1_native_gate_v0.py": "a52adadd17b8bae7f388432dc7c0cac9d5e309444d9fa15689ebf24f9ad818bf",
+  "workbench/spk_ncl1_native_gate_v0.py": "377b3d67ded608eeb6749fa5417a5085d2b22d37722c402954c2633ba1963ba4"
+ },
+ "fixture": {
+  "C_ticks": [
+   10,
+   30,
+   50,
+   70
+  ],
+  "expected": "A32 POSITIVE recalled [3] no grant; A52 NEGATIVE recalled [4]; BV A->B->C; dark P 12->15 @t54; C70 outputs 15",
+  "forward_1+1": "A gets r0@12, r1@32",
+  "teachers": {
+   "r0": "A32",
+   "r1": "A52"
+  }
+ },
+ "hold": true,
+ "issue": 161,
+ "lock_sha256": "3548b85fa41a765aa46399b4eb49c288b82be17d10bdf4bd226142c26abdab0d",
+ "no_uci_data": true,
+ "oracle": "strict: normal return or wrong error FAILS (self-tested M08); negatives M01-M06 through actual executor; M07 BV-off control",
+ "parent_commit": "976db7c655c5804cdef7f765f9bf15f99e8af6bf (verified compatible, clean checkout imports+runs)",
+ "protocol": "NCL1_NATIVE_ISA_MEM_CONTRACT_PRELOCK",
+ "run_id": "20261108T011500Z-spk-ncl1-v0"
+}
