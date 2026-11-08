@@ -1,0 +1,1 @@
+{"label":"RESEARCH_CONTRACT_MODEL","scenario":"P1","schema":"spk-sci-tfc2-contract-model/v0","snapshot":{"a_trace":["C/e0/s1"],"c_epoch":0,"c_seq":1,"clock":15,"commits":[{"bank":"dark","p_to":1,"tick":15}],"credits":["C/e0/s1"],"ledger":["C/e0/s1"],"p_bank":{"dark":{"choice":12,"version":1}}}}
