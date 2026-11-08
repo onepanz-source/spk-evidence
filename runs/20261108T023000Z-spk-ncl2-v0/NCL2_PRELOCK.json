@@ -1,0 +1,36 @@
+{
+ "P_writes_original": 0,
+ "design": {
+  "A_trace": "T memory stores RECEIVED envelope (row3 p_version=1); TRACE_STORE/RECALL (max 2 ops, domain T) node-executed",
+  "BV": "packet built by A from its own recalled record; B relays unchanged; C validates vs own ledger",
+  "envelope": "CausalEnvelope(source_node, epoch, seq, choice, p_version_at_commit, tick, authority, commitment) minted by C AT emission, carried verbatim in spike payload C->B->A; transport changes routing only",
+  "host_forbidden": "no c_receipts/row_of_tick/teacher_at_A/SENSORS[row]/precomputed ids in decision paths; randomized source seq (killer K02)",
+  "ledger": "C-owned IssuanceLedger (bounded, epoch, one-shot credit, current-version check)"
+ },
+ "files_sha256": {
+  "docs/spk-ncl2-causal-envelope-rfc-v0.md": "d68ab5f02c9eb5f4a14cf021287836a3dbf2e10182e38c1edf2062a5d2b278ec",
+  "spk_native_causal_learning_ncl2/__init__.py": "2c40dc1bb8083c3358b838a3629cda37b74bae691bcd7bbaf4bf3920e86c9273",
+  "spk_native_causal_learning_ncl2/envelope_v0.py": "d74afc4b3e1fe08728a0bee5e6dec855e1f9986d5929ce24d475e88140e3b1b7",
+  "tests/test_spk_ncl2_envelope_gate_v0.py": "e44d55e7e5bce0e5b29b5627e6afd8f43752b311c3dc5678057ba8b6bd01d678",
+  "workbench/spk_ncl2_envelope_gate_v0.py": "3a164c5bb630b1b32c43ff118dba62d12c3c97d2e75aec081fab7a73587e3cf1"
+ },
+ "fixture": {
+  "C_ticks": [
+   10,
+   30,
+   50,
+   70
+  ],
+  "expected": "r0 POSITIVE no grant; r1 NEGATIVE dark 12->15 @54; r3 A-trace p_version=1, grant @94 minted v1",
+  "forward_1+1": true,
+  "teachers": "+22 per row (r0 A32, r1 A52, r2 A72, r3 A92)"
+ },
+ "hold": true,
+ "issue": 165,
+ "lock_sha256": "c33e3b3c98c97ae695028d138f908c8caa809f14f2a533e952383204ee3978b0",
+ "no_uci_data": true,
+ "parent_commit": "2d97af1552ce9de86391d55ff2ffaf40d83c6e28 (PR164, clean complete tree)",
+ "probes": "K01 donor wrong-version rejected AT A recall (ENVELOPE_MISMATCH_AT_RECALL); K02 randomized seqs; K03 TTL 19/20/21; K04 atomic overflow; K05 oracle meta; K06 BV-off",
+ "protocol": "NCL2_CAUSAL_ENVELOPE_PRELOCK",
+ "run_id": "20261108T023000Z-spk-ncl2-v0"
+}
