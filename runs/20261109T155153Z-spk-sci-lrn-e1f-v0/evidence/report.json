@@ -1,0 +1,30 @@
+{
+ "task": "SCI-LRN-E1F",
+ "issue": 206,
+ "run_id": "20261109T155153Z-spk-sci-lrn-e1f-v0",
+ "mode": "dev-only harness; holdout ids>=16 raise E1F_HOLDOUT_FORBIDDEN by construction; no unlock exists",
+ "verdict": "E1F_DEV_CAUSAL_FALSIFIERS_PASS_SCIENTIFIC_HOLD",
+ "decision": "HOLD",
+ "gates": {
+  "G1_holdout_forbidden": true,
+  "G2_metamorphic_seal": true,
+  "G3_custody_vetoes": true,
+  "G4_parity": true,
+  "G5_theta_effect": true,
+  "G6_learnability_val": true
+ },
+ "val_brier": {
+  "MISSING_TRUTH_BV": 0.279703,
+  "SHUFFLED_TRUTH_BV": 0.285062,
+  "STATIC": 0.279703,
+  "TRUE_BOUND_BV": 0.244377
+ },
+ "val_constant_brier": 0.262451,
+ "holdout_accesses": 0,
+ "run1_sha256": "9c52e2fb852edef0b76a82ca4eb745412b12811712eb9c87f733cad05368700a",
+ "run1_eq_run2": true,
+ "verify": "FULL_STATE_MATCH_FINITE",
+ "tamper_exit": 3,
+ "pytest": "6 passed",
+ "limits": "DEV-only synthetic harness; proves falsifier wiring + custody on dev ids, NOT generalization; scientific HOLD stands; no P writes; no sealed datasets touched"
+}

@@ -1,0 +1,30 @@
+{
+ "task": "SCI-LRN-E1F (#206) DEV-ONLY harness, no holdout by design",
+ "run_id": "20261109T155153Z-spk-sci-lrn-e1f-v0",
+ "stage_A_protocol": {
+  "path": "docs/spk-sci-lrn-e1f-protocol-v0.md",
+  "sha256": "7c87efbd4c1fa824b6a9949352441edb0b15c634515a7cce923b9e02a0d90b9d",
+  "blob": "20282d3cfb314a4777e6a0408a32e55bf4558cd9",
+  "branch_commit": "a8662f38ef5d4b935394917a96efad878795f788",
+  "prelock_issue_comment": "6744372557",
+  "prelock_channel_comment": "6744372616"
+ },
+ "stage_B_code": {
+  "branch_head": "085853ed3204ee82561385f5fe448dd82dc6a445",
+  "roster_sha256": "497d0fd052b4eb1533582d9e956ebb8eec6d16cd570f835c7536445bfd80c590",
+  "prelock_issue_comment": "6744464101",
+  "prelock_channel_comment": "6744463962",
+  "files": {
+   "research/spk_sci_lrn_e1f_dev_harness_v0/spk_sci_lrn_e1f_task_v0.py": "cc9da3d1",
+   "research/spk_sci_lrn_e1f_dev_harness_v0/spk_sci_lrn_e1f_agents_v0.py": "aedd35ce",
+   "research/spk_sci_lrn_e1f_dev_harness_v0/spk_sci_lrn_e1f_pe_v0.py": "65e0245a",
+   "research/spk_sci_lrn_e1f_dev_harness_v0/spk_sci_lrn_e1f_run_v0.py": "92f220b9",
+   "tests/test_spk_sci_lrn_e1f_v0.py": "b261c151"
+  }
+ },
+ "pinned_blobs": {
+  "spk_architecture_v1/pe_execution_v1b.py": "2e16bdeddc7fc5eacbd341a6dbdf245d71095678",
+  "spk_architecture_v1/pe_fabric_v1a.py": "b0cf8b01a8e5ede6ad640349e11b91194c454763",
+  "research/spk_v5_t7abc_def_ghi/scheduler_bridge_v0.py": "28850504b30d5a4e441d50833f40302a09a97796"
+ }
+}
