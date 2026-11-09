@@ -1,0 +1,186 @@
+{
+  "schema": "spk-manual-20261109-custody-recovery-v0",
+  "scope": "Only original user-executed research archive bytes and original source ZIP bytes from current conversation mount",
+  "github_repo_target": "onepanz-source/spk-evidence",
+  "github_status": "PENDING_USER_STAGE_AND_PUSH_NOT_UPLOADED_BY_THIS_PACKAGE",
+  "source_original_pe": "unchanged; blob 2e16bdeddc7fc5eacbd341a6dbdf245d71095678",
+  "included": [
+    {
+      "kind": "user_original_archive",
+      "path": "original-runs/20261109T181417Z-mesh8x64-full.tar.gz",
+      "issue": 211,
+      "sha256": "179ccfcd2482010f815b8c077fe59aa5ed5b12a3a714727e431e4c6c069e15b7",
+      "bytes": 3018,
+      "retention": "exact_raw_bytes"
+    },
+    {
+      "kind": "user_original_archive",
+      "path": "original-runs/20261109T183327Z-mesh9hybrid-full.tar.gz",
+      "issue": 212,
+      "sha256": "8d311dc06225d9be9ff94d34a6568381162f265f588d466ed72cf86c92fd0549",
+      "bytes": 3796,
+      "retention": "exact_raw_bytes"
+    },
+    {
+      "kind": "user_original_archive",
+      "path": "original-runs/20261109T183327Z-mesh9hybrid-smoke.tar.gz",
+      "issue": 212,
+      "sha256": "ff309573c7c2e2f0124f47c06203fce2d8f474e2099cafc7088fb0a3cefc9a65",
+      "bytes": 3846,
+      "retention": "exact_raw_bytes"
+    },
+    {
+      "kind": "user_original_archive",
+      "path": "original-runs/20261109T184748Z-mesh9ethernet-full.tar.gz",
+      "issue": 213,
+      "sha256": "c453f2f56ca4b37fd51fe3a492c3283e970065b72f2092a368b42f8009173e7f",
+      "bytes": 4093,
+      "retention": "exact_raw_bytes"
+    },
+    {
+      "kind": "user_original_archive",
+      "path": "original-runs/20261109T201750Z-dsec-mesh9-dev-smoke.tar.gz",
+      "issue": 214,
+      "sha256": "5fe8db80d25bffd3442fa1ee65513d8b2e8a944a57097a91393a79dbf54248bb",
+      "bytes": 4210,
+      "retention": "exact_raw_bytes"
+    },
+    {
+      "kind": "user_original_archive",
+      "path": "original-runs/20261109T213946Z-dsec-mesh9-dev-smoke.tar.gz",
+      "issue": 214,
+      "sha256": "d97c03708f4edddd218de81f9c9684323b6e86dd6b4884b39f8f81ad4e2b0411",
+      "bytes": 4297,
+      "retention": "exact_raw_bytes"
+    },
+    {
+      "kind": "user_original_archive",
+      "path": "original-runs/20261109T215203Z-dsec-mesh9-fanout-diag.tar.gz",
+      "issue": 215,
+      "sha256": "a1d60b4ad41900db7793bf3f861fa9e012e78a8aaa98dd644b2a9541035c20ed",
+      "bytes": 14473,
+      "retention": "exact_raw_bytes"
+    },
+    {
+      "kind": "user_original_archive",
+      "path": "original-runs/20261109T220351Z-dsec-mesh9-dev4-fanout24.tar.gz",
+      "issue": 216,
+      "sha256": "a149ce4a4a707b9fd86673f353578250973a8b77c6b193ad20f700b0551e2dbb",
+      "bytes": 24138,
+      "retention": "exact_raw_bytes"
+    },
+    {
+      "kind": "user_original_archive",
+      "path": "original-runs/20261109T223220Z-dsec-mesh9-readout-stagea.tar.gz",
+      "issue": 217,
+      "sha256": "3d3b37b646bab09a6dbace45c3ab56ae11c4b5d3ae57cb174d4df5eb0fd03105",
+      "bytes": 163103,
+      "retention": "exact_raw_bytes"
+    },
+    {
+      "kind": "user_original_archive",
+      "path": "original-runs/20261109T224615Z-dsec-mesh9-stageb-dev-gt-v0.tar.gz",
+      "issue": 219,
+      "sha256": "f76934d4065f5f43a0f4f76f05099e37ac37c7c8b8f890053b70534f65d275ad",
+      "bytes": 4004,
+      "retention": "exact_raw_bytes"
+    },
+    {
+      "kind": "source_package",
+      "path": "original-source-packages/SPK_Theta_Capacity_DEV_v0.zip",
+      "issue": 210,
+      "sha256": "4baafa9a9746db9bc492e5c093af80e89360705249c037e6bc4b2b797c027f0e",
+      "bytes": 11134,
+      "retention": "exact_raw_bytes"
+    },
+    {
+      "kind": "source_package",
+      "path": "original-source-packages/SPK_MESH_8x64_MANUAL_v0.zip",
+      "issue": 211,
+      "sha256": "0a9a1617587c39b813c71dbdca9a301fa5abb82a90cc4043f6ee0c4b015071a5",
+      "bytes": 13913,
+      "retention": "exact_raw_bytes"
+    },
+    {
+      "kind": "source_package",
+      "path": "original-source-packages/SPK_MESH9_HYBRID_MANUAL_v0.zip",
+      "issue": 212,
+      "sha256": "4bb85e8fc5a500ee800a18597e8876d981a7fd67775e11b1b1e39c1a4ed1c7a7",
+      "bytes": 22865,
+      "retention": "exact_raw_bytes"
+    },
+    {
+      "kind": "source_package",
+      "path": "original-source-packages/SPK_MESH9_ETHERNET_GATEWAY_MANUAL_v1.zip",
+      "issue": 213,
+      "sha256": "30b0e4f49c2cae0efe898c2a1a0534af9c5726e058ee09eb72f8b0d49e87d207",
+      "bytes": 28886,
+      "retention": "exact_raw_bytes"
+    },
+    {
+      "kind": "source_package",
+      "path": "original-source-packages/SPK_DSEC_MESH9_DEV_MANUAL_v0.zip",
+      "issue": 214,
+      "sha256": "815d512391f7d8d579afdd6da3b3019e663dca3493d8a8a05b818a28d1bc27f5",
+      "bytes": 40325,
+      "retention": "exact_raw_bytes"
+    },
+    {
+      "kind": "source_package",
+      "path": "original-source-packages/SPK_DSEC_MESH9_DEV_MANUAL_v0p1.zip",
+      "issue": 214,
+      "sha256": "f6b021586f8d784e73783aa097ed969a9c8aca4c7dca5effc78e5e30baeff30e",
+      "bytes": 41403,
+      "retention": "exact_raw_bytes"
+    },
+    {
+      "kind": "source_package",
+      "path": "original-source-packages/SPK_DSEC_MESH9_DEV_MANUAL_v0p2.zip",
+      "issue": 214,
+      "sha256": "145a2290c92901eab17026670be8d753e93d8c9de72fca30f0c0a211a6e63518",
+      "bytes": 43202,
+      "retention": "exact_raw_bytes"
+    },
+    {
+      "kind": "source_package",
+      "path": "original-source-packages/SPK_DSEC_MESH9_FANOUT_DIAG_MANUAL_v0.zip",
+      "issue": 215,
+      "sha256": "de7cb87035f9b5de098266ec029066893aded116ea8a2f5550b18eed0e77d8e3",
+      "bytes": 46290,
+      "retention": "exact_raw_bytes"
+    },
+    {
+      "kind": "source_package",
+      "path": "original-source-packages/SPK_DSEC_MESH9_DEV4_FANOUT24_MANUAL_v0.zip",
+      "issue": 216,
+      "sha256": "7868d3301d1d55ce1a2ba7b32fb606579af8a845bab5326f492e49fb709b825b",
+      "bytes": 52408,
+      "retention": "exact_raw_bytes"
+    },
+    {
+      "kind": "source_package",
+      "path": "original-source-packages/SPK_DSEC_MESH9_READOUT_STAGEA_MANUAL_v0.zip",
+      "issue": 217,
+      "sha256": "ea8cc5de81c1784156d2749ab81dd54fe327206b396a51513e61937d0acb0b61",
+      "bytes": 65570,
+      "retention": "exact_raw_bytes"
+    },
+    {
+      "kind": "source_package",
+      "path": "original-source-packages/SPK_DSEC_MESH9_FLOW_STAGEB_MANUAL_v0.zip",
+      "issue": 219,
+      "sha256": "350f86dc6842a52eded1cabecfec06b477a3b4e69a615c08742702a198ec8f19",
+      "bytes": 11326,
+      "retention": "exact_raw_bytes"
+    }
+  ],
+  "known_missing": [
+    {
+      "issue": 210,
+      "kind": "manual_fwork_run_tar",
+      "state": "NOT_PRESENT_IN_CURRENT_CONVERSATION_ATTACHMENT",
+      "action": "do_not_fabricate_or_reconstruct_from_stdout"
+    }
+  ],
+  "scientific_status": "GO_0_OF_3; original P_writes=0; all HUMAN HOLD unchanged"
+}
