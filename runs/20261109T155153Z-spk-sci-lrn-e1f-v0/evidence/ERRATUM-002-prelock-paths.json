@@ -1,0 +1,13 @@
+{
+ "erratum": "E1F-PRELOCK-PATH-LABEL",
+ "run_id": "20261109T155153Z-spk-sci-lrn-e1f-v0",
+ "published_commit": "c3709bb814577fb82400884f5c3af2618f3953cd",
+ "note": "In E1F_PRELOCK.json the stage_B files were listed under a 'research/spk_sci_lrn_e1f_dev_harness_v0/' prefix. Actual branch paths at 085853ed3204ee82561385f5fe448dd82dc6a445 are flat: research/spk_sci_lrn_e1f_task_v0.py, research/spk_sci_lrn_e1f_agents_v0.py, research/spk_sci_lrn_e1f_pe_v0.py, research/spk_sci_lrn_e1f_run_v0.py, tests/test_spk_sci_lrn_e1f_v0.py. All sha256 prefixes and git blob shas recorded in the prelock are UNCHANGED and verified against branch HEAD (task cc9da3d1/90d7176b, agents aedd35ce/40f756b3, pe 65e0245a/f6904557, run 92f220b9/779daa32, tests b261c151/cd1f5c51; protocol 7c87efbd/20282d3c). Append-only: original prelock file untouched.",
+ "corrected_paths": {
+  "cc9da3d1/90d7176b": "research/spk_sci_lrn_e1f_task_v0.py",
+  "aedd35ce/40f756b3": "research/spk_sci_lrn_e1f_agents_v0.py",
+  "65e0245a/f6904557": "research/spk_sci_lrn_e1f_pe_v0.py",
+  "92f220b9/779daa32": "research/spk_sci_lrn_e1f_run_v0.py",
+  "b261c151/cd1f5c51": "tests/test_spk_sci_lrn_e1f_v0.py"
+ }
+}
