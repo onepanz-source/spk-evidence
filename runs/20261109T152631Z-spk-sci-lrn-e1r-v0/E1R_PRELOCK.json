@@ -1,0 +1,15 @@
+{
+ "task": 204,
+ "stageA_protocol": {"path": "docs/spk-sci-lrn-e1r-protocol-v0.md", "sha256": "431d159ab7a1635da1a576797c10a11c18b77a6906f92517b4ae6d15faa7d585", "git_blob": "236203c5e30e559b0a2751e3cdcdc5ed7ae0300f", "branch_commit": "1ed2ba04217667dd6604196aa2410bda4e3102d", "published": "#204 issuecomment-6743782348, #1 6743782527 (BEFORE any data)"},
+ "stageB_code": {
+  "roster_sha256_unlock_token": "2658f8468c3ba6c71b824eccb0a505945a530b083dab7b01c528183cdb5e29a7",
+  "research/spk_sci_lrn_e1r_task_v0.py": {"sha256": "8f7e4749930eb621fa162e8f1c59f3113c602d13a4e1da5162bdf56db64c9cd6", "blob": "1498d9b120890cd670a4d5877d145bf56f221ba7"},
+  "research/spk_sci_lrn_e1r_agents_v0.py": {"sha256": "e76035a465e54cc3cb0b67504acc4480822cfb5ec209d362e6df87c08c80b40f", "blob": "9dd8de4921d0f9e01bea659303b7be4f4fec453a"},
+  "research/spk_sci_lrn_e1r_pe_v0.py": {"sha256": "291b100033f9d3d000d40a5e74c2601f13b233fa38254ce508dddf6288423aa5", "blob": "35dbc5a0b04038b5a642fe2c6ad49a9fd30e1c93"},
+  "research/spk_sci_lrn_e1r_run_v0.py": {"sha256": "11110f2fd3c902c903dcfee34b3d34aee7a6b4a93de92d217ad4453900f32761", "blob": "5e26720308686ab4c2c0b756cfe52347545a602a"},
+  "tests/test_spk_sci_lrn_e1r_v0.py": {"sha256": "8be85c4e5f011617f8cd830a636407e4e5aadbdaa2a2ab7200256e3877c352c0", "blob": "f7c7ae124596a3fc703853f74e4ed2cef8e985f7"},
+  "docs/spk-sci-lrn-e1r-erratum-v0.md": {"sha256": "3f00af2db0e36782cbe6fba8aea98f6ff8edb72c27f806768fe440529efa8ff3", "blob": "6027bfe1c74794f578130ee7a8ccae823eb72c98"},
+  "branch_commit": "8232eb784989de447cbd499dee03332e0606194c", "published": "#204 issuecomment-6743850712, #1 6743850751 (BEFORE first holdout)"},
+ "pinned_sources": {"pe_execution_v1b.py": "2e16bdeddc7fc5eacbd341a6dbdf245d71095678"},
+ "main_head": "787c8fbed87c1e2e4b703e985f68ae53c81c8444"
+}
