@@ -1,0 +1,55 @@
+{
+ "e1f_head": "085853ed3204ee82561385f5fe448dd82dc6a445",
+ "e1f_pins": {
+  "research/spk_sci_lrn_e1f_agents_v0.py": "40f756b3a095baf220e1f62602191c9b32d88691",
+  "research/spk_sci_lrn_e1f_pe_v0.py": "f690455790f9e3d4bace78796a05afe66f522072",
+  "research/spk_sci_lrn_e1f_run_v0.py": "779daa32f0782c4ac0543d2bea9afef8f05c27db",
+  "research/spk_sci_lrn_e1f_task_v0.py": "90d7176b9847c20f79a30194be916abe2c695a1a"
+ },
+ "gate0_exploit_reproduced": true,
+ "note": "research-engineering evidence only; not an owner-security proof",
+ "results": [
+  {
+   "a_judgments": 0,
+   "accepted_by_e1f_commit_update": true,
+   "b_egress": 0,
+   "b_ingress": 0,
+   "case": "R1_complete_forged_receipt_no_A_no_B",
+   "flaw": "E1F C.commit_update never consults A.judgments or B.ingress/egress ledgers; self-asserted b_ingress/b_egress + commit_tick pass all checks",
+   "theta_after": 5,
+   "theta_before": 6,
+   "veto_code": null
+  },
+  {
+   "case": "R2_old_g3_forged_b_commit_tick_None",
+   "flaw": "old G3 fake vetoed only because commit_tick=None -> COMMIT_BEFORE_TRUTH; no custody/ownership check fired; theta/history not in old snapshot",
+   "veto_code": "COMMIT_BEFORE_TRUTH"
+  },
+  {
+   "case": "R3_g5_hardcoded_theta_1",
+   "emissions_differ_theta6_vs_theta1_direct": true,
+   "flaw": "G5 theta effect shown via direct run(theta=1) call, never via a valid credited receipt",
+   "source_contains_hardcoded_theta1_call": true
+  },
+  {
+   "arm_brier_episodes": 4,
+   "case": "R4_g6_constant_all_eps_shuffle_bitflip",
+   "constant_computed_over_all_val_episodes": true,
+   "constant_episodes": 8,
+   "flaw": "unequal horizon (suffix vs all-episodes) and y^1 instead of a true seeded permutation",
+   "n_val_traj": 8,
+   "shuffled_arm_is_bitflip_y_xor_1": true
+  },
+  {
+   "case": "R5_reg5_pretarget_identical_across_regimes",
+   "flaw": "PRETARGET_RATE_CH1 depends only on ch2 lag, not on z; only the target window depends on z, so raw pretarget is uninformative for the future label (zscore ~ noise)",
+   "pretarget_occ_mean_z0": 0.162667,
+   "pretarget_occ_mean_z1": 0.154717,
+   "pretarget_zscore": 1.4689,
+   "target_delta": 0.248919,
+   "target_rate_mean_z0": 0.307957,
+   "target_rate_mean_z1": 0.059038
+  }
+ ],
+ "schema": "spk-sci-lrn-e1g-redteam/v0"
+}

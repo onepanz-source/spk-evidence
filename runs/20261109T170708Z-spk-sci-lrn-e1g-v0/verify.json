@@ -1,0 +1,6 @@
+{
+ "VERDICT": "FULL_STATE_MATCH_FINITE",
+ "fresh_sha256": "11eb957aa03b67eaa544d4a249e1227eee4cae340f27f66a09274f678eca2b37",
+ "match": true,
+ "old_sha256": "11eb957aa03b67eaa544d4a249e1227eee4cae340f27f66a09274f678eca2b37"
+}

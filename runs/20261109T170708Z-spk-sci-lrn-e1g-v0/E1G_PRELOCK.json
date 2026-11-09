@@ -1,0 +1,53 @@
+{
+ "task": "SCI-LRN-E1G (#208) DEV-ONLY red-team causal credit + identifiable future signal; NO holdout by design",
+ "run_id": "20261109T170708Z-spk-sci-lrn-e1g-v0",
+ "branch": "research/spk_sci_lrn_e1g_dev_harness_v0",
+ "branch_head": "5311376e4dfe681e860e87dd95e48ada232f54c3",
+ "base_main": "787c8fbed87c1e2e4b703e985f68ae53c81c8444",
+ "stage_A_protocol": {
+  "path": "docs/spk-sci-lrn-e1g-protocol-v0.md",
+  "sha256": "4189b1f06b0fd2e62b77320452d6899bad2c4e970ac4a0b25c6d9b71fb8e46b8",
+  "blob": "38e69fb3bf67736b7491e0136ac2263eb6cafdb8",
+  "commit": "c7b98c72a64e412b5a1e35291e1b745fc4b90d10",
+  "prelock_issue_comment": "6746003921",
+  "prelock_channel_comment": "6746006621"
+ },
+ "gate0": {
+  "commit": "56cf32a9024e1feee9d2203c620301087125158e",
+  "files": {
+   "research/spk_sci_lrn_e1g_redteam_v0.py": "b6fe3e4e42408a033212d40401e178d909826955",
+   "tests/test_spk_sci_lrn_e1g_gate0_v0.py": "6a4942bb63ac0dba231492e7fb59b57274b18e0b"
+  },
+  "reported_issue_comment": "6745968539",
+  "reported_channel_comment": "6745971236",
+  "e1f_pins_head": "085853ed3204ee82561385f5fe448dd82dc6a445"
+ },
+ "stage_B_code": {
+  "commit_initial": "d01ab103437f7965e0321f21adb8545951a23d18",
+  "erratum_1_commit": "c103cd202097452e29e1ef6656fb5a16d7086c47",
+  "erratum_2_commit": "5311376e4dfe681e860e87dd95e48ada232f54c3",
+  "roster_sha256_final": "05382155d4d85b81e27a5d39423b840ada62d38e476f6ba872594bda22df7270",
+  "prelock_issue_comment": "6746233632",
+  "erratum_comments": [
+   "6746263633",
+   "6746294267"
+  ],
+  "prelock_channel_comment": "6746235986",
+  "erratum_channel_comments": [
+   "6746266178",
+   "6746296698"
+  ],
+  "files_final_blobs": {
+   "research/spk_sci_lrn_e1g_task_v0.py": "091d557fa7efd693d3d34c6c5444b1d8bd60da0d",
+   "research/spk_sci_lrn_e1g_agents_v0.py": "8ee98cd2e8389432e2c9785672abf2e2bc6d1a2d",
+   "research/spk_sci_lrn_e1g_pe_v0.py": "943b6d1d8dd08b8931e53b6f8167b0de3935eb0e",
+   "research/spk_sci_lrn_e1g_run_v0.py": "ed2c5039a0ade822f86cda548f58f97bb91cec9b",
+   "tests/test_spk_sci_lrn_e1g_v0.py": "51a0d73f2d7b9b6bb2095f81dc3f39fad4b8cf2e"
+  }
+ },
+ "pinned_blobs": {
+  "spk_architecture_v1/pe_execution_v1b.py": "2e16bdeddc7fc5eacbd341a6dbdf245d71095678",
+  "spk_architecture_v1/pe_fabric_v1a.py": "b0cf8b01a8e5ede6ad640349e11b91194c454763",
+  "research/spk_v5_t7abc_def_ghi/scheduler_bridge_v0.py": "28850504b30d5a4e441d50833f40302a09a97796"
+ }
+}

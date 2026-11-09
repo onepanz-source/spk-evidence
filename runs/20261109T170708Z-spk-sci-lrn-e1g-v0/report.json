@@ -1,0 +1,144 @@
+{
+ "task": "SCI-LRN-E1G",
+ "issue": 208,
+ "run_id": "20261109T170708Z-spk-sci-lrn-e1g-v0",
+ "verdict": "E1G_DEV_NO_IDENTIFIABLE_LEARNING_EFFECT_HOLD",
+ "decision": "HOLD",
+ "mode": "DEV/TRAIN/INTERNAL_SELECT/DEV_VALIDATION only; ids>=48 raise E1G_HOLDOUT_FORBIDDEN; no unlock; no sealed datasets; P_writes=0",
+ "gates": {
+  "G1_holdout_forbidden": true,
+  "G2_metamorphic_seal": true,
+  "G3_custody_vetoes": true,
+  "G4_parity": true,
+  "G5_theta_effect_via_receipt": true,
+  "G6_learnability_val": false
+ },
+ "identifiability_train": {
+  "identifiable": true,
+  "pre_mean_z0": 0.102113,
+  "pre_mean_z1": 0.286672,
+  "signed_direction": "pretarget_occupancy_up => z=1 => P(y=1) up",
+  "tgt_mean_z0": 0.049628,
+  "tgt_mean_z1": 0.32833,
+  "zscore": 35.1645
+ },
+ "val_suffix_brier_arms": {
+  "DELAYED_TRUE_BV": 0.186564,
+  "MISSING_TRUTH_BV": 0.186564,
+  "SHUFFLED_TRUE_PERM": 0.239805,
+  "STATIC": 0.186564,
+  "TRUE_BOUND_BV": 0.25434
+ },
+ "val_suffix_brier_baselines": {
+  "CONSTANT": 0.251492,
+  "LAST_RATE": 0.186318,
+  "PERSISTENCE": 0.34375,
+  "PE_THETA0": 0.186564,
+  "RAW_LOGISTIC": 0.179368
+ },
+ "theta_sel": 6,
+ "eta_sel": 2.0,
+ "calibration": {
+  "a": -1.173709,
+  "b": 2.24059
+ },
+ "train_prior": 0.442708,
+ "custody_battery": {
+  "b_self_asserted_no_B_relay": {
+   "code": "NO_B_TRANSPORT",
+   "state_preserved": true,
+   "veto": true
+  },
+  "changed_y": {
+   "code": "RECEIPT_Y_MISMATCH",
+   "state_preserved": true,
+   "veto": true
+  },
+  "commit_before_relay": {
+   "code": "CLOCK_ORDER_VIOLATION",
+   "state_preserved": true,
+   "veto": true
+  },
+  "duplicate_replay": {
+   "code": "DUPLICATE_REPLAY",
+   "state_preserved": true,
+   "veto": true
+  },
+  "early_commit": {
+   "code": "CLOCK_ORDER_VIOLATION",
+   "state_preserved": true,
+   "veto": true
+  },
+  "egress_only": {
+   "code": "NO_B_TRANSPORT",
+   "state_preserved": true,
+   "veto": true
+  },
+  "forged_complete_no_A_no_B": {
+   "code": "NO_A_JUDGMENT",
+   "state_preserved": true,
+   "veto": true
+  },
+  "forged_key_digest": {
+   "code": "DIGEST_MISMATCH",
+   "state_preserved": true,
+   "veto": true
+  },
+  "forged_source_digest": {
+   "code": "SOURCE_WITNESS_MISMATCH",
+   "state_preserved": true,
+   "veto": true
+  },
+  "ingress_only": {
+   "code": "NO_B_TRANSPORT",
+   "state_preserved": true,
+   "veto": true
+  },
+  "judgment_before_truth": {
+   "code": "TRUTH_BEFORE_TARGET_END",
+   "veto": true
+  },
+  "late_ttl": {
+   "code": "TTL_EXPIRED",
+   "state_preserved": true,
+   "veto": true
+  },
+  "positive_control": {
+   "theta_after": 5,
+   "theta_before": 6,
+   "theta_changed": true
+  },
+  "swapped_receipt": {
+   "code": "NO_A_JUDGMENT",
+   "state_preserved": true,
+   "veto": true
+  },
+  "wrong_batch": {
+   "code": "SOURCE_WITNESS_MISMATCH",
+   "state_preserved": true,
+   "veto": true
+  },
+  "wrong_episode": {
+   "code": "UNKNOWN_PREDICTION",
+   "state_preserved": true,
+   "veto": true
+  },
+  "wrong_epoch": {
+   "code": "FOREIGN_TRAJECTORY_OR_EPOCH",
+   "state_preserved": true,
+   "veto": true
+  },
+  "wrong_trajectory": {
+   "code": "FOREIGN_TRAJECTORY_OR_EPOCH",
+   "state_preserved": true,
+   "veto": true
+  }
+ },
+ "run1_sha256": "6c16789177e746fa11d2b4d6c5552f11f10f5936266af35d45ec500dbb72428e",
+ "run1_eq_run2": true,
+ "verify": "FULL_STATE_MATCH_FINITE",
+ "tamper_exit": 3,
+ "pytest": "15 passed (9 harness + 6 gate0)",
+ "witness_shards": 80,
+ "limits": "Custody/timing/identifiability mechanisms PASS on new DEV-only trajectories (G1-G5, zscore 35.16), but the BV theta-update shows NO learnability effect on DEV_VAL suffix (TRUE 0.25434 vs CONSTANT 0.251492 vs SHUFFLED_PERM 0.239805; raw baselines better: RAW_LOGISTIC 0.179368). Descriptive negative, NOT a native BV-negative theorem; scientific HOLD stands; no GO/E2."
+}
