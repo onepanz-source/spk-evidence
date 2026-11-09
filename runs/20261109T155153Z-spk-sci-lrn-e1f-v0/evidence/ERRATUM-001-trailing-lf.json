@@ -1,0 +1,11 @@
+{
+ "erratum": "E1F-EVIDENCE-TRAILING-LF",
+ "run_id": "20261109T155153Z-spk-sci-lrn-e1f-v0",
+ "published_commit": "c3709bb814577fb82400884f5c3af2618f3953cd",
+ "note": "Three JSON evidence files were pushed with one trailing LF byte appended by the transport transcription (sizes 1439/1020/825 vs local 1438/1019/824). JSON payload is byte-identical up to that final 0x0A. Append-only: originals NOT overwritten; this erratum records both digests. run1.json/run2.json/verify.json/tamper.json/pytest.log blob shas match local git hash-object exactly.",
+ "files": {
+  "E1F_PRELOCK.json": {"local_sha256": "995a1f5fed6c8c8cfa453d3db2e315ca31da71e7ff24ab20b1a880450a21e09c", "pushed_sha256": "bcf6119f42edbe420284184d2fe64fc78956d97648a6f119c2a4520502d2d714"},
+  "report.json": {"local_sha256": "d058ff6d808fcd53529d043967cff2505ebbc008392ecbb017e0b6b21f147d5c", "pushed_sha256": "0cabba108fb30147a2918068b1312b38b05464d2cae3292e27de00c0ac87b1e4"},
+  "SHA256MANIFEST.json": {"local_sha256": "b635a0ca0864a13a1ff1fa5d65f53e3149f8358aaae59bb0cd54d852e1661cd3", "pushed_sha256": "5ec4411630266cb9190e01daf06e19fdd9e9d85682bc51e47c84450ee8c03cd2"}
+ }
+}
