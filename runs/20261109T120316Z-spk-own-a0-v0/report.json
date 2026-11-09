@@ -1,0 +1,64 @@
+{
+ "P_writes": 0,
+ "branch": "research/spk_own_a0_counterexamples_v0",
+ "branch_head": "8ea535a18e09ed7169016643d2091198f425021f",
+ "canonical_bytes": 13676,
+ "canonical_sha256": "155a63d875c2fb7f96047702225989104ef0298ab084b714e9d4d0ff5022b6a4",
+ "custody": {
+  "pytest": "10 passed",
+  "run1==run2": true,
+  "run1_file_sha256": "4efedcca67996f2c71cfd63eccb2a9a54ea3564b081dec160f54138e2e15979d",
+  "tamper": "VETO exit3",
+  "verify": "FULL_STATE_MATCH_FINITE (3rd process)"
+ },
+ "decision": "HOLD",
+ "flags": {
+  "AUTHENTIC_OWNERSHIP_UNPROVEN": true,
+  "HUMAN_REVIEW_NOT_PERFORMED": true,
+  "P_WRITES_ORIGINAL": 0,
+  "SCI_GO": "0/3",
+  "decision": "HOLD"
+ },
+ "parent_main": "787c8fbed87c1e2e4b703e985f68ae53c81c8444",
+ "results": {
+  "F1_credit_without_ForwardJudgment": {
+   "commit": "ADMITTED",
+   "p_bank_after": {
+    "choice": 12,
+    "version": 1
+   },
+   "reproduced": true,
+   "with": "ADMITTED",
+   "without": "ADMITTED"
+  },
+  "F2_caller_supplied_p_version_999": {
+   "ledger_p_version": 999,
+   "reproduced": true
+  },
+  "F3_wrong_join_p1_obs2": {
+   "reproduced": true,
+   "store_join": "ADMITTED",
+   "valence": "NEGATIVE"
+  },
+  "F4_host_reads_c_ledger_no_B_state": {
+   "model_has_B_state": false,
+   "reproduced": true
+  },
+  "F5": {
+   "p_state_update_line": 257,
+   "scheduler_blob": "482c111f818e5da2fb0109f0d223561138c280e2",
+   "status": "ORIGINAL_NATIVE_P_WRITE_EXECUTION_NOT_RUN"
+  },
+  "control_wrong_digest": {
+   "codes": [
+    "TRANSPORT_MUTATION",
+    "TRANSPORT_MUTATION"
+   ],
+   "pass": true
+  }
+ },
+ "run": "20261109T120316Z-spk-own-a0-v0",
+ "scope": "reproduction/negative audit on pinned PR185 research model via public Model.apply only; no model edits; no native P writes (F5 source-line only); no repair/ISA-v2; HUMAN_REVIEW_NOT_PERFORMED; AUTHENTIC_OWNERSHIP_UNPROVEN; GO 0/3; roadmap 11/16; no merge",
+ "task": 198,
+ "verdict": "OWN_A0_SOURCE_COUNTEREXAMPLES_REPRODUCED_HUMAN_REVIEW_REQUIRED_HOLD"
+}

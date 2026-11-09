@@ -1,0 +1,16 @@
+{
+ "task": 198,
+ "stageA_prereg": {"path": "docs/spk-own-a0-prereg-v0.md", "sha256": "9b23bbe305f7f5129c6d79881484fbf4f52ea6d80cfd645e5cb8a3de244a6694", "git_blob": "118e70c64df6d75cd0000d2ea95ab784d947c86", "branch_commit": "20930bb0acac9110498a8d488d3b6d4ba2872207", "published": "#198 issuecomment-6739518476, #1 6739518608 (BEFORE experiments)"},
+ "stageB_code": {
+  "research/spk_own_a0_falsifiers_v0.py": {"sha256": "b7fcf9c82cbe2de8ba77bfdc33d19566fde4af3d56841205a9be9719cde29428", "blob": "50a4a5f51701fb4bb3d17a825c4f864bc7411174"},
+  "tests/test_spk_own_a0_v0.py": {"sha256": "05e1808ad28b06386bcc6e2eb5427de95c6f77752c0d9b91afe4db115cf12bf5", "blob": "617ea6160ae2bcb6f490c5e28638bb82d4a2dfde"},
+  "docs/spk-own-a0-reviewer-dossier-v0.md": {"sha256": "0a503dba37cb3f905b8c85411ee5245cc40c09844d46849eb1f8abeb5b730822", "blob": "5c37430bbff13445d86d16b35beee5ad4a562e8e"},
+  "branch_commit": "8ea535a18e09ed7169016643d2091198f425021f", "published": "#198 issuecomment-6739564934, #1 6739564983 (BEFORE locked runs)"},
+ "pinned_inputs": {
+  "model_pr185_head": "ab98d19b59afc9c601fbbcf0d6eb454645337067",
+  "model_file": "research/spk_sci_tfc2r_contract_model_v0r.py", "model_blob_sha1": "562be09305f6263d7d42dbc3a57c8f9c7ba97d2c",
+  "model_staging_sha256": "94240023581e6779ce1379879374fa341a8312d6496bc51a14fb8dcfb499bfb7",
+  "pe_blob": "2e16bdeddc7fc5eacbd341a6dbdf245d71095678",
+  "scheduler": "spk_native_learning_v1/generalized_scheduler_v1t.py", "scheduler_blob_sha1": "482c111f818e5da2fb0109f0d223561138c280e2", "p_state_update_line": 257},
+ "main_head": "787c8fbed87c1e2e4b703e985f68ae53c81c8444"
+}
