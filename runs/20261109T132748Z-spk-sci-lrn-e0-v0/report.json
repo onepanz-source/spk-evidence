@@ -1,0 +1,86 @@
+{
+ "P_writes": 0,
+ "branch": "research/spk_sci_lrn_e0_decodability_v0",
+ "branch_head": "23738f36009be8bfc74a0299e3b29a8833495f50",
+ "canonical_sha256": "6de2806e6b165f5dbd9539000f23900632e631fdc8c1750ee9dab572540ad9cc",
+ "controls": {
+  "jitter_ch2_holdout_pe_mean": 0.494545,
+  "jitter_ch2_holdout_raw_mean": 0.498793,
+  "leakage_veto_caught": true,
+  "pe_route_corruption_caught": true,
+  "shuffled_train_labels_train_balacc": 0.487605,
+  "split_leak_veto_caught": true
+ },
+ "custody": {
+  "decoder_lock": "decoder_cfg_sha256 in report; verify blocks change",
+  "pytest": "7 passed",
+  "run1==run2": true,
+  "tamper": "VETO exit3",
+  "verify": "FULL_STATE_MATCH_FINITE (canonical 6de2806e...)"
+ },
+ "decision": "HOLD",
+ "flags": {
+  "P_writes": 0,
+  "decision": "HOLD",
+  "note": "offline fitted readout is NOT a trained PE; negative PE readout is conditional on fixed encoder/program/feature/readout family, not a universal bound; raw oracle is task-learnability diagnostic only",
+  "science_GO": "0/3"
+ },
+ "holdout": {
+  "baseline_mean_balacc": 0.857107,
+  "count_mean_balacc": 0.509452,
+  "paired_pe_minus_baseline": {
+   "B": 2000,
+   "hi": -0.302516,
+   "lo": -0.333401,
+   "mean": -0.317859,
+   "n": 32,
+   "seed": 20261186,
+   "width": 0.030885
+  },
+  "paired_raw_minus_count": {
+   "hi": 0.081472,
+   "lo": 0.040861,
+   "mean": 0.060736,
+   "width": 0.040611
+  },
+  "pe_mean_balacc": 0.539248,
+  "raw_mean_balacc": 0.570188
+ },
+ "interpretation": "REG2 task is learnable by the time-aware raw comparator (raw 0.570 vs count 0.509, paired CI [0.041,0.081]>0); the previous-label comparator dominates (0.857) due to overlapping label windows; the frozen original-PE representation (0.539) does NOT beat the best validation-selected baseline (paired diff -0.318, CI [-0.333,-0.303]). Conditional on this fixed encoder/program/feature/readout family only; NOT a universal information bound; may motivate E1 adaptive sigma, does NOT veto the BV hypothesis.",
+ "parent_main": "787c8fbed87c1e2e4b703e985f68ae53c81c8444",
+ "pe_stats": {
+  "mean_batches": 331.75,
+  "mean_cross_pe": 221.16666666666666,
+  "mean_transfers": 221.16666666666666
+ },
+ "run": "20261109T132748Z-spk-sci-lrn-e0-v0",
+ "run1_file_sha256": "0e6359efc7c160e004e967e6aacbd6a2a2c154d239e868b7882401916125e3db",
+ "selection": {
+  "baseline": "prev_label",
+  "pe_family": "pe_logistic",
+  "raw_family": "raw_mlp",
+  "val_means": {
+   "count_logistic": 0.51784,
+   "pe_logistic": 0.548017,
+   "pe_mlp": 0.521267,
+   "prev_label": 0.846973,
+   "raw_logistic": 0.561213,
+   "raw_mlp": 0.565263
+  }
+ },
+ "task": {
+  "H": 6,
+  "T": 480,
+  "W": 48,
+  "a": 0.4,
+  "b": 0.1,
+  "master_seed": 20261109,
+  "p_sw": 0.03,
+  "split": {
+   "holdout": 32,
+   "train": 8,
+   "val": 8
+  }
+ },
+ "verdict": "E0_FROZEN_ENCODING_LIMIT_ON_THIS_TASK_HOLD"
+}

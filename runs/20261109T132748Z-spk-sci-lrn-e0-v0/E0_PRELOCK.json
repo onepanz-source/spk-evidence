@@ -1,0 +1,13 @@
+{
+ "task": 200,
+ "stageA_protocol": {"path": "docs/spk-sci-lrn-e0-protocol-v0.md", "sha256": "e1e0d6061ee6fd095e3d9b3c907dd4f739d1bab2497b8262836419b7ffbf819e", "git_blob": "67c3e89b0e025d4bca68d2470b3c3a9a40a1818a", "branch_commit": "77fd442c6e44e5979dae51963a27854f5dc80d76", "published": "#200 issuecomment-6741073207, #1 6741073199 (BEFORE any eval record)"},
+ "stageB_code": {
+  "research/spk_sci_lrn_e0_task_v0.py": {"sha256": "0bfcea7b817c1a7ec20d82166ccf4e828cbc7973f3e03b3822aec81e77817cc6", "blob": "f7ad8e92e5a65fec49a95c499ebe6536014b4856"},
+  "research/spk_sci_lrn_e0_readout_v0.py": {"sha256": "97e60ed4d5e671e9b24e24996a9f7bccc6622173a5fb8704ab3c25294cf348c9", "blob": "a8c4171fada2032e021effebd7599b7741c5bede"},
+  "research/spk_sci_lrn_e0_run_v0.py": {"sha256": "1d86b2faba2d4504b981a9e07e99b43562b3ceddd60323414a046f0eeedd3ceb", "blob": "b0d8bbc1053bdc146ad8fef9850a86cd8b9d8781"},
+  "tests/test_spk_sci_lrn_e0_v0.py": {"sha256": "15a746eadf83f796d18b7935f93477e30399a4c6df7524092ed0755ed85d1318", "blob": "28317c261c5dec80b65a16977285219cf8f128df"},
+  "branch_commit": "23738f36009be8bfc74a0299e3b29a8833495f50", "published": "#200 issuecomment-6741213642, #1 6741213439 (BEFORE first held-out generation/scoring)"},
+ "pinned_sources": {"pe_execution_v1b.py": "2e16bdeddc7fc5eacbd341a6dbdf245d71095678", "pe_fabric_v1a.py": "b0cf8b01a8e5ede6ad640349e11b91194c454763", "scheduler_bridge_v0.py": "28850504b30d5a4e441d50833f40302a09a97796"},
+ "stack": "python 3.14, numpy 2.5.4 (dsec-venv); no sklearn/scipy; no network downloads",
+ "main_head": "787c8fbed87c1e2e4b703e985f68ae53c81c8444"
+}
