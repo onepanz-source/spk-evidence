@@ -1,0 +1,7 @@
+{
+ "url": "redacted-port",
+ "expect": "INDEX_ROOT_OF_TRUST",
+ "bannerFound": true,
+ "statusSnippet": "BLOCCO: INDEX_ROOT_OF_TRUST — index.json sha256 89b3a433e0bed117c93b46a17efa418c1d4245c",
+ "pass": true
+}

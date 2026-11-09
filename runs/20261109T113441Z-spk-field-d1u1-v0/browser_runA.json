@@ -1,0 +1,65 @@
+{
+ "browser": "chromium",
+ "loaded": true,
+ "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+ "integrity": {
+  "ok": true
+ },
+ "classCounts": {
+  "TP": 1,
+  "FP": 12,
+  "FN": 13,
+  "TN": 59
+ },
+ "headlineConfusions": "Conteggi classi UI (da binding reale w.pe.alarm): TP=1 FP=12 FN=13 TN=59RilevatoreTPFPFNTNPE1121359B0731740B2146407",
+ "w69": {
+  "h3class": "cls-TP",
+  "h3text": "Finestra w69 — classe TP (label positiva)",
+  "terminal": [
+   [
+    47,
+    "A",
+    9
+   ]
+  ],
+  "routeCheck": {
+   "ok": true,
+   "expected": 22,
+   "got": 22,
+   "problems": []
+  },
+  "domHasIncomplete": true
+ },
+ "w4": {
+  "h3class": "cls-FP",
+  "h3text": "Finestra w4 — classe FP"
+ },
+ "overlayExample": {
+  "window": 26,
+  "overlayCount": 4,
+  "overlay": [
+   61,
+   62,
+   63,
+   64
+  ],
+  "full64": false
+ },
+ "routeMutation": {
+  "beforeOk": true,
+  "afterOk": false,
+  "problems": [
+   "route_count 21 != attese 22",
+   "mancante B/7@52->A/1@53"
+  ],
+  "bannerVisible": true
+ },
+ "jsErrors": [],
+ "filterButtons": {
+  "TP": 1,
+  "FP": 12,
+  "FN": 13,
+  "TN": 59
+ },
+ "pass": true
+}

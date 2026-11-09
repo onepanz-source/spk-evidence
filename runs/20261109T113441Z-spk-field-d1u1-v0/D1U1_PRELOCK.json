@@ -1,0 +1,15 @@
+{
+ "task": 196,
+ "stage1_doc": {"path": "docs/spk-field-d1-ui-v0u1.md", "sha256": "16d44050aca041f78451d997691dcc51677588edc55b65bbc58d4516ef4e72d4", "git_blob": "0c153a178868b507388bfdecc424dcf7b4a91627", "branch_commit": "ca1177cc7f9922a555f43c58379a6b076ffb2b7d", "published": "#196 issuecomment-6738950811, #1 6738951172"},
+ "stage2_code": {
+  "viewer/spk-field-d1-viewer-v0u1.html": {"sha256": "964dc4dce8f5ab9c4c836af31baeb8701dd06d525e229faeb6355bccc967d1a4", "blob": "0560d9f47c4f1af0622a7abc30f82ddc9911f703"},
+  "tests/test_spk_field_d1_ui_v0u1.py": {"sha256": "44cb61f7e3c4f1b7a7b3de6fb19cfad137ddab555c16affa443c4f2f112f865d", "blob": "3f1f6c853abcbddfb59afec25071e1e117213463"},
+  "tests/test_spk_field_d1_ui_v0u1_browser.mjs": {"sha256": "2c6de2081a76e7e8a3014edbf961a8d051abbc24f29060a50fca7e41f55c2308", "blob": "9ffc74262c23b2bafbbf2f6e3d8ff0963144f479"},
+  "branch_commit": "e5186d99af31578fd19ea2be63953b406e54bfcc", "published": "#196 issuecomment-6739037363, #1 6739037357 (BEFORE locked browser runs)"},
+ "inputs": {
+  "snapshot_evidence_commit": "2f405530c96e68f6477e4de1c759f7e4a60574a5",
+  "snapshot_path": "runs/20261109T111520Z-spk-field-d1-v0/",
+  "pinned_index_sha256": "7fec684b81603044df3c646e6e9e91ede2223e8526d610039da43ad27b7042f2",
+  "parent_pr": "#195 @ 0a40c79347da412078cff1b96863196ff179ce9c (read-only, unmodified)"},
+ "main_head": "787c8fbed87c1e2e4b703e985f68ae53c81c8444"
+}

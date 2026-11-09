@@ -1,0 +1,67 @@
+{
+ "P_writes": 0,
+ "branch": "research/spk_field_d1u1_viewer_v0u1",
+ "branch_head": "e5186d99af31578fd19ea2be63953b406e54bfcc",
+ "browser_gate": {
+  "all_pass": true,
+  "browser": "chromium headless (CDP via node-22 WebSocket, zero deps), server 127.0.0.1 read-only",
+  "classCounts": {
+   "FN": 13,
+   "FP": 12,
+   "TN": 59,
+   "TP": 1
+  },
+  "filter_DOM_counts": {
+   "FN": 13,
+   "FP": 12,
+   "TN": 59,
+   "TP": 1
+  },
+  "firefox_note": "firefox headless non parla CDP (protocollo proprio): gate su chromium, come permesso dalla spec (Firefox or Chromium)",
+  "integrity_ok": true,
+  "jsErrors": [],
+  "loaded": true,
+  "overlay_partial": {
+   "ticks": 4,
+   "window": 26
+  },
+  "route_mutation": {
+   "afterOk": false,
+   "bannerVisible": true,
+   "beforeOk": true,
+   "problems": [
+    "route_count 21 != attese 22",
+    "mancante B/7@52->A/1@53"
+   ]
+  },
+  "runA_equals_runB_equals_verify": true,
+  "runA_sha256": "224e9a0f5c253d1d7b9b60b3079bceb0809203c223e9c8f0854070b81262d460",
+  "tamper_index_veto_pass": true,
+  "tamper_shard_veto_pass": true,
+  "w4_class": "FP",
+  "w69": {
+   "class": "TP",
+   "routeCheck_ok": true,
+   "routes": 22,
+   "terminal": [
+    [
+     47,
+     "A",
+     9
+    ]
+   ]
+  }
+ },
+ "custody": {
+  "pytest": "6 passed (real snapshot + synthetic mutations)",
+  "shards": "7/7 WebCrypto match",
+  "snap_index_pin": "7fec684b... verified"
+ },
+ "decision": "HOLD",
+ "parent_main": "787c8fbed87c1e2e4b703e985f68ae53c81c8444",
+ "run": "20261109T113441Z-spk-field-d1u1-v0",
+ "scope": "one-shot remedial GUI on immutable #194 snapshot; no tuning/training/labels re-eval; PR #195 untouched; no merge; GO 0/3; roadmap 11/16; HUMAN HOLD unchanged",
+ "stamp": "POSTHOC_FORENSIC_NOT_PROSPECTIVE",
+ "task": 196,
+ "verdict": "FIELD_D1U1_OFFLINE_VIEWER_RUNTIME_SOURCE_BOUND_ENGINEERING_PASS_SCIENTIFIC_HOLD"
+}

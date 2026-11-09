@@ -1,0 +1,7 @@
+{
+ "url": "redacted-port",
+ "expect": "SHARD_SHA",
+ "bannerFound": true,
+ "statusSnippet": "BLOCCO: SHARD_SHA — windows_00.json sha256 mismatch",
+ "pass": true
+}
