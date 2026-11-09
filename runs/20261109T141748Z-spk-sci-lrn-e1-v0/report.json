@@ -1,0 +1,71 @@
+{
+ "P_writes": 0,
+ "arms": {
+  "DELAYED_TRUE_BV": {
+   "n_updates": 144,
+   "theta_final": 1
+  },
+  "MISSING_TRUTH_BV": {
+   "n_updates": 0,
+   "theta_final": 6
+  },
+  "SHUFFLED_TRUTH_BV": {
+   "n_updates": 160,
+   "theta_final": 1
+  },
+  "TRUE_BOUND_BV": {
+   "n_updates": 160,
+   "theta_final": 1
+  }
+ },
+ "branch": "research/spk_sci_lrn_e1_adaptive_sigma_v0",
+ "branch_head": "ffe32607660e24319081d094d6b4e66c31559988",
+ "canonical_sha256": "53fdcb62c860c108c74708c995bdd88ef2f43fca3e1814ad0fd5d1930a77b26f",
+ "custody": {
+  "holdout_guard": "HOLDOUT_NOT_UNLOCKED until stage-B roster token",
+  "pytest": "8 passed (holdout locked in dev)",
+  "run1==run2": true,
+  "run1_file_sha256": "df7d88590e645a63d9dc227acc3e5d9b9fba9a6cbb33c188d18f884af4056f02",
+  "tamper": "VETO exit3",
+  "verify": "FULL_STATE_MATCH_FINITE (canonical 53fdcb62...)"
+ },
+ "decision": "HOLD",
+ "flags": {
+  "P_writes": 0,
+  "decision": "HOLD",
+  "science_GO": "0/3",
+  "trust_scope": "RESEARCH_TRUSTED_HOST_SCOPE"
+ },
+ "holdout": {
+  "mean_balacc": {
+   "DELAYED_TRUE_BV": 0.5,
+   "MISSING_TRUTH_BV": 0.5,
+   "SHUFFLED_TRUTH_BV": 0.5,
+   "STATIC": 0.5,
+   "TRUE_BOUND_BV": 0.5
+  },
+  "n_trajectories": 32,
+  "paired_TRUE_minus_SHUFFLED": {
+   "B": 2000,
+   "delta": 0.03,
+   "hi": 0.0,
+   "lo": 0.0,
+   "mean": 0.0,
+   "n": 32,
+   "seed": 20261187,
+   "width": 0.0
+  },
+  "theta_changed_pe_outputs": true
+ },
+ "interpretation": "On REG3, C-local theta adaptation genuinely ran (160 updates, theta 6->1, original-PE emissions changed vs static) but held-out balanced accuracy is 0.5 for ALL arms incl. TRUE_BOUND_BV; paired TRUE-SHUFFLED Delta=0.0 CI [0,0] vs delta=0.03 -> no scoped learning effect demonstrated on this task/family. Honest negative; not a claim that learning is impossible. RESEARCH_TRUSTED_HOST_SCOPE.",
+ "mutation_control": {
+  "caught": true,
+  "code": "TRANSPORT_MUTATION"
+ },
+ "parent_main": "787c8fbed87c1e2e4b703e985f68ae53c81c8444",
+ "parity_gate_ok": true,
+ "roster_sha256": "e750172bd4b2e384161cb587835e835a58bd37b65a0624ccdbe253e57b9971c6",
+ "run": "20261109T141748Z-spk-sci-lrn-e1-v0",
+ "task": 202,
+ "verdict": "E1_NO_SCOPED_EFFECT_DEMONSTRATED_HOLD"
+}

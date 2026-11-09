@@ -1,0 +1,15 @@
+{
+ "task": 202,
+ "stageA_protocol": {"path": "docs/spk-sci-lrn-e1-protocol-v0.md", "sha256": "eb6fda0379b7b7797472683fa2663f8b904649c2fe3a772712c2d2f13edee99c", "git_blob": "f7d3251e5c2167a1ba8b4463bb1950eeff1c6aa5", "branch_commit": "e2f411483f9644963f7100e9b860a1d77d35549f", "published": "#202 issuecomment-6742163732, #1 6742163476 (BEFORE any eval data)"},
+ "stageB_code": {
+  "roster_sha256_unlock_token": "e750172bd4b2e384161cb587835e835a58bd37b65a0624ccdbe253e57b9971c6",
+  "research/spk_sci_lrn_e1_task_v0.py": {"sha256": "5bd9d5d9677250e452c6f4b61d9ce90b68d879244b4c414a4dec58aec915f0dd", "blob": "a312afa27978438129e46c9891221d75fe24dd83"},
+  "research/spk_sci_lrn_e1_agents_v0.py": {"sha256": "5ffe781809e2aeedd04d385a523c63a20258885093164f84750df1a385e8873d", "blob": "730614f50094dea437e238669680210d7049daff"},
+  "research/spk_sci_lrn_e1_pe_v0.py": {"sha256": "2a9bfeea20c0717fedffbf584f865b746622226d0673e18f6697d393610f34ad", "blob": "dda287f39f07eec9a530958795b47718a6cfd031"},
+  "research/spk_sci_lrn_e1_run_v0.py": {"sha256": "4966731e15dac3237d2eb185b877b4d5ad4cb44e96055b231c2573a36a336775", "blob": "94ac78b4110b0265779b075f75884af1c2fe57e8"},
+  "tests/test_spk_sci_lrn_e1_v0.py": {"sha256": "c8f7a63bfd3ca09cd93a9ce4404f2f4b66b791430751e2e99ca34f77f5ed45a9", "blob": "b7de239e0ba85de21225cef474517bcc95dfcc0c"},
+  "docs/spk-sci-lrn-e1-erratum-v0.md": {"sha256": "5eaa2711d9774dc99ef16b1960c81c210c3f520a3444c4e870f46379b2459012", "blob": "05e2b3e362030dca08be8d511eebd059018ae8c"},
+  "branch_commit": "ffe32607660e24319081d094d6b4e66c31559988", "published": "#202 issuecomment-6742269254, #1 6742269228 (BEFORE first held-out generation; unlock token = roster_sha256)"},
+ "pinned_sources": {"pe_execution_v1b.py": "2e16bdeddc7fc5eacbd341a6dbdf245d71095678", "pe_fabric_v1a.py": "b0cf8b01a8e5ede6ad640349e11b91194c454763", "scheduler_bridge_v0.py": "28850504b30d5a4e441d50833f40302a09a97796"},
+ "main_head": "787c8fbed87c1e2e4b703e985f68ae53c81c8444"
+}
