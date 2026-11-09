@@ -1,0 +1,31 @@
+{
+ "task": 190,
+ "phase1_prereg_doc": {
+  "path": "docs/spk-sci-te1-two-hop-temporal-v0.md",
+  "sha256": "c3f44b003d99c3bf853de2e5233b7eced5640b3b017b1c6b4f5a01f0e638ec28",
+  "git_blob": "2762043076f370ae628aa976e75601f28795b192",
+  "branch_commit": "47ee978aa6c6e64d51dd25b0c0e098996c245e67",
+  "published": "#190 issuecomment-6737062577, #1 issuecomment-6737062600 (BEFORE any execution)"
+ },
+ "phase2_code_prelock": {
+  "research/spk_sci_te1_oracle_v0.py": {"sha256": "c44023f8a977d374e7a23a79fd131b639934f890390dd3578c79021d86855cc0", "git_blob": "4cc939c978b26b7b5db1dffc11304daa4e608baa"},
+  "research/spk_sci_te1_experiment_v0.py": {"sha256": "8d4c0c70e10ae218bbfd6e78bb7be0d271040f10d746ab7e8069910833ccb853", "git_blob": "87c3926be939ff170af4ff78353d8c274d63a793"},
+  "tests/test_spk_sci_te1_v0.py": {"sha256": "a16f048e649467b757932a7aa627f67ecb0421a65c4366e43781f80ec38b153d", "git_blob": "ff2c9a802302f99e5c3028712fb073c53e8157d3"},
+  "branch_commit": "71f0b2571ccf7d8198c06e20cb6d4313c3a53c24",
+  "parent_main": "787c8fbed87c1e2e4b703e985f68ae53c81c8444",
+  "published": "#190 issuecomment-6737131924, #1 issuecomment-6737131901 (BEFORE evidence runs)"
+ },
+ "pinned_original_sources": {
+  "spk_architecture_v1/pe_execution_v1b.py": "2e16bdeddc7fc5eacbd341a6dbdf245d71095678",
+  "spk_architecture_v1/pe_fabric_v1a.py": "b0cf8b01a8e5ede6ad640349e11b91194c454763",
+  "research/spk_v5_t7abc_def_ghi/scheduler_bridge_v0.py": "28850504b30d5a4e441d50833f40302a09a97796"
+ },
+ "expected": {
+  "topology": "C/ch7 -> B/ch1 delay1; B/ch7 -> A/ch1 delay1; plan_v1a spread PE0=A PE1=B PE2=C; input only at C ch1",
+  "programs": {"C": "ACC(1,1) CMP(1) EMIT(7) RESET(0)", "B": "same relay", "A": "ACC(4,1) CMP(6) EMIT(9) SHIFT(1)"},
+  "SHORT[1,2,6]": "C ch7 @1,2,6; B ch7 @2,3,7; A batches @3,4,8; terminal A ch9 @tick8; A final raw0; 9 batches; 6 cross-PE transfers",
+  "LONG[1,5,6]": "C ch7 @1,5,6; B ch7 @2,6,7; A batches @3,7,8; terminal EMPTY; A final raw2; 9 batches; 6 cross-PE transfers",
+  "controls": "C1 disconnect C->B (C terminal x3, B/A silent, 0 transfers); C2 disconnect B->A (B terminal x3, A silent, 3 transfers); C3 no-SHIFT A 2v2 (SHORT @4,8; LONG @7,8); C4 wrong target ch2 silences downstream; C5 +2/+1 delay SHORT A ch9 @tick9, LONG none; C5z zero-delay VETO; C6 shuffle identical; C7 time-blind cannot separate, time-aware matches; C8 mismatch detector rejects altered terminal/routes/phantom"
+ },
+ "verdict_target": "SCI_TE1_ORIGINAL_PE_TWO_HOP_TEMPORAL_PROCESSING_SCOPED_PASS_SCIENTIFIC_HOLD"
+}
