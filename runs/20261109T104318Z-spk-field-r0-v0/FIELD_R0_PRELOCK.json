@@ -1,0 +1,25 @@
+{
+ "task": 192,
+ "phase1_protocol": {"path": "docs/spk-field-r0-protocol-v0.md", "sha256": "5e777112fd8b0b5e848d990bbf36fa50980a5be828aae52c7249e706e9f44376", "git_blob": "a06d15d40e8b9674ee5ac7ce71012e991d733e27", "branch_commit": "9ddfdb17e365149ce6b22c379c8b18b9e43cd98e", "published": "#192 issuecomment-6737872068, #1 6737872314"},
+ "phase2_code": {
+  "research/spk_field_r0_encoder_v0.py": {"sha256": "5481a9e077a88cc03eeab66b4277d3b48d3c103ca2ec0061d7cb0019f68dc464", "blob": "2d2072df0daa2f973a833807637ff3f498bfd4df"},
+  "research/spk_field_r0_oracle_v0.py": {"sha256": "6b31a5d99225e52e9953e0a9244c8a30e824f382941ea2bdd3dec5ccfd230f03", "blob": "a0c142d03854e7a88466b3abb6a37133bafb3daf"},
+  "research/spk_field_r0_runner_v0.py": {"sha256": "342fbe1efc18def911b4b326f336c204192806e532281aadaaa670067e053675", "blob": "39b2b5d8bc94563e932ab9f1758336ed926ee795"},
+  "research/spk_field_r0_scorer_v0.py": {"sha256": "658ea2996e53cc9d4f2feb2822c37ca2baa51103277900aea69641c49d7a53df", "blob": "e4725ed3c82214615e06dd54223cfa0dcdd99a10"},
+  "tests/test_spk_field_r0_v0.py": {"sha256": "1f4e780a651ebc19eec070eb27a11de973cc281c6d80b0f640857e9add28816c", "blob": "32f5d12940891da77a329d140a9ffc2c6dfae6d4"},
+  "branch_commit": "a796ef8ea561fdcf6a33c6b89632009e922e71a9", "published": "#192 issuecomment-6737962878, #1 6737962761 (BEFORE first CSV byte)"},
+ "erratum_append_only": {
+  "docs/spk-field-r0-erratum-v0.md": {"sha256": "f79ab558430265fa2e6db92dfc005b6dca1e4110c3e300c66d9f01c67b390500", "blob": "ce8ba791529748a69f552817bb08eee0fc82eec1"},
+  "research/spk_field_r0_series_guard_v0.py": {"sha256": "9c43528b518914e87cac60277c70c14aca8b18e0a2abba6106f51ce29d420d0a", "blob": "00d83b6d0f434b26c79d786b96612903448f2917"},
+  "tests/test_spk_field_r0_guard_v0.py": {"sha256": "a5f1db694eb1de6aa0c8601620df6691254cd4b0e8c22353d853be815c02c87a", "blob": "44e5cd4b4e9c3afb1459be23930525a04f0f331b"},
+  "branch_commit": "ca0a5f13c338fc0418af92612d7ac22af0e06687", "published": "#192 issuecomment-6738021071, #1 6738021134"},
+ "prediction_lock": {
+  "published": "#192 issuecomment-6738045426, #1 6738045777 (BEFORE label read)",
+  "procA_manifest_sha256": "c72bd6a5357b6dec47f1252f10bb064a70b18ecc3b9cbe89cdd913bf5112c0a4",
+  "procB_manifest_sha256": "c72bd6a5357b6dec47f1252f10bb064a70b18ecc3b9cbe89cdd913bf5112c0a4",
+  "envelope_sha256": "3ab1b2c8d0faa426367e56b879403d1231e4edc56ea294db7cd624eea81337f7",
+  "detail_shards_sha256": {"000": "af8662a3273bf454e42ab5e1bcef76285e99a0d333e0742f3358ac5ccd337216", "001": "f199d68736b59fc01b0eb37b4bc20b4f38b47ce21b3a8270a081ba6da4734a2b", "002": "c4d9fb66b06e723281d6504391431f4a93375213f5668919f9cfff2bcabb8605", "003": "3908069388b5eabcb05d79e89ab1d6432cbd2290a167444811b3e498d502b9c2", "004": "7e769d0a0bcef2dd079d7919220c648f4bd56863c0c690073338744d5a1bc4b6", "005": "17fbc4f3fd06fd6b42a38d477339ae0a9b38eacf3c7849f4a8c6f6b07a17d3e2"}
+ },
+ "original_source_pins": {"pe_execution_v1b.py": "2e16bdeddc7fc5eacbd341a6dbdf245d71095678", "pe_fabric_v1a.py": "b0cf8b01a8e5ede6ad640349e11b91194c454763", "scheduler_bridge_v0.py": "28850504b30d5a4e441d50833f40302a09a97796"},
+ "main_head": "787c8fbed87c1e2e4b703e985f68ae53c81c8444"
+}

@@ -1,0 +1,37 @@
+{
+ "blocked_series": {
+  "data/realKnownCause/machine_temperature_system_failure.csv": {
+   "code": "SOURCE_BLOCKED_HOLD",
+   "csv": {
+    "bytes": 732223,
+    "path": "data/realKnownCause/machine_temperature_system_failure.csv",
+    "sha256": "92bf5b87fc7f9bba8ca0b7ec63ccaac8cb4a1371a258e8c29a10ae9c018d82a4"
+   },
+   "detail": "row 10150: timestamps not strictly increasing",
+   "rule": "protocol section 3: timestamps must be strictly increasing, else SOURCE_BLOCKED_HOLD for the file"
+  }
+ },
+ "manifest_bytes": 24854,
+ "manifest_sha256": "c72bd6a5357b6dec47f1252f10bb064a70b18ecc3b9cbe89cdd913bf5112c0a4",
+ "pooled_pe_alarms": 13,
+ "pooled_pe_b1_parity_all": true,
+ "schema": "spk-field-r0-predictions/v0",
+ "series": {
+  "data/realKnownCause/ambient_temperature_system_failure.csv": {
+   "N": 7267,
+   "eligible_windows": 85,
+   "pe_alarms": 13,
+   "pe_b1_parity_all": true,
+   "sha256_csv": "230b68ccca20f59d562afd5d24ad52939c9b784386bed0054018358bf9120581"
+  }
+ },
+ "shard_sha256": {
+  "detail_ambient_temperature_system_failure.csv_000.json": "af8662a3273bf454e42ab5e1bcef76285e99a0d333e0742f3358ac5ccd337216",
+  "detail_ambient_temperature_system_failure.csv_001.json": "f199d68736b59fc01b0eb37b4bc20b4f38b47ce21b3a8270a081ba6da4734a2b",
+  "detail_ambient_temperature_system_failure.csv_002.json": "c4d9fb66b06e723281d6504391431f4a93375213f5668919f9cfff2bcabb8605",
+  "detail_ambient_temperature_system_failure.csv_003.json": "3908069388b5eabcb05d79e89ab1d6432cbd2290a167444811b3e498d502b9c2",
+  "detail_ambient_temperature_system_failure.csv_004.json": "7e769d0a0bcef2dd079d7919220c648f4bd56863c0c690073338744d5a1bc4b6",
+  "detail_ambient_temperature_system_failure.csv_005.json": "17fbc4f3fd06fd6b42a38d477339ae0a9b38eacf3c7849f4a8c6f6b07a17d3e2"
+ },
+ "shards_match_manifest": true
+}

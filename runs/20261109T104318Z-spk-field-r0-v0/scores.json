@@ -1,0 +1,60 @@
+{
+ "any_positive_windows": true,
+ "labels_file": "combined_windows.json",
+ "labels_sha256": "1e1fbc4601321aad8d0f8b3784c8134299379f68f6c1f7777565f8ffd57ab6b1",
+ "manifest_sha256": "c72bd6a5357b6dec47f1252f10bb064a70b18ecc3b9cbe89cdd913bf5112c0a4",
+ "pooled": {
+  "B0": {
+   "FN": 7,
+   "FP": 31,
+   "TN": 40,
+   "TP": 7
+  },
+  "B2": {
+   "FN": 0,
+   "FP": 64,
+   "TN": 7,
+   "TP": 14
+  },
+  "PE": {
+   "FN": 13,
+   "FP": 12,
+   "TN": 59,
+   "TP": 1
+  }
+ },
+ "schema": "spk-field-r0-scores/v0",
+ "series": {
+  "data/realKnownCause/ambient_temperature_system_failure.csv": {
+   "confusions": {
+    "B0": {
+     "FN": 7,
+     "FP": 31,
+     "TN": 40,
+     "TP": 7
+    },
+    "B2": {
+     "FN": 0,
+     "FP": 64,
+     "TN": 7,
+     "TP": 14
+    },
+    "PE": {
+     "FN": 13,
+     "FP": 12,
+     "TN": 59,
+     "TP": 1
+    }
+   },
+   "eligible_windows": 85,
+   "fp_alarms_on_nonanomalous_windows": 12,
+   "intervals_covered_by_PE_alarms": 1,
+   "label_key": "realKnownCause/ambient_temperature_system_failure.csv",
+   "n_intervals": 2,
+   "partial_status": "NOT_SCORED_PARTIAL",
+   "partial_trailing_rows": 11,
+   "pe_b1_parity_all": true,
+   "positive_windows": 14
+  }
+ }
+}

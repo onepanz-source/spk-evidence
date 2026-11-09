@@ -1,0 +1,71 @@
+{
+ "P_writes": 0,
+ "branch": "research/spk_field_r0_real_telemetry_v0",
+ "branch_head": "ca0a5f13c338fc0418af92612d7ac22af0e06687",
+ "custody": {
+  "manifest_sha256": "c72bd6a5357b6dec47f1252f10bb064a70b18ecc3b9cbe89cdd913bf5112c0a4",
+  "procA_equals_procB": "byte-identical manifest+shards+envelope",
+  "pytest": "20 passed (synthetic-only dev tests)",
+  "scorer": "separate process, shard SHA256 verified against frozen manifest, labels only after lock",
+  "tamper": "VETO REPORT_REEXECUTION_MISMATCH (byte flip @200, exit 3, tamper_detected=true)",
+  "verify": "FULL_STATE_MATCH_FINITE (3rd fresh process, exit 0)"
+ },
+ "decision": "HOLD",
+ "measurement_summary": {
+  "ambient_series": {
+   "C": 1816,
+   "N": 7267,
+   "b0_alarms": 38,
+   "b1_alarms": 13,
+   "b2_alarms": 78,
+   "csv_sha256": "230b68ccca20f59d562afd5d24ad52939c9b784386bed0054018358bf9120581",
+   "eligible_windows": 85,
+   "eval_rows": 5451,
+   "nonzero_spike_windows": 78,
+   "partial_status": "NOT_SCORED_PARTIAL",
+   "partial_trailing_rows": 11,
+   "pe_alarms": 13,
+   "pe_b1_parity_all": true,
+   "pe_batches": 768,
+   "pe_cross_pe": 512,
+   "pe_transfers": 512,
+   "pe_vs_b0_discordant": 25,
+   "pe_vs_b2_discordant": 65,
+   "theta": 1.7479306799999392,
+   "timestamp_gap_rows": 10
+  },
+  "honest_reading": "fixed non-learning original PE circuit on real ambient telemetry: 13 alarms on 85 eligible windows; covers 1 of 2 official anomaly intervals (TP=1, FP=12, FN=13, TN=59). B2 (any spike) gets TP=14/FP=64; B0 (>=3 spikes) TP=7/FP=31. PE is NOT better than the simple baselines here; descriptive only, no advantage/learning claim. B1 classical loop matches PE on every window (parity).",
+  "labels": {
+   "ambient_intervals": 2,
+   "confusions_B0": {
+    "FN": 7,
+    "FP": 31,
+    "TN": 40,
+    "TP": 7
+   },
+   "confusions_B2": {
+    "FN": 0,
+    "FP": 64,
+    "TN": 7,
+    "TP": 14
+   },
+   "confusions_PE": {
+    "FN": 13,
+    "FP": 12,
+    "TN": 59,
+    "TP": 1
+   },
+   "intervals_covered_by_PE_alarms": 1,
+   "positive_windows": 14,
+   "read_after": "PREDICTIONS_LOCKED_BEFORE_LABEL_READ #192 6738045426",
+   "sha256": "1e1fbc4601321aad8d0f8b3784c8134299379f68f6c1f7777565f8ffd57ab6b1"
+  },
+  "machine_series": "SOURCE_BLOCKED_HOLD (row 10150 backward timestamp; no substitution)"
+ },
+ "nab_commit": "ea702d75cc2258d9d7dd35ca8e5e2539d71f3140",
+ "parent_main": "787c8fbed87c1e2e4b703e985f68ae53c81c8444",
+ "run": "20261109T104318Z-spk-field-r0-v0",
+ "scope": "exploratory prospective measurement on public already-labeled data; NOT independent blind proof; ideal software clock; host-side calibration/window-reset disclosed; no learning/P, no dataset substitution, no frozen edits, no merge; PR DRAFT only; scientific GO 0/3; roadmap 11/16 unchanged; HOLD C0-C5/G2/dispatch/BV->P/human review unchanged",
+ "task": 192,
+ "verdict": "FIELD_R0_REAL_STREAM_EXECUTION_AND_MEASUREMENT_COMPLETE_SCIENTIFIC_HOLD"
+}

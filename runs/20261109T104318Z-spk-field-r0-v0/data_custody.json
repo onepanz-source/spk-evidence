@@ -1,0 +1,12 @@
+{
+ "nab_repo": "numenta/NAB",
+ "nab_pinned_commit": "ea702d75cc2258d9d7dd35ca8e5e2539d71f3140",
+ "nab_license": "MIT (LICENSE.txt at pinned commit)",
+ "fetch_base": "https://raw.githubusercontent.com/numenta/NAB/ea702d75cc2258d9d7dd35ca8e5e2539d71f3140/",
+ "files": {
+  "data/realKnownCause/ambient_temperature_system_failure.csv": {"sha256": "230b68ccca20f59d562afd5d24ad52939c9b784386bed0054018358bf9120581", "bytes": 233321, "git_blob_sha1": "d9d6bb2d20221e5161e1655dbf120e67f949051a", "admission": "ADMITTED (7267 rows, strictly increasing timestamps)"},
+  "data/realKnownCause/machine_temperature_system_failure.csv": {"sha256": "92bf5b87fc7f9bba8ca0b7ec63ccaac8cb4a1371a258e8c29a10ae9c018d82a4", "bytes": 732223, "git_blob_sha1": "7ac97fb6ef587efaf8770bfe7346e077da58ceb7", "admission": "SOURCE_BLOCKED_HOLD (data row 10150: 2014-01-07 02:55:00 followed by 2014-01-07 02:00:00; 12 duplicated timestamps; strict monotonicity violated; no skip/repair/substitution)"},
+  "labels/combined_windows.json": {"sha256": "1e1fbc4601321aad8d0f8b3784c8134299379f68f6c1f7777565f8ffd57ab6b1", "bytes": 15359, "git_blob_sha1": "2f1be355750a2fefa8d781215d3275fda3d83d23", "read_at": "AFTER PREDICTIONS_LOCKED_BEFORE_LABEL_READ #192 issuecomment-6738045426, separate scorer process only"}
+ },
+ "raw_csv_not_reproduced_in_spk_repo": true
+}
