@@ -1,0 +1,91 @@
+{
+ "P_writes": 0,
+ "branch": "research/spk_field_d1_diagnostic_viewer_v0",
+ "branch_head": "0a40c79347da412078cff1b96863196ff179ce9c",
+ "custody": {
+  "procA==procB": "byte-identical snapshot+envelope",
+  "pytest": "12 passed",
+  "tamper": "VETO REPORT_REEXECUTION_MISMATCH (byte flip @150 on index.json, exit 3)",
+  "verify": "FULL_STATE_MATCH_FINITE (3rd fresh process, exit 0)",
+  "viewer": "single self-contained offline HTML (IT, file chooser, textContent-only, no network/CDN/fetch/innerHTML, WebCrypto SHA256 per shard); browser rendering NOT headless-tested \u2014 declared gap; export/scoring path tested"
+ },
+ "decision": "HOLD",
+ "gate": {
+  "B0": {
+   "FN": 7,
+   "FP": 31,
+   "TN": 40,
+   "TP": 7
+  },
+  "B2": {
+   "FN": 0,
+   "FP": 64,
+   "TN": 7,
+   "TP": 14
+  },
+  "FN_windows": [
+   26,
+   27,
+   28,
+   29,
+   30,
+   31,
+   32,
+   65,
+   66,
+   67,
+   68,
+   70,
+   71
+  ],
+  "FP_windows": [
+   4,
+   16,
+   43,
+   44,
+   57,
+   58,
+   63,
+   79,
+   81,
+   82,
+   83,
+   84
+  ],
+  "PE": {
+   "FN": 13,
+   "FP": 12,
+   "TN": 59,
+   "TP": 1
+  },
+  "TP_windows": [
+   69
+  ],
+  "confusions_recomputed==official_scorer": true,
+  "evidence_files_sha_match": "18/18 vs SHA256MANIFEST at cda5795988",
+  "machine_series": "SOURCE_BLOCKED_HOLD (row 10150), shown BLOCKED not zero-alarms",
+  "manifest_sha256==prediction_lock_c72bd6a5...": true,
+  "procA_manifest==procB_manifest": true,
+  "window_ids_0_84_exactly_once": true
+ },
+ "parent_main": "787c8fbed87c1e2e4b703e985f68ae53c81c8444",
+ "run": "20261109T111520Z-spk-field-d1-v0",
+ "scope": "postmortem offline read-only diagnostic on immutable FIELD-R0 evidence; no tuning/threshold-from-labels/training/performance claims; no merge; PR #193/#191 untouched; scientific GO 0/3; roadmap 11/16 unchanged; HUMAN C0-C5/G2/dispatch/BV->P HOLD unchanged",
+ "snapshot": {
+  "files_match_index": true,
+  "index_bytes": 1877,
+  "index_sha256": "7fec684b81603044df3c646e6e9e91ede2223e8526d610039da43ad27b7042f2",
+  "shards": {
+   "diagnostics.json": "bae748cdc8b93a8495838a0859daa1be72bc68511a931494964e51f4dbc791f4",
+   "windows_00.json": "8a32c1089d8957e97941cef00a257a76103d1702cc511c335c373207d51a6fc2",
+   "windows_01.json": "a87533cbcd8b698e76f6fae1d95ba035b20bfe051011e6f1243421a77d92d4c1",
+   "windows_02.json": "c9757281ec3bc2d332e34278a642c2cacdd657f8342b25f132dce8d09b003f1a",
+   "windows_03.json": "ef4730e38a6db3158364c8a047ef0b05a695a161cb2e5e459fbab41afbe34424",
+   "windows_04.json": "2bea13327d18864096d8b6b90f195da4230a1dcce68ad2ffe515e3924d3e4aa5",
+   "windows_05.json": "2f27fb727a1f674ff2fd67c9f06f9e7352bc25aeccdf10cc763c7699e77eec03"
+  }
+ },
+ "stamp": "POSTHOC_FORENSIC_NOT_PROSPECTIVE",
+ "task": 194,
+ "verdict": "FIELD_D1_OFFLINE_DIAGNOSTIC_VIEWER_ENGINEERING_SCOPED_PASS_SCIENTIFIC_HOLD"
+}

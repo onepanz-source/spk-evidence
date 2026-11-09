@@ -1,0 +1,19 @@
+{
+ "task": 194,
+ "phase1_spec": {"path": "docs/spk-field-d1-spec-v0.md", "sha256": "61013f96944269190cf68cd8a61d5cf65bbb9b087b9b1b2d7dd787af1fd58121", "git_blob": "cc8a60d74bdfb521e3a81b7da04693ee4cc6d6e8", "branch_commit": "fb1788bdcdd31109aa2b79c2fe5be27d7d2efefb", "published": "#194 issuecomment-6738583631, #1 6738583460"},
+ "phase2_code": {
+  "research/spk_field_d1_export_v0.py": {"sha256": "44242c1d3bd23f08c97fce5b88aa06511c52b4aa2567c892b98e5e5ec43556c2", "blob": "68ba0d693b2f003c1cb2c83681415806e50ce169"},
+  "viewer/spk-field-d1-viewer-v0.html": {"sha256": "1c88649a0476eb693dfb24b495f711b7f570826f95ac3d87d3e84e6c2f1c581b", "blob": "357520c421106d806c45c9770e036066d7d10ee9"},
+  "tests/test_spk_field_d1_v0.py": {"sha256": "352adfcafc4775bc48d913c76d8cf943e396d44db436570e9db32f704a156339", "blob": "a9635a90659f3321b12671c2d43c5c26965ff0d1"},
+  "branch_commit": "0a40c79347da412078cff1b96863196ff179ce9c", "published": "#194 issuecomment-6738660016, #1 6738660259 (BEFORE evidence runs)"},
+ "inputs": {
+  "evidence_repo": "onepanz-source/spk-evidence",
+  "evidence_commit": "cda579598839e83e091084bcc69a395b948bff72",
+  "evidence_path": "runs/20261109T104318Z-spk-field-r0-v0/",
+  "prediction_lock": "#192 issuecomment-6738045426",
+  "prediction_manifest_sha256": "c72bd6a5357b6dec47f1252f10bb064a70b18ecc3b9cbe89cdd913bf5112c0a4",
+  "nab_commit": "ea702d75cc2258d9d7dd35ca8e5e2539d71f3140",
+  "labels": {"file": "labels/combined_windows.json", "sha256": "1e1fbc4601321aad8d0f8b3784c8134299379f68f6c1f7777565f8ffd57ab6b1", "git_blob": "2f1be355750a2fefa8d781215d3275fda3d83d23"}
+ },
+ "main_head": "787c8fbed87c1e2e4b703e985f68ae53c81c8444"
+}
