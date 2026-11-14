@@ -1,0 +1,71 @@
+{
+  "schema": "spk.evidence.f1ec1.v0.user-fwork-lean-fail-and-v0r-corrective-source-prereg.v0",
+  "date": "2026-11-14",
+  "source_repo": "onepanz-source/spk-backvalidation-v0",
+  "source_audit_commit": "f8d7c28fa6b8ac83fcb99d8c5709676067a9840a",
+  "source_pr": "https://github.com/onepanz-source/spk-backvalidation-v0/pull/271",
+  "original_v0_zip_sha256": "cfd2e849ca18be77d503fc32e6ffed1c4dc650a908b194dce1f41944d8ba1ed9",
+  "user_fwork_artifact": {
+    "filename": "SPK_F1eC1_v0_logs.tar.gz",
+    "sha256": "d39dd962ef5e697d76f1d5a63cedf308084200fc253b9c1650ff66c68c0b7602",
+    "manifest_sha256": "24f9bd9a28400728cac1bdb60714c048dd50cdca7320484f5b949038e9956189",
+    "manifest_entries": 15,
+    "manifest_verified": 15,
+    "package_sources_verified": 11,
+    "f1ec1_lean_log_sha256": "e4f6b8cf85fd98846342b4ce22cda57de9a455f93d8f821669532e7cb2974a24",
+    "f1ec1_ax_reports": 13,
+    "f1ec1_sorryAx_dependent": 5,
+    "f1ec1_compiler_error_count": 2,
+    "Lean_fail_reasons": [
+      "Missing congruence under shared trace-head constructor at line 139",
+      "No synthesized Decidable for full result inequality at line 196"
+    ],
+    "frozen_original_python_report_sha256": "1742208e46b7030b387bce3b5ddeb6bb1944c878ae032eefad96ad425eac4891",
+    "frozen_original_python_cases": 1560,
+    "additional_prefix_checks": 633,
+    "mismatch_count": 0,
+    "branch_counts": {
+      "ok": 1062,
+      "accOverflow": 451,
+      "resetOverflow": 23,
+      "first_error_later": 84
+    }
+  },
+  "CIAT_independent_byte_audit": {
+    "checks": 218,
+    "passed": 218,
+    "failed": 0,
+    "checker_script_sha256": "5d84b6c1fc3cb7278e4f3b7383a26f07c70861c5b81d8c188eac43e763e94965",
+    "report_sha256": "6fb77573890b41d532dc02459f6703025fa37e3db3846ee5f934cbc7b8dc5171",
+    "scope": "Uploaded TAR/ZIP byte-level authenticity and log semantics only. No CIAT Lean4 or frozen Python execution."
+  },
+  "corrective_v0r": {
+    "filename": "SPK_Lean_F1e_C1_v0r.zip",
+    "bytes": 30321,
+    "sha256": "fa419aeaaa4eecfd11c46f5ba99b52b0120d6fafbb971a41d38849d3befabb58",
+    "new_Lean_source_sha256": "9c1920286b901572e35ec8d1272dff9f30aff6dddd45d1002e3cec4c5b5426b5",
+    "manifest_sha256": "1ca115769f661dd47a5f540999469cb767d7f17f9776848f8619b248809dd4cb",
+    "source_file_sha_checked": 11,
+    "zip_crc": "PASS",
+    "bash_n": "PASS",
+    "python_pycompile": "PASS",
+    "lean_kernel": "PENDING",
+    "original_python": "PENDING",
+    "output_root": "~/workspace/spk-manual-runs/spk-lean-f1e-c1-v0r",
+    "source_modified_only_two_proof_bodies": true,
+    "theorem_statements_unchanged": true,
+    "all_prior_Lean_models_unchanged": true
+  },
+  "status": "F1EC1_V0_PYTHON_BOUNDED_PASS__LEAN_FAIL__V0R_PREEXECUTION_HOLD",
+  "source_archive_not_committed": true,
+  "raw_evidence_bytes_not_in_GitHub": true,
+  "P_writes": 0,
+  "SCI_GO": "0/3",
+  "human_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "append_only": true
+}
