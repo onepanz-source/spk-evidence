@@ -1,0 +1,50 @@
+{
+  "schema": "spk.evidence.f1eb.v0r.user-fwork-lean-and-frozen-python-audit.v0",
+  "date": "2026-11-14",
+  "source_repo": "onepanz-source/spk-backvalidation-v0",
+  "source_commit": "a2f77325a307ef17ae77832274ada7d2fe2548fd",
+  "user_archive_sha256": "668b5616074900131b690a8769d9e9141e7b049e2c20d163789e8a0485b1bb3f",
+  "prelocked_zip_sha256": "c66eaed8f5dd49d152f59c90e0f6b49bf6a7fbf9cbe63b3f97402a460e45bb00",
+  "user_fwork_manifest_sha256": "8b69ce683f83af56026eb9e9472c1fb49c7538fa6ec62e8214de84e1a16a7d8f",
+  "user_fwork_manifest_pass": 13,
+  "source_manifest_pass": 9,
+  "user_fwork_Lean": {
+    "version": "4.35.0",
+    "axiom_reports": 17,
+    "Lean_errors": 0,
+    "sorryAx": 0,
+    "standard_axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "log_sha256": "d87b40a1c1c2d9dbf9c083da3b6018d8ce38a61dba2191a5f3869dc7d22d121a"
+  },
+  "user_fwork_frozen_python": {
+    "mode": "FROZEN_ORIGINAL_CPYTHON_BOUNDED_ADMITTED_FRAGMENT",
+    "cases": 4104,
+    "mismatches": 0,
+    "ok": 3329,
+    "overflow": 775,
+    "repeat_of_F1eB_v0_native_suite": true,
+    "report_sha256": "2732e51fd3b5998d802a921d361832805ba92e1c7e6002e898332237a5484865"
+  },
+  "CIAT_uploaded_byte_readback": {
+    "passed": 113,
+    "failed": 0,
+    "script_sha256": "e49180201abc8fee0cb41e8053c1e39e08a36e43b44f0b5d967ec1aefd044293",
+    "report_sha256": "a4a8e25e78fc6fca3b9dbccd4f84d534fe22c20728c14c117a3247c77ec3982a",
+    "method": "Separate stdlib verifier of uploaded tar, ZIP, SHA, source identifiers, Lean log and original Python report. Does NOT rerun Fedora Lean or original Python."
+  },
+  "scientific_scope": "Model theorem for canonical Nat input and terminal observational quotient. Cannot yet claim universal CPython implementation refinement, negative signed operands, typed-error parity, or full compiler soundness.",
+  "raw_user_log_bytes_in_GitHub": false,
+  "P_writes": 0,
+  "SCI_GO": "0/3",
+  "human_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "append_only": true,
+  "status": "F1EB_V0R_SCOPED_MODEL_LEAN_PASS__BOUNDED_ORIGINAL_CPYTHON_PASS__UNIVERSAL_REFINEMENT_HOLD"
+}
