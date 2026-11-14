@@ -1,0 +1,48 @@
+{
+  "schema": "spk.evidence.f1ed0b0.v0.preexecution-source-prereg-and-static-validation",
+  "date": "2026-11-14",
+  "source_repository": "onepanz-source/spk-backvalidation-v0",
+  "source_prelock_commit": "b2e2834fe41755ebf8f3dce240651e8554302df4",
+  "source_issue": "https://github.com/onepanz-source/spk-backvalidation-v0/issues/279",
+  "package": "SPK_Lean_F1e_D0b0_v0.zip",
+  "package_size_bytes": 14768,
+  "package_sha256": "3935bafc15a4df729ad30932412cfd93213992d278c5bf30ac9da50defb5b941",
+  "source_manifest_sha256": "ce4733d8bb34f29506b9b67c2248522342e7970df5d8d25e9332850fc228c5e9",
+  "source_files_checked": "7/7, ZIP CRC PASS",
+  "lean_new_sha256": "275057569637d54dadd99ab708db4ae977ac3ea34f0d13106ff0de814fe5e935",
+  "lean_prior_d0a_byte_identical_sha256": "9387b25a3de4b196e20f860f7e4862d500b8787b9ae891b8e0751ce321503c38",
+  "python_new_probe_sha256": "070bb9e56f78f4406ec9089e34b0f42a291c39dc2b0173fcca842f63453ec576",
+  "runner_sha256": "2e0686c7be260ca08cdec6f0b1c1a38ed2c12471ee87740ad80d046da9b95cd6",
+  "static_checks": [
+    "Lean source has 13 distinct candidate theorem declarations and 13 exactly matching print-axiom requests, no sorry/admit literals",
+    "Python source py_compile PASS",
+    "Bash -n PASS",
+    "Gate positive and three negative mutation tests PASS",
+    "18/18 directed Python REFERENCE-ONLY cases plus 384 seeded reference cases generated"
+  ],
+  "original_frozen_runtime_user_Fedora": "PENDING",
+  "Lean_4_35_user_Fedora": "PENDING",
+  "reference_seeded_outcomes": {
+    "ok": 204,
+    "OverflowError": 163,
+    "ValueError": 17
+  },
+  "original_runtime_case_count": 402,
+  "evidence_root": "~/workspace/spk-manual-runs/spk-lean-f1e-d0b0-v0",
+  "M_schedulable": false,
+  "user_manual_fwork_required": true,
+  "raw_source_archive_in_GitHub": false,
+  "raw_log_archive_received": false,
+  "scope": "A source-shaped signed multi-batch research evaluator, not complete source-invalid Python error semantics or general Nat embedding proof. Output occurrence trace not Python channel-sorted SpikeTrain. Native Python test class equality only.",
+  "status": "PREEXECUTION_HOLD",
+  "P_writes": 0,
+  "SCI_GO": "0/3",
+  "human_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "peer_review_not_scheduled": true,
+  "append_only": true
+}
