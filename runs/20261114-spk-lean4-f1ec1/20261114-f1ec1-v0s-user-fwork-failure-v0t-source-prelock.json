@@ -1,0 +1,58 @@
+{
+  "schema": "spk.evidence.f1ec1.v0s-failed-kernel-and-v0t-typed-case-corrective-prelock.v0",
+  "date": "2026-11-14",
+  "source_repo": "onepanz-source/spk-backvalidation-v0",
+  "source_commit": "9c05fc725172947f77bf84086c62cad5281103ca",
+  "source_pr": "https://github.com/onepanz-source/spk-backvalidation-v0/pull/271",
+  "user_fedora_v0s": {
+    "upload_sha256": "6e0f23506a7fd6400749d019c36639c53e0ddb1c4441e5262374ab06371d10a0",
+    "prelocked_source_zip_sha256": "8719ffbca8949deb6f8f546608858c5ff77991bc6c2c922de99ec786f41a7f1c",
+    "manifest_sha256": "802dfaf2604b467207b97f43fdffbd71a6a1de7b872ee9c5b717ee96300e080f",
+    "log_sha256": "7d3fcd21cf785805207c30f1750964cb03cdc92f364bbeff6bf73ad3a99f861c",
+    "ax_reports": 13,
+    "sorryAx_reports": 4,
+    "kernel_errors": 1,
+    "error": "SPKCoreF1eC1V0s.lean:146:22 hcong match expression elaboration mismatch",
+    "Python_report_sha256": "1742208e46b7030b387bce3b5ddeb6bb1944c878ae032eefad96ad425eac4891",
+    "Python_repeated_cases": 1560,
+    "prefix_checks": 633,
+    "status": "USER_KERNEL_LEAN_FAIL_OR_HOLD__FROZEN_ORIGINAL_PYTHON_REPEAT_BOUNDED_PASS"
+  },
+  "CIAT_file_readback": {
+    "checks": 101,
+    "passed": 101,
+    "failed": 0,
+    "verifier_sha256": "40670a4c05f9d6d8f805471cb27a08d2ea60fa24fa8414b339f3856bd5e2617b",
+    "report_sha256": "1a4764566b35ba8693f465a67ebf1793585076e53f3f932141cf6ad89fc1885b",
+    "scope": "Independent byte/hash/log audit of uploaded TAR and source ZIP only, not independent Lean or Python execution"
+  },
+  "v0t_corrective_prelock": {
+    "ZIP": "SPK_Lean_F1e_C1_v0t.zip",
+    "ZIP_bytes": 29416,
+    "ZIP_sha256": "740957c9618a1dd7c4ff1546948f21e1ab8981307a56549c561b2604d7c2de58",
+    "Lean_source": "SPKCoreF1eC1V0t.lean",
+    "Lean_source_sha256": "f068e8eccbe367e2a1f0231f24a38df04e79b09d283a131dfde8adf5e7a7de26",
+    "runner_sha256": "a50656632c77229fcde0949cffed100de3f39f14b6c82783208e313a1ebae40e",
+    "source_manifest_sha256": "f57469841eb0903d5eeec7569ec2645f07ecb46f27afbf165ee07f8da6589b9d",
+    "source_sha_verified": 11,
+    "ZIP_crc": "PASS",
+    "bash_syntax": "PASS",
+    "python_static": "PASS",
+    "correction": "Theorem f1ec1_online_eq_of_prepare proof body replaced with two typed tail outcome cases; no theorem statements, evaluator defs, prior Lean modules or Python checker changed.",
+    "new_fwork_output": "~/workspace/spk-manual-runs/spk-lean-f1e-c1-v0t",
+    "user_Fedora_kernel": "NOT_EXECUTED",
+    "user_Fedora_original_python": "NOT_EXECUTED",
+    "source_archive_only_in_chat": true
+  },
+  "status": "F1EC1_V0S_LEAN_FAIL__V0T_SOURCE_PRELOCK_HOLD",
+  "universal_CPython_Lean_refinement": "HOLD",
+  "original_P_writes": 0,
+  "SCI_GO": "0/3",
+  "human_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "append_only": true
+}
