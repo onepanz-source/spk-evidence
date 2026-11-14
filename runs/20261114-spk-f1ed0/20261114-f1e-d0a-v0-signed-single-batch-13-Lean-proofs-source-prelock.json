@@ -1,0 +1,37 @@
+{
+  "schema": "spk.evidence.f1e-d0a.v0.signed-core-13-Lean-candidates-prereg.v0",
+  "date": "2026-11-14",
+  "source_repo": "onepanz-source/spk-backvalidation-v0",
+  "source_commit": "6d4639e0a60e69144305f9b0d9f976841b6ed4eb",
+  "package_zip_name": "SPK_Lean_F1e_D0a_v0.zip",
+  "package_bytes": 4794,
+  "package_sha256": "ee1cbd36e5f8b7e2a3d3440b1663d3152d8c6d2f157479e8ce2cca55bc82cf10",
+  "lean_source_sha256": "7e75b12b3de1cf5d9e59b6ac3db298506ceb3ad9b210a741d2a9510f05d1544c",
+  "runner_sha256": "99f783a5ff06873a692457e4802c20b0766d63e54a4f8e04e8fe58c390a527b8",
+  "earlier_frozen_original_Python": "545/545 bounded original core PASS, evidence user source archive SHA256 0ec10c30e2e4f4aaa9e427e6374105211c3e920740ca9a2b246e1b35e7cc74f7, CIAT independent file/hash 102/102 PASS",
+  "prospective": {
+    "model": "one-batch signed operands Int CMP/RESET/EMIT/ACC channel, delayed output materialization",
+    "named_Lean_theorems": 13,
+    "Lean_axiom_reports": 13,
+    "user_Fedora_kernel": "NOT_EXECUTED",
+    "source_archive_static_checks": "4 members CRC PASS, SHA manifest 3/3, Bash -n PASS",
+    "fresh_root": "~/workspace/spk-manual-runs/spk-lean-f1e-d0a-v0"
+  },
+  "exclusions": [
+    "Not universal Python→Lean semantics",
+    "No multi-batch, no typed source constructor admission proof, no full interpreter refinement",
+    "No extra original Python native coverage in this Lean package",
+    "No ESP32/mesh hardware measurements"
+  ],
+  "archive_committed_to_GitHub": false,
+  "original_P_writes": 0,
+  "SCI_GO": "0/3",
+  "human_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "append_only": true,
+  "status": "F1ED0A_V0_CANDIDATE_SOURCE_SHA_PRELOCK_HOLD"
+}
