@@ -1,0 +1,13 @@
+Lean: Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+eaf763c1208c0019e51c697e3b2ac6d10b1fb3f07f02b06abbc29aa2a0f921fc  SPKCoreV0b.lean
+'SPKFormal.reset_collapse_first_valid' depends on axioms: [propext]
+'SPKFormal.reset_collapse_unrestricted_counterexample' does not depend on any axioms
+'SPKFormal.zero_barrier_unsigned' does not depend on any axioms
+'SPKFormal.acc_zero' depends on axioms: [propext]
+'SPKFormal.cmp_overwrite' does not depend on any axioms
+'SPKFormal.shift_zero' depends on axioms: [propext]
+'SPKFormal.inactive_prefix' does not depend on any axioms
+'SPKFormal.source_overflows' does not depend on any axioms
+'SPKFormal.rewritten_succeeds' does not depend on any axioms
+'SPKFormal.emit_multiplicity' does not depend on any axioms
+PASS: Lean accepted ten obligations; no sorryAx in axiom reports

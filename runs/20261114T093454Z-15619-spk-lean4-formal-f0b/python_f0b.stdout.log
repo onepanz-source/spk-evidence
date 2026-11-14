@@ -1,0 +1,5 @@
+SPK runtime path: /home/ste/workspace/spk-backvalidation-v0/spk_core/runtime.py
+SPK runtime sha256: 25b78b476c052c73b9e67687d8b9da24e043613bd8c732520a1a338799f403c8
+CONTEXT_AUDIT_PASS checked=10240 cases; all operands a,b in range [0,7]
+UNRESTRICTED_WITNESS_CONFIRMED ('OverflowError', 'core state overflow: 256 not in [0,255]') ('OK', (), 0, True, 0)
+NO_WRITES: runtime executed in memory; no GitHub or P writes

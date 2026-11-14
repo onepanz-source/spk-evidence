@@ -1,0 +1,12 @@
+Lean: Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+3dbb506ae6cf238517364e64e0ac321004b60887692ae806f8ea0e21ac3947f4  SPKCoreV0b.lean
+'SPKFormal.zero_barrier_unsigned' does not depend on any axioms
+'SPKFormal.acc_zero' depends on axioms: [propext]
+'SPKFormal.cmp_overwrite' does not depend on any axioms
+'SPKFormal.shift_zero' depends on axioms: [propext]
+'SPKFormal.inactive_prefix' does not depend on any axioms
+'SPKFormal.source_overflows' does not depend on any axioms
+'SPKFormal.rewritten_succeeds' does not depend on any axioms
+'SPKFormal.emit_multiplicity' does not depend on any axioms
+PASS: Lean accepted all obligations; no sorryAx in axiom reports
+NOTE: axioms such as propext may be legitimate kernel axioms; inspect them above.

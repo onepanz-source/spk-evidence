@@ -1,0 +1,38 @@
+Lean: Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+a36e5d30405d1df829ecbf649c20a9d836a3b9a06974e2207dea1fa97cca0bc9  SPKCoreF0bV0e.lean
+'SPKFormal.reset_collapse_first_valid' depends on axioms: [propext]
+'SPKFormal.reset_collapse_unrestricted_counterexample' does not depend on any axioms
+'SPKFormal.zero_barrier_unsigned' does not depend on any axioms
+'SPKFormal.acc_zero' depends on axioms: [propext]
+'SPKFormal.cmp_overwrite' does not depend on any axioms
+'SPKFormal.shift_zero' depends on axioms: [propext]
+'SPKFormal.inactive_prefix' does not depend on any axioms
+'SPKFormal.source_overflows' does not depend on any axioms
+'SPKFormal.rewritten_succeeds' does not depend on any axioms
+'SPKFormal.emit_multiplicity' does not depend on any axioms
+SPKCoreF0bV0e.lean:254:18: warning: This simp argument is unused:
+  hp
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SPKCoreF0bV0e.lean:255:20: warning: This simp argument is unused:
+  hp
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h t]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'SPKFormal.exec_append' depends on axioms: [propext]
+'SPKFormal.exec_context_congr' depends on axioms: [propext]
+'SPKFormal.reset_collapse_in_context' depends on axioms: [propext]
+'SPKFormal.reset_collapse_of_wellformed' depends on axioms: [propext]
+'SPKFormal.checked_reset_source_error' does not depend on any axioms
+'SPKFormal.checked_reset_target_success' does not depend on any axioms
+'SPKFormal.checked_acc_overflow' does not depend on any axioms
+'SPKFormal.checked_nonmonotonic_timestamp' does not depend on any axioms
+'SPKFormal.checked_empty_batch' does not depend on any axioms
+'SPKFormal.checked_rejects_initial_overflow' does not depend on any axioms
+'SPKFormal.checked_rejects_invalid_config' does not depend on any axioms
+PASS: Lean accepted 21 obligations; no sorryAx in axiom reports

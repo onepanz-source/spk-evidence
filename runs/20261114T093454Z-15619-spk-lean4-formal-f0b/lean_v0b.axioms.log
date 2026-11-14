@@ -1,0 +1,8 @@
+'SPKFormal.zero_barrier_unsigned' does not depend on any axioms
+'SPKFormal.acc_zero' depends on axioms: [propext]
+'SPKFormal.cmp_overwrite' does not depend on any axioms
+'SPKFormal.shift_zero' depends on axioms: [propext]
+'SPKFormal.inactive_prefix' does not depend on any axioms
+'SPKFormal.source_overflows' does not depend on any axioms
+'SPKFormal.rewritten_succeeds' does not depend on any axioms
+'SPKFormal.emit_multiplicity' does not depend on any axioms
