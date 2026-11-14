@@ -1,0 +1,69 @@
+{
+  "schema": "spk.evidence.f1ec0.v0.fedora-failed-lean-and-v0r-corrective-source-lock.v0",
+  "date": "2026-11-14",
+  "source_repo": "onepanz-source/spk-backvalidation-v0",
+  "source_prelock_commit": "36fa0cf7131606073fca16f84a836703a3179dda",
+  "source_script_sha_correction_commit": "fa128dbf449f76b74055ae2d3918b446470b3eb8",
+  "original_v0_zip_sha256": "54173613624c7b906ed27e6b70c1cb2c145436d8e28ce2a849981c2f31918e43",
+  "original_user_upload": {
+    "name": "SPK_F1eC0_v0_logs.tar.gz",
+    "sha256": "2d4ae5c3330a9a4d36453f841851b55cdeaf9755ae9e28a6647dc43de4ac7349",
+    "file_count": 15,
+    "manifest_file_count": 14,
+    "manifest_sha256": "fe5343abdcd91baf56a16c39b023d792955cf7a7487f54c1744e5325f2f14c31",
+    "f1ec0_lean_log_sha256": "49dfde2b6d748f6ac302b35b9c4974c9d4c1fe7b1cfe9a86720950d3b31931bd",
+    "Lean_error": "unknown tactic split_ifs at line 31, ACC/EMIT/RESET unsolved",
+    "Lean_axiom_reports": 10,
+    "Lean_sorryAx_reports": 4,
+    "Lean_sorryAx_theorems": [
+      "f1ec0_step_erasure",
+      "f1ec0_exec_erasure",
+      "f1ec0_history_erasure",
+      "f1ec0_checked_erasure"
+    ],
+    "native_original_python": {
+      "cases": 786,
+      "fixed": 18,
+      "random": 768,
+      "random_accOverflow": 196,
+      "random_resetOverflow": 87,
+      "random_ok": 485,
+      "status": "BOUNDED_PASS",
+      "report_sha256": "82a155ac24f7ce9a1013886d0ee258ffadd98e341551fd64d8a2964ad9db7ef6"
+    }
+  },
+  "independent_CIAT_file_verification": {
+    "passed": 96,
+    "failed": 0,
+    "script_sha256": "56f94c5f809d95d91e0bf55a49e72b56286cb683878bc2c8c4950ffec53407e5",
+    "report_sha256": "5bacacf003405bcd8d34e34c72579d427900a1f07d5d8e91a93b76cb75d77dfb",
+    "scope": "User uploaded archive/hash/source consistency only; not independent Lean/kernel or Python runtime execution"
+  },
+  "correction_v0r": {
+    "name": "SPK_Lean_F1e_C0_v0r.zip",
+    "size": 24446,
+    "sha256": "76e9d2ebb1c4a750f9c91ac9eb50712ca265345a4fe869c1691154c819c88316",
+    "Lean_source_sha256": "12faf2a0c063edd27736986e217b3cf836dab62398b0e715cee8d04f6445e25d",
+    "runner_sha256": "ae1deb5ebe9bd02161da16cc747974ae9de514aa4fcce40e321c02b96a36f11f",
+    "source_manifest_sha256": "d27d20bf68cf84ea63cd1ef75723a93934dca920db483eca1c8c9af56d689afe",
+    "source_manifest_pass": "10/10",
+    "zip_crc": "PASS",
+    "bash_syntax": "PASS",
+    "python_ast": "PASS",
+    "Lean_kernel": "NOT_EXECUTED",
+    "original_Python_repeated_test": "NOT_EXECUTED",
+    "fresh_Fedora_output_root": "~/workspace/spk-manual-runs/spk-lean-f1e-c0-v0r"
+  },
+  "limits": "No universal CPython↔Lean refinement. Typed error to Option is Lean-to-Lean. Git metadata includes SHA/findings, no user raw evidence bytes. F1e-C0 v0 failed kernel and must not be promoted.",
+  "status": "F1EC0_V0_NATIVE_PYTHON_786_BOUNDED_PASS__LEAN_FAIL__V0R_PREREG_CANDIDATE_HOLD",
+  "raw_evidence_committed": false,
+  "original_P_writes": 0,
+  "SCI_GO": "0/3",
+  "human_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "append_only": true
+}
