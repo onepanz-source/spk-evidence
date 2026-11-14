@@ -1,0 +1,56 @@
+{
+  "schema": "spk.evidence.f1ed0b2.user-fedora-10-theorems-and-independent-91-file-readback.v0",
+  "date": "2026-11-15",
+  "source_repo": "onepanz-source/spk-backvalidation-v0",
+  "source_audit_commit": "53101fef559609156828ee81eb48af19c412f1cd",
+  "package_name": "SPK_Lean_F1e_D0b2_v0.zip",
+  "package_sha256": "296c1650166210f7636cbddb8fd8a9058e5b1adf23728382594183ee0068cbbb",
+  "user_archive_name": "SPK_F1eD0b2_v0_logs.tar.gz",
+  "user_archive_bytes": 2381,
+  "user_archive_sha256": "8b0aa6d38347c30d64027de70cac55abd4e1e4644893a22ccc70cdc26569cd31",
+  "Fedora_manifest_sha256": "06952999e3d13bac4dfead8a8471adc78075164160a203d4ef57934ac500c395",
+  "Fedora_manifest_verified": "12/12",
+  "source_sha_verified": "10/10",
+  "ZIP_CRC": "PASS",
+  "Lean_version": "4.35.0",
+  "Lean_new_D0b2_log_sha256": "6b92afaa7100910d2333237890682d20e5ce5aa685d275dcd0762da0d6a2d4b9",
+  "Lean_new_theorem_count": 10,
+  "Lean_errors": 0,
+  "Lean_sorryAx": 0,
+  "Lean_standard_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "axioms_gate_log_sha256": "ed8973c314eed8aeefcad2990fe7c900e6ed8dceda56acd8d7c6937f11f3a240",
+  "axioms_gate": "F1ED0B2_V0_STANDARD_AX_POLICY_PASS 10/10",
+  "predecessor_gates": [
+    "F0b compiled",
+    "D0a 13/13 PASS",
+    "D0b0 13/13 PASS",
+    "D0b1 7/7 PASS"
+  ],
+  "CIAT_readback": {
+    "script_sha256": "70c247ee30eada2d0b1810dd443afde2f804208098c781ccb2a09e14c93da3a2",
+    "report_sha256": "a03f1b4fc3109a6da5f5440a4844bf580d7c07929cf96db3da9533bf441b1fa6",
+    "checks": 91,
+    "passed": 91,
+    "failed": 0,
+    "scope": "Separate stdlib TAR/ZIP/hash/log/source-label inspection. Not a second Lean/CPython runtime run."
+  },
+  "scoped_properties": "Six timed-event count observer laws and four first Nat→signed single-instruction sublaws, no complete Nat-program embedding and no universal CPython↔Lean correctness",
+  "raw_zip_or_tar_committed": false,
+  "M_always_inactive": true,
+  "user_manual_fwork_only": true,
+  "original_P_writes": 0,
+  "SCI_GO": "0/3",
+  "human_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "review_workstream_excluded": true,
+  "append_only": true,
+  "status": "F1ED0B2_V0_FEDORA_SCOPED_LEAN_10OF10_PASS__CIAT_FILE_91OF91_PASS__FULL_REFINEMENT_HOLD"
+}
