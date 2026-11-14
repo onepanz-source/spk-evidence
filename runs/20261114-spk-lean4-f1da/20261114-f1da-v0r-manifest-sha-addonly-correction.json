@@ -1,0 +1,9 @@
+{
+  "schema": "spk.f1da.v0r.manifest-sha-correction.v0",
+  "corrects": "runs/20261114-spk-lean4-f1da/20261114-f1da-v0r-fwork-scoped-pass-and-55check-readback.json",
+  "correction": "The first audit metadata JSON accidentally included an erroneous manually entered manifest SHA while its 55/55 verifier report was correct. Preserve original and append exact computed manifest SHA.",
+  "incorrect_sha256": "d090f9558dd31cbed7b93bdce5f6250651b8b2826a7a89fa62a4050e1f32b5a",
+  "verified_sha256": "c2123c1782bd150e5fcab11127e32505c77a317ae6ddf40104d93e614fe281cb",
+  "verification_source": "SPK_F1DA_V0R_CIAT_READBACK.json checked by Python on uploaded MANIFEST(2).sha256",
+  "append_only": true
+}
