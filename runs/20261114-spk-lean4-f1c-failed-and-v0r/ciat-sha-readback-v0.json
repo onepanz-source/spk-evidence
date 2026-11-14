@@ -1,0 +1,23 @@
+{
+  "schema": "spk.f1c.v0.uploaded-fedora-logs-and-corrective-v0r-custody.v0",
+  "time_date": "2026-11-14",
+  "source_repo": "onepanz-source/spk-backvalidation-v0",
+  "source_branch_commit": "5cbf4d00be916d8f1c606ab7e9079d8f32499ec8",
+  "source_zip_v0_sha256": "05651355ff6ddc9bb2343de0f329b4fcd4a20ec2c79a0cb1064829412e82c63a",
+  "user_uploaded_logs_sha256": {
+    "f1c-lean.log": "d95b69794aae7488e9c3eeb2e7f1aae355dbb386805ceac041f5408e7940a46f",
+    "f1b-lean(1).log": "4421d9480453114cd579909b5e041014e4e173a100bfe06fc2b7b4875e0e7224",
+    "f0-lean.log": "4546b2d8de427e13f2a70474fb3077730e7924f2e57fb42641ee97f7150d7437",
+    "package-source-check.log": "df125ecae805b9116e3b0d891cc45f704a148a5cbce0cec58749ae1cdca32900",
+    "package-files.sha256": "a2c63c68b19fc6ab08abaaa0e106f0fd2ecefe11061262594bcc832f67a0b5ba",
+    "f0-source-check.log": "95ab7129820888fb47b14ce003775b053b5c8d1583781323045cd15a7c9f29e3"
+  },
+  "readback": "ZIP CRC PASS, 5 of 5 uploaded package manifest SHA match prelocked ZIP; F0/F1b pass; 10 F1c axiom reports of which 7 contain sorryAx; original runtime 101232 not run.",
+  "f1c_v0_status": "FAIL_HOLD",
+  "f1c_v0r_sha256": "f0ede5d6a80ec7af086bd5c97b8f70f38f2358a72a35c4f35f08e883316b25c4",
+  "f1c_v0r_status": "PRELOCKED_CANDIDATE__FWORK_UNTESTED",
+  "limitations": "Original user log bytes not uploaded into this repository: hashes and finding only. No independent kernel rerun. No general Python refinement.",
+  "SCI_GO": "0/3",
+  "original_P_writes": 0,
+  "original_frozen_changes": 0
+}
