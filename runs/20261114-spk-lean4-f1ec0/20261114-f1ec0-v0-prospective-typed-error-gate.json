@@ -1,0 +1,38 @@
+{
+  "schema": "spk.evidence.f1ec0.v0.typed-error-source-preexecution-lock.v0",
+  "date": "2026-11-14",
+  "source_repo": "onepanz-source/spk-backvalidation-v0",
+  "source_prelock_commit": "05d4b895a3f245b14c549d1cda3b29c99b04478b",
+  "source_pr": "https://github.com/onepanz-source/spk-backvalidation-v0/pull/269",
+  "package": {
+    "name": "SPK_Lean_F1e_C0_v0.zip",
+    "size_bytes": 24055,
+    "sha256": "54173613624c7b906ed27e6b70c1cb2c145436d8e28ce2a849981c2f31918e43",
+    "member_count": 11,
+    "source_sha_checks": 10,
+    "zip_crc": "PASS"
+  },
+  "new_Lean_source_sha256": "83838cb4551674cf402dc02d3bab626e3e90bb11dc748d33765165a17b488268",
+  "new_original_Python_verifier_sha256": "c3b2fec046f7d92527d40e60caf88b7095d8e5790fcb0568e48711efb3c83332",
+  "planned_Fedora_tests": {
+    "new_Lean_theorems": 10,
+    "new_targeted_frozen_Python_witnesses": 18,
+    "new_seeded_frozen_Python_cases": 768,
+    "total_Python_cases": 786,
+    "kernels_status": "NOT_EXECUTED",
+    "original_python_status": "NOT_EXECUTED",
+    "evidence_root": "~/workspace/spk-manual-runs/spk-lean-f1e-c0-v0"
+  },
+  "limits": "Only Lean-to-Lean typed error erasure and bounded source-pinned CPython error class witnesses; not universal CPython refinement. The past 113/113 is repeated FILE audit only.",
+  "source_raw_ZIP_not_committed": true,
+  "original_P_writes": 0,
+  "SCI_GO": "0/3",
+  "HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "append_only": true,
+  "status": "F1EC0_SOURCE_PROSPECTIVE_HOLD"
+}
