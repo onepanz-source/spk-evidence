@@ -1,0 +1,45 @@
+{
+  "schema": "spk.evidence.f1ed0.user-fedora-original-source-signed-545-bounded-pass.v0",
+  "date": "2026-11-14",
+  "source_repo": "onepanz-source/spk-backvalidation-v0",
+  "source_audit_commit": "557e4597bc0321d749933ca9f292d4f535367dd2",
+  "original_prelock_source_commit": "c8f4c86cdee21aba5be59d259d1a15dbda352ed3",
+  "input_source_zip_sha256": "e0cd642788d3e073c5854247f667d38db2da39b6a87e5dc2470333183f1e5d6f",
+  "user_original_logs_tar_sha256": "0ec10c30e2e4f4aaa9e427e6374105211c3e920740ca9a2b246e1b35e7cc74f7",
+  "user_fedora_manifest_sha256": "bd423dda0080317457e36e259a2d0343745598f6fad35f12eb9ed8110b7160e7",
+  "user_original_python_report_sha256": "af66233fe745afbf690b65e94ec7ba24b7931975515827bbf6e1b33b02ac2518",
+  "user_original_python_cases": {
+    "total": 545,
+    "direct": 13,
+    "fixed": 20,
+    "new_seeded": 512,
+    "mismatches": 0,
+    "random_outcomes": {
+      "ok": 275,
+      "OverflowError": 219,
+      "ValueError": 18
+    }
+  },
+  "CIAT_file_only_readback": {
+    "checks": 102,
+    "passed": 102,
+    "failed": 0,
+    "checker_sha256": "68070301747326c36430d6b6b69d95a9b3d29184153263f8e7d82b9d43d83855",
+    "report_sha256": "907dfffa7a9a23229bae042aeb5d98809ed6578211ce2636f7a3d0496c6258e4",
+    "read_native_python_again": false,
+    "read_Lean_kernel": false
+  },
+  "scope_limit": "Exception classes and successful terminal output checked against independent Python reference; per-op failure stage remains uninstrumented original runtime and is reference-derived. No universal CPython→Lean theorem, no D0 signed Lean proofs yet.",
+  "status": "F1ED0_545_ORIGINAL_PYTHON_BOUNDED_PASS__102_FILE_CHECKS_PASS__SIGNED_LEAN_HOLD",
+  "raw_archive_committed": false,
+  "source_zip_committed": false,
+  "original_P_writes": 0,
+  "SCI_GO": "0/3",
+  "human_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "append_only": true
+}
