@@ -1,0 +1,53 @@
+{
+  "schema": "spk.evidence.f1ec1.v0t.fedora-typed-error-congruence-scoped-pass.v0",
+  "date": "2026-11-14",
+  "source_repository": "onepanz-source/spk-backvalidation-v0",
+  "source_pass_audit_commit": "039d90a31480164b208eb419bcaf5fcb72e1030b",
+  "preexisting_v0s_fail_prereg_commit": "160e1dfbe2a796236042244e9e196afe8c78e9c2",
+  "prelocked_zip_sha256": "740957c9618a1dd7c4ff1546948f21e1ab8981307a56549c561b2604d7c2de58",
+  "user_upload": {
+    "filename": "SPK_F1eC1_v0t_logs.tar.gz",
+    "size_bytes": 4481,
+    "sha256": "5e4914ab071725ff637e9e8cc971ea6668e76b475404052f4a94a2236526ee55",
+    "Fedora_manifest_sha256": "ff9d9d9ad31ea28eb051fadd9eba64036aa1ca5f8df8de93b0afd40243ac4856",
+    "Fedora_manifest_pair_checks": 15,
+    "source_sha_pair_checks": 11,
+    "lean_version": "4.35.0",
+    "f1ec1_lean_log_sha256": "45e953c4d7e4d71039c7312408557a60e5f952b89305c0eafe36ec945a4bd8d9",
+    "named_Lean_theorem_reports": 13,
+    "Lean_errors": 0,
+    "Lean_sorryAx": 0,
+    "axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "unused_simp_warnings": 2,
+    "original_python_report_sha256": "1742208e46b7030b387bce3b5ddeb6bb1944c878ae032eefad96ad425eac4891",
+    "frozen_original_python_cases": 1560,
+    "first_error_prefix_checks": 633,
+    "python_suite_repeated_from_v0_v0r_v0s": true,
+    "source_pinned_runtime_semantics_verified_by_Lean": false
+  },
+  "CIAT_upload_byte_audit": {
+    "checks": 142,
+    "passed": 142,
+    "failed": 0,
+    "script_sha256": "cf87faa29569c9ceea40a30bb3c1e59ff4b6ce48f4f6e176dfbc4ebb",
+    "report_sha256": "5c23e5d84b602e311a5d6a2bc878365a7b999fc30279eae6483f7cc76c0c4648",
+    "scope": "Independently-authored standard-library readback of uploaded TAR and frozen ZIP: verifies content, SHA, theorem reports and original Python JSON. No separate Lean kernel/CPython execution."
+  },
+  "formal_claim": "Lean-to-Lean exact typed Except error/trace congruence for online vs preflight validation on F1eC1SourceAdmitted histories; excluded malformed raw history counterexample. Terminal obs quotient preserved.",
+  "limitations": "No universal CPython↔Lean refinement, signed CMP/RESET correspondence, complete compiler soundness, BV/P release, or human-peer-reviewed physical simulation proof.",
+  "raw_logs_in_GitHub": false,
+  "source_archive_in_GitHub": false,
+  "P_writes": 0,
+  "SCI_GO": "0/3",
+  "human_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "append_only": true,
+  "status": "F1EC1_V0T_USER_FEDORA_LEAN_MODEL_13OF13_PASS__ORIGINAL_PYTHON_1560_BOUNDED_REPEAT_PASS__UNIVERSAL_REFINEMENT_HOLD"
+}
