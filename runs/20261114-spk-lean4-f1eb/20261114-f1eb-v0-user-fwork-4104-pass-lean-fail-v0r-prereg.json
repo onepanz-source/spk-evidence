@@ -1,0 +1,63 @@
+{
+  "schema": "spk.formal.f1eb.v0.user-fedora-failure-and-corrective-v0r-custody.v0",
+  "date": "2026-11-14",
+  "source_repo": "onepanz-source/spk-backvalidation-v0",
+  "source_metadata_commit": "868b92c4ac8ee44b469e7a3fa2cc51d9953cacc4",
+  "upload_artifact": "SPK_F1eB_logs.tar.gz",
+  "upload_sha256": "d20a73575f212d25ea22bad9366181ce5ea1f9fbf06301d658bd80fd9f0f1201",
+  "manifest_sha256": "f725ba0e1665426356b8d33d68d5473abfe8bbe0b3b7942c34fe173858bd9e47",
+  "preregistered_original_zip_sha256": "de291500dd873096615a34deb60654e9371135b5ee5e4f83a98ae167bdaaf43b",
+  "user_Fedora_original_Python": {
+    "cases": 4104,
+    "mismatches": 0,
+    "success": 3329,
+    "overflow": 775,
+    "report_sha256": "2732e51fd3b5998d802a921d361832805ba92e1c7e6002e898332237a5484865",
+    "status": "F1EB_BOUNDED_ORIGINAL_PYTHON_PASS__FORMAL_CPYTHON_REFINEMENT_HOLD"
+  },
+  "user_Fedora_Lean": {
+    "reported": 17,
+    "without_sorryAx": 16,
+    "with_sorryAx": [
+      "f1eb_encode_strict"
+    ],
+    "one_compilation_error": "SPKCoreF1eB.lean:106:12 type mismatch true=true vs hypothesis; exact hs",
+    "log_sha256": "33ed29da1ff2bff4c95f657c47e559c067624c04275cc77dfa3f6531af99f35f",
+    "status": "FAIL_HOLD"
+  },
+  "CIAT_independent_readback": {
+    "checks": 88,
+    "pass": 88,
+    "fail": 0,
+    "script_sha256": "27102297affa49b4718e277932234245bcd796a4a71d34e6c0179bfd0dfe036b",
+    "report_sha256": "ea4c99796bcf50d9e8893338b7453a304f4ab5ee7c9a595c65e96f5c5d9fa4b1",
+    "scope": "File/checksum/log content readback, not Lean/Fedora execution"
+  },
+  "F1eB_corrective_candidate": {
+    "name": "SPK_Lean_F1e_B_v0r.zip",
+    "bytes": 23395,
+    "sha256": "c66eaed8f5dd49d152f59c90e0f6b49bf6a7fbf9cbe63b3f97402a460e45bb00",
+    "new_Lean_source_sha256": "808df23d9e24d7bccace417ff675e611edb18051f10885563d514c3a53111165",
+    "old_theorems_still_identical": true,
+    "change": "one proof tactic exact hs → rfl at true branch",
+    "zip_crc": "PASS",
+    "source_manifest": "9/9 PASS",
+    "bash": "PASS",
+    "python": "PASS",
+    "Fedora_kernel": "PENDING",
+    "Fedora_Python": "PENDING",
+    "new_fwork_root": "~/workspace/spk-manual-runs/spk-lean-f1e-b-v0r"
+  },
+  "limitations": "F1e-B v0 Lean not certified. Corrected v0r has no local kernel verification. 4104 finite CPython cases do not prove universal interpreter correspondence.",
+  "raw_logs_committed": false,
+  "original_P_writes": 0,
+  "SCI_GO": "0/3",
+  "human_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV→P"
+  ],
+  "append_only": true,
+  "status": "F1EB_V0_PYTHON_BOUNDED_PASS__LEAN_FAIL__CORRECTIVE_V0R_PRELOCK_HOLD"
+}
