@@ -1,0 +1,58 @@
+{
+  "schema": "spk.f1db.v0-user-fedora-fail-v0r-prelock-evidence-metadata.v0",
+  "date": "2026-11-14",
+  "origin": "User uploaded 10 Fedora logs from F1d-B v0, no final manifest because Lean gate failed; CIAT recomputed 50 integrity and semantic readback checks.",
+  "source_repo": "onepanz-source/spk-backvalidation-v0",
+  "source_prelock_commit": "073c22ad7b7d0be1f2f68d2bce699413cec87655",
+  "parent_archive_sha256": "94520c4b369d6320ca8221a386b2bac4304a26ba8066944669478e1e12e5b572",
+  "fwork_F1dB_v0_lean": {
+    "status": "FAIL_HOLD",
+    "printed_seven_theorems": true,
+    "sorryAx": [
+      "f1db_adjacent_emit_history",
+      "f1db_adjacent_emit_checked_history"
+    ],
+    "generic_history_lift": "PASS_WITHOUT_SORRYAX",
+    "checked_history_lift": "PASS_WITHOUT_SORRYAX",
+    "negative_witnesses": "3_PASS_WITHOUT_SORRYAX"
+  },
+  "fwork_python_original": {
+    "cases": 8192,
+    "mismatches": 0,
+    "negative_nonadjacent_control": true,
+    "test_reused_from_F1d_A": true
+  },
+  "CIAT_readback": {
+    "checks": 50,
+    "passed": 50,
+    "failed": 0,
+    "script_sha256": "5306e0c9df4973ecac922730e603827dadfee7510a3b620882b7122ac8c11ffa",
+    "json_sha256": "588927aaab9fb05a89c0bc71cb91728c74fa767b0764d7094728b7db582c9af2"
+  },
+  "key_logs_sha256": {
+    "f1db-lean.log": "39ec2e2f9b809ce12a1620c76c177af270a3fadc4df1c6aca44137e9603fef9a",
+    "original-multibatch-audit.json": "c73ae92a6d71ebe79147588934ddd31741739723ebbc6e372be60d09ab2f0b53",
+    "package-files.sha256": "3afbd51849fe8a79f555b8dd39de1d0f66c2db627f5f22ad5685dfb426722a9f"
+  },
+  "successor_v0r": {
+    "zip_name": "SPK_Lean_F1d_B_v0r.zip",
+    "bytes": 16997,
+    "sha256": "da222e026371576482f8387cb035bcc8a71dd8b068f75e16b2f02d73caf91070",
+    "Lean_candidate_source_sha256": "22059b08369a659bd5fac54298070a216f0de1b5646496b1c1cd489b43ca2f92",
+    "ZIP_CRC": "PASS",
+    "script_static_checks": "PASS",
+    "Fedora_kernel": "NOT_EXECUTED",
+    "fresh_output_root": "~/workspace/spk-manual-runs/spk-lean-f1d-b-v0r"
+  },
+  "scientific_limit": "Lean F1d-B v0r not proven yet. Source-only corrected candidate. Neither 8192 finite original Python cases nor checked model history induction proves universal implementation refinement.",
+  "raw_logs_in_evidence_repository": false,
+  "P_writes": 0,
+  "SCI_GO": "0/3",
+  "HOLD": [
+    "C0–C5",
+    "G2",
+    "dispatch",
+    "BV→P"
+  ],
+  "append_only": true
+}
