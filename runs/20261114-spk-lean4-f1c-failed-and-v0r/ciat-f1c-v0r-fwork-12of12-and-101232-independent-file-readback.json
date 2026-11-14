@@ -1,0 +1,77 @@
+{
+  "schema": "spk.formal.f1c-v0r.assistant-independent-file-readback.v0",
+  "observation_date": "2026-11-14",
+  "original_source_branch": "research/spk-lean4-f1c-preexecution-20261114",
+  "source_prelock_commit": "5cbf4d00be916d8f1c606ab7e9079d8f32499ec8",
+  "zip": {
+    "name": "SPK_Lean_F1c_v0r.zip",
+    "bytes": 12297,
+    "sha256": "f0ede5d6a80ec7af086bd5c97b8f70f38f2358a72a35c4f35f08e883316b25c4",
+    "CRC": "PASS",
+    "original_members_sha256_verified": 5,
+    "uploaded_manifest_entries_verified": 8
+  },
+  "evidence_source": "user supplied nine Fedora text files; CIAT separately verified all bytes with Python standard library, not independent Lean/Fedora reexecution",
+  "uploaded_sha256": {
+    "MANIFEST.sha256": "bde8a5841ccea735ad4b19a3ebe388bbff8cc91d6a8bac2b3abb7a2151f8f5da",
+    "f0-source-check.log": "95ab7129820888fb47b14ce003775b053b5c8d1583781323045cd15a7c9f29e3",
+    "package-source-check.log": "08e07ed2364d94a92888fe28084059b746d06e5c8ed2b5f1a4e728593265071a",
+    "package-files.sha256": "61df7d40538a1a9a5e6cf57efa393e2372b1c293fa81fbbbac4e4aa200f6a1ab",
+    "f0-lean.log": "4546b2d8de427e13f2a70474fb3077730e7924f2e57fb42641ee97f7150d7437",
+    "f1b-lean.log": "4421d9480453114cd579909b5e041014e4e173a100bfe06fc2b7b4875e0e7224",
+    "f1c-lean.log": "24d20ba6a617085c20c076629919f73060ea32a2cb8c54dd6649a03d253f53d3",
+    "runtime-audit.stdout.log": "cc6d585687a6436a7c2629a09fc341781fe1501d502fc699e329d097c1c33995",
+    "original-runtime-audit.json": "be3d1cccba7cc79564a271f79cbbb5e6b11e23c785d07dfecf91f7cf12736603"
+  },
+  "independently_executed_file_readback": {
+    "checks_passed": 81,
+    "checks_failed": 0,
+    "script_sha256": "df5a0b69ddce486f2bdba49271934cfc3cdf6cb73e30905bae86982d4f9ce227",
+    "json_sha256": "975c378f0eb754630daf1153f957990e214bc14a008f1911590a8de77c21295d"
+  },
+  "fwork_user_run_Lean": {
+    "F0b": "PASS",
+    "F1b_theorems": 7,
+    "F1c_v0r_theorems": 12,
+    "F1c_v0r_sorryAx": 0,
+    "F1c_v0r_error_lines": 0,
+    "warnings_ignored": 2,
+    "axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "scope": "single-batch F0b interpreter"
+  },
+  "fwork_user_run_original_Python": {
+    "status": "BOUNDED_ORIGINAL_RUNTIME_PASS__REFINEMENT_HOLD",
+    "total_cases": 101232,
+    "per_rule": {
+      "L-ACC-02": 21888,
+      "L-ACC-03": 57456,
+      "L-TIME-06": 19152,
+      "L-EMIT-02": 2736
+    },
+    "mismatches": 0,
+    "helper_structural_checks": 37,
+    "helper_disagreements": 0,
+    "overflow_error_class_cases": 18106,
+    "diagnostic_error_message_differences": 12537,
+    "scope": "canonical output multiset + final_raw + final_guard OR exception class, excludes diagnostic exception text"
+  },
+  "limitations": [
+    "This record holds hashes and findings; actual original log bytes remain on fwork / uploaded conversation",
+    "No separate kernel reexecution or universal Python↔Lean refinement",
+    "Error message equality is disproved for ACC commuting cases; observation relation must be explicit",
+    "No authorization of native BV→P, original production P writes=0"
+  ],
+  "SCI_GO": "0/3",
+  "original_P_writes": 0,
+  "human_HOLD": [
+    "C0–C5",
+    "G2",
+    "dispatch",
+    "BV→P"
+  ],
+  "append_only": true,
+  "status": "F1C_SCOPED_KERNEL_AND_BOUNDED_ORIGINAL_RUNTIME_PASS__GENERAL_REFINEMENT_HOLD"
+}
