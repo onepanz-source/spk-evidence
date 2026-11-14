@@ -1,0 +1,50 @@
+{
+  "schema": "spk.evidence.f1ed0b3.v0.accall-emit-reset-source-preexecution-lock",
+  "date": "2026-11-15",
+  "source_repo": "onepanz-source/spk-backvalidation-v0",
+  "source_metadata_commit": "0321a267d6bac6b275c2ef36a4846c6ef3c58ee1",
+  "issue": "https://github.com/onepanz-source/spk-backvalidation-v0/issues/281",
+  "source_zip_name": "SPK_Lean_F1e_D0b3_v0.zip",
+  "source_zip_bytes": 17945,
+  "source_zip_sha256": "d9d77acffd1ddc716d8795682405460789d1667087f163f60c75c7b78789cc2c",
+  "source_manifest_sha256": "52470fa4c2f160c965d7e079cae555b3a20d1dfe8b9eed59155ab3adf3f75820",
+  "source_hashes_verified": "12/12 PASS",
+  "zip_crc": "PASS",
+  "new_Lean_source_sha256": "77384672c15c3e229f4da6bb2253e61cb38555ed460a340167af96441acb94e7",
+  "runner_sha256": "8d1e7caa0584e1537aff5bab61dcb9923618f0c2a143203e7ce5ce72b8ee7b15",
+  "axiom_gate_sha256": "cfda45c8d095827e63f40345633bba6c8c55e5c1ca574b86adf7863fcced5061",
+  "seven_candidate_theorems": [
+    "acc_all_count",
+    "acc_all_success",
+    "acc_all_overflow",
+    "acc_all_checked_bridge",
+    "emit_active",
+    "reset_active_valid",
+    "reset_active_overflow"
+  ],
+  "static_checks": {
+    "passed": 33,
+    "failed": 0,
+    "report_sha256": "0c7983d7f4aa4e835036ec4f02cf2a82536d59679fbbcd05feba829c95afa9a8",
+    "policy": "positive synthetic log accept; custom axiom, sorryAx, missing/duplicate theorem and compiler error all rejected"
+  },
+  "user_Fedora_Lean": "PENDING",
+  "evidence_root": "~/workspace/spk-manual-runs/spk-lean-f1e-d0b3-v0",
+  "future_logs": "SPK_F1eD0b3_v0_logs.tar.gz",
+  "predecessor": "D0b2 user Fedora 10/10 Lean scoped kernel PASS, independent 91/91 file readback; unchanged SHA",
+  "original_P_writes": 0,
+  "SCI_GO": "0/3",
+  "M_inactive": true,
+  "user_manual_Fedora_only": true,
+  "authority_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "human_review_not_scheduled": true,
+  "scientific_limits": "Seven new proofs are only source candidates until user Lean kernel; ACC(channel=none) only, cannot claim full Nat→signed compiler/program/CPython refinement, nor Python canonical sorting congruence",
+  "raw_zip_in_GitHub": false,
+  "append_only": true,
+  "status": "F1ED0B3_V0_SOURCE_SHA_PRELOCK_STATIC_33OF33_PASS__USER_FEDORA_LEAN_PENDING"
+}
