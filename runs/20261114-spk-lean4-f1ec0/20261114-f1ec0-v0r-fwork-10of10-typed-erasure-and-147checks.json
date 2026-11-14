@@ -1,0 +1,55 @@
+{
+  "schema": "spk.evidence.f1ec0.v0r.fwork-lean-typed-erasure-and-CIAT-file-readback.v0",
+  "date": "2026-11-14",
+  "source_repo": "onepanz-source/spk-backvalidation-v0",
+  "source_audit_commit": "ef824297099ebb4baa2ee3ec4fdd16f355cc63e9",
+  "previous_v0_failed_audit_commit": "1999757246e521654cc66ba174a537320424c2a6",
+  "preregistered_v0r_source_zip_sha256": "76e9d2ebb1c4a750f9c91ac9eb50712ca265345a4fe869c1691154c819c88316",
+  "original_user_log_targz_sha256": "537152833049f45aa51edf6853c43daac290db0c83f990336a2930424fd20363",
+  "fwork_manifest_sha256": "54fff08b5229d7775decfa7b76db66922ffd4f4d75f86015bb1898c53ccd3cdc",
+  "lean_log_sha256": "f9f4ec20f035f6342358dc5ac134aef8624d57a78eb799761530aa26e288eabc",
+  "frozen_python_report_sha256": "82a155ac24f7ce9a1013886d0ee258ffadd98e341551fd64d8a2964ad9db7ef6",
+  "user_fwork_Lean": {
+    "version": "4.35.0",
+    "theorems": 10,
+    "sorryAx": 0,
+    "compiler_errors": 0,
+    "axioms": [
+      "propext"
+    ],
+    "scope": "Model typed Except→Option erasure over five instructions, execution, preparation, history, checked history; witnesses"
+  },
+  "user_fwork_python": {
+    "cases": 786,
+    "mismatches_reported": 0,
+    "fixed": 18,
+    "random": 768,
+    "branch_counts": {
+      "acc_overflow": 196,
+      "reset_overflow": 87,
+      "ok": 485
+    },
+    "suite_repeated_from_F1eC0_v0": true
+  },
+  "CIAT_independent_file_readback": {
+    "checks": 147,
+    "passed": 147,
+    "failed": 0,
+    "script_sha256": "723877e01bc838ee4546f8bea693a795458daa97acbb1929933f041d5e133b49",
+    "json_sha256": "de6f68e4b2e9e77ddb9b3946be271fdd7a441f20efcdba38738702b45c34a2b0",
+    "scope": "No independent Lean or original Python execution, only user-uploaded archive/content review."
+  },
+  "manifest_note": "Both fwork and ZIP source manifests have equal sets of (filename,SHA256), but ordering differs for run_fwork.sh and Python verifier lines.",
+  "scientific_limit": "Only restricted Nat fragment Lean→Lean model erasure. Option projection intentionally loses failure labels; Python implementation correctness not proved.",
+  "original_raw_log_bytes_in_evidence_repo": false,
+  "P_writes": 0,
+  "SCI_GO": "0/3",
+  "HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "append_only": true,
+  "status": "F1EC0_V0R_USER_LEAN_SCOPED_PASS__FROZEN_PYTHON_BOUNDED_REPEAT_PASS__CPYTHON_REFINEMENT_HOLD"
+}
