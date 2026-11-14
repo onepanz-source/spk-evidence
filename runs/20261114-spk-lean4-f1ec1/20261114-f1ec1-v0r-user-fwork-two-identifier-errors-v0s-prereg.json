@@ -1,0 +1,62 @@
+{
+  "schema": "spk.evidence.f1ec1.v0r-failed-kernel-and-v0s-source-correction-prelock.v0",
+  "date": "2026-11-14",
+  "source_repo": "onepanz-source/spk-backvalidation-v0",
+  "source_pr": "https://github.com/onepanz-source/spk-backvalidation-v0/pull/271",
+  "source_metadata_commit": "dc87eb0769d413183f1a762767e279c31a9e6fcf",
+  "user_fedora_v0r": {
+    "original_tar_sha256": "1773358f2012b77fac683ab83d07fc8af1d5c56d3c7ecd0f8443b2538f73d0fc",
+    "manifest_sha256": "a9ee32c3f5b422763215a692fdc128aa23f580addc5900d374aab65486c50740",
+    "source_zip_sha256": "fa419aeaaa4eecfd11c46f5ba99b52b0120d6fafbb971a41d38849d3befabb58",
+    "lean_log_sha256": "07d9e10fb1ef6d5dc19b3f9726f1ec42abc9627a7fde657cffcc2d8322ad4278",
+    "Lean_axiom_reports": 13,
+    "Lean_with_sorryAx": 4,
+    "Lean_errors": [
+      "SPKCoreF1eC1V0r.lean:142:42 .error lacks expected type",
+      "SPKCoreF1eC1V0r.lean:143:38 .ok lacks expected type"
+    ],
+    "Lean_invalid_tail_differs_fixed": true,
+    "original_frozen_python_report_sha256": "1742208e46b7030b387bce3b5ddeb6bb1944c878ae032eefad96ad425eac4891",
+    "original_frozen_python_cases": 1560,
+    "original_frozen_python_prefix_checks": 633,
+    "original_frozen_python_status": "BOUNDED_REPEAT_PASS"
+  },
+  "CIAT_independent_uploaded_file_readback": {
+    "checks": 264,
+    "pass": 264,
+    "fail": 0,
+    "checker_sha256": "49c7a848ae71d2113eb4aa1a677c78cd67ae193444addf6d325e4f49497bfbef",
+    "report_sha256": "9586edbfeda58097aaf6491176445b977826546d1847e84a22bd5049f2e686a8",
+    "scope": "CIAT independent raw upload tar and old source ZIP byte log audit only, no independent Lean kernel/CPython execution"
+  },
+  "corrective_source_v0s": {
+    "package_name": "SPK_Lean_F1e_C1_v0s.zip",
+    "package_bytes": 30640,
+    "package_sha256": "8719ffbca8949deb6f8f546608858c5ff77991bc6c2c922de99ec786f41a7f1c",
+    "new_Lean_file": "SPKCoreF1eC1V0s.lean",
+    "new_Lean_sha256": "6228df068c7d95488ff9ca2b9f3da8fb9da76251298a45e58712a1d6c11b3aeb",
+    "source_manifest_sha256": "3e8b5d8c8778e8fd183c41034ef7441e275e7da65327d93436371b187c19c675",
+    "source_manifest_entries": 11,
+    "zip_crc": "PASS",
+    "bash_n": "PASS",
+    "python_compilation": "PASS",
+    "theorem_statements_unchanged": true,
+    "prior_Lean_sources_unchanged": true,
+    "change": "Two match-case constructor expressions explicitly annotated as Except ExecError (List (Nat × State)). No semantics changed.",
+    "Lean_kernel": "PENDING",
+    "frozen_original_Python": "PENDING",
+    "output_root": "~/workspace/spk-manual-runs/spk-lean-f1e-c1-v0s"
+  },
+  "status": "F1EC1_V0R_LEAN_FAIL__V0S_CORRECTIVE_SOURCE_PRELOCK_HOLD",
+  "user_raw_logs_in_GitHub": false,
+  "source_zip_bytes_in_GitHub": false,
+  "P_writes": 0,
+  "SCI_GO": "0/3",
+  "human_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "append_only": true
+}
