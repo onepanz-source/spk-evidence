@@ -1,0 +1,62 @@
+{
+  "schema": "spk.formal.f1ea.v0.fwork-lean-counterwitness-and-python-source-evidence.v0",
+  "date": "2026-11-14",
+  "source_repo": "onepanz-source/spk-backvalidation-v0",
+  "source_commit": "43a282ce024de6c1ef15f90c28bb8de63dd346f8",
+  "zip": "SPK_Lean_F1e_A_v0.zip",
+  "zip_bytes": 16970,
+  "zip_sha256": "32ac7d9ac719ec5efe49ca7056fb6956f8ab57b8ea1c377f4fd3441993e7a13b",
+  "user_fwork_manifest_sha256": "02456af6dfe18d20759a42a0bf3b60d89cbb9b875ca93e555f78138cb92f238e",
+  "manifest_sha_verified": 11,
+  "source_file_sha_verified": 8,
+  "logs_sha256": {
+    "f0-source-check.log": "95ab7129820888fb47b14ce003775b053b5c8d1583781323045cd15a7c9f29e3",
+    "package-source-check.log": "21baf574fc7e63e811779ebd78b63deb185d76e239bdaeb4397368049379d53b",
+    "package-files.sha256": "4021711d7fc919872fffde11b2e049baa1cd1cd0498ffadfb6da8da4b27c8d9a",
+    "f0-lean.log": "4546b2d8de427e13f2a70474fb3077730e7924f2e57fb42641ee97f7150d7437",
+    "f1b-lean.log": "4421d9480453114cd579909b5e041014e4e173a100bfe06fc2b7b4875e0e7224",
+    "f1c-lean.log": "24d20ba6a617085c20c076629919f73060ea32a2cb8c54dd6649a03d253f53d3",
+    "f1da-lean.log": "19f947fef3fa12bdc253e30c38af63aaa38500966fe6dba021614f20d1f71963",
+    "f1db-lean.log": "9f3089fa5bf9c83ca4540d355d4144e682eddd8999aadafcecea397cb304059c",
+    "f1ea-lean.log": "db819ec634b83d0a9ba483aa9c21afa5046b509802aecf1814cd6235b7672972",
+    "python-boundary.stdout.log": "14c56edf0fb5675e748b6070c5ba75f25a67d8605351d7eff1aef2f58c39f38a",
+    "original-python-crosswalk.json": "a6d481f764c7ce8cf19f3873c37aa9697d62c959d297a87da6e4de50db918497"
+  },
+  "CIAT_byte_readback": {
+    "passed": 81,
+    "failed": 0,
+    "script_sha256": "39165adbc5fbaa4e7b39a6bab0d7094f9374dc7ebba16f258806ba326c726f4e",
+    "report_sha256": "f926cc030277362feed14f499ffd9df909dc8ccccd2e6bc0100f6766c4bbf4d7",
+    "scope": "CIAT read user-uploaded file bytes with independent stdlib verifier; no independent Fedora Lean or frozen Python rerun."
+  },
+  "user_fwork_Lean": {
+    "theorems": 6,
+    "Lean_sorryAx": 0,
+    "axioms": [],
+    "not_f1e_refinement_proof": true
+  },
+  "user_fwork_original_Python": {
+    "grouped_equal_timestamp_events": 2,
+    "batches": 1,
+    "emitted_spikes": 1,
+    "empty_train_CoreResult": {
+      "raw": 9,
+      "guard": false,
+      "last_timestamp": 0
+    },
+    "negative_cmp_allowed": true,
+    "negative_reset_raises": "OverflowError",
+    "P_writes": 0
+  },
+  "scientific_interpretation": "A **counterexample** to unrestricted Lean frame-list↔Python SpikeTrain mapping; correctly restricted grouped input predicate needed. Proved boundary witnesses cannot be represented as universal CPython refinement.",
+  "status": "F1EA_SCOPED_MODEL_COUNTERWITNESS_AND_PYTHON_BOUNDARY_PASS__UNIVERSAL_CPYTHON_REFINEMENT_HOLD",
+  "raw_log_bytes_saved_to_repo": false,
+  "SCI_GO": "0/3",
+  "human_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "append_only": true
+}
