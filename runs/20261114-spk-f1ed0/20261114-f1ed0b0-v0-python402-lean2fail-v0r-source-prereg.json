@@ -1,0 +1,80 @@
+{
+  "schema": "spk.evidence.f1ed0b0.v0-user-fedora-python-pass-lean-fail-v0r-prereg.v0",
+  "date": "2026-11-14",
+  "source_preexecution_commit_v0": "b2e2834fe41755ebf8f3dce240651e8554302df4",
+  "source_fail_and_corrective_lock_commit": "938c4b9a82d940b17bf64b140203a5c760381ba0",
+  "original_source_zip_sha256": "3935bafc15a4df729ad30932412cfd93213992d278c5bf30ac9da50defb5b941",
+  "uploaded_user_fedora_tar_name": "SPK_F1eD0b0_v0_logs.tar.gz",
+  "uploaded_user_fedora_tar_bytes": 3368,
+  "uploaded_user_fedora_tar_sha256": "7be45a0042ecfe520dfbb2ff62c2423f622e2c8dc6639adbd643401d478dfdf1",
+  "user_tar_manifest_sha256": "29dafa415cc313c53ba146e16083be02ff5060c5288d5e525ce736181f8ace53",
+  "manifest_items": 9,
+  "manifest_items_valid": 9,
+  "source_files_valid": "7/7",
+  "original_frozen_Python_report_sha256": "21505fe6906d55efbb7a07afcf335fea7f2789a682c70c4cd87b3d630ee9c336",
+  "original_frozen_python_result": {
+    "cases": 402,
+    "directed": 18,
+    "seeded": 384,
+    "mismatches": 0,
+    "outcomes_seeded": {
+      "ok": 204,
+      "OverflowError": 163,
+      "ValueError": 17
+    },
+    "status": "BOUNDED_PASS"
+  },
+  "new_Lean_log_sha256": "69a09827ed568676a869b32cde4b034d0f7691502a8417bc6873255fcd4a4013",
+  "new_Lean_v0": {
+    "named_reports": 13,
+    "clean_reports": 11,
+    "with_sorryAx": 2,
+    "compiler_errors": 2,
+    "lines": [
+      98,
+      102
+    ],
+    "reason": "`decide` lacks Decidable instance for recursively defined canonical history predicate D0BAdmitted",
+    "status": "FAIL_HOLD"
+  },
+  "independent_CIAT_file_audit": {
+    "checks": 91,
+    "passed": 91,
+    "failed": 0,
+    "script_sha256": "a3bb0d4a0b2d97f8f7a87104da5403ba7ade306744e74059061a1c6b111f48d8",
+    "report_sha256": "9978be057560f462e28cc10eb6815c8ecd6aae6b886b83b225a0a37fc45d2e60",
+    "scope": "No independent CPython or Lean kernel run; separate TAR/ZIP SHA and log checks only"
+  },
+  "corrective_candidate_v0r": {
+    "name": "SPK_Lean_F1e_D0b0_v0r.zip",
+    "bytes": 14252,
+    "sha256": "b4dc4aacb39d776a28dab59808d3d26aecbf844c1e65cc51bb5de26cd9ed1c79",
+    "Lean_source_sha256": "e562a4fdc7cd24f1eb1e5e8979408a34092cb48a9c1e81796ce8f1e8f5929d0b",
+    "source_manifest_sha256": "e3b889eabc1f351aeebbfe885c4e72ec71f3066ed0b41436107078a6ca5e4e71",
+    "source_manifest_items": 7,
+    "zip_crc": "PASS",
+    "source_manifest": "7/7 PASS",
+    "run_fwork_sha256": "e15276c6c3d3b9fdef63f788ef1087bf5533296844885a822d1e0c5b089714ad",
+    "axiom_gate_sha256": "213996b2b3728aeeca701a253ece3b8eec3a396b6ef2ed5ea20537fbcb2421bd",
+    "change": "Exactly two admission theorem tactic bodies replaced decide with simp of definitions; model/computation and 13 theorem statements byte-identical; fresh runner root and labels. Previous Python 402 test suite unchanged.",
+    "static": "ZIP CRC PASS, source SHA 7/7 PASS, Bash -n PASS, Python compile PASS, synthetic axiom gate and three mutations 4/4 PASS",
+    "new_Fedora_root": "~/workspace/spk-manual-runs/spk-lean-f1e-d0b0-v0r",
+    "native_Lean_execution": "PENDING",
+    "native_original_Python_rerun": "PENDING; same 402 cases, not new coverage"
+  },
+  "status": "ORIGINAL_PYTHON_402_BOUNDED_PASS__LEAN_V0_TWO_DECIDABLE_ERRORS_HOLD__V0R_SOURCE_SHA_PREEXECUTION_LOCK",
+  "scientific_limits": "No universal executable CPython↔Lean semantics, signed admitted-history general equivalence, or Nat embedding theorem. Output temporal occurrence list not equivalent to sorted Python list without canonical observer.",
+  "raw_archives_committed_to_GitHub": false,
+  "P_writes": 0,
+  "SCI_GO": "0/3",
+  "human_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "M_inactive": true,
+  "user_manual_fwork_only": true,
+  "peer_review_scheduling_excluded": true,
+  "append_only": true
+}
