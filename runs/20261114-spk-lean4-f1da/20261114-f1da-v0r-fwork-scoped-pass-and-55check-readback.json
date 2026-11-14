@@ -1,0 +1,54 @@
+{
+  "schema": "spk.f1da.v0r.fwork-success-independent-hash-readback.v0",
+  "date": "2026-11-14",
+  "origin": "User-fedora fwork logs uploaded to current SPK session; assistant independently verified SHA, ZIP, log semantics; no independent kernel execution.",
+  "parent_failed_v0_log_sha256": "b02cf10f975c722388a93f5f51a3ec66a4c40282e32f4ac90ed249573ead1941",
+  "v0r_zip_sha256": "fc805c8ecf4e9ab5762d047fe4e271f6c6dd7a74b7fc0388bcd62bebb43992a7",
+  "fwork_manifest_sha256": "d090f9558dd31cbed7b93bdce5f6250651b8b2826a7a89fa62a4050e1f32b5a",
+  "manifest_entries": 9,
+  "source_sha_entries": 6,
+  "independent_checks": {
+    "count": 55,
+    "passed": 55,
+    "failed": 0,
+    "script_sha256": "7c81db1132ae42c069aa59842b999e1e906ab6c3a61cc628c9b8dff480e8870a",
+    "report_sha256": "08f153c3133baa73cd2d0707e9beb482cfcfde259affa9fd5bcbe712c67f9521"
+  },
+  "source_lean_sha256": "735d5807e0282deff5863d2241fd68cf3b60cf02ea62308b74d07014eabb7727",
+  "fwork_lean": {
+    "reports": 7,
+    "sorryAx": 0,
+    "unexpected_axioms": 0,
+    "allowed_axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "source_scope": "F0b single-batch, arbitrary instructions prefix/suffix, adjacent EMIT channel-count observation"
+  },
+  "fwork_python_original": {
+    "cases": 8192,
+    "mismatches": 0,
+    "success": 7239,
+    "overflow": 953,
+    "duplicate_emits": 2611,
+    "guard_changing_suffixes": 1639,
+    "negative_nonadjacent_cmp_detected": true,
+    "limit": "bounded 2-4 batch audit, not universal runtime refinement"
+  },
+  "limitations": [
+    "F1d-B universal history lifting is pending",
+    "Python↔Lean universal refinement pending",
+    "No human peer-reviewed post-commit boundaries; P_writes=0",
+    "Source and logs not stored raw in this Git record; hashes and readback only"
+  ],
+  "SCI_GO": "0/3",
+  "P_writes": 0,
+  "HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "status": "F1DA_V0R_LEAN_7OF7_AND_ORIGINAL_PYTHON_8192OF8192_PASS__F1DB_REFINEMENT_HOLD",
+  "append_only": true
+}
