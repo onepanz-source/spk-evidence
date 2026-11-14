@@ -1,0 +1,77 @@
+{
+  "schema": "spk.f1db.v0r.user-fedora-proofs-and-python-results-ciat-secondary-readback.v0",
+  "date": "2026-11-14",
+  "source_package": {
+    "archive": "SPK_Lean_F1d_B_v0r.zip",
+    "size_bytes": 16997,
+    "sha256": "da222e026371576482f8387cb035bcc8a71dd8b068f75e16b2f02d73caf91070",
+    "crc": "PASS",
+    "zip_sources_sha": 7,
+    "fwork_sources_match": 7
+  },
+  "user_original_fwork_manifest_sha256": "d710c332e6ebaae881147e75a876e8f90404210b1b79092a09014e5ff16636c3",
+  "user_original_manifest_file_sha_matches": "10/10",
+  "source_pins": {
+    "F0b_source_commit": "373c8c023e8850af320706b6d307e9a91a8d6646",
+    "F1dB_candidate_sha256": "22059b08369a659bd5fac54298070a216f0de1b5646496b1c1cd489b43ca2f92"
+  },
+  "uploaded_logs_sha256": {
+    "f0-lean.log": "4546b2d8de427e13f2a70474fb3077730e7924f2e57fb42641ee97f7150d7437",
+    "f0-source-check.log": "95ab7129820888fb47b14ce003775b053b5c8d1583781323045cd15a7c9f29e3",
+    "f1b-lean.log": "4421d9480453114cd579909b5e041014e4e173a100bfe06fc2b7b4875e0e7224",
+    "f1c-lean.log": "24d20ba6a617085c20c076629919f73060ea32a2cb8c54dd6649a03d253f53d3",
+    "f1da-lean.log": "19f947fef3fa12bdc253e30c38af63aaa38500966fe6dba021614f20d1f71963",
+    "f1db-lean.log": "9f3089fa5bf9c83ca4540d355d4144e682eddd8999aadafcecea397cb304059c",
+    "original-multibatch-audit.json": "c73ae92a6d71ebe79147588934ddd31741739723ebbc6e372be60d09ab2f0b53",
+    "package-files.sha256": "d90dfd8df1255d7997b61ebfd3e9c1f81243618f39b1a02023bb9150da1553d0",
+    "package-source-check.log": "184fa8f0281379d7fbe576d0bf75fdbdf212dea45fabd70255f463ebea4d1fd8",
+    "runtime-audit.stdout.log": "adc3795ed55accca3c239d7f292de1e36869783ea5564f42f18244398071e766"
+  },
+  "CIAT_independent_file_audit": {
+    "checks": 96,
+    "passed": 96,
+    "failed": 0,
+    "script_sha256": "3ee7015f3fd50b2598c86971499caa94eae092007d996a598bdbea29cb6065b6",
+    "report_sha256": "323bc2db70246267bc710ea86c38fd4a545cb38ab74f5aeabdf1a7e90a35b593",
+    "scope": "File integrity, axiom printouts, JSON and prereg source consistency only. No CIAT independent Lean/kernel or original Python reexecution."
+  },
+  "fwork_kernel": {
+    "F0": 21,
+    "F1b": 7,
+    "F1c": 12,
+    "F1dA": 7,
+    "F1dB": 7,
+    "F1dB_sorryAx": 0,
+    "F1dB_errors": 0,
+    "standard_axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "scope": "Lean F0b timestamped history model, arbitrary finite admitted batches, adjacent EMIT contextual observational count"
+  },
+  "fwork_frozen_python": {
+    "cases": 8192,
+    "observational_mismatches": 0,
+    "success": 7239,
+    "overflow": 953,
+    "negative_control": true,
+    "repeat_of_F1dA_suite": true
+  },
+  "critical_refinement_gaps": [
+    "Python SpikeTrain groups equal timestamps into one batch; Lean F1dBPrepare accepts adjacent same timestamp as distinct frames.",
+    "Lean F1dBRun empty history returns some [] without CoreResult terminal raw/guard/timestamp fields.",
+    "Lean Option.none conflates Python exception classes; negative CoreCmp threshold_raw and CoreReset value_raw are not modelled by Nat.",
+    "Quantified Lean model theorem does not alone prove frozen CPython implementation correctness."
+  ],
+  "raw_log_bytes_not_committed": true,
+  "status": "F1DB_V0R_MODEL_HISTORY_7OF7_PASS__FROZEN_PYTHON_8192OF8192_BOUNDED_PASS__REFINEMENT_HOLD",
+  "P_writes": 0,
+  "SCI_GO": "0/3",
+  "human_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "append_only": true
+}
