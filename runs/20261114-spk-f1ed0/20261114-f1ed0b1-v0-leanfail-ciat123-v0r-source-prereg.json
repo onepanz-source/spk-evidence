@@ -1,0 +1,69 @@
+{
+  "schema": "spk.evidence.f1ed0b1.v0-fwork-fail-v0r-source-prelock.v0",
+  "date": "2026-11-14",
+  "source_repo": "onepanz-source/spk-backvalidation-v0",
+  "source_audit_and_v0r_lock_commit": "01f98a8db4fcb266dec3cfdd0eeec0792477ba59",
+  "original_prelocked_v0_zip_sha256": "b0b0271a7378707240ec14eedd0a0209500729a0d989a535cde9180d8f5f3c05",
+  "user_uploaded_v0_tar_name": "SPK_F1eD0b1_v0_logs.tar.gz",
+  "user_uploaded_v0_tar_size": 2494,
+  "user_uploaded_v0_tar_sha256": "81e231ee4daaa556404dc433da6856697990a0d4a5d6fb631ab2785548ee703a",
+  "fedora_manifest_sha256": "b80d00b617967a5489faada423da02a7846af4cee0ffd684c3e6fef81ae2613c",
+  "fedora_manifest_hashes_verified": "9/9",
+  "source_zip_sha256_matches": "8/8",
+  "source_zip_crc": "PASS",
+  "Fedora_Lean_4_35": {
+    "F0b": "PASS",
+    "D0a": "13/13 PASS",
+    "D0b0": "13/13 PASS",
+    "D0b1_Lean_log_sha256": "8574eee8a11798aa4abb5f7daf1aaee3e8983c7dfd849a330e1edf82aea628cc",
+    "new_formal_axiom_reports": 6,
+    "new_formal_clean_reports": 5,
+    "new_formal_with_sorryAx": 1,
+    "new_formal_compiler_diagnostics": 6,
+    "missing_theorem": "f1ed0b1_error_prefix_absorbs_suffix",
+    "error_branches": [
+      "unsolved error-bind goal in general append",
+      "reserved prefix identifier parser, downstream unknownIdentifier"
+    ],
+    "operational_gate": "NOT REACHED",
+    "status": "FAIL_HOLD"
+  },
+  "CIAT_independent_file_readback": {
+    "auditor_sha256": "8ff3a81da4ebd72c049bfef7ca90d21c58499dcb60448aa026bd4011f6b7fb37",
+    "report_sha256": "d7b4e79546d9764920c41829f18b62ce551b37c16c2fc0255121fb29a2937307",
+    "checks": 123,
+    "passed": 123,
+    "failed": 0,
+    "scope": "Independent TAR/ZIP/files/logs static verification, not a Lean kernel reexecution."
+  },
+  "v0r_corrected_source": {
+    "archive": "SPK_Lean_F1e_D0b1_v0r.zip",
+    "bytes": 12544,
+    "sha256": "d92ecd5d22fc69687f0f1b22de91b86bac9233566bd5670213bd28f4b4a52a09",
+    "manifest_sha256": "7557332b7738f4db7903b94439a04ce2ee67cfbf49d46a93458b7d5ba87014fe",
+    "manifest_files": "8/8",
+    "zip_crc": "PASS",
+    "Lean_filename": "SPKCoreF1eD0B1V0r.lean",
+    "Lean_source_sha256": "baca6e6d963ba653451e5847adbb4efa4438cdfaa6192a186fa8423c7b95a4c6",
+    "runner_sha256": "95dc5ac347f94afbf6fc76d2fb2b1c7d69794d8e3c6947e776e7ad76033e5366",
+    "axiom_gate_sha256": "8457595edf1c0ea72c36d2fce32c86d0794a803e8da0c137f6becb0a63fbc4ac",
+    "change": "Only two proof sites: append residual `Except.error` closed via simp <;> rfl; reserved local identifier renamed histPrefix in theorem. No theorem statements, semantics, preceding Lean model changes.",
+    "static_checks": "bash -n PASS, Python compile 3/3 PASS, valid synthetic gate accepted, 5 adversarial bad logs rejected",
+    "new_output_root": "~/workspace/spk-manual-runs/spk-lean-f1e-d0b1-v0r",
+    "user_Fedora_native_Lean": "PENDING"
+  },
+  "zero_original_P_writes": 0,
+  "SCI_GO": "0/3",
+  "M_inactive": true,
+  "manual_Fedora_user_only": true,
+  "authority_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "peer_review_workstream_excluded": true,
+  "append_only": true,
+  "limitations": "New v0r Lean kernel not run; no global source/CPython refinement or Nat embedding claimed. Original v0 failure evidence preserved.",
+  "status": "F1ED0B1_V0_LEAN_FAIL__CIAT_123_UPLOAD_AUDIT_PASS__V0R_SOURCE_PREEXECUTION_LOCK_HOLD"
+}
