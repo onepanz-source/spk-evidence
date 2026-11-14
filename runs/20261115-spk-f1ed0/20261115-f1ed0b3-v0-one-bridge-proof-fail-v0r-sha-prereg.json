@@ -1,0 +1,63 @@
+{
+  "schema": "spk.evidence.f1ed0b3.v0-fwork-one-proof-fail-v0r-source-sha-lock.v0",
+  "date": "2026-11-15",
+  "source_repo": "onepanz-source/spk-backvalidation-v0",
+  "source_audit_and_corrective_prelock_commit": "b78f09d7be56c2ea8dee6b46604e7746c2883e66",
+  "user_v0_archive_name": "SPK_F1eD0b3_v0_logs.tar.gz",
+  "user_v0_archive_size": 2820,
+  "user_v0_archive_sha256": "f8692956f0880086390f9493e907471f9683cb4c53790e947c0395b25ff11eb8",
+  "prelocked_v0_zip_sha256": "d9d77acffd1ddc716d8795682405460789d1667087f163f60c75c7b78789cc2c",
+  "original_fedora_manifest_sha256": "2eb5a7e32f41ab45da960720f149e44ae275ddc51ed3e275c4d063ae63064c4a",
+  "manifest_pairs": "13/13 PASS",
+  "source_manifest": "12/12 PASS",
+  "zip_crc": "PASS",
+  "Fedora_Lean4": "4.35.0",
+  "predecessors": "F0b compiled; D0a, D0b0, D0b1, D0b2 all gate PASS",
+  "new_Lean_log_sha256": "8f8cf363e0b85f6ce2b22e5e7ea65a91a101cc845176dad4a3b06e717a1c20bc",
+  "new_Lean_axiom_reports": 7,
+  "new_Lean_clean": 6,
+  "new_Lean_sorryAx": [
+    "f1ed0b3_acc_all_checked_bridge"
+  ],
+  "new_Lean_diagnostics": [
+    "SPKCoreF1eD0B3.lean:47:73: unsolved goals"
+  ],
+  "user_native_axioms_gate": "NOT_REACHED",
+  "kernel_verdict": "FAIL_HOLD",
+  "independent_CIAT_uploaded_byte_readback": {
+    "checks": 69,
+    "passed": 69,
+    "failed": 0,
+    "script_sha256": "see source audit record (not independently reexecuted Lean)",
+    "report_sha256": "60af0c2a225e8329ec33999762002b694f2080fcc11e2e4c6b5caa3a613ac913",
+    "scope": "Independent stdlib TAR+ZIP/manifest/Lean log exact-file verification, NOT new Lean/kernel run."
+  },
+  "v0r_candidate_prelock": {
+    "name": "SPK_Lean_F1e_D0b3_v0r.zip",
+    "size_bytes": 18214,
+    "sha256": "3bf80bfbff90d9e448b8f3ef635014e6b01c86e579260578fc156e20a93104ee",
+    "manifest_sha256": "8cf49ff60e6d678ef780dfa146cf5e90f8222c269ae86f7a980fb33331ffc022",
+    "source_sha": "12/12 PASS",
+    "zip_crc": "PASS",
+    "new_Lean_sha256": "d83b76771c7094d7b553a1c9d3b9299d13266a7834322bc9785bd6d722c07196",
+    "change": "Only one theorem proof body, explicit by_cases success/overflow, all statements and evaluator unchanged",
+    "synthetic_axiom_gate": "valid PASS, five adversarial cases rejected",
+    "user_Fedora_execution": "PENDING",
+    "new_output_root": "~/workspace/spk-manual-runs/spk-lean-f1e-d0b3-v0r"
+  },
+  "scientific_limit": "No full Nat→signed program equivalence, all-source CPython implementation correctness, output canonical sorting proof, or evidence of neuromorphic learning utility.",
+  "source_zip_and_user_tar_raw_bytes_committed": false,
+  "M_always_inactive": true,
+  "user_manual_fwork_only": true,
+  "P_writes": 0,
+  "SCI_GO": "0/3",
+  "human_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "independent_review_workstream_excluded": true,
+  "append_only": true,
+  "status": "F1ED0B3_V0_LEAN_ONE_PROOF_FAIL__V0R_SOURCE_ONLY_SHA_PRELOCK_FEDORA_PENDING"
+}
