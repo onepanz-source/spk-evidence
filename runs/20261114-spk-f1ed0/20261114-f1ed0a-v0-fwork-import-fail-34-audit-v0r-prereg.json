@@ -1,0 +1,49 @@
+{
+  "schema": "spk.evidence.f1ed0a.v0-fedora-import-fail-v0r-source-prelock.v0",
+  "date": "2026-11-14",
+  "source_repo": "onepanz-source/spk-backvalidation-v0",
+  "source_append_only_commit": "24f1c694eda9a616195caa7fed62d9968905855a",
+  "original_v0": {
+    "prelocked_zip_sha256": "ee1cbd36e5f8b7e2a3d3440b1663d3152d8c6d2f157479e8ce2cca55bc82cf10",
+    "user_Fedora_TAR_sha256": "b300f54b50ef75a7531ba71f621a6f8188e536ccfaf7599c611c385c63c82c52",
+    "Fedora_manifest_sha256": "6603f300e2a1f4b321989410f123f50cdb5ed5f526b9accd54e7b1f48d8e3958",
+    "Fedora_Lean_f0": "PASS",
+    "Fedora_Lean_D0a_error": "SPKCoreF1eD0A.lean:12:0 invalid import command, must be at beginning",
+    "new_Lean_axiom_reports": 0,
+    "not_a_formal_pass": true
+  },
+  "CIAT_independent_byte_audit": {
+    "checks": 34,
+    "passed": 34,
+    "failed": 0,
+    "script_sha256": "3688c71f96c70b194831e7a411f940b73de4a44fc8d3dc91a2ea319a27a98a3b",
+    "report_sha256": "84ed70daf45d410f59c531b15fa3642a1ebc9170d8fa4351f565d46118fe2735",
+    "scope": "Independent TAR/ZIP file and log check only, no new Lean/Python execution."
+  },
+  "v0r_preregistered": {
+    "name": "SPK_Lean_F1e_D0a_v0r.zip",
+    "bytes": 4925,
+    "sha256": "e265329a66bad75527084a28efd67687450ebe9c8b7dac25a7c73c88a03d2100",
+    "new_Lean_source_sha256": "9387b25a3de4b196e20f860f7e4862d500b8787b9ae891b8e0751ce321503c38",
+    "source_sha256_manifest": "e57326ecad6c56c4a0c26d5c86c3ba85e714805f07abb7fb5f94851cfe1813c9",
+    "runner_sha256": "ae33613b4341ffa3b572e83e288cb3c2bfaee615046bc356c13635f691a94e39",
+    "source_change": "Only move import to line 1. Theorems and interpreter unchanged.",
+    "static_checks": "CRC PASS, source 3/3, Bash syntax PASS",
+    "new_Fedora_root": "~/workspace/spk-manual-runs/spk-lean-f1e-d0a-v0r",
+    "kernel_execution": "PENDING",
+    "future_log_name": "SPK_F1eD0a_v0r_logs.tar.gz"
+  },
+  "still_held": "CPython universal implementation refinement, multisession Core history, signed source admissibility beyond this fragment, production BV/P authority",
+  "source_zip_not_stored_in_repo": true,
+  "raw_evidence_not_in_repo": true,
+  "original_P_writes": 0,
+  "SCI_GO": "0/3",
+  "human_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "append_only": true,
+  "status": "F1ED0A_V0_LEAN_FAIL__V0R_CANDIDATE_SOURCE_SHA_PRELOCK_HOLD"
+}
