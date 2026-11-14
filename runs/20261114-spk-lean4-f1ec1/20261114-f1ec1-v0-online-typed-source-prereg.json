@@ -1,0 +1,53 @@
+{
+  "schema": "spk.evidence.f1ec1.v0.candidate-online-typed-first-error-preexecution-custody.v0",
+  "date": "2026-11-14",
+  "source_repo": "onepanz-source/spk-backvalidation-v0",
+  "source_branch": "research/spk-lean4-f1ec1-v0-prelock-20261114",
+  "source_commit": "d42fe6e8091472c5750a231b1b4a3d0ff9259c07",
+  "source_pr": "https://github.com/onepanz-source/spk-backvalidation-v0/pull/271",
+  "package": "SPK_Lean_F1e_C1_v0.zip",
+  "package_size_bytes": 30025,
+  "package_sha256": "cfd2e849ca18be77d503fc32e6ffed1c4dc650a908b194dce1f41944d8ba1ed9",
+  "zip_crc": "PASS",
+  "member_count": 12,
+  "source_manifest_members": 11,
+  "source_manifest_sha256": "4736bbc2b3bf9d2f325f93cfdc5834ec98fa72a93f97cea15065e5c0ff7e06a7",
+  "new_Lean_source_sha256": "405b93837d8fb6f087d0d6066f3b075caf8686b6be8db4437f9478ba3b9e1b54",
+  "new_original_Python_check_sha256": "d9536649bcdf35e427d5d0a4d532c97d5eb6783220b845a76f73e593d4da1a56",
+  "candidate_theorems": 13,
+  "prospective_original_python_cases": 1560,
+  "prospective_prefix_checks": 633,
+  "local_reference_only_preexecution_sanity": {
+    "cases": 1536,
+    "ok": 1062,
+    "accOverflow": 451,
+    "resetOverflow": 23,
+    "first_error_later": 84,
+    "prefix_checks": 633
+  },
+  "static_checks": {
+    "zip_crc": "PASS",
+    "sha_pairs": "11/11 PASS",
+    "bash_syntax": "PASS",
+    "python_ast": "PASS",
+    "prior_Lean_sources_unchanged": "7/7",
+    "Lean_names": "13/13",
+    "forbidden_code_proof_holes": "none found"
+  },
+  "user_Fedora_Lean_kernel": "NOT_EXECUTED",
+  "user_Fedora_original_CPython": "NOT_EXECUTED",
+  "new_Fedora_root": "~/workspace/spk-manual-runs/spk-lean-f1e-c1-v0",
+  "scientific_limit": "Lean typed first-error model equivalence is conditional on canonical admitted grouped history. Excluded raw histories intentionally differ by error precedence. Original Python finite differential cases (not yet run) cannot prove universal CPython refinement.",
+  "source_archive_only_in_conversation": true,
+  "raw_future_logs_not_committed": true,
+  "P_writes": 0,
+  "SCI_GO": "0/3",
+  "human_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "append_only": true,
+  "status": "F1EC1_V0_PREREG_SOURCE_CANDIDATE_HOLD"
+}
