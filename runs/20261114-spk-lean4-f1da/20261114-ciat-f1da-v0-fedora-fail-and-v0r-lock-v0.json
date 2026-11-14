@@ -1,0 +1,63 @@
+{
+  "schema": "spk.f1d-a.v0-fedora-failure-and-v0r-preexecution-custody.v0",
+  "date": "2026-11-14",
+  "input_provenance": "user Fedora uploaded 9 logs, independent CIAT standard library readback",
+  "source_repo": "onepanz-source/spk-backvalidation-v0",
+  "source_commit": "76d4b3ac9c2aa7b181d87fc363289e749dfe814b",
+  "prior_archive_sha256": "6bb83ec83bea1d60a5d49a216ebff99079a2df30c9b53c5adeeeaf0c7abdae34",
+  "prior_original_runtime": {
+    "cases": 8192,
+    "failures": 0,
+    "success": 7239,
+    "overflow": 953,
+    "duplicate_emit": 2611,
+    "guard_changing_suffix": 1639,
+    "negative_nonadjacent_control": true
+  },
+  "prior_F1DA_v0_Lean": {
+    "status": "FAIL_HOLD",
+    "reported_theorems": 7,
+    "sorryAx_count": 5,
+    "errors": [
+      "failed subst raw2",
+      "option observation match order",
+      "rw exec_append",
+      "invalid decide at"
+    ]
+  },
+  "independent_file_readback": {
+    "checks_passed": 63,
+    "checks_failed": 0,
+    "script_sha256": "a82ea7e3ecc04ea1eeb62035fbb1e652f8cca746147bc431a1a410adf6a78f46",
+    "report_sha256": "3889166bebe599e3da7a614eb928e7533e6e5d85a4640152b9b850ddba80c97c"
+  },
+  "uploaded_logs_sha256": {
+    "f1da-lean.log": "b02cf10f975c722388a93f5f51a3ec66a4c40282e32f4ac90ed249573ead1941",
+    "original-multibatch-audit.json": "c73ae92a6d71ebe79147588934ddd31741739723ebbc6e372be60d09ab2f0b53",
+    "runtime-audit.stdout.log": "adc3795ed55accca3c239d7f292de1e36869783ea5564f42f18244398071e766",
+    "package-files.sha256": "47cbbb2f13aeedbe1ef508dd1f569723600c5c0626be366fee6a8f70dbd252cc"
+  },
+  "new_archive": {
+    "filename": "SPK_Lean_F1d_A_v0r.zip",
+    "bytes": 13817,
+    "sha256": "fc805c8ecf4e9ab5762d047fe4e271f6c6dd7a74b7fc0388bcd62bebb43992a7",
+    "source_lean_sha256": "735d5807e0282deff5863d2241fd68cf3b60cf02ea62308b74d07014eabb7727",
+    "zip_crc": "PASS",
+    "source_manifest": "PASS",
+    "bash_syntax": "PASS",
+    "python_ast": "PASS",
+    "lean_kernel": "PENDING",
+    "new_root": "~/workspace/spk-manual-runs/spk-lean-f1d-a-v0r"
+  },
+  "status": "F1DA_V0_NATIVE_RUNTIME_8192_PASS__F1DA_V0_LEAN_FAIL__V0R_CANDIDATE_PRELOCK",
+  "limits": "CIAT checked files and source; did not run Lean kernel or native Python Fedora runtime itself. No universal Python Lean refinement.",
+  "original_P_writes": 0,
+  "SCI_GO": "0/3",
+  "human_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "append_only": true
+}
