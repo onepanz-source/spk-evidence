@@ -1,0 +1,59 @@
+{
+  "schema": "spk.lean4.f1bs.ciat-uploaded-evidence-independent-readback.v0",
+  "date": "2026-11-14",
+  "status": "F1BS_LEAN_KERNEL_LOCAL_OBSERVATIONAL_THEOREMS_PASS__UNIVERSAL_F1_ALL_RULES_AND_PYTHON_REFINEMENT_HOLD",
+  "evidence_provenance": "User uploaded Fedora fwork logs; assistant performed byte hash, ZIP CRC and source/log readback, NOT independent kernel recompilation.",
+  "source_refs": {
+    "f0_commit": "373c8c023e8850af320706b6d307e9a91a8d6646",
+    "f1bs_lock_commit": "8bf1bf431def7e6b24350978c97d841df518b503"
+  },
+  "zip": {
+    "bytes": 4751,
+    "sha256": "1d682cbf4f4e1a32edb76085be8fde7280f8cd5cc2b00ce7342504a172732037",
+    "crc": "PASS",
+    "members_sha256": {
+      "spk_f1b_v0s/README.md": "cc92e0771f72ec46d4edf5c9df527cfab63ab8d50c154430b5164023b1f30556",
+      "spk_f1b_v0s/SPKCoreF1bV0s.lean": "ea0cba264a8543c4fe5bbf3baeca29001a36d8e746887bc244be8c318aea94c4",
+      "spk_f1b_v0s/run_fwork.sh": "de6b03733fa81839182b0a578b03386ccef593275f2512d8812b7a513e55cc07"
+    }
+  },
+  "uploaded_logs_sha256": {
+    "f1bs-lean.log": "4421d9480453114cd579909b5e041014e4e173a100bfe06fc2b7b4875e0e7224",
+    "f0-compile.log": "4546b2d8de427e13f2a70474fb3077730e7924f2e57fb42641ee97f7150d7437",
+    "source-check.log": "95ab7129820888fb47b14ce003775b053b5c8d1583781323045cd15a7c9f29e3",
+    "package-sha256.log": "5aa64aef553a98e8b674f6e54b19521f8523e7cf506de805608122793e437aaa",
+    "candidate-check.log": "165aba5bff969bad5c0f28a3fd0ce8346e101f73014fa13e8bac52ce074a0f6e",
+    "MANIFEST.sha256": "c8ba9983b8c4f49d46b0d46ab31e754115bbbbb3b73b7b9b9c99d9bfc8024418"
+  },
+  "manifest_matches": 5,
+  "certified_theorems": [
+    "f1b_false_guard_emit_suffix",
+    "f1b_false_guard_reset_suffix",
+    "f1b_inactive_prefix_drop",
+    "f1b_acc_zero_suffix",
+    "f1b_emit_two_permutation_counts",
+    "f1b_emit_swap_observed",
+    "f1b_cmp_overwrite_suffix"
+  ],
+  "axiom_report": {
+    "no_axioms": 3,
+    "propext_only": 3,
+    "propext_and_Quot_sound": 1,
+    "sorryAx": 0
+  },
+  "limits": [
+    "F0b single-batch model only; not a universal canonicalizer Python runtime refinement.",
+    "EMIT swap theorem models two-element observation; arbitrary suffix contextual observational preservation not yet proved.",
+    "L-ACC-02/03, L-TIME-06 and other F1 rule IDs remain unproved.",
+    "No native BV-to-P rights or original P writes. No mesh security claim."
+  ],
+  "SCI_GO": "0/3",
+  "original_P_writes": 0,
+  "human_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "append_only": true
+}
