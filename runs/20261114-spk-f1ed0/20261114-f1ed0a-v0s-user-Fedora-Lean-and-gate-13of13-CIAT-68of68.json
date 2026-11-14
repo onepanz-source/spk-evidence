@@ -1,0 +1,55 @@
+{
+  "schema": "spk.evidence.f1e-d0a.v0s.user-fedora-axiom-gate-formal-scoped-pass.v0",
+  "date": "2026-11-14",
+  "source_repo": "onepanz-source/spk-backvalidation-v0",
+  "source_success_metadata_commit": "0da322cab2a7848c7f12ab972fb070776f0b0f07",
+  "source_preexecution_metadata_commit": "14dc8cf7fa502620d6ee9078b809e8dfe923776f",
+  "source_package_zip_sha256": "e2983109242b84a76c8d992850306412b9eeab614c88c45ad48dd43d38b141a0",
+  "user_uploaded_log_tar_name": "SPK_F1eD0a_v0s_logs.tar.gz",
+  "user_uploaded_log_tar_bytes": 1542,
+  "user_uploaded_log_tar_sha256": "ac42f3b113d20c76be0ff6487e2bfb620ac002c130af3d3482e73d0714c6fe99",
+  "Fedora_manifest_sha256": "6d73d0de1ed99e1d57a677211071e6ad182449e360b08ace65cba9a222410c26",
+  "Fedora_manifest_file_hashes": "6/6 PASS",
+  "package_source_sha256": "4/4 PASS",
+  "Lean_version": "4.35.0",
+  "Lean_F0b_log_status": "PASS; preexisting 2 unused-simp warnings",
+  "Lean_D0a_log_sha256": "0618b595b74d67c660ee5b3c2f8f53d4a385eaf586a9e7247e728ef89426ad45",
+  "Lean_D0a_theorems": 13,
+  "Lean_D0a_errors": 0,
+  "Lean_D0a_sorryAx": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "axiom_gate_stdout": "F1ED0A_V0S_STANDARD_AX_POLICY_PASS 13/13",
+  "axiom_gate_log_sha256": "2edf508e2cb2ca4922fc799ec5fcea0cd806eb780975f2d8f66f5f6157bd8e10",
+  "CIAT_independent_sha_audit": {
+    "script_sha256": "505a628c24b6d4529c9ce26e0605c8997492ab94e01a8d6884d1505e840b1965",
+    "report_sha256": "3dd15ff21476674ae295f1e41f06059d06b3c9d4ba5c46642c2610702e76b647",
+    "checks": 68,
+    "passed": 68,
+    "failed": 0,
+    "scope": "Independent TAR+ZIP readback, SHA, theorem/axiom log consistency, NOT independent Lean kernel execution."
+  },
+  "valid_claim": "13 model-level Lean theorem statements accepted by Fedora kernel, one signed batch including deferred output event validation, classical standard axioms; runner policy now accepts and logs result.",
+  "unproved": [
+    "Universal CPython-to-Lean implementation refinement",
+    "Signed multi-batch source-histories theorem",
+    "Full compiler or mesh/ESP32-C6 behavior",
+    "General real-world learning"
+  ],
+  "original_P_writes": 0,
+  "SCI_GO": "0/3",
+  "human_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "independent_peer_review_workstream_active": false,
+  "raw_uploaded_tar_in_GitHub": false,
+  "source_zip_in_GitHub": false,
+  "append_only": true,
+  "status": "F1ED0A_V0S_SCOPED_KERNEL_AND_RUNNER_PASS__CIAT_68OF68_READBACK__UNIVERSAL_CPYTHON_HOLD"
+}
