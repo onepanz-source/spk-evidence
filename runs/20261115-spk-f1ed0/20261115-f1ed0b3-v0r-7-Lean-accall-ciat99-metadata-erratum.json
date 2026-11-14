@@ -1,0 +1,70 @@
+{
+  "schema": "spk.evidence.f1e-d0b3.v0r.Fedora-7-theorems-ciat99-readback.v0",
+  "date": "2026-11-15",
+  "source_repo": "onepanz-source/spk-backvalidation-v0",
+  "source_result_metadata_commit": "c1c90391344f12452288253022506589de977020",
+  "original_v0r_candidate_source_prelock_commit": "b78f09d7be56c2ea8dee6b46604e7746c2883e66",
+  "preregistered_source_zip": {
+    "name": "SPK_Lean_F1e_D0b3_v0r.zip",
+    "bytes": 18214,
+    "sha256": "3bf80bfbff90d9e448b8f3ef635014e6b01c86e579260578fc156e20a93104ee",
+    "source_SHA": "12/12 PASS",
+    "CRC": "PASS"
+  },
+  "user_Fedora_run": {
+    "tar": "SPK_F1eD0b3_v0r_logs.tar.gz",
+    "bytes": 2624,
+    "sha256": "8fc771acb1e780d385698d861b1c2fdbd34b02b201142f4bd6d34d5465577e6e",
+    "manifest_sha256": "549458f4878b3bc1f6c8d25cde51f10d264e3ef785de7293b4d049f18ffa7ffb",
+    "manifest_verified": "14/14 PASS",
+    "new_Lean_log_sha256": "e760159a37edea3655041889dc2aa179638eecba3aaa6c88b9c634c75c3d0cfb",
+    "new_Lean_4_35_0": {
+      "reports": 7,
+      "errors": 0,
+      "sorryAx": 0,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "new_axiom_gate_sha256": "02ab9a854e845dc10d5732fb3a9431e41877912f9e2802c9f4056c09da8e256a",
+    "new_axiom_gate": "F1ED0B3_V0R_STANDARD_AX_POLICY_PASS 7/7",
+    "predecessor_gates": [
+      "F0b compile PASS",
+      "D0a 13/13 PASS",
+      "D0b0 13/13 PASS",
+      "D0b1 7/7 PASS",
+      "D0b2 10/10 PASS"
+    ]
+  },
+  "CIAT_independent_byte_audit": {
+    "script_sha256": "5ca32a8ac115e05c65b476d2025bc5b235172d77430ca74d7536369d006ae83f",
+    "report_sha256": "89bfacd36e8ae454473c883b26d5d5f5b43420bdf3c2887e86b75b240bebf70c",
+    "checks": 99,
+    "passed": 99,
+    "failed": 0,
+    "scope": "Independent TAR/ZIP source, SHA manifest, Lean axioms and gate output readback, not independently rerun Lean."
+  },
+  "integrity_erratum": {
+    "incorrect_field": "Source repository commit c1c903... user_Fedora.manifest_sha256",
+    "incorrect_value": "f4e7ebd70a1d397d7f8d45039c83a04f6d099dc826527747537cad7af63bd42f",
+    "correct_directly_measured_SHA256": "549458f4878b3bc1f6c8d25cde51f10d264e3ef785de7293b4d049f18ffa7ffb",
+    "treatment": "ADD-only correction required in source. Never silently overwrite prior metadata or raw hashes."
+  },
+  "proof_scope": "Seven Nat→signed Lean model single-instruction theorems for ACC(all), active EMIT, RESET and typed ACC error; full programs, ACC(some channel), canonical source sort, CPython implementation correctness remain unproved.",
+  "raw_tar_or_zip_committed": false,
+  "original_P_writes": 0,
+  "SCI_GO": "0/3",
+  "M_always_inactive": true,
+  "user_manual_Fedora_only": true,
+  "authority_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "independent_human_review_workstream_excluded": true,
+  "append_only": true,
+  "status": "F1ED0B3_V0R_SEVEN_LEAN_KERNEL_THEOREMS_AXIOM_GATE_PASS__CIAT_99_FILE_AUDIT_PASS__IMPLEMENTATION_REFINEMENT_HOLD"
+}
