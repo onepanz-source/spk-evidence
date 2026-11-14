@@ -1,0 +1,36 @@
+{
+  "schema": "spk.evidence.f1ed0.signed-source-probe-v0.prospective-sha-lock",
+  "date": "2026-11-14",
+  "source_repo": "onepanz-source/spk-backvalidation-v0",
+  "source_metadata_commit": "c8f4c86cdee21aba5be59d259d1a15dbda352ed3",
+  "package_name": "SPK_F1e_D0_SourceProbe_v0.zip",
+  "package_size_bytes": 7190,
+  "package_sha256": "e0cd642788d3e073c5854247f667d38db2da39b6a87e5dc2470333183f1e5d6f",
+  "Python_probe_sha256": "6bf60d530a83204b156d9cfb6a825342b227d250fdf283206a1fff0373391f39",
+  "package_manifest_sha256": "e856052b3b6e9c9618a06635c447e83165b6fc65cc6a8cd8c196e39a027dbdcd",
+  "static_checks": "ZIP CRC PASS, source SHA 3/3, Python py_compile PASS, Bash -n PASS",
+  "prospective_original_python": "13 direct + 20 directed program + 512 fresh random = 545 bounded cases",
+  "user_Fedora_status": "NOT_EXECUTED",
+  "Lean_signed_D0_status": "NOT_YET_COMPILED_OR_PROVED",
+  "exact_original_git_blobs": {
+    "spk/event.py": "b93be0477e3df1e73ccc79b120f8c39d2c6562c4",
+    "spk_core/isa.py": "98bc4999ca9bc595724210fc0b56f1f678707de0",
+    "spk_core/runtime.py": "dc50369cdaa1a913ab296c197888ce1344ebeab8"
+  },
+  "output_root": "~/workspace/spk-manual-runs/spk-f1e-d0-python-v0",
+  "related_issues": [
+    "https://github.com/onepanz-source/spk-backvalidation-v0/issues/272",
+    "https://github.com/onepanz-source/spk-backvalidation-v0/issues/273"
+  ],
+  "user_raw_results_received": false,
+  "status": "F1ED0_PREREG_SOURCE_ONLY_HOLD",
+  "original_P_writes": 0,
+  "SCI_GO": "0/3",
+  "human_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "append_only": true
+}
