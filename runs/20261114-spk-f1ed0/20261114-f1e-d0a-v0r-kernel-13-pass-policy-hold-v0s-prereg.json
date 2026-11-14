@@ -1,0 +1,54 @@
+{
+  "schema": "spk.evidence.f1e-d0a.v0r-kernel-pass-runner-policy-hold-v0s-source-prereg.v0",
+  "date": "2026-11-14",
+  "source_repo": "onepanz-source/spk-backvalidation-v0",
+  "source_metadata_commit": "14dc8cf7fa502620d6ee9078b809e8dfe923776f",
+  "user_original_v0r_tar_sha256": "56f2e5a8859094622f572053fc72c552fc45b810babc5e95d5e6dd7594b4e390",
+  "original_v0r_zip_sha256": "e265329a66bad75527084a28efd67687450ebe9c8b7dac25a7c73c88a03d2100",
+  "v0r_fedora_manifest_sha256": "4b8fa107266f3289c1534d6302543d10f1617d1f9c7161abdb6f4bf7161aa0d6",
+  "v0r_fedora_lean_log_sha256": "0618b595b74d67c660ee5b3c2f8f53d4a385eaf586a9e7247e728ef89426ad45",
+  "Lean_version": "4.35.0",
+  "Lean_theorems": 13,
+  "Lean_errors": 0,
+  "Lean_sorryAx": 0,
+  "actual_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "original_runner_exit_code": "NOT_RECORDED_IN_ARCHIVE",
+  "runner_policy_finding": "v0r whitelist rejects Classical.choice; every theorem print includes it. v0r operational gate MUST remain HOLD, although formal kernel compiled all 13.",
+  "CIAT_independent_readback": {
+    "checks": 70,
+    "passed": 70,
+    "failed": 0,
+    "report_sha256": "29ebd9df5c45082bcbaac3689d24d288960f9c5507c653169d8bc0bb7be11f58",
+    "script_sha256": "43face9948a02a395a144bdff995bc27ac0fd0078c84a97dbb7b139d6f261987",
+    "scope": "Independent uploaded TAR and prelocked source ZIP SHA/semantic log check, not independent native kernel"
+  },
+  "new_v0s": {
+    "package": "SPK_Lean_F1e_D0a_v0s.zip",
+    "bytes": 6189,
+    "sha256": "e2983109242b84a76c8d992850306412b9eeab614c88c45ad48dd43d38b141a0",
+    "source_sha_manifest": "d03a170c172fce394c07cd8e8e3885a081285a77c52af6f1059fb9a82a9df9ba",
+    "preserved_Lean_source_sha256": "9387b25a3de4b196e20f860f7e4862d500b8787b9ae891b8e0751ce321503c38",
+    "runner_sha256": "0c747291b892f74d52690686aecc077b696d3a3cc6a545d00ceb879f2f83eb05",
+    "axiom_gate_script_sha256": "dbe934a52fcbf84a1f7d9f991b956c4307d3f018cd042c1438821f187b005ded",
+    "source_integrity": "4/4 PASS, ZIP CRC PASS, bash-n and Python AST PASS",
+    "local_replay_of_old_Lean_log": "13/13 printed axioms PASS, classical dependence retained",
+    "adversarial_policy_tests": "valid PASS; injected custom axiom/ sorryAx/ missing theorem all REJECT (4/4)",
+    "user_Fedora_reexecution": "NOT_EXECUTED",
+    "fresh_output_root": "~/workspace/spk-manual-runs/spk-lean-f1e-d0a-v0s"
+  },
+  "status": "F1ED0A_V0R_LEAN_13OF13_SCOPED_KERNEL_PASS__RUNNER_POLICY_HOLD__V0S_SOURCE_PRELOCK",
+  "original_P_writes": 0,
+  "SCI_GO": "0/3",
+  "human_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "append_only": true,
+  "raw_source_and_logs_in_GitHub": false
+}
