@@ -1,0 +1,64 @@
+{
+  "schema": "spk.evidence.f1ed0b4.v0s.Fedora-6-lean-gate-pass-ciat103.v0",
+  "date": "2026-11-15",
+  "source_repo": "onepanz-source/spk-backvalidation-v0",
+  "source_metadata_commit": "6429d464b5003caa14d2b0aaaf0ce2ff61c29c9a",
+  "source_prelock_commit": "36ddbd138ece5416eed66e1ba2b1b88622fe8dfc",
+  "preregistered_archive": {
+    "name": "SPK_Lean_F1e_D0b4_v0s.zip",
+    "bytes": 21207,
+    "sha256": "3038b6c0db55b284e18df1d459526aef51c0defcfd0de5d24105a55821cf8fd4",
+    "zip_crc": "PASS",
+    "source_SHA_pairs": "14/14 PASS"
+  },
+  "user_Fedora": {
+    "tar": "SPK_F1eD0b4_v0s_logs.tar.gz",
+    "bytes": 2804,
+    "sha256": "d8b0ac6aa7f20dbeb4d8df1aa31d01a2741c5ad924d6dbad6467c3a99b3c5eec",
+    "manifest_sha256": "b651d605b96dd78ae6fefced3832f9be292a05abae1fd84743f67314697cb3d3",
+    "manifest_SHA_pairs": "16/16 PASS",
+    "lean_version": "4.35.0",
+    "F0b": "compiles",
+    "predecessor_gates": [
+      "D0a 13/13 PASS",
+      "D0b0 13/13 PASS",
+      "D0b1 7/7 PASS",
+      "D0b2 10/10 PASS",
+      "D0b3 7/7 PASS"
+    ],
+    "D0b4_Lean_log_sha256": "f417880d91d9a211b361320febb8f6128055e4fdf90e003f39dad2d7d0f7c6c9",
+    "D0b4_theorem_prints": 6,
+    "D0b4_errors": 0,
+    "D0b4_sorryAx": 0,
+    "standard_axioms_only": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0b4_gate_log_sha256": "2e655456271ccba3f9be3370c6238076dacdcf416ec43e371c1b1e443595e7f6",
+    "D0b4_axiom_gate": "F1ED0B4_V0S_STANDARD_AX_POLICY_PASS 6/6"
+  },
+  "CIAT_independent_uploaded_bytes_audit": {
+    "checks": 103,
+    "passed": 103,
+    "failed": 0,
+    "report_SHA256": "a955bb55cdfd0dbd888139bc009c7eeac951e7f996d7d2e4f8b600c646a4f918",
+    "auditor_SHA256": "8f44d943864266bbed0377d9f620a30995ce0f448457bc4fcc3cc9e20987d88a",
+    "scope": "Independent static byte/manifests/Lean axiom log readback; not independent kernel execution."
+  },
+  "scientific_scope": "Signed/Nat ACC on generic Option Nat channel step-level typed outcome equality, six Lean model theorems only. v0/v0r FAIL immutably preserved. No whole program, input domain CPython refinement, output sort, native learning/mesh/hardware evidence.",
+  "user_only_fwork": true,
+  "M_permanently_inactive": true,
+  "original_P_writes": 0,
+  "SCI_GO": "0/3",
+  "human_authority_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "human_review_workstream_excluded": true,
+  "raw_archives_not_published": true,
+  "append_only": true,
+  "status": "F1ED0B4_V0S_USER_FEDORA_SCOPED_6OF6_KERNEL_AND_AX_GATE_PASS__CIAT_103OF103_UPLOADED_FILE_AUDIT_PASS__UNIVERSAL_CPYTHON_REFINEMENT_HOLD"
+}
