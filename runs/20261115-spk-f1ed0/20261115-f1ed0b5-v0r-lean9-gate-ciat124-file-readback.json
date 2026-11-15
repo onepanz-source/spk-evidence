@@ -1,0 +1,71 @@
+{
+  "schema": "spk.evidence.f1ed0b5.v0r.user-Fedora-Lean9-axiomgate-ciat124.v0",
+  "date": "2026-11-15",
+  "source_repository": "onepanz-source/spk-backvalidation-v0",
+  "source_result_commit": "178dc847fac457337b974171d5d84545c59ca32c",
+  "preexecution_source_SHA_lock_commit": "3f5733b6927af2de22d8c2d887bd99845b34c498",
+  "original_source_zip": {
+    "name": "SPK_Lean_F1e_D0b5_v0r.zip",
+    "bytes": 23407,
+    "sha256": "1505e6bb03bbc3e34283c2d2a527ca3b611fb6686ce2efe660602f48ffb9a1b4",
+    "zip_crc": "PASS",
+    "source_sha_pairs": "16/16 PASS"
+  },
+  "user_fedora_logs": {
+    "name": "SPK_F1eD0b5_v0r_logs.tar.gz",
+    "bytes": 3074,
+    "sha256": "94ed5f3d13a930c2c29a7421a446be13f346b2d15bfe103c0307884a462451d9",
+    "manifest_sha256": "b33a45557a267017999a6c6e02caa92bc19dacc4008a4c755210070692574067",
+    "manifest_file_pairs": "18/18 PASS",
+    "Lean_version": "4.35.0",
+    "F0b": "source SHA and compilation PASS",
+    "D0a": "13/13 gate PASS",
+    "D0b0": "13/13 gate PASS",
+    "D0b1": "7/7 gate PASS",
+    "D0b2": "10/10 gate PASS",
+    "D0b3": "7/7 gate PASS",
+    "D0b4": "6/6 gate PASS",
+    "D0b5_Lean_log_SHA256": "75535e08f59a6597c67eb76128db1502989d556daecd4e57f14817d8f516287f",
+    "D0b5_theorem_axiom_reports": 9,
+    "D0b5_compilation_errors": 0,
+    "D0b5_sorryAx": 0,
+    "D0b5_axiom_gate_log_SHA256": "af78e07e5eac07e403509eb2cb7a9421720813297d4f3fb40cfa8edcce66c90b",
+    "D0b5_operational_gate": "F1ED0B5_V0R_STANDARD_AX_POLICY_PASS 9/9",
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "independent_CIAT_uploaded_file_readback": {
+    "checker_sha256": "f9a9a6b5f8602a127563ed8792b18fef07c98c154972ef56fc18d8cdbf33640b",
+    "report_sha256": "1a09c9a590c3c4a30d079801feb7d900d2932c28d2fc8f57f2b27edde6a2af21",
+    "checks": 124,
+    "passed": 124,
+    "failed": 0,
+    "scope": "Separate read-only Python stdlib uploaded TAR/ZIP and source/file SHA + Lean/axiom gate log audit, not independently rerun Lean kernel or CPython."
+  },
+  "narrow_formal_claim": "Nine Lean-to-Lean Nat and signed interpreter instruction-list append/error-prefix/success-suffix and syntactic embedding laws; NOT Nat→signed semantic program/list correctness.",
+  "unproved": [
+    "General typed per-opcode Nat→signed simulation",
+    "Whole-program cross-model induction",
+    "Canonical Python SpikeTrain output sorting preserving timed multiset observer",
+    "Universal original CPython implementation↔Lean correctness",
+    "Native learning utility, mesh, hardware separately gated"
+  ],
+  "raw_zip_and_raw_tar_not_committed": true,
+  "M_always_inactive": true,
+  "user_manual_Fedora_only": true,
+  "original_Core_P_unmodified": true,
+  "P_writes": 0,
+  "SCI_GO": "0/3",
+  "human_authority_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "independent_review_task_excluded": true,
+  "append_only": true,
+  "status": "F1ED0B5_V0R_NATIVE_FEDORA_LEAN_9OF9_GATE_PASS__CIAT_124OF124_FILE_READBACK__CROSS_MODEL_SEMANTIC_REFINEMENT_HOLD"
+}
