@@ -1,0 +1,65 @@
+{
+  "schema": "spk.evidence.f1ed0b6.v0-user-fedora-lean-7-gate-ciat52.v0",
+  "date": "2026-11-15",
+  "source_repo": "onepanz-source/spk-backvalidation-v0",
+  "source_result_commit": "d8e7f0d1db390878826a68cdfd778c3632a83e89",
+  "preexecution_source_lock_commit": "4e734492254e59ae2351caddd403e79061cc0eb2",
+  "preregistered_zip_sha256": "9564caba846b5071e3b4b696b91ba299885cf140e121e00dadf219ba3d86c270",
+  "user_uploaded_tar": {
+    "name": "SPK_F1eD0b6_v0_logs.tar.gz",
+    "bytes": 3441,
+    "sha256": "cdfbb2eaf3ac705c9001b56cc9733a2e5bc3c51b091f6d177f0dbf585684a702",
+    "manifest_sha256": "c4fe697e677076e7571ff296bbf9ab6b07e537fdbc35ef3f22243280576f2313",
+    "manifest_verified": "20/20 PASS"
+  },
+  "source_zip_sha_manifest": "18/18 PASS",
+  "ZIP_CRC": "PASS",
+  "Lean_4_35": {
+    "F0b": "compiled",
+    "D0a": "13/13 PASS",
+    "D0b0": "13/13 PASS",
+    "D0b1": "7/7 PASS",
+    "D0b2": "10/10 PASS",
+    "D0b3": "7/7 PASS",
+    "D0b4": "6/6 PASS",
+    "D0b5": "9/9 PASS",
+    "D0b6_new_log_sha256": "b446543db6f52a413ec2178b0ecf9a1cad8d7601be729f217a6e858d073574a8",
+    "D0b6_new_Lean_theorems": 7,
+    "Lean_errors": 0,
+    "sorryAx": 0,
+    "nonfatal_warnings": 4,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0b6_new_axioms_gate_log_sha256": "b4c9727bb003267ab37c155023a5082ef0cb355a63894786a22162db27e94f4c",
+    "D0b6_new_gate": "F1ED0B6_V0_STANDARD_AX_POLICY_PASS 7/7"
+  },
+  "CIAT_independent_TAR_ZIP_exact_byte_readback": {
+    "filename": "SPK_F1ED0B6_V0_CIAT_READBACK.json",
+    "report_sha256": "62340f024ec2ef696e534215852955cc6cdb752b8b3818bf3d48bd594b7dc32e",
+    "checks": 52,
+    "passed": 52,
+    "failed": 0,
+    "method": "Independent Python stdlib TAR/ZIP/manifest SHA and native Lean log contents check. This is not an independent Lean or original Python execution."
+  },
+  "scope": "Signed and Nat single-step typed partial transport model accepted; full semantic list/batch/history simulation, Python output canonical sort and original CPython↔Lean verification HOLD. No scientific learning or hardware promotion.",
+  "roadmap_issue": 273,
+  "roadmap_equal_lane_estimate_percent": 35,
+  "estimate_not_formal_gate": true,
+  "M_always_inactive": true,
+  "manual_user_Fedora_only": true,
+  "original_P_writes": 0,
+  "SCI_GO": "0/3",
+  "authority_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "independent_human_review_not_scheduled": true,
+  "append_only": true,
+  "raw_logs_zip_not_committed": true,
+  "status": "F1ED0B6_USER_FEDORA_7_LEAN_AXIOM_GATE_PASS__CIAT_UPLOAD_AUDIT_52OF52_PASS__SCIENTIFIC_GO_0OF3"
+}
