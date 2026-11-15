@@ -1,0 +1,43 @@
+{
+  "schema": "spk.evidence.w4.b5a.v0.mock-signed-e-policy-and-b4-custody-prereg",
+  "date": "2026-11-15",
+  "source_repo": "onepanz-source/spk-backvalidation-v0",
+  "source_preregistered_commit": "57e22e35f15bd38f22788cc18609e09d1bec20a2",
+  "B5_issue": 256,
+  "package": "SPK_B5A_OUTCOME_POLICY_CUSTODY_v0.zip",
+  "package_bytes": 12270,
+  "package_sha256": "4e686555ba89c4da61ba596405e8164b39cb72a580dd64687713259e3c72d54c",
+  "package_crc": "PASS",
+  "source_manifest_sha256": "fafbc1200cccb9b72b552eb0c357928e8119251ba869d3de622db3a3979535b7",
+  "source_members": "6/6 hash PASS",
+  "local_policy_Ed25519_mock_tests": "24/24 PASS",
+  "local_preflight_B4_report_check": "11/13 PASS",
+  "local_preflight_hold_reasons": [
+    "missing mounted raw B4 source ZIP SHA attestation",
+    "missing frozen original PE Git object in CIAT sandbox"
+  ],
+  "local_runner_smoke": "RC4 intended B4_SOURCE_CUSTODY_HOLD, while SHA RC0 and MOCK RC0; logs preserved",
+  "B4_original_reports_sha256": "aad48742c8851b34ab5cf64ea998709d0dd87217aa706011487447a77193ad59",
+  "B4_wrong_signed_K": "K authentic but wrong normative target; one B4 scratch-P edit; no production P writes",
+  "new_Fedora_user_run": "PENDING",
+  "new_hidden_E_scoring_rule_sealed": "NO",
+  "independent_E_process": "NOT_RUN",
+  "new_signed_prospective_E_C_B_events": "NONE",
+  "original_frozen_PE_B5_execution": "NOT_RUN",
+  "scratch_owner_adaptation_B5": "NOT_RUN",
+  "scientific_claim": "NONE",
+  "conclusion": "B5a only MOCK_POLICY_STATIC_PASS / B4_SOURCE_CUSTODY_INCOMPLETE_HOLD. No native E trial or learning improvement.",
+  "M_inactive": true,
+  "user_only_Fedora": true,
+  "original_P_writes": 0,
+  "SCI_GO": "0/3",
+  "authority_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "human_review_task_excluded": true,
+  "raw_ZIP_not_committed": true,
+  "append_only": true
+}
