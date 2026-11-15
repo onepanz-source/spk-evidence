@@ -1,0 +1,70 @@
+{
+  "schema": "spk.evidence.f1ed0b5.v0-user-Fedora-2-goals-fail-ciat158-v0r-source-sha-prelock.v0",
+  "date": "2026-11-15",
+  "source_repo": "onepanz-source/spk-backvalidation-v0",
+  "source_audit_and_v0r_SHA_lock_commit": "3f5733b6927af2de22d8c2d887bd99845b34c498",
+  "v0_original_zip": "SPK_Lean_F1e_D0b5_v0.zip",
+  "v0_original_zip_sha256": "98cd285af330d7bb48c0af56b5148c680f6987354ab44863fedc60d9b4a12cf8",
+  "user_upload": {
+    "name": "SPK_F1eD0b5_v0_logs.tar.gz",
+    "bytes": 3237,
+    "sha256": "9006e318ccb0456e9d0265aa13d9e46c8cebb20013a991768a5d1736be92a302",
+    "Fedora_MANIFEST_sha256": "6a80e9fad7bbc404ba97fc4dc059264d4ee7001df0b50458af55ee71b6a5d4a7",
+    "Fedora_manifest": "17/17 SHA PASS",
+    "source_manifest": "16/16 SHA PASS",
+    "actual_Lean_log_sha256": "ae35485161c9ae5ecb89307fac3ba5a49a59a9863b4d526747c04792d69abb1a",
+    "Lean_version": "4.35.0",
+    "predecessor_F0b_and_D0a_to_D0b4": "ALL PASS",
+    "new_D0b5_errors": 2,
+    "new_D0b5_sorryAx": 6,
+    "new_D0b5_no_sorryAx": 3,
+    "failed_append_proofs": [
+      "f1ed0b5_checked_exec_append",
+      "f1ed0b5_signed_execute_append"
+    ],
+    "axioms_gate": "NOT REACHED",
+    "verdict": "FAIL_HOLD"
+  },
+  "independent_uploaded_byte_readback": {
+    "script_sha256": "7718ff535ce839a2d5e050cccdd08d7779b6078f366c02dc792aead9ef72f4f6",
+    "report_sha256": "70b7dc08e96c3a0c9683de3a7d7a764d11c6278750f8063ed0933123e0960093",
+    "checks": 158,
+    "passed": 158,
+    "failed": 0,
+    "scope": "Separate stdlib ZIP/TAR CRC, exact SHA manifest, Lean log and predecessor gate readback, not independently run Lean/CPython."
+  },
+  "corrected_v0r_candidate": {
+    "archive": "SPK_Lean_F1e_D0b5_v0r.zip",
+    "bytes": 23407,
+    "sha256": "1505e6bb03bbc3e34283c2d2a527ca3b611fb6686ce2efe660602f48ffb9a1b4",
+    "zip_crc": "PASS",
+    "source_sha": "16/16 PASS",
+    "source_manifest_sha256": "31da3a35d52c7f9fa1a7d65734b9cffe51b0d6f6d8ab41ca5219a124af73fa96",
+    "new_Lean_file": "SPKCoreF1eD0B5V0r.lean",
+    "new_Lean_sha256": "228037766e598d76d98c35b534c7eaaaa7854d70e73c2ce243b1de96b6a8b928",
+    "source_new_Lean_GitHub_commit": "0b4d6ecdafdc82dc5a060c9334611ddb7b230679",
+    "source_new_Lean_blob_sha1": "1cd0ae9914467d11b3c54ba82dc32310d58a6b63",
+    "runner_sha256": "d967c8cfee0f4eb2242571b715d60bbda27f44e39cafc14b865da663b498981d",
+    "gate_sha256": "3781908fbe3cd03c8ddc303a6e404d4ab550871e97083bf3c07d690790d50305",
+    "change": "Only two error-branch tactics simp [h]→rfl in Nat and signed append theorems; all statements and executable model definitions unchanged, predecessor Lean source 6/6 byte-identical.",
+    "static": "ZIP CRC PASS, 16/16 SHA PASS, bash -n PASS, Python 7/7 compile PASS, axiom gate 8/8 synthetic positive/adversarial fixtures PASS",
+    "fresh_manual_fwork_root": "~/workspace/spk-manual-runs/spk-lean-f1e-d0b5-v0r",
+    "new_Lean_native": "NOT RUN__CANDIDATE_HOLD",
+    "future_user_tar": "SPK_F1eD0b5_v0r_logs.tar.gz"
+  },
+  "scientific_limits": "No universal CPython↔Lean equivalence, full Nat-signed program-level semantic simulation, canonical Python SpikeTrain sorting proof, learning or production authorization.",
+  "raw_zip_and_tar_not_committed": true,
+  "M_always_inactive": true,
+  "user_manually_runs_Fedora": true,
+  "P_writes": 0,
+  "SCI_GO": "0/3",
+  "authority_HOLD": [
+    "C0-C5",
+    "G2",
+    "dispatch",
+    "BV-to-P"
+  ],
+  "human_peer_review_workstream_excluded": true,
+  "append_only": true,
+  "status": "F1ED0B5_V0_FEDORA_TWO_APPEND_LEAN_FAIL__CIAT_158OF158_UPLOADED_FILE_AUDIT__V0R_PROOF_ONLY_SHA_LOCK_USER_FEDORA_PENDING"
+}
